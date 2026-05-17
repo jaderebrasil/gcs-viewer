@@ -1,6 +1,5 @@
 /* ── Reset & base ─────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-[hidden] { display: none !important; }
 
 :root {
   --primary:    #2c3e50;
@@ -23,9 +22,16 @@ body {
   min-height: 100vh;
 }
 
+/* ── Panel visibility — only one panel shown per body state ──────────────── */
+#landing, #loading, #error-msg, #sheet { display: none; }
+
+body.state-landing #landing  { display: flex; }
+body.state-loading #loading  { display: flex; }
+body.state-error   #error-msg { display: flex; }
+body.state-sheet   #sheet    { display: block; }
+
 /* ── Landing page ─────────────────────────────────────────────────────────── */
 #landing {
-  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -107,7 +113,6 @@ code {
 
 /* ── Loading / error ─────────────────────────────────────────────────────── */
 #loading {
-  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -120,7 +125,6 @@ code {
 }
 
 #error-msg {
-  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;

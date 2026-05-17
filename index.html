@@ -8,7 +8,7 @@
   <!-- Google Identity Services — required for Drive sign-in -->
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
-<body>
+<body class="state-landing">
 
   <!-- ── Landing ─────────────────────────────────────────────────────────── -->
   <div id="landing">
@@ -58,12 +58,12 @@
   </div>
 
   <!-- ── Loading spinner ─────────────────────────────────────────────────── -->
-  <div id="loading" hidden>
+  <div id="loading">
     <div class="spinner">Loading&hellip;</div>
   </div>
 
   <!-- ── Error display ───────────────────────────────────────────────────── -->
-  <div id="error-msg" hidden>
+  <div id="error-msg">
     <div class="error-box">
       <h2>Could not load character sheet</h2>
       <p id="error-text"></p>
@@ -71,7 +71,7 @@
   </div>
 
   <!-- ── Character sheet output ──────────────────────────────────────────── -->
-  <div id="sheet" hidden></div>
+  <div id="sheet"></div>
 
   <script src="js/config.js"></script>
   <script src="js/parser.js"></script>

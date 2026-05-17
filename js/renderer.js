@@ -339,10 +339,6 @@ function render(data) {
     section('notes',     'Notes',             buildNotesSection(notes)),
   ].join('');
 
-  const sheet = document.getElementById('sheet');
-  sheet.innerHTML = html;
-  sheet.hidden = false;
-
-  document.getElementById('landing').hidden = true;
-  document.getElementById('loading').hidden = true;
+  document.getElementById('sheet').innerHTML = html;
+  document.body.className = 'state-sheet';
 }

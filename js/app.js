@@ -1,27 +1,22 @@
 // Entry point — wires together the file picker, drag-and-drop, and Drive URL flow.
 
+function setState(name) {
+  document.body.className = 'state-' + name;
+}
+
 function showLoading(msg) {
-  document.getElementById('loading').hidden = false;
   document.getElementById('loading').querySelector('.spinner').textContent = msg || 'Loading…';
-  document.getElementById('landing').hidden = true;
-  document.getElementById('error-msg').hidden = true;
-  document.getElementById('sheet').hidden = true;
+  setState('loading');
 }
 
 function showError(err) {
   console.error(err);
-  document.getElementById('loading').hidden = true;
-  document.getElementById('sheet').hidden = true;
-  const box = document.getElementById('error-msg');
-  box.hidden = false;
-  box.querySelector('#error-text').textContent = err?.message || String(err);
+  document.getElementById('error-text').textContent = err?.message || String(err);
+  setState('error');
 }
 
 function showLanding() {
-  document.getElementById('landing').hidden = false;
-  document.getElementById('loading').hidden = true;
-  document.getElementById('error-msg').hidden = true;
-  document.getElementById('sheet').hidden = true;
+  setState('landing');
 }
 
 function loadFromText(text) {
