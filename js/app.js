@@ -46,6 +46,18 @@ function loadFromFile(file) {
   reader.readAsText(file);
 }
 
+async function loadFromUrl(url) {
+  showLoading('Fetching…');
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+    const text = await res.text();
+    loadFromText(text);
+  } catch (e) {
+    showError(new Error(`Could not fetch URL: ${e.message}`));
+  }
+}
+
 async function loadFromDrive(rawId) {
   const fileId = driveFileIdFromUrl(rawId);
   showLoading('Fetching from Google Drive…');
@@ -60,10 +72,16 @@ async function loadFromDrive(rawId) {
 window.addEventListener('DOMContentLoaded', () => {
   // ── URL parameter: ?id=<file-id or share-url> ──────────────────────────────
   const params = new URLSearchParams(location.search);
+  const urlParam = params.get('url');
+  if (urlParam) {
+    loadFromUrl(urlParam);
+    return;
+  }
+
   const idParam = params.get('id');
   if (idParam) {
     loadFromDrive(idParam);
-    return;                       // skip showing the landing page
+    return;
   }
 
   // ── Drive "Open with" state parameter ─────────────────────────────────────
@@ -86,6 +104,13 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('file-input').addEventListener('change', (e) => {
     const file = e.target.files[0];
     if (file) loadFromFile(file);
+  });
+
+  // Public URL form
+  document.getElementById('url-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const val = document.getElementById('url-input').value.trim();
+    if (val) loadFromUrl(val);
   });
 
   // Drive ID input form
