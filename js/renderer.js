@@ -65,6 +65,22 @@ function fmtMoney(v) {
   return `$${n.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
 
+function calcTotalCarriedWeight(items) {
+  return items
+    .filter(eq => eq._depth === 0)
+    .reduce((sum, eq) => {
+      const w = eq.calc?.extended_weight;
+      if (!w) return sum;
+      const n = typeof w === 'string' ? parseFloat(w) : parseFxp(w);
+      return sum + (isNaN(n) ? 0 : n);
+    }, 0);
+}
+
+function firstRef(ref) {
+  if (!ref) return '';
+  return ref.trim().split(/\s+/)[0];
+}
+
 // Dice may be a string like "1d+1" or a legacy object — handle both.
 function diceStr(d) {
   if (!d) return '—';
@@ -171,11 +187,18 @@ function buildAttributes(attributes) {
 
 // ── Combat block ──────────────────────────────────────────────────────────────
 
-function buildCombat(calc) {
+function buildCombat(calc, carriedWeight = 0) {
   const encNames = ['None', 'Light', 'Medium', 'Heavy', 'X-Heavy'];
-  const encRows  = (calc.move || []).map((mv, i) =>
-    `<tr><td>${encNames[i] || i}</td><td>${mv}</td><td>${(calc.dodge || [])[i] ?? '—'}</td></tr>`
-  ).join('');
+  const bl = parseFloat(calc.basic_lift) || 0;
+  const encThresholds = [bl, 2 * bl, 3 * bl, 6 * bl, 10 * bl];
+  let currentEnc = encThresholds.length - 1;
+  for (let i = 0; i < encThresholds.length; i++) {
+    if (carriedWeight <= encThresholds[i]) { currentEnc = i; break; }
+  }
+  const encRows  = (calc.move || []).map((mv, i) => {
+    const cur = i === currentEnc;
+    return `<tr${cur ? ' class="enc-current"' : ''}><td>${cur ? '▶ ' : ''}${encNames[i] || i}</td><td>${mv}</td><td>${(calc.dodge || [])[i] ?? '—'}</td></tr>`;
+  }).join('');
 
   // swing/thrust/basic_lift may already be formatted strings
   const swing  = calc.swing      ? diceStr(calc.swing)  : null;
@@ -210,19 +233,23 @@ function buildTraitsTable(traits) {
   const rows = traits.map(t => {
     const isContainer = Array.isArray(t.children) && t.children.length > 0;
     const pts      = t.calc?.points != null ? parseFxp(t.calc.points) : '';
-    const tags     = (t.tags || []).join(', ');
-    const disabled = t.disabled ? ' disabled-row' : '';
+    const disabled = !!t.disabled;
+    const ref      = firstRef(t.reference);
     const notes    = t.local_notes || '';
+    const rowClass = [disabled ? 'disabled-row' : '', isContainer ? 'container-row' : ''].filter(Boolean).join(' ');
+    const nameHtml = isContainer
+      ? `<span class="group-arrow">▸</span> ${esc(t.name)}`
+      : esc(t.name);
     return `
-      <tr class="${disabled}${isContainer ? ' container-row' : ''}">
-        <td${indentStyle(t._depth)}>${isContainer ? '▸ ' : ''}${esc(t.name)}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
+      <tr class="${rowClass}" data-depth="${t._depth}">
+        <td${indentStyle(t._depth)}>${nameHtml}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
         <td class="col-pts">${pts !== '' ? pts : ''}</td>
-        <td class="col-tags">${esc(tags)}</td>
+        <td class="col-ref">${esc(ref)}</td>
       </tr>`;
   }).join('');
   return `
     <table class="data-table">
-      <thead><tr><th>Trait</th><th class="col-pts">Pts</th><th class="col-tags">Tags</th></tr></thead>
+      <thead><tr><th>Trait</th><th class="col-pts">Pts</th><th class="col-ref">Ref</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 }
@@ -290,22 +317,28 @@ function buildEquipmentTable(items) {
   if (!items.length) return '';
   const rows = items.map(eq => {
     const isContainer = Array.isArray(eq.children) && eq.children.length > 0;
-    const unequipped  = eq.equipped === false ? ' unequipped-row' : '';
+    const equipped    = eq.equipped !== false;
     const qty    = eq.quantity != null ? parseFxp(eq.quantity) : 1;
     const weight = eq.calc?.extended_weight != null ? fmtWeight(eq.calc.extended_weight) : '—';
     const value  = eq.calc?.extended_value  != null ? fmtMoney(eq.calc.extended_value)   : '—';
+    const ref    = firstRef(eq.reference);
     const notes  = eq.local_notes || '';
+    const rowClass = [equipped ? '' : 'unequipped-row', isContainer ? 'container-row' : ''].filter(Boolean).join(' ');
+    const nameHtml = isContainer
+      ? `<span class="group-arrow">▸</span> ${esc(eq.description)}`
+      : esc(eq.description);
     return `
-      <tr class="${unequipped}${isContainer ? ' container-row' : ''}">
-        <td${indentStyle(eq._depth)}>${isContainer ? '▸ ' : ''}${esc(eq.description)}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
+      <tr class="${rowClass}" data-depth="${eq._depth}">
+        <td${indentStyle(eq._depth)}>${nameHtml}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
         <td class="col-qty">${qty}</td>
         <td class="col-wt">${weight}</td>
         <td class="col-val">${value}</td>
+        <td class="col-ref">${esc(ref)}</td>
       </tr>`;
   }).join('');
   return `
     <table class="data-table">
-      <thead><tr><th>Item</th><th class="col-qty">Qty</th><th class="col-wt">Weight</th><th class="col-val">Value</th></tr></thead>
+      <thead><tr><th>Item</th><th class="col-qty">Qty</th><th class="col-wt">Weight</th><th class="col-val">Value</th><th class="col-ref">Ref</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 }
@@ -330,7 +363,7 @@ function render(data) {
   const html = [
     buildHeader(profile, totalPoints, unspentPoints),
     buildAttributes(attributes),
-    buildCombat(calc),
+    buildCombat(calc, calcTotalCarriedWeight(carriedEquipment)),
     section('traits',    'Traits',            buildTraitsTable(traits)),
     section('skills',    'Skills',            buildSkillsTable(skills)),
     section('spells',    'Spells',            buildSpellsTable(spells)),
@@ -342,3 +375,37 @@ function render(data) {
   document.getElementById('sheet').innerHTML = html;
   document.body.className = 'state-sheet';
 }
+
+// Expand/collapse container rows on click.
+function showGroupChildren(rows, parentIdx, parentDepth) {
+  for (let i = parentIdx + 1; i < rows.length; i++) {
+    const d = parseInt(rows[i].dataset.depth, 10);
+    if (d <= parentDepth) break;
+    if (d === parentDepth + 1) {
+      rows[i].hidden = false;
+      if (rows[i].classList.contains('container-row') && !rows[i].classList.contains('row-collapsed')) {
+        showGroupChildren(rows, i, d);
+      }
+    }
+  }
+}
+
+document.addEventListener('click', e => {
+  const row = e.target.closest('tr.container-row');
+  if (!row) return;
+  const tbody = row.closest('tbody');
+  if (!tbody) return;
+  const rows      = Array.from(tbody.querySelectorAll('tr'));
+  const idx       = rows.indexOf(row);
+  const depth     = parseInt(row.dataset.depth, 10);
+  const collapsing = !row.classList.contains('row-collapsed');
+  row.classList.toggle('row-collapsed', collapsing);
+  if (collapsing) {
+    for (let i = idx + 1; i < rows.length; i++) {
+      if (parseInt(rows[i].dataset.depth, 10) <= depth) break;
+      rows[i].hidden = true;
+    }
+  } else {
+    showGroupChildren(rows, idx, depth);
+  }
+});
