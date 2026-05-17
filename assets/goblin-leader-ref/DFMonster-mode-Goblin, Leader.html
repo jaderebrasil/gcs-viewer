@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!-- 
+
+  Dungeon Fantasy monster template by Steve Jackson Games.
+  Implemented by Slacker for use with Richard A. Wilkes' GCS.
+
+  Instructions: 
+	  - Melee weapons print their name, damage, and reach. Include all damage options in the damage field of the weapon. A thrusting broadsword's swung damage field would say "sw+1 cut or thr+2 imp", etc. Notes are not printed.
+	  - Ranged weapons print their name, damage, accuracy, range, rate of fire, shots, and bulk. See melee weapons for more details.
+	  - Special afflictions and such will generally need to be manually added in. You can usually use a melee weapon as a base with all relevant text in the damage field, then delete the rest for the final copy.
+	  - You must manually edit the .html file if you want to add a description to the monster, add block, add notes to DR, change style of parry, etc.
+		
+  Tips: 
+	  - DR is derived from the torso hit location. Add in locational DR to the notes.
+	  - If you do not want to include damage resistance in the traits list, give another advantage a DR bonus. Know that this will not properly reflect the point cost of the monster if you do.
+	  - Notes save their formatting. If you wish to remove that, use the key  at the start of this template, before <!DOCTYPE html>.
+	  - You can delete the 110 line if you do not want it. I included it because I thought it would be useful for things like Ally. Use the default text template to output monster templates.
+
+-->
+
+<html>
+  <head>
+    <title>Goblin, Leader</title>
+		<style>
+	  	  html, body, #wrapper {
+	  	    width: 100%;
+	  	    height: 100%; 
+	  	  }
+	  	  #container, p, table {
+	  	    width: 480px;
+	  	  }
+	  	  #name {
+	  	    font-size: 14pt;
+	  	  }
+		</style>
+  </head>
+	
+  <body>
+	<div id="wrapper">
+	<div id="container">
+	  <table id="name">
+		  <col width="300">
+		  <tr>
+			  <td><b>Goblin, Leader</b></td>
+			  <td></td>
+			  <td><b>[110]</b></td>
+		  </tr>
+		</table>
+		
+		<p>Enter notes about the creature here.</p>
+
+		<table>
+		  <col width="160">
+			<tr>
+				<td><b>ST:</b> 11</td>
+				<td><b>HP:</b> 11</td>
+				<td><b>Speed:</b> 6</td>
+			</tr>
+			<tr>
+				<td><b>DX:</b> 11</td>
+				<td><b>Will:</b> 11</td>
+				<td><b>Move:</b> 7</td>
+			</tr>
+			<tr>
+				<td><b>IQ:</b> 10</td>
+				<td><b>Per:</b> 11</td>
+			</tr>
+			<tr>
+				<td><b>HT:</b> 11</td>
+				<td><b>FP:</b> 11</td>
+				<td><b>SM:</b> +0</td>
+			</tr>
+			<tr>
+				<td><b>Dodge:</b> 9</td>
+				<td><b>Parry:</b> 11</td>
+				<td><b>DR:</b> 2</td>
+			</tr>
+			</table>
+			
+	  <p><b>Long Knife (9):</b> 1d cut. Reach C,1.</br><b>Long Knife (9):</b> 1d-1 imp. Reach C,1.</br><b>Long Knife (14):</b> 1d cut. Reach C,1.</br><b>Long Knife (14):</b> 1d-1 imp. Reach C,1.</br><b>Natural Attacks (14):</b> 1d-1 cr. Reach C.</br><b>Natural Attacks (11):</b> 1d-1 ctrl. Reach C.</br><b>Natural Attacks (12):</b> 1d+1 cr. Reach C,1.</br><b>Natural Attacks (14):</b> 1d-1 cr. Reach C.</br><b>Saber (13):</b> 1d cut. Reach 1.</br><b>Saber (13):</b> 1d imp. Reach 1.</br><b>Small Shield (13):</b> 1d-1 cr. Reach 1.</br></p>
+		<p><b><i>Traits:</i></b>  Appearance; Cowardice; Infravision; Natural Attacks; Rapid Healing; Resistant to Disease 5; Resistant to Poison 5; Social Stigma (Savage);.</br>
+		<b><i>Skills:</i></b>  Brawling-14; Knife-14; Shield (Shield)-13; Stealth-14; Saber-14;.</br>
+		<b><i>Notes:</i></b> Equipped with heavy leather armor (DR included above; thoroughly lice-ridden, stinking, and unsalable), small shield (DB 1), long knife, and saber. This puts the goblin at Light encumbrance, as reflected in the stats.
+Goblins are easily intimidated, so they’ll negotiate if cornered . . . and backstab as soon as they aren’t.
+Leaders have IQ 10+ and higher skills, and often trade bow and arrows for a saber (1d cutting or impaling) to wave around while giving orders.
+		</p>
+	</div>
+	</div>
+  </body>
+</html>
