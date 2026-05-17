@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCS Character Sheet Viewer</title>
+  <link rel="stylesheet" href="css/sheet.css">
+  <!-- Google Identity Services — required for Drive sign-in -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+  <!-- ── Landing ─────────────────────────────────────────────────────────── -->
+  <div id="landing">
+    <div class="landing-box">
+      <h1>GCS Viewer</h1>
+      <p>Open a GURPS Character Sheet (<code>.gcs</code>) file to view it.</p>
+
+      <label class="file-btn">
+        Choose local file&hellip;
+        <input type="file" id="file-input" accept=".gcs">
+      </label>
+
+      <p>or drag a <code>.gcs</code> file anywhere on this page</p>
+
+      <hr>
+
+      <p>Open from Google Drive:</p>
+      <form class="drive-form" id="drive-form">
+        <input
+          type="text"
+          id="drive-id-input"
+          placeholder="File ID or share URL"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button type="submit">Open</button>
+      </form>
+      <p>
+        Or add <code>?id=&lt;file-id&gt;</code> to this page&rsquo;s URL.<br>
+        The file ID is the long string after <code>/d/</code> in a Drive share link.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Loading spinner ─────────────────────────────────────────────────── -->
+  <div id="loading" hidden>
+    <div class="spinner">Loading&hellip;</div>
+  </div>
+
+  <!-- ── Error display ───────────────────────────────────────────────────── -->
+  <div id="error-msg" hidden>
+    <div class="error-box">
+      <h2>Could not load character sheet</h2>
+      <p id="error-text"></p>
+    </div>
+  </div>
+
+  <!-- ── Character sheet output ──────────────────────────────────────────── -->
+  <div id="sheet" hidden></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/parser.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/drive.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
