@@ -240,7 +240,7 @@ function buildTraitsTable(traits) {
     const pts      = t.calc?.points != null ? parseFxp(t.calc.points) : '';
     const disabled = !!t.disabled;
     const ref      = firstRef(t.reference);
-    const notes    = t.local_notes || '';
+    const notes    = applyReplacements(t.local_notes || '', t.replacements);
     const rowClass = [disabled ? 'disabled-row' : '', isContainer ? 'container-row' : ''].filter(Boolean).join(' ');
     const name    = applyReplacements(t.name, t.replacements);
     const nameHtml = isContainer
@@ -273,7 +273,7 @@ function buildSkillsTable(skills) {
     const rsl   = !isContainer ? fmtRSL(s.calc?.rsl) : '';
     const level = !isContainer && s.calc?.level != null ? parseFxp(s.calc.level) : '';
     const pts   = !isContainer && s.calc?.points != null ? parseFxp(s.calc.points) : '';
-    const notes = s.local_notes || '';
+    const notes = applyReplacements(s.local_notes || '', s.replacements);
     return `
       <tr class="${isContainer ? 'container-row' : ''}">
         <td${indentStyle(s._depth)}>${isContainer ? '▸ ' : ''}${name}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
@@ -329,7 +329,7 @@ function buildEquipmentTable(items) {
     const weight = eq.calc?.extended_weight != null ? fmtWeight(eq.calc.extended_weight) : '—';
     const value  = eq.calc?.extended_value  != null ? fmtMoney(eq.calc.extended_value)   : '—';
     const ref    = firstRef(eq.reference);
-    const notes  = eq.local_notes || '';
+    const notes  = applyReplacements(eq.local_notes || '', eq.replacements);
     const rowClass = [equipped ? '' : 'unequipped-row', isContainer ? 'container-row' : ''].filter(Boolean).join(' ');
     const desc    = applyReplacements(eq.description, eq.replacements);
     const nameHtml = isContainer
