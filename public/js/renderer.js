@@ -81,6 +81,11 @@ function firstRef(ref) {
   return ref.trim().split(/\s+/)[0];
 }
 
+function applyReplacements(text, replacements) {
+  if (!text || !replacements) return text;
+  return text.replace(/@([^@]+)@/g, (_, key) => replacements[key] ?? `@${key}@`);
+}
+
 // Dice may be a string like "1d+1" or a legacy object — handle both.
 function diceStr(d) {
   if (!d) return '—';
@@ -237,9 +242,10 @@ function buildTraitsTable(traits) {
     const ref      = firstRef(t.reference);
     const notes    = t.local_notes || '';
     const rowClass = [disabled ? 'disabled-row' : '', isContainer ? 'container-row' : ''].filter(Boolean).join(' ');
+    const name    = applyReplacements(t.name, t.replacements);
     const nameHtml = isContainer
-      ? `<span class="group-arrow">▸</span> ${esc(t.name)}`
-      : esc(t.name);
+      ? `<span class="group-arrow">▸</span> ${esc(name)}`
+      : esc(name);
     return `
       <tr class="${rowClass}" data-depth="${t._depth}">
         <td${indentStyle(t._depth)}>${nameHtml}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
@@ -260,7 +266,8 @@ function buildSkillsTable(skills) {
   if (!skills.length) return '';
   const rows = skills.map(s => {
     const isContainer = Array.isArray(s.children) && s.children.length > 0;
-    const name  = s.specialization ? `${esc(s.name)} (${esc(s.specialization)})` : esc(s.name);
+    const rawName = applyReplacements(s.name, s.replacements);
+    const name    = s.specialization ? `${esc(rawName)} (${esc(s.specialization)})` : esc(rawName);
     const diff  = fmtDifficulty(s.difficulty);
     // calc.rsl is already a formatted string like "DX+3" in current GCS files
     const rsl   = !isContainer ? fmtRSL(s.calc?.rsl) : '';
@@ -324,9 +331,10 @@ function buildEquipmentTable(items) {
     const ref    = firstRef(eq.reference);
     const notes  = eq.local_notes || '';
     const rowClass = [equipped ? '' : 'unequipped-row', isContainer ? 'container-row' : ''].filter(Boolean).join(' ');
+    const desc    = applyReplacements(eq.description, eq.replacements);
     const nameHtml = isContainer
-      ? `<span class="group-arrow">▸</span> ${esc(eq.description)}`
-      : esc(eq.description);
+      ? `<span class="group-arrow">▸</span> ${esc(desc)}`
+      : esc(desc);
     return `
       <tr class="${rowClass}" data-depth="${eq._depth}">
         <td${indentStyle(eq._depth)}>${nameHtml}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
