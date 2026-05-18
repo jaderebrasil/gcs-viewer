@@ -267,7 +267,8 @@ function buildSkillsTable(skills) {
   const rows = skills.map(s => {
     const isContainer = Array.isArray(s.children) && s.children.length > 0;
     const rawName = applyReplacements(s.name, s.replacements);
-    const name    = s.specialization ? `${esc(rawName)} (${esc(s.specialization)})` : esc(rawName);
+    const rawSpec = applyReplacements(s.specialization || '', s.replacements);
+    const name    = rawSpec ? `${esc(rawName)} (${esc(rawSpec)})` : esc(rawName);
     const diff  = fmtDifficulty(s.difficulty);
     // calc.rsl is already a formatted string like "DX+3" in current GCS files
     const rsl   = !isContainer ? fmtRSL(s.calc?.rsl) : '';
