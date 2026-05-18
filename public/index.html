@@ -8,7 +8,16 @@
   <!-- Google Identity Services — required for Drive sign-in -->
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
-<body class="state-landing">
+<body>
+<script>
+  (function () {
+    var p = new URLSearchParams(location.search);
+    document.body.className =
+      (p.get('url') || p.get('id') || p.get('state'))
+        ? 'state-loading'
+        : 'state-landing';
+  }());
+</script>
 
   <!-- ── Landing ─────────────────────────────────────────────────────────── -->
   <div id="landing">

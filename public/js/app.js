@@ -108,8 +108,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if (val) loadFromUrl(val);
   });
 
-  // Drive ID input form
-  document.getElementById('drive-form').addEventListener('submit', (e) => {
+  // Drive ID input form (element may be absent when UI is disabled)
+  document.getElementById('drive-form')?.addEventListener('submit', (e) => {
     e.preventDefault();
     const val = document.getElementById('drive-id-input').value.trim();
     if (val) loadFromDrive(val);
