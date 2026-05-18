@@ -275,9 +275,10 @@ function buildSkillsTable(skills) {
     const level = !isContainer && s.calc?.level != null ? parseFxp(s.calc.level) : '';
     const pts   = !isContainer && s.calc?.points != null ? parseFxp(s.calc.points) : '';
     const notes = applyReplacements(s.local_notes || '', s.replacements);
+    const nameHtml = isContainer ? `<span class="group-arrow">▸</span> ${name}` : name;
     return `
-      <tr class="${isContainer ? 'container-row' : ''}">
-        <td${indentStyle(s._depth)}>${isContainer ? '▸ ' : ''}${name}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
+      <tr class="${isContainer ? 'container-row' : ''}" data-depth="${s._depth}">
+        <td${indentStyle(s._depth)}>${nameHtml}${notes ? `<br><small class="row-note">${esc(notes)}</small>` : ''}</td>
         <td class="col-diff">${esc(diff)}</td>
         <td class="col-rsl">${esc(rsl)}</td>
         <td class="col-level">${level !== '' ? level : ''}</td>
@@ -302,9 +303,10 @@ function buildSpellsTable(spells) {
     const rsl     = !isContainer ? fmtRSL(s.calc?.rsl) : '';
     const level   = !isContainer && s.calc?.level != null ? parseFxp(s.calc.level) : '';
     const pts     = !isContainer && s.calc?.points != null ? parseFxp(s.calc.points) : '';
+    const nameHtml = isContainer ? `<span class="group-arrow">▸</span> ${esc(s.name)}` : esc(s.name);
     return `
-      <tr class="${isContainer ? 'container-row' : ''}">
-        <td${indentStyle(s._depth)}>${isContainer ? '▸ ' : ''}${esc(s.name)}</td>
+      <tr class="${isContainer ? 'container-row' : ''}" data-depth="${s._depth}">
+        <td${indentStyle(s._depth)}>${nameHtml}</td>
         <td>${esc(college)}</td>
         <td class="col-diff">${esc(diff)}</td>
         <td class="col-rsl">${esc(rsl)}</td>
