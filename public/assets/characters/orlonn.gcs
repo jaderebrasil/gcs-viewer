@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "ACoMhDulBzURstkCw",
-	"total_points": 200,
+	"total_points": 206,
 	"points_record": [
+		{
+			"when": "2026-05-12T23:29:14-03:00",
+			"points": 3,
+			"reason": "XP da Sessão"
+		},
+		{
+			"when": "2026-04-29T10:32:55-03:00",
+			"points": 3,
+			"reason": "XP da Sessão"
+		},
 		{
 			"when": "2026-04-21T20:00:47-03:00",
 			"points": 200,
@@ -1193,7 +1203,8 @@
 						},
 						{
 							"id": "tNOHqDaoXjD0QlHxF",
-							"name": "Loves watching explosions",
+							"name": "Autism Spectrum Disorder",
+							"local_notes": "Hyperfocus on goals they receive or create\nDifficulty dealing with forced physical touch\nDifficulty interpreting irony, indirect speech, or “messages between the lines”\nThis is more of a Level 1 support need",
 							"base_points": -1,
 							"calc": {
 								"points": -1
@@ -1224,36 +1235,44 @@
 			"name": "Ranger",
 			"children": [
 				{
-					"id": "ssTAJ1F8rvagAyAk6",
+					"id": "s6O9f0LyWJV41ZHKZ",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sOzdhG3D1equT9MNn"
+						"id": "sKtd60c-jdtMDfOIt"
 					},
-					"name": "Fishing",
-					"reference": "B195",
+					"name": "Camouflage",
+					"reference": "B183",
 					"tags": [
 						"Exploration",
+						"Military",
 						"Outdoor"
 					],
-					"difficulty": "per/e",
+					"difficulty": "iq/e",
 					"defaults": [
 						{
-							"type": "per",
+							"type": "iq",
 							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"modifier": -2
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
-						"type": "per",
-						"modifier": -4,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
+						"type": "skill",
+						"name": "Survival",
+						"specialization": "Woodlands",
+						"modifier": -2,
+						"level": 11,
+						"adjusted_level": 11,
+						"points": -11
 					},
 					"calc": {
 						"level": 14,
-						"rsl": "Per+0"
+						"rsl": "IQ+0"
 					}
 				},
 				{
@@ -1294,44 +1313,36 @@
 					}
 				},
 				{
-					"id": "s6O9f0LyWJV41ZHKZ",
+					"id": "ssTAJ1F8rvagAyAk6",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sKtd60c-jdtMDfOIt"
+						"id": "sOzdhG3D1equT9MNn"
 					},
-					"name": "Camouflage",
-					"reference": "B183",
+					"name": "Fishing",
+					"reference": "B195",
 					"tags": [
 						"Exploration",
-						"Military",
 						"Outdoor"
 					],
-					"difficulty": "iq/e",
+					"difficulty": "per/e",
 					"defaults": [
 						{
-							"type": "iq",
+							"type": "per",
 							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Survival",
-							"modifier": -2
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
-						"type": "skill",
-						"name": "Survival",
-						"specialization": "Woodlands",
-						"modifier": -2,
-						"level": 11,
-						"adjusted_level": 11,
-						"points": -11
+						"type": "per",
+						"modifier": -4,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
 					},
 					"calc": {
 						"level": 14,
-						"rsl": "IQ+0"
+						"rsl": "Per+0"
 					}
 				},
 				{
@@ -1439,44 +1450,6 @@
 					"calc": {
 						"level": 13,
 						"rsl": "IQ-1"
-					}
-				},
-				{
-					"id": "ssyRjBhwWCJHaBZRC",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s3rs5bVG0nxQSZEGS"
-					},
-					"name": "Tracking",
-					"reference": "B226",
-					"tags": [
-						"Exploration",
-						"Outdoor"
-					],
-					"difficulty": "per/a",
-					"defaults": [
-						{
-							"type": "per",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Naturalist",
-							"modifier": -5
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "per",
-						"modifier": -5,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
-					},
-					"calc": {
-						"level": 13,
-						"rsl": "Per-1"
 					}
 				},
 				{
@@ -1725,6 +1698,44 @@
 						"level": 13,
 						"rsl": "Per-1"
 					}
+				},
+				{
+					"id": "ssyRjBhwWCJHaBZRC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s3rs5bVG0nxQSZEGS"
+					},
+					"name": "Tracking",
+					"reference": "B226",
+					"tags": [
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "per/a",
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Naturalist",
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "per",
+						"modifier": -5,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"calc": {
+						"level": 13,
+						"rsl": "Per-1"
+					}
 				}
 			]
 		},
@@ -1732,44 +1743,6 @@
 			"id": "S6cZfpd5mfeycTa0p",
 			"name": "IQ",
 			"children": [
-				{
-					"id": "s7Y0PeIpYBcfWcwLP",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sgWf_qVqI7HrPQUo7"
-					},
-					"name": "Tactics",
-					"reference": "B224,MA60",
-					"tags": [
-						"Military",
-						"Police"
-					],
-					"difficulty": "iq/h",
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -6
-						},
-						{
-							"type": "skill",
-							"name": "Strategy",
-							"modifier": -6
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -6,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
-					},
-					"calc": {
-						"level": 12,
-						"rsl": "IQ-2"
-					}
-				},
 				{
 					"id": "sw136kP0T_a-JVUQJ",
 					"source": {
@@ -1875,6 +1848,44 @@
 					}
 				},
 				{
+					"id": "s7Y0PeIpYBcfWcwLP",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "sgWf_qVqI7HrPQUo7"
+					},
+					"name": "Tactics",
+					"reference": "B224,MA60",
+					"tags": [
+						"Military",
+						"Police"
+					],
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Strategy",
+							"modifier": -6
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -6,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "IQ-2"
+					}
+				},
+				{
 					"id": "sFitZN-b22QYguL3x",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -1957,38 +1968,37 @@
 			"name": "HT",
 			"children": [
 				{
-					"id": "swV38EzSCX5Nqq05C",
+					"id": "ss4_evKBeHSEgCQXQ",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "sYEI9Qk3NtuKsXkTQ"
+						"id": "s9b5e-6c-ljOeUtt5"
 					},
-					"name": "Swimming",
-					"reference": "B224",
+					"name": "Hiking",
+					"reference": "B200",
 					"tags": [
 						"Athletic",
 						"Exploration",
 						"Outdoor"
 					],
-					"difficulty": "ht/e",
-					"encumbrance_penalty_multiplier": 2,
+					"difficulty": "ht/a",
 					"defaults": [
 						{
 							"type": "ht",
-							"modifier": -4
+							"modifier": -5
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "ht",
-						"modifier": -4,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
+						"modifier": -5,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
 					},
 					"calc": {
-						"level": 12,
-						"rsl": "HT+0"
+						"level": 13,
+						"rsl": "HT-1"
 					}
 				},
 				{
@@ -2024,37 +2034,38 @@
 					}
 				},
 				{
-					"id": "ss4_evKBeHSEgCQXQ",
+					"id": "swV38EzSCX5Nqq05C",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s9b5e-6c-ljOeUtt5"
+						"id": "sYEI9Qk3NtuKsXkTQ"
 					},
-					"name": "Hiking",
-					"reference": "B200",
+					"name": "Swimming",
+					"reference": "B224",
 					"tags": [
 						"Athletic",
 						"Exploration",
 						"Outdoor"
 					],
-					"difficulty": "ht/a",
+					"difficulty": "ht/e",
+					"encumbrance_penalty_multiplier": 2,
 					"defaults": [
 						{
 							"type": "ht",
-							"modifier": -5
+							"modifier": -4
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "ht",
-						"modifier": -5,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
+						"modifier": -4,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
 					},
 					"calc": {
-						"level": 13,
-						"rsl": "HT-1"
+						"level": 12,
+						"rsl": "HT+0"
 					}
 				}
 			]
