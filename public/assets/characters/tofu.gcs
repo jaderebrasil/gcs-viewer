@@ -2,8 +2,20 @@
 	"type": "character",
 	"version": 4,
 	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
-	"total_points": 215,
+	"total_points": 224,
 	"points_record": [
+		{
+			"when": "2026-05-12T23:29:56-03:00",
+			"points": 3
+		},
+		{
+			"when": "2026-04-29T02:23:28-03:00",
+			"points": 3
+		},
+		{
+			"when": "2026-04-21T19:04:00-03:00",
+			"points": 3
+		},
 		{
 			"when": "2026-04-15T00:59:16-03:00",
 			"points": 3
@@ -625,7 +637,7 @@
 			"attr_id": "highjump",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 20,
 				"points": 0
 			}
 		},
@@ -633,7 +645,7 @@
 			"attr_id": "broadjump",
 			"adj": 0,
 			"calc": {
-				"value": 3,
+				"value": 7,
 				"points": 0
 			}
 		},
@@ -788,9 +800,16 @@
 							"selection_type": "skills_with_name",
 							"name": {
 								"compare": "is",
-								"qualifier": "stealth"
+								"qualifier": "Stealth"
 							},
-							"amount": 2
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "If motionless",
+							"amount": 1,
+							"per_level": true
 						}
 					],
 					"can_level": true,
@@ -2815,7 +2834,7 @@
 				"Athletic"
 			],
 			"difficulty": "dx/h",
-			"points": 2,
+			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -6,
@@ -2840,8 +2859,8 @@
 				}
 			],
 			"calc": {
-				"level": 14,
-				"rsl": "DX+0"
+				"level": 15,
+				"rsl": "DX+1"
 			}
 		},
 		{
@@ -2861,9 +2880,9 @@
 				"type": "skill",
 				"name": "Stealth",
 				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 10,
+				"adjusted_level": 10,
+				"points": 1
 			},
 			"defaults": [
 				{
@@ -2882,8 +2901,8 @@
 				}
 			],
 			"calc": {
-				"level": 10,
-				"rsl": "IQ-1"
+				"level": 11,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3015,8 +3034,8 @@
 				}
 			],
 			"calc": {
-				"level": 14,
-				"rsl": "DX+3"
+				"level": 15,
+				"rsl": "DX+2"
 			}
 		},
 		{
@@ -3129,7 +3148,7 @@
 				"Street"
 			],
 			"difficulty": "dx/a",
-			"points": 1,
+			"points": 2,
 			"encumbrance_penalty_multiplier": 1,
 			"defaulted_from": {
 				"type": "dx",
@@ -3145,8 +3164,8 @@
 				}
 			],
 			"calc": {
-				"level": 14,
-				"rsl": "DX+3"
+				"level": 17,
+				"rsl": "DX+4"
 			}
 		},
 		{
@@ -4565,148 +4584,6 @@
 			}
 		},
 		{
-			"id": "f1ff95ca-2f1b-4f62-bb77-2653f1eb6a1f",
-			"type": "equipment_container",
-			"open": true,
-			"children": [
-				{
-					"id": "4c406a24-5025-4b39-90d2-1c8fd35b1f58",
-					"type": "equipment",
-					"description": "Sleeping Fur",
-					"reference": "B288",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"quantity": 1,
-					"value": 50,
-					"weight": "8 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 50,
-						"extended_weight": "8 lb"
-					}
-				},
-				{
-					"id": "16af437e-970a-4e8b-820c-5a229a3c77c0",
-					"type": "equipment",
-					"description": "Personal Basics",
-					"reference": "B288",
-					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"quantity": 1,
-					"value": 5,
-					"weight": "1 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 5,
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "f79e07c0-fd7b-4996-9dbb-81d8a0e8da3d",
-					"type": "equipment",
-					"description": "Climbing Gear",
-					"reference": "B288",
-					"notes": "Hammer, spikes, carabiners",
-					"tech_level": "2",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"quantity": 1,
-					"value": 20,
-					"weight": "4 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 20,
-						"extended_weight": "4 lb"
-					}
-				},
-				{
-					"id": "afa4e490-06fd-4563-9a74-b4925b7a14ae",
-					"type": "equipment_container",
-					"open": true,
-					"description": "Wineskin",
-					"reference": "B288",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"quantity": 1,
-					"value": 10,
-					"weight": "0.25 lb",
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "contained_weight_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_most",
-									"qualifier": "8 lb"
-								}
-							}
-						]
-					},
-					"equipped": true,
-					"calc": {
-						"extended_value": 10,
-						"extended_weight": "0.25 lb"
-					}
-				},
-				{
-					"id": "f32b3614-7aaf-41ac-bd69-9d7bdec5998b",
-					"type": "equipment",
-					"description": "Lockpick Set, Good",
-					"reference": "LT126",
-					"tech_level": "2",
-					"tags": [
-						"Thieves' Tools"
-					],
-					"quantity": 1,
-					"value": 250,
-					"weight": "0.5 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 250,
-						"extended_weight": "0.5 lb"
-					}
-				}
-			],
-			"description": "Backpack, Frame",
-			"reference": "B288",
-			"tech_level": "1",
-			"tags": [
-				"Camping and Survival Gear"
-			],
-			"quantity": 1,
-			"value": 100,
-			"weight": "10 lb",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "100 lb"
-						}
-					}
-				]
-			},
-			"equipped": true,
-			"calc": {
-				"extended_value": 435,
-				"extended_weight": "23.75 lb"
-			}
-		},
-		{
 			"id": "f3c0c39c-89d5-4bbb-bff6-3049a1738e0a",
 			"type": "equipment",
 			"description": "Clothing, Winter, Freeman (Status 0)",
@@ -4889,8 +4766,132 @@
 			}
 		}
 	],
+	"other_equipment": [
+		{
+			"id": "f1ff95ca-2f1b-4f62-bb77-2653f1eb6a1f",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
+				{
+					"id": "4c406a24-5025-4b39-90d2-1c8fd35b1f58",
+					"type": "equipment",
+					"description": "Sleeping Fur",
+					"reference": "B288",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"quantity": 1,
+					"value": 50,
+					"weight": "8 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "8 lb"
+					}
+				},
+				{
+					"id": "f79e07c0-fd7b-4996-9dbb-81d8a0e8da3d",
+					"type": "equipment",
+					"description": "Climbing Gear",
+					"reference": "B288",
+					"notes": "Hammer, spikes, carabiners",
+					"tech_level": "2",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"value": 20,
+					"weight": "4 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "afa4e490-06fd-4563-9a74-b4925b7a14ae",
+					"type": "equipment_container",
+					"open": true,
+					"description": "Wineskin",
+					"reference": "B288",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"quantity": 1,
+					"value": 10,
+					"weight": "0.25 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "8 lb"
+								}
+							}
+						]
+					},
+					"equipped": true,
+					"calc": {
+						"extended_value": 10,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "f32b3614-7aaf-41ac-bd69-9d7bdec5998b",
+					"type": "equipment",
+					"description": "Lockpick Set, Good",
+					"reference": "LT126",
+					"tech_level": "2",
+					"tags": [
+						"Thieves' Tools"
+					],
+					"quantity": 1,
+					"value": 250,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 250,
+						"extended_weight": "0.5 lb"
+					}
+				}
+			],
+			"description": "Backpack, Frame",
+			"reference": "B288",
+			"tech_level": "1",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"quantity": 1,
+			"value": 100,
+			"weight": "10 lb",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "100 lb"
+						}
+					}
+				]
+			},
+			"equipped": true,
+			"calc": {
+				"extended_value": 410,
+				"extended_weight": "18.75 lb"
+			}
+		}
+	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-04-15T01:04:41-03:00",
+	"modified_date": "2026-05-19T19:10:36-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
