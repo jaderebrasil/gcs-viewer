@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 216,
+	"total_points": 222,
 	"points_record": [
+		{
+			"when": "2026-05-12T23:29:52-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-04-28T23:28:49-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-04-21T23:11:00-03:00",
 			"points": 3,
@@ -2782,6 +2792,21 @@
 			"calc": {
 				"points": 45
 			}
+		},
+		{
+			"id": "tx3SgB_7ArX-uhqE2",
+			"name": "Conhecimento de planta desforme",
+			"local_notes": "Estudei elas e agora sei identificar as que mimitizam e sei onde fica suas gargantas.",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tt-kEto1z_IKZAZAU",
+			"name": "Resistente ao controle do CEPO",
+			"calc": {
+				"points": 0
+			}
 		}
 	],
 	"skills": [
@@ -2812,7 +2837,7 @@
 							"modifier": -5
 						}
 					],
-					"points": 1,
+					"points": 2,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
@@ -2821,8 +2846,8 @@
 						"points": -5
 					},
 					"calc": {
-						"level": 9,
-						"rsl": "IQ-1"
+						"level": 10,
+						"rsl": "IQ+0"
 					}
 				},
 				{
@@ -3571,7 +3596,7 @@
 						"points": -5
 					},
 					"calc": {
-						"level": 9,
+						"level": 8,
 						"rsl": "DX-1"
 					}
 				},
@@ -3608,7 +3633,7 @@
 						"points": -5
 					},
 					"calc": {
-						"level": 9,
+						"level": 8,
 						"rsl": "DX-1"
 					}
 				},
@@ -3721,6 +3746,44 @@
 			]
 		},
 		{
+			"id": "s7GGQV1VEBfNfB5TD",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sgWf_qVqI7HrPQUo7"
+			},
+			"name": "Tactics",
+			"reference": "B224,MA60",
+			"tags": [
+				"Military",
+				"Police"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Strategy",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
+			"calc": {
+				"level": 8,
+				"rsl": "IQ-2"
+			}
+		},
+		{
 			"id": "sS-g1vJ4KA4zyfurW",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3751,7 +3814,7 @@
 					"modifier": -2
 				}
 			],
-			"points": 20,
+			"points": 24,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
@@ -3760,8 +3823,8 @@
 				"points": -5
 			},
 			"calc": {
-				"level": 15,
-				"rsl": "DX+5"
+				"level": 16,
+				"rsl": "DX+6"
 			}
 		},
 		{
@@ -3836,7 +3899,7 @@
 						}
 					],
 					"calc": {
-						"level": 16,
+						"level": 17,
 						"damage": "2d+8 cr",
 						"parry": "18"
 					}
@@ -3874,7 +3937,7 @@
 						}
 					],
 					"calc": {
-						"level": 16,
+						"level": 17,
 						"damage": "3d+11 cr",
 						"parry": "18"
 					}
@@ -3912,7 +3975,7 @@
 						}
 					],
 					"calc": {
-						"level": 16,
+						"level": 17,
 						"damage": "1d+6 cr",
 						"parry": "18"
 					}
@@ -3941,22 +4004,6 @@
 				"extended_value": 22.5,
 				"weight": "9 lb",
 				"extended_weight": "9 lb"
-			}
-		}
-	],
-	"other_equipment": [
-		{
-			"id": "exutqimj4XVIIgG_e",
-			"description": "Staff Charge",
-			"legality_class": "4",
-			"base_weight": "0",
-			"quantity": 200,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
 			}
 		},
 		{
@@ -3989,93 +4036,8 @@
 				]
 			},
 			"quantity": 1,
+			"equipped": true,
 			"children": [
-				{
-					"id": "EAdm9nl5IS3WFThGZ",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "EYcpX5Ib_0vAti4WE"
-					},
-					"description": "Pouch, Small",
-					"reference": "B288",
-					"tech_level": "1",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"base_value": "10",
-					"base_weight": "0.5 lb",
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "contained_weight_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_most",
-									"qualifier": "3 lb"
-								}
-							}
-						]
-					},
-					"quantity": 1,
-					"children": [
-						{
-							"id": "eXlwTxPVi03ammCkz",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Equipment.eqp",
-								"id": "ef953OT928DECjSGt"
-							},
-							"description": "Copper Farthing",
-							"reference": "B264",
-							"tech_level": "1",
-							"tags": [
-								"Money: GURPS Standard Medieval Coins"
-							],
-							"base_value": "1",
-							"base_weight": "0.008 lb",
-							"quantity": 44,
-							"calc": {
-								"value": 1,
-								"extended_value": 44,
-								"weight": "0.008 lb",
-								"extended_weight": "0.352 lb"
-							}
-						}
-					],
-					"calc": {
-						"value": 10,
-						"extended_value": 54,
-						"weight": "0.5 lb",
-						"extended_weight": "0.852 lb"
-					}
-				},
-				{
-					"id": "exXDxOEEDF2l7P8xf",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy/Dungeon Fantasy 1/Dungeon Fantasy 1 Equipment.eqp",
-						"id": "egDNj1C8K4yx043OF"
-					},
-					"description": "Minor Healing Potion",
-					"reference": "DF1:29",
-					"local_notes": "Potion. 1d HP.",
-					"tags": [
-						"Concoctions",
-						"Concoctions:Potions"
-					],
-					"base_value": "120",
-					"base_weight": "0.5 lb",
-					"quantity": 4,
-					"calc": {
-						"value": 120,
-						"extended_value": 480,
-						"weight": "0.5 lb",
-						"extended_weight": "2 lb"
-					}
-				},
 				{
 					"id": "Et9vqI3WzZCuY99aA",
 					"source": {
@@ -4106,6 +4068,7 @@
 						]
 					},
 					"quantity": 1,
+					"equipped": true,
 					"children": [
 						{
 							"id": "eUQWQa-35-hvKmlCk",
@@ -4130,6 +4093,56 @@
 					}
 				},
 				{
+					"id": "eh-0iFyAaors0RiRt",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eLEGjF9a2hWzDLYsr"
+					},
+					"description": "Traveler's Rations",
+					"reference": "B288",
+					"local_notes": "One meal",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "2",
+					"base_weight": "0.5 lb",
+					"quantity": 38,
+					"equipped": true,
+					"calc": {
+						"value": 2,
+						"extended_value": 76,
+						"weight": "0.5 lb",
+						"extended_weight": "19 lb"
+					}
+				},
+				{
+					"id": "eFrMiVcrL6aulBWEn",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "ezs_tGacOl7kuHwQk"
+					},
+					"description": "Torch",
+					"reference": "B288",
+					"local_notes": "Burns for 1 hour",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "3",
+					"base_weight": "1 lb",
+					"quantity": 4,
+					"equipped": true,
+					"calc": {
+						"value": 3,
+						"extended_value": 12,
+						"weight": "1 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
 					"id": "eewiBpJIJ1sm_rAlN",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -4145,6 +4158,7 @@
 					"base_value": "25",
 					"base_weight": "7 lb",
 					"quantity": 1,
+					"equipped": true,
 					"calc": {
 						"value": 25,
 						"extended_value": 25,
@@ -4169,11 +4183,188 @@
 					"base_value": "5",
 					"base_weight": "1.5 lb",
 					"quantity": 1,
+					"equipped": true,
 					"calc": {
 						"value": 5,
 						"extended_value": 5,
 						"weight": "1.5 lb",
 						"extended_weight": "1.5 lb"
+					}
+				},
+				{
+					"id": "EAdm9nl5IS3WFThGZ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "EYcpX5Ib_0vAti4WE"
+					},
+					"description": "Pouch, Small",
+					"reference": "B288",
+					"tech_level": "1",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "10",
+					"base_weight": "0.5 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "3 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eWx41yd_DbxOYvXRa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Equipment.eqp",
+								"id": "e_Vhn8v2MFF-0O2p3"
+							},
+							"description": "Silver Coin",
+							"reference": "B264",
+							"tech_level": "1",
+							"tags": [
+								"Money: GURPS Standard Medieval Coins"
+							],
+							"base_value": "4",
+							"base_weight": "0.004 lb",
+							"quantity": 0,
+							"equipped": true,
+							"calc": {
+								"value": 4,
+								"extended_value": 0,
+								"weight": "0.004 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "esAcNEv9ySBwWqzHp",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Equipment.eqp",
+								"id": "e1oy_sNR1BiZ8wO1l"
+							},
+							"description": "Gold Coin",
+							"reference": "B264",
+							"tech_level": "1",
+							"tags": [
+								"Money: GURPS Standard Medieval Coins"
+							],
+							"base_value": "80",
+							"base_weight": "0.004 lb",
+							"quantity": 4,
+							"equipped": true,
+							"calc": {
+								"value": 80,
+								"extended_value": 320,
+								"weight": "0.004 lb",
+								"extended_weight": "0.016 lb"
+							}
+						},
+						{
+							"id": "eXlwTxPVi03ammCkz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Equipment.eqp",
+								"id": "ef953OT928DECjSGt"
+							},
+							"description": "Copper Farthing",
+							"reference": "B264",
+							"tech_level": "1",
+							"tags": [
+								"Money: GURPS Standard Medieval Coins"
+							],
+							"base_value": "1",
+							"base_weight": "0.008 lb",
+							"quantity": 19,
+							"equipped": true,
+							"calc": {
+								"value": 1,
+								"extended_value": 19,
+								"weight": "0.008 lb",
+								"extended_weight": "0.152 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 10,
+						"extended_value": 349,
+						"weight": "0.5 lb",
+						"extended_weight": "0.668 lb"
+					}
+				},
+				{
+					"id": "eM0fWNYCPGo1SdDr_",
+					"description": "Papel de instrucões - Estomago de Lagarto",
+					"local_notes": "10 pratas",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "exXDxOEEDF2l7P8xf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy/Dungeon Fantasy 1/Dungeon Fantasy 1 Equipment.eqp",
+						"id": "egDNj1C8K4yx043OF"
+					},
+					"description": "Minor Healing Potion",
+					"reference": "DF1:29",
+					"local_notes": "Potion. 1d HP.",
+					"tags": [
+						"Concoctions",
+						"Concoctions:Potions"
+					],
+					"base_value": "120",
+					"base_weight": "0.5 lb",
+					"quantity": 4,
+					"equipped": true,
+					"calc": {
+						"value": 120,
+						"extended_value": 480,
+						"weight": "0.5 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e2v4NvM79SCS7XwTf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy/Dungeon Fantasy 1/Dungeon Fantasy 1 Equipment.eqp",
+						"id": "eTbT8d595d80Xiavl"
+					},
+					"description": "Major Healing Potion",
+					"reference": "DF1:29",
+					"local_notes": "Potion. 2d HP.",
+					"tags": [
+						"Concoctions",
+						"Concoctions:Potions"
+					],
+					"base_value": "350",
+					"base_weight": "0.5 lb",
+					"quantity": 2,
+					"equipped": true,
+					"calc": {
+						"value": 350,
+						"extended_value": 700,
+						"weight": "0.5 lb",
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -4193,72 +4384,81 @@
 					"base_value": "50",
 					"base_weight": "20 lb",
 					"quantity": 1,
+					"equipped": true,
 					"calc": {
 						"value": 50,
 						"extended_value": 50,
 						"weight": "20 lb",
 						"extended_weight": "20 lb"
 					}
-				},
-				{
-					"id": "eFrMiVcrL6aulBWEn",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "ezs_tGacOl7kuHwQk"
-					},
-					"description": "Torch",
-					"reference": "B288",
-					"local_notes": "Burns for 1 hour",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"base_value": "3",
-					"base_weight": "1 lb",
-					"quantity": 8,
-					"calc": {
-						"value": 3,
-						"extended_value": 24,
-						"weight": "1 lb",
-						"extended_weight": "8 lb"
-					}
-				},
-				{
-					"id": "eh-0iFyAaors0RiRt",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "eLEGjF9a2hWzDLYsr"
-					},
-					"description": "Traveler's Rations",
-					"reference": "B288",
-					"local_notes": "One meal",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"base_value": "2",
-					"base_weight": "0.5 lb",
-					"quantity": 15,
-					"calc": {
-						"value": 2,
-						"extended_value": 30,
-						"weight": "0.5 lb",
-						"extended_weight": "7.5 lb"
-					}
 				}
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 778,
+				"extended_value": 1807,
 				"weight": "10 lb",
-				"extended_weight": "65.102 lb"
+				"extended_weight": "73.418 lb"
+			}
+		},
+		{
+			"id": "eKfgDFGwEroAid_sz",
+			"description": "Frasco cheio de Frutinhas",
+			"local_notes": "Umas 21",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "e-lz5C33v5thIeUEj",
+			"description": "Carta do Inveja",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		}
+	],
+	"other_equipment": [
+		{
+			"id": "exutqimj4XVIIgG_e",
+			"description": "Staff Charge",
+			"legality_class": "4",
+			"base_weight": "0",
+			"quantity": 164,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eLVohd6oK85jGlKk2",
+			"description": "Story Point",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
 			}
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-04-28T19:36:50-03:00",
+	"modified_date": "2026-05-19T14:59:43-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
