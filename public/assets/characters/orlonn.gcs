@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ACoMhDulBzURstkCw",
-	"total_points": 206,
+	"total_points": 209,
 	"points_record": [
+		{
+			"when": "2026-05-19T23:24:43-03:00",
+			"points": 3,
+			"reason": "XP da Sessão"
+		},
 		{
 			"when": "2026-05-12T23:29:14-03:00",
 			"points": 3,
@@ -1161,6 +1166,13 @@
 					}
 				},
 				{
+					"id": "t0LuaKAtppviQriRu",
+					"name": "Vício (Fruto do Diabo)",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "T2y2U4_BiY9nFIiKA",
 					"name": "Quirks (-5)",
 					"children": [
@@ -1204,7 +1216,7 @@
 						{
 							"id": "tNOHqDaoXjD0QlHxF",
 							"name": "Autism Spectrum Disorder",
-							"local_notes": "Hyperfocus on goals they receive or create\nDifficulty dealing with forced physical touch\nDifficulty interpreting irony, indirect speech, or “messages between the lines”\nThis is more of a Level 1 support need",
+							"local_notes": "Hyperfocus on goals they receive or create;\nDifficulty dealing with forced physical touch;\nDifficulty interpreting irony, indirect speech, or “messages between the lines”;\nThis is more of a Level 1 support need;",
 							"base_points": -1,
 							"calc": {
 								"points": -1
@@ -2073,6 +2085,30 @@
 	],
 	"equipment": [
 		{
+			"id": "ekYqCy1dtHQLSxvg5",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic/Magic Equipment.eqp",
+				"id": "eXzHMSKI1Vu_5pTXv"
+			},
+			"description": "Rust Energy Reserve",
+			"reference": "M20",
+			"tags": [
+				"Powerstone"
+			],
+			"base_weight": "0",
+			"max_uses": 4,
+			"quantity": 1,
+			"uses": 4,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
 			"id": "e8C47LyObPj32iTsx",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -2282,6 +2318,50 @@
 			"quantity": 1,
 			"equipped": true,
 			"children": [
+				{
+					"id": "eTBUO_XrFxbC_C6Oc",
+					"description": "Livro branco para anotar Cartografia",
+					"legality_class": "4",
+					"base_weight": "1",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ek-b_q1rmDXWpfFqO",
+					"description": "Frasco de Tinta",
+					"local_notes": "[1 quart] Tinta",
+					"legality_class": "4",
+					"base_weight": "1",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eV8zNetiwLXYJMnnl",
+					"description": "Pote de vidro",
+					"local_notes": "32 Frutas do Diabo",
+					"legality_class": "4",
+					"base_weight": "1",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
 				{
 					"id": "EPN_CrTJYD4MlEE2-",
 					"description": "Kit Cozinha",
@@ -2672,21 +2752,21 @@
 									"legality_class": "4",
 									"base_value": "92",
 									"base_weight": "5.2",
-									"quantity": 1,
+									"quantity": 0,
 									"equipped": true,
 									"calc": {
 										"value": 92,
-										"extended_value": 92,
+										"extended_value": 0,
 										"weight": "5.2 lb",
-										"extended_weight": "5.2 lb"
+										"extended_weight": "0 lb"
 									}
 								}
 							],
 							"calc": {
 								"value": 0,
-								"extended_value": 129,
+								"extended_value": 37,
 								"weight": "0 lb",
-								"extended_weight": "7.2 lb"
+								"extended_weight": "2 lb"
 							}
 						},
 						{
@@ -2763,9 +2843,9 @@
 					],
 					"calc": {
 						"value": 0,
-						"extended_value": 594,
+						"extended_value": 502,
 						"weight": "0 lb",
-						"extended_weight": "17.7 lb"
+						"extended_weight": "12.5 lb"
 					}
 				},
 				{
@@ -2819,14 +2899,14 @@
 			],
 			"calc": {
 				"value": 60,
-				"extended_value": 854,
+				"extended_value": 762,
 				"weight": "3 lb",
-				"extended_weight": "28.7 lb"
+				"extended_weight": "26.5 lb"
 			}
 		}
 	],
 	"created_date": "2026-04-21T20:00:47-03:00",
-	"modified_date": "2026-04-24T09:18:07-03:00",
+	"modified_date": "2026-05-26T20:34:10-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
