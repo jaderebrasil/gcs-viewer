@@ -707,7 +707,8 @@
 			"can_level": true,
 			"levels": 2,
 			"calc": {
-				"points": 4
+				"points": 4,
+				"current_level": 2
 			}
 		},
 		{
@@ -748,6 +749,7 @@
 			"weapons": [
 				{
 					"id": "wjnOPN9uLa7qaERug",
+					"sv": 1,
 					"damage": {
 						"type": "cr",
 						"st": "thr",
@@ -771,6 +773,7 @@
 				},
 				{
 					"id": "wAaW-jDFgOXqVv66a",
+					"sv": 1,
 					"damage": {
 						"type": "cr",
 						"st": "thr",
@@ -804,6 +807,7 @@
 				},
 				{
 					"id": "wA9CxqpcjO_sa9CuC",
+					"sv": 1,
 					"damage": {
 						"type": "cr",
 						"st": "thr"
@@ -858,7 +862,8 @@
 			"can_level": true,
 			"levels": 16,
 			"calc": {
-				"points": 16
+				"points": 16,
+				"current_level": 16
 			}
 		},
 		{
@@ -879,7 +884,8 @@
 			"can_level": true,
 			"levels": 2,
 			"calc": {
-				"points": 2
+				"points": 2,
+				"current_level": 2
 			}
 		},
 		{
@@ -900,7 +906,8 @@
 			"can_level": true,
 			"levels": 2,
 			"calc": {
-				"points": 2
+				"points": 2,
+				"current_level": 2
 			}
 		},
 		{
@@ -963,7 +970,8 @@
 			"can_level": true,
 			"levels": 2,
 			"calc": {
-				"points": 10
+				"points": 10,
+				"current_level": 2
 			}
 		},
 		{
@@ -973,7 +981,7 @@
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tRBGNZTHk6KJgxsCi"
 			},
-			"name": "Weapon Master (Shortsword)",
+			"name": "Weapon Master (Broadsword)",
 			"reference": "B99,MA48",
 			"tags": [
 				"Advantage",
@@ -984,30 +992,30 @@
 			},
 			"modifiers": [
 				{
-					"id": "mMVhrtvyrw99XWP5C",
+					"id": "mu_emSmpdPWSp1lN9",
 					"name": "One weapon",
 					"reference": "B99"
 				},
 				{
-					"id": "mR_GxaaC9IzbpmuUr",
+					"id": "mb83cMIbUT3YswO_Y",
 					"name": "Two weapons",
 					"reference": "B99",
 					"disabled": true
 				},
 				{
-					"id": "mHLgv9ldlQwFJChEe",
+					"id": "mv9qz_csNLfhh1DNy",
 					"name": "Small class",
 					"reference": "B99",
 					"disabled": true
 				},
 				{
-					"id": "mDNjeK8RTsXU79FAb",
+					"id": "mRuFCWkdzKcvtvSE-",
 					"name": "Medium class",
 					"reference": "B99",
 					"disabled": true
 				},
 				{
-					"id": "myWEcqa2GBM3hfqaZ",
+					"id": "mWIi9IrssoAfMizD7",
 					"name": "Large class",
 					"reference": "B99",
 					"disabled": true
@@ -2194,6 +2202,7 @@
 							"weapons": [
 								{
 									"id": "wgJAeBwsJGGkJd2ip",
+									"sv": 1,
 									"damage": {
 										"type": "cut",
 										"st": "sw",
@@ -2251,6 +2260,7 @@
 								},
 								{
 									"id": "w6G5WYX_musQn81uk",
+									"sv": 1,
 									"damage": {
 										"type": "cr",
 										"st": "thr",
@@ -2308,6 +2318,7 @@
 								},
 								{
 									"id": "w2UIL78tyM5Rij9M3",
+									"sv": 1,
 									"damage": {
 										"type": "cut",
 										"st": "sw",
@@ -2350,6 +2361,7 @@
 								},
 								{
 									"id": "wYugrFm7EYv8ez6SU",
+									"sv": 1,
 									"damage": {
 										"type": "cr",
 										"st": "thr",
@@ -2417,6 +2429,7 @@
 							"weapons": [
 								{
 									"id": "wfSNN1ErsLgPd0R7X",
+									"sv": 1,
 									"damage": {
 										"type": "cut",
 										"st": "sw",
@@ -2474,6 +2487,7 @@
 								},
 								{
 									"id": "wxnRSwcGFcrHVaNUU",
+									"sv": 1,
 									"damage": {
 										"type": "cr",
 										"st": "thr",
@@ -2531,6 +2545,7 @@
 								},
 								{
 									"id": "wnX7BiJjgLyUfE70b",
+									"sv": 1,
 									"damage": {
 										"type": "cut",
 										"st": "sw",
@@ -2573,6 +2588,7 @@
 								},
 								{
 									"id": "wrnHOG-1f-WvgUah3",
+									"sv": 1,
 									"damage": {
 										"type": "cr",
 										"st": "thr",
