@@ -1,8 +1,23 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 222,
+	"total_points": 223,
 	"points_record": [
+		{
+			"when": "2026-05-26T23:24:32-03:00",
+			"points": -10,
+			"reason": "Recomprei 1 de ST"
+		},
+		{
+			"when": "2026-05-26T23:22:27-03:00",
+			"points": 8,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-05-19T23:24:48-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-05-12T23:29:52-03:00",
 			"points": 3,
@@ -2807,6 +2822,13 @@
 			"calc": {
 				"points": 0
 			}
+		},
+		{
+			"id": "tKGKH3L1HNGSgsmSF",
+			"name": "Sobrevivente de Inumano",
+			"calc": {
+				"points": 0
+			}
 		}
 	],
 	"skills": [
@@ -4108,13 +4130,13 @@
 					],
 					"base_value": "2",
 					"base_weight": "0.5 lb",
-					"quantity": 38,
+					"quantity": 12,
 					"equipped": true,
 					"calc": {
 						"value": 2,
-						"extended_value": 76,
+						"extended_value": 24,
 						"weight": "0.5 lb",
-						"extended_weight": "19 lb"
+						"extended_weight": "6 lb"
 					}
 				},
 				{
@@ -4133,13 +4155,13 @@
 					],
 					"base_value": "3",
 					"base_weight": "1 lb",
-					"quantity": 4,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 3,
-						"extended_value": 12,
+						"extended_value": 0,
 						"weight": "1 lb",
-						"extended_weight": "4 lb"
+						"extended_weight": "0 lb"
 					}
 				},
 				{
@@ -4391,27 +4413,29 @@
 						"weight": "20 lb",
 						"extended_weight": "20 lb"
 					}
+				},
+				{
+					"id": "e_diNm4RoxAlawtLh",
+					"description": "Colar de ouro com cobrinha com olhos de rubi",
+					"local_notes": "Colar da serperte da cripta oculta",
+					"legality_class": "4",
+					"base_value": "2500",
+					"base_weight": "1",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 2500,
+						"extended_value": 2500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 1807,
+				"extended_value": 4243,
 				"weight": "10 lb",
-				"extended_weight": "73.418 lb"
-			}
-		},
-		{
-			"id": "eKfgDFGwEroAid_sz",
-			"description": "Frasco cheio de Frutinhas",
-			"local_notes": "Umas 21",
-			"legality_class": "4",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
+				"extended_weight": "57.418 lb"
 			}
 		},
 		{
@@ -4434,7 +4458,7 @@
 			"description": "Staff Charge",
 			"legality_class": "4",
 			"base_weight": "0",
-			"quantity": 164,
+			"quantity": 148,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4458,7 +4482,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-05-19T14:59:43-03:00",
+	"modified_date": "2026-05-26T23:24:20-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
