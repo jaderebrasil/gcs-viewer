@@ -6,6 +6,7 @@ Open and browse [GURPS Character Sheet](https://github.com/richardwilkes/gcs) ch
 ## Current Campaign
 ### Characters
 - [D'Bragança Pedregal](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs)
+- [Eldric Valen](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs)
 - [Acheron Lontaren](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs)
 - [Leptothele Tofu](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs)
 - [Yun](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs)
