@@ -16,6 +16,14 @@ YELLOW = '\033[1;33m'
 RESET = '\033[0m'
 
 
+def clean_player_name(name):
+    return name.split('\\')[-1] if '\\' in name else name
+
+
+def escape_markdown(s):
+    return re.sub(r'([\\`*_{}\[\]()#+\-.!|>~])', r'\\\1', s)
+
+
 def parse_config(block):
     config = {}
     for line in block.strip().splitlines():
@@ -36,6 +44,7 @@ def expand_directive(config):
         name = data['profile']['name']
         if fmt == 'full':
             player = data['profile'].get('player_name', '')
+            player = escape_markdown(clean_player_name(player))
             points = data.get('total_points', 0)
             lines.append(f'- [{name} ({points})]({base_url}/{gcs.name}) - by {player}')
         else:
@@ -57,6 +66,7 @@ def expand_stats(config):
     min_name, min_pts = min(entries, key=lambda e: e[1])
     max_name, max_pts = max(entries, key=lambda e: e[1])
     return (
+        f'- **Active Characters:** {len(entries)}\n'
         f'- **Avg points:** {avg:.0f}\n'
         f'- **Min points:** {min_pts} ({min_name})\n'
         f'- **Max points:** {max_pts} ({max_name})'

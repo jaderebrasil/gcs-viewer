@@ -5,14 +5,15 @@ characters in the browser, no installation required with
 [GCS Viewer](https://gcs-viewer.netlify.app).
 
 ## Current Campaign
-### Characters
+<!-- gcs-stats
+path = public/assets/characters
+-->
+
+### Active Characters
 <!-- gcs-list
 path     = public/assets/characters
 base_url = https://gcs-viewer.netlify.app/?url=./assets/characters
 format   = full
--->
-<!-- gcs-stats
-path = public/assets/characters
 -->
 
 ### Dead Characters
