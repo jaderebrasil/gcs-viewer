@@ -25,18 +25,21 @@ def parse_config(block):
     return config
 
 
-def character_name(gcs_path):
-    with open(gcs_path) as f:
-        return json.load(f)['profile']['name']
-
-
 def expand_directive(config):
     chars_dir = ROOT / config['path']
     base_url  = config['base_url'].rstrip('/')
+    fmt = config.get('format', 'basic')
     lines = []
     for gcs in sorted(chars_dir.glob('*.gcs')):
-        name = character_name(gcs)
-        lines.append(f'- [{name}]({base_url}/{gcs.name})')
+        with open(gcs) as f:
+            data = json.load(f)
+        name = data['profile']['name']
+        if fmt == 'full':
+            player = data['profile'].get('player_name', '')
+            points = data.get('total_points', 0)
+            lines.append(f'- [{name} ({points})]({base_url}/{gcs.name}) - by {player}')
+        else:
+            lines.append(f'- [{name}]({base_url}/{gcs.name})')
     return '\n'.join(lines)
 
 

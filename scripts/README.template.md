@@ -9,6 +9,7 @@ characters in the browser, no installation required with
 <!-- gcs-list
 path     = public/assets/characters
 base_url = https://gcs-viewer.netlify.app/?url=./assets/characters
+format   = full
 -->
 <!-- gcs-stats
 path = public/assets/characters

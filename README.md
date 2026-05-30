@@ -6,11 +6,11 @@ characters in the browser, no installation required with
 
 ## Current Campaign
 ### Characters
-- [D'Bragança Pedregal](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs)
-- [Eldric Valen](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs)
-- [Acheron Lontaren](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs)
-- [Leptothele Tofu](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs)
-- [Yun](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs)
+- [D'Bragança Pedregal (295)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by GUEGO-LINDEN\Gustavo
+- [Eldric Valen (232)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
+- [Acheron Lontaren (200)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by DESKTOP-SPELIJ1\Eduardo Montenegro
+- [Leptothele Tofu (224)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
+- [Yun (223)](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs) - by Marukusu
 - **Avg points:** 235
 - **Min points:** 200 (Acheron Lontaren)
 - **Max points:** 295 (D'Bragança Pedregal)
