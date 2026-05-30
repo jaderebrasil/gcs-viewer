@@ -10,6 +10,9 @@ characters in the browser, no installation required with
 path     = public/assets/characters
 base_url = https://gcs-viewer.netlify.app/?url=./assets/characters
 -->
+<!-- gcs-stats
+path = public/assets/characters
+-->
 
 ### Dead Characters
 <!-- gcs-list

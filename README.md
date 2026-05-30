@@ -11,6 +11,9 @@ characters in the browser, no installation required with
 - [Acheron Lontaren](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs)
 - [Leptothele Tofu](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs)
 - [Yun](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs)
+- **Avg points:** 235
+- **Min points:** 200 (Acheron Lontaren)
+- **Max points:** 295 (D'Bragança Pedregal)
 
 ### Dead Characters
 - [Marcusdriel Totinelves](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-marcusdriel.gcs)

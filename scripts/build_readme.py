@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 
 DIRECTIVE_RE = re.compile(r'<!--\s*gcs-list\s*\n(.*?)-->', re.DOTALL)
+STATS_DIRECTIVE_RE = re.compile(r'<!--\s*gcs-stats\s*\n(.*?)-->', re.DOTALL)
 YELLOW = '\033[1;33m'
 RESET = '\033[0m'
 
@@ -37,6 +38,26 @@ def expand_directive(config):
         name = character_name(gcs)
         lines.append(f'- [{name}]({base_url}/{gcs.name})')
     return '\n'.join(lines)
+
+
+def expand_stats(config):
+    chars_dir = ROOT / config['path']
+    entries = []
+    for gcs in sorted(chars_dir.glob('*.gcs')):
+        with open(gcs) as f:
+            data = json.load(f)
+        entries.append((data['profile']['name'], data.get('total_points', 0)))
+    if not entries:
+        return '*No characters found.*'
+    points = [p for _, p in entries]
+    avg = sum(points) / len(points)
+    min_name, min_pts = min(entries, key=lambda e: e[1])
+    max_name, max_pts = max(entries, key=lambda e: e[1])
+    return (
+        f'- **Avg points:** {avg:.0f}\n'
+        f'- **Min points:** {min_pts} ({min_name})\n'
+        f'- **Max points:** {max_pts} ({max_name})'
+    )
 
 
 def warn(message):
@@ -75,7 +96,12 @@ def main():
         config = parse_config(m.group(1))
         return expand_directive(config)
 
+    def replace_stats(m):
+        config = parse_config(m.group(1))
+        return expand_stats(config)
+
     output = DIRECTIVE_RE.sub(replace, template)
+    output = STATS_DIRECTIVE_RE.sub(replace_stats, output)
     out_path = ROOT / 'README.md'
     out_path.write_text(output)
     print(f'Written → {out_path}')
