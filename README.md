@@ -2,13 +2,23 @@
 
 Open and browse [GURPS Character Sheet](https://github.com/richardwilkes/gcs) characters in the browser, no installation required.
 
-## Characters
 
+## Current Campaign
+### Characters
 - [D'Bragança Pedregal](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs)
-- [Ivo VI Lontaren](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs)
-- [Orlonn](https://gcs-viewer.netlify.app/?url=./assets/characters/orlonn.gcs)
+- [Acheron Lontaren](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs)
 - [Leptothele Tofu](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs)
 - [Yun](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs)
+
+
+### Dead Characters
+- [Marcusdriel Totinelves](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-marcusdriel.gcs)
+- [Mythadriel Vael’Anorathiel](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-mythadriel.gcs)
+- [Orkarian](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-orkarian.gcs)
+
+### Abandoned Characters
+- [Orlonn](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/abandoned-orlonn.gcs)
+- [Séraphin d’Arven](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/abandoned-seraphin.gcs)
 
 ---
 

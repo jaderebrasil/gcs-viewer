@@ -2,11 +2,25 @@
 
 Open and browse [GURPS Character Sheet](https://github.com/richardwilkes/gcs) characters in the browser, no installation required.
 
-## Characters
 
+## Current Campaign
+### Characters
 <!-- gcs-list
 path     = public/assets/characters
 base_url = https://gcs-viewer.netlify.app/?url=./assets/characters
+-->
+
+
+### Dead Characters
+<!-- gcs-list
+path     = public/assets/dead-characters
+base_url = https://gcs-viewer.netlify.app/?url=./assets/dead-characters
+-->
+
+### Abandoned Characters
+<!-- gcs-list
+path     = public/assets/abandoned-characters
+base_url = https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters
 -->
 
 ---
