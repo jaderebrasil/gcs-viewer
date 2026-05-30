@@ -1,7 +1,8 @@
 # GCS Viewer — Simple way to read .gcs files anywhere
 
-Open and browse [GURPS Character Sheet](https://github.com/richardwilkes/gcs) characters in the browser, no installation required.
-
+Open and browse [GURPS Character Sheet](https://gurpscharactersheet.com)
+characters in the browser, no installation required with
+[GCS Viewer](https://gcs-viewer.netlify.app).
 
 ## Current Campaign
 ### Characters
@@ -10,7 +11,6 @@ Open and browse [GURPS Character Sheet](https://github.com/richardwilkes/gcs) ch
 - [Acheron Lontaren](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs)
 - [Leptothele Tofu](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs)
 - [Yun](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs)
-
 
 ### Dead Characters
 - [Marcusdriel Totinelves](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-marcusdriel.gcs)
