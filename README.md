@@ -21,6 +21,7 @@ characters in the browser, no installation required with
 - [Marcusdriel Totinelves](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-marcusdriel.gcs)
 - [Mythadriel Vael’Anorathiel](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-mythadriel.gcs)
 - [Orkarian](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-orkarian.gcs)
+- [Elnassir Prallen Habbard](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/elnassir.gcs)
 
 ### Abandoned Characters
 - [Orlonn](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/abandoned-orlonn.gcs)
