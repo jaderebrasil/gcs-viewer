@@ -1036,6 +1036,26 @@
 					}
 				},
 				{
+					"id": "ttsJ7G1ogDDOfYq9f",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tjabBEbQzLMhSX59r"
+					},
+					"name": "Arachnophobia (Spiders)",
+					"reference": "B150",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr_adj": "action_penalty",
+					"cr": 12,
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
 					"id": "tuTkmf57gtKT9nrPw",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -1086,23 +1106,82 @@
 					}
 				},
 				{
-					"id": "tWFMNXa-zoae7U81E",
+					"id": "tR5tbi9tlMuhkdG14",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tvF5dIQf3Jrwb_KXv"
+						"id": "tuBvIPa1ygEAxIiQ2"
 					},
-					"name": "Greed",
-					"reference": "B137",
-					"local_notes": "Make a self-control roll any time riches are offered – as payment for fair work, gains from adventure, spoils of crime, or just bait. If you fail, you do whatever it takes to get the payoff.",
+					"name": "Obsession",
+					"reference": "B146",
+					"local_notes": "@Goal@; Make a self-control roll whenever it would be wise to deviate from your goal. If you fail, you continue to pursue your Obsession, regardless of the consequences.",
 					"tags": [
 						"Disadvantage",
 						"Mental"
 					],
+					"replacements": {
+						"Goal": "Colecionar conhecimentos perdidos (Antigos)"
+					},
+					"modifiers": [
+						{
+							"id": "mm7jHc9mPLrsL9-vp",
+							"name": "Short term",
+							"reference": "B146",
+							"cost_adj": "-5"
+						},
+						{
+							"id": "muo4CxNMb9DGGfZ9k",
+							"name": "Long term",
+							"reference": "B146",
+							"cost_adj": "-10",
+							"disabled": true
+						}
+					],
 					"cr": 12,
-					"base_points": -15,
 					"calc": {
-						"points": -15
+						"points": -5,
+						"resolved_notes": "Colecionar conhecimentos perdidos (Antigos); Make a self-control roll whenever it would be wise to deviate from your goal. If you fail, you continue to pursue your Obsession, regardless of the consequences."
+					}
+				},
+				{
+					"id": "t5HFzyTr3n_9mWP5W",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "teUrNKXWUbRpzKFlC"
+					},
+					"name": "Compulsive Generosity",
+					"reference": "B128",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "miserliness"
+								}
+							}
+						]
+					},
+					"cr_adj": "minor_cost_of_living_increase",
+					"cr": 12,
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from pious folk",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": -5
 					}
 				},
 				{
@@ -8016,7 +8095,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-05-31T21:12:10-03:00",
+	"modified_date": "2026-06-02T17:58:22-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
