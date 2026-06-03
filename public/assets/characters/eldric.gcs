@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 232,
+	"total_points": 235,
 	"points_record": [
+		{
+			"when": "2026-06-02T23:45:25-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-01-07T14:53:01-03:00",
 			"points": 232,
@@ -4694,7 +4699,7 @@
 							"modifier": -6
 						}
 					],
-					"points": 2,
+					"points": 4,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
@@ -4703,8 +4708,8 @@
 						"points": -8
 					},
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+1"
+						"level": 16,
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -4734,7 +4739,7 @@
 							"modifier": -5
 						}
 					],
-					"points": 1,
+					"points": 2,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
@@ -4743,8 +4748,8 @@
 						"points": -9
 					},
 					"calc": {
-						"level": 15,
-						"rsl": "IQ+1"
+						"level": 16,
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -8095,7 +8100,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-06-02T17:58:22-03:00",
+	"modified_date": "2026-06-02T23:49:25-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
