@@ -1,8 +1,23 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 295,
+	"total_points": 309,
 	"points_record": [
+		{
+			"when": "2026-06-02T23:41:32-03:00",
+			"points": 3,
+			"reason": "INSS-RPG"
+		},
+		{
+			"when": "2026-05-26T23:22:19-03:00",
+			"points": 8,
+			"reason": "El Jorge Desumano DESVIVIDO"
+		},
+		{
+			"when": "2026-05-19T23:25:55-03:00",
+			"points": 3,
+			"reason": "Orlonn viciado"
+		},
 		{
 			"when": "2026-05-12T23:29:40-03:00",
 			"points": 3,
@@ -1665,7 +1680,7 @@
 				{
 					"id": "tzho64MTsWYSvr8jf",
 					"name": "Perfuração no Tórax (Cepo)",
-					"local_notes": "As raízes do Cepo atingiram e perguraram o peito de D'Bragança.",
+					"local_notes": "As raízes do Cepo atingiram e perfuraram o peito de D'Bragança.",
 					"calc": {
 						"points": 0
 					}
@@ -2659,7 +2674,7 @@
 					],
 					"modifiers": [
 						{
-							"id": "mE72Br5ZrwAAOYvJV",
+							"id": "mW6FmbUE-HYY0moSt",
 							"name": "Slow",
 							"reference": "B80",
 							"local_notes": "You recover 1 HP per 12 hours",
@@ -2667,22 +2682,22 @@
 							"disabled": true
 						},
 						{
-							"id": "m20y5pNzIFRVmPAE3",
+							"id": "mGy6I3U4-Wmtlye9h",
 							"name": "Regular",
 							"reference": "B80",
 							"local_notes": "You recover 1 HP per hour",
-							"cost_adj": "25"
-						},
-						{
-							"id": "m9BZwINmq_RW3FCam",
-							"name": "Fast",
-							"reference": "B80",
-							"local_notes": "You recover 1 HP per minute",
-							"cost_adj": "50",
+							"cost_adj": "25",
 							"disabled": true
 						},
 						{
-							"id": "mRnp5ESfzbLFZeICf",
+							"id": "mYDUpu93zsMcFh55t",
+							"name": "Fast",
+							"reference": "B80",
+							"local_notes": "You recover 1 HP per minute",
+							"cost_adj": "50"
+						},
+						{
+							"id": "mQThEcDS-gP0NVmcq",
 							"name": "Very Fast",
 							"reference": "B80",
 							"local_notes": "You recover 1 HP per second",
@@ -2690,7 +2705,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m-vLJ3deUQhs48v67",
+							"id": "maParwd7qGCNgqWGE",
 							"name": "Extreme",
 							"reference": "B80",
 							"local_notes": "You recover 10 HP per second",
@@ -2698,41 +2713,41 @@
 							"disabled": true
 						},
 						{
-							"id": "m9fusFiKSl-6iy9Wn",
+							"id": "mIbPfEJqBX62BK2Zn",
 							"name": "Heals Radiation",
 							"reference": "B80",
 							"cost_adj": "40%",
 							"disabled": true
 						},
 						{
-							"id": "mHnC63vtp1LqLcDHW",
+							"id": "m0oD8NcDTOPNWEvpn",
 							"name": "Radiation Only",
 							"reference": "B80",
 							"cost_adj": "-60%",
 							"disabled": true
 						},
 						{
-							"id": "m4ThA_kKSkKZdVuv3",
+							"id": "m8BaGBytWfeOjg4S5",
 							"name": "Fatigue Recovery",
 							"reference": "P70",
 							"cost_adj": "100%",
 							"disabled": true
 						},
 						{
-							"id": "m1W7uJYcJeIIQt02U",
+							"id": "mpfDWR5OBCSBfmGv5",
 							"name": "Fatigue Only",
 							"reference": "P70",
 							"disabled": true
 						},
 						{
-							"id": "m_N-5W-_8eJ9oXkPF",
+							"id": "mKrLkr3IqnbjB55tP",
 							"name": "Limited: @Advantage@ Only",
 							"reference": "P70",
 							"cost_adj": "-40%",
 							"disabled": true
 						},
 						{
-							"id": "mafUMCTbGRvMPQfO-",
+							"id": "mbsi98soxk0Ui_948",
 							"name": "Bane",
 							"reference": "H18",
 							"local_notes": "@Common or Very Common@",
@@ -2740,7 +2755,7 @@
 							"disabled": true
 						},
 						{
-							"id": "mJrWKdEZZhH9LH5rY",
+							"id": "mEqfVjUGas7DAUktS",
 							"name": "Bane",
 							"reference": "H18",
 							"local_notes": "@Occasional@",
@@ -2748,7 +2763,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m0M155XE0pz1YyX40",
+							"id": "mOgpKEHvOoPFGrmHj",
 							"name": "Bane",
 							"reference": "H18",
 							"local_notes": "@Rare@",
@@ -2756,13 +2771,13 @@
 							"disabled": true
 						},
 						{
-							"id": "mfkrw_O4jtU93vuGc",
+							"id": "m_uUbcT3Yzih4XSaF",
 							"name": "Pacto - Voto: Viver sob a Lei da Ferrugem",
 							"cost_adj": "-15%"
 						}
 					],
 					"calc": {
-						"points": 22
+						"points": 43
 					}
 				},
 				{
@@ -3403,7 +3418,7 @@
 				}
 			],
 			"calc": {
-				"points": 86
+				"points": 107
 			}
 		},
 		{
