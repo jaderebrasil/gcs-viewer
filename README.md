@@ -6,11 +6,13 @@ characters in the browser, no installation required with
 
 ## Current Campaign
 - **Active Characters:** 5
-- **Points:** 200 | 238 | 309 (Acheron Lontaren | D'Bragança Pedregal)
 
-- **HP:** 9 | 15 | 23 (Leptothele Tofu | Acheron Lontaren)
-- **FP:** 10 | 12 | 14 (Leptothele Tofu | Eldric Valen)
-- **DR (torso):** 2 | 5 | 7 (Eldric Valen | Acheron Lontaren)
+| Stat              |    Min |    Avg |    Max |
+|:------------------|-------:|-------:|-------:|
+| **Points:**       |    200 |    238 |    309 |
+| **HP:**           |      9 |     15 |     23 |
+| **FP:**           |     10 |     12 |     14 |
+| **DR (torso):**   |      2 |      5 |      7 |
 
 
 ### Active Characters

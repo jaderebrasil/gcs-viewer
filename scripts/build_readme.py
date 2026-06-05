@@ -75,45 +75,48 @@ def get_torso_dr(data):
     return base_dr + equip_dr
 
 
-def fmt_stat(label, entries):
+def fmt_stat(label, entries, col_width=14):
     if not entries:
         return ''
-    vals = [v for _, v in entries]
-    avg = sum(vals) / len(vals)
-    min_name, min_val = min(entries, key=lambda e: e[1])
-    max_name, max_val = max(entries, key=lambda e: e[1])
+    avg = sum(entries) / len(entries)
+    min_val = min(entries)
+    max_val = max(entries)
+    label_str = f'**{label}:**'
     return (
-        f'- **{label}:** {min_val} | {avg:.0f} | {max_val} ({min_name} | {max_name})'
+        f'| {label_str:<{col_width}} | {min_val:>6} | {avg:>6.0f} | {max_val:>6} |'
     )
 
 
 def expand_stats(config):
     chars_dir = ROOT / config['path']
-    entries = []
-    hp_entries = []
-    fp_entries = []
-    dr_entries = []
+    entries = {
+        'Points': [],
+        'HP': [],
+        'FP': [],
+        'DR (torso)': []
+    }
     for gcs in sorted(chars_dir.glob('*.gcs')):
         with open(gcs) as f:
             data = json.load(f)
-        name = data['profile']['name']
-        entries.append((name, data.get('total_points', 0)))
-        hp_entries.append((name, get_attr_value(data, 'hp')))
-        fp_entries.append((name, get_attr_value(data, 'fp')))
-        dr_entries.append((name, get_torso_dr(data)))
-    if not entries:
+        entries['Points'].append(data.get('total_points', 0))
+        entries['HP'].append(get_attr_value(data, 'hp'))
+        entries['FP'].append(get_attr_value(data, 'fp'))
+        entries['DR (torso)'].append(get_torso_dr(data))
+    if not entries['Points']:
         return '*No characters found.*'
-    points = [p for _, p in entries]
-    avg = sum(points) / len(points)
-    min_name, min_pts = min(entries, key=lambda e: e[1])
-    max_name, max_pts = max(entries, key=lambda e: e[1])
+    
+    max_label_len = max(len(f'**{l}:**') for l in entries.keys())
+    col_width = max_label_len + 2  # padding
+    
+    header = f'| {"Stat":<{col_width}} |    Min |    Avg |    Max |'
+    separator = f'|:{"-" * (col_width + 1)}|-------:|-------:|-------:|'
+    
     lines = [
-        f'- **Active Characters:** {len(entries)}',
-        f'- **Points:** {min_pts} | {avg:.0f} | {max_pts} ({min_name} | {max_name})',
+        f'- **Active Characters:** {len(entries["Points"])}',
         '',
-        fmt_stat('HP', hp_entries),
-        fmt_stat('FP', fp_entries),
-        fmt_stat('DR (torso)', dr_entries),
+        header,
+        separator,
+        *[fmt_stat(key, entr, col_width) for (key, entr) in entries.items()],
         '',
     ]
     return '\n'.join(lines)
