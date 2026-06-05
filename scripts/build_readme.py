@@ -3,9 +3,8 @@
 
 import json
 import re
-import shutil
-import subprocess
 import sys
+from html import escape as html_escape
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -127,27 +126,124 @@ def warn(message):
     print(f'{YELLOW}\n{border}\nWARNING: {message}\n{border}\n{RESET}', file=sys.stderr)
 
 
+INLINE_RE = re.compile(r'(\*\*(.+?)\*\*|`([^`]+)`|\[([^\]]+)\]\(([^)]+)\))')
+
+
+def _inline(text):
+    def repl(m):
+        if m.group(2):
+            return f'<strong>{html_escape(m.group(2))}</strong>'
+        if m.group(3):
+            return f'<code>{html_escape(m.group(3))}</code>'
+        return f'<a href="{html_escape(m.group(5))}">{html_escape(m.group(4))}</a>'
+    return INLINE_RE.sub(repl, text)
+
+
+def _parse_table(lines):
+    rows = []
+    for line in lines:
+        cells = [c.strip() for c in line.strip().strip('|').split('|')]
+        rows.append(cells)
+    if len(rows) < 2:
+        return ''
+    header = rows[0]
+    alignments = []
+    for cell in rows[1]:
+        if cell.startswith(':') and cell.endswith(':'):
+            alignments.append('center')
+        elif cell.endswith(':'):
+            alignments.append('right')
+        elif cell.startswith(':'):
+            alignments.append('left')
+        else:
+            alignments.append('')
+    body_rows = rows[2:]
+    parts = ['<table>']
+    parts.append('<thead><tr>')
+    for i, cell in enumerate(header):
+        align = f' style="text-align:{alignments[i]}"' if i < len(alignments) and alignments[i] else ''
+        parts.append(f'<th{align}>{_inline(cell)}</th>')
+    parts.append('</tr></thead>')
+    parts.append('<tbody>')
+    for row in body_rows:
+        parts.append('<tr>')
+        for i, cell in enumerate(row):
+            align = f' style="text-align:{alignments[i]}"' if i < len(alignments) and alignments[i] else ''
+            parts.append(f'<td{align}>{_inline(cell)}</td>')
+        parts.append('</tr>')
+    parts.append('</tbody></table>')
+    return '\n'.join(parts)
+
+
+def markdown_to_html(md_text):
+    lines = md_text.splitlines()
+    out = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+
+        m = re.match(r'^(#{1,3})\s+(.*)', line)
+        if m:
+            level = len(m.group(1))
+            out.append(f'<h{level}>{_inline(m.group(2))}</h{level}>')
+            i += 1
+            continue
+
+        if re.match(r'^-{3,}\s*$', line):
+            out.append('<hr>')
+            i += 1
+            continue
+
+        if line.startswith('|') and i + 1 < len(lines) and lines[i + 1].startswith('|'):
+            table_lines = []
+            while i < len(lines) and lines[i].startswith('|'):
+                table_lines.append(lines[i])
+                i += 1
+            out.append(_parse_table(table_lines))
+            continue
+
+        if line.startswith('- '):
+            items = []
+            while i < len(lines) and lines[i].startswith('- '):
+                items.append(lines[i][2:])
+                i += 1
+            out.append('<ul>')
+            for item in items:
+                out.append(f'<li>{_inline(item)}</li>')
+            out.append('</ul>')
+            continue
+
+        if line.strip() == '':
+            i += 1
+            continue
+
+        para_lines = []
+        while i < len(lines) and lines[i].strip() != '' and not lines[i].startswith('#') and not lines[i].startswith('- ') and not lines[i].startswith('|'):
+            if re.match(r'^-{3,}\s*$', lines[i]):
+                break
+            para_lines.append(lines[i])
+            i += 1
+        if para_lines:
+            out.append(f'<p>{_inline(" ".join(para_lines))}</p>')
+
+    return (
+        '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<title>README</title>\n'
+        '<style>body{font-family:sans-serif;max-width:800px;margin:auto;padding:1rem}'
+        'table{border-collapse:collapse;margin:1rem 0}'
+        'th,td{border:1px solid #ccc;padding:.4rem .8rem}'
+        'a{color:#0366d6}</style>\n'
+        '</head>\n<body>\n'
+        + '\n'.join(out)
+        + '\n</body>\n</html>\n'
+    )
+
+
 def build_html(readme_path):
-    smu = shutil.which('smu')
     out_path = ROOT / 'public' / 'readme.html'
-
-    if not smu:
-        warn('smu not found; public/readme.html was not generated.')
-        return
-
-    try:
-        result = subprocess.run(
-            [smu, str(readme_path)],
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-        out_path.write_text(result.stdout)
-    except (OSError, subprocess.CalledProcessError) as exc:
-        detail = exc.stderr.strip() if isinstance(exc, subprocess.CalledProcessError) and exc.stderr else str(exc)
-        warn(f'could not generate public/readme.html with smu: {detail}')
-        return
-
+    md_text = readme_path.read_text()
+    out_path.write_text(markdown_to_html(md_text))
     print(f'Written → {out_path}')
 
 
