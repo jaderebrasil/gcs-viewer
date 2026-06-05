@@ -6,13 +6,16 @@ characters in the browser, no installation required with
 
 ## Current Campaign
 - **Active Characters:** 5
-- **Avg points:** 238
-- **Min points:** 200 (Acheron Lontaren)
-- **Max points:** 309 (D'Bragança Pedregal)
+- **Points:** 200 | 238 | 309 (Acheron Lontaren | D'Bragança Pedregal)
+
+- **HP:** 9 | 15 | 23 (Leptothele Tofu | Acheron Lontaren)
+- **FP:** 10 | 12 | 14 (Leptothele Tofu | Eldric Valen)
+- **DR (torso):** 2 | 5 | 7 (Eldric Valen | Acheron Lontaren)
+
 
 ### Active Characters
 - [D'Bragança Pedregal (309)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
-- [Eldric Valen (232)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
+- [Eldric Valen (235)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
 - [Acheron Lontaren (200)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Eduardo Montenegro
 - [Leptothele Tofu (224)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
 - [Yun (223)](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs) - by Marukusu
