@@ -2,8 +2,20 @@
 	"type": "character",
 	"version": 4,
 	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
-	"total_points": 224,
+	"total_points": 238,
 	"points_record": [
+		{
+			"when": "2026-06-02T23:42:50-03:00",
+			"points": 3
+		},
+		{
+			"when": "2026-05-26T23:36:20-03:00",
+			"points": 8
+		},
+		{
+			"when": "2026-05-19T23:27:36-03:00",
+			"points": 3
+		},
 		{
 			"when": "2026-05-12T23:29:56-03:00",
 			"points": 3
@@ -523,10 +535,10 @@
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 0,
+			"adj": 1,
 			"calc": {
-				"value": 9,
-				"points": 0
+				"value": 10,
+				"points": 10
 			}
 		},
 		{
@@ -662,8 +674,8 @@
 			"attr_id": "hp",
 			"adj": 0,
 			"calc": {
-				"value": 9,
-				"current": 9,
+				"value": 10,
+				"current": 10,
 				"points": 0
 			}
 		}
@@ -2765,9 +2777,9 @@
 				"type": "skill",
 				"name": "Sleight of Hand",
 				"modifier": -3,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": 1
 			},
 			"defaults": [
 				{
@@ -2864,10 +2876,10 @@
 			}
 		},
 		{
-			"id": "c702d3bd-aa17-4336-ace9-2b0a5099aa04",
+			"id": "bcc0fc9a-97e1-4f6a-91de-605c774dd06e",
 			"type": "skill",
 			"name": "Shadowing",
-			"reference": "DFA88",
+			"reference": "B219",
 			"tags": [
 				"Criminal",
 				"Police",
@@ -2917,7 +2929,7 @@
 				"Street"
 			],
 			"difficulty": "dx/h",
-			"points": 1,
+			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Filch",
@@ -2934,8 +2946,8 @@
 				}
 			],
 			"calc": {
-				"level": 13,
-				"rsl": "DX-1"
+				"level": 14,
+				"rsl": "DX+0"
 			}
 		},
 		{
@@ -3517,7 +3529,7 @@
 				"Social"
 			],
 			"difficulty": "iq/h",
-			"points": 2,
+			"points": 4,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
@@ -3537,8 +3549,8 @@
 				}
 			],
 			"calc": {
-				"level": 10,
-				"rsl": "IQ-1"
+				"level": 11,
+				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -3598,7 +3610,7 @@
 				"Weapon"
 			],
 			"difficulty": "dx/a",
-			"points": 1,
+			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -3,
@@ -3618,8 +3630,8 @@
 				}
 			],
 			"calc": {
-				"level": 14,
-				"rsl": "DX+0"
+				"level": 15,
+				"rsl": "DX+1"
 			}
 		},
 		{
@@ -4165,7 +4177,7 @@
 					],
 					"calc": {
 						"level": 16,
-						"range": "4/9",
+						"range": "5/10",
 						"damage": "1d imp"
 					}
 				}
@@ -4215,8 +4227,8 @@
 					],
 					"calc": {
 						"level": 13,
-						"range": "54/90",
-						"damage": "2d-1 pi"
+						"range": "60/100",
+						"damage": "2d pi"
 					}
 				}
 			],
@@ -4383,7 +4395,7 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "2d-2 cut"
+						"damage": "2d-1 cut"
 					}
 				},
 				{
@@ -4521,7 +4533,7 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "2d-4 cut"
+						"damage": "2d-3 cut"
 					}
 				},
 				{
@@ -4891,11 +4903,11 @@
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-05-19T19:10:36-03:00",
+	"modified_date": "2026-06-09T19:11:37-03:00",
 	"calc": {
-		"swing": "2d-1",
+		"swing": "2d",
 		"thrust": "1d",
-		"basic_lift": "16 lb",
+		"basic_lift": "20 lb",
 		"striking_st_bonus": 4,
 		"dodge_bonus": 1,
 		"parry_bonus": 1,
