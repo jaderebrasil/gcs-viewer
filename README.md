@@ -9,14 +9,14 @@ characters in the browser, no installation required with
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
-| **Points:**       |    223 |    249 |    309 |
+| **Points:**       |    223 |    249 |    311 |
 | **HP:**           |     10 |     16 |     26 |
 | **FP:**           |     10 |     12 |     14 |
 | **DR (torso):**   |      2 |      5 |      7 |
 
 
 ### Active Characters
-- [D'Bragança Pedregal (309)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
+- [D'Bragança Pedregal (311)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
 - [Eldric Valen (235)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
 - [Ivo VI Lontaren (238)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
 - [Leptothele Tofu (238)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
