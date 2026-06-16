@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 223,
+	"total_points": 226,
 	"points_record": [
+		{
+			"when": "2026-06-02T23:44:26-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-05-26T23:24:32-03:00",
 			"points": -10,
@@ -2829,6 +2834,13 @@
 			"calc": {
 				"points": 0
 			}
+		},
+		{
+			"id": "tuo96urjnTp4biOn5",
+			"name": "Primeira Cerimônia",
+			"calc": {
+				"points": 0
+			}
 		}
 	],
 	"skills": [
@@ -3889,7 +3901,7 @@
 			"base_weight": "4 lb",
 			"weapons": [
 				{
-					"id": "wZOaXICeRgpMfwyUh",
+					"id": "w0uKsmwfU6UuwDXcn",
 					"sv": 1,
 					"damage": {
 						"type": "cr",
@@ -3927,7 +3939,46 @@
 					}
 				},
 				{
-					"id": "w1mIFAAL0F3CGv1SA",
+					"id": "wm9H_qFkwD0u7ZNmW",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "3+1"
+					},
+					"strength": "11†",
+					"usage": "Swung (Trademark)",
+					"usage_notes": "+1, mágico vs aberracoes",
+					"reach": "1-2",
+					"parry": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Staff"
+						},
+						{
+							"type": "skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Spear",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 17,
+						"damage": "2d+9 cr",
+						"parry": "18"
+					}
+				},
+				{
+					"id": "wtAzYxeyoLqXYVoy-",
 					"sv": 1,
 					"damage": {
 						"type": "cr",
@@ -3965,7 +4016,46 @@
 					}
 				},
 				{
-					"id": "wi8-6oE4HGLsD35_X",
+					"id": "wtt_5OJiXr3B_KkEJ",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "1d+5"
+					},
+					"strength": "11†",
+					"usage": "Swung Bufado (Trademark)",
+					"usage_notes": "+1, mágico vs aberracoes",
+					"reach": "1-2",
+					"parry": "2",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Staff"
+						},
+						{
+							"type": "skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Spear",
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 17,
+						"damage": "3d+12 cr",
+						"parry": "18"
+					}
+				},
+				{
+					"id": "wv9dgOONtcUA55Q0Z",
 					"sv": 1,
 					"damage": {
 						"type": "cr",
@@ -4005,7 +4095,7 @@
 			],
 			"modifiers": [
 				{
-					"id": "fvnUvqpjoGa1Y4bKS",
+					"id": "fBNdEYBl3zQ0SXAmX",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Low Tech/Low Tech Companion 2 Equipment Modifiers.eqm",
@@ -4155,13 +4245,13 @@
 					],
 					"base_value": "3",
 					"base_weight": "1 lb",
-					"quantity": 0,
+					"quantity": 10,
 					"equipped": true,
 					"calc": {
 						"value": 3,
-						"extended_value": 0,
+						"extended_value": 30,
 						"weight": "1 lb",
-						"extended_weight": "0 lb"
+						"extended_weight": "10 lb"
 					}
 				},
 				{
@@ -4258,15 +4348,15 @@
 							"tags": [
 								"Money: GURPS Standard Medieval Coins"
 							],
-							"base_value": "4",
+							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 0,
+							"quantity": 1,
 							"equipped": true,
 							"calc": {
-								"value": 4,
-								"extended_value": 0,
+								"value": 20,
+								"extended_value": 20,
 								"weight": "0.004 lb",
-								"extended_weight": "0 lb"
+								"extended_weight": "0.004 lb"
 							}
 						},
 						{
@@ -4282,15 +4372,15 @@
 							"tags": [
 								"Money: GURPS Standard Medieval Coins"
 							],
-							"base_value": "80",
+							"base_value": "400",
 							"base_weight": "0.004 lb",
-							"quantity": 4,
+							"quantity": 9,
 							"equipped": true,
 							"calc": {
-								"value": 80,
-								"extended_value": 320,
+								"value": 400,
+								"extended_value": 3600,
 								"weight": "0.004 lb",
-								"extended_weight": "0.016 lb"
+								"extended_weight": "0.036 lb"
 							}
 						},
 						{
@@ -4308,21 +4398,21 @@
 							],
 							"base_value": "1",
 							"base_weight": "0.008 lb",
-							"quantity": 19,
+							"quantity": 48,
 							"equipped": true,
 							"calc": {
 								"value": 1,
-								"extended_value": 19,
+								"extended_value": 48,
 								"weight": "0.008 lb",
-								"extended_weight": "0.152 lb"
+								"extended_weight": "0.384 lb"
 							}
 						}
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 349,
+						"extended_value": 3678,
 						"weight": "0.5 lb",
-						"extended_weight": "0.668 lb"
+						"extended_weight": "0.924 lb"
 					}
 				},
 				{
@@ -4413,29 +4503,13 @@
 						"weight": "20 lb",
 						"extended_weight": "20 lb"
 					}
-				},
-				{
-					"id": "e_diNm4RoxAlawtLh",
-					"description": "Colar de ouro com cobrinha com olhos de rubi",
-					"local_notes": "Colar da serperte da cripta oculta",
-					"legality_class": "4",
-					"base_value": "2500",
-					"base_weight": "1",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 2500,
-						"extended_value": 2500,
-						"weight": "1 lb",
-						"extended_weight": "1 lb"
-					}
 				}
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 4243,
+				"extended_value": 5102,
 				"weight": "10 lb",
-				"extended_weight": "57.418 lb"
+				"extended_weight": "66.674 lb"
 			}
 		},
 		{
@@ -4458,7 +4532,7 @@
 			"description": "Staff Charge",
 			"legality_class": "4",
 			"base_weight": "0",
-			"quantity": 148,
+			"quantity": 147,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4482,7 +4556,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-05-26T23:24:20-03:00",
+	"modified_date": "2026-06-02T21:50:26-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
