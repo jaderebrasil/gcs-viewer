@@ -2,8 +2,12 @@
 	"type": "character",
 	"version": 4,
 	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
-	"total_points": 240,
+	"total_points": 243,
 	"points_record": [
+		{
+			"when": "2026-06-17T00:42:29-03:00",
+			"points": 3
+		},
 		{
 			"when": "2026-06-09T23:35:34-03:00",
 			"points": 2
@@ -2746,7 +2750,7 @@
 				"Technical"
 			],
 			"difficulty": "dx/a",
-			"points": 2,
+			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
@@ -2761,8 +2765,8 @@
 				}
 			],
 			"calc": {
-				"level": 15,
-				"rsl": "DX+1"
+				"level": 16,
+				"rsl": "DX+2"
 			}
 		},
 		{
@@ -3101,9 +3105,9 @@
 				"type": "skill",
 				"name": "Lockpicking",
 				"modifier": -3,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": 2
+				"level": 12,
+				"adjusted_level": 12,
+				"points": 4
 			},
 			"defaults": [
 				{
@@ -3117,8 +3121,8 @@
 				}
 			],
 			"calc": {
-				"level": 12,
-				"rsl": "IQ+1"
+				"level": 13,
+				"rsl": "IQ+2"
 			}
 		},
 		{
@@ -4929,7 +4933,7 @@
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-06-09T23:42:55-03:00",
+	"modified_date": "2026-06-17T03:25:30-03:00",
 	"calc": {
 		"swing": "2d",
 		"thrust": "1d",
