@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 240,
+	"total_points": 243,
 	"points_record": [
+		{
+			"when": "2026-06-24T09:35:01-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-06-17T00:15:38-03:00",
 			"points": 3,
@@ -7326,6 +7331,19 @@
 	],
 	"equipment": [
 		{
+			"id": "eIYxljXSBJqzn1qOx",
+			"description": "Suspensório Mágico",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
 			"id": "EHpvFGeC4my3caHXH",
 			"description": "Armadura",
 			"legality_class": "4",
@@ -8110,7 +8128,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-06-16T22:33:58-03:00",
+	"modified_date": "2026-06-23T21:20:34-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
