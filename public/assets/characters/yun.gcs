@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 226,
+	"total_points": 232,
 	"points_record": [
+		{
+			"when": "2026-06-23T23:51:41-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-06-17T00:15:45-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-06-02T23:44:26-03:00",
 			"points": 3,
@@ -759,10 +769,10 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"cr": 12,
+					"cr": 9,
 					"base_points": -15,
 					"calc": {
-						"points": -15
+						"points": -22
 					}
 				},
 				{
@@ -875,7 +885,7 @@
 				}
 			],
 			"calc": {
-				"points": -50
+				"points": -57
 			}
 		},
 		{
@@ -2807,10 +2817,28 @@
 					"calc": {
 						"points": 19
 					}
+				},
+				{
+					"id": "TKeakKsuPv1fq3nk1",
+					"name": "Trait Container",
+					"children": [
+						{
+							"id": "tLDiL8Mq38iyddEb7",
+							"name": "Porradão ganancioso",
+							"local_notes": "1 de dano a mais em qualquer coisa.",
+							"base_points": 7,
+							"calc": {
+								"points": 7
+							}
+						}
+					],
+					"calc": {
+						"points": 7
+					}
 				}
 			],
 			"calc": {
-				"points": 45
+				"points": 52
 			}
 		},
 		{
@@ -4350,13 +4378,13 @@
 							],
 							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 1,
+							"quantity": 9,
 							"equipped": true,
 							"calc": {
 								"value": 20,
-								"extended_value": 20,
+								"extended_value": 180,
 								"weight": "0.004 lb",
-								"extended_weight": "0.004 lb"
+								"extended_weight": "0.036 lb"
 							}
 						},
 						{
@@ -4410,9 +4438,9 @@
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 3678,
+						"extended_value": 3838,
 						"weight": "0.5 lb",
-						"extended_weight": "0.924 lb"
+						"extended_weight": "0.956 lb"
 					}
 				},
 				{
@@ -4445,13 +4473,13 @@
 					],
 					"base_value": "120",
 					"base_weight": "0.5 lb",
-					"quantity": 4,
+					"quantity": 6,
 					"equipped": true,
 					"calc": {
 						"value": 120,
-						"extended_value": 480,
+						"extended_value": 720,
 						"weight": "0.5 lb",
-						"extended_weight": "2 lb"
+						"extended_weight": "3 lb"
 					}
 				},
 				{
@@ -4470,13 +4498,63 @@
 					],
 					"base_value": "350",
 					"base_weight": "0.5 lb",
-					"quantity": 2,
+					"quantity": 7,
 					"equipped": true,
 					"calc": {
 						"value": 350,
-						"extended_value": 700,
+						"extended_value": 2450,
 						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
+						"extended_weight": "3.5 lb"
+					}
+				},
+				{
+					"id": "eL3Oo0Xjm3x9w9BMI",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy/Dungeon Fantasy 1/Dungeon Fantasy 1 Equipment.eqp",
+						"id": "e7w4DHXtLcSSP0NDU"
+					},
+					"description": "Great Healing Potion",
+					"reference": "DF1:29",
+					"local_notes": "Potion. 4d HP.",
+					"tags": [
+						"Concoctions",
+						"Concoctions:Potions"
+					],
+					"base_value": "1000",
+					"base_weight": "0.5 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 1000,
+						"extended_value": 1000,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eYdy17BQN4VSyq46x",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy/Dungeon Fantasy 1/Dungeon Fantasy 1 Equipment.eqp",
+						"id": "egDNj1C8K4yx043OF"
+					},
+					"description": "Minor Fadigue Potion",
+					"reference": "DF1:29",
+					"local_notes": "Potion. 1d FP.",
+					"tags": [
+						"Concoctions",
+						"Concoctions:Potions"
+					],
+					"base_value": "135",
+					"base_weight": "0.5 lb",
+					"quantity": 3,
+					"equipped": true,
+					"calc": {
+						"value": 135,
+						"extended_value": 405,
+						"weight": "0.5 lb",
+						"extended_weight": "1.5 lb"
 					}
 				},
 				{
@@ -4507,9 +4585,9 @@
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 5102,
+				"extended_value": 8657,
 				"weight": "10 lb",
-				"extended_weight": "66.674 lb"
+				"extended_weight": "72.206 lb"
 			}
 		},
 		{
@@ -4532,7 +4610,7 @@
 			"description": "Staff Charge",
 			"legality_class": "4",
 			"base_weight": "0",
-			"quantity": 147,
+			"quantity": 135,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4556,7 +4634,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-06-02T21:50:26-03:00",
+	"modified_date": "2026-06-23T21:39:08-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
