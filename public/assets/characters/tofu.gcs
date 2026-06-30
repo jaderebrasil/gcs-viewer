@@ -2,8 +2,12 @@
 	"type": "character",
 	"version": 4,
 	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
-	"total_points": 243,
+	"total_points": 246,
 	"points_record": [
+		{
+			"when": "2026-06-24T03:52:53-03:00",
+			"points": 3
+		},
 		{
 			"when": "2026-06-17T00:42:29-03:00",
 			"points": 3
@@ -543,10 +547,10 @@
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 1,
+			"adj": 2,
 			"calc": {
-				"value": 10,
-				"points": 10
+				"value": 11,
+				"points": 20
 			}
 		},
 		{
@@ -559,10 +563,10 @@
 		},
 		{
 			"attr_id": "iq",
-			"adj": 1,
+			"adj": 2,
 			"calc": {
 				"value": 11,
-				"points": 20
+				"points": 40
 			}
 		},
 		{
@@ -657,7 +661,7 @@
 			"attr_id": "highjump",
 			"adj": 0,
 			"calc": {
-				"value": 20,
+				"value": 26,
 				"points": 0
 			}
 		},
@@ -665,7 +669,7 @@
 			"attr_id": "broadjump",
 			"adj": 0,
 			"calc": {
-				"value": 7,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -682,8 +686,8 @@
 			"attr_id": "hp",
 			"adj": 0,
 			"calc": {
-				"value": 10,
-				"current": 10,
+				"value": 11,
+				"current": 11,
 				"points": 0
 			}
 		}
@@ -720,7 +724,7 @@
 						"level": 14,
 						"parry": "No",
 						"block": "No",
-						"damage": "1d-1 cr"
+						"damage": "1d cr"
 					}
 				},
 				{
@@ -754,7 +758,7 @@
 					"calc": {
 						"level": 14,
 						"parry": "11",
-						"damage": "1d-1 cr"
+						"damage": "1d cr"
 					}
 				},
 				{
@@ -790,7 +794,7 @@
 					"calc": {
 						"level": 12,
 						"parry": "No",
-						"damage": "1d+1 cr"
+						"damage": "1d+2 cr"
 					}
 				}
 			],
@@ -1019,6 +1023,463 @@
 			"name": "Pequenino",
 			"calc": {
 				"points": 5
+			}
+		},
+		{
+			"id": "38a5836a-2b8f-46de-a16f-f70970de7034",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "308a5bd0-3eec-44ed-b467-8e163e0f4e52",
+					"type": "trait",
+					"name": "Decreased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Mental"
+					],
+					"levels": 1,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "7da071c3-9598-4d8b-8145-4805aa9416cd",
+					"type": "trait",
+					"name": "Bad Smell",
+					"reference": "B124",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from most people and animals (although pests or carrion-eating scavengers might be attracted to you!)",
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "3fc7ca45-7124-46a3-ab93-a9316cca55e0",
+					"type": "trait",
+					"name": "Appearance",
+					"reference": "B21",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "db88e777-c246-49aa-87cc-8c1dbfef8cd0",
+							"type": "modifier",
+							"name": "Attractive",
+							"reference": "B21",
+							"cost": 4,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 1
+								}
+							]
+						},
+						{
+							"id": "2fda71e1-13b5-4bed-8188-83946dbbb13b",
+							"type": "modifier",
+							"name": "Average",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "59011a6b-7cd8-4a59-8a7b-af75aa057843",
+							"type": "modifier",
+							"name": "Beautiful",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "f2ef3d46-2535-466f-b85d-82d3a9a59937",
+							"type": "modifier",
+							"name": "Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "260c9611-0aad-407d-a8f2-cdeab7f8e022",
+							"type": "modifier",
+							"name": "Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "1d6d3fc1-a874-42ee-a40a-ab72d7d653ff",
+							"type": "modifier",
+							"name": "Handsome",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "66b67232-40a9-49ce-a30c-a41aa79a86e8",
+							"type": "modifier",
+							"name": "Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "5c3f10f5-fb42-44a7-9953-ce727ebc4c89",
+							"type": "modifier",
+							"name": "Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "cfef51b4-8526-47be-bb28-49c4e7db46b5",
+							"type": "modifier",
+							"name": "Hideous",
+							"reference": "B21",
+							"cost": -16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -4
+								}
+							]
+						},
+						{
+							"id": "67eda3d3-3b02-4324-b86a-cad4432e2092",
+							"type": "modifier",
+							"name": "Horrific",
+							"reference": "B21",
+							"cost": -24,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -6
+								}
+							]
+						},
+						{
+							"id": "1d0d263d-39e6-4b05-96c9-bcab7c73917a",
+							"type": "modifier",
+							"name": "Impressive",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea5ee8d3-92de-44f7-b869-97bbcb0a0446",
+							"type": "modifier",
+							"name": "Monstrous",
+							"reference": "B21",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -5
+								}
+							]
+						},
+						{
+							"id": "bcec029e-a194-48dd-a4f3-d79852417ff1",
+							"type": "modifier",
+							"name": "Off-the-Shelf Looks",
+							"reference": "B21",
+							"notes": "Halves the usual reaction bonus - adjust manually",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "4e3e372b-d8bb-41c3-a675-1c37f39c0a06",
+							"type": "modifier",
+							"name": "Transcendent",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 8
+								}
+							]
+						},
+						{
+							"id": "2bb71c80-552e-499d-a4e6-e57f26881a8c",
+							"type": "modifier",
+							"name": "Transcendent (Androgynous)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							]
+						},
+						{
+							"id": "ddf25679-e521-4ac2-b914-5b31d097cc09",
+							"type": "modifier",
+							"name": "Transcendent (Impressive)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							]
+						},
+						{
+							"id": "52c66ff0-cb7b-4bd8-8d77-4e6f78fa6ce4",
+							"type": "modifier",
+							"name": "Ugly",
+							"reference": "B21",
+							"cost": -8,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -2
+								}
+							]
+						},
+						{
+							"id": "f2ade180-af68-4cdb-91c2-2b6062b625b5",
+							"type": "modifier",
+							"name": "Unattractive",
+							"reference": "B21",
+							"cost": -4,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -1
+								}
+							]
+						},
+						{
+							"id": "585340a8-301a-451e-918c-89fac91595d4",
+							"type": "modifier",
+							"name": "Universal",
+							"reference": "B21",
+							"cost": 25,
+							"disabled": true
+						},
+						{
+							"id": "e1bcea51-b24b-4e72-a625-be62b9161aaf",
+							"type": "modifier",
+							"name": "Very Beautiful",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							]
+						},
+						{
+							"id": "45fe1d7c-54ed-4171-ac37-0c14d3825e89",
+							"type": "modifier",
+							"name": "Very Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "211f4936-94c1-4043-862b-d73a066832ac",
+							"type": "modifier",
+							"name": "Very Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "8c0bc9b1-f818-427e-838e-9cb3f1125587",
+							"type": "modifier",
+							"name": "Very Handsome",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							]
+						},
+						{
+							"id": "1cf4494d-453a-403d-890b-7233286080e7",
+							"type": "modifier",
+							"name": "Very Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "19314e0f-05c4-4488-adf0-ba1785d46b23",
+							"type": "modifier",
+							"name": "Very Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": -8
+					}
+				},
+				{
+					"id": "fbf935f9-f2d6-48fe-965b-bfcda4e900f9",
+					"type": "trait",
+					"name": "Olhos amarelados",
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "f80ea6fa-05a2-4035-a4d8-74e1ef71b73e",
+					"type": "trait",
+					"name": "Meio morto-vivo",
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				}
+			],
+			"name": "Half undead",
+			"calc": {
+				"points": -20
 			}
 		},
 		{
@@ -2341,7 +2802,7 @@
 		{
 			"id": "b205fc04-2a54-4a9c-942d-c2804cd1d5bc",
 			"type": "trait",
-			"name": "Só fuma quano bebe",
+			"name": "Só fuma quando bebe",
 			"base_points": -1,
 			"calc": {
 				"points": -1
@@ -2900,9 +3361,9 @@
 				"type": "skill",
 				"name": "Stealth",
 				"modifier": -4,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": 1
+				"level": 11,
+				"adjusted_level": 11,
+				"points": 2
 			},
 			"defaults": [
 				{
@@ -3054,7 +3515,7 @@
 				}
 			],
 			"calc": {
-				"level": 15,
+				"level": 16,
 				"rsl": "DX+2"
 			}
 		},
@@ -3184,7 +3645,7 @@
 				}
 			],
 			"calc": {
-				"level": 17,
+				"level": 18,
 				"rsl": "DX+4"
 			}
 		},
@@ -4201,7 +4662,7 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "1d imp"
+						"damage": "1d+1 imp"
 					}
 				},
 				{
@@ -4232,8 +4693,8 @@
 					],
 					"calc": {
 						"level": 16,
-						"range": "5/10",
-						"damage": "1d imp"
+						"range": "5/11",
+						"damage": "1d+1 imp"
 					}
 				}
 			],
@@ -4282,8 +4743,8 @@
 					],
 					"calc": {
 						"level": 13,
-						"range": "60/100",
-						"damage": "2d pi"
+						"range": "66/110",
+						"damage": "2d+1 pi"
 					}
 				}
 			],
@@ -4450,7 +4911,7 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "2d-1 cut"
+						"damage": "2d cut"
 					}
 				},
 				{
@@ -4495,7 +4956,7 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "1d+3 imp"
+						"damage": "1d+4 imp"
 					}
 				}
 			],
@@ -4588,7 +5049,7 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "2d-3 cut"
+						"damage": "2d-2 cut"
 					}
 				},
 				{
@@ -4633,7 +5094,7 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "1d+1 imp"
+						"damage": "1d+2 imp"
 					}
 				}
 			],
@@ -4933,11 +5394,11 @@
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-06-17T03:25:30-03:00",
+	"modified_date": "2026-06-24T04:00:36-03:00",
 	"calc": {
-		"swing": "2d",
-		"thrust": "1d",
-		"basic_lift": "20 lb",
+		"swing": "2d+1",
+		"thrust": "1d+1",
+		"basic_lift": "24 lb",
 		"striking_st_bonus": 4,
 		"dodge_bonus": 1,
 		"parry_bonus": 1,

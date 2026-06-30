@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 311,
+	"total_points": 317,
 	"points_record": [
+		{
+			"when": "2026-06-23T23:47:08-03:00",
+			"points": 3,
+			"reason": "desRIP Tofu e mão mole"
+		},
+		{
+			"when": "2026-06-17T00:16:47-03:00",
+			"points": 3,
+			"reason": "Treedra e babuín-bunda-fosforecente"
+		},
 		{
 			"when": "2026-06-09T23:31:43-03:00",
 			"points": 2,
@@ -979,7 +989,7 @@
 						}
 					],
 					"calc": {
-						"level": 14,
+						"level": 15,
 						"damage": "cr",
 						"parry": "12"
 					}
@@ -1676,7 +1686,7 @@
 				},
 				{
 					"id": "tTtq77NnVGXUCH6Bd",
-					"name": "Mordida de Lagartus Gigantus",
+					"name": "Mordida (Lagartus Gigantus)",
 					"local_notes": "No fatídico dia em que D'Bragança perdeu seus aliados, também perdeu uma boa parcela de sangue. Agora o doloroso lembrete dói tanto em sua carne, quanto em sua alma.",
 					"calc": {
 						"points": 0
@@ -1692,8 +1702,24 @@
 				},
 				{
 					"id": "tO153m70SdXBnXH2P",
-					"name": "Dentes Quebrados",
+					"name": "Dentes Quebrados (Ogro Mutante)",
 					"local_notes": "Depois de dois golpes esmagadores do malho do Ogro Mutante, D'Bragança sofreu uma torção no pé e perdeu dois dentes da frente.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tyEnIAB9wLIPUo67n",
+					"name": "Mordiscadela (Treedra)",
+					"local_notes": "Uma hydra-ent-cepo mordeu ferozmente o torso de D'Bragança, causando ferimentos profundos.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t48_c7EXRMS2bWNIU",
+					"name": "Semi-amputação (Treedra)",
+					"local_notes": "Uma mordida da aberração quase amputa o braço direito de D'Bragança, deixando-o molengo por uns dias.",
 					"calc": {
 						"points": 0
 					}
@@ -3411,7 +3437,7 @@
 								}
 							],
 							"calc": {
-								"level": 14,
+								"level": 15,
 								"damage": "1d+1 pi",
 								"parry": "11"
 							}
@@ -4468,10 +4494,10 @@
 					],
 					"difficulty": "dx/h",
 					"encumbrance_penalty_multiplier": 1,
-					"points": 12,
+					"points": 16,
 					"calc": {
-						"level": 14,
-						"rsl": "DX+2"
+						"level": 15,
+						"rsl": "DX+3"
 					}
 				},
 				{
@@ -4512,7 +4538,7 @@
 					},
 					"points": 2,
 					"calc": {
-						"level": 13,
+						"level": 14,
 						"rsl": "-1"
 					}
 				},
@@ -4539,7 +4565,7 @@
 					"limit": 4,
 					"points": 1,
 					"calc": {
-						"level": 15,
+						"level": 16,
 						"rsl": "+1"
 					}
 				},
@@ -4566,7 +4592,7 @@
 					"limit": 0,
 					"points": 2,
 					"calc": {
-						"level": 14,
+						"level": 15,
 						"rsl": "+0"
 					}
 				}
@@ -5018,7 +5044,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-06-09T23:33:41-03:00",
+	"modified_date": "2026-06-23T23:49:45-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
