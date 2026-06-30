@@ -18,7 +18,7 @@ characters in the browser, no installation required with
 ### Active Characters
 - [D'Bragança Pedregal (317)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
 - [Eldric Valen (243)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
-- [Ivo VI Lontaren (238)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
+- [Acheron Lontaren (238)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Eduardo Montenegro
 - [Leptothele Tofu (246)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
 - [Yun (232)](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs) - by Marukusu
 
