@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 243,
+	"total_points": 246,
 	"points_record": [
+		{
+			"when": "2026-07-01T11:05:48-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-06-24T09:35:01-03:00",
 			"points": 3,
@@ -7331,19 +7336,6 @@
 	],
 	"equipment": [
 		{
-			"id": "eIYxljXSBJqzn1qOx",
-			"description": "Suspensório Mágico",
-			"legality_class": "4",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
 			"id": "EHpvFGeC4my3caHXH",
 			"description": "Armadura",
 			"legality_class": "4",
@@ -7585,6 +7577,35 @@
 					}
 				},
 				{
+					"id": "egRvgT7U9MX46-nb2",
+					"description": "Comida",
+					"legality_class": "4",
+					"base_weight": "0.5",
+					"quantity": 10,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eLhORz5SE_l2AQ0TC",
+					"description": "Livro de Poesias",
+					"local_notes": "Conhecimentos de Poetry, História de Calenost, Public Speak",
+					"legality_class": "4",
+					"base_weight": "6",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
 					"id": "emYRaGJZQZ7rmGcb0",
 					"description": "Emblema da Guilda \"Artistas sem Aplausos\"",
 					"local_notes": "A pinewood emblem measuring 10 cm in diameter and ½ inch thick.",
@@ -7741,7 +7762,7 @@
 				"value": 60,
 				"extended_value": 263.75,
 				"weight": "3 lb",
-				"extended_weight": "10.76 lb"
+				"extended_weight": "21.76 lb"
 			}
 		},
 		{
@@ -8128,7 +8149,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-06-23T21:20:34-03:00",
+	"modified_date": "2026-06-30T22:32:23-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
