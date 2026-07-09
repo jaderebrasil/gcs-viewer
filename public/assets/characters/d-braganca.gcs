@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 317,
+	"total_points": 324,
 	"points_record": [
+		{
+			"when": "2026-07-07T23:38:21-03:00",
+			"points": 4,
+			"reason": "Fim da Guerra (Orcusho Morto)"
+		},
+		{
+			"when": "2026-06-30T23:30:57-03:00",
+			"points": 3,
+			"reason": "Encontramos Donatelo"
+		},
 		{
 			"when": "2026-06-23T23:47:08-03:00",
 			"points": 3,
@@ -989,9 +999,9 @@
 						}
 					],
 					"calc": {
-						"level": 15,
+						"level": 17,
 						"damage": "cr",
-						"parry": "12"
+						"parry": "13"
 					}
 				}
 			],
@@ -1425,6 +1435,20 @@
 			],
 			"points_per_level": 5,
 			"features": [
+				{
+					"type": "weapon_parry_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Parry Missile-Weapons"
+					},
+					"usage": {
+						"compare": "is",
+						"qualifier": "Bare hands"
+					},
+					"amount": 1,
+					"leveled": true
+				},
 				{
 					"type": "conditional_modifier",
 					"situation": "to Parry with bare hands",
@@ -3437,9 +3461,9 @@
 								}
 							],
 							"calc": {
-								"level": 15,
+								"level": 17,
 								"damage": "1d+1 pi",
-								"parry": "11"
+								"parry": "12"
 							}
 						}
 					],
@@ -4427,6 +4451,75 @@
 			"name": "Ferru-jitsu",
 			"children": [
 				{
+					"id": "s_WOF_PRWHkeOve3m",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s9bNXHihrn0LcyZDW"
+					},
+					"name": "Parry Missile-Weapons",
+					"reference": "B212",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"weapons": [
+						{
+							"id": "wk6xZaAvwh1S8sN4E",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st_mul": 0.1
+							},
+							"usage": "Bare hands",
+							"usage_notes": "Limited to Judo Parry!",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Parry Missile-Weapons"
+								}
+							],
+							"calc": {
+								"level": 10,
+								"damage": "cr",
+								"parry": "10"
+							}
+						},
+						{
+							"id": "wQlIJj0w2_I-V4eq_",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st_mul": 0.1
+							},
+							"usage": "Rabeta",
+							"usage_notes": "Limited to Judo Parry!",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Parry Missile-Weapons"
+								}
+							],
+							"calc": {
+								"level": 10,
+								"damage": "cr",
+								"parry": "9"
+							}
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 10,
+						"rsl": "DX-2"
+					}
+				},
+				{
 					"id": "sU6iLm7ZihWwoZvP7",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -4494,10 +4587,10 @@
 					],
 					"difficulty": "dx/h",
 					"encumbrance_penalty_multiplier": 1,
-					"points": 16,
+					"points": 24,
 					"calc": {
-						"level": 15,
-						"rsl": "DX+3"
+						"level": 17,
+						"rsl": "DX+5"
 					}
 				},
 				{
@@ -4538,7 +4631,7 @@
 					},
 					"points": 2,
 					"calc": {
-						"level": 14,
+						"level": 16,
 						"rsl": "-1"
 					}
 				},
@@ -4565,7 +4658,7 @@
 					"limit": 4,
 					"points": 1,
 					"calc": {
-						"level": 16,
+						"level": 18,
 						"rsl": "+1"
 					}
 				},
@@ -4592,7 +4685,7 @@
 					"limit": 0,
 					"points": 2,
 					"calc": {
-						"level": 15,
+						"level": 17,
 						"rsl": "+0"
 					}
 				}
@@ -5044,7 +5137,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-06-23T23:49:45-03:00",
+	"modified_date": "2026-07-09T15:43:45-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
