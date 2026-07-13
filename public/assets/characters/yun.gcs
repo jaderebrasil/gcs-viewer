@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 232,
+	"total_points": 239,
 	"points_record": [
+		{
+			"when": "2026-07-07T23:37:44-03:00",
+			"points": 4,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-06-30T23:30:46-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-06-23T23:51:41-03:00",
 			"points": 3,
@@ -3609,7 +3619,7 @@
 							"modifier": -4
 						}
 					],
-					"points": 1,
+					"points": 2,
 					"defaulted_from": {
 						"type": "will",
 						"modifier": -6,
@@ -3618,8 +3628,8 @@
 						"points": -4
 					},
 					"calc": {
-						"level": 8,
-						"rsl": "Will-2"
+						"level": 9,
+						"rsl": "Will-1"
 					}
 				},
 				{
@@ -3876,7 +3886,7 @@
 					"modifier": -2
 				}
 			],
-			"points": 24,
+			"points": 36,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
@@ -3885,8 +3895,8 @@
 				"points": -5
 			},
 			"calc": {
-				"level": 16,
-				"rsl": "DX+6"
+				"level": 19,
+				"rsl": "DX+9"
 			}
 		},
 		{
@@ -3904,10 +3914,10 @@
 				"Weapon"
 			],
 			"difficulty": "dx/h",
-			"points": 8,
+			"points": 12,
 			"calc": {
-				"level": 11,
-				"rsl": "DX+1"
+				"level": 12,
+				"rsl": "DX+2"
 			}
 		}
 	],
@@ -3961,9 +3971,9 @@
 						}
 					],
 					"calc": {
-						"level": 17,
+						"level": 20,
 						"damage": "2d+8 cr",
-						"parry": "18"
+						"parry": "20"
 					}
 				},
 				{
@@ -4000,9 +4010,9 @@
 						}
 					],
 					"calc": {
-						"level": 17,
+						"level": 20,
 						"damage": "2d+9 cr",
-						"parry": "18"
+						"parry": "20"
 					}
 				},
 				{
@@ -4038,9 +4048,9 @@
 						}
 					],
 					"calc": {
-						"level": 17,
+						"level": 20,
 						"damage": "3d+11 cr",
-						"parry": "18"
+						"parry": "20"
 					}
 				},
 				{
@@ -4077,9 +4087,9 @@
 						}
 					],
 					"calc": {
-						"level": 17,
+						"level": 20,
 						"damage": "3d+12 cr",
-						"parry": "18"
+						"parry": "20"
 					}
 				},
 				{
@@ -4115,9 +4125,9 @@
 						}
 					],
 					"calc": {
-						"level": 17,
+						"level": 20,
 						"damage": "1d+6 cr",
-						"parry": "18"
+						"parry": "20"
 					}
 				}
 			],
@@ -4248,13 +4258,13 @@
 					],
 					"base_value": "2",
 					"base_weight": "0.5 lb",
-					"quantity": 12,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 2,
-						"extended_value": 24,
+						"extended_value": 0,
 						"weight": "0.5 lb",
-						"extended_weight": "6 lb"
+						"extended_weight": "0 lb"
 					}
 				},
 				{
@@ -4273,13 +4283,13 @@
 					],
 					"base_value": "3",
 					"base_weight": "1 lb",
-					"quantity": 10,
+					"quantity": 8,
 					"equipped": true,
 					"calc": {
 						"value": 3,
-						"extended_value": 30,
+						"extended_value": 24,
 						"weight": "1 lb",
-						"extended_weight": "10 lb"
+						"extended_weight": "8 lb"
 					}
 				},
 				{
@@ -4378,13 +4388,13 @@
 							],
 							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 9,
+							"quantity": 5,
 							"equipped": true,
 							"calc": {
 								"value": 20,
-								"extended_value": 180,
+								"extended_value": 100,
 								"weight": "0.004 lb",
-								"extended_weight": "0.036 lb"
+								"extended_weight": "0.02 lb"
 							}
 						},
 						{
@@ -4426,21 +4436,21 @@
 							],
 							"base_value": "1",
 							"base_weight": "0.008 lb",
-							"quantity": 48,
+							"quantity": 58,
 							"equipped": true,
 							"calc": {
 								"value": 1,
-								"extended_value": 48,
+								"extended_value": 58,
 								"weight": "0.008 lb",
-								"extended_weight": "0.384 lb"
+								"extended_weight": "0.464 lb"
 							}
 						}
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 3838,
+						"extended_value": 3768,
 						"weight": "0.5 lb",
-						"extended_weight": "0.956 lb"
+						"extended_weight": "1.02 lb"
 					}
 				},
 				{
@@ -4473,13 +4483,13 @@
 					],
 					"base_value": "120",
 					"base_weight": "0.5 lb",
-					"quantity": 6,
+					"quantity": 4,
 					"equipped": true,
 					"calc": {
 						"value": 120,
-						"extended_value": 720,
+						"extended_value": 480,
 						"weight": "0.5 lb",
-						"extended_weight": "3 lb"
+						"extended_weight": "2 lb"
 					}
 				},
 				{
@@ -4581,13 +4591,55 @@
 						"weight": "20 lb",
 						"extended_weight": "20 lb"
 					}
+				},
+				{
+					"id": "eAzhbwyoidBQrJemk",
+					"description": "Estatueta de 15cm de cobre",
+					"legality_class": "4",
+					"base_weight": "6",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "e0HkxqgGY5SNfLQ--",
+					"description": "Amuleto de olho mágico elfico",
+					"legality_class": "4",
+					"base_weight": "0.25",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "eLUXZ9zu0p66hZfu0",
+					"description": "Couro dos TROGS",
+					"legality_class": "4",
+					"base_weight": "1",
+					"quantity": 10,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "1 lb",
+						"extended_weight": "10 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 8657,
+				"extended_value": 8317,
 				"weight": "10 lb",
-				"extended_weight": "72.206 lb"
+				"extended_weight": "79.52 lb"
 			}
 		},
 		{
@@ -4610,7 +4662,7 @@
 			"description": "Staff Charge",
 			"legality_class": "4",
 			"base_weight": "0",
-			"quantity": 135,
+			"quantity": 122,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4623,7 +4675,7 @@
 			"id": "eLVohd6oK85jGlKk2",
 			"description": "Story Point",
 			"legality_class": "4",
-			"quantity": 1,
+			"quantity": 4,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4634,7 +4686,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-06-23T21:39:08-03:00",
+	"modified_date": "2026-07-13T14:00:01-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
