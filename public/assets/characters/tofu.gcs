@@ -2,8 +2,16 @@
 	"type": "character",
 	"version": 4,
 	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
-	"total_points": 246,
+	"total_points": 253,
 	"points_record": [
+		{
+			"when": "2026-07-07T23:38:14-03:00",
+			"points": 4
+		},
+		{
+			"when": "2026-07-01T00:09:27-03:00",
+			"points": 3
+		},
 		{
 			"when": "2026-06-24T03:52:53-03:00",
 			"points": 3
@@ -377,7 +385,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 4
+							"all": 2
 						}
 					}
 				},
@@ -391,7 +399,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 2
+							"all": 0
 						}
 					}
 				},
@@ -431,7 +439,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 2
+							"all": 0
 						}
 					}
 				},
@@ -445,7 +453,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 2
+							"all": 0
 						}
 					}
 				},
@@ -487,7 +495,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 8
+							"all": 0
 						}
 					}
 				},
@@ -501,7 +509,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 2
+							"all": 0
 						}
 					}
 				},
@@ -528,7 +536,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 2
+							"all": 0
 						}
 					}
 				}
@@ -794,7 +802,7 @@
 					"calc": {
 						"level": 12,
 						"parry": "No",
-						"damage": "1d+2 cr"
+						"damage": "1d+1 cr"
 					}
 				}
 			],
@@ -1861,7 +1869,7 @@
 		{
 			"id": "408d3d2a-14b3-49c3-a30a-bf84dc9002f9",
 			"type": "trait",
-			"name": "Weapon Master (Knife)",
+			"name": "Weapon Master (Katar)",
 			"reference": "B99,MA48",
 			"tags": [
 				"Advantage",
@@ -4115,7 +4123,7 @@
 			],
 			"specialization": "Knife",
 			"difficulty": "dx/e",
-			"points": 2,
+			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -4,
@@ -4130,8 +4138,8 @@
 				}
 			],
 			"calc": {
-				"level": 16,
-				"rsl": "DX+2"
+				"level": 17,
+				"rsl": "DX+3"
 			}
 		},
 		{
@@ -4572,6 +4580,24 @@
 			}
 		},
 		{
+			"id": "0912243d-8958-4d09-b649-72afb9cce0a1",
+			"type": "skill",
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"specialization": "Knife",
+			"difficulty": "dx/e",
+			"points": 1,
+			"calc": {
+				"level": 15,
+				"rsl": "DX+1"
+			}
+		},
+		{
 			"id": "f4a359be-8b90-4830-a019-d0a17151fe78",
 			"type": "skill",
 			"name": "Thaumatology",
@@ -4603,21 +4629,70 @@
 	],
 	"equipment": [
 		{
-			"id": "9c1cec42-5af5-44f2-bafd-e3795ed4afbc",
+			"id": "bbd49169-9741-4419-b8b9-4104acfe3b69",
 			"type": "equipment",
-			"description": "Dagger",
+			"description": "Small Knife",
 			"reference": "B272",
-			"tech_level": "1",
+			"tech_level": "0",
 			"tags": [
 				"Melee Weapon",
 				"Missile Weapon"
 			],
-			"quantity": 2,
-			"value": 20,
-			"weight": "0.25 lb",
+			"quantity": 4,
+			"value": 30,
+			"weight": "0.5 lb",
 			"weapons": [
 				{
-					"id": "7ba39755-8571-43fa-a9af-4d6cc53df929",
+					"id": "54c8821c-2118-4bfe-917f-0f67d05daebe",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "-3"
+					},
+					"strength": "5",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					],
+					"calc": {
+						"level": 16,
+						"parry": "11",
+						"block": "No",
+						"damage": "2d-2 cut"
+					}
+				},
+				{
+					"id": "67ceeb5f-82cd-4f0d-ac4b-96f7aa84d2eb",
 					"type": "melee_weapon",
 					"damage": {
 						"type": "imp",
@@ -4662,11 +4737,11 @@
 						"level": 16,
 						"parry": "11",
 						"block": "No",
-						"damage": "1d+1 imp"
+						"damage": "1d imp"
 					}
 				},
 				{
-					"id": "7d6f591f-516a-4cc3-92bf-8971b0537f84",
+					"id": "c861b2c4-f6c5-4d81-ae55-a0d59663b2a4",
 					"type": "ranged_weapon",
 					"damage": {
 						"type": "imp",
@@ -4692,709 +4767,60 @@
 						}
 					],
 					"calc": {
-						"level": 16,
+						"level": 17,
 						"range": "5/11",
-						"damage": "1d+1 imp"
+						"damage": "1d imp"
 					}
 				}
 			],
 			"equipped": true,
 			"calc": {
-				"extended_value": 40,
-				"extended_weight": "0.5 lb"
+				"extended_value": 120,
+				"extended_weight": "2 lb"
 			}
 		},
 		{
-			"id": "d7fb0be2-698e-42e6-ace7-dbbf87f384de",
+			"id": "c5feeeaa-d227-4a6d-a168-c1da4b5d9d15",
 			"type": "equipment",
-			"description": "Sling",
-			"reference": "B276",
-			"tech_level": "0",
-			"tags": [
-				"Missile Weapon",
-				"UsesAmmoType:Sling"
-			],
-			"quantity": 1,
-			"value": 20,
-			"weight": "0.5 lb",
-			"weapons": [
-				{
-					"id": "b566ba0b-ea56-4701-8f84-186385028e7b",
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "pi",
-						"st": "sw"
-					},
-					"strength": "6",
-					"accuracy": "0",
-					"range": "x6/x10",
-					"rate_of_fire": "1",
-					"shots": "1(2)",
-					"bulk": "-4",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -6
-						},
-						{
-							"type": "skill",
-							"name": "Sling"
-						}
-					],
-					"calc": {
-						"level": 13,
-						"range": "66/110",
-						"damage": "2d+1 pi"
-					}
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 20,
-				"extended_weight": "0.5 lb"
-			}
-		},
-		{
-			"id": "1955b01b-a23c-4f34-a3c2-1e3912481c29",
-			"type": "equipment",
-			"description": "Katar",
-			"reference": "LT57",
-			"notes": "Reduce penalty for targeting chinks in armor (p. B400) by -2; Use Brawling or Karate parry if better than usual weapon parry.",
-			"tech_level": "2",
-			"tags": [
-				"Melee Weapon"
-			],
-			"modifiers": [
-				{
-					"id": "c729e29f-0467-44cd-a616-86ea177a5d65",
-					"type": "eqp_modifier",
-					"name": "Silver",
-					"reference": "LT59",
-					"cost_type": "to_base_cost",
-					"disabled": true,
-					"tech_level": "0",
-					"cost": "+19 CF"
-				},
-				{
-					"id": "af1f486a-8ba5-47b5-ac77-08ddbffe3541",
-					"type": "eqp_modifier",
-					"name": "Fine",
-					"reference": "LT59",
-					"notes": "Fencing weapons, knives, swords, and missile weapons.",
-					"cost_type": "to_base_cost",
-					"disabled": true,
-					"tech_level": "0",
-					"cost": "+3 CF",
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "this_weapon",
-							"amount": 1
-						}
-					]
-				},
-				{
-					"id": "4bf04555-6f0b-402a-9e78-e10d74c2a809",
-					"type": "eqp_modifier",
-					"name": "Fine",
-					"reference": "LT59",
-					"notes": "Fencing weapons, knives, swords, and missile weapons.",
-					"cost_type": "to_base_cost",
-					"disabled": true,
-					"tech_level": "0",
-					"cost": "+3 CF",
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "this_weapon",
-							"amount": 1
-						}
-					]
-				},
-				{
-					"id": "a58382d6-d216-4b83-9ed4-d70a4a0c0268",
-					"type": "eqp_modifier",
-					"name": "Very Fine",
-					"reference": "LT59",
-					"notes": "Fencing weapons, knives, and swords.",
-					"cost_type": "to_base_cost",
-					"disabled": true,
-					"tech_level": "0",
-					"cost": "+19 CF",
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "this_weapon",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "18a6aa9e-2d20-42ef-a159-309e56f26ac5",
-					"type": "eqp_modifier",
-					"name": "Very Fine",
-					"reference": "LT59",
-					"notes": "Fencing weapons, knives, and swords.",
-					"cost_type": "to_base_cost",
-					"disabled": true,
-					"tech_level": "0",
-					"cost": "+19 CF",
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "this_weapon",
-							"amount": 2
-						}
-					]
-				},
-				{
-					"id": "d8fa30d4-1544-45a2-b0ba-0bf162a1efaa",
-					"type": "eqp_modifier",
-					"name": "Very Fine",
-					"reference": "LT59",
-					"notes": "Fencing weapons, knives, and swords.",
-					"cost_type": "to_base_cost",
-					"tech_level": "0",
-					"cost": "+19 CF",
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "this_weapon",
-							"amount": 2
-						}
-					]
-				}
-			],
-			"quantity": 1,
-			"value": 50,
-			"weight": "1 lb",
-			"weapons": [
-				{
-					"id": "be0bd1d8-7c44-4be6-8091-68f16bfc488c",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cut",
-						"st": "sw",
-						"base": "-3"
-					},
-					"strength": "6",
-					"usage": "Swung",
-					"reach": "C,1",
-					"parry": "-1",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Knife"
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -3
-						}
-					],
-					"calc": {
-						"level": 16,
-						"parry": "11",
-						"block": "No",
-						"damage": "2d cut"
-					}
-				},
-				{
-					"id": "27ab4c87-9eb9-4a57-8a78-3f6e5ddbd507",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "imp",
-						"st": "thr",
-						"base": "1"
-					},
-					"strength": "6",
-					"usage": "Thrust",
-					"reach": "C",
-					"parry": "-1",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Knife"
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -3
-						}
-					],
-					"calc": {
-						"level": 16,
-						"parry": "11",
-						"block": "No",
-						"damage": "1d+4 imp"
-					}
-				}
-			],
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "hand",
-					"amount": 4
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 1000,
-				"extended_weight": "1 lb"
-			}
-		},
-		{
-			"id": "8cd1ceba-2e40-468d-9954-5a176c958911",
-			"type": "equipment",
-			"description": "Katar",
-			"reference": "LT57",
-			"notes": "Reduce penalty for targeting chinks in armor (p. B400) by -2; Use Brawling or Karate parry if better than usual weapon parry.",
-			"tech_level": "2",
-			"tags": [
-				"Melee Weapon"
-			],
-			"modifiers": [
-				{
-					"id": "54d3f7ba-d8d5-4cb3-b8cb-e117f84a411c",
-					"type": "eqp_modifier",
-					"name": "Fine",
-					"reference": "LT59",
-					"notes": "Fencing weapons, knives, swords, and missile weapons.",
-					"cost_type": "to_base_cost",
-					"disabled": true,
-					"tech_level": "0",
-					"cost": "+3 CF",
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "this_weapon",
-							"amount": 1
-						}
-					]
-				}
-			],
-			"quantity": 1,
-			"value": 50,
-			"weight": "1 lb",
-			"weapons": [
-				{
-					"id": "be0bd1d8-7c44-4be6-8091-68f16bfc488c",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cut",
-						"st": "sw",
-						"base": "-3"
-					},
-					"strength": "6",
-					"usage": "Swung",
-					"reach": "C,1",
-					"parry": "-1",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Knife"
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -3
-						}
-					],
-					"calc": {
-						"level": 16,
-						"parry": "11",
-						"block": "No",
-						"damage": "2d-2 cut"
-					}
-				},
-				{
-					"id": "27ab4c87-9eb9-4a57-8a78-3f6e5ddbd507",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "imp",
-						"st": "thr",
-						"base": "1"
-					},
-					"strength": "6",
-					"usage": "Thrust",
-					"reach": "C",
-					"parry": "-1",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Knife"
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -3
-						}
-					],
-					"calc": {
-						"level": 16,
-						"parry": "11",
-						"block": "No",
-						"damage": "1d+2 imp"
-					}
-				}
-			],
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "hand",
-					"amount": 4
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 50,
-				"extended_weight": "1 lb"
-			}
-		},
-		{
-			"id": "f3c0c39c-89d5-4bbb-bff6-3049a1738e0a",
-			"type": "equipment",
-			"description": "Clothing, Winter, Freeman (Status 0)",
-			"reference": "LT98",
-			"tech_level": "0",
-			"tags": [
-				"Clothing"
-			],
-			"quantity": 1,
-			"value": 180,
-			"weight": "5 lb",
-			"equipped": true,
-			"calc": {
-				"extended_value": 180,
-				"extended_weight": "5 lb"
-			}
-		},
-		{
-			"id": "57c96498-d12b-4c7e-9103-3a899b3ee9a9",
-			"type": "equipment",
-			"description": "Leather Helm",
-			"reference": "B284",
-			"tech_level": "1",
-			"tags": [
-				"Headgear"
-			],
-			"quantity": 1,
-			"value": 20,
-			"weight": "0.5 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "skull",
-					"amount": 2
-				},
-				{
-					"type": "dr_bonus",
-					"location": "face",
-					"amount": 2
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 20,
-				"extended_weight": "0.5 lb"
-			}
-		},
-		{
-			"id": "554bc6b4-743f-4ae6-99d8-d66ae6bd315d",
-			"type": "equipment",
-			"description": "Leather Armor",
-			"reference": "B283",
-			"tech_level": "1",
-			"tags": [
-				"Body Armor"
-			],
-			"quantity": 1,
-			"value": 100,
-			"weight": "10 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "torso",
-					"amount": 2
-				},
-				{
-					"type": "dr_bonus",
-					"location": "vitals",
-					"amount": 2
-				},
-				{
-					"type": "dr_bonus",
-					"location": "groin",
-					"amount": 2
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 100,
-				"extended_weight": "10 lb"
-			}
-		},
-		{
-			"id": "e26c2b9b-e99a-4ec1-a56f-f3a8ba4d2651",
-			"type": "equipment",
-			"description": "Boots",
-			"reference": "B284",
-			"notes": "Flexible; Concealable",
-			"tech_level": "2",
-			"tags": [
-				"Footwear"
-			],
-			"quantity": 1,
-			"value": 80,
-			"weight": "3 lb",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"location": "foot",
-					"amount": 2
-				},
-				{
-					"type": "weapon_bonus",
-					"selection_type": "weapons_with_name",
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Kick"
-					},
-					"amount": 1
-				}
-			],
-			"equipped": true,
-			"calc": {
-				"extended_value": 80,
-				"extended_weight": "3 lb"
-			}
-		},
-		{
-			"id": "91c52382-0e58-4174-94ed-f4db100edd28",
-			"type": "equipment",
-			"description": "Lead Pellet (Sling)",
-			"reference": "B276",
-			"notes": "Gives +1 damage, double range",
-			"tech_level": "2",
-			"tags": [
-				"AmmoType:Sling",
-				"Ammunition",
-				"Missile Weapon"
-			],
-			"quantity": 10,
-			"value": 0.1,
-			"weight": "0.05 lb",
-			"equipped": true,
-			"calc": {
-				"extended_value": 1,
-				"extended_weight": "0.5 lb"
-			}
-		},
-		{
-			"id": "2bf66a15-8dfc-4f62-8db1-d805ca796eb2",
-			"type": "equipment",
-			"description": "Copper Farthing",
-			"reference": "B264",
-			"tech_level": "1",
-			"tags": [
-				"Money: GURPS Standard Medieval Coins"
-			],
-			"quantity": 14,
-			"value": 1,
-			"weight": "0.008 lb",
-			"equipped": true,
-			"calc": {
-				"extended_value": 14,
-				"extended_weight": "0.112 lb"
-			}
-		}
-	],
-	"other_equipment": [
-		{
-			"id": "f1ff95ca-2f1b-4f62-bb77-2653f1eb6a1f",
-			"type": "equipment_container",
-			"open": true,
-			"children": [
-				{
-					"id": "4c406a24-5025-4b39-90d2-1c8fd35b1f58",
-					"type": "equipment",
-					"description": "Sleeping Fur",
-					"reference": "B288",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"quantity": 1,
-					"value": 50,
-					"weight": "8 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 50,
-						"extended_weight": "8 lb"
-					}
-				},
-				{
-					"id": "f79e07c0-fd7b-4996-9dbb-81d8a0e8da3d",
-					"type": "equipment",
-					"description": "Climbing Gear",
-					"reference": "B288",
-					"notes": "Hammer, spikes, carabiners",
-					"tech_level": "2",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"value": 20,
-					"weight": "4 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 0,
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "afa4e490-06fd-4563-9a74-b4925b7a14ae",
-					"type": "equipment_container",
-					"open": true,
-					"description": "Wineskin",
-					"reference": "B288",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"quantity": 1,
-					"value": 10,
-					"weight": "0.25 lb",
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "contained_weight_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_most",
-									"qualifier": "8 lb"
-								}
-							}
-						]
-					},
-					"equipped": true,
-					"calc": {
-						"extended_value": 10,
-						"extended_weight": "0.25 lb"
-					}
-				},
-				{
-					"id": "f32b3614-7aaf-41ac-bd69-9d7bdec5998b",
-					"type": "equipment",
-					"description": "Lockpick Set, Good",
-					"reference": "LT126",
-					"tech_level": "2",
-					"tags": [
-						"Thieves' Tools"
-					],
-					"quantity": 1,
-					"value": 250,
-					"weight": "0.5 lb",
-					"equipped": true,
-					"calc": {
-						"extended_value": 250,
-						"extended_weight": "0.5 lb"
-					}
-				}
-			],
-			"description": "Backpack, Frame",
+			"description": "Climbing Gear",
 			"reference": "B288",
-			"tech_level": "1",
+			"notes": "Hammer, spikes, carabiners",
+			"tech_level": "2",
 			"tags": [
 				"Camping and Survival Gear"
 			],
 			"quantity": 1,
-			"value": 100,
-			"weight": "10 lb",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "100 lb"
-						}
-					}
-				]
-			},
+			"value": 20,
+			"weight": "4 lb",
 			"equipped": true,
 			"calc": {
-				"extended_value": 410,
-				"extended_weight": "18.75 lb"
+				"extended_value": 20,
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "1d56ebc2-402c-4d61-9ce1-fcda0a906102",
+			"type": "equipment",
+			"description": "Lockpicks",
+			"reference": "B289",
+			"notes": "Basic equipment for Lockpicking skill",
+			"tech_level": "3",
+			"tags": [
+				"Law-Enforcement",
+				"Spy Gear",
+				"Thief"
+			],
+			"quantity": 1,
+			"value": 50,
+			"equipped": true,
+			"calc": {
+				"extended_value": 50,
+				"extended_weight": "0 lb"
 			}
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-06-24T04:00:36-03:00",
+	"modified_date": "2026-07-13T20:05:08-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
