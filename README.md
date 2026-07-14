@@ -9,18 +9,18 @@ characters in the browser, no installation required with
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
-| **Points:**       |    232 |    257 |    324 |
+| **Points:**       |    238 |    260 |    324 |
 | **HP:**           |     10 |     16 |     26 |
 | **FP:**           |     10 |     12 |     14 |
-| **DR (torso):**   |      2 |      5 |      7 |
+| **DR (torso):**   |      0 |      4 |      7 |
 
 
 ### Active Characters
 - [D'Bragança Pedregal (324)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
 - [Eldric Valen (246)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
 - [Acheron Lontaren (238)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Eduardo Montenegro
-- [Leptothele Tofu (246)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
-- [Yun (232)](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs) - by Marukusu
+- [Leptothele Tofu (253)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
+- [Yun (239)](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs) - by Marukusu
 
 ### Dead Characters
 - [Marcusdriel Totinelves](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-marcusdriel.gcs)
