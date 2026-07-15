@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 246,
+	"total_points": 249,
 	"points_record": [
+		{
+			"when": "2026-07-14T23:45:16-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-07-01T11:05:48-03:00",
 			"points": 3,
@@ -143,7 +148,7 @@
 			{
 				"id": "taste_smell",
 				"type": "integer",
-				"name": "Taste \u0026 Smell",
+				"name": "Taste & Smell",
 				"base": "$per",
 				"cost_per_point": 2
 			},
@@ -2349,7 +2354,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						}
 					],
 					"calc": {
@@ -2374,15 +2382,24 @@
 						},
 						{
 							"type": "skill",
-							"name": "Boxing"
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate"
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
 						}
 					],
 					"calc": {
@@ -2407,16 +2424,25 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Kicking"
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
 							"modifier": -2
 						}
 					],
@@ -2576,12 +2602,18 @@
 						},
 						{
 							"type": "skill",
-							"name": "Performance",
+							"name": {
+								"compare": "is",
+								"qualifier": "Performance"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Public Speaking",
+							"name": {
+								"compare": "is",
+								"qualifier": "Public Speaking"
+							},
 							"modifier": -5
 						}
 					],
@@ -2643,19 +2675,31 @@
 						},
 						{
 							"type": "skill",
-							"name": "Acting",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Public Speaking",
+							"name": {
+								"compare": "is",
+								"qualifier": "Public Speaking"
+							},
 							"modifier": -2
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Acting",
+						"name": {
+							"compare": "is",
+							"qualifier": "Acting"
+						},
+						"specialization": {
+							"compare": "is"
+						},
 						"modifier": -2,
 						"level": 11,
 						"adjusted_level": 11,
@@ -2687,7 +2731,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Writing",
+							"name": {
+								"compare": "is",
+								"qualifier": "Writing"
+							},
 							"modifier": -5
 						}
 					],
@@ -2766,8 +2813,14 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Geography",
-							"specialization": "@Specialty@",
+							"name": {
+								"compare": "is",
+								"qualifier": "Geography"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "@Specialty@"
+							},
 							"modifier": -3
 						}
 					],
@@ -2800,8 +2853,14 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Geography",
-							"specialization": "@Specialty@",
+							"name": {
+								"compare": "is",
+								"qualifier": "Geography"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "@Specialty@"
+							},
 							"modifier": -3
 						}
 					],
@@ -2834,8 +2893,14 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Geography",
-							"specialization": "@Specialty@",
+							"name": {
+								"compare": "is",
+								"qualifier": "Geography"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "@Specialty@"
+							},
 							"modifier": -3
 						}
 					],
@@ -2868,12 +2933,18 @@
 						},
 						{
 							"type": "skill",
-							"name": "Research",
+							"name": {
+								"compare": "is",
+								"qualifier": "Research"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Current Affairs",
+							"name": {
+								"compare": "is",
+								"qualifier": "Current Affairs"
+							},
 							"modifier": -4
 						}
 					],
@@ -2916,12 +2987,18 @@
 						},
 						{
 							"type": "skill",
-							"name": "Research",
+							"name": {
+								"compare": "is",
+								"qualifier": "Research"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Current Affairs",
+							"name": {
+								"compare": "is",
+								"qualifier": "Current Affairs"
+							},
 							"modifier": -4
 						}
 					],
@@ -2960,16 +3037,28 @@
 						},
 						{
 							"type": "skill",
-							"name": "Savoir-Faire",
-							"specialization": "High Society",
+							"name": {
+								"compare": "is",
+								"qualifier": "Savoir-Faire"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "High Society"
+							},
 							"modifier": -3
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Savoir-Faire",
-						"specialization": "High Society",
+						"name": {
+							"compare": "is",
+							"qualifier": "Savoir-Faire"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "High Society"
+						},
 						"modifier": -3,
 						"level": 11,
 						"adjusted_level": 11,
@@ -3303,7 +3392,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Diplomacy",
+							"name": {
+								"compare": "is",
+								"qualifier": "Diplomacy"
+							},
 							"modifier": -5
 						}
 					],
@@ -3341,7 +3433,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Writing",
+							"name": {
+								"compare": "is",
+								"qualifier": "Writing"
+							},
 							"modifier": -3
 						}
 					],
@@ -3419,7 +3514,13 @@
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Writing",
+						"name": {
+							"compare": "is",
+							"qualifier": "Writing"
+						},
+						"specialization": {
+							"compare": "is"
+						},
 						"modifier": -3,
 						"level": 10,
 						"adjusted_level": 10,
@@ -3451,7 +3552,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Criminology",
+							"name": {
+								"compare": "is",
+								"qualifier": "Criminology"
+							},
 							"modifier": -5
 						}
 					],
@@ -3598,7 +3702,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Shadowing",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shadowing"
+							},
 							"modifier": -5
 						}
 					],
@@ -3750,7 +3857,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Innate Attack",
+							"name": {
+								"compare": "is",
+								"qualifier": "Innate Attack"
+							},
 							"modifier": -2
 						}
 					],
@@ -3822,12 +3932,18 @@
 						},
 						{
 							"type": "skill",
-							"name": "Observation",
+							"name": {
+								"compare": "is",
+								"qualifier": "Observation"
+							},
 							"modifier": -5
 						},
 						{
 							"type": "skill",
-							"name": "Stealth",
+							"name": {
+								"compare": "is",
+								"qualifier": "Stealth"
+							},
 							"modifier": -4
 						}
 					],
@@ -3973,7 +4089,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Naturalist",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
 							"modifier": -6
 						}
 					],
@@ -4013,15 +4132,24 @@
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
 							"modifier": -2
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Survival",
-						"specialization": "Desert",
+						"name": {
+							"compare": "is",
+							"qualifier": "Survival"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Desert"
+						},
 						"modifier": -2,
 						"level": 11,
 						"adjusted_level": 11,
@@ -4091,13 +4219,22 @@
 						},
 						{
 							"type": "skill",
-							"name": "Naturalist",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
 							"modifier": -6
 						},
 						{
 							"type": "skill",
-							"name": "Mimicry",
-							"specialization": "Bird Calls",
+							"name": {
+								"compare": "is",
+								"qualifier": "Mimicry"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Bird Calls"
+							},
 							"modifier": -6
 						}
 					],
@@ -4139,7 +4276,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Biology",
+							"name": {
+								"compare": "is",
+								"qualifier": "Biology"
+							},
 							"modifier": -3
 						}
 					],
@@ -4180,31 +4320,58 @@
 						},
 						{
 							"type": "skill",
-							"name": "Cartography",
+							"name": {
+								"compare": "is",
+								"qualifier": "Cartography"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Mathematics",
-							"specialization": "Surveying",
+							"name": {
+								"compare": "is",
+								"qualifier": "Mathematics"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Surveying"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Navigation",
-							"specialization": "Air",
+							"name": {
+								"compare": "is",
+								"qualifier": "Navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Air"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Navigation",
-							"specialization": "Sea",
+							"name": {
+								"compare": "is",
+								"qualifier": "Navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Sea"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Navigation",
-							"specialization": "Underground",
+							"name": {
+								"compare": "is",
+								"qualifier": "Navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Underground"
+							},
 							"modifier": -2
 						}
 					],
@@ -4243,16 +4410,28 @@
 						},
 						{
 							"type": "skill",
-							"name": "Animal Handling",
-							"specialization": "Equines",
+							"name": {
+								"compare": "is",
+								"qualifier": "Animal Handling"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Equines"
+							},
 							"modifier": -3
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Animal Handling",
-						"specialization": "Equines",
+						"name": {
+							"compare": "is",
+							"qualifier": "Animal Handling"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Equines"
+						},
 						"modifier": -3,
 						"level": 10,
 						"adjusted_level": 10,
@@ -4285,49 +4464,94 @@
 						},
 						{
 							"type": "skill",
-							"name": "Naturalist",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Arctic",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Arctic"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Island/Beach",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Island/Beach"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Jungle",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Jungle"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Mountain",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Mountain"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Plains",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Plains"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Swampland",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Swampland"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Woodlands",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Woodlands"
+							},
 							"modifier": -3
 						}
 					],
@@ -4366,57 +4590,108 @@
 						},
 						{
 							"type": "skill",
-							"name": "Naturalist",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Arctic",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Arctic"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Desert",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Desert"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Island/Beach",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Island/Beach"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Jungle",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Jungle"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Plains",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Plains"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Swampland",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Swampland"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Woodlands",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Woodlands"
+							},
 							"modifier": -3
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Survival",
-						"specialization": "Desert",
+						"name": {
+							"compare": "is",
+							"qualifier": "Survival"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Desert"
+						},
 						"modifier": -3,
 						"level": 10,
 						"adjusted_level": 10,
@@ -4449,57 +4724,108 @@
 						},
 						{
 							"type": "skill",
-							"name": "Naturalist",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Arctic",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Arctic"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Desert",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Desert"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Island/Beach",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Island/Beach"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Jungle",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Jungle"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Mountain",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Mountain"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Swampland",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Swampland"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Woodlands",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Woodlands"
+							},
 							"modifier": -3
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Survival",
-						"specialization": "Desert",
+						"name": {
+							"compare": "is",
+							"qualifier": "Survival"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Desert"
+						},
 						"modifier": -3,
 						"level": 10,
 						"adjusted_level": 10,
@@ -4532,57 +4858,108 @@
 						},
 						{
 							"type": "skill",
-							"name": "Naturalist",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Arctic",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Arctic"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Desert",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Desert"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Island/Beach",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Island/Beach"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Jungle",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Jungle"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Mountain",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Mountain"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Plains",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Plains"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Survival",
-							"specialization": "Swampland",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Swampland"
+							},
 							"modifier": -3
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Survival",
-						"specialization": "Desert",
+						"name": {
+							"compare": "is",
+							"qualifier": "Survival"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Desert"
+						},
 						"modifier": -3,
 						"level": 10,
 						"adjusted_level": 10,
@@ -4614,7 +4991,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Naturalist",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
 							"modifier": -5
 						}
 					],
@@ -4648,17 +5028,26 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Animal Handling",
+							"name": {
+								"compare": "is",
+								"qualifier": "Animal Handling"
+							},
 							"modifier": -6
 						},
 						{
 							"type": "skill",
-							"name": "Physician",
+							"name": {
+								"compare": "is",
+								"qualifier": "Physician"
+							},
 							"modifier": -5
 						},
 						{
 							"type": "skill",
-							"name": "Surgery",
+							"name": {
+								"compare": "is",
+								"qualifier": "Surgery"
+							},
 							"modifier": -5
 						}
 					],
@@ -4666,8 +5055,14 @@
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Animal Handling",
-						"specialization": "Equines",
+						"name": {
+							"compare": "is",
+							"qualifier": "Animal Handling"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Equines"
+						},
 						"modifier": -6,
 						"level": 7,
 						"adjusted_level": 7,
@@ -4702,12 +5097,18 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Detect Lies",
+							"name": {
+								"compare": "is",
+								"qualifier": "Detect Lies"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Psychology",
+							"name": {
+								"compare": "is",
+								"qualifier": "Psychology"
+							},
 							"modifier": -4
 						}
 					],
@@ -4739,7 +5140,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Politics",
+							"name": {
+								"compare": "is",
+								"qualifier": "Politics"
+							},
 							"modifier": -6
 						}
 					],
@@ -4779,7 +5183,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Acting",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							},
 							"modifier": -5
 						}
 					],
@@ -4819,14 +5226,23 @@
 						},
 						{
 							"type": "skill",
-							"name": "Acting",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							},
 							"modifier": -3
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Acting",
+						"name": {
+							"compare": "is",
+							"qualifier": "Acting"
+						},
+						"specialization": {
+							"compare": "is"
+						},
 						"modifier": -3,
 						"level": 10,
 						"adjusted_level": 10,
@@ -4890,12 +5306,18 @@
 						},
 						{
 							"type": "skill",
-							"name": "Finance",
+							"name": {
+								"compare": "is",
+								"qualifier": "Finance"
+							},
 							"modifier": -6
 						},
 						{
 							"type": "skill",
-							"name": "Market Analysis",
+							"name": {
+								"compare": "is",
+								"qualifier": "Market Analysis"
+							},
 							"modifier": -4
 						}
 					],
@@ -4934,24 +5356,39 @@
 						},
 						{
 							"type": "skill",
-							"name": "Acting",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							},
 							"modifier": -5
 						},
 						{
 							"type": "skill",
-							"name": "Performance",
+							"name": {
+								"compare": "is",
+								"qualifier": "Performance"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Politics",
+							"name": {
+								"compare": "is",
+								"qualifier": "Politics"
+							},
 							"modifier": -5
 						}
 					],
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Performance",
+						"name": {
+							"compare": "is",
+							"qualifier": "Performance"
+						},
+						"specialization": {
+							"compare": "is"
+						},
 						"modifier": -2,
 						"level": 11,
 						"adjusted_level": 11,
@@ -4987,7 +5424,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Games",
+							"name": {
+								"compare": "is",
+								"qualifier": "Games"
+							},
 							"modifier": -3
 						}
 					],
@@ -5027,8 +5467,14 @@
 						},
 						{
 							"type": "skill",
-							"name": "Savoir-Faire",
-							"specialization": "Servant",
+							"name": {
+								"compare": "is",
+								"qualifier": "Savoir-Faire"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Servant"
+							},
 							"modifier": -2
 						}
 					],
@@ -5069,7 +5515,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Streetwise",
+							"name": {
+								"compare": "is",
+								"qualifier": "Streetwise"
+							},
 							"modifier": -3
 						}
 					],
@@ -5111,7 +5560,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Games",
+							"name": {
+								"compare": "is",
+								"qualifier": "Games"
+							},
 							"modifier": -3
 						}
 					],
@@ -5702,8 +6154,14 @@
 								},
 								{
 									"type": "skill",
-									"name": "Innate Attack",
-									"specialization": "Projectile"
+									"name": {
+										"compare": "is",
+										"qualifier": "Innate Attack"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Projectile"
+									}
 								}
 							],
 							"calc": {
@@ -5827,8 +6285,14 @@
 								},
 								{
 									"type": "skill",
-									"name": "Innate Attack",
-									"specialization": "Projectile"
+									"name": {
+										"compare": "is",
+										"qualifier": "Innate Attack"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Projectile"
+									}
 								}
 							],
 							"calc": {
@@ -6537,11 +7001,11 @@
 					"name": "Continual Light",
 					"reference": "M110",
 					"tags": [
-						"Light \u0026 Darkness"
+						"Light & Darkness"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Light \u0026 Darkness"
+						"Light & Darkness"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
@@ -6584,11 +7048,11 @@
 					"name": "Light",
 					"reference": "M110",
 					"tags": [
-						"Light \u0026 Darkness"
+						"Light & Darkness"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Light \u0026 Darkness"
+						"Light & Darkness"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
@@ -7066,11 +7530,11 @@
 					"name": "Block",
 					"reference": "M166",
 					"tags": [
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Blocking",
@@ -7111,7 +7575,7 @@
 								},
 								"notes": {
 									"compare": "contains",
-									"qualifier": "one college (protection \u0026 warning)"
+									"qualifier": "one college (protection & warning)"
 								}
 							}
 						]
@@ -7133,12 +7597,12 @@
 					"reference": "M143",
 					"tags": [
 						"Movement",
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"difficulty": "iq/h",
 					"college": [
 						"Movement",
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Blocking",
@@ -7181,11 +7645,11 @@
 					"name": "Missile Shield",
 					"reference": "M168",
 					"tags": [
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
@@ -7241,11 +7705,11 @@
 					"name": "Shield",
 					"reference": "M167",
 					"tags": [
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"difficulty": "iq/h",
 					"college": [
-						"Protection \u0026 Warning"
+						"Protection & Warning"
 					],
 					"power_source": "Arcane",
 					"spell_class": "Regular",
@@ -7286,7 +7750,7 @@
 								},
 								"notes": {
 									"compare": "contains",
-									"qualifier": "one college (protection \u0026 warning)"
+									"qualifier": "one college (protection & warning)"
 								}
 							}
 						]
@@ -7908,21 +8372,33 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Cloak"
+							"name": {
+								"compare": "is",
+								"qualifier": "Cloak"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Shield",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Net",
+							"name": {
+								"compare": "is",
+								"qualifier": "Net"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "dx",
-							"name": "Cloak",
+							"name": {
+								"compare": "is",
+								"qualifier": "Cloak"
+							},
 							"modifier": -5
 						}
 					],
@@ -7952,16 +8428,25 @@
 						},
 						{
 							"type": "skill",
-							"name": "Cloak"
+							"name": {
+								"compare": "is",
+								"qualifier": "Cloak"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Net",
+							"name": {
+								"compare": "is",
+								"qualifier": "Net"
+							},
 							"modifier": -4
 						},
 						{
 							"type": "skill",
-							"name": "Shield",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
 							"modifier": -4
 						}
 					],
@@ -7974,7 +8459,7 @@
 			"features": [
 				{
 					"type": "conditional_modifier",
-					"situation": "to Dodge, Parry \u0026 Block against attacks from the front or shield side",
+					"situation": "to Dodge, Parry & Block against attacks from the front or shield side",
 					"amount": 1
 				}
 			],
@@ -8021,20 +8506,38 @@
 						},
 						{
 							"type": "skill",
-							"name": "Shield",
-							"specialization": "Buckler",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Buckler"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Shield",
-							"specialization": "Force Shield",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Force Shield"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Shield",
-							"specialization": "Shield"
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Shield"
+							}
 						}
 					],
 					"calc": {
@@ -8047,7 +8550,7 @@
 			"features": [
 				{
 					"type": "conditional_modifier",
-					"situation": "to Dodge, Parry \u0026 Block against attacks from the front or shield side",
+					"situation": "to Dodge, Parry & Block against attacks from the front or shield side",
 					"amount": 1
 				}
 			],
@@ -8149,7 +8652,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-06-30T22:32:23-03:00",
+	"modified_date": "2026-07-14T20:13:25-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
