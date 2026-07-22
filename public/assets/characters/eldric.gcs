@@ -34,7 +34,7 @@
 			"reason": "XP Sessão"
 		},
 		{
-			"when": "2026-01-07T14:53:01-03:00",
+			"when": "2026-06-02T23:45:00-03:00",
 			"points": 232,
 			"reason": "Initial points"
 		}
@@ -1051,6 +1051,81 @@
 			],
 			"calc": {
 				"points": 4
+			}
+		},
+		{
+			"id": "TkOxj718tWSC5kJyr",
+			"name": "Asmodeus (Vagante)",
+			"children": [
+				{
+					"id": "t2cypKMflipAtz-68",
+					"name": "Morph",
+					"base_points": 34,
+					"calc": {
+						"points": 34
+					}
+				},
+				{
+					"id": "tdf9HOySQjuOX6TTM",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tapWLsuN75Unedmwn"
+					},
+					"name": "Compulsive Carousing",
+					"reference": "B128",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from like-minded extroverts",
+							"amount": 1
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "or worse from sober-minded citizens (GM discretion)",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tRmAW9SEZaGZGGF1D",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tCkS7354KTh2G6WfI"
+					},
+					"name": "Alcoholism",
+					"reference": "B122",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mgpuupcgal7p14Duh",
+							"name": "Illegal",
+							"reference": "B122",
+							"cost_adj": "-5",
+							"disabled": true
+						}
+					],
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				}
+			],
+			"calc": {
+				"points": 14
 			}
 		},
 		{
@@ -7800,213 +7875,20 @@
 	],
 	"equipment": [
 		{
-			"id": "EHpvFGeC4my3caHXH",
-			"description": "Armadura",
-			"legality_class": "4",
-			"quantity": 1,
-			"equipped": true,
-			"children": [
-				{
-					"id": "ewcNJFJzFlGcVPs07",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "e2aCum4Em-phMWpWS"
-					},
-					"description": "Boots",
-					"reference": "B284",
-					"local_notes": "Flexible; Concealable",
-					"tech_level": "2",
-					"tags": [
-						"Footwear"
-					],
-					"base_value": "80",
-					"base_weight": "3 lb",
-					"features": [
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"foot"
-							],
-							"amount": 2
-						},
-						{
-							"type": "weapon_bonus",
-							"selection_type": "weapons_with_name",
-							"specialization": {
-								"compare": "is",
-								"qualifier": "Kick"
-							},
-							"amount": 1
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 80,
-						"extended_value": 80,
-						"weight": "3 lb",
-						"extended_weight": "3 lb"
-					}
-				},
-				{
-					"id": "enPj6O1qMFrfFucy0",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "e5elGPa0mpvNveBYM"
-					},
-					"description": "Heavy Leather Leggings",
-					"reference": "B283",
-					"tech_level": "1",
-					"tags": [
-						"Limb Armor"
-					],
-					"base_value": "60",
-					"base_weight": "4 lb",
-					"features": [
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"leg"
-							],
-							"amount": 2
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 60,
-						"extended_value": 60,
-						"weight": "4 lb",
-						"extended_weight": "4 lb"
-					}
-				},
-				{
-					"id": "etfoksWsjss2ahVvG",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "eLUoq82xnnC1U0cXM"
-					},
-					"description": "Leather Armor",
-					"reference": "B283",
-					"tech_level": "1",
-					"tags": [
-						"Body Armor"
-					],
-					"base_value": "100",
-					"base_weight": "10 lb",
-					"features": [
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"groin",
-								"torso",
-								"vitals"
-							],
-							"amount": 2
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 100,
-						"extended_value": 100,
-						"weight": "10 lb",
-						"extended_weight": "10 lb"
-					}
-				},
-				{
-					"id": "ewxmBy52dLGbNneGd",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "e3wbU7mGpoDa1MkZW"
-					},
-					"description": "Leather Gloves",
-					"reference": "B284",
-					"local_notes": "Flexible",
-					"tech_level": "1",
-					"tags": [
-						"Gloves"
-					],
-					"base_value": "30",
-					"features": [
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"hand"
-							],
-							"amount": 2
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 30,
-						"extended_value": 30,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "ePGt9V2qmDEANnQ2S",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "eyancWXjMHFvlYnQN"
-					},
-					"description": "Leather Helm",
-					"reference": "B284",
-					"tech_level": "1",
-					"tags": [
-						"Headgear"
-					],
-					"base_value": "20",
-					"base_weight": "0.5 lb",
-					"features": [
-						{
-							"type": "dr_bonus",
-							"locations": [
-								"face",
-								"skull"
-							],
-							"amount": 2
-						}
-					],
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 20,
-						"extended_value": 20,
-						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
-					}
-				}
-			],
-			"calc": {
-				"value": 0,
-				"extended_value": 290,
-				"weight": "0 lb",
-				"extended_weight": "17.5 lb"
-			}
-		},
-		{
-			"id": "EC_UJxzU9--apm7wR",
+			"id": "EGzEu1KOxJq97GDtv",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "ESjtIfyzScVP49ity"
+				"id": "EIdDwHtUiZl0XPKHb"
 			},
-			"description": "Backpack, Small",
+			"description": "Wineskin",
 			"reference": "B288",
-			"tech_level": "1",
+			"tech_level": "0",
 			"tags": [
 				"Camping and Survival Gear"
 			],
-			"base_value": "60",
-			"base_weight": "3 lb",
+			"base_value": "10",
+			"base_weight": "0.25 lb",
 			"prereqs": {
 				"type": "prereq_list",
 				"all": true,
@@ -8016,7 +7898,7 @@
 						"has": true,
 						"qualifier": {
 							"compare": "at_most",
-							"qualifier": "40 lb"
+							"qualifier": "8 lb"
 						}
 					}
 				]
@@ -8025,322 +7907,162 @@
 			"equipped": true,
 			"children": [
 				{
-					"id": "eJWYBZchTbwIChYRY",
-					"description": "Book",
-					"local_notes": "200 pages",
-					"legality_class": "4",
-					"base_value": "14",
-					"base_weight": "1",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 14,
-						"extended_value": 14,
-						"weight": "1 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "egRvgT7U9MX46-nb2",
-					"description": "Comida",
-					"legality_class": "4",
-					"base_weight": "0.5",
-					"quantity": 10,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.5 lb",
-						"extended_weight": "5 lb"
-					}
-				},
-				{
-					"id": "eLhORz5SE_l2AQ0TC",
-					"description": "Livro de Poesias",
-					"local_notes": "Conhecimentos de Poetry, História de Calenost, Public Speak",
-					"legality_class": "4",
-					"base_weight": "6",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "6 lb",
-						"extended_weight": "6 lb"
-					}
-				},
-				{
-					"id": "emYRaGJZQZ7rmGcb0",
-					"description": "Emblema da Guilda \"Artistas sem Aplausos\"",
-					"local_notes": "A pinewood emblem measuring 10 cm in diameter and ½ inch thick.",
-					"legality_class": "4",
-					"base_weight": "0.02",
-					"quantity": 18,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.02 lb",
-						"extended_weight": "0.36 lb"
-					}
-				},
-				{
-					"id": "EbaQQKK5VrO7Ljy0O",
+					"id": "eSkmV8MBj416PA11v",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Low Tech/Low Tech Equipment.eqp",
-						"id": "E1C4_M0FnS1-5f82a"
+						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+						"id": "eiGbVfHCbupgT67n2"
 					},
-					"description": "Glass Bottle, 1 cup",
-					"reference": "LT34",
-					"local_notes": "DR 1, Fragile (Brittle) see B136",
-					"tech_level": "0",
+					"description": "Water",
+					"reference": "DFA111",
+					"local_notes": "1 Gallon",
 					"tags": [
-						"Container"
+						"Camping and Survival Gear"
 					],
-					"base_value": "1.5",
-					"base_weight": "0.4 lb",
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "contained_weight_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_most",
-									"qualifier": "1.31 lb"
-								}
-							}
-						]
-					},
+					"base_weight": "8 lb",
 					"quantity": 1,
 					"equipped": true,
-					"children": [
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "8 lb",
+						"extended_weight": "8 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 10,
+				"extended_value": 10,
+				"weight": "0.25 lb",
+				"extended_weight": "8.25 lb"
+			}
+		},
+		{
+			"id": "eS1rM6H_HHVPmpNz0",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+				"id": "eFBV_Gh3XwZ0fLt0e"
+			},
+			"description": "Lute",
+			"reference": "DFA112",
+			"local_notes": "Requires two hands",
+			"tags": [
+				"Musical Instruments"
+			],
+			"base_value": "150",
+			"base_weight": "5 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 150,
+				"extended_value": 150,
+				"weight": "5 lb",
+				"extended_weight": "5 lb"
+			}
+		},
+		{
+			"id": "ezmvlmt_joEgXh4XR",
+			"description": "Equipment",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "etI0n8T7t0NMlTdbv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "enOlH3Yh80FnKbD6t"
+			},
+			"description": "Light Shield",
+			"reference": "B287",
+			"local_notes": "DR 5, HP 20",
+			"tech_level": "1",
+			"tags": [
+				"Shield"
+			],
+			"base_value": "25",
+			"base_weight": "2 lb",
+			"weapons": [
+				{
+					"id": "w8LsbW7Iuz9bVahzV",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Shield Bash",
+					"reach": "1",
+					"block": "0",
+					"defaults": [
 						{
-							"id": "es9aowLoMryTA0kIG",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Low Tech/Low Tech Equipment.eqp",
-								"id": "eDp-bwKEX25_lK6pB"
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
 							},
-							"description": "Ink, per pint",
-							"reference": "LT46",
-							"tech_level": "1",
-							"tags": [
-								"Personal Gear"
-							],
-							"base_value": "2.5",
-							"base_weight": "1 lb",
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"value": 2.5,
-								"extended_value": 2.5,
-								"weight": "1 lb",
-								"extended_weight": "1 lb"
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Buckler"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Force Shield"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shield"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Shield"
 							}
 						}
 					],
 					"calc": {
-						"value": 1.5,
-						"extended_value": 4,
-						"weight": "0.4 lb",
-						"extended_weight": "1.4 lb"
-					}
-				},
-				{
-					"id": "eI84xk3UL80lS-x0J",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "ebC4jhX2Y-xlHKvgW"
-					},
-					"description": "Personal Basics",
-					"reference": "DFA111",
-					"local_notes": "Basic equipment for camping; -2 to Survival rolls without it",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"base_value": "5",
-					"base_weight": "1 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 5,
-						"extended_value": 5,
-						"weight": "1 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "eAiUWvgmQK7Dxs2Ys",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Low Tech/Low Tech Equipment.eqp",
-						"id": "e2rN-FqsUmLwQdKAP"
-					},
-					"description": "Quill, Fine",
-					"reference": "LT46",
-					"local_notes": "Lasts for 100 pages",
-					"tech_level": "3",
-					"tags": [
-						"Personal Gear"
-					],
-					"base_value": "0.75",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0.75,
-						"extended_value": 0.75,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eDjYnf6038wFbXafd",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "e24V1_w4hI1Y5_jks"
-					},
-					"description": "Winter Clothes",
-					"reference": "B266",
-					"local_notes": "Status 0",
-					"tags": [
-						"Clothing"
-					],
-					"base_value": "180",
-					"base_weight": "4 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 180,
-						"extended_value": 180,
-						"weight": "4 lb",
-						"extended_weight": "4 lb"
+						"level": 16,
+						"damage": "1d-2 cr",
+						"block": "12"
 					}
 				}
 			],
-			"calc": {
-				"value": 60,
-				"extended_value": 263.75,
-				"weight": "3 lb",
-				"extended_weight": "21.76 lb"
-			}
-		},
-		{
-			"id": "EgsP7giFh8fZkK1aX",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "EIJwAsTB3ogNV0BXI"
-			},
-			"description": "Holster, Belt",
-			"reference": "B289",
-			"local_notes": "Fits most pistols",
-			"tech_level": "5",
-			"tags": [
-				"Weapon and Combat Accessories"
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to Dodge, Parry & Block against attacks from the front or shield side",
+					"amount": 1
+				}
 			],
-			"base_value": "25",
-			"base_weight": "0.5 lb",
 			"quantity": 1,
 			"equipped": true,
-			"children": [
-				{
-					"id": "eiGobvROtnr-g0Kwy",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Equipment.eqp",
-						"id": "en3K5VAj04gPAJcc0"
-					},
-					"description": "10 pt Powerstone",
-					"reference": "M20",
-					"tags": [
-						"Powerstone"
-					],
-					"base_value": "0",
-					"base_weight": "0.004 lb",
-					"max_uses": 10,
-					"quantity": 1,
-					"uses": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.004 lb",
-						"extended_weight": "0.004 lb"
-					}
-				},
-				{
-					"id": "e2hZfx4UmM5-h4sNp",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eEPtNvuOsmSOBBW5_"
-					},
-					"description": "Copper Coin",
-					"reference": "DFX73",
-					"tags": [
-						"Money"
-					],
-					"base_value": "1",
-					"base_weight": "0.02 lb",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 1,
-						"extended_value": 0,
-						"weight": "0.02 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "epJP-YmB4egDHLVx2",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eSoYpny-U_qOwWAv8"
-					},
-					"description": "Silver Coin",
-					"reference": "DFX73",
-					"tags": [
-						"Money"
-					],
-					"base_value": "17",
-					"base_weight": "0.02 lb",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 17,
-						"extended_value": 0,
-						"weight": "0.02 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "e3xo6sl5LIce4ZA-J",
-					"description": "Poção de mana",
-					"local_notes": "+4 FP",
-					"legality_class": "4",
-					"base_value": "200",
-					"base_weight": "0.5",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 200,
-						"extended_value": 200,
-						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
-					}
-				}
-			],
 			"calc": {
 				"value": 25,
-				"extended_value": 225,
-				"weight": "0.5 lb",
-				"extended_weight": "1.004 lb"
+				"extended_value": 25,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
 			}
 		},
 		{
@@ -8473,135 +8195,134 @@
 			}
 		},
 		{
-			"id": "etI0n8T7t0NMlTdbv",
+			"id": "EgsP7giFh8fZkK1aX",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "enOlH3Yh80FnKbD6t"
+				"id": "EIJwAsTB3ogNV0BXI"
 			},
-			"description": "Light Shield",
-			"reference": "B287",
-			"local_notes": "DR 5, HP 20",
-			"tech_level": "1",
+			"description": "Holster, Belt",
+			"reference": "B289",
+			"local_notes": "Fits most pistols",
+			"tech_level": "5",
 			"tags": [
-				"Shield"
+				"Weapon and Combat Accessories"
 			],
 			"base_value": "25",
-			"base_weight": "2 lb",
-			"weapons": [
+			"base_weight": "0.5 lb",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
 				{
-					"id": "w8LsbW7Iuz9bVahzV",
-					"sv": 1,
-					"damage": {
-						"type": "cr",
-						"st": "thr"
+					"id": "epJP-YmB4egDHLVx2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+						"id": "eSoYpny-U_qOwWAv8"
 					},
-					"usage": "Shield Bash",
-					"reach": "1",
-					"block": "0",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Shield"
-							},
-							"specialization": {
-								"compare": "is",
-								"qualifier": "Buckler"
-							},
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Shield"
-							},
-							"specialization": {
-								"compare": "is",
-								"qualifier": "Force Shield"
-							},
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Shield"
-							},
-							"specialization": {
-								"compare": "is",
-								"qualifier": "Shield"
-							}
-						}
+					"description": "Silver Coin",
+					"reference": "DFX73",
+					"tags": [
+						"Money"
 					],
+					"base_value": "17",
+					"base_weight": "0.02 lb",
+					"quantity": 0,
+					"equipped": true,
 					"calc": {
-						"level": 16,
-						"damage": "1d-2 cr",
-						"block": "12"
+						"value": 17,
+						"extended_value": 0,
+						"weight": "0.02 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e3xo6sl5LIce4ZA-J",
+					"description": "Poção de mana",
+					"local_notes": "+4 FP",
+					"legality_class": "4",
+					"base_value": "200",
+					"base_weight": "0.5",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 200,
+						"extended_value": 200,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "e2hZfx4UmM5-h4sNp",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+						"id": "eEPtNvuOsmSOBBW5_"
+					},
+					"description": "Copper Coin",
+					"reference": "DFX73",
+					"tags": [
+						"Money"
+					],
+					"base_value": "1",
+					"base_weight": "0.02 lb",
+					"quantity": 0,
+					"equipped": true,
+					"calc": {
+						"value": 1,
+						"extended_value": 0,
+						"weight": "0.02 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eiGobvROtnr-g0Kwy",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Equipment.eqp",
+						"id": "en3K5VAj04gPAJcc0"
+					},
+					"description": "10 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"base_value": "0",
+					"base_weight": "0.004 lb",
+					"max_uses": 10,
+					"quantity": 1,
+					"uses": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.004 lb",
+						"extended_weight": "0.004 lb"
 					}
 				}
 			],
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to Dodge, Parry & Block against attacks from the front or shield side",
-					"amount": 1
-				}
-			],
-			"quantity": 1,
-			"equipped": true,
 			"calc": {
 				"value": 25,
-				"extended_value": 25,
-				"weight": "2 lb",
-				"extended_weight": "2 lb"
+				"extended_value": 225,
+				"weight": "0.5 lb",
+				"extended_weight": "1.004 lb"
 			}
 		},
 		{
-			"id": "eS1rM6H_HHVPmpNz0",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-				"id": "eFBV_Gh3XwZ0fLt0e"
-			},
-			"description": "Lute",
-			"reference": "DFA112",
-			"local_notes": "Requires two hands",
-			"tags": [
-				"Musical Instruments"
-			],
-			"base_value": "150",
-			"base_weight": "5 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 150,
-				"extended_value": 150,
-				"weight": "5 lb",
-				"extended_weight": "5 lb"
-			}
-		},
-		{
-			"id": "EGzEu1KOxJq97GDtv",
+			"id": "EC_UJxzU9--apm7wR",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "EIdDwHtUiZl0XPKHb"
+				"id": "ESjtIfyzScVP49ity"
 			},
-			"description": "Wineskin",
+			"description": "Backpack, Small",
 			"reference": "B288",
-			"tech_level": "0",
+			"tech_level": "1",
 			"tags": [
 				"Camping and Survival Gear"
 			],
-			"base_value": "10",
-			"base_weight": "0.25 lb",
+			"base_value": "60",
+			"base_weight": "3 lb",
 			"prereqs": {
 				"type": "prereq_list",
 				"all": true,
@@ -8611,7 +8332,7 @@
 						"has": true,
 						"qualifier": {
 							"compare": "at_most",
-							"qualifier": "8 lb"
+							"qualifier": "40 lb"
 						}
 					}
 				]
@@ -8620,39 +8341,406 @@
 			"equipped": true,
 			"children": [
 				{
-					"id": "eSkmV8MBj416PA11v",
+					"id": "eDjYnf6038wFbXafd",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "e24V1_w4hI1Y5_jks"
+					},
+					"description": "Winter Clothes",
+					"reference": "B266",
+					"local_notes": "Status 0",
+					"tags": [
+						"Clothing"
+					],
+					"base_value": "180",
+					"base_weight": "4 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 180,
+						"extended_value": 180,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "eAiUWvgmQK7Dxs2Ys",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Low Tech/Low Tech Equipment.eqp",
+						"id": "e2rN-FqsUmLwQdKAP"
+					},
+					"description": "Quill, Fine",
+					"reference": "LT46",
+					"local_notes": "Lasts for 100 pages",
+					"tech_level": "3",
+					"tags": [
+						"Personal Gear"
+					],
+					"base_value": "0.75",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0.75,
+						"extended_value": 0.75,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eI84xk3UL80lS-x0J",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eiGbVfHCbupgT67n2"
+						"id": "ebC4jhX2Y-xlHKvgW"
 					},
-					"description": "Water",
+					"description": "Personal Basics",
 					"reference": "DFA111",
-					"local_notes": "1 Gallon",
+					"local_notes": "Basic equipment for camping; -2 to Survival rolls without it",
 					"tags": [
 						"Camping and Survival Gear"
 					],
-					"base_weight": "8 lb",
+					"base_value": "5",
+					"base_weight": "1 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 5,
+						"extended_value": 5,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eLhORz5SE_l2AQ0TC",
+					"description": "Livro de Poesias",
+					"local_notes": "Conhecimentos de Poetry, História de Calenost, Public Speak",
+					"legality_class": "4",
+					"base_weight": "6",
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
 						"value": 0,
 						"extended_value": 0,
-						"weight": "8 lb",
-						"extended_weight": "8 lb"
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "EbaQQKK5VrO7Ljy0O",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Low Tech/Low Tech Equipment.eqp",
+						"id": "E1C4_M0FnS1-5f82a"
+					},
+					"description": "Glass Bottle, 1 cup",
+					"reference": "LT34",
+					"local_notes": "DR 1, Fragile (Brittle) see B136",
+					"tech_level": "0",
+					"tags": [
+						"Container"
+					],
+					"base_value": "1.5",
+					"base_weight": "0.4 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "1.31 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "es9aowLoMryTA0kIG",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Low Tech/Low Tech Equipment.eqp",
+								"id": "eDp-bwKEX25_lK6pB"
+							},
+							"description": "Ink, per pint",
+							"reference": "LT46",
+							"tech_level": "1",
+							"tags": [
+								"Personal Gear"
+							],
+							"base_value": "2.5",
+							"base_weight": "1 lb",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 2.5,
+								"extended_value": 2.5,
+								"weight": "1 lb",
+								"extended_weight": "1 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 1.5,
+						"extended_value": 4,
+						"weight": "0.4 lb",
+						"extended_weight": "1.4 lb"
+					}
+				},
+				{
+					"id": "emYRaGJZQZ7rmGcb0",
+					"description": "Emblema da Guilda \"Artistas sem Aplausos\"",
+					"local_notes": "A pinewood emblem measuring 10 cm in diameter and ½ inch thick.",
+					"legality_class": "4",
+					"base_weight": "0.02",
+					"quantity": 18,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.02 lb",
+						"extended_weight": "0.36 lb"
+					}
+				},
+				{
+					"id": "egRvgT7U9MX46-nb2",
+					"description": "Comida",
+					"legality_class": "4",
+					"base_weight": "0.5",
+					"quantity": 10,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eJWYBZchTbwIChYRY",
+					"description": "Book",
+					"local_notes": "200 pages",
+					"legality_class": "4",
+					"base_value": "14",
+					"base_weight": "1",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 14,
+						"extended_value": 14,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
 					}
 				}
 			],
 			"calc": {
-				"value": 10,
-				"extended_value": 10,
-				"weight": "0.25 lb",
-				"extended_weight": "8.25 lb"
+				"value": 60,
+				"extended_value": 263.75,
+				"weight": "3 lb",
+				"extended_weight": "21.76 lb"
+			}
+		},
+		{
+			"id": "EHpvFGeC4my3caHXH",
+			"description": "Armadura",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ePGt9V2qmDEANnQ2S",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eyancWXjMHFvlYnQN"
+					},
+					"description": "Leather Helm",
+					"reference": "B284",
+					"tech_level": "1",
+					"tags": [
+						"Headgear"
+					],
+					"base_value": "20",
+					"base_weight": "0.5 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"face",
+								"skull"
+							],
+							"amount": 2
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 20,
+						"extended_value": 20,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ewxmBy52dLGbNneGd",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "e3wbU7mGpoDa1MkZW"
+					},
+					"description": "Leather Gloves",
+					"reference": "B284",
+					"local_notes": "Flexible",
+					"tech_level": "1",
+					"tags": [
+						"Gloves"
+					],
+					"base_value": "30",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"amount": 2
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 30,
+						"extended_value": 30,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "etfoksWsjss2ahVvG",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eLUoq82xnnC1U0cXM"
+					},
+					"description": "Leather Armor",
+					"reference": "B283",
+					"tech_level": "1",
+					"tags": [
+						"Body Armor"
+					],
+					"base_value": "100",
+					"base_weight": "10 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin",
+								"torso",
+								"vitals"
+							],
+							"amount": 2
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "10 lb",
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "enPj6O1qMFrfFucy0",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "e5elGPa0mpvNveBYM"
+					},
+					"description": "Heavy Leather Leggings",
+					"reference": "B283",
+					"tech_level": "1",
+					"tags": [
+						"Limb Armor"
+					],
+					"base_value": "60",
+					"base_weight": "4 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"leg"
+							],
+							"amount": 2
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 60,
+						"extended_value": 60,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "ewcNJFJzFlGcVPs07",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "e2aCum4Em-phMWpWS"
+					},
+					"description": "Boots",
+					"reference": "B284",
+					"local_notes": "Flexible; Concealable",
+					"tech_level": "2",
+					"tags": [
+						"Footwear"
+					],
+					"base_value": "80",
+					"base_weight": "3 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 2
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_name",
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Kick"
+							},
+							"amount": 1
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 80,
+						"extended_value": 80,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 290,
+				"weight": "0 lb",
+				"extended_weight": "17.5 lb"
 			}
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-07-14T20:13:25-03:00",
+	"modified_date": "2026-07-21T21:48:13-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
