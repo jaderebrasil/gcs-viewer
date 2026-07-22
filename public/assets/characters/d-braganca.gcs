@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 324,
+	"total_points": 331,
 	"points_record": [
+		{
+			"when": "2026-07-21T23:49:51-03:00",
+			"points": 4,
+			"reason": "Tititi, Uáler e Capeta Gasoso"
+		},
+		{
+			"when": "2026-07-14T23:46:02-03:00",
+			"points": 3,
+			"reason": "Scorpiola, Aranhola e Goblins"
+		},
 		{
 			"when": "2026-07-07T23:38:21-03:00",
 			"points": 4,
@@ -999,9 +1009,9 @@
 						}
 					],
 					"calc": {
-						"level": 17,
+						"level": 18,
 						"damage": "cr",
-						"parry": "13"
+						"parry": "14"
 					}
 				}
 			],
@@ -1436,20 +1446,6 @@
 			"points_per_level": 5,
 			"features": [
 				{
-					"type": "weapon_parry_bonus",
-					"selection_type": "weapons_with_required_skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Parry Missile-Weapons"
-					},
-					"usage": {
-						"compare": "is",
-						"qualifier": "Bare hands"
-					},
-					"amount": 1,
-					"leveled": true
-				},
-				{
 					"type": "conditional_modifier",
 					"situation": "to Parry with bare hands",
 					"amount": 1
@@ -1744,6 +1740,14 @@
 					"id": "t48_c7EXRMS2bWNIU",
 					"name": "Semi-amputação (Treedra)",
 					"local_notes": "Uma mordida da aberração quase amputa o braço direito de D'Bragança, deixando-o molengo por uns dias.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "te5hHLUUC5qjq25i1",
+					"name": "Rabiola Tócssica (Escorpiola Gigante)",
+					"local_notes": "Um Scorpiola gigante rabetou o tórax de D'Bragança, envenenando gravemente o lusitano enferrujado.",
 					"calc": {
 						"points": 0
 					}
@@ -3461,9 +3465,9 @@
 								}
 							],
 							"calc": {
-								"level": 17,
+								"level": 18,
 								"damage": "1d+1 pi",
-								"parry": "12"
+								"parry": "13"
 							}
 						}
 					],
@@ -3855,54 +3859,6 @@
 			}
 		},
 		{
-			"id": "sHTHEUJ2Ia8EJEoCl",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
-				"id": "sfUIWLzG_0qznxku3"
-			},
-			"name": "First Aid",
-			"reference": "B195",
-			"tags": [
-				"Everyman",
-				"Medical"
-			],
-			"vtt_notes": "30min = [1d-3! Healing]",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Esoteric Medicine"
-				},
-				{
-					"type": "skill",
-					"name": "Physician"
-				},
-				{
-					"type": "skill",
-					"name": "Veterinary",
-					"modifier": -4
-				}
-			],
-			"tech_level": "3",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ+0"
-			}
-		},
-		{
 			"id": "shsp0zjQOlGagZeRF",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3999,6 +3955,54 @@
 			}
 		},
 		{
+			"id": "sHTHEUJ2Ia8EJEoCl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set\\Basic Set Skills.skl",
+				"id": "sfUIWLzG_0qznxku3"
+			},
+			"name": "First Aid",
+			"reference": "B195",
+			"tags": [
+				"Everyman",
+				"Medical"
+			],
+			"vtt_notes": "30min = [1d-3! Healing]",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Esoteric Medicine"
+				},
+				{
+					"type": "skill",
+					"name": "Physician"
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -4
+				}
+			],
+			"tech_level": "3",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "sGBn6r5l5XhwUSBLD",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4015,35 +4019,6 @@
 			"calc": {
 				"level": 11,
 				"rsl": "HT-2"
-			}
-		},
-		{
-			"id": "s34yzvwshdI9-xZzn",
-			"name": "Hiking",
-			"reference": "B200",
-			"tags": [
-				"Athletic",
-				"Exploration",
-				"Outdoor"
-			],
-			"difficulty": "ht/a",
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "HT-1"
 			}
 		},
 		{
@@ -4076,6 +4051,35 @@
 			"reference": "B218",
 			"tags": [
 				"Athletic"
+			],
+			"difficulty": "ht/a",
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "s34yzvwshdI9-xZzn",
+			"name": "Hiking",
+			"reference": "B200",
+			"tags": [
+				"Athletic",
+				"Exploration",
+				"Outdoor"
 			],
 			"difficulty": "ht/a",
 			"defaults": [
@@ -4465,54 +4469,6 @@
 						"Weapon"
 					],
 					"difficulty": "dx/h",
-					"weapons": [
-						{
-							"id": "wk6xZaAvwh1S8sN4E",
-							"sv": 1,
-							"damage": {
-								"type": "cr",
-								"st_mul": 0.1
-							},
-							"usage": "Bare hands",
-							"usage_notes": "Limited to Judo Parry!",
-							"reach": "1",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Parry Missile-Weapons"
-								}
-							],
-							"calc": {
-								"level": 10,
-								"damage": "cr",
-								"parry": "10"
-							}
-						},
-						{
-							"id": "wQlIJj0w2_I-V4eq_",
-							"sv": 1,
-							"damage": {
-								"type": "cr",
-								"st_mul": 0.1
-							},
-							"usage": "Rabeta",
-							"usage_notes": "Limited to Judo Parry!",
-							"reach": "1",
-							"parry": "0",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Parry Missile-Weapons"
-								}
-							],
-							"calc": {
-								"level": 10,
-								"damage": "cr",
-								"parry": "9"
-							}
-						}
-					],
 					"points": 1,
 					"calc": {
 						"level": 10,
@@ -4587,10 +4543,10 @@
 					],
 					"difficulty": "dx/h",
 					"encumbrance_penalty_multiplier": 1,
-					"points": 24,
+					"points": 28,
 					"calc": {
-						"level": 17,
-						"rsl": "DX+5"
+						"level": 18,
+						"rsl": "DX+6"
 					}
 				},
 				{
@@ -4631,7 +4587,7 @@
 					},
 					"points": 2,
 					"calc": {
-						"level": 16,
+						"level": 17,
 						"rsl": "-1"
 					}
 				},
@@ -4658,7 +4614,7 @@
 					"limit": 4,
 					"points": 1,
 					"calc": {
-						"level": 18,
+						"level": 19,
 						"rsl": "+1"
 					}
 				},
@@ -4685,7 +4641,7 @@
 					"limit": 0,
 					"points": 2,
 					"calc": {
-						"level": 17,
+						"level": 18,
 						"rsl": "+0"
 					}
 				}
@@ -5137,7 +5093,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-07-09T15:43:45-03:00",
+	"modified_date": "2026-07-21T23:50:43-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
