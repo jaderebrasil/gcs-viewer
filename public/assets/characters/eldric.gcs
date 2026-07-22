@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 249,
+	"total_points": 253,
 	"points_record": [
+		{
+			"when": "2026-07-21T23:53:21-03:00",
+			"points": 4,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-07-14T23:45:16-03:00",
 			"points": 3,
