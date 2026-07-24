@@ -1,8 +1,23 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 239,
+	"total_points": 251,
 	"points_record": [
+		{
+			"when": "2026-07-21T23:49:23-03:00",
+			"points": 4,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-07-16T14:30:08-03:00",
+			"points": 5,
+			"reason": "EXTRA XP DG"
+		},
+		{
+			"when": "2026-07-14T23:45:26-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-07-07T23:37:44-03:00",
 			"points": 4,
@@ -2879,6 +2894,132 @@
 			"calc": {
 				"points": 0
 			}
+		},
+		{
+			"id": "tg4JhdGZuuVpp0MrP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tap6QZdAg9aCR_Tvf"
+			},
+			"name": "Inner Awareness",
+			"reference": "B48,P47,PSI14",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Mental",
+				"Physical"
+			],
+			"replacements": {
+				"Disciplines of Faith or Major Vow": ""
+			},
+			"modifiers": [
+				{
+					"id": "mK9UqExhVUf85h4yk",
+					"name": "@Rare Substance/Condition@",
+					"reference": "B48",
+					"cost_adj": "5",
+					"disabled": true
+				},
+				{
+					"id": "mtTzQQFaCvqhS6G5P",
+					"name": "@Occasional Substance/Condition@",
+					"reference": "B48",
+					"cost_adj": "10",
+					"disabled": true
+				},
+				{
+					"id": "m1wq3EUPg9axV1SYs",
+					"name": "@Common Substance/Condition@",
+					"reference": "B48",
+					"cost_adj": "20"
+				},
+				{
+					"id": "mQ77F_NVuOdQlpp7e",
+					"name": "@Very Common Substance/Condition@",
+					"reference": "B48",
+					"cost_adj": "30",
+					"disabled": true
+				},
+				{
+					"id": "mqkAx0uKimGROMu7r",
+					"name": "Precise",
+					"reference": "B48",
+					"cost_adj": "100%",
+					"disabled": true
+				},
+				{
+					"id": "miTzlr4FMYQJ5boXP",
+					"name": "Signal Detection",
+					"reference": "B48",
+					"disabled": true
+				},
+				{
+					"id": "maxEwILdayyC_pJPY",
+					"name": "Vague",
+					"reference": "B48",
+					"cost_adj": "-50%",
+					"disabled": true
+				},
+				{
+					"id": "mW7um0B9AjntEUAJV",
+					"name": "Analyzing",
+					"reference": "P47",
+					"cost_adj": "100%",
+					"disabled": true
+				},
+				{
+					"id": "mANATuAy8Z6Bz4UN2",
+					"name": "Lock-On",
+					"reference": "PSI14",
+					"cost_adj": "50%",
+					"disabled": true
+				},
+				{
+					"id": "mACwIvvV6xK2q89yh",
+					"name": "Precise, Nontargeting",
+					"reference": "PSI14",
+					"cost_adj": "90%",
+					"disabled": true
+				},
+				{
+					"id": "mVgxDGFVGubK_tXYD",
+					"name": "Analysis Only",
+					"reference": "PSI14",
+					"cost_adj": "-50%",
+					"disabled": true
+				},
+				{
+					"id": "mtalHTc_e-vZ-lyHo",
+					"name": "Cannot Analyze",
+					"reference": "PSI14",
+					"cost_adj": "-10%",
+					"disabled": true
+				},
+				{
+					"id": "m6XX_U5osqTAiiyki",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Powers/Powers Modifiers.adm",
+						"id": "mq21l-IlILnT3zX-N"
+					},
+					"name": "Chi",
+					"reference": "P26",
+					"local_notes": "Requires (@Disciplines of Faith or Major Vow@), neglecting it causes 1d days of an irritating condition.",
+					"cost_adj": "-10%",
+					"calc": {
+						"resolved_notes": "Requires (), neglecting it causes 1d days of an irritating condition."
+					}
+				},
+				{
+					"id": "m0j_IO4mN5d6ChXLc",
+					"name": "Only Blind",
+					"cost_adj": "-50%"
+				}
+			],
+			"calc": {
+				"points": 8
+			}
 		}
 	],
 	"skills": [
@@ -3919,6 +4060,74 @@
 				"level": 12,
 				"rsl": "DX+2"
 			}
+		},
+		{
+			"id": "srQanNL8JyFV5nUS-",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "spMUh1AbXRoFm1hqU"
+			},
+			"name": "Breath Control",
+			"reference": "B182",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/h",
+			"points": 2,
+			"calc": {
+				"level": 10,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "sAgMIPMYkPUioeCx1",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sW70jxMkHsRAPsc94"
+			},
+			"name": "Body Control",
+			"reference": "B181,MA54",
+			"tags": [
+				"Esoteric"
+			],
+			"difficulty": "ht/vh",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "meditation"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "breath control"
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "trained by a master"
+						}
+					}
+				]
+			},
+			"points": 2,
+			"calc": {
+				"level": 9,
+				"rsl": "HT-2"
+			}
 		}
 	],
 	"equipment": [
@@ -4283,13 +4492,13 @@
 					],
 					"base_value": "3",
 					"base_weight": "1 lb",
-					"quantity": 8,
+					"quantity": 5,
 					"equipped": true,
 					"calc": {
 						"value": 3,
-						"extended_value": 24,
+						"extended_value": 15,
 						"weight": "1 lb",
-						"extended_weight": "8 lb"
+						"extended_weight": "5 lb"
 					}
 				},
 				{
@@ -4388,13 +4597,13 @@
 							],
 							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 5,
+							"quantity": 7,
 							"equipped": true,
 							"calc": {
 								"value": 20,
-								"extended_value": 100,
+								"extended_value": 140,
 								"weight": "0.004 lb",
-								"extended_weight": "0.02 lb"
+								"extended_weight": "0.028 lb"
 							}
 						},
 						{
@@ -4436,21 +4645,21 @@
 							],
 							"base_value": "1",
 							"base_weight": "0.008 lb",
-							"quantity": 58,
+							"quantity": 80,
 							"equipped": true,
 							"calc": {
 								"value": 1,
-								"extended_value": 58,
+								"extended_value": 80,
 								"weight": "0.008 lb",
-								"extended_weight": "0.464 lb"
+								"extended_weight": "0.64 lb"
 							}
 						}
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 3768,
+						"extended_value": 3830,
 						"weight": "0.5 lb",
-						"extended_weight": "1.02 lb"
+						"extended_weight": "1.204 lb"
 					}
 				},
 				{
@@ -4593,17 +4802,27 @@
 					}
 				},
 				{
-					"id": "eAzhbwyoidBQrJemk",
-					"description": "Estatueta de 15cm de cobre",
-					"legality_class": "4",
-					"base_weight": "6",
+					"id": "eZXuEDA5mrQ9DxHHQ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Dungeon Fantasy/Dungeon Fantasy 1/Dungeon Fantasy 1 Equipment.eqp",
+						"id": "eIfteQlAqm_Cy6VAA"
+					},
+					"description": "Holy Water",
+					"reference": "DF1:26",
+					"local_notes": "\"Grenade\" bottle. 1 pt",
+					"tags": [
+						"Esoteric Supplies"
+					],
+					"base_value": "15",
+					"base_weight": "1 lb",
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "6 lb",
-						"extended_weight": "6 lb"
+						"value": 15,
+						"extended_value": 15,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -4633,13 +4852,27 @@
 						"weight": "1 lb",
 						"extended_weight": "10 lb"
 					}
+				},
+				{
+					"id": "efD1ixJmZlsksfPvB",
+					"description": "Ferramenta estranha grande de aco",
+					"legality_class": "4",
+					"base_weight": "1.5",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "1.5 lb",
+						"extended_weight": "1.5 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 8317,
+				"extended_value": 8385,
 				"weight": "10 lb",
-				"extended_weight": "79.52 lb"
+				"extended_weight": "73.204 lb"
 			}
 		},
 		{
@@ -4658,11 +4891,10 @@
 	],
 	"other_equipment": [
 		{
-			"id": "exutqimj4XVIIgG_e",
-			"description": "Staff Charge",
+			"id": "eLVohd6oK85jGlKk2",
+			"description": "Story Point",
 			"legality_class": "4",
-			"base_weight": "0",
-			"quantity": 122,
+			"quantity": 2,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4672,10 +4904,11 @@
 			}
 		},
 		{
-			"id": "eLVohd6oK85jGlKk2",
-			"description": "Story Point",
+			"id": "exutqimj4XVIIgG_e",
+			"description": "Staff Charge",
 			"legality_class": "4",
-			"quantity": 4,
+			"base_weight": "0",
+			"quantity": 100,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4686,7 +4919,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-07-13T14:00:01-03:00",
+	"modified_date": "2026-07-24T15:22:43-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
