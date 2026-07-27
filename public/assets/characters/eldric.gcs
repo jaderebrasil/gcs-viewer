@@ -7889,7 +7889,7 @@
 			"description": "Story Point",
 			"base_value": "0",
 			"base_weight": "0",
-			"max_uses": 1,
+			"max_uses": 10,
 			"quantity": 1,
 			"uses": 1,
 			"equipped": true,
@@ -8753,7 +8753,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-07-27T14:36:05-03:00",
+	"modified_date": "2026-07-27T14:42:39-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
