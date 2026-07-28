@@ -2,8 +2,12 @@
 	"type": "character",
 	"version": 4,
 	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
-	"total_points": 253,
+	"total_points": 256,
 	"points_record": [
+		{
+			"when": "2026-07-14T23:54:41-03:00",
+			"points": 3
+		},
 		{
 			"when": "2026-07-07T23:38:14-03:00",
 			"points": 4
@@ -573,7 +577,7 @@
 			"attr_id": "iq",
 			"adj": 2,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 40
 			}
 		},
@@ -589,7 +593,7 @@
 			"attr_id": "will",
 			"adj": 0,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 0
 			}
 		},
@@ -597,7 +601,7 @@
 			"attr_id": "fright_check",
 			"adj": 0,
 			"calc": {
-				"value": 13,
+				"value": 12,
 				"points": 0
 			}
 		},
@@ -609,7 +613,7 @@
 			"attr_id": "per",
 			"adj": 0,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 0
 			}
 		},
@@ -617,7 +621,7 @@
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 0
 			}
 		},
@@ -625,7 +629,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 0
 			}
 		},
@@ -633,7 +637,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 0
 			}
 		},
@@ -641,7 +645,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 0
 			}
 		},
@@ -1483,11 +1487,50 @@
 					"calc": {
 						"points": -1
 					}
+				},
+				{
+					"id": "6fb0cb8b-e0cb-4fb2-b679-435a6b1de03a",
+					"type": "trait",
+					"name": "Tem certeza de que está cozido? (Cura)",
+					"notes": "Consumir carne fresca cura 1D. Leva 4 segundos. Requer teste de HT. Cada uso subsequente no mesmo dia tem uma dificuldade de -3 em HT.",
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "5aee7be3-d33c-46b6-9454-c668f4509215",
+					"type": "trait",
+					"name": "Partes Úteis",
+					"notes": "Pode usar uma parte do corpo como ferramenta. Custa 1HP por uso.",
+					"base_points": 8,
+					"calc": {
+						"points": 8
+					}
+				},
+				{
+					"id": "931e1b41-2773-440e-8bd1-ec37dd5501cc",
+					"type": "trait",
+					"name": "Atrofia Cerebral",
+					"levels": 1,
+					"points_per_level": -20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -20
+					}
 				}
 			],
 			"name": "Half undead",
 			"calc": {
-				"points": -20
+				"points": -17
 			}
 		},
 		{
@@ -3256,7 +3299,7 @@
 				"modifier": -3,
 				"level": 10,
 				"adjusted_level": 10,
-				"points": 1
+				"points": 2
 			},
 			"defaults": [
 				{
@@ -3270,7 +3313,7 @@
 				}
 			],
 			"calc": {
-				"level": 12,
+				"level": 11,
 				"rsl": "IQ+1"
 			}
 		},
@@ -3371,7 +3414,7 @@
 				"modifier": -4,
 				"level": 11,
 				"adjusted_level": 11,
-				"points": 2
+				"points": 4
 			},
 			"defaults": [
 				{
@@ -3391,7 +3434,7 @@
 			],
 			"calc": {
 				"level": 11,
-				"rsl": "IQ+0"
+				"rsl": "IQ+1"
 			}
 		},
 		{
@@ -3441,9 +3484,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3457,7 +3500,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "Per+0"
 			}
 		},
@@ -3476,9 +3519,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3487,7 +3530,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3543,9 +3586,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3554,7 +3597,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3576,7 +3619,7 @@
 				"modifier": -3,
 				"level": 12,
 				"adjusted_level": 12,
-				"points": 4
+				"points": 8
 			},
 			"defaults": [
 				{
@@ -3591,7 +3634,7 @@
 			],
 			"calc": {
 				"level": 13,
-				"rsl": "IQ+2"
+				"rsl": "IQ+3"
 			}
 		},
 		{
@@ -3672,9 +3715,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3689,7 +3732,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3710,9 +3753,9 @@
 				"name": "Survival",
 				"specialization": "Woodlands",
 				"modifier": -2,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"defaults": [
 				{
@@ -3726,7 +3769,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3745,9 +3788,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3756,7 +3799,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "Per+0"
 			}
 		},
@@ -3776,9 +3819,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3792,7 +3835,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3808,10 +3851,7 @@
 			"points": 2,
 			"defaulted_from": {
 				"type": "per",
-				"modifier": -10,
-				"level": 1,
-				"adjusted_level": 1,
-				"points": -1
+				"modifier": -10
 			},
 			"defaults": [
 				{
@@ -3820,7 +3860,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "Per+0"
 			}
 		},
@@ -3839,9 +3879,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -6,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3860,7 +3900,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Per-1"
 			}
 		},
@@ -3907,9 +3947,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3923,7 +3963,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3944,9 +3984,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3955,7 +3995,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3975,9 +4015,9 @@
 			"defaulted_from": {
 				"type": "will",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -3991,7 +4031,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Will-1"
 			}
 		},
@@ -4010,9 +4050,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -4026,7 +4066,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4188,9 +4228,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -4215,7 +4255,7 @@
 				}
 			],
 			"calc": {
-				"level": 12,
+				"level": 11,
 				"rsl": "IQ+1"
 			}
 		},
@@ -4233,9 +4273,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -4249,7 +4289,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "Per+0"
 			}
 		},
@@ -4269,9 +4309,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
 			},
 			"defaults": [
 				{
@@ -4285,7 +4325,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4306,83 +4346,6 @@
 				"name": "Survival",
 				"specialization": "Mountain",
 				"modifier": -3,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Naturalist",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Arctic",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Desert",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Island/Beach",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Jungle",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Mountain",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Plains",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Swampland",
-					"modifier": -3
-				}
-			],
-			"calc": {
-				"level": 11,
-				"rsl": "Per+0"
-			}
-		},
-		{
-			"id": "ddfcb493-541a-461a-88d3-49f6a0d8e963",
-			"type": "skill",
-			"name": "Survival",
-			"reference": "B223",
-			"tags": [
-				"Exploration",
-				"Outdoor"
-			],
-			"specialization": "Plains",
-			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
 				"level": 6,
 				"adjusted_level": 6,
 				"points": -6
@@ -4430,6 +4393,83 @@
 				{
 					"type": "skill",
 					"name": "Survival",
+					"specialization": "Plains",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Swampland",
+					"modifier": -3
+				}
+			],
+			"calc": {
+				"level": 10,
+				"rsl": "Per+0"
+			}
+		},
+		{
+			"id": "ddfcb493-541a-461a-88d3-49f6a0d8e963",
+			"type": "skill",
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Plains",
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Arctic",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Desert",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Island/Beach",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Jungle",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Mountain",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
 					"specialization": "Swampland",
 					"modifier": -3
 				},
@@ -4441,7 +4481,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Per-1"
 			}
 		},
@@ -4462,9 +4502,9 @@
 				"name": "Survival",
 				"specialization": "Plains",
 				"modifier": -3,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
 			},
 			"defaults": [
 				{
@@ -4520,7 +4560,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Per-1"
 			}
 		},
@@ -4611,9 +4651,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -7,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
 			},
 			"defaults": [
 				{
@@ -4622,8 +4662,19 @@
 				}
 			],
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "IQ-3"
+			}
+		},
+		{
+			"id": "35a302d6-c6af-40fb-9698-cbfd505c178e",
+			"type": "skill",
+			"name": "Tanatopraxist",
+			"difficulty": "iq/a",
+			"points": 4,
+			"calc": {
+				"level": 11,
+				"rsl": "IQ+1"
 			}
 		}
 	],
@@ -4820,7 +4871,7 @@
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-07-13T20:05:08-03:00",
+	"modified_date": "2026-07-28T19:00:25-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
