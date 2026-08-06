@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 334,
+	"total_points": 337,
 	"points_record": [
+		{
+			"when": "2026-08-05T23:37:16-03:00",
+			"points": 3,
+			"reason": "Mike Baguncinha"
+		},
 		{
 			"when": "2026-07-28T23:42:34-03:00",
 			"points": 3,
@@ -1014,9 +1019,9 @@
 						}
 					],
 					"calc": {
-						"level": 19,
+						"level": 20,
 						"damage": "cr",
-						"parry": "14"
+						"parry": "15"
 					}
 				}
 			],
@@ -3470,9 +3475,9 @@
 								}
 							],
 							"calc": {
-								"level": 19,
+								"level": 20,
 								"damage": "1d+1 pi",
-								"parry": "13"
+								"parry": "14"
 							}
 						}
 					],
@@ -4474,10 +4479,10 @@
 						"Weapon"
 					],
 					"difficulty": "dx/h",
-					"points": 1,
+					"points": 2,
 					"calc": {
-						"level": 10,
-						"rsl": "DX-2"
+						"level": 11,
+						"rsl": "DX-1"
 					}
 				},
 				{
@@ -4548,10 +4553,10 @@
 					],
 					"difficulty": "dx/h",
 					"encumbrance_penalty_multiplier": 1,
-					"points": 32,
+					"points": 36,
 					"calc": {
-						"level": 19,
-						"rsl": "DX+7"
+						"level": 20,
+						"rsl": "DX+8"
 					}
 				},
 				{
@@ -4592,7 +4597,7 @@
 					},
 					"points": 2,
 					"calc": {
-						"level": 18,
+						"level": 19,
 						"rsl": "-1"
 					}
 				},
@@ -4619,7 +4624,7 @@
 					"limit": 4,
 					"points": 1,
 					"calc": {
-						"level": 20,
+						"level": 21,
 						"rsl": "+1"
 					}
 				},
@@ -4646,7 +4651,7 @@
 					"limit": 0,
 					"points": 2,
 					"calc": {
-						"level": 19,
+						"level": 20,
 						"rsl": "+0"
 					}
 				}
@@ -5098,7 +5103,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-07-28T23:44:37-03:00",
+	"modified_date": "2026-08-05T23:39:03-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
