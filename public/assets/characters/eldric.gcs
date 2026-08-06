@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 253,
+	"total_points": 259,
 	"points_record": [
+		{
+			"when": "2026-08-05T23:37:12-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
+		{
+			"when": "2026-07-28T23:42:32-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-07-21T23:53:21-03:00",
 			"points": 4,
@@ -7901,6 +7911,73 @@
 			}
 		},
 		{
+			"id": "ekfePZE0UbR3ctJhw",
+			"description": "Cabelo do Jayce",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "EC-Ns3fY8qsI3zdik",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "EIdDwHtUiZl0XPKHb"
+			},
+			"description": "Wineskin",
+			"reference": "B288",
+			"tech_level": "0",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"base_value": "10",
+			"base_weight": "0.25 lb",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "8 lb"
+						}
+					}
+				]
+			},
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "efhvGZODsM8_sSkJY",
+					"description": "Bebida alcoolica ruim (24 dias)",
+					"legality_class": "4",
+					"base_weight": "5",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 10,
+				"extended_value": 10,
+				"weight": "0.25 lb",
+				"extended_weight": "5.25 lb"
+			}
+		},
+		{
 			"id": "EGzEu1KOxJq97GDtv",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -8521,20 +8598,6 @@
 					}
 				},
 				{
-					"id": "egRvgT7U9MX46-nb2",
-					"description": "Comida",
-					"legality_class": "4",
-					"base_weight": "0.5",
-					"quantity": 10,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.5 lb",
-						"extended_weight": "5 lb"
-					}
-				},
-				{
 					"id": "eJWYBZchTbwIChYRY",
 					"description": "Book",
 					"local_notes": "200 pages",
@@ -8555,7 +8618,7 @@
 				"value": 60,
 				"extended_value": 263.75,
 				"weight": "3 lb",
-				"extended_weight": "21.76 lb"
+				"extended_weight": "16.76 lb"
 			}
 		},
 		{
@@ -8753,7 +8816,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-07-27T14:42:39-03:00",
+	"modified_date": "2026-08-05T21:31:01-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
