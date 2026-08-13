@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 259,
+	"total_points": 262,
 	"points_record": [
+		{
+			"when": "2026-08-12T23:53:35-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-08-05T23:37:12-03:00",
 			"points": 3,
@@ -7924,6 +7929,31 @@
 			}
 		},
 		{
+			"id": "esfmAxKDJ2_hTezVh",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Magic/Magic Equipment.eqp",
+				"id": "en3K5VAj04gPAJcc0"
+			},
+			"description": "Remédio doença",
+			"reference": "M20",
+			"tags": [
+				"Powerstone"
+			],
+			"base_value": "0",
+			"base_weight": "0.004 lb",
+			"max_uses": 10,
+			"quantity": 1,
+			"uses": 8,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0.004 lb",
+				"extended_weight": "0.004 lb"
+			}
+		},
+		{
 			"id": "EC-Ns3fY8qsI3zdik",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -8588,13 +8618,13 @@
 					"local_notes": "A pinewood emblem measuring 10 cm in diameter and ½ inch thick.",
 					"legality_class": "4",
 					"base_weight": "0.02",
-					"quantity": 18,
+					"quantity": 17,
 					"equipped": true,
 					"calc": {
 						"value": 0,
 						"extended_value": 0,
 						"weight": "0.02 lb",
-						"extended_weight": "0.36 lb"
+						"extended_weight": "0.34 lb"
 					}
 				},
 				{
@@ -8618,7 +8648,7 @@
 				"value": 60,
 				"extended_value": 263.75,
 				"weight": "3 lb",
-				"extended_weight": "16.76 lb"
+				"extended_weight": "16.74 lb"
 			}
 		},
 		{
@@ -8816,7 +8846,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-08-05T21:31:01-03:00",
+	"modified_date": "2026-08-12T22:31:14-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
