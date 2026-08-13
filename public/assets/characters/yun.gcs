@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 251,
+	"total_points": 257,
 	"points_record": [
+		{
+			"when": "2026-08-05T23:37:16-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-07-28T23:42:09-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-07-21T23:49:23-03:00",
 			"points": 4,
@@ -3015,10 +3025,22 @@
 					"id": "m0j_IO4mN5d6ChXLc",
 					"name": "Only Blind",
 					"cost_adj": "-50%"
+				},
+				{
+					"id": "mzcv2ZDF7eVnib7ti",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Enhancement Modifiers.adm",
+						"id": "mdF_YOT8TLBmhnsO-"
+					},
+					"name": "Reduced Time",
+					"reference": "B108",
+					"cost_adj": "20%",
+					"levels": 1
 				}
 			],
 			"calc": {
-				"points": 8
+				"points": 12
 			}
 		}
 	],
@@ -4597,13 +4619,13 @@
 							],
 							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 7,
+							"quantity": 20,
 							"equipped": true,
 							"calc": {
 								"value": 20,
-								"extended_value": 140,
+								"extended_value": 400,
 								"weight": "0.004 lb",
-								"extended_weight": "0.028 lb"
+								"extended_weight": "0.08 lb"
 							}
 						},
 						{
@@ -4621,13 +4643,13 @@
 							],
 							"base_value": "400",
 							"base_weight": "0.004 lb",
-							"quantity": 9,
+							"quantity": 10,
 							"equipped": true,
 							"calc": {
 								"value": 400,
-								"extended_value": 3600,
+								"extended_value": 4000,
 								"weight": "0.004 lb",
-								"extended_weight": "0.036 lb"
+								"extended_weight": "0.04 lb"
 							}
 						},
 						{
@@ -4645,21 +4667,21 @@
 							],
 							"base_value": "1",
 							"base_weight": "0.008 lb",
-							"quantity": 80,
+							"quantity": 71,
 							"equipped": true,
 							"calc": {
 								"value": 1,
-								"extended_value": 80,
+								"extended_value": 71,
 								"weight": "0.008 lb",
-								"extended_weight": "0.64 lb"
+								"extended_weight": "0.568 lb"
 							}
 						}
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 3830,
+						"extended_value": 4481,
 						"weight": "0.5 lb",
-						"extended_weight": "1.204 lb"
+						"extended_weight": "1.188 lb"
 					}
 				},
 				{
@@ -4866,13 +4888,85 @@
 						"weight": "1.5 lb",
 						"extended_weight": "1.5 lb"
 					}
+				},
+				{
+					"id": "eua7U-0B7VR7xh9Zk",
+					"description": "Tecidos de teia de aranha",
+					"legality_class": "4",
+					"base_value": "850",
+					"base_weight": "2",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 850,
+						"extended_value": 850,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eh5s7NBUqecfdi2QI",
+					"description": "Sal preto",
+					"legality_class": "4",
+					"base_value": "450",
+					"base_weight": "1",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 450,
+						"extended_value": 450,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eFr7uLInT3clRFT3g",
+					"description": "Quartzo",
+					"local_notes": "Tamanho que enche a minha mão",
+					"legality_class": "4",
+					"base_value": "600",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 600,
+						"extended_value": 600,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eQOVhN5vErJWMTdjG",
+					"description": "Adaga de prata",
+					"legality_class": "4",
+					"base_weight": "0.25",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "eLcBwEVq_mYICv8AE",
+					"description": "Pistola 1 Gula",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 8385,
+				"extended_value": 10936,
 				"weight": "10 lb",
-				"extended_weight": "73.204 lb"
+				"extended_weight": "76.438 lb"
 			}
 		},
 		{
@@ -4919,7 +5013,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-07-24T15:22:43-03:00",
+	"modified_date": "2026-08-05T23:46:15-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
