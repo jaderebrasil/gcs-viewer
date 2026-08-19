@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 257,
+	"total_points": 260,
 	"points_record": [
+		{
+			"when": "2026-08-12T23:45:06-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-08-05T23:37:16-03:00",
 			"points": 3,
@@ -2925,89 +2930,89 @@
 			},
 			"modifiers": [
 				{
-					"id": "mK9UqExhVUf85h4yk",
+					"id": "mGj9t4InwRrPlgN4Z",
 					"name": "@Rare Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "5",
 					"disabled": true
 				},
 				{
-					"id": "mtTzQQFaCvqhS6G5P",
+					"id": "mbn2mXlVOSWTOw8gU",
 					"name": "@Occasional Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "10",
 					"disabled": true
 				},
 				{
-					"id": "m1wq3EUPg9axV1SYs",
+					"id": "m8MlRo4d_3yOFOL_q",
 					"name": "@Common Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "20"
 				},
 				{
-					"id": "mQ77F_NVuOdQlpp7e",
+					"id": "mrecIM_WYdii_CrPk",
 					"name": "@Very Common Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "30",
 					"disabled": true
 				},
 				{
-					"id": "mqkAx0uKimGROMu7r",
+					"id": "mxYkOlrWf7ca1hV7A",
 					"name": "Precise",
 					"reference": "B48",
 					"cost_adj": "100%",
 					"disabled": true
 				},
 				{
-					"id": "miTzlr4FMYQJ5boXP",
+					"id": "mZjnQzEtmZ01XzRXs",
 					"name": "Signal Detection",
 					"reference": "B48",
 					"disabled": true
 				},
 				{
-					"id": "maxEwILdayyC_pJPY",
+					"id": "mmSR96HTsTyWT8EAD",
 					"name": "Vague",
 					"reference": "B48",
 					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "mW7um0B9AjntEUAJV",
+					"id": "mGSYbUdNmts8sEE0Y",
 					"name": "Analyzing",
 					"reference": "P47",
 					"cost_adj": "100%",
 					"disabled": true
 				},
 				{
-					"id": "mANATuAy8Z6Bz4UN2",
+					"id": "m1AhonDF1e9O9SGf1",
 					"name": "Lock-On",
 					"reference": "PSI14",
 					"cost_adj": "50%",
 					"disabled": true
 				},
 				{
-					"id": "mACwIvvV6xK2q89yh",
+					"id": "mU-EQbMaL4yXNFuif",
 					"name": "Precise, Nontargeting",
 					"reference": "PSI14",
 					"cost_adj": "90%",
 					"disabled": true
 				},
 				{
-					"id": "mVgxDGFVGubK_tXYD",
+					"id": "mrKwjlGc2XG1LbceR",
 					"name": "Analysis Only",
 					"reference": "PSI14",
 					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "mtalHTc_e-vZ-lyHo",
+					"id": "mBjZ7oOJ98kC4fcd7",
 					"name": "Cannot Analyze",
 					"reference": "PSI14",
 					"cost_adj": "-10%",
 					"disabled": true
 				},
 				{
-					"id": "m6XX_U5osqTAiiyki",
+					"id": "mzlhMNRDEMqVwDNdd",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Powers/Powers Modifiers.adm",
@@ -3022,12 +3027,12 @@
 					}
 				},
 				{
-					"id": "m0j_IO4mN5d6ChXLc",
+					"id": "mNDtbj6pt99SgdnhG",
 					"name": "Only Blind",
 					"cost_adj": "-50%"
 				},
 				{
-					"id": "mzcv2ZDF7eVnib7ti",
+					"id": "m0JJJxa4xeKUza9mm",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Enhancement Modifiers.adm",
@@ -3782,7 +3787,7 @@
 							"modifier": -4
 						}
 					],
-					"points": 2,
+					"points": 4,
 					"defaulted_from": {
 						"type": "will",
 						"modifier": -6,
@@ -3791,8 +3796,8 @@
 						"points": -4
 					},
 					"calc": {
-						"level": 9,
-						"rsl": "Will-1"
+						"level": 10,
+						"rsl": "Will+0"
 					}
 				},
 				{
@@ -4145,10 +4150,10 @@
 					}
 				]
 			},
-			"points": 2,
+			"points": 4,
 			"calc": {
-				"level": 9,
-				"rsl": "HT-2"
+				"level": 10,
+				"rsl": "HT-1"
 			}
 		}
 	],
@@ -4619,13 +4624,13 @@
 							],
 							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 20,
+							"quantity": 17,
 							"equipped": true,
 							"calc": {
 								"value": 20,
-								"extended_value": 400,
+								"extended_value": 340,
 								"weight": "0.004 lb",
-								"extended_weight": "0.08 lb"
+								"extended_weight": "0.068 lb"
 							}
 						},
 						{
@@ -4643,13 +4648,13 @@
 							],
 							"base_value": "400",
 							"base_weight": "0.004 lb",
-							"quantity": 10,
+							"quantity": 15,
 							"equipped": true,
 							"calc": {
 								"value": 400,
-								"extended_value": 4000,
+								"extended_value": 6000,
 								"weight": "0.004 lb",
-								"extended_weight": "0.04 lb"
+								"extended_weight": "0.06 lb"
 							}
 						},
 						{
@@ -4667,21 +4672,21 @@
 							],
 							"base_value": "1",
 							"base_weight": "0.008 lb",
-							"quantity": 71,
+							"quantity": 24,
 							"equipped": true,
 							"calc": {
 								"value": 1,
-								"extended_value": 71,
+								"extended_value": 24,
 								"weight": "0.008 lb",
-								"extended_weight": "0.568 lb"
+								"extended_weight": "0.192 lb"
 							}
 						}
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 4481,
+						"extended_value": 6374,
 						"weight": "0.5 lb",
-						"extended_weight": "1.188 lb"
+						"extended_weight": "0.82 lb"
 					}
 				},
 				{
@@ -4846,127 +4851,13 @@
 						"weight": "1 lb",
 						"extended_weight": "1 lb"
 					}
-				},
-				{
-					"id": "e0HkxqgGY5SNfLQ--",
-					"description": "Amuleto de olho mágico elfico",
-					"legality_class": "4",
-					"base_weight": "0.25",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.25 lb",
-						"extended_weight": "0.25 lb"
-					}
-				},
-				{
-					"id": "eLUXZ9zu0p66hZfu0",
-					"description": "Couro dos TROGS",
-					"legality_class": "4",
-					"base_weight": "1",
-					"quantity": 10,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "1 lb",
-						"extended_weight": "10 lb"
-					}
-				},
-				{
-					"id": "efD1ixJmZlsksfPvB",
-					"description": "Ferramenta estranha grande de aco",
-					"legality_class": "4",
-					"base_weight": "1.5",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "1.5 lb",
-						"extended_weight": "1.5 lb"
-					}
-				},
-				{
-					"id": "eua7U-0B7VR7xh9Zk",
-					"description": "Tecidos de teia de aranha",
-					"legality_class": "4",
-					"base_value": "850",
-					"base_weight": "2",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 850,
-						"extended_value": 850,
-						"weight": "2 lb",
-						"extended_weight": "2 lb"
-					}
-				},
-				{
-					"id": "eh5s7NBUqecfdi2QI",
-					"description": "Sal preto",
-					"legality_class": "4",
-					"base_value": "450",
-					"base_weight": "1",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 450,
-						"extended_value": 450,
-						"weight": "1 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "eFr7uLInT3clRFT3g",
-					"description": "Quartzo",
-					"local_notes": "Tamanho que enche a minha mão",
-					"legality_class": "4",
-					"base_value": "600",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 600,
-						"extended_value": 600,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eQOVhN5vErJWMTdjG",
-					"description": "Adaga de prata",
-					"legality_class": "4",
-					"base_weight": "0.25",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.25 lb",
-						"extended_weight": "0.25 lb"
-					}
-				},
-				{
-					"id": "eLcBwEVq_mYICv8AE",
-					"description": "Pistola 1 Gula",
-					"legality_class": "4",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0 lb",
-						"extended_weight": "0 lb"
-					}
 				}
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 10936,
+				"extended_value": 10929,
 				"weight": "10 lb",
-				"extended_weight": "76.438 lb"
+				"extended_weight": "61.07 lb"
 			}
 		},
 		{
@@ -5002,7 +4893,7 @@
 			"description": "Staff Charge",
 			"legality_class": "4",
 			"base_weight": "0",
-			"quantity": 100,
+			"quantity": 99,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -5013,7 +4904,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-08-05T23:46:15-03:00",
+	"modified_date": "2026-08-13T00:11:37-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
