@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 262,
+	"total_points": 265,
 	"points_record": [
+		{
+			"when": "2026-08-19T23:20:15-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-08-12T23:53:35-03:00",
 			"points": 3,
@@ -1432,6 +1437,13 @@
 						{
 							"id": "tm0rO_ShjfbVyWwRO",
 							"name": "Vozes do Cepo Ancião",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tHjRFPg4sBkP2QPso",
+							"name": "Ouvido relativo",
 							"calc": {
 								"points": 0
 							}
@@ -7928,7 +7940,6 @@
 			"base_weight": "0.004 lb",
 			"max_uses": 10,
 			"quantity": 1,
-			"uses": 8,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -7999,14 +8010,14 @@
 					"id": "efhvGZODsM8_sSkJY",
 					"description": "Bebida alcoolica ruim (24 dias)",
 					"legality_class": "4",
-					"base_weight": "5",
+					"base_weight": "4",
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
 						"value": 0,
 						"extended_value": 0,
-						"weight": "5 lb",
-						"extended_weight": "5 lb"
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
 					}
 				}
 			],
@@ -8014,7 +8025,7 @@
 				"value": 10,
 				"extended_value": 10,
 				"weight": "0.25 lb",
-				"extended_weight": "5.25 lb"
+				"extended_weight": "4.25 lb"
 			}
 		},
 		{
@@ -8373,13 +8384,13 @@
 					"legality_class": "4",
 					"base_value": "200",
 					"base_weight": "0.5",
-					"quantity": 1,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 200,
-						"extended_value": 200,
+						"extended_value": 400,
 						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -8433,9 +8444,9 @@
 			],
 			"calc": {
 				"value": 25,
-				"extended_value": 225,
+				"extended_value": 425,
 				"weight": "0.5 lb",
-				"extended_weight": "1.004 lb"
+				"extended_weight": "1.504 lb"
 			}
 		},
 		{
@@ -8856,7 +8867,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-08-13T14:16:19-03:00",
+	"modified_date": "2026-08-19T19:44:51-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
