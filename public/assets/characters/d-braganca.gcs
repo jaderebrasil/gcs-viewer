@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 343,
+	"total_points": 346,
 	"points_record": [
+		{
+			"when": "2026-09-02T00:05:00-03:00",
+			"points": 3,
+			"reason": "Zica Vírus Ferrugiano"
+		},
 		{
 			"when": "2026-08-19T23:20:49-03:00",
 			"points": 3,
@@ -3908,7 +3913,7 @@
 				}
 			],
 			"tech_level": "3",
-			"points": 4,
+			"points": 8,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -7,
@@ -3917,8 +3922,8 @@
 				"points": -4
 			},
 			"calc": {
-				"level": 11,
-				"rsl": "IQ+0"
+				"level": 12,
+				"rsl": "IQ+1"
 			}
 		},
 		{
@@ -3961,9 +3966,9 @@
 				"type": "skill",
 				"name": "Physician",
 				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
 				"level": 11,
@@ -4057,9 +4062,9 @@
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Physician",
-				"level": 11,
-				"adjusted_level": 11,
-				"points": 1
+				"level": 12,
+				"adjusted_level": 12,
+				"points": 2
 			},
 			"calc": {
 				"level": 12,
@@ -5157,7 +5162,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-08-19T23:21:55-03:00",
+	"modified_date": "2026-09-05T00:07:17-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
