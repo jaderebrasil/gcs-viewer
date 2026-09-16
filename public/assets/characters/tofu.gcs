@@ -2,8 +2,33 @@
 	"type": "character",
 	"version": 4,
 	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
-	"total_points": 256,
+	"total_points": 276,
 	"points_record": [
+		{
+			"when": "2026-09-10T00:07:19-03:00",
+			"points": 5
+		},
+		{
+			"when": "2026-09-03T02:18:54-03:00",
+			"points": 3
+		},
+		{
+			"when": "2026-08-19T23:20:22-03:00",
+			"points": 3
+		},
+		{
+			"when": "2026-08-12T23:44:58-03:00",
+			"points": 3
+		},
+		{
+			"when": "2026-08-05T23:37:37-03:00",
+			"points": 3,
+			"reason": "Chegamos em Grimsford"
+		},
+		{
+			"when": "2026-07-28T23:46:44-03:00",
+			"points": 3
+		},
 		{
 			"when": "2026-07-14T23:54:41-03:00",
 			"points": 3
@@ -389,7 +414,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 2
+							"all": 4
 						}
 					}
 				},
@@ -403,7 +428,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -417,7 +442,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -431,7 +456,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -443,7 +468,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -457,7 +482,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -471,7 +496,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -485,7 +510,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -499,7 +524,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -513,7 +538,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -527,7 +552,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -540,7 +565,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				}
@@ -577,7 +602,7 @@
 			"attr_id": "iq",
 			"adj": 2,
 			"calc": {
-				"value": 10,
+				"value": 9,
 				"points": 40
 			}
 		},
@@ -593,7 +618,7 @@
 			"attr_id": "will",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -601,7 +626,7 @@
 			"attr_id": "fright_check",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -613,7 +638,7 @@
 			"attr_id": "per",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -621,7 +646,7 @@
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -629,7 +654,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -637,7 +662,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -645,7 +670,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 10,
+				"value": 9,
 				"points": 0
 			}
 		},
@@ -698,8 +723,8 @@
 			"attr_id": "hp",
 			"adj": 0,
 			"calc": {
-				"value": 11,
-				"current": 11,
+				"value": 15,
+				"current": 15,
 				"points": 0
 			}
 		}
@@ -1489,6 +1514,157 @@
 					}
 				},
 				{
+					"id": "03bae477-c974-49f6-9170-0ad1c14c85d3",
+					"type": "trait",
+					"name": "Talent (Undead)",
+					"reference": "B89",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Talent"
+					],
+					"modifiers": [
+						{
+							"id": "190a8e07-518d-4571-bce8-707bdee6e956",
+							"type": "modifier",
+							"name": "Alternate Benefit",
+							"notes": "@Alternate Benefit@",
+							"disabled": true
+						},
+						{
+							"id": "45a9ce16-d103-41ce-8291-40ac1b0ac334",
+							"type": "modifier",
+							"name": "Alternative Cost",
+							"affects": "levels_only",
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Innate Attack"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Tanatopraxist"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
 					"id": "6fb0cb8b-e0cb-4fb2-b679-435a6b1de03a",
 					"type": "trait",
 					"name": "Tem certeza de que está cozido? (Cura)",
@@ -1496,6 +1672,48 @@
 					"base_points": 15,
 					"calc": {
 						"points": 15
+					}
+				},
+				{
+					"id": "615c85f7-d824-4032-8d57-34535a937bd5",
+					"type": "trait",
+					"name": "Extra Hit Points",
+					"reference": "B16",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "910bfd80-869d-46d8-aa30-5c7c5bae59a4",
+							"type": "modifier",
+							"name": "Size",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "c8507381-4dc6-4aa2-9f6c-f6298e772f03",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"levels": 4,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hp",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 8
 					}
 				},
 				{
@@ -1509,10 +1727,30 @@
 					}
 				},
 				{
+					"id": "6b19d09c-4bc6-41bc-abc1-5142a01c8bff",
+					"type": "trait",
+					"name": "Dedos Ejetáveis",
+					"notes": "2d pi, alcance 10, 1/2D, 100, acc 3, RoF 1,exceto dedão. Custa 2 hp.",
+					"base_points": 9,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "f2c349a4-c492-4ae3-af2b-5a402f2feb18",
+					"type": "trait",
+					"name": "Caixa toráxica",
+					"notes": "Carrega até 24lb dentro do corpo e mantém conservado/fresco por até 1 semana. Custa 2hp para usar (abrir o corpo).",
+					"base_points": 18,
+					"calc": {
+						"points": 18
+					}
+				},
+				{
 					"id": "931e1b41-2773-440e-8bd1-ec37dd5501cc",
 					"type": "trait",
 					"name": "Atrofia Cerebral",
-					"levels": 1,
+					"levels": 2,
 					"points_per_level": -20,
 					"features": [
 						{
@@ -1524,13 +1762,514 @@
 					],
 					"can_level": true,
 					"calc": {
-						"points": -20
+						"points": -40
+					}
+				},
+				{
+					"id": "03e3ddbd-1475-422d-b34a-1955f8f10366",
+					"type": "trait",
+					"name": "Peitoral de Goblin",
+					"notes": "Tom mais esverdeado",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "ec14190d-ed72-4881-b4df-b8e4ae0eb05b",
+					"type": "trait",
+					"name": "Damage Resistance",
+					"reference": "B47,P45,MA43,PSI14",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "71e0ea7a-bb0e-409d-b01d-aa247b4e66f6",
+							"type": "modifier",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "a5e89aca-0b61-483e-8ae3-d6086856cf9a",
+							"type": "modifier",
+							"name": "Hardened",
+							"reference": "B47",
+							"cost": 20,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "0377b71f-5bfe-44a7-b1a0-db38c7952845",
+							"type": "modifier",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "db27da09-5815-4776-9af9-6d9741d8e52a",
+							"type": "modifier",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "0e4c391b-1076-40f2-92b6-c5d3c60b78fd",
+							"type": "modifier",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "8b422514-296a-4b7c-b350-6b7e7d2be0e9",
+							"type": "modifier",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "419ab96d-ea87-4894-b6d8-a6ee32a5d416",
+							"type": "modifier",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "a8c6d43d-430e-4773-a64c-200f75009e65",
+							"type": "modifier",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "e9503abd-7621-42c4-8ced-3981ec7c6d9a",
+							"type": "modifier",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "1585a884-94e2-4152-b7b7-d3b6cc253c58",
+							"type": "modifier",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "131c5627-2f5a-4f3f-8a52-08417003bc95",
+							"type": "modifier",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "132e7d43-7920-45f5-bcde-036029aa49f2",
+							"type": "modifier",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "d9e01c00-3ac2-4f4d-ae5f-45b34441df13",
+							"type": "modifier",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "72f08aac-bc4a-43fe-875b-8747b7397bec",
+							"type": "modifier",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "13410164-cee1-4956-832c-47bcf41fdab8",
+							"type": "modifier",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "9ad2a005-947f-4ef9-ba99-ed88a4adaa49",
+							"type": "modifier",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "34ffce90-cba0-4d1a-a8ce-b3e6b12a51e3",
+							"type": "modifier",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "10940926-bf24-4984-a984-d974384f0874",
+							"type": "modifier",
+							"name": "Tough Skin",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40
+						},
+						{
+							"id": "db046fce-bac2-4fae-98d4-ee66925c0e9e",
+							"type": "modifier",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "b112e7ab-adac-40ef-a544-598ae0f7436f",
+							"type": "modifier",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "3b761122-5da1-46dd-992c-2f9df40890cb",
+							"type": "modifier",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "0ed89045-94df-4ab0-ac26-53103a2ad43f",
+							"type": "modifier",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "a1baddab-14e3-402e-a209-1eee48ba98ec",
+							"type": "modifier",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "b1b407f3-24ca-4beb-8f3a-d362891e5af9",
+							"type": "modifier",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "a48b115e-bf63-41f8-84cd-3b6d1e41653e",
+							"type": "modifier",
+							"name": "Partial (Torso)",
+							"reference": "B47",
+							"cost": -10
+						}
+					],
+					"levels": 2,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"location": "skull",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "face",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "neck",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "torso",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "vitals",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "groin",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "arm",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "hand",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "leg",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "foot",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "tail",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "wing",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "fin",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"location": "brain",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "c6939ecd-493e-48a6-9fc2-4f5f27e0101b",
+					"type": "trait",
+					"name": "Restricted Diet (Fresh meat)",
+					"reference": "B151",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "0dae0fad-abcc-4e90-a149-326bea6573a8",
+							"type": "modifier",
+							"name": "Substitution",
+							"reference": "B151",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "1cc9a927-6c9b-402c-bd43-9fe3454103aa",
+							"type": "modifier",
+							"name": "Very Common",
+							"reference": "B151",
+							"cost": -10,
+							"cost_type": "points"
+						},
+						{
+							"id": "7ee9ad59-a4f4-4310-ad24-cbd4d90047c7",
+							"type": "modifier",
+							"name": "Common",
+							"reference": "B151",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "0d16b1d2-ff4b-40d7-a015-5b3a71fbbd1a",
+							"type": "modifier",
+							"name": "Occasional",
+							"reference": "B151",
+							"cost": -30,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "2b764a44-21bf-4285-83d6-a2443b93fe36",
+							"type": "modifier",
+							"name": "Rare",
+							"reference": "B151",
+							"cost": -40,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "539b938d-e373-4044-80bd-8f9772bc1eb8",
+					"type": "trait",
+					"name": "Supernatural Features",
+					"reference": "B157",
+					"tags": [
+						"Disadvantage",
+						"Physical",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "f02a7bf6-5532-414d-9483-dc3b1cc67ae0",
+							"type": "modifier",
+							"name": "No Body Heat",
+							"reference": "B157",
+							"notes": "Gives +1 on all rolls to deduce your secret",
+							"cost": -5,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those who touch you, shake your hand, kiss you, etc.",
+									"amount": -1
+								}
+							]
+						},
+						{
+							"id": "5caa6b40-89b4-41cb-8a62-3dac3f0205cd",
+							"type": "modifier",
+							"name": "No Body Heat",
+							"reference": "B157",
+							"notes": "Can gain warmth temporarily, such as after feeding for a vampire. Gives +1 on all rolls to deduce your secret",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those who touch you, shake your hand, kiss you, etc.",
+									"amount": -1
+								}
+							]
+						},
+						{
+							"id": "24945a3e-1474-4b0d-bf32-abce1fda0de7",
+							"type": "modifier",
+							"name": "No Reflection",
+							"reference": "B157",
+							"notes": "Gives +2 on all rolls to deduce your secret",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others who notice you have no reflection",
+									"amount": -2
+								}
+							]
+						},
+						{
+							"id": "b69dbe30-2cdc-43a5-8ca8-e132e1c2911c",
+							"type": "modifier",
+							"name": "No Shadow",
+							"reference": "B157",
+							"notes": "Gives +2 on all rolls to deduce your secret",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others that notice you have no shadow",
+									"amount": -2
+								}
+							]
+						},
+						{
+							"id": "d284e250-2492-436a-b84e-871830a229fe",
+							"type": "modifier",
+							"name": "Pallor",
+							"reference": "B157",
+							"notes": "Gives +2 on all rolls to deduce your secret",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others who can see you without makeup in good light",
+									"amount": -2
+								}
+							]
+						},
+						{
+							"id": "8b22e51f-c756-4499-b8aa-0ed15d437701",
+							"type": "modifier",
+							"name": "Pallor",
+							"reference": "B157",
+							"notes": "Can gain the flush of life temporarily, such as after feeding for a vampire. Gives +2 on all rolls to deduce your secret",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others who can see you without makeup in good light",
+									"amount": -2
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": -5
 					}
 				}
 			],
 			"name": "Half undead",
 			"calc": {
-				"points": -17
+				"points": -2
 			}
 		},
 		{
@@ -3299,7 +4038,7 @@
 				"modifier": -3,
 				"level": 10,
 				"adjusted_level": 10,
-				"points": 2
+				"points": 4
 			},
 			"defaults": [
 				{
@@ -3314,7 +4053,7 @@
 			],
 			"calc": {
 				"level": 11,
-				"rsl": "IQ+1"
+				"rsl": "IQ+2"
 			}
 		},
 		{
@@ -3414,7 +4153,7 @@
 				"modifier": -4,
 				"level": 11,
 				"adjusted_level": 11,
-				"points": 4
+				"points": 8
 			},
 			"defaults": [
 				{
@@ -3434,7 +4173,7 @@
 			],
 			"calc": {
 				"level": 11,
-				"rsl": "IQ+1"
+				"rsl": "IQ+2"
 			}
 		},
 		{
@@ -3484,9 +4223,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3500,7 +4239,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Per+0"
 			}
 		},
@@ -3519,9 +4258,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3530,7 +4269,7 @@
 				}
 			],
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3586,9 +4325,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3597,7 +4336,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3619,7 +4358,7 @@
 				"modifier": -3,
 				"level": 12,
 				"adjusted_level": 12,
-				"points": 8
+				"points": 12
 			},
 			"defaults": [
 				{
@@ -3634,7 +4373,7 @@
 			],
 			"calc": {
 				"level": 13,
-				"rsl": "IQ+3"
+				"rsl": "IQ+4"
 			}
 		},
 		{
@@ -3715,9 +4454,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3732,7 +4471,7 @@
 				}
 			],
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3753,9 +4492,9 @@
 				"name": "Survival",
 				"specialization": "Woodlands",
 				"modifier": -2,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
 			},
 			"defaults": [
 				{
@@ -3769,7 +4508,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3788,9 +4527,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3799,7 +4538,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Per+0"
 			}
 		},
@@ -3819,9 +4558,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3835,7 +4574,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+0"
 			}
 		},
@@ -3851,7 +4590,9 @@
 			"points": 2,
 			"defaulted_from": {
 				"type": "per",
-				"modifier": -10
+				"modifier": -10,
+				"level": -1,
+				"adjusted_level": -1
 			},
 			"defaults": [
 				{
@@ -3860,7 +4601,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Per+0"
 			}
 		},
@@ -3879,9 +4620,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -6,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
 			},
 			"defaults": [
 				{
@@ -3900,7 +4641,7 @@
 				}
 			],
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per-1"
 			}
 		},
@@ -3947,9 +4688,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3963,7 +4704,7 @@
 				}
 			],
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ-1"
 			}
 		},
@@ -3984,9 +4725,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -3995,7 +4736,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4015,9 +4756,9 @@
 			"defaulted_from": {
 				"type": "will",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -4031,7 +4772,7 @@
 				}
 			],
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Will-1"
 			}
 		},
@@ -4050,9 +4791,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
 			},
 			"defaults": [
 				{
@@ -4066,7 +4807,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4213,6 +4954,42 @@
 			}
 		},
 		{
+			"id": "8a5d777d-05ef-433b-bba9-923f2b743611",
+			"type": "skill",
+			"name": "Innate Attack",
+			"reference": "B201",
+			"tags": [
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"specialization": "Projectile",
+			"difficulty": "dx/e",
+			"points": 2,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Innate Attack",
+					"modifier": -2
+				}
+			],
+			"calc": {
+				"level": 16,
+				"rsl": "DX+2"
+			}
+		},
+		{
 			"id": "7d799f9c-a2d2-4ec0-8011-f157b1bdca1b",
 			"type": "skill",
 			"name": "Cartography",
@@ -4228,9 +5005,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -4255,7 +5032,7 @@
 				}
 			],
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+1"
 			}
 		},
@@ -4273,9 +5050,9 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
 			},
 			"defaults": [
 				{
@@ -4289,7 +5066,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "Per+0"
 			}
 		},
@@ -4309,9 +5086,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -4,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -4325,7 +5102,7 @@
 				}
 			],
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+0"
 			}
 		},
@@ -4346,83 +5123,6 @@
 				"name": "Survival",
 				"specialization": "Mountain",
 				"modifier": -3,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Naturalist",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Arctic",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Desert",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Island/Beach",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Jungle",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Mountain",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Plains",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Swampland",
-					"modifier": -3
-				}
-			],
-			"calc": {
-				"level": 10,
-				"rsl": "Per+0"
-			}
-		},
-		{
-			"id": "ddfcb493-541a-461a-88d3-49f6a0d8e963",
-			"type": "skill",
-			"name": "Survival",
-			"reference": "B223",
-			"tags": [
-				"Exploration",
-				"Outdoor"
-			],
-			"specialization": "Plains",
-			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
 				"level": 5,
 				"adjusted_level": 5,
 				"points": -5
@@ -4470,6 +5170,83 @@
 				{
 					"type": "skill",
 					"name": "Survival",
+					"specialization": "Plains",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Swampland",
+					"modifier": -3
+				}
+			],
+			"calc": {
+				"level": 9,
+				"rsl": "Per+0"
+			}
+		},
+		{
+			"id": "ddfcb493-541a-461a-88d3-49f6a0d8e963",
+			"type": "skill",
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Plains",
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Arctic",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Desert",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Island/Beach",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Jungle",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Mountain",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
 					"specialization": "Swampland",
 					"modifier": -3
 				},
@@ -4481,7 +5258,7 @@
 				}
 			],
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per-1"
 			}
 		},
@@ -4502,9 +5279,9 @@
 				"name": "Survival",
 				"specialization": "Plains",
 				"modifier": -3,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"defaults": [
 				{
@@ -4560,7 +5337,7 @@
 				}
 			],
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per-1"
 			}
 		},
@@ -4651,9 +5428,9 @@
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -7,
-				"level": 3,
-				"adjusted_level": 3,
-				"points": -3
+				"level": 2,
+				"adjusted_level": 2,
+				"points": -2
 			},
 			"defaults": [
 				{
@@ -4662,8 +5439,51 @@
 				}
 			],
 			"calc": {
-				"level": 7,
+				"level": 6,
 				"rsl": "IQ-3"
+			}
+		},
+		{
+			"id": "e1d84e5b-5521-49ee-b3d5-9609c6dc45d8",
+			"type": "skill",
+			"name": "First Aid",
+			"reference": "B195",
+			"tags": [
+				"Everyman",
+				"Medical"
+			],
+			"tech_level": "3",
+			"difficulty": "iq/e",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Esoteric Medicine"
+				},
+				{
+					"type": "skill",
+					"name": "Physician"
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -4
+				}
+			],
+			"calc": {
+				"level": 10,
+				"rsl": "IQ+1"
 			}
 		},
 		{
@@ -4674,7 +5494,7 @@
 			"points": 4,
 			"calc": {
 				"level": 11,
-				"rsl": "IQ+1"
+				"rsl": "IQ+2"
 			}
 		}
 	],
@@ -4868,10 +5688,58 @@
 				"extended_value": 50,
 				"extended_weight": "0 lb"
 			}
+		},
+		{
+			"id": "dd18c64f-cafd-4d8d-b910-1fd6200f79c9",
+			"type": "equipment",
+			"description": "Livro de Tanatopraxia",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "9f7636bb-0995-4cef-b42e-883d8622ee54",
+			"type": "equipment",
+			"description": "Frasco com doença dos ferrugianos para infectar o Elias",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "ef0c5f4e-ff3d-45b4-b437-1b9eabc545d3",
+			"type": "equipment",
+			"description": "Seringuinha que peguei com o Dr. Dane",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "7f6aeb10-dc34-4cc9-8b7a-2bd350b2bda9",
+			"type": "equipment",
+			"description": "Pergaminho que encontrei na torre",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-07-28T19:00:25-03:00",
+	"modified_date": "2026-09-16T18:55:45-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
