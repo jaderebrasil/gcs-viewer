@@ -1,8 +1,28 @@
 {
 	"version": 5,
 	"id": "AMs9v0ZWEUOqlHdYn",
-	"total_points": 260,
+	"total_points": 274,
 	"points_record": [
+		{
+			"when": "2026-09-16T23:44:57-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-09-10T00:07:23-03:00",
+			"points": 5,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-09-03T00:17:06-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
+		{
+			"when": "2026-08-19T23:20:23-03:00",
+			"points": 3,
+			"reason": "Sessão"
+		},
 		{
 			"when": "2026-08-12T23:45:06-03:00",
 			"points": 3,
@@ -2930,89 +2950,89 @@
 			},
 			"modifiers": [
 				{
-					"id": "mGj9t4InwRrPlgN4Z",
+					"id": "mZEzOt5moEosEz7im",
 					"name": "@Rare Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "5",
 					"disabled": true
 				},
 				{
-					"id": "mbn2mXlVOSWTOw8gU",
+					"id": "m1K59lGAHoq_YWSMG",
 					"name": "@Occasional Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "10",
 					"disabled": true
 				},
 				{
-					"id": "m8MlRo4d_3yOFOL_q",
+					"id": "m7_KGwxcG3JuImxfY",
 					"name": "@Common Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "20"
 				},
 				{
-					"id": "mrecIM_WYdii_CrPk",
+					"id": "m68onJLE4RKPYgn3e",
 					"name": "@Very Common Substance/Condition@",
 					"reference": "B48",
 					"cost_adj": "30",
 					"disabled": true
 				},
 				{
-					"id": "mxYkOlrWf7ca1hV7A",
+					"id": "mygPLMD8p6CsLXfdH",
 					"name": "Precise",
 					"reference": "B48",
 					"cost_adj": "100%",
 					"disabled": true
 				},
 				{
-					"id": "mZjnQzEtmZ01XzRXs",
+					"id": "m8I9gQ75VMymXpt0p",
 					"name": "Signal Detection",
 					"reference": "B48",
 					"disabled": true
 				},
 				{
-					"id": "mmSR96HTsTyWT8EAD",
+					"id": "mIbbha9iqNlEWi3Ip",
 					"name": "Vague",
 					"reference": "B48",
 					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "mGSYbUdNmts8sEE0Y",
+					"id": "m_45QWCgg8Vv5NgH1",
 					"name": "Analyzing",
 					"reference": "P47",
 					"cost_adj": "100%",
 					"disabled": true
 				},
 				{
-					"id": "m1AhonDF1e9O9SGf1",
+					"id": "mT6047b75Va3jMKDR",
 					"name": "Lock-On",
 					"reference": "PSI14",
 					"cost_adj": "50%",
 					"disabled": true
 				},
 				{
-					"id": "mU-EQbMaL4yXNFuif",
+					"id": "mvMCrG8N14Z0IrNGc",
 					"name": "Precise, Nontargeting",
 					"reference": "PSI14",
 					"cost_adj": "90%",
 					"disabled": true
 				},
 				{
-					"id": "mrKwjlGc2XG1LbceR",
+					"id": "mLfGnvwnmuXUgBsTV",
 					"name": "Analysis Only",
 					"reference": "PSI14",
 					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "mBjZ7oOJ98kC4fcd7",
+					"id": "mpgxLYSxWPuhVTxLv",
 					"name": "Cannot Analyze",
 					"reference": "PSI14",
 					"cost_adj": "-10%",
 					"disabled": true
 				},
 				{
-					"id": "mzlhMNRDEMqVwDNdd",
+					"id": "mukWjjkCCnYd2pyYQ",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Powers/Powers Modifiers.adm",
@@ -3027,25 +3047,26 @@
 					}
 				},
 				{
-					"id": "mNDtbj6pt99SgdnhG",
+					"id": "mc7III3hERmJcEDpz",
 					"name": "Only Blind",
-					"cost_adj": "-50%"
+					"cost_adj": "-50%",
+					"disabled": true
 				},
 				{
-					"id": "m0JJJxa4xeKUza9mm",
+					"id": "mSWRC4Ba9NMzS3OBM",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Enhancement Modifiers.adm",
 						"id": "mdF_YOT8TLBmhnsO-"
 					},
-					"name": "Reduced Time",
+					"name": "Reflexive",
 					"reference": "B108",
-					"cost_adj": "20%",
+					"cost_adj": "+40%",
 					"levels": 1
 				}
 			],
 			"calc": {
-				"points": 12
+				"points": 26
 			}
 		}
 	],
@@ -3185,53 +3206,6 @@
 					}
 				},
 				{
-					"id": "sICQSU7VVS29aLmov",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s0OrRdzDLyXnfmwj9"
-					},
-					"name": "Religious Ritual",
-					"reference": "B217",
-					"tags": [
-						"Magical",
-						"Occult"
-					],
-					"replacements": {
-						"Specialty": "Vagante"
-					},
-					"specialization": "@Specialty@",
-					"difficulty": "iq/h",
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Ritual Magic",
-							"specialization": "@Specialty@",
-							"modifier": -6
-						},
-						{
-							"type": "skill",
-							"name": "Theology",
-							"specialization": "@Specialty@",
-							"modifier": -4
-						}
-					],
-					"points": 1,
-					"defaulted_from": {
-						"type": "skill",
-						"name": "Theology",
-						"specialization": "Vagante",
-						"modifier": -4,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
-					},
-					"calc": {
-						"level": 8,
-						"rsl": "IQ-2"
-					}
-				},
-				{
 					"id": "sRMmFIRawspn4qJAW",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -3339,6 +3313,53 @@
 					"calc": {
 						"level": 11,
 						"rsl": "HT+0"
+					}
+				},
+				{
+					"id": "sICQSU7VVS29aLmov",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s0OrRdzDLyXnfmwj9"
+					},
+					"name": "Religious Ritual",
+					"reference": "B217",
+					"tags": [
+						"Magical",
+						"Occult"
+					],
+					"replacements": {
+						"Specialty": "Vagante"
+					},
+					"specialization": "@Specialty@",
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "@Specialty@",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Theology",
+							"specialization": "@Specialty@",
+							"modifier": -4
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Theology",
+						"specialization": "Vagante",
+						"modifier": -4,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 8,
+						"rsl": "IQ-2"
 					}
 				},
 				{
@@ -4494,13 +4515,13 @@
 					],
 					"base_value": "2",
 					"base_weight": "0.5 lb",
-					"quantity": 0,
+					"quantity": 20,
 					"equipped": true,
 					"calc": {
 						"value": 2,
-						"extended_value": 0,
+						"extended_value": 40,
 						"weight": "0.5 lb",
-						"extended_weight": "0 lb"
+						"extended_weight": "10 lb"
 					}
 				},
 				{
@@ -4624,13 +4645,13 @@
 							],
 							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 17,
+							"quantity": 8,
 							"equipped": true,
 							"calc": {
 								"value": 20,
-								"extended_value": 340,
+								"extended_value": 160,
 								"weight": "0.004 lb",
-								"extended_weight": "0.068 lb"
+								"extended_weight": "0.032 lb"
 							}
 						},
 						{
@@ -4672,21 +4693,21 @@
 							],
 							"base_value": "1",
 							"base_weight": "0.008 lb",
-							"quantity": 24,
+							"quantity": 14,
 							"equipped": true,
 							"calc": {
 								"value": 1,
-								"extended_value": 24,
+								"extended_value": 14,
 								"weight": "0.008 lb",
-								"extended_weight": "0.192 lb"
+								"extended_weight": "0.112 lb"
 							}
 						}
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 6374,
+						"extended_value": 6184,
 						"weight": "0.5 lb",
-						"extended_weight": "0.82 lb"
+						"extended_weight": "0.704 lb"
 					}
 				},
 				{
@@ -4719,13 +4740,13 @@
 					],
 					"base_value": "120",
 					"base_weight": "0.5 lb",
-					"quantity": 4,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 120,
-						"extended_value": 480,
+						"extended_value": 240,
 						"weight": "0.5 lb",
-						"extended_weight": "2 lb"
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -4744,13 +4765,13 @@
 					],
 					"base_value": "350",
 					"base_weight": "0.5 lb",
-					"quantity": 7,
+					"quantity": 4,
 					"equipped": true,
 					"calc": {
 						"value": 350,
-						"extended_value": 2450,
+						"extended_value": 1400,
 						"weight": "0.5 lb",
-						"extended_weight": "3.5 lb"
+						"extended_weight": "2 lb"
 					}
 				},
 				{
@@ -4794,13 +4815,13 @@
 					],
 					"base_value": "135",
 					"base_weight": "0.5 lb",
-					"quantity": 3,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 135,
-						"extended_value": 405,
+						"extended_value": 270,
 						"weight": "0.5 lb",
-						"extended_weight": "1.5 lb"
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -4855,9 +4876,9 @@
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 10929,
+				"extended_value": 9354,
 				"weight": "10 lb",
-				"extended_weight": "61.07 lb"
+				"extended_weight": "67.954 lb"
 			}
 		},
 		{
@@ -4879,7 +4900,7 @@
 			"id": "eLVohd6oK85jGlKk2",
 			"description": "Story Point",
 			"legality_class": "4",
-			"quantity": 2,
+			"quantity": 1,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4893,7 +4914,7 @@
 			"description": "Staff Charge",
 			"legality_class": "4",
 			"base_weight": "0",
-			"quantity": 99,
+			"quantity": 78,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4904,7 +4925,7 @@
 		}
 	],
 	"created_date": "2026-03-06T15:21:14-03:00",
-	"modified_date": "2026-08-13T00:11:37-03:00",
+	"modified_date": "2026-09-09T21:55:53-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
