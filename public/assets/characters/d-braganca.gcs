@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 354,
+	"total_points": 357,
 	"points_record": [
+		{
+			"when": "2026-09-23T23:57:36-03:00",
+			"points": 3,
+			"reason": "Virei médico do SUS"
+		},
 		{
 			"when": "2026-09-16T23:46:01-03:00",
 			"points": 3,
@@ -328,16 +333,185 @@
 			"bottom_margin": "0.25 in",
 			"right_margin": "0.25 in"
 		},
-		"block_layout": [
-			"reactions conditional_modifiers",
-			"melee",
-			"ranged",
-			"traits skills",
-			"spells",
-			"equipment",
-			"other_equipment",
-			"notes"
-		],
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.5,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1
+							},
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
 		"attributes": [
 			{
 				"id": "st",
@@ -416,7 +590,7 @@
 			{
 				"id": "taste_smell",
 				"type": "integer",
-				"name": "Taste \u0026 Smell",
+				"name": "Taste & Smell",
 				"base": "$per",
 				"cost_per_point": 2
 			},
@@ -931,6 +1105,39 @@
 	],
 	"traits": [
 		{
+			"id": "t_d3FT4LTrL7lJouj",
+			"name": "Alinhamento: OKAY",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "Tk4jjC0fU8PYowx42",
+			"name": "APRENDIZADOS",
+			"children": [
+				{
+					"id": "t0SS9vjRDzFPGWewQ",
+					"name": "Bajika",
+					"local_notes": "Intimidação verbal goblin que significa algo como estripar e comer as entranhas.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t5OoyPvcNnS9tT2F8",
+					"name": "Kagaime",
+					"local_notes": "Grito de 'recuar' dos goblins.",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
 			"id": "t28w3x0_xAaIn1cFW",
 			"name": "Ataques Naturais",
 			"reference": "B271",
@@ -951,7 +1158,10 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						}
 					],
 					"calc": {
@@ -976,15 +1186,24 @@
 						},
 						{
 							"type": "skill",
-							"name": "Boxing"
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate"
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
 						}
 					],
 					"calc": {
@@ -1009,16 +1228,25 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Kicking"
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
 							"modifier": -2
 						}
 					],
@@ -1040,7 +1268,10 @@
 					"defaults": [
 						{
 							"type": "skill",
-							"name": "Judo"
+							"name": {
+								"compare": "is",
+								"qualifier": "Judo"
+							}
 						}
 					],
 					"calc": {
@@ -1055,458 +1286,23 @@
 			}
 		},
 		{
-			"id": "t_d3FT4LTrL7lJouj",
-			"name": "Alinhamento: OKAY",
-			"base_points": -10,
-			"calc": {
-				"points": -10
-			}
-		},
-		{
-			"id": "thgOStAQJQSa3O50x",
-			"name": "Magery",
-			"reference": "B66",
-			"tags": [
-				"Advantage",
-				"Mental",
-				"Supernatural"
-			],
-			"modifiers": [
-				{
-					"id": "mPF_Mg2BGByXHkYed",
-					"name": "Dance",
-					"cost_adj": "-40%",
-					"affects": "levels_only",
-					"disabled": true
-				},
-				{
-					"id": "mnY0Cu1nL6CJAF-py",
-					"name": "Dark-Aspected",
-					"cost_adj": "-50%",
-					"affects": "levels_only",
-					"disabled": true
-				},
-				{
-					"id": "mwkSVRricaBv9CXYu",
-					"name": "Day-Aspected",
-					"cost_adj": "-40%",
-					"affects": "levels_only",
-					"disabled": true
-				},
-				{
-					"id": "m1eryz4GW6_u5Nnsu",
-					"name": "Musical",
-					"cost_adj": "-50%",
-					"affects": "levels_only",
-					"disabled": true
-				},
-				{
-					"id": "mj6EoY1OuTF04hcA2",
-					"name": "Night-Aspected",
-					"cost_adj": "-40%",
-					"affects": "levels_only",
-					"disabled": true
-				},
-				{
-					"id": "m9PUMsnFNoEmGRvnI",
-					"name": "One College (healing)",
-					"cost_adj": "-40%",
-					"affects": "levels_only"
-				},
-				{
-					"id": "mBPJapD-ZWK_AirVJ",
-					"name": "Solitary",
-					"cost_adj": "-40%",
-					"affects": "levels_only",
-					"disabled": true
-				},
-				{
-					"id": "m3wgn65s3Zv0eg4_e",
-					"name": "Song",
-					"cost_adj": "-40%",
-					"affects": "levels_only"
-				}
-			],
-			"base_points": 5,
-			"points_per_level": 10,
-			"features": [
-				{
-					"type": "spell_bonus",
-					"match": "all_colleges",
-					"name": {
-						"compare": "is",
-						"qualifier": "healing"
-					},
-					"amount": 1,
-					"per_level": true
-				}
-			],
-			"can_level": true,
-			"levels": 2,
-			"calc": {
-				"points": 9,
-				"current_level": 2
-			}
-		},
-		{
-			"id": "tu9scrBug41yzhygk",
+			"id": "tMGOMQAsGBsk1DQK5",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Advantages.adq",
-				"id": "tnv-IXR_yOLWvOIlM"
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "t_iKOx_M0gzCIh-Ws"
 			},
-			"name": "Language: @Language@",
-			"reference": "B24",
+			"name": "Clericato Ferruginoso",
+			"reference": "B43",
 			"tags": [
 				"Advantage",
-				"Language",
-				"Mental"
-			],
-			"replacements": {
-				"Language": "Orc"
-			},
-			"modifiers": [
-				{
-					"id": "mHsmkanPeDnM9-M4w",
-					"name": "Native",
-					"reference": "B23",
-					"cost_adj": "-6",
-					"disabled": true
-				},
-				{
-					"id": "m9n0LfVd0H0wBMur4",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "None",
-					"disabled": true
-				},
-				{
-					"id": "maVoIwbAsUWT__7qF",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1"
-				},
-				{
-					"id": "maC75Kd8WTqWk-_HC",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2",
-					"disabled": true
-				},
-				{
-					"id": "mnpmSkqaKSEddMqRd",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3",
-					"disabled": true
-				},
-				{
-					"id": "mJWfuYPeXHLAxEpZ2",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "None"
-				},
-				{
-					"id": "m6l2UR5KOpXBtrt13",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1",
-					"disabled": true
-				},
-				{
-					"id": "mwphqXgpAy0ioZccc",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2",
-					"disabled": true
-				},
-				{
-					"id": "mjO_dyJVAkHbOpTQj",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3",
-					"disabled": true
-				}
-			],
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "tkga0M4udkbTfFTAe",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Advantages.adq",
-				"id": "tYqktunLBCCeVIcVj"
-			},
-			"name": "Language: @Language@",
-			"reference": "B24",
-			"tags": [
-				"Advantage",
-				"Language",
-				"Mental"
-			],
-			"replacements": {
-				"Language": "Halfling"
-			},
-			"modifiers": [
-				{
-					"id": "mucZ5aFEq738dUJbq",
-					"name": "Native",
-					"reference": "B23",
-					"cost_adj": "-6",
-					"disabled": true
-				},
-				{
-					"id": "mx-2dA50kk8EY_brS",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "None",
-					"disabled": true
-				},
-				{
-					"id": "mQbQklHhkWVvjxyWu",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1"
-				},
-				{
-					"id": "mLotjcGwKPC5wJ34M",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2",
-					"disabled": true
-				},
-				{
-					"id": "mvmjsUdSXQk8iG9XG",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3",
-					"disabled": true
-				},
-				{
-					"id": "mICStQ7BLGe85FZ4P",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "None"
-				},
-				{
-					"id": "mdVpzMimuvh4NKXzE",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1",
-					"disabled": true
-				},
-				{
-					"id": "msZ8fWZzT-teWF2H_",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2",
-					"disabled": true
-				},
-				{
-					"id": "mwe-Jx7IJGdpUtmop",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3",
-					"disabled": true
-				}
-			],
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "tQGAP7w57dASJ-Iek",
-			"name": "Language: Common",
-			"reference": "B24",
-			"tags": [
-				"Advantage",
-				"Language",
-				"Mental"
-			],
-			"modifiers": [
-				{
-					"id": "mX1McKrQuraRG3pmy",
-					"name": "Native",
-					"reference": "B23",
-					"cost_adj": "-6",
-					"disabled": true
-				},
-				{
-					"id": "mtGcDCLZ9RbbZEMak",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "None",
-					"disabled": true
-				},
-				{
-					"id": "mxKtd5HqvpW0zJgNk",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1",
-					"disabled": true
-				},
-				{
-					"id": "mAlsYKWbWn-y5mShP",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2"
-				},
-				{
-					"id": "mowy9f25keuvxB2Kp",
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3",
-					"disabled": true
-				},
-				{
-					"id": "mmcLVkM886Zp7Aqu-",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "None"
-				},
-				{
-					"id": "mmKbdUq2aFZTbKJpA",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1",
-					"disabled": true
-				},
-				{
-					"id": "m3MKYB5tqN0aSkgTL",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2",
-					"disabled": true
-				},
-				{
-					"id": "mNA4iLvH_rEaNeOFs",
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3",
-					"disabled": true
-				}
-			],
-			"calc": {
-				"points": 2
-			}
-		},
-		{
-			"id": "th4mcFXIHWwBdS8dd",
-			"name": "High Pain Threshold - Nem doeu",
-			"reference": "B59",
-			"local_notes": "Never suffer shock penalties when injured",
-			"tags": [
-				"Advantage",
-				"Physical"
-			],
-			"base_points": 10,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "on all HT rolls to avoid knockdown and stunning",
-					"amount": 3
-				},
-				{
-					"type": "conditional_modifier",
-					"situation": "to resist torture",
-					"amount": 3
-				}
-			],
-			"calc": {
-				"points": 10
-			}
-		},
-		{
-			"id": "tk2SxELVSyivr5C75",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Advantages.adq",
-				"id": "thFrOuJWQEZoFRvBs"
-			},
-			"name": "Hard to Kill",
-			"reference": "B58",
-			"tags": [
-				"Advantage",
-				"Physical"
-			],
-			"points_per_level": 2,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
-					"amount": 1,
-					"per_level": true
-				}
-			],
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": 2,
-				"current_level": 1
-			}
-		},
-		{
-			"id": "te8YjpwUOCB94oXHH",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Advantages.adq",
-				"id": "twIA9WIueGxtpoERd"
-			},
-			"name": "Enhanced Parry (Bare hands)",
-			"reference": "B51",
-			"tags": [
-				"Advantage",
-				"Mental"
-			],
-			"points_per_level": 5,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to Parry with bare hands",
-					"amount": 1
-				}
-			],
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": 5,
-				"current_level": 1
-			}
-		},
-		{
-			"id": "tROHPbWCFgzkc9VEh",
-			"name": "Fit (Gostoso)",
-			"reference": "B55",
-			"local_notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
-			"tags": [
-				"Advantage",
-				"Physical"
+				"Social"
 			],
 			"base_points": 5,
 			"features": [
 				{
-					"type": "conditional_modifier",
-					"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+					"type": "reaction_bonus",
+					"situation": "para membros da ferrugem e para aqueles que respeitam a sua fé",
 					"amount": 1
 				}
 			],
@@ -1584,212 +1380,206 @@
 			}
 		},
 		{
-			"id": "t_757bnxDz0oSDDAd",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Martial Arts\\Martial Arts Advantages.adq",
-				"id": "tVl6wujdCz2qO7rAp"
-			},
-			"name": "Power Grappling",
-			"reference": "MA51",
-			"local_notes": "You may base DX-based grappling rolls on ST",
-			"tags": [
-				"Mental",
-				"Perk"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "tZ4pYMaSuq5RljPCp",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Advantages.adq",
-				"id": "tDPVDVrAPCGdUiyKI"
-			},
-			"name": "Reduced Consumption",
-			"reference": "B80",
-			"tags": [
-				"Advantage",
-				"Physical"
-			],
-			"modifiers": [
-				{
-					"id": "mldK6Yfn28mEdbsh1",
-					"name": "Cast-Iron Stomach",
-					"reference": "B80",
-					"cost_adj": "-50%",
-					"disabled": true
-				},
-				{
-					"id": "mFkSbEd59CAOiLEDk",
-					"name": "Food Only",
-					"reference": "B80",
-					"cost_adj": "-50%"
-				},
-				{
-					"id": "mrLMU0YMRM0-UUukR",
-					"name": "Water Only",
-					"reference": "B80",
-					"cost_adj": "-50%",
-					"disabled": true
-				}
-			],
-			"points_per_level": 2,
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": 1,
-				"current_level": 1
-			}
-		},
-		{
-			"id": "tMGOMQAsGBsk1DQK5",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Traits.adq",
-				"id": "t_iKOx_M0gzCIh-Ws"
-			},
-			"name": "Clericato Ferruginoso",
-			"reference": "B43",
-			"tags": [
-				"Advantage",
-				"Social"
-			],
-			"base_points": 5,
-			"features": [
-				{
-					"type": "reaction_bonus",
-					"situation": "para membros da ferrugem e para aqueles que respeitam a sua fé",
-					"amount": 1
-				}
-			],
-			"calc": {
-				"points": 5
-			}
-		},
-		{
-			"id": "Tk4jjC0fU8PYowx42",
-			"name": "APRENDIZADOS",
+			"id": "TOASR_oQri22Y12Mq",
+			"name": "DEFEITOS",
 			"children": [
 				{
-					"id": "t0SS9vjRDzFPGWewQ",
-					"name": "Bajika",
-					"local_notes": "Intimidação verbal goblin que significa algo como estripar e comer as entranhas.",
+					"id": "ttlHGmUQZ8NjLaI54",
+					"name": "Colorblindness - Daltônico",
+					"reference": "B127",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "artist"
+							},
+							"amount": -1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "chemistry"
+							},
+							"amount": -1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "driving"
+							},
+							"amount": -1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "merchant"
+							},
+							"amount": -1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "piloting"
+							},
+							"amount": -1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "tracking"
+							},
+							"amount": -1
+						}
+					],
 					"calc": {
-						"points": 0
+						"points": -10
 					}
 				},
 				{
-					"id": "t5OoyPvcNnS9tT2F8",
-					"name": "Kagaime",
-					"local_notes": "Grito de 'recuar' dos goblins.",
+					"id": "t2pZyyAjK6lJRF5FN",
+					"name": "Dyslexia - Dsilxeico (Penalidade 0)",
+					"reference": "B134",
+					"local_notes": "You have a written comprehension level of \"None\" for all languages, which cannot be improved",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -10,
 					"calc": {
-						"points": 0
+						"points": -10
+					}
+				},
+				{
+					"id": "tVqi8p0uFGE_GOtaC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tPQKqirHzMBiKuSvi"
+					},
+					"name": "Para-raio de maluco!",
+					"reference": "B161",
+					"local_notes": "\"Weirdness Magnet\"",
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mb08HkeDmxQSHpegK",
+							"name": "Origins Magnet",
+							"reference": "SU32",
+							"disabled": true
+						}
+					],
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "twHUamXHZn07PIjAI",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tr912gZo_IaqOuOCQ"
+					},
+					"name": "Pra que serve essa alavanca?",
+					"reference": "B129",
+					"local_notes": "Curious - Make a self-control roll when presented with an interesting item or situation",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "TNQyItKUTZW4_468n",
+					"name": "QUIRKS",
+					"children": [
+						{
+							"id": "tipC6jAuLwhID8pUF",
+							"name": "\"Azul-árvore\"",
+							"local_notes": "Descreve as 'cores' conforme ele vê o mundo",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "te73JujLsknbY5JJL",
+							"name": "Aracno-toracico-fobia",
+							"local_notes": "Sobreviver ao ataque fulminante da Aranha-esquivadeira deixou um trauma profundo em D'Bragança. Sempre que vê uma aranha, sente seu terceiro mamilo pulsar. Não pode dormir antes de checar se tem aranhas no ambiente. Não avança e nem ataca aranhas-monstro, fica em defesa total onde está.",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tzFM1OLPH06Y48XyM",
+							"name": "Dói se eu aperto aqui?",
+							"local_notes": "Insiste em examinar machucados em público, sem nenhuma noção de inconveniência.",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "taAEthIbNrQ8Qsw97",
+							"name": "Etiqueta social? O que é isso?",
+							"local_notes": "Não sabe se portar à mesa ou como reverenciar figuras importantes, por exemplo.",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "t_dYpo7nRRN340rtE",
+							"name": "PTSD de Combate",
+							"local_notes": "Ocasionalmente confunde sons do dia a dia com sons de guerra",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tXnqsoKoKUU4X2Yxl",
+							"name": "Sotaque pesado (lusitano)",
+							"local_notes": "Difícil de entender o que ele fala às vezes",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": -6
 					}
 				}
 			],
 			"calc": {
-				"points": 0
-			}
-		},
-		{
-			"id": "TAhaOnR3JvMnlq6lZ",
-			"name": "FERIMENTOS",
-			"children": [
-				{
-					"id": "tWpAz0b0oOl6r-fUz",
-					"name": "Cicatriz no Tórax (Aranha-esquivadeira)",
-					"local_notes": "Ataque fulminante da Aranha-esquivadeira deixou uma cicatriz (onde antes era um buraco que vertia sangue) enorme no peito de D'Bragança. Sobreviver à isso não foi nada menos do que um milagre!",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tHSZ_lv5_oPuomdUc",
-					"name": "Queimadura Massiva (Goblin Shaman)",
-					"local_notes": "D'Bragança sofreu uma queimadura massiva causada por uma bola de fogo lançada por um goblin shaman.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tkGe9FdXMpu4p7rgK",
-					"name": "Marca de Mordida (Direwolf)",
-					"local_notes": "Um lobo atroz mordeu o peito de D'Bragança, causando grandes ferimentos.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tSJfqZvaFZBpOWx64",
-					"name": "Cicatriz do Rosto ao Tórax (Critonis)",
-					"local_notes": "Ao ser atacado pelo Deus-rei Critonis, D'Bragança levou um golpe que rasgou seu rosto, pescoço e tórax. Deixando uma cicatriz gigante para trás.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tqNMaB4Lp4RkRT9Q3",
-					"name": "Queimadura Arcana (Lich)",
-					"local_notes": "D'Bragança sofreu um ataque elétrico arcano de um Lich. Sua face, ombro e boa parte do seu braço esquerdo carregam marcas terríveis do acontecido.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tTtq77NnVGXUCH6Bd",
-					"name": "Mordida (Lagartus Gigantus)",
-					"local_notes": "No fatídico dia em que D'Bragança perdeu seus aliados, também perdeu uma boa parcela de sangue. Agora o doloroso lembrete dói tanto em sua carne, quanto em sua alma.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tzho64MTsWYSvr8jf",
-					"name": "Perfuração no Tórax (Cepo)",
-					"local_notes": "As raízes do Cepo atingiram e perfuraram o peito de D'Bragança.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tO153m70SdXBnXH2P",
-					"name": "Dentes Quebrados (Ogro Mutante)",
-					"local_notes": "Depois de dois golpes esmagadores do malho do Ogro Mutante, D'Bragança sofreu uma torção no pé e perdeu dois dentes da frente.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tyEnIAB9wLIPUo67n",
-					"name": "Mordiscadela (Treedra)",
-					"local_notes": "Uma hydra-ent-cepo mordeu ferozmente o torso de D'Bragança, causando ferimentos profundos.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "t48_c7EXRMS2bWNIU",
-					"name": "Semi-amputação (Treedra)",
-					"local_notes": "Uma mordida da aberração quase amputa o braço direito de D'Bragança, deixando-o molengo por uns dias.",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "te5hHLUUC5qjq25i1",
-					"name": "Rabiola Tócssica (Escorpiola Gigante)",
-					"local_notes": "Um Scorpiola gigante rabetou o tórax de D'Bragança, envenenando gravemente o lusitano enferrujado.",
-					"calc": {
-						"points": 0
-					}
-				}
-			],
-			"calc": {
-				"points": 0
+				"points": -46
 			}
 		},
 		{
@@ -1800,215 +1590,85 @@
 			"container_type": "ancestry",
 			"children": [
 				{
-					"id": "tOjc2aMvniMRfwFLp",
-					"name": "Technically a demon",
+					"id": "tCsO6hBr_AUFZPh6_",
+					"name": "Attribute Modifiers",
+					"reference": "B15",
+					"tags": [
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mkdq_-pwpJ8lGZNwB",
+							"name": "HT +1",
+							"reference": "B15",
+							"cost_adj": "10",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1
+								}
+							]
+						},
+						{
+							"id": "m5iPxi6PaZyQ5Vpek",
+							"name": "Will +1",
+							"reference": "B16",
+							"cost_adj": "5",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "will",
+									"amount": 1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mCoB7eAOqRDIXf6n7",
+							"name": "SM -1",
+							"reference": "B19",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "sm",
+									"amount": -1
+								}
+							],
+							"disabled": true
+						}
+					],
 					"calc": {
-						"points": 0
+						"points": 10
 					}
 				},
 				{
-					"id": "tDn2qeJD3gSO22rvU",
-					"name": "Teimosia",
-					"reference": "B157",
+					"id": "tGemjUZZQaIIBd2oy",
+					"name": "Avareza",
+					"reference": "B137",
+					"local_notes": "Make a self-control roll any time riches are offered – as payment for fair work, gains from adventure, spoils of crime, or just bait. If you fail, you do whatever it takes to get the payoff.",
 					"tags": [
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -5,
-					"features": [
-						{
-							"type": "reaction_bonus",
-							"situation": "from others",
-							"amount": -1
-						}
-					],
+					"cr": 15,
+					"base_points": -10,
 					"calc": {
 						"points": -5
 					}
 				},
 				{
-					"id": "tMFlWIlhaKf_SPYCt",
-					"name": "Prefere ouro a outros metais preciosos",
-					"reference": "B162",
+					"id": "tGDGFd-7OYoX9cuX0",
+					"name": "Código de Honra dos Anões",
+					"reference": "B163,MA53",
+					"local_notes": "Anões estão no mundo para construir. Nunca deve atrapalhar um artesão em seu ofício. Deve sempre contribuir para o plano de construção dos anões, e nunca se por no caminho disso.",
 					"tags": [
 						"Mental",
 						"Quirk"
 					],
-					"base_points": -1,
+					"base_points": -5,
 					"calc": {
-						"points": -1
-					}
-				},
-				{
-					"id": "tZ2DfRf6E82DP_w6M",
-					"name": "Lifting ST",
-					"reference": "B65,P58",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "mvcGs7nX-sAn-fm88",
-							"name": "No Fine Manipulators",
-							"reference": "B15",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "mQXfA84iB_zIFTAmx",
-							"name": "Size",
-							"reference": "B15",
-							"cost_adj": "-10%",
-							"levels": 1,
-							"disabled": true
-						},
-						{
-							"id": "mUn295zZ0rIiT9jcX",
-							"name": "Super-Effort",
-							"reference": "P58",
-							"cost_adj": "400%",
-							"disabled": true
-						},
-						{
-							"id": "mDUeRRV7CqJexJAh7",
-							"name": "Know Your Own Strength Variant Price",
-							"reference": "PY83:18",
-							"cost_adj": "4",
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "m8nIgW27TcbHuano7",
-							"name": "@Limb@ Grip ST",
-							"reference": "MATG28",
-							"cost_adj": "-70%",
-							"disabled": true
-						},
-						{
-							"id": "mBdXqWZv8SsYMOabC",
-							"name": "Bite ST",
-							"reference": "MATG28",
-							"cost_adj": "-70%",
-							"disabled": true
-						}
-					],
-					"points_per_level": 3,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"limitation": "lifting_only",
-							"attribute": "st",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"levels": 3,
-					"calc": {
-						"points": 9,
-						"current_level": 3
-					}
-				},
-				{
-					"id": "tlhExOk3St1axYXus",
-					"name": "Language: Anão",
-					"reference": "B24",
-					"tags": [
-						"Advantage",
-						"Language",
-						"Mental"
-					],
-					"modifiers": [
-						{
-							"id": "mPcjMYXPHheJV_Msj",
-							"name": "Native",
-							"reference": "B23",
-							"cost_adj": "-6",
-							"disabled": true
-						},
-						{
-							"id": "maqOQg4oZBShO_xM2",
-							"name": "Spoken",
-							"reference": "B24",
-							"local_notes": "None",
-							"disabled": true
-						},
-						{
-							"id": "mSsNP76DyEg52nNt8",
-							"name": "Spoken",
-							"reference": "B24",
-							"local_notes": "Broken",
-							"cost_adj": "1",
-							"disabled": true
-						},
-						{
-							"id": "mgu9gc1HCMOigDyNH",
-							"name": "Spoken",
-							"reference": "B24",
-							"local_notes": "Accented",
-							"cost_adj": "2",
-							"disabled": true
-						},
-						{
-							"id": "mVOv_XwsOBAJy5Hkv",
-							"name": "Spoken",
-							"reference": "B24",
-							"local_notes": "Native",
-							"cost_adj": "3"
-						},
-						{
-							"id": "m1bIU4kLYydW4SYq_",
-							"name": "Written",
-							"reference": "B24",
-							"local_notes": "None"
-						},
-						{
-							"id": "m3uPYNNDMmglG4Tce",
-							"name": "Written",
-							"reference": "B24",
-							"local_notes": "Broken",
-							"cost_adj": "1",
-							"disabled": true
-						},
-						{
-							"id": "mDT2Nr4dM3yvmJXjS",
-							"name": "Written",
-							"reference": "B24",
-							"local_notes": "Accented",
-							"cost_adj": "2",
-							"disabled": true
-						},
-						{
-							"id": "mGpV-DrtxQSoIEFbF",
-							"name": "Written",
-							"reference": "B24",
-							"local_notes": "Native",
-							"cost_adj": "3",
-							"disabled": true
-						}
-					],
-					"base_points": -3,
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "tPzpSwaGV0lU0iov-",
-					"name": "Expectativa de Vida Ampliada",
-					"reference": "B53",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"points_per_level": 2,
-					"can_level": true,
-					"levels": 2,
-					"calc": {
-						"points": 4,
-						"current_level": 2
+						"points": -5
 					}
 				},
 				{
@@ -2142,7 +1802,10 @@
 							"reference": "B47",
 							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
 							"cost_adj": "-40%",
-							"disabled": true
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
 						},
 						{
 							"id": "mOYBKv3nGog12lR7Y",
@@ -2332,85 +1995,215 @@
 					}
 				},
 				{
-					"id": "tGDGFd-7OYoX9cuX0",
-					"name": "Código de Honra dos Anões",
-					"reference": "B163,MA53",
-					"local_notes": "Anões estão no mundo para construir. Nunca deve atrapalhar um artesão em seu ofício. Deve sempre contribuir para o plano de construção dos anões, e nunca se por no caminho disso.",
+					"id": "tPzpSwaGV0lU0iov-",
+					"name": "Expectativa de Vida Ampliada",
+					"reference": "B53",
 					"tags": [
-						"Mental",
-						"Quirk"
+						"Advantage",
+						"Exotic",
+						"Physical"
 					],
-					"base_points": -5,
+					"points_per_level": 2,
+					"can_level": true,
+					"levels": 2,
 					"calc": {
-						"points": -5
+						"points": 4,
+						"current_level": 2
 					}
 				},
 				{
-					"id": "tGemjUZZQaIIBd2oy",
-					"name": "Avareza",
-					"reference": "B137",
-					"local_notes": "Make a self-control roll any time riches are offered – as payment for fair work, gains from adventure, spoils of crime, or just bait. If you fail, you do whatever it takes to get the payoff.",
+					"id": "tlhExOk3St1axYXus",
+					"name": "Language: Anão",
+					"reference": "B24",
 					"tags": [
-						"Disadvantage",
+						"Advantage",
+						"Language",
 						"Mental"
 					],
-					"cr": 15,
-					"base_points": -10,
+					"modifiers": [
+						{
+							"id": "mPcjMYXPHheJV_Msj",
+							"name": "Native",
+							"reference": "B23",
+							"cost_adj": "-6",
+							"disabled": true
+						},
+						{
+							"id": "maqOQg4oZBShO_xM2",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "None",
+							"disabled": true
+						},
+						{
+							"id": "mSsNP76DyEg52nNt8",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "Broken",
+							"cost_adj": "1",
+							"disabled": true
+						},
+						{
+							"id": "mgu9gc1HCMOigDyNH",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "Accented",
+							"cost_adj": "2",
+							"disabled": true
+						},
+						{
+							"id": "mVOv_XwsOBAJy5Hkv",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "Native",
+							"cost_adj": "3"
+						},
+						{
+							"id": "m1bIU4kLYydW4SYq_",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "None"
+						},
+						{
+							"id": "m3uPYNNDMmglG4Tce",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "Broken",
+							"cost_adj": "1",
+							"disabled": true
+						},
+						{
+							"id": "mDT2Nr4dM3yvmJXjS",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "Accented",
+							"cost_adj": "2",
+							"disabled": true
+						},
+						{
+							"id": "mGpV-DrtxQSoIEFbF",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "Native",
+							"cost_adj": "3",
+							"disabled": true
+						}
+					],
+					"base_points": -3,
 					"calc": {
-						"points": -5
+						"points": 0
 					}
 				},
 				{
-					"id": "tCsO6hBr_AUFZPh6_",
-					"name": "Attribute Modifiers",
-					"reference": "B15",
+					"id": "tZ2DfRf6E82DP_w6M",
+					"name": "Lifting ST",
+					"reference": "B65,P58",
 					"tags": [
+						"Advantage",
+						"Exotic",
 						"Physical"
 					],
 					"modifiers": [
 						{
-							"id": "mkdq_-pwpJ8lGZNwB",
-							"name": "HT +1",
+							"id": "mvcGs7nX-sAn-fm88",
+							"name": "No Fine Manipulators",
 							"reference": "B15",
-							"cost_adj": "10",
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "ht",
-									"amount": 1
-								}
-							]
-						},
-						{
-							"id": "m5iPxi6PaZyQ5Vpek",
-							"name": "Will +1",
-							"reference": "B16",
-							"cost_adj": "5",
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "will",
-									"amount": 1
-								}
-							],
+							"cost_adj": "-40%",
 							"disabled": true
 						},
 						{
-							"id": "mCoB7eAOqRDIXf6n7",
-							"name": "SM -1",
-							"reference": "B19",
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "sm",
-									"amount": -1
-								}
-							],
+							"id": "mQXfA84iB_zIFTAmx",
+							"name": "Size",
+							"reference": "B15",
+							"cost_adj": "-10%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mUn295zZ0rIiT9jcX",
+							"name": "Super-Effort",
+							"reference": "P58",
+							"cost_adj": "400%",
+							"disabled": true
+						},
+						{
+							"id": "mDUeRRV7CqJexJAh7",
+							"name": "Know Your Own Strength Variant Price",
+							"reference": "PY83:18",
+							"cost_adj": "4",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "m8nIgW27TcbHuano7",
+							"name": "@Limb@ Grip ST",
+							"reference": "MATG28",
+							"cost_adj": "-70%",
+							"disabled": true
+						},
+						{
+							"id": "mBdXqWZv8SsYMOabC",
+							"name": "Bite ST",
+							"reference": "MATG28",
+							"cost_adj": "-70%",
 							"disabled": true
 						}
 					],
+					"points_per_level": 3,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "lifting_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
 					"calc": {
-						"points": 10
+						"points": 9,
+						"current_level": 3
+					}
+				},
+				{
+					"id": "tMFlWIlhaKf_SPYCt",
+					"name": "Prefere ouro a outros metais preciosos",
+					"reference": "B162",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tOjc2aMvniMRfwFLp",
+					"name": "Technically a demon",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tDn2qeJD3gSO22rvU",
+					"name": "Teimosia",
+					"reference": "B157",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
 					}
 				}
 			],
@@ -2419,513 +2212,26 @@
 			}
 		},
 		{
-			"id": "TOASR_oQri22Y12Mq",
-			"name": "DEFEITOS",
-			"children": [
-				{
-					"id": "twHUamXHZn07PIjAI",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Advantages.adq",
-						"id": "tr912gZo_IaqOuOCQ"
-					},
-					"name": "Pra que serve essa alavanca?",
-					"reference": "B129",
-					"local_notes": "Curious - Make a self-control roll when presented with an interesting item or situation",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"cr": 12,
-					"base_points": -5,
-					"calc": {
-						"points": -5
-					}
-				},
-				{
-					"id": "tVqi8p0uFGE_GOtaC",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Advantages.adq",
-						"id": "tPQKqirHzMBiKuSvi"
-					},
-					"name": "Para-raio de maluco!",
-					"reference": "B161",
-					"local_notes": "\"Weirdness Magnet\"",
-					"tags": [
-						"Disadvantage",
-						"Mental",
-						"Supernatural"
-					],
-					"modifiers": [
-						{
-							"id": "mb08HkeDmxQSHpegK",
-							"name": "Origins Magnet",
-							"reference": "SU32",
-							"disabled": true
-						}
-					],
-					"base_points": -15,
-					"calc": {
-						"points": -15
-					}
-				},
-				{
-					"id": "t2pZyyAjK6lJRF5FN",
-					"name": "Dyslexia - Dsilxeico (Penalidade 0)",
-					"reference": "B134",
-					"local_notes": "You have a written comprehension level of \"None\" for all languages, which cannot be improved",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"base_points": -10,
-					"calc": {
-						"points": -10
-					}
-				},
-				{
-					"id": "ttlHGmUQZ8NjLaI54",
-					"name": "Colorblindness - Daltônico",
-					"reference": "B127",
-					"tags": [
-						"Disadvantage",
-						"Physical"
-					],
-					"base_points": -10,
-					"features": [
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "artist"
-							},
-							"amount": -1
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "chemistry"
-							},
-							"amount": -1
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "driving"
-							},
-							"amount": -1
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "merchant"
-							},
-							"amount": -1
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "piloting"
-							},
-							"amount": -1
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "tracking"
-							},
-							"amount": -1
-						}
-					],
-					"calc": {
-						"points": -10
-					}
-				},
-				{
-					"id": "TNQyItKUTZW4_468n",
-					"name": "QUIRKS",
-					"children": [
-						{
-							"id": "te73JujLsknbY5JJL",
-							"name": "Aracno-toracico-fobia",
-							"local_notes": "Sobreviver ao ataque fulminante da Aranha-esquivadeira deixou um trauma profundo em D'Bragança. Sempre que vê uma aranha, sente seu terceiro mamilo pulsar. Não pode dormir antes de checar se tem aranhas no ambiente. Não avança e nem ataca aranhas-monstro, fica em defesa total onde está.",
-							"base_points": -1,
-							"calc": {
-								"points": -1
-							}
-						},
-						{
-							"id": "tXnqsoKoKUU4X2Yxl",
-							"name": "Sotaque pesado (lusitano)",
-							"local_notes": "Difícil de entender o que ele fala às vezes",
-							"base_points": -1,
-							"calc": {
-								"points": -1
-							}
-						},
-						{
-							"id": "t_dYpo7nRRN340rtE",
-							"name": "PTSD de Combate",
-							"local_notes": "Ocasionalmente confunde sons do dia a dia com sons de guerra",
-							"base_points": -1,
-							"calc": {
-								"points": -1
-							}
-						},
-						{
-							"id": "taAEthIbNrQ8Qsw97",
-							"name": "Etiqueta social? O que é isso?",
-							"local_notes": "Não sabe se portar à mesa ou como reverenciar figuras importantes, por exemplo.",
-							"base_points": -1,
-							"calc": {
-								"points": -1
-							}
-						},
-						{
-							"id": "tzFM1OLPH06Y48XyM",
-							"name": "Dói se eu aperto aqui?",
-							"local_notes": "Insiste em examinar machucados em público, sem nenhuma noção de inconveniência.",
-							"base_points": -1,
-							"calc": {
-								"points": -1
-							}
-						},
-						{
-							"id": "tipC6jAuLwhID8pUF",
-							"name": "\"Azul-árvore\"",
-							"local_notes": "Descreve as 'cores' conforme ele vê o mundo",
-							"base_points": -1,
-							"calc": {
-								"points": -1
-							}
-						}
-					],
-					"calc": {
-						"points": -6
-					}
-				}
-			],
-			"calc": {
-				"points": -46
-			}
-		},
-		{
 			"id": "TE_jDzeAtJFy5yZyv",
 			"name": "ELIXIR DA FERRUGEM",
 			"children": [
 				{
-					"id": "t1ilFWEGzHoou9pvp",
-					"name": "Rank: Fundido",
-					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "thWK5cKDg3-ygN2ng",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "tf-vhApVXLMumnNLj"
-					},
-					"name": "Dread",
-					"reference": "B132",
-					"local_notes": "May not come within level yards of @What@",
-					"tags": [
-						"Disadvantage",
-						"Mental",
-						"Supernatural"
-					],
-					"replacements": {
-						"What": "Demon Wards and Holy Symbols"
-					},
-					"modifiers": [
-						{
-							"id": "mTIcwD-pYXa1PxdSZ",
-							"name": "Very Common",
-							"reference": "B161",
-							"local_notes": "@What@",
-							"cost_adj": "x3",
-							"calc": {
-								"resolved_notes": "Demon Wards and Holy Symbols"
-							}
-						},
-						{
-							"id": "mYZrKzgRyElHWaX7V",
-							"name": "Common",
-							"reference": "B161",
-							"local_notes": "@What@",
-							"cost_adj": "x2",
-							"disabled": true,
-							"calc": {
-								"resolved_notes": "Demon Wards and Holy Symbols"
-							}
-						},
-						{
-							"id": "mT6Pc54DRlj_k0Bc2",
-							"name": "Occasional",
-							"reference": "B161",
-							"local_notes": "@What@",
-							"cost_adj": "x1",
-							"disabled": true,
-							"calc": {
-								"resolved_notes": "Demon Wards and Holy Symbols"
-							}
-						},
-						{
-							"id": "mltg26ky5MzS2gGXt",
-							"name": "Rare",
-							"reference": "B161",
-							"local_notes": "@What@",
-							"cost_adj": "x0.5",
-							"disabled": true,
-							"calc": {
-								"resolved_notes": "Demon Wards and Holy Symbols"
-							}
-						},
-						{
-							"id": "mIP11x5X5Y-k4wWeM",
-							"name": "Cannot be trapped",
-							"reference": "B133",
-							"cost_adj": "-50%",
-							"disabled": true
-						},
-						{
-							"id": "m8zuDCxwLISVGvUpU",
-							"name": "Insensitive",
-							"reference": "H25",
-							"cost_adj": "-50%",
-							"disabled": true
-						}
-					],
+					"id": "tKfmh-tOMe5sj3tCo",
+					"name": "Braço Enferrujado",
+					"local_notes": "[+1 Braço Enferrujado] Descrição: +1 em Judô, Climbing, Lifting, Grappling, DR nos braços.",
+					"points_per_level": 6,
 					"can_level": true,
-					"levels": 2,
+					"levels": 1,
 					"calc": {
-						"points": 0,
-						"resolved_notes": "May not come within level yards of Demon Wards and Holy Symbols",
-						"current_level": 2
-					}
-				},
-				{
-					"id": "thm4UzvlB0pnesRf2",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "tBrKjWb64Fk87xuoG"
-					},
-					"name": "Dark Vision",
-					"reference": "B47,P46",
-					"local_notes": "Não sei fazer modifier. É -3 pt.",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "mybkOq04Z6pkXoA7G",
-							"name": "Can see colors in the dark",
-							"cost_adj": "20%",
-							"disabled": true
-						},
-						{
-							"id": "mR71OgyicpMHMs7RJ",
-							"name": "Hypersensory",
-							"reference": "P46",
-							"cost_adj": "40%",
-							"disabled": true
-						}
-					],
-					"base_points": 22,
-					"calc": {
-						"points": 22
-					}
-				},
-				{
-					"id": "toV6XvICIG5cQbhaf",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "tQrNIZ1kbn0I6UAZf"
-					},
-					"name": "Regeneration",
-					"reference": "B80,P70,MA47",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "mW6FmbUE-HYY0moSt",
-							"name": "Slow",
-							"reference": "B80",
-							"local_notes": "You recover 1 HP per 12 hours",
-							"cost_adj": "10",
-							"disabled": true
-						},
-						{
-							"id": "mGy6I3U4-Wmtlye9h",
-							"name": "Regular",
-							"reference": "B80",
-							"local_notes": "You recover 1 HP per hour",
-							"cost_adj": "25",
-							"disabled": true
-						},
-						{
-							"id": "mYDUpu93zsMcFh55t",
-							"name": "Fast",
-							"reference": "B80",
-							"local_notes": "You recover 1 HP per minute",
-							"cost_adj": "50"
-						},
-						{
-							"id": "mQThEcDS-gP0NVmcq",
-							"name": "Very Fast",
-							"reference": "B80",
-							"local_notes": "You recover 1 HP per second",
-							"cost_adj": "100",
-							"disabled": true
-						},
-						{
-							"id": "maParwd7qGCNgqWGE",
-							"name": "Extreme",
-							"reference": "B80",
-							"local_notes": "You recover 10 HP per second",
-							"cost_adj": "150",
-							"disabled": true
-						},
-						{
-							"id": "mIbPfEJqBX62BK2Zn",
-							"name": "Heals Radiation",
-							"reference": "B80",
-							"cost_adj": "40%",
-							"disabled": true
-						},
-						{
-							"id": "m0oD8NcDTOPNWEvpn",
-							"name": "Radiation Only",
-							"reference": "B80",
-							"cost_adj": "-60%",
-							"disabled": true
-						},
-						{
-							"id": "m8BaGBytWfeOjg4S5",
-							"name": "Fatigue Recovery",
-							"reference": "P70",
-							"cost_adj": "100%",
-							"disabled": true
-						},
-						{
-							"id": "mpfDWR5OBCSBfmGv5",
-							"name": "Fatigue Only",
-							"reference": "P70",
-							"disabled": true
-						},
-						{
-							"id": "mKrLkr3IqnbjB55tP",
-							"name": "Limited: @Advantage@ Only",
-							"reference": "P70",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "mbsi98soxk0Ui_948",
-							"name": "Bane",
-							"reference": "H18",
-							"local_notes": "@Common or Very Common@",
-							"cost_adj": "-50%",
-							"disabled": true
-						},
-						{
-							"id": "mEqfVjUGas7DAUktS",
-							"name": "Bane",
-							"reference": "H18",
-							"local_notes": "@Occasional@",
-							"cost_adj": "-30%",
-							"disabled": true
-						},
-						{
-							"id": "mOgpKEHvOoPFGrmHj",
-							"name": "Bane",
-							"reference": "H18",
-							"local_notes": "@Rare@",
-							"cost_adj": "-10%",
-							"disabled": true
-						},
-						{
-							"id": "m_uUbcT3Yzih4XSaF",
-							"name": "Pacto - Voto: Viver sob a Lei da Ferrugem",
-							"cost_adj": "-15%"
-						}
-					],
-					"calc": {
-						"points": 43
-					}
-				},
-				{
-					"id": "tsWWDAQ9BpkKWVQi6",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "trMfToThYl9fEmPdt"
-					},
-					"name": "Rapid Healing",
-					"reference": "B79",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "attribute_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_least",
-									"qualifier": 10
-								},
-								"which": "ht"
-							}
-						]
-					},
-					"modifiers": [
-						{
-							"id": "mUB806iB8aALt9gR3",
-							"name": "Pacto - Voto: Viver sob a Lei da Ferrugem",
-							"cost_adj": "-15%"
-						}
-					],
-					"base_points": 5,
-					"features": [
-						{
-							"type": "conditional_modifier",
-							"situation": "to your effective HT whenever you roll to recover lost HP or to see if you can get over a crippling injury",
-							"amount": 5
-						}
-					],
-					"calc": {
-						"points": 5
+						"points": 6,
+						"current_level": 1
 					}
 				},
 				{
 					"id": "tWoRZRtL2p2nBWuKQ",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Advantages.adq",
+						"path": "Basic Set/Basic Set Advantages.adq",
 						"id": "tJjft9rhoL24kD_3K"
 					},
 					"name": "Damage Resistance",
@@ -3056,7 +2362,10 @@
 							"reference": "B47",
 							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
 							"cost_adj": "-40%",
-							"disabled": true
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
 						},
 						{
 							"id": "mKvKjMgqx4KIdpZqS",
@@ -3252,67 +2561,130 @@
 					}
 				},
 				{
-					"id": "tuj6wGI-emsfMswH5",
+					"id": "thm4UzvlB0pnesRf2",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Traits.adq",
-						"id": "txSLRSX9nxLwQkE2n"
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tBrKjWb64Fk87xuoG"
 					},
-					"name": "Hard to Kill",
-					"reference": "B58",
+					"name": "Dark Vision",
+					"reference": "B47,P46",
+					"local_notes": "Não sei fazer modifier. É -3 pt.",
 					"tags": [
 						"Advantage",
+						"Exotic",
 						"Physical"
 					],
 					"modifiers": [
 						{
-							"id": "m1ACwKviLegyDJxir",
-							"name": "Pacto - Voto: Viver sob a Lei da Ferrugem",
-							"cost_adj": "-15%"
-						}
-					],
-					"points_per_level": 2,
-					"features": [
+							"id": "mybkOq04Z6pkXoA7G",
+							"name": "Can see colors in the dark",
+							"cost_adj": "20%",
+							"disabled": true
+						},
 						{
-							"type": "conditional_modifier",
-							"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
-							"amount": 1,
-							"per_level": true
+							"id": "mR71OgyicpMHMs7RJ",
+							"name": "Hypersensory",
+							"reference": "P46",
+							"cost_adj": "40%",
+							"disabled": true
 						}
 					],
-					"can_level": true,
-					"levels": 1,
+					"base_points": 22,
 					"calc": {
-						"points": 2,
-						"current_level": 1
+						"points": 22
 					}
 				},
 				{
-					"id": "tCvoP1bztqU7SXAN_",
+					"id": "thWK5cKDg3-ygN2ng",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Advantages.adq",
-						"id": "tSHSdmxErHFYUFBjx"
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tf-vhApVXLMumnNLj"
 					},
-					"name": "Temperature Tolerance",
-					"reference": "B93",
+					"name": "Dread",
+					"reference": "B132",
+					"local_notes": "May not come within level yards of @What@",
 					"tags": [
-						"Advantage",
-						"Physical"
+						"Disadvantage",
+						"Mental",
+						"Supernatural"
 					],
-					"points_per_level": 1,
+					"replacements": {
+						"What": "Demon Wards and Holy Symbols"
+					},
+					"modifiers": [
+						{
+							"id": "mTIcwD-pYXa1PxdSZ",
+							"name": "Very Common",
+							"reference": "B161",
+							"local_notes": "@What@",
+							"cost_adj": "x3",
+							"calc": {
+								"resolved_notes": "Demon Wards and Holy Symbols"
+							}
+						},
+						{
+							"id": "mYZrKzgRyElHWaX7V",
+							"name": "Common",
+							"reference": "B161",
+							"local_notes": "@What@",
+							"cost_adj": "x2",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "Demon Wards and Holy Symbols"
+							}
+						},
+						{
+							"id": "mT6Pc54DRlj_k0Bc2",
+							"name": "Occasional",
+							"reference": "B161",
+							"local_notes": "@What@",
+							"cost_adj": "x1",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "Demon Wards and Holy Symbols"
+							}
+						},
+						{
+							"id": "mltg26ky5MzS2gGXt",
+							"name": "Rare",
+							"reference": "B161",
+							"local_notes": "@What@",
+							"cost_adj": "x0.5",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "Demon Wards and Holy Symbols"
+							}
+						},
+						{
+							"id": "mIP11x5X5Y-k4wWeM",
+							"name": "Cannot be trapped",
+							"reference": "B133",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "m8zuDCxwLISVGvUpU",
+							"name": "Insensitive",
+							"reference": "H25",
+							"cost_adj": "-50%",
+							"disabled": true
+						}
+					],
 					"can_level": true,
-					"levels": 5,
+					"levels": 2,
 					"calc": {
-						"points": 5,
-						"current_level": 5
+						"points": 0,
+						"resolved_notes": "May not come within level yards of Demon Wards and Holy Symbols",
+						"current_level": 2
 					}
 				},
 				{
 					"id": "tqvQ9_5nKBjxJWtK1",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Advantages.adq",
+						"path": "Basic Set/Basic Set Advantages.adq",
 						"id": "tWjbAZxXNKhm_G1sK"
 					},
 					"name": "Extra Hit Points",
@@ -3359,24 +2731,39 @@
 					}
 				},
 				{
-					"id": "tKfmh-tOMe5sj3tCo",
-					"name": "Braço Enferrujado",
-					"local_notes": "[+1 Braço Enferrujado] Descrição: +1 em Judô, Climbing, Lifting, Grappling, DR nos braços.",
-					"points_per_level": 6,
+					"id": "tuj6wGI-emsfMswH5",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "txSLRSX9nxLwQkE2n"
+					},
+					"name": "Hard to Kill",
+					"reference": "B58",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m1ACwKviLegyDJxir",
+							"name": "Pacto - Voto: Viver sob a Lei da Ferrugem",
+							"cost_adj": "-15%"
+						}
+					],
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
+							"amount": 1,
+							"per_level": true
+						}
+					],
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 6,
+						"points": 2,
 						"current_level": 1
-					}
-				},
-				{
-					"id": "t5vbvEVYRtSJuvUTd",
-					"name": "Sangue Curativo",
-					"local_notes": "D'Bragança aprendeu com Cano Curto a utilziar seu sangue para curar aliados. Ele cede sua própria força vital para recuperar a de outrem.",
-					"base_points": 6,
-					"calc": {
-						"points": 6
 					}
 				},
 				{
@@ -3489,11 +2876,17 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Judo"
+									"name": {
+										"compare": "is",
+										"qualifier": "Judo"
+									}
 								},
 								{
 									"type": "skill",
-									"name": "Brawling"
+									"name": {
+										"compare": "is",
+										"qualifier": "Brawling"
+									}
 								},
 								{
 									"type": "dx"
@@ -3509,6 +2902,212 @@
 					"calc": {
 						"points": 6
 					}
+				},
+				{
+					"id": "t1ilFWEGzHoou9pvp",
+					"name": "Rank: Fundido",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tsWWDAQ9BpkKWVQi6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "trMfToThYl9fEmPdt"
+					},
+					"name": "Rapid Healing",
+					"reference": "B79",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 10
+								},
+								"which": "ht"
+							}
+						]
+					},
+					"modifiers": [
+						{
+							"id": "mUB806iB8aALt9gR3",
+							"name": "Pacto - Voto: Viver sob a Lei da Ferrugem",
+							"cost_adj": "-15%"
+						}
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to your effective HT whenever you roll to recover lost HP or to see if you can get over a crippling injury",
+							"amount": 5
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "toV6XvICIG5cQbhaf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tQrNIZ1kbn0I6UAZf"
+					},
+					"name": "Regeneration",
+					"reference": "B80,P70,MA47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mW6FmbUE-HYY0moSt",
+							"name": "Slow",
+							"reference": "B80",
+							"local_notes": "You recover 1 HP per 12 hours",
+							"cost_adj": "10",
+							"disabled": true
+						},
+						{
+							"id": "mGy6I3U4-Wmtlye9h",
+							"name": "Regular",
+							"reference": "B80",
+							"local_notes": "You recover 1 HP per hour",
+							"cost_adj": "25",
+							"disabled": true
+						},
+						{
+							"id": "mYDUpu93zsMcFh55t",
+							"name": "Fast",
+							"reference": "B80",
+							"local_notes": "You recover 1 HP per minute",
+							"cost_adj": "50"
+						},
+						{
+							"id": "mQThEcDS-gP0NVmcq",
+							"name": "Very Fast",
+							"reference": "B80",
+							"local_notes": "You recover 1 HP per second",
+							"cost_adj": "100",
+							"disabled": true
+						},
+						{
+							"id": "maParwd7qGCNgqWGE",
+							"name": "Extreme",
+							"reference": "B80",
+							"local_notes": "You recover 10 HP per second",
+							"cost_adj": "150",
+							"disabled": true
+						},
+						{
+							"id": "mIbPfEJqBX62BK2Zn",
+							"name": "Heals Radiation",
+							"reference": "B80",
+							"cost_adj": "40%",
+							"disabled": true
+						},
+						{
+							"id": "m0oD8NcDTOPNWEvpn",
+							"name": "Radiation Only",
+							"reference": "B80",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "m8BaGBytWfeOjg4S5",
+							"name": "Fatigue Recovery",
+							"reference": "P70",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mpfDWR5OBCSBfmGv5",
+							"name": "Fatigue Only",
+							"reference": "P70",
+							"disabled": true
+						},
+						{
+							"id": "mKrLkr3IqnbjB55tP",
+							"name": "Limited: @Advantage@ Only",
+							"reference": "P70",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mbsi98soxk0Ui_948",
+							"name": "Bane",
+							"reference": "H18",
+							"local_notes": "@Common or Very Common@",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mEqfVjUGas7DAUktS",
+							"name": "Bane",
+							"reference": "H18",
+							"local_notes": "@Occasional@",
+							"cost_adj": "-30%",
+							"disabled": true
+						},
+						{
+							"id": "mOgpKEHvOoPFGrmHj",
+							"name": "Bane",
+							"reference": "H18",
+							"local_notes": "@Rare@",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "m_uUbcT3Yzih4XSaF",
+							"name": "Pacto - Voto: Viver sob a Lei da Ferrugem",
+							"cost_adj": "-15%"
+						}
+					],
+					"calc": {
+						"points": 43
+					}
+				},
+				{
+					"id": "t5vbvEVYRtSJuvUTd",
+					"name": "Sangue Curativo",
+					"local_notes": "D'Bragança aprendeu com Cano Curto a utilziar seu sangue para curar aliados. Ele cede sua própria força vital para recuperar a de outrem.",
+					"base_points": 6,
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "tCvoP1bztqU7SXAN_",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tSHSdmxErHFYUFBjx"
+					},
+					"name": "Temperature Tolerance",
+					"reference": "B93",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"points_per_level": 1,
+					"can_level": true,
+					"levels": 5,
+					"calc": {
+						"points": 5,
+						"current_level": 5
+					}
 				}
 			],
 			"calc": {
@@ -3516,10 +3115,654 @@
 			}
 		},
 		{
+			"id": "te8YjpwUOCB94oXHH",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "twIA9WIueGxtpoERd"
+			},
+			"name": "Enhanced Parry (Bare hands)",
+			"reference": "B51",
+			"tags": [
+				"Advantage",
+				"Mental"
+			],
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to Parry with bare hands",
+					"amount": 1
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 5,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "TAhaOnR3JvMnlq6lZ",
+			"name": "FERIMENTOS",
+			"children": [
+				{
+					"id": "tSJfqZvaFZBpOWx64",
+					"name": "Cicatriz do Rosto ao Tórax (Critonis)",
+					"local_notes": "Ao ser atacado pelo Deus-rei Critonis, D'Bragança levou um golpe que rasgou seu rosto, pescoço e tórax. Deixando uma cicatriz gigante para trás.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tWpAz0b0oOl6r-fUz",
+					"name": "Cicatriz no Tórax (Aranha-esquivadeira)",
+					"local_notes": "Ataque fulminante da Aranha-esquivadeira deixou uma cicatriz (onde antes era um buraco que vertia sangue) enorme no peito de D'Bragança. Sobreviver à isso não foi nada menos do que um milagre!",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tO153m70SdXBnXH2P",
+					"name": "Dentes Quebrados (Ogro Mutante)",
+					"local_notes": "Depois de dois golpes esmagadores do malho do Ogro Mutante, D'Bragança sofreu uma torção no pé e perdeu dois dentes da frente.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tkGe9FdXMpu4p7rgK",
+					"name": "Marca de Mordida (Direwolf)",
+					"local_notes": "Um lobo atroz mordeu o peito de D'Bragança, causando grandes ferimentos.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tTtq77NnVGXUCH6Bd",
+					"name": "Mordida (Lagartus Gigantus)",
+					"local_notes": "No fatídico dia em que D'Bragança perdeu seus aliados, também perdeu uma boa parcela de sangue. Agora o doloroso lembrete dói tanto em sua carne, quanto em sua alma.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tyEnIAB9wLIPUo67n",
+					"name": "Mordiscadela (Treedra)",
+					"local_notes": "Uma hydra-ent-cepo mordeu ferozmente o torso de D'Bragança, causando ferimentos profundos.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tzho64MTsWYSvr8jf",
+					"name": "Perfuração no Tórax (Cepo)",
+					"local_notes": "As raízes do Cepo atingiram e perfuraram o peito de D'Bragança.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tqNMaB4Lp4RkRT9Q3",
+					"name": "Queimadura Arcana (Lich)",
+					"local_notes": "D'Bragança sofreu um ataque elétrico arcano de um Lich. Sua face, ombro e boa parte do seu braço esquerdo carregam marcas terríveis do acontecido.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "tHSZ_lv5_oPuomdUc",
+					"name": "Queimadura Massiva (Goblin Shaman)",
+					"local_notes": "D'Bragança sofreu uma queimadura massiva causada por uma bola de fogo lançada por um goblin shaman.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "te5hHLUUC5qjq25i1",
+					"name": "Rabiola Tócssica (Escorpiola Gigante)",
+					"local_notes": "Um Scorpiola gigante rabetou o tórax de D'Bragança, envenenando gravemente o lusitano enferrujado.",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t48_c7EXRMS2bWNIU",
+					"name": "Semi-amputação (Treedra)",
+					"local_notes": "Uma mordida da aberração quase amputa o braço direito de D'Bragança, deixando-o molengo por uns dias.",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tceY7dVegjGHSa8bP",
+			"name": "Médico do SUS",
+			"local_notes": "Depois de repetidos dias trabalhando como médico nos docas, D'Bragança tem prática em atender a galera.",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tROHPbWCFgzkc9VEh",
+			"name": "Fit (Gostoso)",
+			"reference": "B55",
+			"local_notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"base_points": 5,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+					"amount": 1
+				}
+			],
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "tk2SxELVSyivr5C75",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "thFrOuJWQEZoFRvBs"
+			},
+			"name": "Hard to Kill",
+			"reference": "B58",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"points_per_level": 2,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 2,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "th4mcFXIHWwBdS8dd",
+			"name": "High Pain Threshold - Nem doeu",
+			"reference": "B59",
+			"local_notes": "Never suffer shock penalties when injured",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"base_points": 10,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "on all HT rolls to avoid knockdown and stunning",
+					"amount": 3
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "to resist torture",
+					"amount": 3
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "tQGAP7w57dASJ-Iek",
+			"name": "Language: Common",
+			"reference": "B24",
+			"tags": [
+				"Advantage",
+				"Language",
+				"Mental"
+			],
+			"modifiers": [
+				{
+					"id": "mX1McKrQuraRG3pmy",
+					"name": "Native",
+					"reference": "B23",
+					"cost_adj": "-6",
+					"disabled": true
+				},
+				{
+					"id": "mtGcDCLZ9RbbZEMak",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "mxKtd5HqvpW0zJgNk",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "mAlsYKWbWn-y5mShP",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2"
+				},
+				{
+					"id": "mowy9f25keuvxB2Kp",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3",
+					"disabled": true
+				},
+				{
+					"id": "mmcLVkM886Zp7Aqu-",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "None"
+				},
+				{
+					"id": "mmKbdUq2aFZTbKJpA",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "m3MKYB5tqN0aSkgTL",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "mNA4iLvH_rEaNeOFs",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 2
+			}
+		},
+		{
+			"id": "tkga0M4udkbTfFTAe",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "tYqktunLBCCeVIcVj"
+			},
+			"name": "Language: @Language@",
+			"reference": "B24",
+			"tags": [
+				"Advantage",
+				"Language",
+				"Mental"
+			],
+			"replacements": {
+				"Language": "Halfling"
+			},
+			"modifiers": [
+				{
+					"id": "mucZ5aFEq738dUJbq",
+					"name": "Native",
+					"reference": "B23",
+					"cost_adj": "-6",
+					"disabled": true
+				},
+				{
+					"id": "mx-2dA50kk8EY_brS",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "mQbQklHhkWVvjxyWu",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1"
+				},
+				{
+					"id": "mLotjcGwKPC5wJ34M",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "mvmjsUdSXQk8iG9XG",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3",
+					"disabled": true
+				},
+				{
+					"id": "mICStQ7BLGe85FZ4P",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "None"
+				},
+				{
+					"id": "mdVpzMimuvh4NKXzE",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "msZ8fWZzT-teWF2H_",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "mwe-Jx7IJGdpUtmop",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "tu9scrBug41yzhygk",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "tnv-IXR_yOLWvOIlM"
+			},
+			"name": "Language: @Language@",
+			"reference": "B24",
+			"tags": [
+				"Advantage",
+				"Language",
+				"Mental"
+			],
+			"replacements": {
+				"Language": "Orc"
+			},
+			"modifiers": [
+				{
+					"id": "mHsmkanPeDnM9-M4w",
+					"name": "Native",
+					"reference": "B23",
+					"cost_adj": "-6",
+					"disabled": true
+				},
+				{
+					"id": "m9n0LfVd0H0wBMur4",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "maVoIwbAsUWT__7qF",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1"
+				},
+				{
+					"id": "maC75Kd8WTqWk-_HC",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "mnpmSkqaKSEddMqRd",
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3",
+					"disabled": true
+				},
+				{
+					"id": "mJWfuYPeXHLAxEpZ2",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "None"
+				},
+				{
+					"id": "m6l2UR5KOpXBtrt13",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "mwphqXgpAy0ioZccc",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "mjO_dyJVAkHbOpTQj",
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3",
+					"disabled": true
+				}
+			],
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "thgOStAQJQSa3O50x",
+			"name": "Magery",
+			"reference": "B66",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"modifiers": [
+				{
+					"id": "mPF_Mg2BGByXHkYed",
+					"name": "Dance",
+					"cost_adj": "-40%",
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mnY0Cu1nL6CJAF-py",
+					"name": "Dark-Aspected",
+					"cost_adj": "-50%",
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mwkSVRricaBv9CXYu",
+					"name": "Day-Aspected",
+					"cost_adj": "-40%",
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "m1eryz4GW6_u5Nnsu",
+					"name": "Musical",
+					"cost_adj": "-50%",
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "mj6EoY1OuTF04hcA2",
+					"name": "Night-Aspected",
+					"cost_adj": "-40%",
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "m9PUMsnFNoEmGRvnI",
+					"name": "One College (healing)",
+					"cost_adj": "-40%",
+					"affects": "levels_only"
+				},
+				{
+					"id": "mBPJapD-ZWK_AirVJ",
+					"name": "Solitary",
+					"cost_adj": "-40%",
+					"affects": "levels_only",
+					"disabled": true
+				},
+				{
+					"id": "m3wgn65s3Zv0eg4_e",
+					"name": "Song",
+					"cost_adj": "-40%",
+					"affects": "levels_only"
+				}
+			],
+			"base_points": 5,
+			"points_per_level": 10,
+			"features": [
+				{
+					"type": "spell_bonus",
+					"match": "all_colleges",
+					"name": {
+						"compare": "is",
+						"qualifier": "healing"
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 2,
+			"calc": {
+				"points": 9,
+				"current_level": 2
+			}
+		},
+		{
+			"id": "t41etIP0NBNjKu2vV",
+			"name": "Martírio da Carne",
+			"local_notes": "O corpo é maior instrumento e escudo de um irmão da ferrugem. Portanto, D'Bragança abandonou sua armadura.",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tuL9lvqrc1e4UDmk2",
+			"name": "Mãos, as ferramentas dos deuses",
+			"local_notes": "Com elas rezamos, com elas curamos e é com ela que combatemos o mal. D'Bragança abandonou seu escudo e suas armas.",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		},
+		{
+			"id": "t_757bnxDz0oSDDAd",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Martial Arts/Martial Arts Advantages.adq",
+				"id": "tVl6wujdCz2qO7rAp"
+			},
+			"name": "Power Grappling",
+			"reference": "MA51",
+			"local_notes": "You may base DX-based grappling rolls on ST",
+			"tags": [
+				"Mental",
+				"Perk"
+			],
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "tZ4pYMaSuq5RljPCp",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "tDPVDVrAPCGdUiyKI"
+			},
+			"name": "Reduced Consumption",
+			"reference": "B80",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "mldK6Yfn28mEdbsh1",
+					"name": "Cast-Iron Stomach",
+					"reference": "B80",
+					"cost_adj": "-50%",
+					"disabled": true
+				},
+				{
+					"id": "mFkSbEd59CAOiLEDk",
+					"name": "Food Only",
+					"reference": "B80",
+					"cost_adj": "-50%"
+				},
+				{
+					"id": "mrLMU0YMRM0-UUukR",
+					"name": "Water Only",
+					"reference": "B80",
+					"cost_adj": "-50%",
+					"disabled": true
+				}
+			],
+			"points_per_level": 2,
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 1,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "t7YQGKkadzsEGw3fs",
+			"name": "Sangue e Ferro",
+			"local_notes": "O sangue que mancha a terra, oxida e quebra as correntes do mal. Ao final de cada dia, se D'Bragança não sofreu nenhum ferimento, ele oferece seu sangue em sacrifício através de cortes cerimoniais, seguidos por magias de cura para a cicatrização instantânea.",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
 			"id": "tqAY05XY5BvUX8SpM",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Traits.adq",
+				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "t5R0c_iujWXeXusIu"
 			},
 			"name": "VOTO DA FERRUGEM",
@@ -3558,31 +3801,6 @@
 				"points": -15,
 				"resolved_notes": "Viver sob a Lei da Ferrugem"
 			}
-		},
-		{
-			"id": "t41etIP0NBNjKu2vV",
-			"name": "Martírio da Carne",
-			"local_notes": "O corpo é maior instrumento e escudo de um irmão da ferrugem. Portanto, D'Bragança abandonou sua armadura.",
-			"calc": {
-				"points": 0
-			}
-		},
-		{
-			"id": "tuL9lvqrc1e4UDmk2",
-			"name": "Mãos, as ferramentas dos deuses",
-			"local_notes": "Com elas rezamos, com elas curamos e é com ela que combatemos o mal. D'Bragança abandonou seu escudo e suas armas.",
-			"base_points": -10,
-			"calc": {
-				"points": -10
-			}
-		},
-		{
-			"id": "t7YQGKkadzsEGw3fs",
-			"name": "Sangue e Ferro",
-			"local_notes": "O sangue que mancha a terra, oxida e quebra as correntes do mal. Ao final de cada dia, se D'Bragança não sofreu nenhum ferimento, ele oferece seu sangue em sacrifício através de cortes cerimoniais, seguidos por magias de cura para a cicatrização instantânea.",
-			"calc": {
-				"points": 0
-			}
 		}
 	],
 	"skills": [
@@ -3590,7 +3808,7 @@
 			"id": "sUiOmn8IQqge8ZTGL",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sV4rCzTdH7KJj_Upy"
 			},
 			"name": "Intimidation",
@@ -3609,7 +3827,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Acting",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acting"
+					},
 					"modifier": -3
 				}
 			],
@@ -3630,7 +3851,7 @@
 			"id": "siBIOkH73X707CDTf",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sh9m8Befn5big-gmf"
 			},
 			"name": "Search",
@@ -3647,7 +3868,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Criminology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Criminology"
+					},
 					"modifier": -5
 				}
 			],
@@ -3668,7 +3892,7 @@
 			"id": "sCX6oxby-cRuYtWJx",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sqHRwLcDhuvhQBkhK"
 			},
 			"name": "Leadership",
@@ -3701,7 +3925,7 @@
 			"id": "sRupdqHCPzdqDTaK5",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "slJ848gm1u40VnDcF"
 			},
 			"name": "Soldier",
@@ -3767,7 +3991,7 @@
 			"id": "sEuMuaCuw0Tfl8eLZ",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "s7YmeCX8gEUi-lk2g"
 			},
 			"name": "Theology",
@@ -3788,8 +4012,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Religious Ritual",
-					"specialization": "@Specialty@",
+					"name": {
+						"compare": "is",
+						"qualifier": "Religious Ritual"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Specialty@"
+					},
 					"modifier": -4
 				}
 			],
@@ -3828,21 +4058,39 @@
 			"defaults": [
 				{
 					"type": "skill",
-					"name": "Ritual Magic",
-					"specialization": "@Specialty@",
+					"name": {
+						"compare": "is",
+						"qualifier": "Ritual Magic"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Specialty@"
+					},
 					"modifier": -6
 				},
 				{
 					"type": "skill",
-					"name": "Theology",
-					"specialization": "@Specialty@",
+					"name": {
+						"compare": "is",
+						"qualifier": "Theology"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Specialty@"
+					},
 					"modifier": -4
 				}
 			],
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Theology",
-				"specialization": "Irmandade da Ferrugem",
+				"name": {
+					"compare": "is",
+					"qualifier": "Theology"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Irmandade da Ferrugem"
+				},
 				"modifier": -4,
 				"level": 16,
 				"adjusted_level": 16,
@@ -3857,7 +4105,7 @@
 			"id": "sXkJU9_b_mKR1pfQ5",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sgtaqHs22hBBWPhJO"
 			},
 			"name": "Fast-Talk",
@@ -3876,7 +4124,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Acting",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acting"
+					},
 					"modifier": -5
 				}
 			],
@@ -3913,12 +4164,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "First Aid",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
 					"modifier": -11
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -5
 				}
 			],
@@ -3940,7 +4197,7 @@
 			"id": "shsp0zjQOlGagZeRF",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sFsiOWWguub8vXzwh"
 			},
 			"name": "Diagnosis",
@@ -3956,17 +4213,26 @@
 				},
 				{
 					"type": "skill",
-					"name": "First Aid",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
 					"modifier": -8
 				},
 				{
 					"type": "skill",
-					"name": "Physician",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -5
 				}
 			],
@@ -3974,7 +4240,13 @@
 			"points": 4,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Physician",
+				"name": {
+					"compare": "is",
+					"qualifier": "Physician"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -4,
 				"level": 10,
 				"adjusted_level": 10,
@@ -3989,7 +4261,7 @@
 			"id": "sHQaZSskfLPxQfmi4",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "spqmJbuGaJTg1QHKJ"
 			},
 			"name": "Teamster",
@@ -4007,22 +4279,40 @@
 				},
 				{
 					"type": "skill",
-					"name": "Animal Handling",
-					"specialization": "Equines",
+					"name": {
+						"compare": "is",
+						"qualifier": "Animal Handling"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Riding",
-					"specialization": "Equines",
+					"name": {
+						"compare": "is",
+						"qualifier": "Riding"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
 					"modifier": -2
 				}
 			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Riding",
-				"specialization": "Equines",
+				"name": {
+					"compare": "is",
+					"qualifier": "Riding"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Equines"
+				},
 				"modifier": -2,
 				"level": 9,
 				"adjusted_level": 9,
@@ -4037,7 +4327,7 @@
 			"id": "sHTHEUJ2Ia8EJEoCl",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sfUIWLzG_0qznxku3"
 			},
 			"name": "First Aid",
@@ -4055,15 +4345,24 @@
 				},
 				{
 					"type": "skill",
-					"name": "Esoteric Medicine"
+					"name": {
+						"compare": "is",
+						"qualifier": "Esoteric Medicine"
+					}
 				},
 				{
 					"type": "skill",
-					"name": "Physician"
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					}
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -4
 				}
 			],
@@ -4071,7 +4370,13 @@
 			"points": 1,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Physician",
+				"name": {
+					"compare": "is",
+					"qualifier": "Physician"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"level": 14,
 				"adjusted_level": 14,
 				"points": 8
@@ -4082,10 +4387,20 @@
 			}
 		},
 		{
+			"id": "sRvy_7xzA91IqBtov",
+			"name": "Tanatopraxist",
+			"difficulty": "iq/a",
+			"points": 2,
+			"calc": {
+				"level": 11,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "sGBn6r5l5XhwUSBLD",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sIBk5O23GChb7jvj5"
 			},
 			"name": "Breath Control",
@@ -4104,7 +4419,7 @@
 			"id": "sWlmm5y0ZubjvoSye",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "s21LagSf5mrYaV8h3"
 			},
 			"name": "Lifting",
@@ -4123,7 +4438,7 @@
 			"id": "sCzJs0P7tObN9KEyP",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sOUf7U4NYQG9TAxXr"
 			},
 			"name": "Running",
@@ -4184,7 +4499,7 @@
 			"id": "sz_CtxiRIMZvERuab",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sGf6hR4emD2yDvIOx"
 			},
 			"name": "Singing",
@@ -4217,7 +4532,7 @@
 			"id": "sE1e0ZQ5RJTBBJIOp",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sMCHNMqlaxg-WbLy5"
 			},
 			"name": "Carousing",
@@ -4251,7 +4566,7 @@
 			"id": "swclXuTngaD4WYDPB",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sGlUIf_WNqGUAlpbH"
 			},
 			"name": "Swimming",
@@ -4286,7 +4601,7 @@
 			"id": "sfwBxTa0U-Y70jZeg",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sNY8GUzpuC2tDYV5S"
 			},
 			"name": "Riding",
@@ -4303,8 +4618,14 @@
 				},
 				{
 					"type": "skill",
-					"name": "Animal Handling",
-					"specialization": "Equines",
+					"name": {
+						"compare": "is",
+						"qualifier": "Animal Handling"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
 					"modifier": -3
 				}
 			],
@@ -4325,7 +4646,7 @@
 			"id": "sqkIiI4MoSvAhkC31",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sNJ5kbhv91F2Oc6Hr"
 			},
 			"name": "Stealth",
@@ -4365,7 +4686,7 @@
 			"id": "sZvvhxs9JlLmD0Fcy",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sbbiyh7j8YEKVmNHb"
 			},
 			"name": "Throwing",
@@ -4384,7 +4705,10 @@
 				},
 				{
 					"type": "skill",
-					"name": "Dropping",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dropping"
+					},
 					"modifier": -4
 				}
 			],
@@ -4405,7 +4729,7 @@
 			"id": "sekqxymrXEel5JyJg",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "sbKWzaiYtsQup4vjy"
 			},
 			"name": "Fast-Draw",
@@ -4440,12 +4764,18 @@
 				},
 				{
 					"type": "skill",
-					"name": "Two-Handed Axe/Mace",
+					"name": {
+						"compare": "is",
+						"qualifier": "Two-Handed Axe/Mace"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Flail",
+					"name": {
+						"compare": "is",
+						"qualifier": "Flail"
+					},
 					"modifier": -4
 				}
 			],
@@ -4496,7 +4826,7 @@
 			"id": "sUM7zBkuLBlp5rTW8",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Skills.skl",
+				"path": "Basic Set/Basic Set Skills.skl",
 				"id": "srNcoECeNYYKf7gSz"
 			},
 			"name": "Climbing",
@@ -4558,7 +4888,7 @@
 					"id": "sU6iLm7ZihWwoZvP7",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Skills.skl",
+						"path": "Basic Set/Basic Set Skills.skl",
 						"id": "ssGPHEGz-IY6jExPL"
 					},
 					"name": "Karate",
@@ -4609,7 +4939,7 @@
 					"id": "sHW1nvJzYXtucKKNd",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Skills.skl",
+						"path": "Basic Set/Basic Set Skills.skl",
 						"id": "suYM49OGzmALfq2Dd"
 					},
 					"name": "Judo",
@@ -4632,7 +4962,7 @@
 					"id": "qljY3imW_1cAVSvaD",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Skills.skl",
+						"path": "Basic Set/Basic Set Skills.skl",
 						"id": "q7GljBfWaeL8IdzvQ"
 					},
 					"name": "Choke Hold",
@@ -4646,7 +4976,10 @@
 					"difficulty": "h",
 					"default": {
 						"type": "skill",
-						"name": "Judo",
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						},
 						"modifier": -2
 					},
 					"limit": 0,
@@ -4674,7 +5007,7 @@
 					"id": "qyq8dyJ6Lr9mQQ1vK",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Skills.skl",
+						"path": "Basic Set/Basic Set Skills.skl",
 						"id": "qWuvTRdu3ld9uckzm"
 					},
 					"name": "Arm Lock",
@@ -4688,7 +5021,10 @@
 					"difficulty": "a",
 					"default": {
 						"type": "skill",
-						"name": "Judo"
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
 					},
 					"limit": 4,
 					"points": 1,
@@ -4701,7 +5037,7 @@
 					"id": "q4kLFP-Vpk7r0evRl",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Martial Arts\\Martial Arts Skills.skl",
+						"path": "Martial Arts/Martial Arts Skills.skl",
 						"id": "qsZuKX4h4sbNmcwhx"
 					},
 					"name": "Judo Throw",
@@ -4715,7 +5051,10 @@
 					"difficulty": "h",
 					"default": {
 						"type": "skill",
-						"name": "Judo"
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
 					},
 					"limit": 0,
 					"points": 2,
@@ -5172,7 +5511,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-09-16T23:46:35-03:00",
+	"modified_date": "2026-09-23T23:58:38-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
