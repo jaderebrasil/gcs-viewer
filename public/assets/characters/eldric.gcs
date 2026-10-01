@@ -659,13 +659,42 @@
 			"attr_id": "hp",
 			"adj": 3,
 			"calc": {
-				"value": 13,
-				"current": 13,
+				"value": 9,
+				"current": 9,
 				"points": 6
 			}
 		}
 	],
 	"traits": [
+		{
+			"id": "tMoCcYLxeFegfTxlj",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "tpVpKxJ4O8NxUBBDE"
+			},
+			"name": "Fewer Hit Points",
+			"reference": "B16",
+			"tags": [
+				"Attribute",
+				"Disadvantage",
+				"Physical"
+			],
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "hp",
+					"amount": -1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 4,
+			"calc": {
+				"points": 0,
+				"current_level": 4
+			}
+		},
 		{
 			"id": "tvDvIO4CrST2DpSMk",
 			"source": {
@@ -776,7 +805,7 @@
 			],
 			"modifiers": [
 				{
-					"id": "mYEZqnXL3YukyBQeB",
+					"id": "mpThP7WlmbEmezI0q",
 					"name": "Attractive",
 					"reference": "B21",
 					"cost_adj": "4",
@@ -786,16 +815,17 @@
 							"situation": "from others",
 							"amount": 1
 						}
-					]
+					],
+					"disabled": true
 				},
 				{
-					"id": "mvOTMue2QCr37WUe_",
+					"id": "mk-R2GGLY59KOg6h8",
 					"name": "Average",
 					"reference": "B21",
 					"disabled": true
 				},
 				{
-					"id": "m1Jt6bmXHOhGR865R",
+					"id": "mXk9NbuBCAU2As_37",
 					"name": "Beautiful",
 					"reference": "B21",
 					"cost_adj": "12",
@@ -809,7 +839,7 @@
 					"disabled": true
 				},
 				{
-					"id": "m-WHMxfZCL443PX80",
+					"id": "mI8PJKSyTvTOC62t3",
 					"name": "Beautiful (Androgynous)",
 					"reference": "B21",
 					"cost_adj": "12",
@@ -823,7 +853,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mqumFXzFe-vl2nLZV",
+					"id": "m9TUOgl-UWFkYeuPb",
 					"name": "Beautiful (Impressive)",
 					"reference": "B21",
 					"cost_adj": "12",
@@ -837,7 +867,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mP8XkH-Sj4ovpvSBU",
+					"id": "makl4iPWe3rMBKqD9",
 					"name": "Handsome",
 					"reference": "B21",
 					"cost_adj": "12",
@@ -851,7 +881,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mTxXqbxfCNbDgeMQK",
+					"id": "mmJ3SO3jdK32kJwkV",
 					"name": "Handsome (Androgynous)",
 					"reference": "B21",
 					"cost_adj": "12",
@@ -865,7 +895,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mA3Gnsa6ekSAUJHue",
+					"id": "mV4aipi0VEhnOldWi",
 					"name": "Handsome (Impressive)",
 					"reference": "B21",
 					"cost_adj": "12",
@@ -879,7 +909,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mNbtE6IwDztLVHV4a",
+					"id": "mECOXCOpVg-hLWByZ",
 					"name": "Hideous",
 					"reference": "B21,B202",
 					"cost_adj": "-16",
@@ -902,7 +932,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mdV_bf95ZkSHd9mGF",
+					"id": "mAFSlKFjp1rFmw5Yb",
 					"name": "Horrific",
 					"reference": "B21,B202",
 					"cost_adj": "-24",
@@ -925,13 +955,13 @@
 					"disabled": true
 				},
 				{
-					"id": "mHnN2MxNijr7ktpP9",
+					"id": "mHdN1gzSo0gviMkyF",
 					"name": "Impressive",
 					"reference": "B21",
 					"disabled": true
 				},
 				{
-					"id": "mFjX3gQ0Yv4RJvdKM",
+					"id": "m2o3pvbPldm5VseUR",
 					"name": "Monstrous",
 					"reference": "B21,B202",
 					"cost_adj": "-20",
@@ -950,11 +980,10 @@
 							"situation": "from others",
 							"amount": -5
 						}
-					],
-					"disabled": true
+					]
 				},
 				{
-					"id": "m-7vInOfx1z_BS9Cl",
+					"id": "mMUTUI3dXI1toKwxW",
 					"name": "Off-the-Shelf Looks",
 					"reference": "B21",
 					"local_notes": "Halves the usual reaction bonus - adjust manually",
@@ -962,7 +991,7 @@
 					"disabled": true
 				},
 				{
-					"id": "m_YW2fTOLemLU6pBu",
+					"id": "m-bA2bK7QKa9Qp3WM",
 					"name": "Transcendent",
 					"reference": "B21",
 					"cost_adj": "20",
@@ -976,7 +1005,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mA_iKdZRJTffGB5Gp",
+					"id": "m2zveQsLivs7e-OlO",
 					"name": "Transcendent (Androgynous)",
 					"reference": "B21",
 					"cost_adj": "20",
@@ -990,7 +1019,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mMKAIhExrbevrjt3n",
+					"id": "mefkkeG4jgoxQ_A1R",
 					"name": "Transcendent (Impressive)",
 					"reference": "B21",
 					"cost_adj": "20",
@@ -1004,7 +1033,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mt4v2Et8yK3ryKWTt",
+					"id": "m0GVvLidqJVMocqNL",
 					"name": "Ugly",
 					"reference": "B21",
 					"cost_adj": "-8",
@@ -1018,7 +1047,7 @@
 					"disabled": true
 				},
 				{
-					"id": "myKJONiqYaqdJtQNo",
+					"id": "mGQ48BJBJYm4YKmQB",
 					"name": "Unattractive",
 					"reference": "B21",
 					"cost_adj": "-4",
@@ -1032,14 +1061,14 @@
 					"disabled": true
 				},
 				{
-					"id": "meWa64pFvHNdpWdak",
+					"id": "moO3Ez2qyFjByCY8l",
 					"name": "Universal",
 					"reference": "B21",
 					"cost_adj": "25%",
 					"disabled": true
 				},
 				{
-					"id": "mahELY1kAsr6ljLe6",
+					"id": "mI4kC36bdkVLMSRRI",
 					"name": "Very Beautiful",
 					"reference": "B21",
 					"cost_adj": "16",
@@ -1053,7 +1082,7 @@
 					"disabled": true
 				},
 				{
-					"id": "muj0cAq1ViK3F4ltD",
+					"id": "moFNjkZTEL0fmDtZ6",
 					"name": "Very Beautiful (Androgynous)",
 					"reference": "B21",
 					"cost_adj": "16",
@@ -1067,7 +1096,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mn4kEO9z4bjcYsed_",
+					"id": "mVgcx7jSQrb55J4A-",
 					"name": "Very Beautiful (Impressive)",
 					"reference": "B21",
 					"cost_adj": "16",
@@ -1081,7 +1110,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mWjYXOLcnxNWYkip_",
+					"id": "m-w5tmOfNtMrdJWcl",
 					"name": "Very Handsome",
 					"reference": "B21",
 					"cost_adj": "16",
@@ -1095,7 +1124,7 @@
 					"disabled": true
 				},
 				{
-					"id": "mACbCKQt4yzp1l6wv",
+					"id": "m_IVwumqFomSkUnFB",
 					"name": "Very Handsome (Androgynous)",
 					"reference": "B21",
 					"cost_adj": "16",
@@ -1109,7 +1138,7 @@
 					"disabled": true
 				},
 				{
-					"id": "m-vxBuimOZz0SB46y",
+					"id": "mT-a4JxkF4aOD_z_M",
 					"name": "Very Handsome (Impressive)",
 					"reference": "B21",
 					"cost_adj": "16",
@@ -1123,6 +1152,7 @@
 					"disabled": true
 				}
 			],
+			"base_points": 24,
 			"calc": {
 				"points": 4
 			}
@@ -5405,8 +5435,8 @@
 						"points": -10
 					},
 					"calc": {
-						"level": 13,
-						"rsl": "Will-1"
+						"level": 16,
+						"rsl": "Will+2"
 					}
 				},
 				{
@@ -8893,7 +8923,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-09-24T13:48:20-03:00",
+	"modified_date": "2026-09-30T22:18:54-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
