@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 279,
+	"total_points": 282,
 	"points_record": [
+		{
+			"when": "2026-09-30T23:35:07-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-09-23T23:57:32-03:00",
 			"points": 3,
@@ -657,11 +662,11 @@
 		},
 		{
 			"attr_id": "hp",
-			"adj": 3,
+			"adj": 5,
 			"calc": {
-				"value": 9,
-				"current": 9,
-				"points": 6
+				"value": 11,
+				"current": 11,
+				"points": 10
 			}
 		}
 	],
@@ -8076,12 +8081,27 @@
 			},
 			"quantity": 1,
 			"equipped": true,
-			"children": [],
+			"children": [
+				{
+					"id": "e-vIp4e198ULh_wEp",
+					"description": "Cachaça",
+					"legality_class": "4",
+					"base_weight": "0.5",
+					"quantity": 4,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.5 lb",
+						"extended_weight": "2 lb"
+					}
+				}
+			],
 			"calc": {
 				"value": 10,
 				"extended_value": 10,
 				"weight": "0.25 lb",
-				"extended_weight": "0.25 lb"
+				"extended_weight": "2.25 lb"
 			}
 		},
 		{
@@ -8923,7 +8943,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-09-30T22:18:54-03:00",
+	"modified_date": "2026-09-30T23:36:02-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
