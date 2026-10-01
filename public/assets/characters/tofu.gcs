@@ -1,7 +1,6 @@
 {
-	"type": "character",
-	"version": 4,
-	"id": "cc0d4e1f-5625-4c9e-8ba3-0e3b9d820266",
+	"version": 5,
+	"id": "AcAN9HeZYcuPTJJXu",
 	"total_points": 276,
 	"points_record": [
 		{
@@ -105,7 +104,6 @@
 		}
 	],
 	"profile": {
-		"player_name": "Maurício",
 		"name": "Leptothele Tofu",
 		"age": "26",
 		"birthday": "July 16",
@@ -114,9 +112,10 @@
 		"skin": "Olive",
 		"handedness": "Right",
 		"gender": "Male",
-		"tech_level": "3",
 		"height": "5'9\"",
-		"weight": "134 lb"
+		"weight": "134 lb",
+		"player_name": "Maurício",
+		"tech_level": "3"
 	},
 	"settings": {
 		"page": {
@@ -127,23 +126,192 @@
 			"bottom_margin": "0.25 in",
 			"right_margin": "0.25 in"
 		},
-		"block_layout": [
-			"reactions conditional_modifiers",
-			"melee",
-			"ranged",
-			"traits skills",
-			"spells",
-			"equipment",
-			"other_equipment",
-			"notes"
-		],
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.5,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1
+							},
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
 		"attributes": [
 			{
 				"id": "st",
 				"type": "integer",
 				"name": "ST",
 				"full_name": "Strength",
-				"attribute_base": "10",
+				"base": "10",
 				"cost_per_point": 10,
 				"cost_adj_percent_per_sm": 10
 			},
@@ -152,7 +320,7 @@
 				"type": "integer",
 				"name": "DX",
 				"full_name": "Dexterity",
-				"attribute_base": "10",
+				"base": "10",
 				"cost_per_point": 20
 			},
 			{
@@ -160,7 +328,7 @@
 				"type": "integer",
 				"name": "IQ",
 				"full_name": "Intelligence",
-				"attribute_base": "10",
+				"base": "10",
 				"cost_per_point": 20
 			},
 			{
@@ -168,21 +336,21 @@
 				"type": "integer",
 				"name": "HT",
 				"full_name": "Health",
-				"attribute_base": "10",
+				"base": "10",
 				"cost_per_point": 10
 			},
 			{
 				"id": "will",
 				"type": "integer",
 				"name": "Will",
-				"attribute_base": "$iq",
+				"base": "$iq",
 				"cost_per_point": 5
 			},
 			{
 				"id": "fright_check",
 				"type": "integer",
 				"name": "Fright Check",
-				"attribute_base": "$will",
+				"base": "$will",
 				"cost_per_point": 2
 			},
 			{
@@ -195,35 +363,35 @@
 				"type": "integer",
 				"name": "Per",
 				"full_name": "Perception",
-				"attribute_base": "$iq",
+				"base": "$iq",
 				"cost_per_point": 5
 			},
 			{
 				"id": "vision",
 				"type": "integer",
 				"name": "Vision",
-				"attribute_base": "$per",
+				"base": "$per",
 				"cost_per_point": 2
 			},
 			{
 				"id": "hearing",
 				"type": "integer",
 				"name": "Hearing",
-				"attribute_base": "$per",
+				"base": "$per",
 				"cost_per_point": 2
 			},
 			{
 				"id": "taste_smell",
 				"type": "integer",
-				"name": "Taste \u0026 Smell",
-				"attribute_base": "$per",
+				"name": "Taste & Smell",
+				"base": "$per",
 				"cost_per_point": 2
 			},
 			{
 				"id": "touch",
 				"type": "integer",
 				"name": "Touch",
-				"attribute_base": "$per",
+				"base": "$per",
 				"cost_per_point": 2
 			},
 			{
@@ -235,39 +403,39 @@
 				"id": "basic_speed",
 				"type": "decimal",
 				"name": "Basic Speed",
-				"attribute_base": "($dx+$ht)/4",
+				"base": "($dx + $ht) / 4",
 				"cost_per_point": 20
 			},
 			{
 				"id": "basic_move",
 				"type": "integer",
 				"name": "Basic Move",
-				"attribute_base": "floor($basic_speed)",
+				"base": "Math.floor($basic_speed)",
 				"cost_per_point": 5
 			},
 			{
 				"id": "highjump",
 				"type": "integer_ref",
 				"name": "High Jump (inches)",
-				"attribute_base": "(6 * max(max($basic_move, floor(skill_level(jumping) / 2)), $st / 4) - 10) * enc(false, true)"
+				"base": "((6 * Math.max(Math.max($basic_move, Math.floor(entity.skillLevel(\"jumping\") / 2)), $st / 4)) - 10) * entity.currentEncumbrance(false, true)"
 			},
 			{
 				"id": "broadjump",
 				"type": "integer_ref",
 				"name": "Broad Jump (feet)",
-				"attribute_base": "(2 * max($basic_move, $st / 4) - 3) * enc(false, true) * (1 + max(0, trait_level(\"enhanced move (ground)\")))"
+				"base": "((2 * Math.max($basic_move, $st / 4)) - 3) * entity.currentEncumbrance(false, true) * (1 + Math.max(0, entity.traitLevel(\"enhanced move (ground)\")))"
 			},
 			{
 				"id": "fp",
 				"type": "pool",
 				"name": "FP",
 				"full_name": "Fatigue Points",
-				"attribute_base": "$ht",
+				"base": "$ht",
 				"cost_per_point": 3,
 				"thresholds": [
 					{
 						"state": "Unconscious",
-						"expression": "-$fp",
+						"value": "-$fp",
 						"ops": [
 							"halve_move",
 							"halve_dodge",
@@ -276,7 +444,7 @@
 					},
 					{
 						"state": "Collapse",
-						"expression": "0",
+						"value": "0",
 						"explanation": "Roll vs. Will to do anything besides talk or rest; failure causes unconsciousness\nEach FP you lose below 0 also causes 1 HP of injury\nMove, Dodge and ST are halved (B426)",
 						"ops": [
 							"halve_move",
@@ -286,7 +454,7 @@
 					},
 					{
 						"state": "Tired",
-						"expression": "round($fp/3)",
+						"value": "Math.round($fp / 3)",
 						"explanation": "Move, Dodge and ST are halved (B426)",
 						"ops": [
 							"halve_move",
@@ -296,11 +464,11 @@
 					},
 					{
 						"state": "Tiring",
-						"expression": "$fp-1"
+						"value": "$fp - 1"
 					},
 					{
 						"state": "Rested",
-						"expression": "$fp"
+						"value": "$fp"
 					}
 				]
 			},
@@ -309,13 +477,13 @@
 				"type": "pool",
 				"name": "HP",
 				"full_name": "Hit Points",
-				"attribute_base": "$st",
+				"base": "$st",
 				"cost_per_point": 2,
 				"cost_adj_percent_per_sm": 10,
 				"thresholds": [
 					{
 						"state": "Dead",
-						"expression": "round(-$hp*5)",
+						"value": "Math.round(-$hp * 5)",
 						"ops": [
 							"halve_move",
 							"halve_dodge"
@@ -323,7 +491,7 @@
 					},
 					{
 						"state": "Dying #4",
-						"expression": "round(-$hp*4)",
+						"value": "Math.round(-$hp * 4)",
 						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-4 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
 						"ops": [
 							"halve_move",
@@ -332,7 +500,7 @@
 					},
 					{
 						"state": "Dying #3",
-						"expression": "round(-$hp*3)",
+						"value": "Math.round(-$hp * 3)",
 						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-3 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
 						"ops": [
 							"halve_move",
@@ -341,7 +509,7 @@
 					},
 					{
 						"state": "Dying #2",
-						"expression": "round(-$hp*2)",
+						"value": "Math.round(-$hp * 2)",
 						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-2 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
 						"ops": [
 							"halve_move",
@@ -350,7 +518,7 @@
 					},
 					{
 						"state": "Dying #1",
-						"expression": "-$hp",
+						"value": "-$hp",
 						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-1 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
 						"ops": [
 							"halve_move",
@@ -359,7 +527,7 @@
 					},
 					{
 						"state": "Collapse",
-						"expression": "0",
+						"value": "0",
 						"explanation": "Roll vs. HT every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
 						"ops": [
 							"halve_move",
@@ -368,7 +536,7 @@
 					},
 					{
 						"state": "Reeling",
-						"expression": "round($hp/3)",
+						"value": "Math.round($hp / 3)",
 						"explanation": "Move and Dodge are halved (B419)",
 						"ops": [
 							"halve_move",
@@ -377,11 +545,11 @@
 					},
 					{
 						"state": "Wounded",
-						"expression": "$hp-1"
+						"value": "$hp - 1"
 					},
 					{
 						"state": "Healthy",
-						"expression": "$hp"
+						"value": "$hp"
 					}
 				]
 			}
@@ -578,8 +746,7 @@
 		"modifiers_display": "inline",
 		"notes_display": "inline",
 		"skill_level_adj_display": "tooltip",
-		"show_spell_adj": true,
-		"exclude_unspent_points_from_total": false
+		"show_spell_adj": true
 	},
 	"attributes": [
 		{
@@ -602,7 +769,7 @@
 			"attr_id": "iq",
 			"adj": 2,
 			"calc": {
-				"value": 9,
+				"value": 8,
 				"points": 40
 			}
 		},
@@ -618,7 +785,7 @@
 			"attr_id": "will",
 			"adj": 0,
 			"calc": {
-				"value": 9,
+				"value": 8,
 				"points": 0
 			}
 		},
@@ -626,7 +793,7 @@
 			"attr_id": "fright_check",
 			"adj": 0,
 			"calc": {
-				"value": 11,
+				"value": 10,
 				"points": 0
 			}
 		},
@@ -638,7 +805,7 @@
 			"attr_id": "per",
 			"adj": 0,
 			"calc": {
-				"value": 9,
+				"value": 8,
 				"points": 0
 			}
 		},
@@ -646,7 +813,7 @@
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 9,
+				"value": 8,
 				"points": 0
 			}
 		},
@@ -654,7 +821,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 9,
+				"value": 8,
 				"points": 0
 			}
 		},
@@ -662,7 +829,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 9,
+				"value": 8,
 				"points": 0
 			}
 		},
@@ -670,7 +837,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 9,
+				"value": 8,
 				"points": 0
 			}
 		},
@@ -731,14 +898,13 @@
 	],
 	"traits": [
 		{
-			"id": "3f76bf0b-2c33-4c7d-ac5f-ba4d63c12652",
-			"type": "trait",
+			"id": "tfnMbNSHtSKI_cCwB",
 			"name": "Natural Attacks",
 			"reference": "B271",
 			"weapons": [
 				{
-					"id": "e7c41f8a-c017-4b8d-a7a6-d248e68472ca",
-					"type": "melee_weapon",
+					"id": "wEcgy3MZwY5vHZ2qn",
+					"sv": 1,
 					"damage": {
 						"type": "cr",
 						"st": "thr",
@@ -746,27 +912,26 @@
 					},
 					"usage": "Bite",
 					"reach": "C",
-					"parry": "No",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx"
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						}
 					],
 					"calc": {
 						"level": 14,
-						"parry": "No",
-						"block": "No",
 						"damage": "1d cr"
 					}
 				},
 				{
-					"id": "007669b8-cfb7-4346-a2c0-26ebec74973d",
-					"type": "melee_weapon",
+					"id": "wT4LkngAxLX1LiyZ6",
+					"sv": 1,
 					"damage": {
 						"type": "cr",
 						"st": "thr",
@@ -781,33 +946,41 @@
 						},
 						{
 							"type": "skill",
-							"name": "Boxing"
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Brawling"
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate"
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
 						}
 					],
 					"calc": {
 						"level": 14,
-						"parry": "11",
-						"damage": "1d cr"
+						"damage": "1d cr",
+						"parry": "11"
 					}
 				},
 				{
-					"id": "0f2fe911-a70a-41dc-8372-546036077de3",
-					"type": "melee_weapon",
+					"id": "w6QerHOlbkPgq6o7u",
+					"sv": 1,
 					"damage": {
 						"type": "cr",
 						"st": "thr"
 					},
 					"usage": "Kick",
 					"reach": "C,1",
-					"parry": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -815,22 +988,30 @@
 						},
 						{
 							"type": "skill",
-							"name": "Brawling",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
 							"modifier": -2
 						},
 						{
 							"type": "skill",
-							"name": "Kicking"
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Karate",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
 							"modifier": -2
 						}
 					],
 					"calc": {
 						"level": 12,
-						"parry": "No",
 						"damage": "1d+1 cr"
 					}
 				}
@@ -840,20 +1021,17 @@
 			}
 		},
 		{
-			"id": "03aaae1c-8b21-4e92-bd60-257a3017e450",
-			"type": "trait_container",
-			"open": true,
+			"id": "T1eL98u70awxUyy6x",
+			"name": "Pequenino",
 			"children": [
 				{
-					"id": "cfb32e34-fa40-4927-a08c-683265c4d6a7",
-					"type": "trait",
+					"id": "t3LOajuD27-DLLalg",
 					"name": "Silence",
 					"reference": "B85",
 					"tags": [
 						"Exotic",
 						"Physical"
 					],
-					"levels": 1,
 					"points_per_level": 5,
 					"features": [
 						{
@@ -874,13 +1052,14 @@
 						}
 					],
 					"can_level": true,
+					"levels": 1,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 1
 					}
 				},
 				{
-					"id": "37db3546-9640-4ebb-99c4-445b39b78050",
-					"type": "trait",
+					"id": "tUb0tKd6Ag1omAi9T",
 					"name": "Decreased Strength",
 					"reference": "B14",
 					"tags": [
@@ -888,7 +1067,6 @@
 						"Disadvantage",
 						"Physical"
 					],
-					"levels": 1,
 					"points_per_level": -10,
 					"features": [
 						{
@@ -899,13 +1077,14 @@
 						}
 					],
 					"can_level": true,
+					"levels": 1,
 					"calc": {
-						"points": -10
+						"points": -10,
+						"current_level": 1
 					}
 				},
 				{
-					"id": "bc896100-9d03-410d-a8a0-52966b7c47f6",
-					"type": "trait",
+					"id": "tqDZyaFoTEpMaVlPA",
 					"name": "Increased Dexterity",
 					"reference": "B15",
 					"tags": [
@@ -915,14 +1094,12 @@
 					],
 					"modifiers": [
 						{
-							"id": "26b39aca-fc45-404a-9dbd-be0e55323b67",
-							"type": "modifier",
+							"id": "mt9PYQFQfgnoN6CSD",
 							"name": "No Fine Manipulators",
-							"cost": -40,
+							"cost_adj": "-40%",
 							"disabled": true
 						}
 					],
-					"levels": 1,
 					"points_per_level": 20,
 					"features": [
 						{
@@ -933,19 +1110,19 @@
 						}
 					],
 					"can_level": true,
+					"levels": 1,
 					"calc": {
-						"points": 20
+						"points": 20,
+						"current_level": 1
 					}
 				},
 				{
-					"id": "4887c630-80b1-4f15-9cf0-7c075f9a3cc7",
-					"type": "trait",
+					"id": "tXKwwPmNT0XnB-afm",
 					"name": "Talent (Halfling Ranged Weapon)",
 					"reference": "BS184",
 					"tags": [
 						"Physical"
 					],
-					"levels": 1,
 					"points_per_level": 5,
 					"features": [
 						{
@@ -989,13 +1166,14 @@
 						}
 					],
 					"can_level": true,
+					"levels": 1,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 1
 					}
 				},
 				{
-					"id": "11fa7202-dfae-4471-b175-11e12e71d873",
-					"type": "trait",
+					"id": "t19jWHteGOIHJQup4",
 					"name": "Code of Honor (Halfling)",
 					"reference": "BS185",
 					"tags": [
@@ -1007,16 +1185,14 @@
 					}
 				},
 				{
-					"id": "bf99f45d-b701-4eb7-bc2b-f75c00ce7136",
-					"type": "trait",
+					"id": "tNZm_vEJvNOeBwImI",
 					"name": "Size Modifier -1",
 					"calc": {
 						"points": 0
 					}
 				},
 				{
-					"id": "9c84dc6d-a98b-4d9c-881f-547788a4d870",
-					"type": "trait",
+					"id": "tsKPD2TWG3ofV-HJp",
 					"name": "Chummy",
 					"reference": "B126",
 					"tags": [
@@ -1041,35 +1217,31 @@
 					}
 				},
 				{
-					"id": "4d51940b-a8cb-4848-a364-ae8eb4d0fd4d",
-					"type": "trait",
+					"id": "t0WzbRryB2AmtZh4u",
 					"name": "Gluttony",
 					"reference": "B137",
-					"notes": "Make a self-control roll when presented with a tempting morsel or good wine that, for some reason, you should resist. If you fail, you partake – regardless of the consequences.",
+					"local_notes": "Make a self-control roll when presented with a tempting morsel or good wine that, for some reason, you should resist. If you fail, you partake – regardless of the consequences.",
 					"tags": [
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -5,
 					"cr": 12,
+					"base_points": -5,
 					"calc": {
 						"points": -5
 					}
 				}
 			],
-			"name": "Pequenino",
 			"calc": {
 				"points": 5
 			}
 		},
 		{
-			"id": "38a5836a-2b8f-46de-a16f-f70970de7034",
-			"type": "trait_container",
-			"open": true,
+			"id": "TFzdWQiPpFOp6vCDC",
+			"name": "Half undead",
 			"children": [
 				{
-					"id": "308a5bd0-3eec-44ed-b467-8e163e0f4e52",
-					"type": "trait",
+					"id": "tGIX2SOt2AHZlki_n",
 					"name": "Decreased Intelligence",
 					"reference": "B15",
 					"tags": [
@@ -1077,7 +1249,6 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"levels": 1,
 					"features": [
 						{
 							"type": "attribute_bonus",
@@ -1087,13 +1258,14 @@
 						}
 					],
 					"can_level": true,
+					"levels": 1,
 					"calc": {
-						"points": 0
+						"points": 0,
+						"current_level": 1
 					}
 				},
 				{
-					"id": "7da071c3-9598-4d8b-8145-4805aa9416cd",
-					"type": "trait",
+					"id": "tJYdCw27rvwfYWlmm",
 					"name": "Bad Smell",
 					"reference": "B124",
 					"tags": [
@@ -1113,8 +1285,7 @@
 					}
 				},
 				{
-					"id": "3fc7ca45-7124-46a3-ab93-a9316cca55e0",
-					"type": "trait",
+					"id": "tnriEfbK0nj1TrGOv",
 					"name": "Appearance",
 					"reference": "B21",
 					"tags": [
@@ -1123,245 +1294,212 @@
 					],
 					"modifiers": [
 						{
-							"id": "db88e777-c246-49aa-87cc-8c1dbfef8cd0",
-							"type": "modifier",
+							"id": "mShhxwujeY4RcGYW4",
 							"name": "Attractive",
 							"reference": "B21",
-							"cost": 4,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "4",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 1
 								}
-							]
-						},
-						{
-							"id": "2fda71e1-13b5-4bed-8188-83946dbbb13b",
-							"type": "modifier",
-							"name": "Average",
-							"reference": "B21",
-							"cost_type": "points",
+							],
 							"disabled": true
 						},
 						{
-							"id": "59011a6b-7cd8-4a59-8a7b-af75aa057843",
-							"type": "modifier",
+							"id": "mifywOfiP_ZskCCaT",
+							"name": "Average",
+							"reference": "B21",
+							"disabled": true
+						},
+						{
+							"id": "mjftgTwUIVGStpJP6",
 							"name": "Beautiful",
 							"reference": "B21",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from those attracted to members of your sex, +2 from everyone else",
 									"amount": 4
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "f2ef3d46-2535-466f-b85d-82d3a9a59937",
-							"type": "modifier",
+							"id": "mMLhVLWybxrudF_EO",
 							"name": "Beautiful (Androgynous)",
 							"reference": "B21",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 3
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "260c9611-0aad-407d-a8f2-cdeab7f8e022",
-							"type": "modifier",
+							"id": "mYvuWtMFRSIemjgyP",
 							"name": "Beautiful (Impressive)",
 							"reference": "B21",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 3
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "1d6d3fc1-a874-42ee-a40a-ab72d7d653ff",
-							"type": "modifier",
+							"id": "mFMe0FU0yCoMpAfPi",
 							"name": "Handsome",
 							"reference": "B21",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from those attracted to members of your sex, +2 from everyone else",
 									"amount": 4
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "66b67232-40a9-49ce-a30c-a41aa79a86e8",
-							"type": "modifier",
+							"id": "mxYq_C9vV4BQ2xzxV",
 							"name": "Handsome (Androgynous)",
 							"reference": "B21",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 3
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "5c3f10f5-fb42-44a7-9953-ce727ebc4c89",
-							"type": "modifier",
+							"id": "mV2ZbRhgZyJzcmy0a",
 							"name": "Handsome (Impressive)",
 							"reference": "B21",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 3
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "cfef51b4-8526-47be-bb28-49c4e7db46b5",
-							"type": "modifier",
+							"id": "mnESmLTIbEcql6V4W",
 							"name": "Hideous",
 							"reference": "B21",
-							"cost": -16,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "-16",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": -4
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "67eda3d3-3b02-4324-b86a-cad4432e2092",
-							"type": "modifier",
+							"id": "mpmN57Yp9pSpSprQN",
 							"name": "Horrific",
 							"reference": "B21",
-							"cost": -24,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "-24",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": -6
 								}
-							]
-						},
-						{
-							"id": "1d0d263d-39e6-4b05-96c9-bcab7c73917a",
-							"type": "modifier",
-							"name": "Impressive",
-							"reference": "B21",
-							"cost_type": "points",
+							],
 							"disabled": true
 						},
 						{
-							"id": "ea5ee8d3-92de-44f7-b869-97bbcb0a0446",
-							"type": "modifier",
+							"id": "mpWv3uTC_P1xBwc_X",
+							"name": "Impressive",
+							"reference": "B21",
+							"disabled": true
+						},
+						{
+							"id": "m_y-OHfnm9L-LKSk2",
 							"name": "Monstrous",
 							"reference": "B21",
-							"cost": -20,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "-20",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": -5
 								}
-							]
-						},
-						{
-							"id": "bcec029e-a194-48dd-a4f3-d79852417ff1",
-							"type": "modifier",
-							"name": "Off-the-Shelf Looks",
-							"reference": "B21",
-							"notes": "Halves the usual reaction bonus - adjust manually",
-							"cost": -50,
+							],
 							"disabled": true
 						},
 						{
-							"id": "4e3e372b-d8bb-41c3-a675-1c37f39c0a06",
-							"type": "modifier",
+							"id": "m-IfD3VXPiJylILYr",
+							"name": "Off-the-Shelf Looks",
+							"reference": "B21",
+							"local_notes": "Halves the usual reaction bonus - adjust manually",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mCqZxwoXjT1bkz1sq",
 							"name": "Transcendent",
 							"reference": "B21",
-							"cost": 20,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
 									"amount": 8
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "2bb71c80-552e-499d-a4e6-e57f26881a8c",
-							"type": "modifier",
+							"id": "mNON1Tamjil9fYZDd",
 							"name": "Transcendent (Androgynous)",
 							"reference": "B21",
-							"cost": 20,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 5
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "ddf25679-e521-4ac2-b914-5b31d097cc09",
-							"type": "modifier",
+							"id": "mTOvRgw2kFk-RhaEu",
 							"name": "Transcendent (Impressive)",
 							"reference": "B21",
-							"cost": 20,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 5
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "52c66ff0-cb7b-4bd8-8d77-4e6f78fa6ce4",
-							"type": "modifier",
+							"id": "mUVUolVc44eC0s52X",
 							"name": "Ugly",
 							"reference": "B21",
-							"cost": -8,
-							"cost_type": "points",
+							"cost_adj": "-8",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1371,124 +1509,109 @@
 							]
 						},
 						{
-							"id": "f2ade180-af68-4cdb-91c2-2b6062b625b5",
-							"type": "modifier",
+							"id": "mYOMk58ZQrxSXeXaB",
 							"name": "Unattractive",
 							"reference": "B21",
-							"cost": -4,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "-4",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": -1
 								}
-							]
-						},
-						{
-							"id": "585340a8-301a-451e-918c-89fac91595d4",
-							"type": "modifier",
-							"name": "Universal",
-							"reference": "B21",
-							"cost": 25,
+							],
 							"disabled": true
 						},
 						{
-							"id": "e1bcea51-b24b-4e72-a625-be62b9161aaf",
-							"type": "modifier",
+							"id": "msZisJvZUtDUAhSDU",
+							"name": "Universal",
+							"reference": "B21",
+							"cost_adj": "25%",
+							"disabled": true
+						},
+						{
+							"id": "mVljKrYz9VBq42rik",
 							"name": "Very Beautiful",
 							"reference": "B21",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
 									"amount": 6
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "45fe1d7c-54ed-4171-ac37-0c14d3825e89",
-							"type": "modifier",
+							"id": "mmQo5cglFd7I7331V",
 							"name": "Very Beautiful (Androgynous)",
 							"reference": "B21",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 4
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "211f4936-94c1-4043-862b-d73a066832ac",
-							"type": "modifier",
+							"id": "miGuenkeCDhm48uTL",
 							"name": "Very Beautiful (Impressive)",
 							"reference": "B21",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 4
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "8c0bc9b1-f818-427e-838e-9cb3f1125587",
-							"type": "modifier",
+							"id": "m3BfxdnUqFHcGAX7P",
 							"name": "Very Handsome",
 							"reference": "B21",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
 									"amount": 6
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "1cf4494d-453a-403d-890b-7233286080e7",
-							"type": "modifier",
+							"id": "mfXPO639XkoiePPcB",
 							"name": "Very Handsome (Androgynous)",
 							"reference": "B21",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 4
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "19314e0f-05c4-4488-adf0-ba1785d46b23",
-							"type": "modifier",
+							"id": "mHEIRwAplavgHVF9d",
 							"name": "Very Handsome (Impressive)",
 							"reference": "B21",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true,
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others",
 									"amount": 4
 								}
-							]
+							],
+							"disabled": true
 						}
 					],
 					"calc": {
@@ -1496,8 +1619,7 @@
 					}
 				},
 				{
-					"id": "fbf935f9-f2d6-48fe-965b-bfcda4e900f9",
-					"type": "trait",
+					"id": "tQf9rqLq9CMgGZGGy",
 					"name": "Olhos amarelados",
 					"base_points": -1,
 					"calc": {
@@ -1505,8 +1627,7 @@
 					}
 				},
 				{
-					"id": "f80ea6fa-05a2-4035-a4d8-74e1ef71b73e",
-					"type": "trait",
+					"id": "tQnVUU-8cs_WBHgJZ",
 					"name": "Meio morto-vivo",
 					"base_points": -1,
 					"calc": {
@@ -1514,8 +1635,7 @@
 					}
 				},
 				{
-					"id": "03bae477-c974-49f6-9170-0ad1c14c85d3",
-					"type": "trait",
+					"id": "tff4Zrf8MSDQzxNgy",
 					"name": "Talent (Undead)",
 					"reference": "B89",
 					"tags": [
@@ -1525,22 +1645,18 @@
 					],
 					"modifiers": [
 						{
-							"id": "190a8e07-518d-4571-bce8-707bdee6e956",
-							"type": "modifier",
+							"id": "mB5NLiHvaJzx3xZg5",
 							"name": "Alternate Benefit",
-							"notes": "@Alternate Benefit@",
+							"local_notes": "@Alternate Benefit@",
 							"disabled": true
 						},
 						{
-							"id": "45a9ce16-d103-41ce-8291-40ac1b0ac334",
-							"type": "modifier",
+							"id": "mXTM184E-IoJqtN_k",
 							"name": "Alternative Cost",
 							"affects": "levels_only",
-							"cost_type": "points",
 							"disabled": true
 						}
 					],
-					"levels": 1,
 					"points_per_level": 10,
 					"features": [
 						{
@@ -1660,23 +1776,23 @@
 						}
 					],
 					"can_level": true,
+					"levels": 1,
 					"calc": {
-						"points": 10
+						"points": 10,
+						"current_level": 1
 					}
 				},
 				{
-					"id": "6fb0cb8b-e0cb-4fb2-b679-435a6b1de03a",
-					"type": "trait",
+					"id": "tR-iNm-DGPxb9sbB7",
 					"name": "Tem certeza de que está cozido? (Cura)",
-					"notes": "Consumir carne fresca cura 1D. Leva 4 segundos. Requer teste de HT. Cada uso subsequente no mesmo dia tem uma dificuldade de -3 em HT.",
+					"local_notes": "Consumir carne fresca cura 1D. Leva 4 segundos. Requer teste de HT. Cada uso subsequente no mesmo dia tem uma dificuldade de -3 em HT.",
 					"base_points": 15,
 					"calc": {
 						"points": 15
 					}
 				},
 				{
-					"id": "615c85f7-d824-4032-8d57-34535a937bd5",
-					"type": "trait",
+					"id": "tmK0e8XW0bCfxQn88",
 					"name": "Extra Hit Points",
 					"reference": "B16",
 					"tags": [
@@ -1686,22 +1802,19 @@
 					],
 					"modifiers": [
 						{
-							"id": "910bfd80-869d-46d8-aa30-5c7c5bae59a4",
-							"type": "modifier",
+							"id": "m4CXrBDoE4kITvyyq",
 							"name": "Size",
-							"cost": -10,
+							"cost_adj": "-10%",
 							"levels": 1,
 							"disabled": true
 						},
 						{
-							"id": "c8507381-4dc6-4aa2-9f6c-f6298e772f03",
-							"type": "modifier",
+							"id": "mjZlGfNpUifSk-of5",
 							"name": "No Fine Manipulators",
-							"cost": -40,
+							"cost_adj": "-40%",
 							"disabled": true
 						}
 					],
-					"levels": 4,
 					"points_per_level": 2,
 					"features": [
 						{
@@ -1712,45 +1825,42 @@
 						}
 					],
 					"can_level": true,
+					"levels": 4,
 					"calc": {
-						"points": 8
+						"points": 8,
+						"current_level": 4
 					}
 				},
 				{
-					"id": "5aee7be3-d33c-46b6-9454-c668f4509215",
-					"type": "trait",
+					"id": "tBsJ8QBaKtV3RSvYo",
 					"name": "Partes Úteis",
-					"notes": "Pode usar uma parte do corpo como ferramenta. Custa 1HP por uso.",
+					"local_notes": "Pode usar uma parte do corpo como ferramenta. Custa 1HP por uso.",
 					"base_points": 8,
 					"calc": {
 						"points": 8
 					}
 				},
 				{
-					"id": "6b19d09c-4bc6-41bc-abc1-5142a01c8bff",
-					"type": "trait",
+					"id": "tZ2VeurFof_-Bf7XL",
 					"name": "Dedos Ejetáveis",
-					"notes": "2d pi, alcance 10, 1/2D, 100, acc 3, RoF 1,exceto dedão. Custa 2 hp.",
+					"local_notes": "2d pi, alcance 10, 1/2D, 100, acc 3, RoF 1,exceto dedão. Custa 2 hp.",
 					"base_points": 9,
 					"calc": {
 						"points": 9
 					}
 				},
 				{
-					"id": "f2c349a4-c492-4ae3-af2b-5a402f2feb18",
-					"type": "trait",
+					"id": "tEEnruFShEGXs9_GI",
 					"name": "Caixa toráxica",
-					"notes": "Carrega até 24lb dentro do corpo e mantém conservado/fresco por até 1 semana. Custa 2hp para usar (abrir o corpo).",
+					"local_notes": "Carrega até 24lb dentro do corpo e mantém conservado/fresco por até 1 semana. Custa 2hp para usar (abrir o corpo).",
 					"base_points": 18,
 					"calc": {
 						"points": 18
 					}
 				},
 				{
-					"id": "931e1b41-2773-440e-8bd1-ec37dd5501cc",
-					"type": "trait",
+					"id": "tcxNVBFyUJBVN6Qxg",
 					"name": "Atrofia Cerebral",
-					"levels": 2,
 					"points_per_level": -20,
 					"features": [
 						{
@@ -1761,22 +1871,234 @@
 						}
 					],
 					"can_level": true,
+					"levels": 3,
 					"calc": {
-						"points": -40
+						"points": -60,
+						"current_level": 3
 					}
 				},
 				{
-					"id": "03e3ddbd-1475-422d-b34a-1955f8f10366",
-					"type": "trait",
+					"id": "tG5Rt5THSz-F5X57B",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tJTfFdHM7YI5IZR7I"
+					},
+					"name": "Resistant",
+					"reference": "B81,P71,MA47",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"replacements": {
+						"Occasional: Disease, Ingested Poison, etc.": "Disease"
+					},
+					"modifiers": [
+						{
+							"id": "mbgaKHC2nQtH3F4AA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "miasoV5-gol3CAou-"
+							},
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost_adj": "30",
+							"disabled": true
+						},
+						{
+							"id": "mFB0vdypnRPGuf3dJ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m3m13i8k5rmxUHN5m"
+							},
+							"name": "@Common: Poison, Sickness, etc.@",
+							"reference": "B81",
+							"cost_adj": "15",
+							"disabled": true
+						},
+						{
+							"id": "m_hyoyeXfVsgRDUkN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mfbcooS3fbRASV2Gt"
+							},
+							"name": "@Occasional: Disease, Ingested Poison, etc.@",
+							"reference": "B81",
+							"cost_adj": "10"
+						},
+						{
+							"id": "mfB6PV8odLy5lzccV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mwrT9N1v1hBCk-C4B"
+							},
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost_adj": "5",
+							"disabled": true
+						},
+						{
+							"id": "mQosZ0pZgGf74gaWW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mZzoDVp-MnRjRY1o4"
+							},
+							"name": "Immunity",
+							"reference": "B81",
+							"cost_adj": "x1",
+							"disabled": true
+						},
+						{
+							"id": "mV7Vh_9Ql2Xau5ppP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mrAskBA4fL3noeEyO"
+							},
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mE0PxC_c8Vr1kYYLL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mM9ODq9EsPHF6Xd-3"
+							},
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x1/3",
+							"disabled": true
+						}
+					],
+					"round_down": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tgYC15zpjYC4yCZnw",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tJTfFdHM7YI5IZR7I"
+					},
+					"name": "Resistant",
+					"reference": "B81,P71,MA47",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"replacements": {
+						"Occasional: Disease, Ingested Poison, etc.": "Ingested Poison"
+					},
+					"modifiers": [
+						{
+							"id": "mC-2FxLDq3xymIg6j",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "miasoV5-gol3CAou-"
+							},
+							"name": "@Very Common: Metabolic Hazards, etc.@",
+							"reference": "B80",
+							"cost_adj": "30",
+							"disabled": true
+						},
+						{
+							"id": "mBTJQFwvJH6APyxKn",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m3m13i8k5rmxUHN5m"
+							},
+							"name": "@Common: Poison, Sickness, etc.@",
+							"reference": "B81",
+							"cost_adj": "15",
+							"disabled": true
+						},
+						{
+							"id": "mYA-c8unE_wUJ55eR",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mfbcooS3fbRASV2Gt"
+							},
+							"name": "@Occasional: Disease, Ingested Poison, etc.@",
+							"reference": "B81",
+							"cost_adj": "10"
+						},
+						{
+							"id": "miU6cmmYrc51wgL8s",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mwrT9N1v1hBCk-C4B"
+							},
+							"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+							"reference": "B81",
+							"cost_adj": "5",
+							"disabled": true
+						},
+						{
+							"id": "m6Xt6bG81h1SWvrQY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mZzoDVp-MnRjRY1o4"
+							},
+							"name": "Immunity",
+							"reference": "B81",
+							"cost_adj": "x1",
+							"disabled": true
+						},
+						{
+							"id": "mGiLLnMBt0RbxaAse",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mrAskBA4fL3noeEyO"
+							},
+							"name": "+8 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x0.5",
+							"disabled": true
+						},
+						{
+							"id": "mMIwGdJSjpIN3Jefx",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mM9ODq9EsPHF6Xd-3"
+							},
+							"name": "+3 to all HT rolls to resist",
+							"reference": "B81",
+							"cost_adj": "x1/3",
+							"disabled": true
+						}
+					],
+					"round_down": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tVwSuOEbSBY0ypFz-",
 					"name": "Peitoral de Goblin",
-					"notes": "Tom mais esverdeado",
+					"local_notes": "Tom mais esverdeado",
 					"calc": {
 						"points": 0
 					}
 				},
 				{
-					"id": "ec14190d-ed72-4881-b4df-b8e4ae0eb05b",
-					"type": "trait",
+					"id": "tiMtUG9J2PZSru3fn",
 					"name": "Damage Resistance",
 					"reference": "B47,P45,MA43,PSI14",
 					"tags": [
@@ -1786,314 +2108,319 @@
 					],
 					"modifiers": [
 						{
-							"id": "71e0ea7a-bb0e-409d-b01d-aa247b4e66f6",
-							"type": "modifier",
+							"id": "m_pPihgp901-3Wv83",
 							"name": "Force Field",
 							"reference": "B47",
-							"cost": 20,
+							"cost_adj": "20%",
 							"disabled": true
 						},
 						{
-							"id": "a5e89aca-0b61-483e-8ae3-d6086856cf9a",
-							"type": "modifier",
+							"id": "mEK4EFgbeqVfCkmnR",
 							"name": "Hardened",
 							"reference": "B47",
-							"cost": 20,
+							"cost_adj": "20%",
 							"levels": 1,
 							"disabled": true
 						},
 						{
-							"id": "0377b71f-5bfe-44a7-b1a0-db38c7952845",
-							"type": "modifier",
+							"id": "muInQ-plSYMFMW2_Q",
 							"name": "Absorption",
 							"reference": "B46",
-							"notes": "Enhances @Trait@",
-							"cost": 80,
+							"local_notes": "Enhances @Trait@",
+							"cost_adj": "80%",
 							"disabled": true
 						},
 						{
-							"id": "db27da09-5815-4776-9af9-6d9741d8e52a",
-							"type": "modifier",
+							"id": "muGm6_b6AL9mbceCv",
 							"name": "Absorption",
 							"reference": "B46",
-							"notes": "Healing only",
-							"cost": 80,
+							"local_notes": "Healing only",
+							"cost_adj": "80%",
 							"disabled": true
 						},
 						{
-							"id": "0e4c391b-1076-40f2-92b6-c5d3c60b78fd",
-							"type": "modifier",
+							"id": "mHUrlvvhLusJR8H1S",
 							"name": "Absorption",
 							"reference": "B46",
-							"notes": "Enhances any trait",
-							"cost": 100,
+							"local_notes": "Enhances any trait",
+							"cost_adj": "100%",
 							"disabled": true
 						},
 						{
-							"id": "8b422514-296a-4b7c-b350-6b7e7d2be0e9",
-							"type": "modifier",
+							"id": "m6WPAbCqMBE5Ds47T",
 							"name": "Reflection",
 							"reference": "B47",
-							"cost": 100,
+							"cost_adj": "100%",
 							"disabled": true
 						},
 						{
-							"id": "419ab96d-ea87-4894-b6d8-a6ee32a5d416",
-							"type": "modifier",
+							"id": "mxHbcmRydgv3Jj0yU",
 							"name": "Bane",
 							"reference": "H14",
-							"notes": "@Rare@",
-							"cost": -1,
-							"cost_type": "points",
+							"local_notes": "@Rare@",
+							"cost_adj": "-1",
 							"disabled": true
 						},
 						{
-							"id": "a8c6d43d-430e-4773-a64c-200f75009e65",
-							"type": "modifier",
+							"id": "mXX6KeMdgHDWZRMrb",
 							"name": "Bane",
 							"reference": "H14",
-							"notes": "@Occasional@",
-							"cost": -5,
+							"local_notes": "@Occasional@",
+							"cost_adj": "-5%",
 							"disabled": true
 						},
 						{
-							"id": "e9503abd-7621-42c4-8ced-3981ec7c6d9a",
-							"type": "modifier",
+							"id": "m1dnH7ebfxLm495Sz",
 							"name": "Bane",
 							"reference": "H14",
-							"notes": "@Common@",
-							"cost": -10,
+							"local_notes": "@Common@",
+							"cost_adj": "-10%",
 							"disabled": true
 						},
 						{
-							"id": "1585a884-94e2-4152-b7b7-d3b6cc253c58",
-							"type": "modifier",
+							"id": "mPvRQawYg3HmwHpQP",
 							"name": "Bane",
 							"reference": "H14",
-							"notes": "@Very Common@",
-							"cost": -15,
+							"local_notes": "@Very Common@",
+							"cost_adj": "-15%",
 							"disabled": true
 						},
 						{
-							"id": "131c5627-2f5a-4f3f-8a52-08417003bc95",
-							"type": "modifier",
+							"id": "mDjxi09zvSrbU0D2e",
 							"name": "Directional",
 							"reference": "B47",
-							"notes": "Front",
-							"cost": -20,
+							"local_notes": "Front",
+							"cost_adj": "-20%",
 							"disabled": true
 						},
 						{
-							"id": "132e7d43-7920-45f5-bcde-036029aa49f2",
-							"type": "modifier",
+							"id": "mRODMotE-KULaTgNQ",
 							"name": "Flexible",
 							"reference": "B47",
-							"cost": -20,
+							"cost_adj": "-20%",
 							"disabled": true
 						},
 						{
-							"id": "d9e01c00-3ac2-4f4d-ae5f-45b34441df13",
-							"type": "modifier",
+							"id": "msZDpgnV-RccUZUYR",
 							"name": "Limited",
 							"reference": "B46",
-							"notes": "@Very Common Attack Form@",
-							"cost": -20,
+							"local_notes": "@Very Common Attack Form@",
+							"cost_adj": "-20%",
 							"disabled": true
 						},
 						{
-							"id": "72f08aac-bc4a-43fe-875b-8747b7397bec",
-							"type": "modifier",
+							"id": "mfeSQsq_R9D8_AURU",
 							"name": "Semi-Ablative",
 							"reference": "B47",
-							"cost": -20,
+							"cost_adj": "-20%",
 							"disabled": true
 						},
 						{
-							"id": "13410164-cee1-4956-832c-47bcf41fdab8",
-							"type": "modifier",
+							"id": "m9RbnlbNWQ4Gum2Md",
 							"name": "Can't wear armor",
 							"reference": "B47",
-							"cost": -40,
+							"cost_adj": "-40%",
 							"disabled": true
 						},
 						{
-							"id": "9ad2a005-947f-4ef9-ba99-ed88a4adaa49",
-							"type": "modifier",
+							"id": "mESINm8wWllDQOT_0",
 							"name": "Directional",
 							"reference": "B47",
-							"notes": "@Direction: Back, Right, Left, Top or Underside@",
-							"cost": -40,
-							"disabled": true
+							"local_notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost_adj": "-40%",
+							"disabled": true,
+							"calc": {
+								"resolved_notes": "@Direction@"
+							}
 						},
 						{
-							"id": "34ffce90-cba0-4d1a-a8ce-b3e6b12a51e3",
-							"type": "modifier",
+							"id": "mJqLGSu0abLQQjhvW",
 							"name": "Limited",
 							"reference": "B46",
-							"notes": "@Common Attack Form@",
-							"cost": -40,
+							"local_notes": "@Common Attack Form@",
+							"cost_adj": "-40%",
 							"disabled": true
 						},
 						{
-							"id": "10940926-bf24-4984-a984-d974384f0874",
-							"type": "modifier",
+							"id": "m4Dmgg5o573EQAnm4",
 							"name": "Tough Skin",
-							"notes": "Effects that just require skin contact or a scratch ignore this DR",
-							"cost": -40
+							"local_notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost_adj": "-40%"
 						},
 						{
-							"id": "db046fce-bac2-4fae-98d4-ee66925c0e9e",
-							"type": "modifier",
+							"id": "mWYtlfztLedBYWhFu",
 							"name": "Limited",
 							"reference": "B46",
-							"notes": "@Occasional Attack Form@",
-							"cost": -60,
+							"local_notes": "@Occasional Attack Form@",
+							"cost_adj": "-60%",
 							"disabled": true
 						},
 						{
-							"id": "b112e7ab-adac-40ef-a544-598ae0f7436f",
-							"type": "modifier",
+							"id": "mQnCQATu8caXDlJQt",
 							"name": "Ablative",
 							"reference": "B47",
-							"cost": -80,
+							"cost_adj": "-80%",
 							"disabled": true
 						},
 						{
-							"id": "3b761122-5da1-46dd-992c-2f9df40890cb",
-							"type": "modifier",
+							"id": "moLTyLQKNHrv98fUl",
 							"name": "Limited",
 							"reference": "B46",
-							"notes": "@Rare Attack Form@",
-							"cost": -80,
+							"local_notes": "@Rare Attack Form@",
+							"cost_adj": "-80%",
 							"disabled": true
 						},
 						{
-							"id": "0ed89045-94df-4ab0-ac26-53103a2ad43f",
-							"type": "modifier",
+							"id": "m5n8xyJBRl95KuxAc",
 							"name": "Laminate",
 							"reference": "RSWL18",
-							"cost": 10,
+							"cost_adj": "10%",
 							"disabled": true
 						},
 						{
-							"id": "a1baddab-14e3-402e-a209-1eee48ba98ec",
-							"type": "modifier",
+							"id": "mXYIDHH_xSATetIeK",
 							"name": "Malediction-Proof",
 							"reference": "PSI14",
-							"cost": 50,
+							"cost_adj": "50%",
 							"disabled": true
 						},
 						{
-							"id": "b1b407f3-24ca-4beb-8f3a-d362891e5af9",
-							"type": "modifier",
+							"id": "mQDAqhsb2Wsv6u5HQ",
 							"name": "Maledictions Only",
 							"reference": "PSI14",
 							"disabled": true
 						},
 						{
-							"id": "a48b115e-bf63-41f8-84cd-3b6d1e41653e",
-							"type": "modifier",
+							"id": "mUBvigc8ojkzcx1Ey",
 							"name": "Partial (Torso)",
 							"reference": "B47",
-							"cost": -10
+							"cost_adj": "-10%"
 						}
 					],
-					"levels": 2,
 					"points_per_level": 5,
 					"features": [
 						{
 							"type": "dr_bonus",
-							"location": "skull",
+							"locations": [
+								"skull"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "face",
+							"locations": [
+								"face"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "neck",
+							"locations": [
+								"neck"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "torso",
+							"locations": [
+								"torso"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "vitals",
+							"locations": [
+								"vitals"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "groin",
+							"locations": [
+								"groin"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "arm",
+							"locations": [
+								"arm"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "hand",
+							"locations": [
+								"hand"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "leg",
+							"locations": [
+								"leg"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "foot",
+							"locations": [
+								"foot"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "tail",
+							"locations": [
+								"tail"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "wing",
+							"locations": [
+								"wing"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "fin",
+							"locations": [
+								"fin"
+							],
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "dr_bonus",
-							"location": "brain",
+							"locations": [
+								"brain"
+							],
 							"amount": 1,
 							"per_level": true
 						}
 					],
 					"can_level": true,
+					"levels": 2,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 2
 					}
 				},
 				{
-					"id": "c6939ecd-493e-48a6-9fc2-4f5f27e0101b",
-					"type": "trait",
+					"id": "tLFDXrDGGylHQD_fu",
 					"name": "Restricted Diet (Fresh meat)",
 					"reference": "B151",
 					"tags": [
@@ -2102,46 +2429,37 @@
 					],
 					"modifiers": [
 						{
-							"id": "0dae0fad-abcc-4e90-a149-326bea6573a8",
-							"type": "modifier",
+							"id": "mVU0uNuj8mqAfeHkt",
 							"name": "Substitution",
 							"reference": "B151",
-							"cost": -50,
+							"cost_adj": "-50%",
 							"disabled": true
 						},
 						{
-							"id": "1cc9a927-6c9b-402c-bd43-9fe3454103aa",
-							"type": "modifier",
+							"id": "m2OXQIy_XAUqFpOiV",
 							"name": "Very Common",
 							"reference": "B151",
-							"cost": -10,
-							"cost_type": "points"
+							"cost_adj": "-10"
 						},
 						{
-							"id": "7ee9ad59-a4f4-4310-ad24-cbd4d90047c7",
-							"type": "modifier",
+							"id": "mT3zV10OZch7scvHn",
 							"name": "Common",
 							"reference": "B151",
-							"cost": -20,
-							"cost_type": "points",
+							"cost_adj": "-20",
 							"disabled": true
 						},
 						{
-							"id": "0d16b1d2-ff4b-40d7-a015-5b3a71fbbd1a",
-							"type": "modifier",
+							"id": "mLIxdSP5jgXC9Q1cv",
 							"name": "Occasional",
 							"reference": "B151",
-							"cost": -30,
-							"cost_type": "points",
+							"cost_adj": "-30",
 							"disabled": true
 						},
 						{
-							"id": "2b764a44-21bf-4285-83d6-a2443b93fe36",
-							"type": "modifier",
+							"id": "mWZfL2-XU7sqD-Zgs",
 							"name": "Rare",
 							"reference": "B151",
-							"cost": -40,
-							"cost_type": "points",
+							"cost_adj": "-40",
 							"disabled": true
 						}
 					],
@@ -2150,8 +2468,7 @@
 					}
 				},
 				{
-					"id": "539b938d-e373-4044-80bd-8f9772bc1eb8",
-					"type": "trait",
+					"id": "t-IsU3L6pC680DRt6",
 					"name": "Supernatural Features",
 					"reference": "B157",
 					"tags": [
@@ -2161,13 +2478,11 @@
 					],
 					"modifiers": [
 						{
-							"id": "f02a7bf6-5532-414d-9483-dc3b1cc67ae0",
-							"type": "modifier",
+							"id": "muf2Gu0w92LmOuept",
 							"name": "No Body Heat",
 							"reference": "B157",
-							"notes": "Gives +1 on all rolls to deduce your secret",
-							"cost": -5,
-							"cost_type": "points",
+							"local_notes": "Gives +1 on all rolls to deduce your secret",
+							"cost_adj": "-5",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -2177,89 +2492,79 @@
 							]
 						},
 						{
-							"id": "5caa6b40-89b4-41cb-8a62-3dac3f0205cd",
-							"type": "modifier",
+							"id": "mQK0YauNRFb2_-pj6",
 							"name": "No Body Heat",
 							"reference": "B157",
-							"notes": "Can gain warmth temporarily, such as after feeding for a vampire. Gives +1 on all rolls to deduce your secret",
-							"cost": -1,
-							"cost_type": "points",
-							"disabled": true,
+							"local_notes": "Can gain warmth temporarily, such as after feeding for a vampire. Gives +1 on all rolls to deduce your secret",
+							"cost_adj": "-1",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from those who touch you, shake your hand, kiss you, etc.",
 									"amount": -1
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "24945a3e-1474-4b0d-bf32-abce1fda0de7",
-							"type": "modifier",
+							"id": "m3WgURRpW0eykdVCO",
 							"name": "No Reflection",
 							"reference": "B157",
-							"notes": "Gives +2 on all rolls to deduce your secret",
-							"cost": -10,
-							"cost_type": "points",
-							"disabled": true,
+							"local_notes": "Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-10",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others who notice you have no reflection",
 									"amount": -2
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "b69dbe30-2cdc-43a5-8ca8-e132e1c2911c",
-							"type": "modifier",
+							"id": "m39WhqIP2hoJ7vJFT",
 							"name": "No Shadow",
 							"reference": "B157",
-							"notes": "Gives +2 on all rolls to deduce your secret",
-							"cost": -10,
-							"cost_type": "points",
-							"disabled": true,
+							"local_notes": "Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-10",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others that notice you have no shadow",
 									"amount": -2
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "d284e250-2492-436a-b84e-871830a229fe",
-							"type": "modifier",
+							"id": "mIvzs_enJXVKGiU4U",
 							"name": "Pallor",
 							"reference": "B157",
-							"notes": "Gives +2 on all rolls to deduce your secret",
-							"cost": -10,
-							"cost_type": "points",
-							"disabled": true,
+							"local_notes": "Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-10",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others who can see you without makeup in good light",
 									"amount": -2
 								}
-							]
+							],
+							"disabled": true
 						},
 						{
-							"id": "8b22e51f-c756-4499-b8aa-0ed15d437701",
-							"type": "modifier",
+							"id": "mxodqVbaWRKGuHFOU",
 							"name": "Pallor",
 							"reference": "B157",
-							"notes": "Can gain the flush of life temporarily, such as after feeding for a vampire. Gives +2 on all rolls to deduce your secret",
-							"cost": -5,
-							"cost_type": "points",
-							"disabled": true,
+							"local_notes": "Can gain the flush of life temporarily, such as after feeding for a vampire. Gives +2 on all rolls to deduce your secret",
+							"cost_adj": "-5",
 							"features": [
 								{
 									"type": "reaction_bonus",
 									"situation": "from others who can see you without makeup in good light",
 									"amount": -2
 								}
-							]
+							],
+							"disabled": true
 						}
 					],
 					"calc": {
@@ -2267,14 +2572,12 @@
 					}
 				}
 			],
-			"name": "Half undead",
 			"calc": {
 				"points": -2
 			}
 		},
 		{
-			"id": "1e8409b2-c805-4edc-9316-d7d2d1e05bf8",
-			"type": "trait",
+			"id": "tsAcIhkKSvlVlyTAa",
 			"name": "Bom",
 			"base_points": -10,
 			"calc": {
@@ -2282,8 +2585,7 @@
 			}
 		},
 		{
-			"id": "5dcc609b-481a-4a30-8a8d-b20346266ad2",
-			"type": "trait",
+			"id": "tP1Tnyyh0IXetjMZq",
 			"name": "Patron",
 			"reference": "B72,P65",
 			"tags": [
@@ -2292,199 +2594,163 @@
 			],
 			"modifiers": [
 				{
-					"id": "a99a5858-0f56-4ed0-a102-552eaa6e7222",
-					"type": "modifier",
+					"id": "m-fA8m7LUyiReuK2r",
 					"name": "@Who: Individual with 150% of PC's starting points@",
 					"reference": "B72",
-					"cost": 10,
-					"cost_type": "points",
+					"cost_adj": "10",
 					"disabled": true
 				},
 				{
-					"id": "3977cc18-2515-4793-b8ed-43a82995ad06",
-					"type": "modifier",
+					"id": "mCIOWf132r9Mitmvu",
 					"name": "@Who: Organization with assets of at least 1000 times starting wealth@",
 					"reference": "B72",
-					"cost": 10,
-					"cost_type": "points",
+					"cost_adj": "10",
 					"disabled": true
 				},
 				{
-					"id": "fa59fc21-5707-4d97-8097-03b209d46258",
-					"type": "modifier",
+					"id": "mDKj_Z52xaO9tHwaE",
 					"name": "@Who: Individual with twice the PC's starting points@",
 					"reference": "B72",
-					"cost": 15,
-					"cost_type": "points",
+					"cost_adj": "15",
 					"disabled": true
 				},
 				{
-					"id": "631b147d-c585-4679-a67b-dbe8a8838cbb",
-					"type": "modifier",
+					"id": "mVDdNIpHVqQ7kWlmV",
 					"name": "@Who: Organization with assets of at least 10000 times starting wealth@",
 					"reference": "B72",
-					"cost": 15,
-					"cost_type": "points",
+					"cost_adj": "15",
 					"disabled": true
 				},
 				{
-					"id": "75a7a34b-aed4-4108-aa6e-cf969a596f58",
-					"type": "modifier",
+					"id": "mMFnSdDOSyLJK0rCT",
 					"name": "Lorde Feyrith Valsatra",
 					"reference": "B72",
-					"cost": 20,
-					"cost_type": "points"
+					"cost_adj": "20"
 				},
 				{
-					"id": "4b13c656-a481-4cad-95ef-8c63c8865d50",
-					"type": "modifier",
+					"id": "mGNYHCYNMEZdBhu4E",
 					"name": "@Who: Organization with assets of at least 100000 times starting wealth@",
 					"reference": "B72",
-					"cost": 20,
-					"cost_type": "points",
+					"cost_adj": "20",
 					"disabled": true
 				},
 				{
-					"id": "2e82bc75-004f-411b-a855-b704cfb309a8",
-					"type": "modifier",
+					"id": "m7XuPXrExpW5Mu08q",
 					"name": "@Who: Organization with assets of at least 1000000 times starting wealth@",
 					"reference": "B72",
-					"cost": 25,
-					"cost_type": "points",
+					"cost_adj": "25",
 					"disabled": true
 				},
 				{
-					"id": "3c15a25d-0b50-410d-8705-11564f7a24aa",
-					"type": "modifier",
+					"id": "mr3vGqb4wQsJFBqDa",
 					"name": "@Who: A national government or giant multi-national organization@",
 					"reference": "B72",
-					"cost": 30,
-					"cost_type": "points",
+					"cost_adj": "30",
 					"disabled": true
 				},
 				{
-					"id": "10d9944d-56b8-46ea-8694-cbe04aa7dc0c",
-					"type": "modifier",
+					"id": "mAq2MMt7-vUnmW3im",
 					"name": "@Who: A diety@",
 					"reference": "B72",
-					"cost": 30,
-					"cost_type": "points",
+					"cost_adj": "30",
 					"disabled": true
 				},
 				{
-					"id": "30392472-005f-44e7-9c99-5a271fcb5c10",
-					"type": "modifier",
+					"id": "ml204q2pjXOtxsb92",
 					"name": "Appears almost all the time",
 					"reference": "B36",
-					"notes": "15-",
-					"cost": 3,
-					"cost_type": "multiplier",
+					"local_notes": "15-",
+					"cost_adj": "x3",
 					"disabled": true
 				},
 				{
-					"id": "814513c5-05a2-4d17-9ad3-5a12b3c4bdbf",
-					"type": "modifier",
+					"id": "mGxybkZOl3MCVGAi-",
 					"name": "Appears quite often",
 					"reference": "B36",
-					"notes": "12-",
-					"cost": 2,
-					"cost_type": "multiplier",
+					"local_notes": "12-",
+					"cost_adj": "x2",
 					"disabled": true
 				},
 				{
-					"id": "c97dea86-2b16-41a0-915b-732c4ecc5d83",
-					"type": "modifier",
+					"id": "mHyGXemnZbbzX2Z4v",
 					"name": "Appears fairly often",
 					"reference": "B36",
-					"notes": "9-",
-					"cost": 1,
-					"cost_type": "multiplier"
+					"local_notes": "9-",
+					"cost_adj": "x1"
 				},
 				{
-					"id": "cef0a8ca-d869-4d16-9a50-9f4c747186c3",
-					"type": "modifier",
+					"id": "mdWP2eZyiXxQlDtUo",
 					"name": "Appears quite rarely",
 					"reference": "B36",
-					"notes": "6-",
-					"cost": 0.5,
-					"cost_type": "multiplier",
+					"local_notes": "6-",
+					"cost_adj": "x0.5",
 					"disabled": true
 				},
 				{
-					"id": "346c02a6-cab5-454e-8165-d9f5af7bec08",
-					"type": "modifier",
+					"id": "mng6E8Xq5a4apXK7j",
 					"name": "Equipment",
 					"reference": "B73",
-					"notes": "@Equipment worth no more than average starting wealth@",
-					"cost": 50,
+					"local_notes": "@Equipment worth no more than average starting wealth@",
+					"cost_adj": "50%",
 					"disabled": true
 				},
 				{
-					"id": "21776a80-4536-42a8-9fc3-7836b35cf7ba",
-					"type": "modifier",
+					"id": "mvHBAYU50RpJChr0Z",
 					"name": "Equipment",
 					"reference": "B73",
-					"notes": "@Equipment worth more than average starting wealth@",
-					"cost": 100,
+					"local_notes": "@Equipment worth more than average starting wealth@",
+					"cost_adj": "100%",
 					"disabled": true
 				},
 				{
-					"id": "47dfac97-0be2-4289-8ce0-b45086ab2fa0",
-					"type": "modifier",
+					"id": "mGZEBsSqLFrNCjGvK",
 					"name": "Highly Accessible",
 					"reference": "B73",
-					"cost": 50,
+					"cost_adj": "50%",
 					"disabled": true
 				},
 				{
-					"id": "0418d3c9-a14a-48f2-b2c4-96e006e28a8a",
-					"type": "modifier",
+					"id": "mrjLCS9QqPRfsiX_Q",
 					"name": "Special Abilities",
 					"reference": "B73",
-					"notes": "@Extensive social or political power@",
-					"cost": 50,
+					"local_notes": "@Extensive social or political power@",
+					"cost_adj": "50%",
 					"disabled": true
 				},
 				{
-					"id": "b5bee4e8-6e53-4ec7-abfa-39d0528dcb6e",
-					"type": "modifier",
+					"id": "mkgkrEwMiBQa0f4uB",
 					"name": "Special Abilities",
 					"reference": "B73",
-					"notes": "@Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural@",
-					"cost": 100,
+					"local_notes": "@Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural@",
+					"cost_adj": "100%",
 					"disabled": true
 				},
 				{
-					"id": "86cbe17d-48c8-4a7c-9c5a-e757c577624c",
-					"type": "modifier",
+					"id": "muj33Ic-G1WOmnoUj",
 					"name": "Minimal Interventions",
 					"reference": "B73",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "c19e83c9-f38b-4fcd-8553-b491d225fb01",
-					"type": "modifier",
+					"id": "mKuWLSDCEvwHnAM5J",
 					"name": "Secret",
 					"reference": "B73",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "7ff57b40-e9c5-4a86-9c30-a4852b855c0c",
-					"type": "modifier",
+					"id": "mr8gHeRAP54FAjdT-",
 					"name": "Unwilling",
 					"reference": "B74",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"disabled": true
 				},
 				{
-					"id": "689c3ef0-a5b1-46fd-9659-69b5569f6016",
-					"type": "modifier",
+					"id": "mtxHgxkZZVwzhAVa_",
 					"name": "Favor",
 					"reference": "B55",
-					"cost": 0.2,
-					"cost_type": "multiplier",
+					"cost_adj": "x0.2",
 					"disabled": true
 				}
 			],
@@ -2493,8 +2759,7 @@
 			}
 		},
 		{
-			"id": "f44f54be-35a6-43c9-8535-79cb3976adff",
-			"type": "trait",
+			"id": "tntzaiDf2q-l8AQz0",
 			"name": "Flexibility",
 			"reference": "DFA49",
 			"tags": [
@@ -2536,8 +2801,7 @@
 			}
 		},
 		{
-			"id": "e57e7dc9-1995-4ae2-ae85-0febd11810b2",
-			"type": "trait",
+			"id": "towbYRGW0BpVRFvNP",
 			"name": "Perfect Balance",
 			"reference": "DFA52",
 			"tags": [
@@ -2579,16 +2843,14 @@
 			}
 		},
 		{
-			"id": "6ba6aa7c-8c59-48b4-b9b5-dd59299a1a5d",
-			"type": "trait",
+			"id": "tq2L0VIyh3rlZjPBx",
 			"name": "Combat Reflexes",
 			"reference": "DFA48",
-			"notes": "Never freeze",
+			"local_notes": "Never freeze",
 			"tags": [
 				"Advantage",
 				"Mental"
 			],
-			"base_points": 15,
 			"prereqs": {
 				"type": "prereq_list",
 				"all": true,
@@ -2603,6 +2865,7 @@
 					}
 				]
 			},
+			"base_points": 15,
 			"features": [
 				{
 					"type": "skill_bonus",
@@ -2649,8 +2912,7 @@
 			}
 		},
 		{
-			"id": "408d3d2a-14b3-49c3-a30a-bf84dc9002f9",
-			"type": "trait",
+			"id": "twrtjM3AyQvLo7Bhx",
 			"name": "Weapon Master (Katar)",
 			"reference": "B99,MA48",
 			"tags": [
@@ -2659,47 +2921,37 @@
 			],
 			"modifiers": [
 				{
-					"id": "8cd2d8e2-a670-4e01-b814-7becfb6a9422",
-					"type": "modifier",
+					"id": "mOmKk3F5uYq-oazJQ",
 					"name": "One weapon",
 					"reference": "B99",
-					"cost": 20,
-					"cost_type": "points"
+					"cost_adj": "20"
 				},
 				{
-					"id": "9b9849fc-952f-4492-8778-42398ef38429",
-					"type": "modifier",
+					"id": "m1g-aZdzzCxIwt_tz",
 					"name": "Two weapons",
 					"reference": "B99",
-					"cost": 25,
-					"cost_type": "points",
+					"cost_adj": "25",
 					"disabled": true
 				},
 				{
-					"id": "5a9f4e6e-b31b-4ade-8c3d-5361905efbf6",
-					"type": "modifier",
+					"id": "mQHOo40m5xwDMfurk",
 					"name": "Small class",
 					"reference": "B99",
-					"cost": 30,
-					"cost_type": "points",
+					"cost_adj": "30",
 					"disabled": true
 				},
 				{
-					"id": "3a13bb8a-02f5-4433-926b-243a8de165ef",
-					"type": "modifier",
+					"id": "mNT-qDzbwWtvdeQ1x",
 					"name": "Medium class",
 					"reference": "B99",
-					"cost": 35,
-					"cost_type": "points",
+					"cost_adj": "35",
 					"disabled": true
 				},
 				{
-					"id": "5b3fb3ba-0062-4ff1-833f-bb9b23fe67b3",
-					"type": "modifier",
+					"id": "m_B-wIVn6AfIueIHA",
 					"name": "Large class",
 					"reference": "B99",
-					"cost": 40,
-					"cost_type": "points",
+					"cost_adj": "40",
 					"disabled": true
 				}
 			],
@@ -2715,7 +2967,7 @@
 						"compare": "at_least"
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				},
 				{
 					"type": "weapon_bonus",
@@ -2728,7 +2980,7 @@
 						"compare": "at_least"
 					},
 					"amount": 2,
-					"per_level": true
+					"per_die": true
 				}
 			],
 			"calc": {
@@ -2736,8 +2988,7 @@
 			}
 		},
 		{
-			"id": "a6ce17f9-ba0e-4063-85b0-d02158c6abc9",
-			"type": "trait",
+			"id": "tt3C67aD4gjC4BY_p",
 			"name": "Striking ST",
 			"reference": "B88,P78",
 			"tags": [
@@ -2747,49 +2998,42 @@
 			],
 			"modifiers": [
 				{
-					"id": "9b8e80e8-e2b2-459f-ab27-d96a9aa1e1ca",
-					"type": "modifier",
+					"id": "mTwTH9wkXphS1n6bK",
 					"name": "No Fine Manipulators",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"disabled": true
 				},
 				{
-					"id": "32892d90-82df-401d-bddc-d39a12d0f8b7",
-					"type": "modifier",
+					"id": "mJYddiqrd6kGROjlc",
 					"name": "Size",
-					"cost": -10,
+					"cost_adj": "-10%",
 					"levels": 1,
 					"disabled": true
 				},
 				{
-					"id": "eaabe509-f453-401a-89c1-4830111d0544",
-					"type": "modifier",
+					"id": "mDQqKH6ZJNQXzM4LR",
 					"name": "Super Effort",
 					"reference": "SU24",
-					"cost": 400,
+					"cost_adj": "400%",
 					"disabled": true
 				},
 				{
-					"id": "f35b516b-28d2-4935-8caa-e9f85f5310e0",
-					"type": "modifier",
+					"id": "mDKc0QI9OT1Cz2_km",
 					"name": "One Attack Only",
 					"reference": "P79",
-					"notes": "@Attack@",
-					"cost": -60,
+					"local_notes": "@Attack@",
+					"cost_adj": "-60%",
 					"disabled": true
 				},
 				{
-					"id": "4c469f7d-a2fc-45fa-9b19-a51985d575cd",
-					"type": "modifier",
+					"id": "mItVf3SozBpgxZRNy",
 					"name": "Know Your Own Strength Pricing Variant",
 					"reference": "PY83:18",
-					"cost": -4,
+					"cost_adj": "-4",
 					"affects": "levels_only",
-					"cost_type": "points",
 					"disabled": true
 				}
 			],
-			"levels": 4,
 			"points_per_level": 5,
 			"features": [
 				{
@@ -2801,20 +3045,20 @@
 				}
 			],
 			"can_level": true,
+			"levels": 4,
 			"calc": {
-				"points": 20
+				"points": 20,
+				"current_level": 4
 			}
 		},
 		{
-			"id": "31bcdf6e-3ccd-4e11-899a-33c770172656",
-			"type": "trait",
+			"id": "tibQn7g0Rpc9r0giT",
 			"name": "High Manual Dexterity",
 			"reference": "DFA39",
 			"tags": [
 				"Advantage",
 				"Physical"
 			],
-			"levels": 1,
 			"points_per_level": 5,
 			"features": [
 				{
@@ -2929,16 +3173,17 @@
 				}
 			],
 			"can_level": true,
+			"levels": 1,
 			"calc": {
-				"points": 5
+				"points": 5,
+				"current_level": 1
 			}
 		},
 		{
-			"id": "990e4e0f-d44b-4850-b0d2-d0d8df5f3553",
-			"type": "trait",
+			"id": "tB5HF741iW8g10_OF",
 			"name": "Unusual Background",
 			"reference": "B96",
-			"notes": "Família Peristalto",
+			"local_notes": "Família Peristalto",
 			"tags": [
 				"Advantage",
 				"Mental"
@@ -2948,8 +3193,7 @@
 			}
 		},
 		{
-			"id": "65d16b4f-6294-487c-b120-1013afe4dbc6",
-			"type": "trait",
+			"id": "t2TS0u5seWHoG12YH",
 			"name": "Absolute Timing",
 			"reference": "B35",
 			"tags": [
@@ -2958,11 +3202,9 @@
 			],
 			"modifiers": [
 				{
-					"id": "e1830b10-082b-4286-aa34-c825edbdf81a",
-					"type": "modifier",
+					"id": "mky2AWbxNy3TtpFLk",
 					"name": "Chronolocation",
-					"cost": 3,
-					"cost_type": "points",
+					"cost_adj": "3",
 					"disabled": true
 				}
 			],
@@ -2972,8 +3214,7 @@
 			}
 		},
 		{
-			"id": "746cabe3-98ca-45aa-867f-ef6fa27460cb",
-			"type": "trait",
+			"id": "tzZGtXyJPXluD0qtJ",
 			"name": "Ally (Rebelião anti-escravista)",
 			"reference": "B36,P41",
 			"tags": [
@@ -2982,284 +3223,229 @@
 			],
 			"modifiers": [
 				{
-					"id": "689f0318-5bb4-45b8-bc81-74c14097fe68",
-					"type": "modifier",
+					"id": "m_INrOvUe8qFhiCoS",
 					"name": "Favor",
 					"reference": "B55",
-					"cost": 0.2,
-					"cost_type": "multiplier",
+					"cost_adj": "x0.2",
 					"disabled": true
 				},
 				{
-					"id": "a3aae46a-4033-47e9-8212-84f46bf2a404",
-					"type": "modifier_container",
-					"open": true,
+					"id": "MhIBFEMBFtkAo5QOz",
+					"name": "Frequency of Appearance",
+					"reference": "B37",
 					"children": [
 						{
-							"id": "90ea2d51-49e6-484c-9cb3-461df7b7bd54",
-							"type": "modifier",
+							"id": "mOfUH2SMdleRabjKW",
 							"name": "Appears quite rarely (6-)",
 							"reference": "B36",
-							"cost": 0.5,
-							"cost_type": "multiplier",
+							"cost_adj": "x0.5",
 							"disabled": true
 						},
 						{
-							"id": "be41be9a-9e87-47cf-bff3-755e3635a670",
-							"type": "modifier",
+							"id": "mSAm3cQagJYrf8V9d",
 							"name": "Appears fairly often (9-)",
 							"reference": "B36",
-							"cost": 1,
-							"cost_type": "multiplier"
+							"cost_adj": "x1"
 						},
 						{
-							"id": "558c0415-bdd8-4a47-bf06-09fd5e1d7e80",
-							"type": "modifier",
+							"id": "mMv9q4LUdPx72aobO",
 							"name": "Appears quite often (12-)",
 							"reference": "B36",
-							"cost": 2,
-							"cost_type": "multiplier",
+							"cost_adj": "x2",
 							"disabled": true
 						},
 						{
-							"id": "1f0b6315-dff4-473e-bdef-19346d578523",
-							"type": "modifier",
+							"id": "mhnwu2tlnxfcqKVWI",
 							"name": "Appears almost all the time (15-)",
 							"reference": "B36",
-							"cost": 3,
-							"cost_type": "multiplier",
+							"cost_adj": "x3",
 							"disabled": true
 						},
 						{
-							"id": "d2c39c4d-c98d-4266-8b8c-dcd6383e3a0a",
-							"type": "modifier",
+							"id": "mON8mPTb8nEnNwsYO",
 							"name": "Appears constantly",
 							"reference": "B36",
-							"cost": 4,
-							"cost_type": "multiplier",
+							"cost_adj": "x4",
 							"disabled": true
 						}
-					],
-					"name": "Frequency of Appearance",
-					"reference": "B37"
+					]
 				},
 				{
-					"id": "aa16b468-bd6e-42aa-b471-8656922c6757",
-					"type": "modifier_container",
-					"open": true,
+					"id": "MCKete_uC3_mTkv-J",
+					"name": "Ally Group",
+					"reference": "B37",
 					"children": [
 						{
-							"id": "9b920170-2506-4d12-b871-be1100043704",
-							"type": "modifier",
+							"id": "mQxzeNXdQo4XP_hqR",
 							"name": "Group of 6-10",
 							"reference": "B37",
-							"cost": 6,
-							"cost_type": "multiplier",
+							"cost_adj": "x6",
 							"disabled": true
 						},
 						{
-							"id": "d0e44bc7-5889-46ec-879f-3d9ba9a4e54f",
-							"type": "modifier",
+							"id": "mCzxikjwMdrJPsNI3",
 							"name": "Group of 11-20",
 							"reference": "B37",
-							"cost": 8,
-							"cost_type": "multiplier",
+							"cost_adj": "x8",
 							"disabled": true
 						},
 						{
-							"id": "8fc8e24d-4b27-4e45-9b3a-5a6f64ada309",
-							"type": "modifier",
+							"id": "mEJd5ut-OxpKYRcUr",
 							"name": "Group of 21-50",
 							"reference": "B37",
-							"cost": 10,
-							"cost_type": "multiplier"
+							"cost_adj": "x10"
 						},
 						{
-							"id": "1dedde55-e356-448c-961a-53dc73e8e58b",
-							"type": "modifier",
+							"id": "mQWTYSikPXkEUVC47",
 							"name": "Group of 51-100",
 							"reference": "B37",
-							"cost": 12,
-							"cost_type": "multiplier",
+							"cost_adj": "x12",
 							"disabled": true
 						},
 						{
-							"id": "a6fa2681-e601-4915-9e43-e357c1119e73",
-							"type": "modifier",
+							"id": "mpa_l91x_dSvSKTop",
 							"name": "Group of 101-1000",
 							"reference": "B37",
-							"cost": 18,
-							"cost_type": "multiplier",
+							"cost_adj": "x18",
 							"disabled": true
 						},
 						{
-							"id": "d176a29c-87f6-41b9-8d4e-10beb54d1822",
-							"type": "modifier",
+							"id": "mJUwLocLPM1I86qCz",
 							"name": "Group of 1001-10000",
 							"reference": "B37",
-							"cost": 24,
-							"cost_type": "multiplier",
+							"cost_adj": "x24",
 							"disabled": true
 						},
 						{
-							"id": "8584249f-64fa-4939-87eb-63382071fbf3",
-							"type": "modifier",
+							"id": "mJNN4HgcjmZ_KnPhy",
 							"name": "Group of 10001-100000",
 							"reference": "B37",
-							"cost": 30,
-							"cost_type": "multiplier",
+							"cost_adj": "x30",
 							"disabled": true
 						},
 						{
-							"id": "7429f8b9-70f3-4fe7-8c48-a9d1b9c06e0a",
-							"type": "modifier",
+							"id": "mhcsFNJmjIDyFKSCW",
 							"name": "Group of 100001-1000000",
 							"reference": "B37",
-							"cost": 36,
-							"cost_type": "multiplier",
+							"cost_adj": "x36",
 							"disabled": true
 						}
-					],
-					"name": "Ally Group",
-					"reference": "B37"
+					]
 				},
 				{
-					"id": "1423dd75-af66-4dfb-bf98-39ebd775beb3",
-					"type": "modifier",
+					"id": "mggHTvAgBUpX7bJmb",
 					"name": "Minion",
 					"reference": "B38",
-					"cost": 50,
+					"cost_adj": "50%",
 					"disabled": true
 				},
 				{
-					"id": "6dc2adbd-08c7-4ef0-8614-22ec36071dbb",
-					"type": "modifier",
+					"id": "mRT807Z6vBfJqLLHL",
 					"name": "Minion",
 					"reference": "B38",
-					"notes": "IQ 0 or Slave Mentality",
+					"local_notes": "IQ 0 or Slave Mentality",
 					"disabled": true
 				},
 				{
-					"id": "af970aba-632e-444c-abbe-ea978ae30f1f",
-					"type": "modifier_container",
-					"open": true,
+					"id": "MYLVtaA--qjRs3xvZ",
+					"name": "Point Total",
+					"reference": "B37",
 					"children": [
 						{
-							"id": "c1eb750d-bdd1-4483-a293-892526735fad",
-							"type": "modifier",
+							"id": "mccNi8UIiV-hTbwOd",
 							"name": "25% of your starting points",
 							"reference": "B37",
-							"cost": 1,
-							"cost_type": "points"
+							"cost_adj": "1"
 						},
 						{
-							"id": "0b93dc24-8f30-4c58-8595-a5f2bd05173d",
-							"type": "modifier",
+							"id": "m--hedGvmkijRf-gn",
 							"name": "50% of your starting points",
 							"reference": "B37",
-							"cost": 2,
-							"cost_type": "points",
+							"cost_adj": "2",
 							"disabled": true
 						},
 						{
-							"id": "469b4a79-c6cf-4f87-be4d-c39428a08d9b",
-							"type": "modifier",
+							"id": "mxKgr3wGruii9s6er",
 							"name": "75% of your starting points",
 							"reference": "B37",
-							"cost": 3,
-							"cost_type": "points",
+							"cost_adj": "3",
 							"disabled": true
 						},
 						{
-							"id": "1c5fa2a8-39df-4651-a06b-21635ead97ca",
-							"type": "modifier",
+							"id": "mhWHr9Zrg-hWNRlFt",
 							"name": "100% of your starting points",
 							"reference": "B37",
-							"cost": 5,
-							"cost_type": "points",
+							"cost_adj": "5",
 							"disabled": true
 						},
 						{
-							"id": "b9452cfa-cda2-4ce0-8531-7a6b9c33ddb9",
-							"type": "modifier",
+							"id": "m3CYe8nbs4A6BSZjU",
 							"name": "150% of your starting points",
 							"reference": "B37",
-							"cost": 10,
-							"cost_type": "points",
+							"cost_adj": "10",
 							"disabled": true
 						}
-					],
-					"name": "Point Total",
-					"reference": "B37"
+					]
 				},
 				{
-					"id": "d8886838-7444-495b-aa11-02ac3ae23dd2",
-					"type": "modifier",
+					"id": "malR4EB7IbZUjarCC",
 					"name": "Special Abilities",
 					"reference": "B38",
-					"notes": "@Abilities@",
-					"cost": 50,
+					"local_notes": "@Abilities@",
+					"cost_adj": "50%",
 					"disabled": true
 				},
 				{
-					"id": "d00c3a09-82c4-4569-81df-955e8e62ef34",
-					"type": "modifier",
+					"id": "mPeZBDoO7C0cx251k",
 					"name": "Summonable",
 					"reference": "B38",
-					"cost": 100,
+					"cost_adj": "100%",
 					"disabled": true
 				},
 				{
-					"id": "dd121846-2ba4-46bb-83fc-d881218cffca",
-					"type": "modifier_container",
-					"open": true,
+					"id": "MKHNntrGDO-mVI42w",
+					"name": "Sympathy",
+					"reference": "B38",
 					"children": [
 						{
-							"id": "f3001c31-1cbb-4f95-af86-c92a7755a044",
-							"type": "modifier",
+							"id": "mwBLX7egpxJ4oQjFp",
 							"name": "Sympathy",
 							"reference": "B38",
-							"notes": "Death of one party kills the other",
-							"cost": -50,
+							"local_notes": "Death of one party kills the other",
+							"cost_adj": "-50%",
 							"disabled": true
 						},
 						{
-							"id": "30df2a61-903a-4f3f-b7ce-6319dcc61e6a",
-							"type": "modifier",
+							"id": "mIOqj8D25hBvPKOdo",
 							"name": "Sympathy",
 							"reference": "B38",
-							"notes": "Death of one party kills the other and wounds affect ally but not you",
-							"cost": -10,
+							"local_notes": "Death of one party kills the other and wounds affect ally but not you",
+							"cost_adj": "-10%",
 							"disabled": true
 						},
 						{
-							"id": "d3be4428-f357-41d5-8bce-142240934518",
-							"type": "modifier",
+							"id": "m65Z4zvsw6CPeh5ZE",
 							"name": "Sympathy",
 							"reference": "B38",
-							"notes": "Death of one party reduces the other to 0 HP",
-							"cost": -25,
+							"local_notes": "Death of one party reduces the other to 0 HP",
+							"cost_adj": "-25%",
 							"disabled": true
 						},
 						{
-							"id": "036a0c85-d7af-4de9-af22-eea6cec5ed47",
-							"type": "modifier",
+							"id": "m8JBH6Umv4aB41Rua",
 							"name": "Sympathy",
 							"reference": "B38",
-							"notes": "Death of one party reduces the other to 0 HP and wounds affect ally but not you",
-							"cost": -5,
+							"local_notes": "Death of one party reduces the other to 0 HP and wounds affect ally but not you",
+							"cost_adj": "-5%",
 							"disabled": true
 						}
-					],
-					"name": "Sympathy",
-					"reference": "B38"
+					]
 				},
 				{
-					"id": "2777d1e3-2b29-4c22-b543-d2553828e7e9",
-					"type": "modifier",
+					"id": "mQ1zTCdQhmR4O7ZO8",
 					"name": "Unwilling",
 					"reference": "B38",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"disabled": true
 				}
 			],
@@ -3268,8 +3454,7 @@
 			}
 		},
 		{
-			"id": "9ab7db8d-a93d-4545-bdc8-8a243db41a9a",
-			"type": "trait",
+			"id": "tsFOp2lLCICb7iX7h",
 			"name": "Magery",
 			"reference": "B66",
 			"tags": [
@@ -3279,67 +3464,59 @@
 			],
 			"modifiers": [
 				{
-					"id": "10b7c609-d742-473c-a229-fd39e10a948f",
-					"type": "modifier",
+					"id": "miyt7WZesdVOXEyPp",
 					"name": "Dance",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
-					"type": "modifier",
+					"id": "mQCtDO-KHKkCWBwpz",
 					"name": "Dark-Aspected",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
-					"type": "modifier",
+					"id": "mn6YslMfRoQdr50EI",
 					"name": "Day-Aspected",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
-					"type": "modifier",
+					"id": "mueBITT-eB4QOUzOF",
 					"name": "Musical",
-					"cost": -50,
+					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
-					"type": "modifier",
+					"id": "mNj7BEDlN-0MP1T1F",
 					"name": "Night-Aspected",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
-					"type": "modifier",
+					"id": "mNffaaXHM16_pu0gV",
 					"name": "One College",
-					"notes": "Plants",
-					"cost": -40,
+					"local_notes": "Plants",
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
-					"type": "modifier",
+					"id": "m53L2LdvzwfAXuB3-",
 					"name": "Solitary",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "162576be-563f-43f2-9bd3-91db2defc569",
-					"type": "modifier",
+					"id": "mVIpdBFrd2yKLladB",
 					"name": "Song",
-					"cost": -40,
+					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				}
@@ -3366,44 +3543,43 @@
 			],
 			"can_level": true,
 			"calc": {
-				"points": 5
+				"points": 5,
+				"current_level": 0
 			}
 		},
 		{
-			"id": "ae682615-16d3-4253-abd0-fe1d72b6181d",
-			"type": "trait",
+			"id": "t4RYORIh5HXWivvGG",
 			"name": "Signature Gear",
 			"reference": "B85",
-			"notes": "For equipment normally bought with money, each point gives goods worth up to 50% of the average campaign starting wealth (but never cash).",
+			"local_notes": "For equipment normally bought with money, each point gives goods worth up to 50% of the average campaign starting wealth (but never cash).",
 			"tags": [
 				"Advantage",
 				"Social"
 			],
-			"levels": 2,
 			"points_per_level": 1,
 			"can_level": true,
+			"levels": 2,
 			"calc": {
-				"points": 2
+				"points": 2,
+				"current_level": 2
 			}
 		},
 		{
-			"id": "c8689930-20a3-481a-bcd5-8255b036003d",
-			"type": "trait",
+			"id": "tMwDGpk4InO4jrTro",
 			"name": "Compulsive Carousing",
 			"reference": "B128",
 			"tags": [
 				"Disadvantage",
 				"Mental"
 			],
-			"base_points": -5,
 			"cr": 12,
+			"base_points": -5,
 			"calc": {
 				"points": -5
 			}
 		},
 		{
-			"id": "0edb7c70-795c-4711-adf6-4afb8b9258b2",
-			"type": "trait",
+			"id": "t3hGFawVu7FC_HNoU",
 			"name": "Weirdness Magnet",
 			"reference": "B161",
 			"tags": [
@@ -3413,8 +3589,7 @@
 			],
 			"modifiers": [
 				{
-					"id": "966289db-d5f0-4670-9498-27d9cbd2872e",
-					"type": "modifier",
+					"id": "m_kqcLyd6vSf9fVAF",
 					"name": "Origins Magnet",
 					"reference": "SU32",
 					"disabled": true
@@ -3426,8 +3601,7 @@
 			}
 		},
 		{
-			"id": "928341e4-db38-461f-a283-44ced040f20c",
-			"type": "trait",
+			"id": "t2pG0o5OHtrObKX8S",
 			"name": "Sense of Duty",
 			"reference": "B153",
 			"tags": [
@@ -3436,56 +3610,44 @@
 			],
 			"modifiers": [
 				{
-					"id": "de47158b-455d-4448-8055-86065b81d6d1",
-					"type": "modifier",
+					"id": "mtr0nDO_zMDp_UgCT",
 					"name": "Friends and Companions",
 					"reference": "B153",
-					"cost": -5,
-					"cost_type": "points",
+					"cost_adj": "-5",
 					"disabled": true
 				},
 				{
-					"id": "8fde1c7b-7271-4b9b-9032-8551dde325a8",
-					"type": "modifier",
+					"id": "mU9LtMo-P7vqFHfEo",
 					"name": "@Small Group@",
 					"reference": "B153",
-					"cost": -5,
-					"cost_type": "points",
+					"cost_adj": "-5",
 					"disabled": true
 				},
 				{
-					"id": "89ec98d8-237b-4ab6-82e5-f9767592c065",
-					"type": "modifier",
+					"id": "mHN14IdrGQj45Yv2D",
 					"name": "@Individual@",
 					"reference": "B153",
-					"cost": -2,
-					"cost_type": "points",
+					"cost_adj": "-2",
 					"disabled": true
 				},
 				{
-					"id": "0daad494-07fe-4b61-a1fe-ab5e198b6411",
-					"type": "modifier",
+					"id": "mLzi3kUt-9dMfInLI",
 					"name": "Rebeldes contra a escravidão",
 					"reference": "B153",
-					"cost": -10,
-					"cost_type": "points"
+					"cost_adj": "-10"
 				},
 				{
-					"id": "103f5c35-d3d6-4f0f-9336-447062d5c050",
-					"type": "modifier",
+					"id": "mPb-zO9G5SjzYzhKy",
 					"name": "@Entire Race@",
 					"reference": "B153",
-					"cost": -15,
-					"cost_type": "points",
+					"cost_adj": "-15",
 					"disabled": true
 				},
 				{
-					"id": "721ee069-0e87-46c8-9638-0f2dee3142e6",
-					"type": "modifier",
+					"id": "mv3kZB-V6Ua09B4EH",
 					"name": "Every Living Being",
 					"reference": "B153",
-					"cost": -20,
-					"cost_type": "points",
+					"cost_adj": "-20",
 					"disabled": true
 				}
 			],
@@ -3494,8 +3656,7 @@
 			}
 		},
 		{
-			"id": "44c4bbcb-e470-4627-a745-5a39b5dce97c",
-			"type": "trait",
+			"id": "tavQ6n1pq3flTcq_j",
 			"name": "Secret (Ajudo Lorde Feyrith com a libertação dos escravos)",
 			"reference": "B152",
 			"tags": [
@@ -3504,38 +3665,30 @@
 			],
 			"modifiers": [
 				{
-					"id": "be0d3c20-c61c-49f3-ba2e-5a2b43109748",
-					"type": "modifier",
+					"id": "mmWdQHfcNHc7ofZxM",
 					"name": "Serious Embarrassment",
 					"reference": "B152",
-					"cost": -5,
-					"cost_type": "points",
+					"cost_adj": "-5",
 					"disabled": true
 				},
 				{
-					"id": "0fc56f73-1aad-419e-b07f-c7ca028b725a",
-					"type": "modifier",
+					"id": "maxwyL3w_LMtRkh4C",
 					"name": "Utter Rejection",
 					"reference": "B152",
-					"cost": -10,
-					"cost_type": "points"
+					"cost_adj": "-10"
 				},
 				{
-					"id": "00e88f4b-24f3-47c5-bdea-d27113d1a077",
-					"type": "modifier",
+					"id": "mEX3_tum353QeSqBy",
 					"name": "Imprisonment",
 					"reference": "B152",
-					"cost": -20,
-					"cost_type": "points",
+					"cost_adj": "-20",
 					"disabled": true
 				},
 				{
-					"id": "d1bbcbc7-5028-453c-8728-1b004334b66a",
-					"type": "modifier",
+					"id": "mFPHNuMNqiQcS4k0a",
 					"name": "Possible Death",
 					"reference": "B152",
-					"cost": -30,
-					"cost_type": "points",
+					"cost_adj": "-30",
 					"disabled": true
 				}
 			],
@@ -3544,8 +3697,7 @@
 			}
 		},
 		{
-			"id": "d1e451a9-4893-4b58-8057-db338913f1f6",
-			"type": "trait",
+			"id": "tH9K8kLc9UdFBrMQ0",
 			"name": "Megalomania",
 			"reference": "B144",
 			"tags": [
@@ -3558,8 +3710,7 @@
 			}
 		},
 		{
-			"id": "0b2a0645-ebc5-47be-820b-bf4dbbc8c052",
-			"type": "trait",
+			"id": "tSf7votamILuWi0HN",
 			"name": "Marca de \"X\" na parte de cima das costas, abaixo da nuca.",
 			"reference": "B164",
 			"tags": [
@@ -3572,8 +3723,7 @@
 			}
 		},
 		{
-			"id": "00f47756-358c-4c39-83e2-506981aacbdb",
-			"type": "trait",
+			"id": "t8dI2XjZ-Rtx9IU7j",
 			"name": "Tavernassexual",
 			"base_points": -1,
 			"calc": {
@@ -3581,8 +3731,7 @@
 			}
 		},
 		{
-			"id": "a6568d8f-b221-418f-bc4c-baa3426ddd6a",
-			"type": "trait",
+			"id": "thfUi8Qc0WUnMhv5V",
 			"name": "Gosta das histórias da Lua",
 			"base_points": -1,
 			"calc": {
@@ -3590,8 +3739,7 @@
 			}
 		},
 		{
-			"id": "b205fc04-2a54-4a9c-942d-c2804cd1d5bc",
-			"type": "trait",
+			"id": "t_K9Q6TJdxASjY1ge",
 			"name": "Só fuma quando bebe",
 			"base_points": -1,
 			"calc": {
@@ -3599,8 +3747,7 @@
 			}
 		},
 		{
-			"id": "860283a8-19b2-44bf-b49a-0ba5d4c961eb",
-			"type": "trait",
+			"id": "tj2mIZh9t56tqAQc7",
 			"name": "Não gosta de quem apoia a punição do Corvo",
 			"base_points": -1,
 			"calc": {
@@ -3608,16 +3755,14 @@
 			}
 		},
 		{
-			"id": "72ee4f4c-2f1c-45c5-a073-09ec244f8b06",
-			"type": "trait",
+			"id": "tpQqpO7Np4W2SAsqA",
 			"name": "Resistente ao controle de Cepo",
 			"calc": {
 				"points": 0
 			}
 		},
 		{
-			"id": "29711676-b8d2-42ce-8f0e-b891cfadaaf7",
-			"type": "trait",
+			"id": "to0G0wu303rnC8_q0",
 			"name": "Language: Halfling",
 			"reference": "B24",
 			"tags": [
@@ -3627,88 +3772,70 @@
 			],
 			"modifiers": [
 				{
-					"id": "ff972d9a-b925-4895-a489-f3d14999074d",
-					"type": "modifier",
+					"id": "mbFzNq8E9iD-aG2-O",
 					"name": "Native",
 					"reference": "B23",
-					"cost": -6,
-					"cost_type": "points"
+					"cost_adj": "-6"
 				},
 				{
-					"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
-					"type": "modifier",
+					"id": "m65oNniOKWB9uSFPl",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "None",
-					"cost_type": "points",
+					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
-					"type": "modifier",
+					"id": "mrfjWfHCDVVMwIDy7",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Broken",
-					"cost": 1,
-					"cost_type": "points",
+					"local_notes": "Broken",
+					"cost_adj": "1",
 					"disabled": true
 				},
 				{
-					"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
-					"type": "modifier",
+					"id": "m4iMnubhKAAXkeqvg",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Accented",
-					"cost": 2,
-					"cost_type": "points",
+					"local_notes": "Accented",
+					"cost_adj": "2",
 					"disabled": true
 				},
 				{
-					"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
-					"type": "modifier",
+					"id": "mXEsvJnSxLo3UezX_",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Native",
-					"cost": 3,
-					"cost_type": "points"
+					"local_notes": "Native",
+					"cost_adj": "3"
 				},
 				{
-					"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
-					"type": "modifier",
+					"id": "mrdqeTbY5-fl4x2l5",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "None",
-					"cost_type": "points",
+					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
-					"type": "modifier",
+					"id": "m8kDN1kOFx5152Vyj",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Broken",
-					"cost": 1,
-					"cost_type": "points",
+					"local_notes": "Broken",
+					"cost_adj": "1",
 					"disabled": true
 				},
 				{
-					"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
-					"type": "modifier",
+					"id": "m2YxF6KK7vvGhnLFf",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Accented",
-					"cost": 2,
-					"cost_type": "points",
+					"local_notes": "Accented",
+					"cost_adj": "2",
 					"disabled": true
 				},
 				{
-					"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
-					"type": "modifier",
+					"id": "m_myalZ34iobfO1Rd",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Native",
-					"cost": 3,
-					"cost_type": "points"
+					"local_notes": "Native",
+					"cost_adj": "3"
 				}
 			],
 			"calc": {
@@ -3716,8 +3843,7 @@
 			}
 		},
 		{
-			"id": "926b7232-510b-4cb4-a4a4-0408f5ed4355",
-			"type": "trait",
+			"id": "thfQGLCZRQfl4MiJu",
 			"name": "Language: Élfico",
 			"reference": "B24",
 			"tags": [
@@ -3727,88 +3853,70 @@
 			],
 			"modifiers": [
 				{
-					"id": "ff972d9a-b925-4895-a489-f3d14999074d",
-					"type": "modifier",
+					"id": "mbIw9o--VGCsf00yW",
 					"name": "Native",
 					"reference": "B23",
-					"cost": -6,
-					"cost_type": "points",
+					"cost_adj": "-6",
 					"disabled": true
 				},
 				{
-					"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
-					"type": "modifier",
+					"id": "m1b5xu6t1pbT7VLpQ",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "None",
-					"cost_type": "points",
+					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
-					"type": "modifier",
+					"id": "msk8SjmSX5KfnvsJK",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Broken",
-					"cost": 1,
-					"cost_type": "points",
+					"local_notes": "Broken",
+					"cost_adj": "1",
 					"disabled": true
 				},
 				{
-					"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
-					"type": "modifier",
+					"id": "mMG6EYfC1pNuwj5vj",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Accented",
-					"cost": 2,
-					"cost_type": "points",
+					"local_notes": "Accented",
+					"cost_adj": "2",
 					"disabled": true
 				},
 				{
-					"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
-					"type": "modifier",
+					"id": "m3l0jpx9-stqa5gET",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Native",
-					"cost": 3,
-					"cost_type": "points"
+					"local_notes": "Native",
+					"cost_adj": "3"
 				},
 				{
-					"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
-					"type": "modifier",
+					"id": "m0yjuS6z_csKlSMrB",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "None",
-					"cost_type": "points",
+					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
-					"type": "modifier",
+					"id": "mcRRgf0pqlaAeRjIU",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Broken",
-					"cost": 1,
-					"cost_type": "points",
+					"local_notes": "Broken",
+					"cost_adj": "1",
 					"disabled": true
 				},
 				{
-					"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
-					"type": "modifier",
+					"id": "mB_QfKOybrDuRQRIa",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Accented",
-					"cost": 2,
-					"cost_type": "points"
+					"local_notes": "Accented",
+					"cost_adj": "2"
 				},
 				{
-					"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
-					"type": "modifier",
+					"id": "mC6dNYtrcWfpP8PD2",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Native",
-					"cost": 3,
-					"cost_type": "points",
+					"local_notes": "Native",
+					"cost_adj": "3",
 					"disabled": true
 				}
 			],
@@ -3817,8 +3925,7 @@
 			}
 		},
 		{
-			"id": "f6c77041-7a5d-43e9-b940-ef7c0524dbd1",
-			"type": "trait",
+			"id": "tvF865oH30qqxuYWr",
 			"name": "Language: Comum",
 			"reference": "B24",
 			"tags": [
@@ -3828,88 +3935,70 @@
 			],
 			"modifiers": [
 				{
-					"id": "ff972d9a-b925-4895-a489-f3d14999074d",
-					"type": "modifier",
+					"id": "mWsZPZpo3tvXu062l",
 					"name": "Native",
 					"reference": "B23",
-					"cost": -6,
-					"cost_type": "points",
+					"cost_adj": "-6",
 					"disabled": true
 				},
 				{
-					"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
-					"type": "modifier",
+					"id": "mGI5q3BCkyPIq6EfA",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "None",
-					"cost_type": "points",
+					"local_notes": "None",
 					"disabled": true
 				},
 				{
-					"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
-					"type": "modifier",
+					"id": "mFG4Vb5jhEIq-_gAp",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Broken",
-					"cost": 1,
-					"cost_type": "points",
+					"local_notes": "Broken",
+					"cost_adj": "1",
 					"disabled": true
 				},
 				{
-					"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
-					"type": "modifier",
+					"id": "mpx6On47u7148047w",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Accented",
-					"cost": 2,
-					"cost_type": "points"
+					"local_notes": "Accented",
+					"cost_adj": "2"
 				},
 				{
-					"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
-					"type": "modifier",
+					"id": "mMKTsmoL1KPg5xaIe",
 					"name": "Spoken",
 					"reference": "B24",
-					"notes": "Native",
-					"cost": 3,
-					"cost_type": "points",
+					"local_notes": "Native",
+					"cost_adj": "3",
 					"disabled": true
 				},
 				{
-					"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
-					"type": "modifier",
+					"id": "mNgyRh5f8wZWKEdbO",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "None",
-					"cost_type": "points"
+					"local_notes": "None"
 				},
 				{
-					"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
-					"type": "modifier",
+					"id": "myg50JkJ1oB1P2h_T",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Broken",
-					"cost": 1,
-					"cost_type": "points",
+					"local_notes": "Broken",
+					"cost_adj": "1",
 					"disabled": true
 				},
 				{
-					"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
-					"type": "modifier",
+					"id": "mdkzQIWNbmiQDFK1z",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Accented",
-					"cost": 2,
-					"cost_type": "points",
+					"local_notes": "Accented",
+					"cost_adj": "2",
 					"disabled": true
 				},
 				{
-					"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
-					"type": "modifier",
+					"id": "mcHv5Ko3yDVgU0_FQ",
 					"name": "Written",
 					"reference": "B24",
-					"notes": "Native",
-					"cost": 3,
-					"cost_type": "points",
+					"local_notes": "Native",
+					"cost_adj": "3",
 					"disabled": true
 				}
 			],
@@ -3920,8 +4009,7 @@
 	],
 	"skills": [
 		{
-			"id": "4a7fb098-41ab-4115-97c1-ef913b7761a2",
-			"type": "skill",
+			"id": "sld8exogYcRTT4dzg",
 			"name": "Escape",
 			"reference": "DFA75",
 			"tags": [
@@ -3929,6 +4017,12 @@
 				"Street"
 			],
 			"difficulty": "dx/h",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -6
+				}
+			],
 			"points": 1,
 			"defaulted_from": {
 				"type": "dx",
@@ -3937,20 +4031,13 @@
 				"adjusted_level": 8,
 				"points": -8
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -6
-				}
-			],
 			"calc": {
 				"level": 15,
 				"rsl": "DX+1"
 			}
 		},
 		{
-			"id": "0ba0aec1-9f54-462c-9eb7-2e5e6e7834b1",
-			"type": "skill",
+			"id": "sQcwcMP-maNL32KuZ",
 			"name": "Filch",
 			"reference": "DFA76",
 			"tags": [
@@ -3959,6 +4046,28 @@
 				"Street"
 			],
 			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Pickpocket"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sleight of Hand"
+					},
+					"modifier": -4
+				}
+			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
@@ -3967,30 +4076,13 @@
 				"adjusted_level": 9,
 				"points": -9
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Pickpocket",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Sleight of Hand",
-					"modifier": -4
-				}
-			],
 			"calc": {
 				"level": 14,
 				"rsl": "DX+0"
 			}
 		},
 		{
-			"id": "2efca023-2182-4764-9fce-69d262a18563",
-			"type": "skill",
+			"id": "sZxzwZFNBeWxqvyYT",
 			"name": "Lockpicking",
 			"reference": "DFA80",
 			"tags": [
@@ -4001,6 +4093,12 @@
 				"Technical"
 			],
 			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
 			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
@@ -4009,20 +4107,13 @@
 				"adjusted_level": 9,
 				"points": -9
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				}
-			],
 			"calc": {
 				"level": 16,
 				"rsl": "DX+2"
 			}
 		},
 		{
-			"id": "19b0a17d-485f-450a-8403-9aeb0d77f741",
-			"type": "skill",
+			"id": "sVqSyziLb53i2dumP",
 			"name": "Holdout",
 			"reference": "DFA78",
 			"tags": [
@@ -4031,15 +4122,6 @@
 				"Street"
 			],
 			"difficulty": "iq/a",
-			"points": 4,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Sleight of Hand",
-				"modifier": -3,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": 4
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4047,18 +4129,35 @@
 				},
 				{
 					"type": "skill",
-					"name": "Sleight of Hand",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sleight of Hand"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Sleight of Hand"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"modifier": -3,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": 8
+			},
 			"calc": {
 				"level": 11,
-				"rsl": "IQ+2"
+				"rsl": "IQ+3"
 			}
 		},
 		{
-			"id": "96420205-3190-4a2a-a51b-152937bf2cda",
-			"type": "skill",
+			"id": "shhknknJ5L2lU98SV",
 			"name": "Pickpocket",
 			"reference": "DFA85",
 			"tags": [
@@ -4066,15 +4165,6 @@
 				"Street"
 			],
 			"difficulty": "dx/h",
-			"points": 2,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Filch",
-				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
 			"defaults": [
 				{
 					"type": "dx",
@@ -4082,29 +4172,71 @@
 				},
 				{
 					"type": "skill",
-					"name": "Filch",
+					"name": {
+						"compare": "is",
+						"qualifier": "Filch"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Sleight of Hand",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sleight of Hand"
+					},
 					"modifier": -4
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Filch"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
 			"calc": {
 				"level": 14,
 				"rsl": "DX+0"
 			}
 		},
 		{
-			"id": "e63d4f28-678b-4a6d-af6c-5006e2605f41",
-			"type": "skill",
+			"id": "sNQTuRKCKKOshuf-r",
 			"name": "Acrobatics",
 			"reference": "DFA72",
 			"tags": [
 				"Athletic"
 			],
 			"difficulty": "dx/h",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Aerobatics"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Aquabatics"
+					},
+					"modifier": -4
+				}
+			],
 			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
@@ -4113,30 +4245,13 @@
 				"adjusted_level": 8,
 				"points": -8
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Aerobatics",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Aquabatics",
-					"modifier": -4
-				}
-			],
 			"calc": {
 				"level": 15,
 				"rsl": "DX+1"
 			}
 		},
 		{
-			"id": "bcc0fc9a-97e1-4f6a-91de-605c774dd06e",
-			"type": "skill",
+			"id": "sRCRNDLAaOSS-2QjV",
 			"name": "Shadowing",
 			"reference": "B219",
 			"tags": [
@@ -4146,15 +4261,6 @@
 				"Street"
 			],
 			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Stealth",
-				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": 8
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4162,23 +4268,43 @@
 				},
 				{
 					"type": "skill",
-					"name": "Observation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Observation"
+					},
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Stealth",
+					"name": {
+						"compare": "is",
+						"qualifier": "Stealth"
+					},
 					"modifier": -4
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Stealth"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"modifier": -4,
+				"level": 11,
+				"adjusted_level": 11,
+				"points": 12
+			},
 			"calc": {
 				"level": 11,
-				"rsl": "IQ+2"
+				"rsl": "IQ+3"
 			}
 		},
 		{
-			"id": "6bf41ff4-8048-4fea-b839-e1ccfc646cf3",
-			"type": "skill",
+			"id": "scdL1U1JzO--oIp8q",
 			"name": "Sleight of Hand",
 			"reference": "DFA89",
 			"tags": [
@@ -4188,30 +4314,38 @@
 				"Street"
 			],
 			"difficulty": "dx/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Filch"
+					},
+					"modifier": -5
+				}
+			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "skill",
-				"name": "Filch",
+				"name": {
+					"compare": "is",
+					"qualifier": "Filch"
+				},
+				"specialization": {
+					"compare": "is"
+				},
 				"modifier": -5,
 				"level": 9,
 				"adjusted_level": 9,
 				"points": -9
 			},
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Filch",
-					"modifier": -5
-				}
-			],
 			"calc": {
 				"level": 14,
 				"rsl": "DX+0"
 			}
 		},
 		{
-			"id": "49105412-515e-4a82-a54a-c851069adf2c",
-			"type": "skill",
+			"id": "sr8KavogXtmZ_l0E9",
 			"name": "Search",
 			"reference": "DFA88",
 			"tags": [
@@ -4219,14 +4353,6 @@
 				"Spy"
 			],
 			"difficulty": "per/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "per",
@@ -4234,18 +4360,28 @@
 				},
 				{
 					"type": "skill",
-					"name": "Criminology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Criminology"
+					},
 					"modifier": -5
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per+0"
 			}
 		},
 		{
-			"id": "cb276de3-cf5c-4a12-83b2-852d6e88cb88",
-			"type": "skill",
+			"id": "sj0EgM-P_9xr5qmPN",
 			"name": "Smuggling",
 			"reference": "DFA89",
 			"tags": [
@@ -4254,28 +4390,27 @@
 				"Street"
 			],
 			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "iq",
 					"modifier": -5
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "IQ-1"
 			}
 		},
 		{
-			"id": "da80a51c-bc9e-4f57-a015-49a0f7c0e21f",
-			"type": "skill",
+			"id": "s4tDFdU6IyFLOr-Em",
 			"name": "Stealth",
 			"reference": "DFA89",
 			"tags": [
@@ -4285,15 +4420,7 @@
 				"Street"
 			],
 			"difficulty": "dx/a",
-			"points": 4,
 			"encumbrance_penalty_multiplier": 1,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -5,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4304,14 +4431,21 @@
 					"modifier": -5
 				}
 			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
 			"calc": {
 				"level": 16,
 				"rsl": "DX+2"
 			}
 		},
 		{
-			"id": "2f1c67ba-e9f3-420a-9beb-e2a0434cf77f",
-			"type": "skill",
+			"id": "sFMZpryGPM7smDpfs",
 			"name": "Streetwise",
 			"reference": "DFA90",
 			"tags": [
@@ -4321,28 +4455,27 @@
 				"Street"
 			],
 			"difficulty": "iq/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "iq",
 					"modifier": -5
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ+0"
 			}
 		},
 		{
-			"id": "bc8aa96f-014d-4904-a76d-0369e5f8bafd",
-			"type": "skill",
+			"id": "sk_Pq9IeMfEoYNBjy",
 			"name": "Traps",
 			"reference": "DFA92",
 			"tags": [
@@ -4351,15 +4484,6 @@
 				"Street"
 			],
 			"difficulty": "iq/a",
-			"points": 4,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Lockpicking",
-				"modifier": -3,
-				"level": 12,
-				"adjusted_level": 12,
-				"points": 12
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4367,18 +4491,35 @@
 				},
 				{
 					"type": "skill",
-					"name": "Lockpicking",
+					"name": {
+						"compare": "is",
+						"qualifier": "Lockpicking"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Lockpicking"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"modifier": -3,
+				"level": 12,
+				"adjusted_level": 12,
+				"points": 16
+			},
 			"calc": {
 				"level": 13,
-				"rsl": "IQ+4"
+				"rsl": "IQ+5"
 			}
 		},
 		{
-			"id": "413a5db6-a181-40aa-b076-1bce74a0dbbf",
-			"type": "skill",
+			"id": "sawgwqKpgjhqQ8XJo",
 			"name": "Carousing",
 			"reference": "DFA73",
 			"tags": [
@@ -4387,6 +4528,12 @@
 				"Street"
 			],
 			"difficulty": "ht/e",
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "ht",
@@ -4395,20 +4542,13 @@
 				"adjusted_level": 6,
 				"points": -6
 			},
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -4
-				}
-			],
 			"calc": {
 				"level": 11,
 				"rsl": "HT+1"
 			}
 		},
 		{
-			"id": "3e71e397-02d9-4000-95ef-394030baab78",
-			"type": "skill",
+			"id": "swbywq2vHhylswitN",
 			"name": "Climbing",
 			"reference": "DFA74",
 			"tags": [
@@ -4419,8 +4559,14 @@
 				"Street"
 			],
 			"difficulty": "dx/a",
-			"points": 2,
 			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
@@ -4428,20 +4574,13 @@
 				"adjusted_level": 9,
 				"points": -9
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				}
-			],
 			"calc": {
 				"level": 18,
 				"rsl": "DX+4"
 			}
 		},
 		{
-			"id": "0c5faec6-635e-4b1a-8446-77b5ee9e9c48",
-			"type": "skill",
+			"id": "shvJJURvTmeeQDGu1",
 			"name": "Gambling",
 			"reference": "B197",
 			"tags": [
@@ -4450,14 +4589,6 @@
 				"Street"
 			],
 			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4465,19 +4596,32 @@
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Statistics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Statistics"
+					},
 					"modifier": -5
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "IQ-1"
 			}
 		},
 		{
-			"id": "d3cd8c92-c10a-4dcb-8f50-368cc6ec5bfd",
-			"type": "skill",
+			"id": "s1AnswDPSFwcR670e",
 			"name": "Camouflage",
 			"reference": "B183",
 			"tags": [
@@ -4486,16 +4630,6 @@
 				"Outdoor"
 			],
 			"difficulty": "iq/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Survival",
-				"specialization": "Woodlands",
-				"modifier": -2,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4503,18 +4637,36 @@
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
 					"modifier": -2
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Survival"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Woodlands"
+				},
+				"modifier": -2,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ+0"
 			}
 		},
 		{
-			"id": "1816f847-fed9-4d38-9c8b-e461f74554d9",
-			"type": "skill",
+			"id": "seJS-kvTtvNCdtlbB",
 			"name": "Urban Survival",
 			"reference": "DFA94",
 			"tags": [
@@ -4523,28 +4675,27 @@
 				"Street"
 			],
 			"difficulty": "per/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "per",
 					"modifier": -5
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per+0"
 			}
 		},
 		{
-			"id": "9b4ba3ef-6bac-4007-b902-7c0103a420d5",
-			"type": "skill",
+			"id": "s4pLeN_baDHU3bwBd",
 			"name": "Fast-Talk",
 			"reference": "DFA76",
 			"tags": [
@@ -4554,14 +4705,6 @@
 				"Street"
 			],
 			"difficulty": "iq/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4569,45 +4712,54 @@
 				},
 				{
 					"type": "skill",
-					"name": "Acting",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acting"
+					},
 					"modifier": -5
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ+0"
 			}
 		},
 		{
-			"id": "4043ad1f-b6a6-4ae1-b313-b2f96cd97436",
-			"type": "skill",
+			"id": "sLebWz21ljeQYQ2gY",
 			"name": "Lip Reading",
 			"reference": "B205",
 			"tags": [
 				"Spy"
 			],
 			"difficulty": "per/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -10,
-				"level": -1,
-				"adjusted_level": -1
-			},
 			"defaults": [
 				{
 					"type": "per",
 					"modifier": -10
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -10,
+				"level": -2,
+				"adjusted_level": -2
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per+0"
 			}
 		},
 		{
-			"id": "7f335bd3-8865-4631-b644-994aa48d423e",
-			"type": "skill",
+			"id": "sj-pdQudEweAd9kMd",
 			"name": "Detect Lies",
 			"reference": "DFA75",
 			"tags": [
@@ -4616,14 +4768,6 @@
 				"Spy"
 			],
 			"difficulty": "per/h",
-			"points": 2,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -6,
-				"level": 3,
-				"adjusted_level": 3,
-				"points": -3
-			},
 			"defaults": [
 				{
 					"type": "per",
@@ -4631,23 +4775,36 @@
 				},
 				{
 					"type": "skill",
-					"name": "Body Language",
+					"name": {
+						"compare": "is",
+						"qualifier": "Body Language"
+					},
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Psychology",
+					"name": {
+						"compare": "is",
+						"qualifier": "Psychology"
+					},
 					"modifier": -4
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -6,
+				"level": 2,
+				"adjusted_level": 2,
+				"points": -2
+			},
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "Per-1"
 			}
 		},
 		{
-			"id": "2152a9b1-2258-4aaf-a940-803ca96d08ff",
-			"type": "skill",
+			"id": "sWkLLZdQ6uzOricV0",
 			"name": "Dancing",
 			"reference": "B187",
 			"tags": [
@@ -4655,6 +4812,12 @@
 				"Entertainment"
 			],
 			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
 			"points": 1,
 			"defaulted_from": {
 				"type": "dx",
@@ -4663,20 +4826,13 @@
 				"adjusted_level": 9,
 				"points": -9
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				}
-			],
 			"calc": {
 				"level": 13,
 				"rsl": "DX-1"
 			}
 		},
 		{
-			"id": "9cb2909b-bc95-4d73-a2a8-88a36150f01d",
-			"type": "skill",
+			"id": "shSST4IixVvZlPhOV",
 			"name": "Heraldry",
 			"reference": "DFA77",
 			"tags": [
@@ -4684,14 +4840,6 @@
 				"Social"
 			],
 			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4699,18 +4847,28 @@
 				},
 				{
 					"type": "skill",
-					"name": "Savoir-Faire",
+					"name": {
+						"compare": "is",
+						"qualifier": "Savoir-Faire"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "IQ-1"
 			}
 		},
 		{
-			"id": "c269842a-3942-41b1-96d4-9887127937a6",
-			"type": "skill",
+			"id": "si6zV84hwD7O8MP5R",
 			"name": "Connoisseur",
 			"reference": "B185,MA56",
 			"tags": [
@@ -4721,28 +4879,27 @@
 			],
 			"specialization": "Temperos",
 			"difficulty": "iq/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "iq",
 					"modifier": -5
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ+0"
 			}
 		},
 		{
-			"id": "fc9f86ed-f276-4af9-9427-ab9c5543a617",
-			"type": "skill",
+			"id": "swzJhSf5mBDd-NFZj",
 			"name": "Intimidation",
 			"reference": "B202",
 			"tags": [
@@ -4752,14 +4909,6 @@
 				"Street"
 			],
 			"difficulty": "will/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "will",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "will",
@@ -4767,18 +4916,28 @@
 				},
 				{
 					"type": "skill",
-					"name": "Acting",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acting"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "will",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "Will-1"
 			}
 		},
 		{
-			"id": "a97d88ce-9c41-4e55-98f4-efa47dfd1311",
-			"type": "skill",
+			"id": "s2Rvma8D3rjCco-Zf",
 			"name": "Diplomacy",
 			"reference": "B187",
 			"tags": [
@@ -4787,14 +4946,6 @@
 				"Social"
 			],
 			"difficulty": "iq/h",
-			"points": 4,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -6,
-				"level": 3,
-				"adjusted_level": 3,
-				"points": -3
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -4802,18 +4953,28 @@
 				},
 				{
 					"type": "skill",
-					"name": "Politics",
+					"name": {
+						"compare": "is",
+						"qualifier": "Politics"
+					},
 					"modifier": -6
 				}
 			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 2,
+				"adjusted_level": 2,
+				"points": -2
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ+0"
 			}
 		},
 		{
-			"id": "45a7895e-c261-48ed-8fc8-c86e4e2b3fd5",
-			"type": "skill",
+			"id": "sULniYQ2qit-M37zl",
 			"name": "Knife",
 			"reference": "B208",
 			"tags": [
@@ -4822,6 +4983,36 @@
 				"Weapon"
 			],
 			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Force Sword"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Main-Gauche"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shortsword"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
 			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
@@ -4830,35 +5021,13 @@
 				"adjusted_level": 10,
 				"points": -10
 			},
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Force Sword",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Main-Gauche",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Shortsword",
-					"modifier": -3
-				},
-				{
-					"type": "dx",
-					"modifier": -4
-				}
-			],
 			"calc": {
 				"level": 16,
 				"rsl": "DX+2"
 			}
 		},
 		{
-			"id": "4d216519-4885-4811-b154-309d0bf7eb93",
-			"type": "skill",
+			"id": "sh0KZpcRXen4z6e7N",
 			"name": "Throwing",
 			"reference": "DFA91",
 			"tags": [
@@ -4868,6 +5037,20 @@
 				"Weapon"
 			],
 			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dropping"
+					},
+					"modifier": -4
+				}
+			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
@@ -4876,25 +5059,13 @@
 				"adjusted_level": 11,
 				"points": -11
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Dropping",
-					"modifier": -4
-				}
-			],
 			"calc": {
 				"level": 15,
 				"rsl": "DX+1"
 			}
 		},
 		{
-			"id": "8023f049-9b60-4023-8939-ae8261e1eeee",
-			"type": "skill",
+			"id": "s8ftc58-oO8VDKd9V",
 			"name": "Thrown Weapon",
 			"reference": "DFA91",
 			"tags": [
@@ -4904,6 +5075,12 @@
 			],
 			"specialization": "Knife",
 			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
 			"points": 4,
 			"defaulted_from": {
 				"type": "dx",
@@ -4912,20 +5089,13 @@
 				"adjusted_level": 10,
 				"points": -10
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				}
-			],
 			"calc": {
 				"level": 17,
 				"rsl": "DX+3"
 			}
 		},
 		{
-			"id": "6516415d-c68f-42fa-bab6-22fba34652ff",
-			"type": "skill",
+			"id": "sNvYqT-Hqsl4D-JIr",
 			"name": "Sling",
 			"reference": "DFA83",
 			"tags": [
@@ -4934,6 +5104,12 @@
 				"Weapon"
 			],
 			"difficulty": "dx/h",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -6
+				}
+			],
 			"points": 1,
 			"defaulted_from": {
 				"type": "dx",
@@ -4942,20 +5118,13 @@
 				"adjusted_level": 8,
 				"points": -8
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -6
-				}
-			],
 			"calc": {
 				"level": 13,
 				"rsl": "DX-1"
 			}
 		},
 		{
-			"id": "8a5d777d-05ef-433b-bba9-923f2b743611",
-			"type": "skill",
+			"id": "sotEpee1EVaHljBPD",
 			"name": "Innate Attack",
 			"reference": "B201",
 			"tags": [
@@ -4965,6 +5134,20 @@
 			],
 			"specialization": "Projectile",
 			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Innate Attack"
+					},
+					"modifier": -2
+				}
+			],
 			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
@@ -4973,25 +5156,13 @@
 				"adjusted_level": 10,
 				"points": -10
 			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Innate Attack",
-					"modifier": -2
-				}
-			],
 			"calc": {
 				"level": 16,
 				"rsl": "DX+2"
 			}
 		},
 		{
-			"id": "7d799f9c-a2d2-4ec0-8011-f157b1bdca1b",
-			"type": "skill",
+			"id": "sPkBT2KArUGp3kAuM",
 			"name": "Cartography",
 			"reference": "DFA74",
 			"tags": [
@@ -5001,14 +5172,6 @@
 				"Social Sciences"
 			],
 			"difficulty": "iq/a",
-			"points": 4,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -5016,29 +5179,48 @@
 				},
 				{
 					"type": "skill",
-					"name": "Geography",
+					"name": {
+						"compare": "is",
+						"qualifier": "Geography"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Surveying",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mathematics"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Surveying"
+					},
 					"modifier": -2
 				},
 				{
 					"type": "skill",
-					"name": "Navigation",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
 					"modifier": -4
 				}
 			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+1"
 			}
 		},
 		{
-			"id": "09c23846-804a-4011-8975-e4c5072b5ba6",
-			"type": "skill",
+			"id": "swu8_Dl4C69gdPr3p",
 			"name": "Tracking",
 			"reference": "B226",
 			"tags": [
@@ -5046,14 +5228,6 @@
 				"Outdoor"
 			],
 			"difficulty": "per/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "per",
@@ -5061,35 +5235,37 @@
 				},
 				{
 					"type": "skill",
-					"name": "Naturalist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
 					"modifier": -5
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per+0"
 			}
 		},
 		{
-			"id": "dc84cd9f-edbb-4c7b-ad50-c939cfaed550",
-			"type": "skill",
+			"id": "sc49btoyuU7hnRVSc",
 			"name": "Area Knowledge",
 			"reference": "B176",
-			"notes": "All important businesses, streets, citizens, leaders, etc.",
+			"local_notes": "All important businesses, streets, citizens, leaders, etc.",
 			"tags": [
 				"Everyman",
 				"Knowledge"
 			],
 			"specialization": "Calenor; Lived there",
 			"difficulty": "iq/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -5097,18 +5273,28 @@
 				},
 				{
 					"type": "skill",
-					"name": "Geography",
+					"name": {
+						"compare": "is",
+						"qualifier": "Geography"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "IQ+0"
 			}
 		},
 		{
-			"id": "34a3ec63-c917-469d-8805-d361acd03940",
-			"type": "skill",
+			"id": "sVxZHYqLi9Rd_g5ok",
 			"name": "Survival",
 			"reference": "DFA90",
 			"tags": [
@@ -5117,16 +5303,6 @@
 			],
 			"specialization": "Woodlands",
 			"difficulty": "per/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Survival",
-				"specialization": "Mountain",
-				"modifier": -3,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
-			},
 			"defaults": [
 				{
 					"type": "per",
@@ -5134,60 +5310,120 @@
 				},
 				{
 					"type": "skill",
-					"name": "Naturalist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Arctic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Desert",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Island/Beach",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Jungle",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Mountain",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Mountain"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Plains",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Plains"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Swampland",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Survival"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Mountain"
+				},
+				"modifier": -3,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
 			"calc": {
-				"level": 9,
+				"level": 8,
 				"rsl": "Per+0"
 			}
 		},
 		{
-			"id": "ddfcb493-541a-461a-88d3-49f6a0d8e963",
-			"type": "skill",
+			"id": "sJoChbIY5a3Tpsw2S",
 			"name": "Survival",
 			"reference": "B223",
 			"tags": [
@@ -5196,14 +5432,6 @@
 			],
 			"specialization": "Plains",
 			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
 			"defaults": [
 				{
 					"type": "per",
@@ -5211,60 +5439,112 @@
 				},
 				{
 					"type": "skill",
-					"name": "Naturalist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Arctic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Desert",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Island/Beach",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Jungle",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Mountain",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Mountain"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Swampland",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Woodlands",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Woodlands"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 3,
+				"adjusted_level": 3,
+				"points": -3
+			},
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "Per-1"
 			}
 		},
 		{
-			"id": "88a75852-947d-4021-aed9-0c371ce7d693",
-			"type": "skill",
+			"id": "slQobtUHhF1Btd0Nk",
 			"name": "Survival",
 			"reference": "B223",
 			"tags": [
@@ -5273,16 +5553,6 @@
 			],
 			"specialization": "Mountain",
 			"difficulty": "per/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Survival",
-				"specialization": "Plains",
-				"modifier": -3,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
-			},
 			"defaults": [
 				{
 					"type": "per",
@@ -5290,60 +5560,120 @@
 				},
 				{
 					"type": "skill",
-					"name": "Naturalist",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Arctic",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Desert",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Island/Beach",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Jungle",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Plains",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Plains"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Swampland",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Survival",
-					"specialization": "Woodlands",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Woodlands"
+					},
 					"modifier": -3
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Survival"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Plains"
+				},
+				"modifier": -3,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
 			"calc": {
-				"level": 8,
+				"level": 7,
 				"rsl": "Per-1"
 			}
 		},
 		{
-			"id": "85b6205d-c13e-45e7-8b17-c75790d245d1",
-			"type": "skill",
+			"id": "spoql8Gn21a94g4kt",
 			"name": "Fast-Draw",
 			"reference": "B194,MA56",
 			"tags": [
@@ -5360,8 +5690,7 @@
 			}
 		},
 		{
-			"id": "d8b94bec-044c-4db1-8c7f-ceeb98db94dd",
-			"type": "skill",
+			"id": "sWpaGCmy_Kxl4_SqP",
 			"name": "Fast-Draw",
 			"reference": "B194,MA56",
 			"tags": [
@@ -5370,8 +5699,8 @@
 				"Weapon"
 			],
 			"specialization": "Stones",
-			"tech_level": "3",
 			"difficulty": "dx/e",
+			"tech_level": "3",
 			"points": 1,
 			"calc": {
 				"level": 15,
@@ -5379,8 +5708,7 @@
 			}
 		},
 		{
-			"id": "464c578f-6f1d-4a5a-8da0-a4ee0980b9e9",
-			"type": "skill",
+			"id": "sH5K9j0-yIUe25W8-",
 			"name": "Fast-Draw",
 			"reference": "B194,MA56",
 			"tags": [
@@ -5397,8 +5725,7 @@
 			}
 		},
 		{
-			"id": "0912243d-8958-4d09-b649-72afb9cce0a1",
-			"type": "skill",
+			"id": "s5pb1FeubT5C_C5GJ",
 			"name": "Fast-Draw",
 			"reference": "B194,MA56",
 			"tags": [
@@ -5415,8 +5742,7 @@
 			}
 		},
 		{
-			"id": "f4a359be-8b90-4830-a019-d0a17151fe78",
-			"type": "skill",
+			"id": "smV06J2M4zMndczJL",
 			"name": "Thaumatology",
 			"reference": "B225",
 			"tags": [
@@ -5424,44 +5750,34 @@
 				"Occult"
 			],
 			"difficulty": "iq/vh",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -7,
-				"level": 2,
-				"adjusted_level": 2,
-				"points": -2
-			},
 			"defaults": [
 				{
 					"type": "iq",
 					"modifier": -7
 				}
 			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -7,
+				"level": 1,
+				"adjusted_level": 1,
+				"points": -1
+			},
 			"calc": {
-				"level": 6,
+				"level": 5,
 				"rsl": "IQ-3"
 			}
 		},
 		{
-			"id": "e1d84e5b-5521-49ee-b3d5-9609c6dc45d8",
-			"type": "skill",
+			"id": "srftbRgfHH3Wt6RdU",
 			"name": "First Aid",
 			"reference": "B195",
 			"tags": [
 				"Everyman",
 				"Medical"
 			],
-			"tech_level": "3",
 			"difficulty": "iq/e",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
-			},
 			"defaults": [
 				{
 					"type": "iq",
@@ -5469,39 +5785,55 @@
 				},
 				{
 					"type": "skill",
-					"name": "Esoteric Medicine"
+					"name": {
+						"compare": "is",
+						"qualifier": "Esoteric Medicine"
+					}
 				},
 				{
 					"type": "skill",
-					"name": "Physician"
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					}
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
 					"modifier": -4
 				}
 			],
+			"tech_level": "3",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
 			"calc": {
-				"level": 10,
+				"level": 9,
 				"rsl": "IQ+1"
 			}
 		},
 		{
-			"id": "35a302d6-c6af-40fb-9698-cbfd505c178e",
-			"type": "skill",
+			"id": "sQSaFfXpTuUIyk8B6",
 			"name": "Tanatopraxist",
 			"difficulty": "iq/a",
 			"points": 4,
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "IQ+2"
 			}
 		}
 	],
 	"equipment": [
 		{
-			"id": "bbd49169-9741-4419-b8b9-4104acfe3b69",
-			"type": "equipment",
+			"id": "eAzIbFHTowrfs3V9G",
 			"description": "Small Knife",
 			"reference": "B272",
 			"tech_level": "0",
@@ -5509,13 +5841,12 @@
 				"Melee Weapon",
 				"Missile Weapon"
 			],
-			"quantity": 4,
-			"value": 30,
-			"weight": "0.5 lb",
+			"base_value": "30",
+			"base_weight": "0.5 lb",
 			"weapons": [
 				{
-					"id": "54c8821c-2118-4bfe-917f-0f67d05daebe",
-					"type": "melee_weapon",
+					"id": "wVNAuf-Omf6I6BMOd",
+					"sv": 1,
 					"damage": {
 						"type": "cut",
 						"st": "sw",
@@ -5525,7 +5856,6 @@
 					"usage": "Swung",
 					"reach": "C,1",
 					"parry": "-1",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -5533,38 +5863,52 @@
 						},
 						{
 							"type": "skill",
-							"name": "Knife"
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Force Sword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Force Sword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Main-Gauche",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Shortsword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Sword!"
+							"name": {
+								"compare": "is",
+								"qualifier": "Sword!"
+							}
 						}
 					],
 					"calc": {
 						"level": 16,
-						"parry": "11",
-						"block": "No",
-						"damage": "2d-2 cut"
+						"damage": "2d-2 cut",
+						"parry": "11"
 					}
 				},
 				{
-					"id": "67ceeb5f-82cd-4f0d-ac4b-96f7aa84d2eb",
-					"type": "melee_weapon",
+					"id": "w2SWu5Sjuxmf0trCT",
+					"sv": 1,
 					"damage": {
 						"type": "imp",
 						"st": "thr",
@@ -5574,7 +5918,6 @@
 					"usage": "Thrust",
 					"reach": "C",
 					"parry": "-1",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "dx",
@@ -5582,38 +5925,52 @@
 						},
 						{
 							"type": "skill",
-							"name": "Knife"
+							"name": {
+								"compare": "is",
+								"qualifier": "Knife"
+							}
 						},
 						{
 							"type": "skill",
-							"name": "Force Sword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Force Sword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Main-Gauche",
+							"name": {
+								"compare": "is",
+								"qualifier": "Main-Gauche"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Shortsword",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shortsword"
+							},
 							"modifier": -3
 						},
 						{
 							"type": "skill",
-							"name": "Sword!"
+							"name": {
+								"compare": "is",
+								"qualifier": "Sword!"
+							}
 						}
 					],
 					"calc": {
 						"level": 16,
-						"parry": "11",
-						"block": "No",
-						"damage": "1d imp"
+						"damage": "1d imp",
+						"parry": "11"
 					}
 				},
 				{
-					"id": "c861b2c4-f6c5-4d81-ae55-a0d59663b2a4",
-					"type": "ranged_weapon",
+					"id": "WR8bHFxuwV7nqrpqL",
+					"sv": 1,
 					"damage": {
 						"type": "imp",
 						"st": "thr",
@@ -5621,7 +5978,6 @@
 					},
 					"strength": "5",
 					"usage": "Thrown",
-					"accuracy": "+0",
 					"range": "x0.5/x1",
 					"rate_of_fire": "1",
 					"shots": "T(1)",
@@ -5633,113 +5989,128 @@
 						},
 						{
 							"type": "skill",
-							"name": "Thrown Weapon",
-							"specialization": "Knife"
+							"name": {
+								"compare": "is",
+								"qualifier": "Thrown Weapon"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Knife"
+							}
 						}
 					],
 					"calc": {
 						"level": 17,
-						"range": "5/11",
-						"damage": "1d imp"
+						"damage": "1d imp",
+						"range": "5/11"
 					}
 				}
 			],
+			"quantity": 4,
 			"equipped": true,
 			"calc": {
+				"value": 30,
 				"extended_value": 120,
+				"weight": "0.5 lb",
 				"extended_weight": "2 lb"
 			}
 		},
 		{
-			"id": "c5feeeaa-d227-4a6d-a168-c1da4b5d9d15",
-			"type": "equipment",
+			"id": "eO2921-7ohvPcWWfh",
 			"description": "Climbing Gear",
 			"reference": "B288",
-			"notes": "Hammer, spikes, carabiners",
+			"local_notes": "Hammer, spikes, carabiners",
 			"tech_level": "2",
 			"tags": [
 				"Camping and Survival Gear"
 			],
+			"base_value": "20",
+			"base_weight": "4 lb",
 			"quantity": 1,
-			"value": 20,
-			"weight": "4 lb",
 			"equipped": true,
 			"calc": {
+				"value": 20,
 				"extended_value": 20,
+				"weight": "4 lb",
 				"extended_weight": "4 lb"
 			}
 		},
 		{
-			"id": "1d56ebc2-402c-4d61-9ce1-fcda0a906102",
-			"type": "equipment",
+			"id": "ecQEV-3W4BqT5NsZK",
 			"description": "Lockpicks",
 			"reference": "B289",
-			"notes": "Basic equipment for Lockpicking skill",
+			"local_notes": "Basic equipment for Lockpicking skill",
 			"tech_level": "3",
 			"tags": [
 				"Law-Enforcement",
 				"Spy Gear",
 				"Thief"
 			],
+			"base_value": "50",
 			"quantity": 1,
-			"value": 50,
 			"equipped": true,
 			"calc": {
+				"value": 50,
 				"extended_value": 50,
+				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
 		},
 		{
-			"id": "dd18c64f-cafd-4d8d-b910-1fd6200f79c9",
-			"type": "equipment",
+			"id": "enLg6Sx1BgIgJ15Ol",
 			"description": "Livro de Tanatopraxia",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
+				"value": 0,
 				"extended_value": 0,
+				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
 		},
 		{
-			"id": "9f7636bb-0995-4cef-b42e-883d8622ee54",
-			"type": "equipment",
+			"id": "ep555D-crBstKZlge",
 			"description": "Frasco com doença dos ferrugianos para infectar o Elias",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
+				"value": 0,
 				"extended_value": 0,
+				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
 		},
 		{
-			"id": "ef0c5f4e-ff3d-45b4-b437-1b9eabc545d3",
-			"type": "equipment",
+			"id": "emy2d6dH9AISl8PGb",
 			"description": "Seringuinha que peguei com o Dr. Dane",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
+				"value": 0,
 				"extended_value": 0,
+				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
 		},
 		{
-			"id": "7f6aeb10-dc34-4cc9-8b7a-2bd350b2bda9",
-			"type": "equipment",
+			"id": "eWeRtzxos6gaMWq4y",
 			"description": "Pergaminho que encontrei na torre",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
+				"value": 0,
 				"extended_value": 0,
+				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-09-16T18:55:45-03:00",
+	"modified_date": "2026-09-30T20:56:58-03:00",
 	"calc": {
 		"swing": "2d+1",
 		"thrust": "1d+1",
