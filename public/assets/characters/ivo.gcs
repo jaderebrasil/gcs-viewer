@@ -1,8 +1,43 @@
 {
 	"version": 5,
 	"id": "AvsgXfyAirMdQSRpX",
-	"total_points": 260,
+	"total_points": 280,
 	"points_record": [
+		{
+			"when": "2026-10-07T15:16:17-03:00",
+			"points": 3,
+			"reason": "Bragança vira médico do SUS"
+		},
+		{
+			"when": "2026-10-07T15:16:01-03:00",
+			"points": 0,
+			"reason": "Maldição do Tofu Confiante (ivo nao estava)"
+		},
+		{
+			"when": "2026-10-07T15:15:53-03:00",
+			"points": 5,
+			"reason": "Polvo"
+		},
+		{
+			"when": "2026-10-07T15:15:42-03:00",
+			"points": 3,
+			"reason": "Zica virus ferrugiano"
+		},
+		{
+			"when": "2026-10-07T15:15:26-03:00",
+			"points": 3,
+			"reason": "Verik e a Sarna Ferrugiana"
+		},
+		{
+			"when": "2026-08-05T15:15:00-03:00",
+			"points": 3,
+			"reason": "Mike baguncinha"
+		},
+		{
+			"when": "2026-07-28T09:17:00-03:00",
+			"points": 3,
+			"reason": "Fim da missão da DG + grupo decide deixar a dungeon"
+		},
 		{
 			"when": "2026-07-21T14:41:00-03:00",
 			"points": 4,
@@ -129,16 +164,185 @@
 			"bottom_margin": "0.25 in",
 			"right_margin": "0.25 in"
 		},
-		"block_layout": [
-			"reactions conditional_modifiers",
-			"melee",
-			"ranged",
-			"traits skills",
-			"spells",
-			"equipment",
-			"other_equipment",
-			"notes"
-		],
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1.25
+							},
+							{
+								"type": "column",
+								"weight": 1.3,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
 		"attributes": [
 			{
 				"id": "st",
@@ -1128,54 +1332,84 @@
 			}
 		},
 		{
-			"id": "tkfZYCRK9kCEuX7XE",
+			"id": "t-i-JdZQxojhv38wN",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tRBGNZTHk6KJgxsCi"
 			},
-			"name": "Weapon Master (Broadsword)",
+			"name": "Weapon Master (@Specialty@)",
 			"reference": "B99,MA48",
 			"tags": [
 				"Advantage",
 				"Mental"
 			],
 			"replacements": {
-				"Specialty": "Shortsword"
+				"Specialty": "Broadsword"
 			},
 			"modifiers": [
 				{
-					"id": "mYrQM_y0mG-LUAq7k",
+					"id": "mcRZVVhLQ8-S8FcMK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mq-5B6sqac0eWpN9C"
+					},
 					"name": "One weapon",
-					"reference": "B99"
+					"reference": "B99",
+					"cost_adj": "20"
 				},
 				{
-					"id": "mFiCq65pfG2Axg2eB",
+					"id": "mHeQCEVROC38ndmnY",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "m5ZomN8Gqjg5FbDdl"
+					},
 					"name": "Two weapons",
 					"reference": "B99",
+					"cost_adj": "25",
 					"disabled": true
 				},
 				{
-					"id": "m1-xN5FViA4YZOqdi",
+					"id": "mn8xH8tDQ3Aai2vcN",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "m1vdexRqQTDHoaYrU"
+					},
 					"name": "Small class",
 					"reference": "B99",
+					"cost_adj": "30",
 					"disabled": true
 				},
 				{
-					"id": "m1e4ZPWuzk1dN2IUR",
+					"id": "myYY9bDTQmcmdsnHa",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mUBZVCGGKcVBtkSy5"
+					},
 					"name": "Medium class",
 					"reference": "B99",
+					"cost_adj": "35",
 					"disabled": true
 				},
 				{
-					"id": "mO74AwsEXRoClr1hy",
+					"id": "mKPBBqI-Q4CWptMHx",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mOYHv5ojPchv_1BpH"
+					},
 					"name": "Large class",
 					"reference": "B99",
+					"cost_adj": "40",
 					"disabled": true
 				}
 			],
 			"calc": {
-				"points": 0
+				"points": 20
 			}
 		},
 		{
@@ -1200,47 +1434,6 @@
 					"base_points": -5,
 					"calc": {
 						"points": -5
-					}
-				},
-				{
-					"id": "tjDJ1puPRVe_WaOOF",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "t5R0c_iujWXeXusIu"
-					},
-					"name": "Vow",
-					"reference": "B161",
-					"local_notes": "@Subject@",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"replacements": {
-						"Subject": "Nunca mostrar seu rosto"
-					},
-					"modifiers": [
-						{
-							"id": "mo5rHTQGT8_kjQZ_C",
-							"name": "Minor",
-							"reference": "B161"
-						},
-						{
-							"id": "m59QizRxAPCoHNZef",
-							"name": "Major",
-							"reference": "B161",
-							"disabled": true
-						},
-						{
-							"id": "mH5UgY2htBDfkvD5U",
-							"name": "Great",
-							"reference": "B161",
-							"disabled": true
-						}
-					],
-					"calc": {
-						"points": 0,
-						"resolved_notes": "Nunca mostrar seu rosto"
 					}
 				},
 				{
@@ -1318,7 +1511,7 @@
 					}
 				},
 				{
-					"id": "t1A76QtQypQmcShrm",
+					"id": "tiKZ8ZU09DJPv2I9u",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -1332,9 +1525,15 @@
 					],
 					"modifiers": [
 						{
-							"id": "mgKG_rW76W4YH9Qmb",
+							"id": "mOlI6vof20rRPPtbH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m6eUyZS9w6DPZKvxq"
+							},
 							"name": "Attractive",
 							"reference": "B21",
+							"cost_adj": "4",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1345,15 +1544,26 @@
 							"disabled": true
 						},
 						{
-							"id": "mP5DE6Nw3n5dJ8DDz",
+							"id": "m3A-4Z4C8lpf1IRnr",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mamcYOmhTN9VaJdgB"
+							},
 							"name": "Average",
 							"reference": "B21",
 							"disabled": true
 						},
 						{
-							"id": "mEpQHLUFp3T4pbaIc",
+							"id": "m6tuYSpqeF2GIY5aP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mH_LYQLrb3U6qrz5M"
+							},
 							"name": "Beautiful",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1364,9 +1574,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mhzwqe8ZxyXSquN9A",
+							"id": "mMmIyluDvFC-zR0Xa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mUCaarOQ6aISZsLi8"
+							},
 							"name": "Beautiful (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1377,9 +1593,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mBIyLYYLVH_9w2gH_",
+							"id": "mwJAJoM9NNgTlv4lm",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mhdlbPNUuppB7jcfS"
+							},
 							"name": "Beautiful (Impressive)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1390,9 +1612,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mYP-2oasi-Qw4r2HG",
+							"id": "mz00oRL1C984HLEYB",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mIQ2vw3Pazczpo4PF"
+							},
 							"name": "Handsome",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1403,9 +1631,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mijcCkEP0DLAo5hIY",
+							"id": "ms2TpDIpS_GSVsYiT",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m10UesvCiYq8yk2o-"
+							},
 							"name": "Handsome (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1416,9 +1650,15 @@
 							"disabled": true
 						},
 						{
-							"id": "m3nTT9t94bzWgTkoX",
+							"id": "mEfwjm48IcevO9OJ-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m0WR8xNMlkd_ndeEs"
+							},
 							"name": "Handsome (Impressive)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1429,9 +1669,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mFqR3lloZ2sLevB2N",
+							"id": "mAddmVfcTgOZSwR0r",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mDp-CMUBUVvEib4lD"
+							},
 							"name": "Hideous",
 							"reference": "B21,B202",
+							"cost_adj": "-16",
 							"features": [
 								{
 									"type": "skill_bonus",
@@ -1450,9 +1696,15 @@
 							]
 						},
 						{
-							"id": "mCLzy43PWFZ9n4rFW",
+							"id": "m9qxvDyvKdrKSK0Ay",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mwU_PPC4K1kG2jw2D"
+							},
 							"name": "Horrific",
 							"reference": "B21,B202",
+							"cost_adj": "-24",
 							"features": [
 								{
 									"type": "skill_bonus",
@@ -1472,15 +1724,26 @@
 							"disabled": true
 						},
 						{
-							"id": "mkJgfLKbqFHaZOrRE",
+							"id": "mZH_rAJCvfWT1PUtE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5QGxJiQW4E_IfiyG"
+							},
 							"name": "Impressive",
 							"reference": "B21",
 							"disabled": true
 						},
 						{
-							"id": "mRFlfHqN5VjbZPW8-",
+							"id": "mrm6Ms1irhOSOP2GM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mChcH2ofF_baKWTw-"
+							},
 							"name": "Monstrous",
 							"reference": "B21,B202",
+							"cost_adj": "-20",
 							"features": [
 								{
 									"type": "skill_bonus",
@@ -1500,16 +1763,28 @@
 							"disabled": true
 						},
 						{
-							"id": "mT040gDSB-DOTmPza",
+							"id": "mi9DPgNmBgoKw6r1A",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5t2WnjBmNr7fPjv4"
+							},
 							"name": "Off-the-Shelf Looks",
 							"reference": "B21",
 							"local_notes": "Halves the usual reaction bonus - adjust manually",
+							"cost_adj": "-50%",
 							"disabled": true
 						},
 						{
-							"id": "mO94PlVXhk86RkLkb",
+							"id": "m_pfad-NUGXf3xa1F",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mO0YBr_9_G2W6AjL3"
+							},
 							"name": "Transcendent",
 							"reference": "B21",
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1520,9 +1795,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mSmD9KY51bEWgzeJ1",
+							"id": "m3FS8GLe76T5tikL-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m92ChCxM8fIJFBLMw"
+							},
 							"name": "Transcendent (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1533,9 +1814,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mjwFKDwKfSbCI8a5B",
+							"id": "mJfvh8JC_PuYmgS5-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mCyLNDrSD3lwB5ymp"
+							},
 							"name": "Transcendent (Impressive)",
 							"reference": "B21",
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1546,9 +1833,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mp9NRShT9NwTACCcs",
+							"id": "mH4JE03iTqZHKR192",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mOgWxFuRVbVwqEKwT"
+							},
 							"name": "Ugly",
 							"reference": "B21",
+							"cost_adj": "-8",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1559,9 +1852,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mvwG-mG9SX55de1kD",
+							"id": "mF6Yn4doral-kyl7F",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m2ifyKuECCiKgM-4Z"
+							},
 							"name": "Unattractive",
 							"reference": "B21",
+							"cost_adj": "-4",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1572,15 +1871,27 @@
 							"disabled": true
 						},
 						{
-							"id": "mER_JGmXB97OGyqUJ",
+							"id": "mkTUp89SXSnzOnvMF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mmkph7Dde7dFWEs4t"
+							},
 							"name": "Universal",
 							"reference": "B21",
+							"cost_adj": "25%",
 							"disabled": true
 						},
 						{
-							"id": "mJTbCql4jEQmZtnWV",
+							"id": "m5tloN0vw3zvVVi9r",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mZQyMA2gJHM05_Wwk"
+							},
 							"name": "Very Beautiful",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1591,9 +1902,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mNEH97MbCnh2KFIrp",
+							"id": "msB2RylNDPs_EXhAF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mui1zNROmPDUd2KBj"
+							},
 							"name": "Very Beautiful (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1604,9 +1921,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mhyJ4FDdGF8yVXi19",
+							"id": "mCFgsk_13a-xdyy0V",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mhdKETgw48O9PQIPK"
+							},
 							"name": "Very Beautiful (Impressive)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1617,9 +1940,15 @@
 							"disabled": true
 						},
 						{
-							"id": "madS8ViAWKOql4Jb5",
+							"id": "mjXNLwT-Jn8p-Y9ON",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mgxWUcYSixy56Yrr4"
+							},
 							"name": "Very Handsome",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1630,9 +1959,15 @@
 							"disabled": true
 						},
 						{
-							"id": "m8VbeL5WwCEkEYTy4",
+							"id": "mY8V3WAwyjAS_FxsQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mfpMU_-AGSyMIzBQW"
+							},
 							"name": "Very Handsome (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1643,9 +1978,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mu1Pc6vBuKJKWXaKL",
+							"id": "mVvV4rX3IWhqP-GbS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m2vNtTTepCl5vzjAE"
+							},
 							"name": "Very Handsome (Impressive)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1657,7 +1998,66 @@
 						}
 					],
 					"calc": {
-						"points": 0
+						"points": -16
+					}
+				},
+				{
+					"id": "t-rvRxr0Ab0f5HSGs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t5R0c_iujWXeXusIu"
+					},
+					"name": "Vow",
+					"reference": "B160",
+					"local_notes": "@Subject@",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"replacements": {
+						"Subject": "Nunca mostrar seu rosto"
+					},
+					"modifiers": [
+						{
+							"id": "maeXQhQoMMEbuFZ67",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m0GUBY-I98uIWCY1d"
+							},
+							"name": "Minor",
+							"reference": "B161",
+							"cost_adj": "-5"
+						},
+						{
+							"id": "mORXsokDGvRCLOWPi",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mEb2DRVHhD3Z8gKm6"
+							},
+							"name": "Major",
+							"reference": "B161",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mipa6T8-TP5LiYg5Y",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mCjYLlUsYNvjX6CBp"
+							},
+							"name": "Great",
+							"reference": "B161",
+							"cost_adj": "-15",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -5,
+						"resolved_notes": "Nunca mostrar seu rosto"
 					}
 				},
 				{
@@ -1773,7 +2173,7 @@
 				}
 			],
 			"calc": {
-				"points": -44
+				"points": -65
 			}
 		}
 	],
@@ -3204,13 +3604,27 @@
 								"weight": "5 lb",
 								"extended_weight": "5 lb"
 							}
+						},
+						{
+							"id": "eQAgi7YU5a_gyGesd",
+							"description": "Machadão Mágico",
+							"legality_class": "4",
+							"base_weight": "8",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0,
+								"extended_value": 0,
+								"weight": "8 lb",
+								"extended_weight": "8 lb"
+							}
 						}
 					],
 					"calc": {
 						"value": 0,
 						"extended_value": 5,
 						"weight": "0 lb",
-						"extended_weight": "13 lb"
+						"extended_weight": "21 lb"
 					}
 				},
 				{
@@ -3534,7 +3948,7 @@
 				"value": 0,
 				"extended_value": 5,
 				"weight": "0 lb",
-				"extended_weight": "122 lb"
+				"extended_weight": "130 lb"
 			}
 		},
 		{
@@ -3712,13 +4126,13 @@
 					],
 					"base_value": "120",
 					"base_weight": "0.5 lb",
-					"quantity": 1,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 120,
-						"extended_value": 120,
+						"extended_value": 0,
 						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
+						"extended_weight": "0 lb"
 					}
 				},
 				{
@@ -3738,13 +4152,13 @@
 					],
 					"base_value": "120",
 					"base_weight": "0.5 lb",
-					"quantity": 1,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 120,
-						"extended_value": 120,
+						"extended_value": 240,
 						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -3764,21 +4178,21 @@
 					],
 					"base_value": "350",
 					"base_weight": "0.5 lb",
-					"quantity": 1,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 350,
-						"extended_value": 350,
+						"extended_value": 700,
 						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
+						"extended_weight": "1 lb"
 					}
 				}
 			],
 			"calc": {
 				"value": 25,
-				"extended_value": 615,
+				"extended_value": 965,
 				"weight": "0.5 lb",
-				"extended_weight": "2 lb"
+				"extended_weight": "2.5 lb"
 			}
 		},
 		{
@@ -3827,13 +4241,13 @@
 					],
 					"base_value": "1",
 					"base_weight": "0.02 lb",
-					"quantity": 14,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 1,
-						"extended_value": 14,
+						"extended_value": 0,
 						"weight": "0.02 lb",
-						"extended_weight": "0.28 lb"
+						"extended_weight": "0 lb"
 					}
 				},
 				{
@@ -3850,21 +4264,21 @@
 					],
 					"base_value": "20",
 					"base_weight": "0.02 lb",
-					"quantity": 2,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 20,
-						"extended_value": 40,
+						"extended_value": 0,
 						"weight": "0.02 lb",
-						"extended_weight": "0.04 lb"
+						"extended_weight": "0 lb"
 					}
 				}
 			],
 			"calc": {
 				"value": 10,
-				"extended_value": 64,
+				"extended_value": 10,
 				"weight": "0.5 lb",
-				"extended_weight": "0.82 lb"
+				"extended_weight": "0.5 lb"
 			}
 		},
 		{
@@ -3972,7 +4386,7 @@
 			"id": "eyfpmTBz4Wj86rncJ",
 			"description": "HP Armor (Max 36)",
 			"base_weight": "0",
-			"quantity": 19,
+			"quantity": 36,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -3994,38 +4408,10 @@
 				"weight": "1 lb",
 				"extended_weight": "1 lb"
 			}
-		},
-		{
-			"id": "ePW2Va6Kf1ACLeqBD",
-			"description": "Ferramenta estranha de Madeira",
-			"legality_class": "4",
-			"base_weight": "1",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "1 lb",
-				"extended_weight": "1 lb"
-			}
-		},
-		{
-			"id": "eQAgi7YU5a_gyGesd",
-			"description": "Machadão Mágico",
-			"legality_class": "4",
-			"base_weight": "8",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "8 lb",
-				"extended_weight": "8 lb"
-			}
 		}
 	],
 	"created_date": "2026-02-11T14:08:43-03:00",
-	"modified_date": "2026-07-28T23:46:42-03:00",
+	"modified_date": "2026-10-07T19:19:29-03:00",
 	"calc": {
 		"swing": "4d",
 		"thrust": "2d",
