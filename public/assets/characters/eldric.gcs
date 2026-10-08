@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 282,
+	"total_points": 285,
 	"points_record": [
+		{
+			"when": "2026-10-07T23:37:25-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-09-30T23:35:07-03:00",
 			"points": 3,
@@ -662,11 +667,11 @@
 		},
 		{
 			"attr_id": "hp",
-			"adj": 5,
+			"adj": 6,
 			"calc": {
-				"value": 11,
-				"current": 11,
-				"points": 10
+				"value": 12,
+				"current": 12,
+				"points": 12
 			}
 		}
 	],
@@ -8981,7 +8986,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-10-07T22:54:37-03:00",
+	"modified_date": "2026-10-07T23:37:38-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
