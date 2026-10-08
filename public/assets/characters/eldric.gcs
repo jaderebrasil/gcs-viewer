@@ -8024,8 +8024,47 @@
 			}
 		},
 		{
+			"id": "eoDvaorrtmUFAzWyq",
+			"description": "Atadura (Tofu)",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eAA9Xd4Rlphczsat7",
+			"description": "Pano saia (Bragança)",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
 			"id": "ercZ_dzfGB7i7V5Cp",
 			"description": "Cabelo de Pip",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eRxfhJl2DE-D7k0XC",
+			"description": "Bigode do ivo",
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
@@ -8453,22 +8492,6 @@
 					}
 				},
 				{
-					"id": "e3xo6sl5LIce4ZA-J",
-					"description": "Poção de mana",
-					"local_notes": "+4 FP",
-					"legality_class": "4",
-					"base_value": "200",
-					"base_weight": "0.5",
-					"quantity": 2,
-					"equipped": true,
-					"calc": {
-						"value": 200,
-						"extended_value": 400,
-						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
 					"id": "e2hZfx4UmM5-h4sNp",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -8489,6 +8512,22 @@
 						"extended_value": 0,
 						"weight": "0.02 lb",
 						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e3xo6sl5LIce4ZA-J",
+					"description": "Poção de mana",
+					"local_notes": "+4 FP",
+					"legality_class": "4",
+					"base_value": "200",
+					"base_weight": "0.5",
+					"quantity": 2,
+					"equipped": true,
+					"calc": {
+						"value": 200,
+						"extended_value": 400,
+						"weight": "0.5 lb",
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -8942,7 +8981,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-10-01T13:00:01-03:00",
+	"modified_date": "2026-10-07T22:54:37-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
