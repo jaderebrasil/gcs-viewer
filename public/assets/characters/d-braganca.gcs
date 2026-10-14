@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 360,
+	"total_points": 363,
 	"points_record": [
+		{
+			"when": "2026-10-07T23:38:44-03:00",
+			"points": 3,
+			"reason": "Camping near Corvos"
+		},
 		{
 			"when": "2026-09-30T23:34:52-03:00",
 			"points": 3,
@@ -3846,6 +3851,400 @@
 			}
 		},
 		{
+			"id": "sZmOAkLhSQgKA39LA",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "siIDxA8TVsLAks6Fd"
+			},
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Plains",
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Mountain"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Woodlands"
+					},
+					"modifier": -3
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "sxHJZiMKMQeQeTpqv",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s9-fP2VS1JbT87n2Y"
+			},
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Woodlands",
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Mountain"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Plains"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
+					"modifier": -3
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Survival"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Mountain"
+				},
+				"modifier": -3,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "s5W_H9kuNXlhWK2yB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sXOtXvNHoEXKv-mDt"
+			},
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Mountain",
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Plains"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Woodlands"
+					},
+					"modifier": -3
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Survival"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Plains"
+				},
+				"modifier": -3,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "Per-1"
+			}
+		},
+		{
 			"id": "siBIOkH73X707CDTf",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3869,6 +4268,50 @@
 					"name": {
 						"compare": "is",
 						"qualifier": "Criminology"
+					},
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "s9QX1yhW0OuSKQfJB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sc366zEnMjuSPgybT"
+			},
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shadowing"
 					},
 					"modifier": -5
 				}
@@ -3921,62 +4364,18 @@
 			}
 		},
 		{
-			"id": "s9QX1yhW0OuSKQfJB",
+			"id": "sCX6oxby-cRuYtWJx",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sc366zEnMjuSPgybT"
+				"id": "sqHRwLcDhuvhQBkhK"
 			},
-			"name": "Observation",
-			"reference": "B211",
+			"name": "Leadership",
+			"reference": "B204",
 			"tags": [
-				"Criminal",
 				"Military",
-				"Police",
-				"Spy",
-				"Street"
+				"Social"
 			],
-			"difficulty": "per/a",
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Shadowing"
-					},
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"calc": {
-				"level": 10,
-				"rsl": "Per-1"
-			}
-		},
-		{
-			"id": "sHKVqRRlMjqzOV6f6",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sF7g-iI4PbTmPfYlP"
-			},
-			"name": "Animal Handling",
-			"reference": "B175",
-			"tags": [
-				"Animal"
-			],
-			"specialization": "Pastel",
 			"difficulty": "iq/a",
 			"defaults": [
 				{
@@ -3998,18 +4397,18 @@
 			}
 		},
 		{
-			"id": "sCX6oxby-cRuYtWJx",
+			"id": "sHKVqRRlMjqzOV6f6",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sqHRwLcDhuvhQBkhK"
+				"id": "sF7g-iI4PbTmPfYlP"
 			},
-			"name": "Leadership",
-			"reference": "B204",
+			"name": "Animal Handling",
+			"reference": "B175",
 			"tags": [
-				"Military",
-				"Social"
+				"Animal"
 			],
+			"specialization": "Pastel",
 			"difficulty": "iq/a",
 			"defaults": [
 				{
@@ -4178,55 +4577,6 @@
 			}
 		},
 		{
-			"id": "sxc6UxkFIKy7SaB2e",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "spOCemdoqBWxoPu5X"
-			},
-			"name": "Physician",
-			"reference": "B213",
-			"tags": [
-				"Medical"
-			],
-			"difficulty": "iq/h",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -7
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "First Aid"
-					},
-					"modifier": -11
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Veterinary"
-					},
-					"modifier": -5
-				}
-			],
-			"tech_level": "3",
-			"points": 16,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -7,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
-			"calc": {
-				"level": 14,
-				"rsl": "IQ+3"
-			}
-		},
-		{
 			"id": "sHTHEUJ2Ia8EJEoCl",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4290,6 +4640,55 @@
 			}
 		},
 		{
+			"id": "sxc6UxkFIKy7SaB2e",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "spOCemdoqBWxoPu5X"
+			},
+			"name": "Physician",
+			"reference": "B213",
+			"tags": [
+				"Medical"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -7
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
+					"modifier": -11
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
+					"modifier": -5
+				}
+			],
+			"tech_level": "3",
+			"points": 16,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -7,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+3"
+			}
+		},
+		{
 			"id": "sXkJU9_b_mKR1pfQ5",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4330,72 +4729,6 @@
 			"calc": {
 				"level": 12,
 				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "sHQaZSskfLPxQfmi4",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "spqmJbuGaJTg1QHKJ"
-			},
-			"name": "Teamster",
-			"reference": "B225",
-			"tags": [
-				"Animal",
-				"Vehicle"
-			],
-			"specialization": "Equines",
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Animal Handling"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Equines"
-					},
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Riding"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Equines"
-					},
-					"modifier": -2
-				}
-			],
-			"points": 2,
-			"defaulted_from": {
-				"type": "skill",
-				"name": {
-					"compare": "is",
-					"qualifier": "Riding"
-				},
-				"specialization": {
-					"compare": "is",
-					"qualifier": "Equines"
-				},
-				"modifier": -2,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ+0"
 			}
 		},
 		{
@@ -4473,6 +4806,72 @@
 			}
 		},
 		{
+			"id": "sHQaZSskfLPxQfmi4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "spqmJbuGaJTg1QHKJ"
+			},
+			"name": "Teamster",
+			"reference": "B225",
+			"tags": [
+				"Animal",
+				"Vehicle"
+			],
+			"specialization": "Equines",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Animal Handling"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Riding"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
+					"modifier": -2
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Riding"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Equines"
+				},
+				"modifier": -2,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "sGBn6r5l5XhwUSBLD",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4489,25 +4888,6 @@
 			"calc": {
 				"level": 11,
 				"rsl": "HT-2"
-			}
-		},
-		{
-			"id": "sWlmm5y0ZubjvoSye",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "s21LagSf5mrYaV8h3"
-			},
-			"name": "Lifting",
-			"reference": "B205",
-			"tags": [
-				"Athletic"
-			],
-			"difficulty": "ht/a",
-			"points": 1,
-			"calc": {
-				"level": 12,
-				"rsl": "HT-1"
 			}
 		},
 		{
@@ -4572,6 +4952,25 @@
 			}
 		},
 		{
+			"id": "sWlmm5y0ZubjvoSye",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s21LagSf5mrYaV8h3"
+			},
+			"name": "Lifting",
+			"reference": "B205",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/a",
+			"points": 1,
+			"calc": {
+				"level": 12,
+				"rsl": "HT-1"
+			}
+		},
+		{
 			"id": "swclXuTngaD4WYDPB",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -4607,17 +5006,18 @@
 			}
 		},
 		{
-			"id": "sz_CtxiRIMZvERuab",
+			"id": "sE1e0ZQ5RJTBBJIOp",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sGf6hR4emD2yDvIOx"
+				"id": "sMCHNMqlaxg-WbLy5"
 			},
-			"name": "Singing",
-			"reference": "B220",
+			"name": "Carousing",
+			"reference": "B183",
 			"tags": [
-				"Arts",
-				"Entertainment"
+				"Criminal",
+				"Social",
+				"Street"
 			],
 			"difficulty": "ht/e",
 			"defaults": [
@@ -4640,18 +5040,17 @@
 			}
 		},
 		{
-			"id": "sE1e0ZQ5RJTBBJIOp",
+			"id": "sz_CtxiRIMZvERuab",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sMCHNMqlaxg-WbLy5"
+				"id": "sGf6hR4emD2yDvIOx"
 			},
-			"name": "Carousing",
-			"reference": "B183",
+			"name": "Singing",
+			"reference": "B220",
 			"tags": [
-				"Criminal",
-				"Social",
-				"Street"
+				"Arts",
+				"Entertainment"
 			],
 			"difficulty": "ht/e",
 			"defaults": [
@@ -5490,6 +5889,31 @@
 			"equipped": true,
 			"children": [
 				{
+					"id": "eyNYOKy_q_BF282-N",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eVW6oMjhnZJN7WlQ_"
+					},
+					"description": "Sapatos",
+					"reference": "B284",
+					"local_notes": "Flexible; Concealable",
+					"tech_level": "1",
+					"tags": [
+						"Footwear"
+					],
+					"base_value": "40",
+					"base_weight": "2 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 40,
+						"extended_value": 40,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
 					"id": "EXxYdbQwkUa89nGu_",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -5553,28 +5977,16 @@
 					}
 				},
 				{
-					"id": "eyNYOKy_q_BF282-N",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "eVW6oMjhnZJN7WlQ_"
-					},
-					"description": "Sapatos",
-					"reference": "B284",
-					"local_notes": "Flexible; Concealable",
-					"tech_level": "1",
-					"tags": [
-						"Footwear"
-					],
-					"base_value": "40",
-					"base_weight": "2 lb",
+					"id": "eWZBj0gcafNz4EsOf",
+					"description": "TESTE",
+					"legality_class": "4",
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 40,
-						"extended_value": 40,
-						"weight": "2 lb",
-						"extended_weight": "2 lb"
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
 					}
 				}
 			],
@@ -5587,7 +5999,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-10-07T13:37:50-03:00",
+	"modified_date": "2026-10-13T21:57:39-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
