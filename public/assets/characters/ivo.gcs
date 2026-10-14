@@ -2626,7 +2626,7 @@
 				"points": -8
 			},
 			"calc": {
-				"level": 8,
+				"level": 10,
 				"rsl": "HT+0"
 			}
 		},
@@ -3020,592 +3020,6 @@
 							}
 						},
 						{
-							"id": "et1EAykJ76g70WREE",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Equipment.eqp",
-								"id": "eA0Al6H5LCgdRrVDL"
-							},
-							"description": "Bastard Sword",
-							"reference": "B271,B274",
-							"tech_level": "3",
-							"tags": [
-								"Melee Weapon"
-							],
-							"base_weight": "5 lb",
-							"weapons": [
-								{
-									"id": "wgJAeBwsJGGkJd2ip",
-									"sv": 1,
-									"damage": {
-										"type": "cut",
-										"st": "sw",
-										"base": "1"
-									},
-									"strength": "11",
-									"usage": "Swung",
-									"usage_notes": "1-Handed",
-									"reach": "1-2",
-									"parry": "0U",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Rapier"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Saber"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Shortsword"
-											},
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 14,
-										"damage": "4d+1 cut",
-										"parry": "11U"
-									}
-								},
-								{
-									"id": "w6G5WYX_musQn81uk",
-									"sv": 1,
-									"damage": {
-										"type": "cr",
-										"st": "thr",
-										"base": "1"
-									},
-									"strength": "11",
-									"usage": "Thrust",
-									"usage_notes": "1-Handed",
-									"reach": "2",
-									"parry": "0U",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Rapier"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Saber"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Shortsword"
-											},
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 14,
-										"damage": "2d+1 cr",
-										"parry": "11U"
-									}
-								},
-								{
-									"id": "w2UIL78tyM5Rij9M3",
-									"sv": 1,
-									"damage": {
-										"type": "cut",
-										"st": "sw",
-										"base": "2"
-									},
-									"strength": "10†",
-									"usage": "Swung",
-									"usage_notes": "2-Handed",
-									"reach": "1-2",
-									"parry": "0",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 10,
-										"damage": "4d+2 cut",
-										"parry": "9"
-									}
-								},
-								{
-									"id": "wYugrFm7EYv8ez6SU",
-									"sv": 1,
-									"damage": {
-										"type": "cr",
-										"st": "thr",
-										"base": "2"
-									},
-									"strength": "10†",
-									"usage": "Thrust",
-									"usage_notes": "2-Handed",
-									"reach": "2",
-									"parry": "0",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 10,
-										"damage": "2d+2 cr",
-										"parry": "9"
-									}
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"value": 0,
-								"extended_value": 0,
-								"weight": "5 lb",
-								"extended_weight": "5 lb"
-							}
-						},
-						{
-							"id": "ezA9dDgvA-yD97RnZ",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Equipment.eqp",
-								"id": "eA0Al6H5LCgdRrVDL"
-							},
-							"description": "Bastard Sword",
-							"reference": "B271,B274",
-							"tech_level": "3",
-							"tags": [
-								"Melee Weapon"
-							],
-							"base_weight": "5 lb",
-							"weapons": [
-								{
-									"id": "wfSNN1ErsLgPd0R7X",
-									"sv": 1,
-									"damage": {
-										"type": "cut",
-										"st": "sw",
-										"base": "1"
-									},
-									"strength": "11",
-									"usage": "Swung",
-									"usage_notes": "1-Handed",
-									"reach": "1-2",
-									"parry": "0U",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Rapier"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Saber"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Shortsword"
-											},
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 14,
-										"damage": "4d+1 cut",
-										"parry": "11U"
-									}
-								},
-								{
-									"id": "wxnRSwcGFcrHVaNUU",
-									"sv": 1,
-									"damage": {
-										"type": "cr",
-										"st": "thr",
-										"base": "1"
-									},
-									"strength": "11",
-									"usage": "Thrust",
-									"usage_notes": "1-Handed",
-									"reach": "2",
-									"parry": "0U",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Rapier"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Saber"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Shortsword"
-											},
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 14,
-										"damage": "2d+1 cr",
-										"parry": "11U"
-									}
-								},
-								{
-									"id": "wnX7BiJjgLyUfE70b",
-									"sv": 1,
-									"damage": {
-										"type": "cut",
-										"st": "sw",
-										"base": "2"
-									},
-									"strength": "10†",
-									"usage": "Swung",
-									"usage_notes": "2-Handed",
-									"reach": "1-2",
-									"parry": "0",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 10,
-										"damage": "4d+2 cut",
-										"parry": "9"
-									}
-								},
-								{
-									"id": "wrnHOG-1f-WvgUah3",
-									"sv": 1,
-									"damage": {
-										"type": "cr",
-										"st": "thr",
-										"base": "2"
-									},
-									"strength": "10†",
-									"usage": "Thrust",
-									"usage_notes": "2-Handed",
-									"reach": "2",
-									"parry": "0",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Force Sword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Broadsword"
-											},
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Two-Handed Sword"
-											}
-										},
-										{
-											"type": "skill",
-											"name": {
-												"compare": "is",
-												"qualifier": "Sword!"
-											}
-										}
-									],
-									"calc": {
-										"level": 10,
-										"damage": "2d+2 cr",
-										"parry": "9"
-									}
-								}
-							],
-							"quantity": 1,
-							"equipped": true,
-							"calc": {
-								"value": 0,
-								"extended_value": 0,
-								"weight": "5 lb",
-								"extended_weight": "5 lb"
-							}
-						},
-						{
 							"id": "eQAgi7YU5a_gyGesd",
 							"description": "Machadão Mágico",
 							"legality_class": "4",
@@ -3624,7 +3038,7 @@
 						"value": 0,
 						"extended_value": 5,
 						"weight": "0 lb",
-						"extended_weight": "21 lb"
+						"extended_weight": "11 lb"
 					}
 				},
 				{
@@ -3948,7 +3362,7 @@
 				"value": 0,
 				"extended_value": 5,
 				"weight": "0 lb",
-				"extended_weight": "130 lb"
+				"extended_weight": "120 lb"
 			}
 		},
 		{
@@ -3984,110 +3398,304 @@
 			"equipped": true,
 			"children": [
 				{
-					"id": "eRxAB44I2rvoxX1tb",
+					"id": "et1EAykJ76g70WREE",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "eLEGjF9a2hWzDLYsr"
+						"id": "eA0Al6H5LCgdRrVDL"
 					},
-					"description": "Traveler's Rations",
-					"reference": "B288",
-					"local_notes": "One meal",
-					"tech_level": "0",
+					"description": "Bastard Sword Quebrada",
+					"reference": "B271,B274",
+					"tech_level": "3",
 					"tags": [
-						"Camping and Survival Gear"
+						"Melee Weapon"
 					],
-					"base_value": "2",
-					"base_weight": "0.5 lb",
-					"quantity": 15,
-					"calc": {
-						"value": 2,
-						"extended_value": 30,
-						"weight": "0.5 lb",
-						"extended_weight": "7.5 lb"
-					}
-				},
-				{
-					"id": "eMgxC_IQBqO043lNp",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "edkDXWj1H2wdRQfys"
-					},
-					"description": "Blanket",
-					"reference": "B288",
-					"tech_level": "1",
-					"tags": [
-						"Camping and Survival Gear"
+					"base_weight": "5 lb",
+					"weapons": [
+						{
+							"id": "wgJAeBwsJGGkJd2ip",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "1"
+							},
+							"strength": "11",
+							"usage": "Swung",
+							"usage_notes": "1-Handed",
+							"reach": "1-2",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Force Sword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Broadsword"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Rapier"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Saber"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Shortsword"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Two-Handed Sword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sword!"
+									}
+								}
+							],
+							"calc": {
+								"level": 14,
+								"damage": "4d+1 cut",
+								"parry": "11U"
+							}
+						},
+						{
+							"id": "w6G5WYX_musQn81uk",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "11",
+							"usage": "Thrust",
+							"usage_notes": "1-Handed",
+							"reach": "2",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Force Sword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Broadsword"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Rapier"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Saber"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Shortsword"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Two-Handed Sword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sword!"
+									}
+								}
+							],
+							"calc": {
+								"level": 14,
+								"damage": "2d+1 cr",
+								"parry": "11U"
+							}
+						},
+						{
+							"id": "w2UIL78tyM5Rij9M3",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "10†",
+							"usage": "Swung",
+							"usage_notes": "2-Handed",
+							"reach": "1-2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Force Sword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Broadsword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Two-Handed Sword"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sword!"
+									}
+								}
+							],
+							"calc": {
+								"level": 10,
+								"damage": "4d+2 cut",
+								"parry": "9"
+							}
+						},
+						{
+							"id": "wYugrFm7EYv8ez6SU",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "2"
+							},
+							"strength": "10†",
+							"usage": "Thrust",
+							"usage_notes": "2-Handed",
+							"reach": "2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Force Sword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Broadsword"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Two-Handed Sword"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sword!"
+									}
+								}
+							],
+							"calc": {
+								"level": 10,
+								"damage": "2d+2 cr",
+								"parry": "9"
+							}
+						}
 					],
-					"base_value": "20",
-					"base_weight": "4 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 20,
-						"extended_value": 20,
-						"weight": "4 lb",
-						"extended_weight": "4 lb"
-					}
-				},
-				{
-					"id": "eQYKlfN3QniDKQ9kD",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Equipment.eqp",
-						"id": "e0z9DCZj3jzgLmFSf"
-					},
-					"description": "Personal Basics",
-					"reference": "B288",
-					"local_notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
-					"tech_level": "0",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"base_value": "5",
-					"base_weight": "1 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 5,
-						"extended_value": 5,
-						"weight": "1 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "eq3J1SnksRydGnccd",
-					"description": "Minor Healing Potion",
-					"base_weight": "0.5",
-					"quantity": 0,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 0,
 						"extended_value": 0,
-						"weight": "0.5 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eMVdz6EYYKIt_iDdW",
-					"description": "Major Healing Potion",
-					"base_weight": "0.5",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.5 lb",
-						"extended_weight": "0 lb"
+						"weight": "5 lb",
+						"extended_weight": "10 lb"
 					}
 				}
 			],
 			"calc": {
 				"value": 60,
-				"extended_value": 115,
+				"extended_value": 60,
 				"weight": "3 lb",
-				"extended_weight": "15.5 lb"
+				"extended_weight": "13 lb"
 			}
 		},
 		{
@@ -4108,91 +3716,11 @@
 			"base_weight": "0.5 lb",
 			"quantity": 1,
 			"equipped": true,
-			"children": [
-				{
-					"id": "evJ-SRbNQnfRsXDx3",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "euvlA6fMuatPysMTC"
-					},
-					"description": "Healing Potion, Minor",
-					"reference": "DFA116",
-					"local_notes": "Heals 1d HP",
-					"tags": [
-						"Drinkable",
-						"Magic Items",
-						"Potions"
-					],
-					"base_value": "120",
-					"base_weight": "0.5 lb",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 120,
-						"extended_value": 0,
-						"weight": "0.5 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eO0bIYhaOCJgRmvOm",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "euvlA6fMuatPysMTC"
-					},
-					"description": "Healing Potion, Minor",
-					"reference": "DFA116",
-					"local_notes": "Heals 1d HP",
-					"tags": [
-						"Drinkable",
-						"Magic Items",
-						"Potions"
-					],
-					"base_value": "120",
-					"base_weight": "0.5 lb",
-					"quantity": 2,
-					"equipped": true,
-					"calc": {
-						"value": 120,
-						"extended_value": 240,
-						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "eEfst3ULFlqnNzLEa",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "edGd50pmN1LwfRVn4"
-					},
-					"description": "Healing Potion, Major",
-					"reference": "DFA116",
-					"local_notes": "Heals 2d HP",
-					"tags": [
-						"Drinkable",
-						"Magic Items",
-						"Potions"
-					],
-					"base_value": "350",
-					"base_weight": "0.5 lb",
-					"quantity": 2,
-					"equipped": true,
-					"calc": {
-						"value": 350,
-						"extended_value": 700,
-						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
-					}
-				}
-			],
 			"calc": {
 				"value": 25,
-				"extended_value": 965,
+				"extended_value": 25,
 				"weight": "0.5 lb",
-				"extended_weight": "2.5 lb"
+				"extended_weight": "0.5 lb"
 			}
 		},
 		{
@@ -4226,54 +3754,6 @@
 			},
 			"quantity": 1,
 			"equipped": true,
-			"children": [
-				{
-					"id": "eWW1wKaCV7HH28tOj",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eEPtNvuOsmSOBBW5_"
-					},
-					"description": "Copper Coin",
-					"reference": "DFX73",
-					"tags": [
-						"Money"
-					],
-					"base_value": "1",
-					"base_weight": "0.02 lb",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 1,
-						"extended_value": 0,
-						"weight": "0.02 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eQxKL785IgdlRjXGL",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eSoYpny-U_qOwWAv8"
-					},
-					"description": "Silver Coin",
-					"reference": "DFX73",
-					"tags": [
-						"Money"
-					],
-					"base_value": "20",
-					"base_weight": "0.02 lb",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 20,
-						"extended_value": 0,
-						"weight": "0.02 lb",
-						"extended_weight": "0 lb"
-					}
-				}
-			],
 			"calc": {
 				"value": 10,
 				"extended_value": 10,
@@ -4344,74 +3824,10 @@
 				"weight": "0.25 lb",
 				"extended_weight": "8.25 lb"
 			}
-		},
-		{
-			"id": "ePKTSkW5ZqK5kFXxn",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "e24V1_w4hI1Y5_jks"
-			},
-			"description": "Winter Clothes",
-			"reference": "B266",
-			"local_notes": "Status 0",
-			"tags": [
-				"Clothing"
-			],
-			"base_value": "180",
-			"base_weight": "4 lb",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 180,
-				"extended_value": 180,
-				"weight": "4 lb",
-				"extended_weight": "4 lb"
-			}
-		},
-		{
-			"id": "efvvM6IzRFETIw6va",
-			"description": "Story Point",
-			"legality_class": "0",
-			"quantity": 0,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "eyfpmTBz4Wj86rncJ",
-			"description": "HP Armor (Max 36)",
-			"base_weight": "0",
-			"quantity": 36,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"id": "ep3AVzRgkoHP0DFD4",
-			"description": "Ferramenta estranha de metal",
-			"legality_class": "4",
-			"base_weight": "1",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "1 lb",
-				"extended_weight": "1 lb"
-			}
 		}
 	],
 	"created_date": "2026-02-11T14:08:43-03:00",
-	"modified_date": "2026-10-07T19:19:29-03:00",
+	"modified_date": "2026-10-13T21:39:09-03:00",
 	"calc": {
 		"swing": "4d",
 		"thrust": "2d",
