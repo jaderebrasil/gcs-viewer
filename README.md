@@ -9,16 +9,16 @@ characters in the browser, no installation required with
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
-| **Points:**       |    260 |    291 |    360 |
-| **HP:**           |     11 |     17 |     26 |
+| **Points:**       |    276 |    296 |    363 |
+| **HP:**           |     12 |     17 |     26 |
 | **FP:**           |     10 |     12 |     14 |
 | **DR (torso):**   |      2 |      5 |      7 |
 
 
 ### Active Characters
-- [D'Bragança Pedregal (360)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
-- [Eldric Valen (282)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
-- [Acheron Lontaren (260)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
+- [D'Bragança Pedregal (363)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
+- [Eldric Valen (285)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
+- [Acheron Lontaren (280)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
 - [Leptothele Tofu (276)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
 - [Yun (277)](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs) - by Marukusu
 
