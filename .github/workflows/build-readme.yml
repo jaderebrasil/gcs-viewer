@@ -1,0 +1,40 @@
+name: Build README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public/assets/**/*.gcs"
+      - "scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Uma execucao por vez: dois envios seguidos de ficha nao disputam o push.
+concurrency:
+  group: build-readme
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gerar README.md e public/readme.html
+        run: python3 scripts/build_readme.py
+
+      - name: Commitar se mudou
+        run: |
+          if git diff --quiet -- README.md public/readme.html; then
+            echo "README ja esta atualizado."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md public/readme.html
+          git commit -m "docs: atualiza README"
+          # Outra ficha pode ter chegado enquanto o job rodava.
+          git pull --rebase origin main
+          git push origin HEAD:main
