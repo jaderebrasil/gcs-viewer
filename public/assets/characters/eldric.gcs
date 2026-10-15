@@ -8021,19 +8021,6 @@
 			}
 		},
 		{
-			"id": "eUdvbgl3qyQ-mCeau",
-			"description": "TESTE PLUGIN",
-			"legality_class": "4",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
 			"id": "ekfePZE0UbR3ctJhw",
 			"description": "Cabelo do Jayce",
 			"legality_class": "4",
