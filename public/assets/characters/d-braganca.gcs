@@ -3236,6 +3236,24 @@
 					"calc": {
 						"points": 0
 					}
+				},
+				{
+					"id": "ToA9p4Q9Ri8vuzw2e",
+					"name": "TRUQUES DO PASTEL",
+					"local_notes": "Pastel das Natas foi treinado e agora é capaz de aprender truques incríveis!",
+					"children": [
+						{
+							"id": "tsiwqler9HR_zEjRP",
+							"name": "Salto Mortal",
+							"local_notes": "Pastel é capaz de dar saltos mortais tanto para frente quanto para trás.",
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
 				}
 			],
 			"calc": {
@@ -5999,7 +6017,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-10-13T21:57:39-03:00",
+	"modified_date": "2026-10-14T22:50:20-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
