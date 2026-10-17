@@ -672,11 +672,11 @@
 		},
 		{
 			"attr_id": "hp",
-			"adj": 8,
+			"adj": 7,
 			"calc": {
-				"value": 14,
-				"current": 14,
-				"points": 16
+				"value": 13,
+				"current": 13,
+				"points": 14
 			}
 		}
 	],
@@ -8991,7 +8991,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-10-16T18:34:16-03:00",
+	"modified_date": "2026-10-17T15:53:50-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
