@@ -10,7 +10,7 @@ characters in the browser, no installation required with
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
 | **Points:**       |    277 |    300 |    366 |
-| **HP:**           |     14 |     18 |     26 |
+| **HP:**           |     13 |     18 |     26 |
 | **FP:**           |     10 |     12 |     14 |
 | **DR (torso):**   |      2 |      5 |      7 |
 
