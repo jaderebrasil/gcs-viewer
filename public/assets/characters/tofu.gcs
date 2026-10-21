@@ -4334,9 +4334,9 @@
 				"type": "skill",
 				"name": "Stealth",
 				"modifier": -4,
-				"level": 11,
-				"adjusted_level": 11,
-				"points": 12
+				"level": 12,
+				"adjusted_level": 12,
+				"points": 16
 			},
 			"defaults": [
 				{
@@ -4355,8 +4355,8 @@
 				}
 			],
 			"calc": {
-				"level": 11,
-				"rsl": "IQ+3"
+				"level": 12,
+				"rsl": "IQ+4"
 			}
 		},
 		{
@@ -4468,7 +4468,7 @@
 				"Street"
 			],
 			"difficulty": "dx/a",
-			"points": 4,
+			"points": 8,
 			"encumbrance_penalty_multiplier": 1,
 			"defaulted_from": {
 				"type": "dx",
@@ -4488,8 +4488,8 @@
 				}
 			],
 			"calc": {
-				"level": 16,
-				"rsl": "DX+2"
+				"level": 17,
+				"rsl": "DX+3"
 			}
 		},
 		{
@@ -5679,6 +5679,44 @@
 				"level": 10,
 				"rsl": "IQ+2"
 			}
+		},
+		{
+			"id": "3d9021b7-efd7-4675-a86c-af0412e754c0",
+			"type": "skill",
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Shadowing",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": 1
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			],
+			"calc": {
+				"level": 8,
+				"rsl": "Per+0"
+			}
 		}
 	],
 	"equipment": [
@@ -5935,7 +5973,7 @@
 		}
 	],
 	"created_date": "2026-03-18T00:15:11-03:00",
-	"modified_date": "2026-10-07T22:44:30-03:00",
+	"modified_date": "2026-10-21T19:30:36-03:00",
 	"calc": {
 		"swing": "2d+2",
 		"thrust": "1d+1",
