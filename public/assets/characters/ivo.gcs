@@ -2628,7 +2628,7 @@
 				"points": -8
 			},
 			"calc": {
-				"level": 8,
+				"level": 10,
 				"rsl": "HT+0"
 			}
 		},
@@ -4136,65 +4136,13 @@
 						"weight": "0.5 lb",
 						"extended_weight": "0 lb"
 					}
-				},
-				{
-					"id": "eO0bIYhaOCJgRmvOm",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "euvlA6fMuatPysMTC"
-					},
-					"description": "Healing Potion, Minor",
-					"reference": "DFA116",
-					"local_notes": "Heals 1d HP",
-					"tags": [
-						"Drinkable",
-						"Magic Items",
-						"Potions"
-					],
-					"base_value": "120",
-					"base_weight": "0.5 lb",
-					"quantity": 2,
-					"equipped": true,
-					"calc": {
-						"value": 120,
-						"extended_value": 240,
-						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "eEfst3ULFlqnNzLEa",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "edGd50pmN1LwfRVn4"
-					},
-					"description": "Healing Potion, Major",
-					"reference": "DFA116",
-					"local_notes": "Heals 2d HP",
-					"tags": [
-						"Drinkable",
-						"Magic Items",
-						"Potions"
-					],
-					"base_value": "350",
-					"base_weight": "0.5 lb",
-					"quantity": 2,
-					"equipped": true,
-					"calc": {
-						"value": 350,
-						"extended_value": 700,
-						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
-					}
 				}
 			],
 			"calc": {
 				"value": 25,
-				"extended_value": 965,
+				"extended_value": 25,
 				"weight": "0.5 lb",
-				"extended_weight": "2.5 lb"
+				"extended_weight": "0.5 lb"
 			}
 		},
 		{
@@ -4228,54 +4176,6 @@
 			},
 			"quantity": 1,
 			"equipped": true,
-			"children": [
-				{
-					"id": "eWW1wKaCV7HH28tOj",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eEPtNvuOsmSOBBW5_"
-					},
-					"description": "Copper Coin",
-					"reference": "DFX73",
-					"tags": [
-						"Money"
-					],
-					"base_value": "1",
-					"base_weight": "0.02 lb",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 1,
-						"extended_value": 0,
-						"weight": "0.02 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "eQxKL785IgdlRjXGL",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eSoYpny-U_qOwWAv8"
-					},
-					"description": "Silver Coin",
-					"reference": "DFX73",
-					"tags": [
-						"Money"
-					],
-					"base_value": "20",
-					"base_weight": "0.02 lb",
-					"quantity": 0,
-					"equipped": true,
-					"calc": {
-						"value": 20,
-						"extended_value": 0,
-						"weight": "0.02 lb",
-						"extended_weight": "0 lb"
-					}
-				}
-			],
 			"calc": {
 				"value": 10,
 				"extended_value": 10,
@@ -4385,19 +4285,6 @@
 			}
 		},
 		{
-			"id": "eyfpmTBz4Wj86rncJ",
-			"description": "HP Armor (Max 36)",
-			"base_weight": "0",
-			"quantity": 36,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "0 lb",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
 			"id": "ep3AVzRgkoHP0DFD4",
 			"description": "Ferramenta estranha de metal",
 			"legality_class": "4",
@@ -4413,7 +4300,7 @@
 		}
 	],
 	"created_date": "2026-02-11T14:08:43-03:00",
-	"modified_date": "2026-10-21T21:44:32-03:00",
+	"modified_date": "2026-10-21T21:47:41-03:00",
 	"calc": {
 		"swing": "4d",
 		"thrust": "2d",
