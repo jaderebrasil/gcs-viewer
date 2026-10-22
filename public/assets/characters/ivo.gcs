@@ -1,8 +1,38 @@
 {
 	"version": 5,
 	"id": "AvsgXfyAirMdQSRpX",
-	"total_points": 263,
+	"total_points": 280,
 	"points_record": [
+		{
+			"when": "2026-10-07T15:16:17-03:00",
+			"points": 3,
+			"reason": "Bragança vira médico do SUS"
+		},
+		{
+			"when": "2026-10-07T15:16:01-03:00",
+			"points": 0,
+			"reason": "Maldição do Tofu Confiante (ivo nao estava)"
+		},
+		{
+			"when": "2026-10-07T15:15:53-03:00",
+			"points": 5,
+			"reason": "Polvo"
+		},
+		{
+			"when": "2026-10-07T15:15:42-03:00",
+			"points": 3,
+			"reason": "Zica virus ferrugiano"
+		},
+		{
+			"when": "2026-10-07T15:15:26-03:00",
+			"points": 3,
+			"reason": "Verik e a Sarna Ferrugiana"
+		},
+		{
+			"when": "2026-08-05T15:15:00-03:00",
+			"points": 3,
+			"reason": "Mike baguncinha"
+		},
 		{
 			"when": "2026-07-28T09:17:00-03:00",
 			"points": 3,
@@ -120,7 +150,7 @@
 		"gender": "Male",
 		"height": "6'3.6\"",
 		"weight": "320 lb",
-		"player_name": "DESKTOP-SPELIJ1\\Eduardo Montenegro",
+		"player_name": "Lucas",
 		"title": "O Cavaleiro Encoberto",
 		"tech_level": "3",
 		"portrait": "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"
@@ -1304,54 +1334,84 @@
 			}
 		},
 		{
-			"id": "tkfZYCRK9kCEuX7XE",
+			"id": "t-i-JdZQxojhv38wN",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tRBGNZTHk6KJgxsCi"
 			},
-			"name": "Weapon Master (Broadsword)",
+			"name": "Weapon Master (@Specialty@)",
 			"reference": "B99,MA48",
 			"tags": [
 				"Advantage",
 				"Mental"
 			],
 			"replacements": {
-				"Specialty": "Shortsword"
+				"Specialty": "Broadsword"
 			},
 			"modifiers": [
 				{
-					"id": "mYrQM_y0mG-LUAq7k",
+					"id": "mcRZVVhLQ8-S8FcMK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mq-5B6sqac0eWpN9C"
+					},
 					"name": "One weapon",
-					"reference": "B99"
+					"reference": "B99",
+					"cost_adj": "20"
 				},
 				{
-					"id": "mFiCq65pfG2Axg2eB",
+					"id": "mHeQCEVROC38ndmnY",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "m5ZomN8Gqjg5FbDdl"
+					},
 					"name": "Two weapons",
 					"reference": "B99",
+					"cost_adj": "25",
 					"disabled": true
 				},
 				{
-					"id": "m1-xN5FViA4YZOqdi",
+					"id": "mn8xH8tDQ3Aai2vcN",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "m1vdexRqQTDHoaYrU"
+					},
 					"name": "Small class",
 					"reference": "B99",
+					"cost_adj": "30",
 					"disabled": true
 				},
 				{
-					"id": "m1e4ZPWuzk1dN2IUR",
+					"id": "myYY9bDTQmcmdsnHa",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mUBZVCGGKcVBtkSy5"
+					},
 					"name": "Medium class",
 					"reference": "B99",
+					"cost_adj": "35",
 					"disabled": true
 				},
 				{
-					"id": "mO74AwsEXRoClr1hy",
+					"id": "mKPBBqI-Q4CWptMHx",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "mOYHv5ojPchv_1BpH"
+					},
 					"name": "Large class",
 					"reference": "B99",
+					"cost_adj": "40",
 					"disabled": true
 				}
 			],
 			"calc": {
-				"points": 0
+				"points": 20
 			}
 		},
 		{
@@ -1376,47 +1436,6 @@
 					"base_points": -5,
 					"calc": {
 						"points": -5
-					}
-				},
-				{
-					"id": "tjDJ1puPRVe_WaOOF",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "t5R0c_iujWXeXusIu"
-					},
-					"name": "Vow",
-					"reference": "B161",
-					"local_notes": "@Subject@",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"replacements": {
-						"Subject": "Nunca mostrar seu rosto"
-					},
-					"modifiers": [
-						{
-							"id": "mo5rHTQGT8_kjQZ_C",
-							"name": "Minor",
-							"reference": "B161"
-						},
-						{
-							"id": "m59QizRxAPCoHNZef",
-							"name": "Major",
-							"reference": "B161",
-							"disabled": true
-						},
-						{
-							"id": "mH5UgY2htBDfkvD5U",
-							"name": "Great",
-							"reference": "B161",
-							"disabled": true
-						}
-					],
-					"calc": {
-						"points": 0,
-						"resolved_notes": "Nunca mostrar seu rosto"
 					}
 				},
 				{
@@ -1494,7 +1513,7 @@
 					}
 				},
 				{
-					"id": "t1A76QtQypQmcShrm",
+					"id": "tiKZ8ZU09DJPv2I9u",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -1508,9 +1527,15 @@
 					],
 					"modifiers": [
 						{
-							"id": "mgKG_rW76W4YH9Qmb",
+							"id": "mOlI6vof20rRPPtbH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m6eUyZS9w6DPZKvxq"
+							},
 							"name": "Attractive",
 							"reference": "B21",
+							"cost_adj": "4",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1521,15 +1546,26 @@
 							"disabled": true
 						},
 						{
-							"id": "mP5DE6Nw3n5dJ8DDz",
+							"id": "m3A-4Z4C8lpf1IRnr",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mamcYOmhTN9VaJdgB"
+							},
 							"name": "Average",
 							"reference": "B21",
 							"disabled": true
 						},
 						{
-							"id": "mEpQHLUFp3T4pbaIc",
+							"id": "m6tuYSpqeF2GIY5aP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mH_LYQLrb3U6qrz5M"
+							},
 							"name": "Beautiful",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1540,9 +1576,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mhzwqe8ZxyXSquN9A",
+							"id": "mMmIyluDvFC-zR0Xa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mUCaarOQ6aISZsLi8"
+							},
 							"name": "Beautiful (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1553,9 +1595,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mBIyLYYLVH_9w2gH_",
+							"id": "mwJAJoM9NNgTlv4lm",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mhdlbPNUuppB7jcfS"
+							},
 							"name": "Beautiful (Impressive)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1566,9 +1614,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mYP-2oasi-Qw4r2HG",
+							"id": "mz00oRL1C984HLEYB",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mIQ2vw3Pazczpo4PF"
+							},
 							"name": "Handsome",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1579,9 +1633,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mijcCkEP0DLAo5hIY",
+							"id": "ms2TpDIpS_GSVsYiT",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m10UesvCiYq8yk2o-"
+							},
 							"name": "Handsome (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1592,9 +1652,15 @@
 							"disabled": true
 						},
 						{
-							"id": "m3nTT9t94bzWgTkoX",
+							"id": "mEfwjm48IcevO9OJ-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m0WR8xNMlkd_ndeEs"
+							},
 							"name": "Handsome (Impressive)",
 							"reference": "B21",
+							"cost_adj": "12",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1605,9 +1671,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mFqR3lloZ2sLevB2N",
+							"id": "mAddmVfcTgOZSwR0r",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mDp-CMUBUVvEib4lD"
+							},
 							"name": "Hideous",
 							"reference": "B21,B202",
+							"cost_adj": "-16",
 							"features": [
 								{
 									"type": "skill_bonus",
@@ -1626,9 +1698,15 @@
 							]
 						},
 						{
-							"id": "mCLzy43PWFZ9n4rFW",
+							"id": "m9qxvDyvKdrKSK0Ay",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mwU_PPC4K1kG2jw2D"
+							},
 							"name": "Horrific",
 							"reference": "B21,B202",
+							"cost_adj": "-24",
 							"features": [
 								{
 									"type": "skill_bonus",
@@ -1648,15 +1726,26 @@
 							"disabled": true
 						},
 						{
-							"id": "mkJgfLKbqFHaZOrRE",
+							"id": "mZH_rAJCvfWT1PUtE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5QGxJiQW4E_IfiyG"
+							},
 							"name": "Impressive",
 							"reference": "B21",
 							"disabled": true
 						},
 						{
-							"id": "mRFlfHqN5VjbZPW8-",
+							"id": "mrm6Ms1irhOSOP2GM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mChcH2ofF_baKWTw-"
+							},
 							"name": "Monstrous",
 							"reference": "B21,B202",
+							"cost_adj": "-20",
 							"features": [
 								{
 									"type": "skill_bonus",
@@ -1676,16 +1765,28 @@
 							"disabled": true
 						},
 						{
-							"id": "mT040gDSB-DOTmPza",
+							"id": "mi9DPgNmBgoKw6r1A",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m5t2WnjBmNr7fPjv4"
+							},
 							"name": "Off-the-Shelf Looks",
 							"reference": "B21",
 							"local_notes": "Halves the usual reaction bonus - adjust manually",
+							"cost_adj": "-50%",
 							"disabled": true
 						},
 						{
-							"id": "mO94PlVXhk86RkLkb",
+							"id": "m_pfad-NUGXf3xa1F",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mO0YBr_9_G2W6AjL3"
+							},
 							"name": "Transcendent",
 							"reference": "B21",
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1696,9 +1797,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mSmD9KY51bEWgzeJ1",
+							"id": "m3FS8GLe76T5tikL-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m92ChCxM8fIJFBLMw"
+							},
 							"name": "Transcendent (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1709,9 +1816,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mjwFKDwKfSbCI8a5B",
+							"id": "mJfvh8JC_PuYmgS5-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mCyLNDrSD3lwB5ymp"
+							},
 							"name": "Transcendent (Impressive)",
 							"reference": "B21",
+							"cost_adj": "20",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1722,9 +1835,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mp9NRShT9NwTACCcs",
+							"id": "mH4JE03iTqZHKR192",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mOgWxFuRVbVwqEKwT"
+							},
 							"name": "Ugly",
 							"reference": "B21",
+							"cost_adj": "-8",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1735,9 +1854,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mvwG-mG9SX55de1kD",
+							"id": "mF6Yn4doral-kyl7F",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m2ifyKuECCiKgM-4Z"
+							},
 							"name": "Unattractive",
 							"reference": "B21",
+							"cost_adj": "-4",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1748,15 +1873,27 @@
 							"disabled": true
 						},
 						{
-							"id": "mER_JGmXB97OGyqUJ",
+							"id": "mkTUp89SXSnzOnvMF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mmkph7Dde7dFWEs4t"
+							},
 							"name": "Universal",
 							"reference": "B21",
+							"cost_adj": "25%",
 							"disabled": true
 						},
 						{
-							"id": "mJTbCql4jEQmZtnWV",
+							"id": "m5tloN0vw3zvVVi9r",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mZQyMA2gJHM05_Wwk"
+							},
 							"name": "Very Beautiful",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1767,9 +1904,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mNEH97MbCnh2KFIrp",
+							"id": "msB2RylNDPs_EXhAF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mui1zNROmPDUd2KBj"
+							},
 							"name": "Very Beautiful (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1780,9 +1923,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mhyJ4FDdGF8yVXi19",
+							"id": "mCFgsk_13a-xdyy0V",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mhdKETgw48O9PQIPK"
+							},
 							"name": "Very Beautiful (Impressive)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1793,9 +1942,15 @@
 							"disabled": true
 						},
 						{
-							"id": "madS8ViAWKOql4Jb5",
+							"id": "mjXNLwT-Jn8p-Y9ON",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mgxWUcYSixy56Yrr4"
+							},
 							"name": "Very Handsome",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1806,9 +1961,15 @@
 							"disabled": true
 						},
 						{
-							"id": "m8VbeL5WwCEkEYTy4",
+							"id": "mY8V3WAwyjAS_FxsQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mfpMU_-AGSyMIzBQW"
+							},
 							"name": "Very Handsome (Androgynous)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1819,9 +1980,15 @@
 							"disabled": true
 						},
 						{
-							"id": "mu1Pc6vBuKJKWXaKL",
+							"id": "mVvV4rX3IWhqP-GbS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m2vNtTTepCl5vzjAE"
+							},
 							"name": "Very Handsome (Impressive)",
 							"reference": "B21",
+							"cost_adj": "16",
 							"features": [
 								{
 									"type": "reaction_bonus",
@@ -1833,7 +2000,66 @@
 						}
 					],
 					"calc": {
-						"points": 0
+						"points": -16
+					}
+				},
+				{
+					"id": "t-rvRxr0Ab0f5HSGs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t5R0c_iujWXeXusIu"
+					},
+					"name": "Vow",
+					"reference": "B160",
+					"local_notes": "@Subject@",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"replacements": {
+						"Subject": "Nunca mostrar seu rosto"
+					},
+					"modifiers": [
+						{
+							"id": "maeXQhQoMMEbuFZ67",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m0GUBY-I98uIWCY1d"
+							},
+							"name": "Minor",
+							"reference": "B161",
+							"cost_adj": "-5"
+						},
+						{
+							"id": "mORXsokDGvRCLOWPi",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mEb2DRVHhD3Z8gKm6"
+							},
+							"name": "Major",
+							"reference": "B161",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mipa6T8-TP5LiYg5Y",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mCjYLlUsYNvjX6CBp"
+							},
+							"name": "Great",
+							"reference": "B161",
+							"cost_adj": "-15",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -5,
+						"resolved_notes": "Nunca mostrar seu rosto"
 					}
 				},
 				{
@@ -1949,7 +2175,7 @@
 				}
 			],
 			"calc": {
-				"points": -44
+				"points": -65
 			}
 		}
 	],
@@ -3380,13 +3606,27 @@
 								"weight": "5 lb",
 								"extended_weight": "5 lb"
 							}
+						},
+						{
+							"id": "eQAgi7YU5a_gyGesd",
+							"description": "Machadão Mágico",
+							"legality_class": "4",
+							"base_weight": "8",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0,
+								"extended_value": 0,
+								"weight": "8 lb",
+								"extended_weight": "8 lb"
+							}
 						}
 					],
 					"calc": {
 						"value": 0,
 						"extended_value": 5,
 						"weight": "0 lb",
-						"extended_weight": "13 lb"
+						"extended_weight": "21 lb"
 					}
 				},
 				{
@@ -3710,7 +3950,7 @@
 				"value": 0,
 				"extended_value": 5,
 				"weight": "0 lb",
-				"extended_weight": "122 lb"
+				"extended_weight": "130 lb"
 			}
 		},
 		{
@@ -3888,13 +4128,13 @@
 					],
 					"base_value": "120",
 					"base_weight": "0.5 lb",
-					"quantity": 1,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 120,
-						"extended_value": 120,
+						"extended_value": 0,
 						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
+						"extended_weight": "0 lb"
 					}
 				},
 				{
@@ -3914,13 +4154,13 @@
 					],
 					"base_value": "120",
 					"base_weight": "0.5 lb",
-					"quantity": 1,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 120,
-						"extended_value": 120,
+						"extended_value": 240,
 						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
+						"extended_weight": "1 lb"
 					}
 				},
 				{
@@ -3940,21 +4180,21 @@
 					],
 					"base_value": "350",
 					"base_weight": "0.5 lb",
-					"quantity": 1,
+					"quantity": 2,
 					"equipped": true,
 					"calc": {
 						"value": 350,
-						"extended_value": 350,
+						"extended_value": 700,
 						"weight": "0.5 lb",
-						"extended_weight": "0.5 lb"
+						"extended_weight": "1 lb"
 					}
 				}
 			],
 			"calc": {
 				"value": 25,
-				"extended_value": 615,
+				"extended_value": 965,
 				"weight": "0.5 lb",
-				"extended_weight": "2 lb"
+				"extended_weight": "2.5 lb"
 			}
 		},
 		{
@@ -4003,13 +4243,13 @@
 					],
 					"base_value": "1",
 					"base_weight": "0.02 lb",
-					"quantity": 14,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 1,
-						"extended_value": 14,
+						"extended_value": 0,
 						"weight": "0.02 lb",
-						"extended_weight": "0.28 lb"
+						"extended_weight": "0 lb"
 					}
 				},
 				{
@@ -4026,21 +4266,21 @@
 					],
 					"base_value": "20",
 					"base_weight": "0.02 lb",
-					"quantity": 2,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 20,
-						"extended_value": 40,
+						"extended_value": 0,
 						"weight": "0.02 lb",
-						"extended_weight": "0.04 lb"
+						"extended_weight": "0 lb"
 					}
 				}
 			],
 			"calc": {
 				"value": 10,
-				"extended_value": 64,
+				"extended_value": 10,
 				"weight": "0.5 lb",
-				"extended_weight": "0.82 lb"
+				"extended_weight": "0.5 lb"
 			}
 		},
 		{
@@ -4148,7 +4388,7 @@
 			"id": "eyfpmTBz4Wj86rncJ",
 			"description": "HP Armor (Max 36)",
 			"base_weight": "0",
-			"quantity": 19,
+			"quantity": 36,
 			"equipped": true,
 			"calc": {
 				"value": 0,
@@ -4170,38 +4410,10 @@
 				"weight": "1 lb",
 				"extended_weight": "1 lb"
 			}
-		},
-		{
-			"id": "ePW2Va6Kf1ACLeqBD",
-			"description": "Ferramenta estranha de Madeira",
-			"legality_class": "4",
-			"base_weight": "1",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "1 lb",
-				"extended_weight": "1 lb"
-			}
-		},
-		{
-			"id": "eQAgi7YU5a_gyGesd",
-			"description": "Machadão Mágico",
-			"legality_class": "4",
-			"base_weight": "8",
-			"quantity": 1,
-			"equipped": true,
-			"calc": {
-				"value": 0,
-				"extended_value": 0,
-				"weight": "8 lb",
-				"extended_weight": "8 lb"
-			}
 		}
 	],
 	"created_date": "2026-02-11T14:08:43-03:00",
-	"modified_date": "2026-10-21T21:41:32-03:00",
+	"modified_date": "2026-10-21T21:44:32-03:00",
 	"calc": {
 		"swing": "4d",
 		"thrust": "2d",
