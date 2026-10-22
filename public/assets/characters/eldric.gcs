@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 288,
+	"total_points": 291,
 	"points_record": [
+		{
+			"when": "2026-10-22T00:14:13-03:00",
+			"points": 3,
+			"reason": "XP Sessão"
+		},
 		{
 			"when": "2026-10-14T23:41:58-03:00",
 			"points": 3,
@@ -1257,6 +1262,13 @@
 					"base_points": -10,
 					"calc": {
 						"points": -10
+					}
+				},
+				{
+					"id": "t8lcOoxn7eQcwZiBP",
+					"name": "Dependente Químico",
+					"calc": {
+						"points": 0
 					}
 				},
 				{
@@ -8452,21 +8464,21 @@
 					],
 					"base_value": "1",
 					"base_weight": "0.02 lb",
-					"quantity": 6,
+					"quantity": 49,
 					"equipped": true,
 					"calc": {
 						"value": 1,
-						"extended_value": 6,
+						"extended_value": 49,
 						"weight": "0.02 lb",
-						"extended_weight": "0.12 lb"
+						"extended_weight": "0.98 lb"
 					}
 				}
 			],
 			"calc": {
 				"value": 25,
-				"extended_value": 31,
+				"extended_value": 74,
 				"weight": "0.5 lb",
-				"extended_weight": "0.62 lb"
+				"extended_weight": "1.48 lb"
 			}
 		},
 		{
@@ -8974,7 +8986,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-10-21T21:01:23-03:00",
+	"modified_date": "2026-10-21T21:05:51-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
