@@ -8153,69 +8153,6 @@
 			}
 		},
 		{
-			"id": "EGzEu1KOxJq97GDtv",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Equipment.eqp",
-				"id": "EIdDwHtUiZl0XPKHb"
-			},
-			"description": "Wineskin",
-			"reference": "B288",
-			"tech_level": "0",
-			"tags": [
-				"Camping and Survival Gear"
-			],
-			"base_value": "10",
-			"base_weight": "0.25 lb",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "8 lb"
-						}
-					}
-				]
-			},
-			"quantity": 1,
-			"equipped": true,
-			"children": [
-				{
-					"id": "eSkmV8MBj416PA11v",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
-						"id": "eiGbVfHCbupgT67n2"
-					},
-					"description": "Water",
-					"reference": "DFA111",
-					"local_notes": "1 Gallon",
-					"tags": [
-						"Camping and Survival Gear"
-					],
-					"base_weight": "8 lb",
-					"quantity": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "8 lb",
-						"extended_weight": "8 lb"
-					}
-				}
-			],
-			"calc": {
-				"value": 10,
-				"extended_value": 10,
-				"weight": "0.25 lb",
-				"extended_weight": "8.25 lb"
-			}
-		},
-		{
 			"id": "eS1rM6H_HHVPmpNz0",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -8515,62 +8452,21 @@
 					],
 					"base_value": "1",
 					"base_weight": "0.02 lb",
-					"quantity": 0,
+					"quantity": 6,
 					"equipped": true,
 					"calc": {
 						"value": 1,
-						"extended_value": 0,
+						"extended_value": 6,
 						"weight": "0.02 lb",
-						"extended_weight": "0 lb"
-					}
-				},
-				{
-					"id": "e3xo6sl5LIce4ZA-J",
-					"description": "Poção de mana",
-					"local_notes": "+4 FP",
-					"legality_class": "4",
-					"base_value": "200",
-					"base_weight": "0.5",
-					"quantity": 2,
-					"equipped": true,
-					"calc": {
-						"value": 200,
-						"extended_value": 400,
-						"weight": "0.5 lb",
-						"extended_weight": "1 lb"
-					}
-				},
-				{
-					"id": "eiGobvROtnr-g0Kwy",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Magic/Magic Equipment.eqp",
-						"id": "en3K5VAj04gPAJcc0"
-					},
-					"description": "10 pt Powerstone",
-					"reference": "M20",
-					"tags": [
-						"Powerstone"
-					],
-					"base_value": "0",
-					"base_weight": "0.004 lb",
-					"max_uses": 10,
-					"quantity": 1,
-					"uses": 1,
-					"equipped": true,
-					"calc": {
-						"value": 0,
-						"extended_value": 0,
-						"weight": "0.004 lb",
-						"extended_weight": "0.004 lb"
+						"extended_weight": "0.12 lb"
 					}
 				}
 			],
 			"calc": {
 				"value": 25,
-				"extended_value": 425,
+				"extended_value": 31,
 				"weight": "0.5 lb",
-				"extended_weight": "1.504 lb"
+				"extended_weight": "0.62 lb"
 			}
 		},
 		{
@@ -8605,6 +8501,94 @@
 			"quantity": 1,
 			"equipped": true,
 			"children": [
+				{
+					"id": "eiGobvROtnr-g0Kwy",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic/Magic Equipment.eqp",
+						"id": "en3K5VAj04gPAJcc0"
+					},
+					"description": "10 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"base_value": "0",
+					"base_weight": "0.004 lb",
+					"max_uses": 10,
+					"quantity": 1,
+					"uses": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0.004 lb",
+						"extended_weight": "0.004 lb"
+					}
+				},
+				{
+					"id": "EGzEu1KOxJq97GDtv",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "EIdDwHtUiZl0XPKHb"
+					},
+					"description": "Wineskin",
+					"reference": "B288",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "10",
+					"base_weight": "0.25 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "8 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eSkmV8MBj416PA11v",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Dungeon Fantasy RPG/Dungeon Fantasy RPG Equipment.eqp",
+								"id": "eiGbVfHCbupgT67n2"
+							},
+							"description": "Water",
+							"reference": "DFA111",
+							"local_notes": "1 Gallon",
+							"tags": [
+								"Camping and Survival Gear"
+							],
+							"base_weight": "8 lb",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0,
+								"extended_value": 0,
+								"weight": "8 lb",
+								"extended_weight": "8 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 10,
+						"extended_value": 10,
+						"weight": "0.25 lb",
+						"extended_weight": "8.25 lb"
+					}
+				},
 				{
 					"id": "eDjYnf6038wFbXafd",
 					"source": {
@@ -8662,7 +8646,6 @@
 					},
 					"description": "Personal Basics",
 					"reference": "DFA111",
-					"local_notes": "Basic equipment for camping; -2 to Survival rolls without it",
 					"tags": [
 						"Camping and Survival Gear"
 					],
@@ -8791,9 +8774,9 @@
 			],
 			"calc": {
 				"value": 60,
-				"extended_value": 263.75,
+				"extended_value": 273.75,
 				"weight": "3 lb",
-				"extended_weight": "16.72 lb"
+				"extended_weight": "24.974 lb"
 			}
 		},
 		{
@@ -8991,7 +8974,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-10-17T15:53:50-03:00",
+	"modified_date": "2026-10-21T21:01:23-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
