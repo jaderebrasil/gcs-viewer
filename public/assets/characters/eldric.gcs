@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "ArNm5dwQnKgvHa1XT",
-	"total_points": 291,
+	"total_points": 304,
 	"points_record": [
+		{
+			"when": "2026-10-26T11:02:25-03:00",
+			"points": 13,
+			"reason": "XP Eleições"
+		},
 		{
 			"when": "2026-10-22T00:14:13-03:00",
 			"points": 3,
@@ -588,10 +593,10 @@
 		},
 		{
 			"attr_id": "ht",
-			"adj": 1,
+			"adj": 2,
 			"calc": {
-				"value": 11,
-				"points": 10
+				"value": 12,
+				"points": 20
 			}
 		},
 		{
@@ -654,7 +659,7 @@
 			"attr_id": "basic_speed",
 			"adj": 0,
 			"calc": {
-				"value": 5,
+				"value": 5.25,
 				"points": 0
 			}
 		},
@@ -668,11 +673,11 @@
 		},
 		{
 			"attr_id": "fp",
-			"adj": 3,
+			"adj": 4,
 			"calc": {
-				"value": 14,
-				"current": 14,
-				"points": 9
+				"value": 16,
+				"current": 16,
+				"points": 12
 			}
 		},
 		{
@@ -2861,10 +2866,10 @@
 					},
 					"specialization": "@Specialty@",
 					"difficulty": "iq/h",
-					"points": 1,
+					"points": 2,
 					"calc": {
-						"level": 12,
-						"rsl": "IQ-2"
+						"level": 13,
+						"rsl": "IQ-1"
 					}
 				},
 				{
@@ -2988,12 +2993,12 @@
 					"defaulted_from": {
 						"type": "ht",
 						"modifier": -4,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
 					},
 					"calc": {
-						"level": 14,
+						"level": 15,
 						"rsl": "HT+3"
 					}
 				}
@@ -4038,12 +4043,12 @@
 					"defaulted_from": {
 						"type": "ht",
 						"modifier": -5,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"calc": {
-						"level": 10,
+						"level": 11,
 						"rsl": "HT-1"
 					}
 				},
@@ -4113,12 +4118,12 @@
 					"defaulted_from": {
 						"type": "ht",
 						"modifier": -5,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"calc": {
-						"level": 10,
+						"level": 11,
 						"rsl": "HT-1"
 					}
 				},
@@ -8986,7 +8991,7 @@
 		}
 	],
 	"created_date": "2026-01-07T14:53:01-03:00",
-	"modified_date": "2026-10-21T21:05:51-03:00",
+	"modified_date": "2026-10-26T12:46:06-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
