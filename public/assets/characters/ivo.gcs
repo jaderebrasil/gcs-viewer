@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "AvsgXfyAirMdQSRpX",
-	"total_points": 280,
+	"total_points": 306,
 	"points_record": [
+		{
+			"when": "2026-10-28T20:04:32-03:00",
+			"points": 13,
+			"reason": "DT"
+		},
+		{
+			"when": "2026-10-28T20:00:31-03:00",
+			"points": 13,
+			"reason": "Lula points"
+		},
 		{
 			"when": "2026-10-07T15:16:17-03:00",
 			"points": 3,
@@ -164,16 +174,185 @@
 			"bottom_margin": "0.25 in",
 			"right_margin": "0.25 in"
 		},
-		"block_layout": [
-			"reactions conditional_modifiers",
-			"melee",
-			"ranged",
-			"traits skills",
-			"spells",
-			"equipment",
-			"other_equipment",
-			"notes"
-		],
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1.25
+							},
+							{
+								"type": "column",
+								"weight": 1.3,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
 		"attributes": [
 			{
 				"id": "st",
@@ -593,7 +772,9 @@
 		"modifiers_display": "inline",
 		"notes_display": "inline",
 		"skill_level_adj_display": "tooltip",
-		"show_spell_adj": true
+		"show_spell_adj": true,
+		"buy_percent": 100,
+		"sell_percent": 50
 	},
 	"attributes": [
 		{
@@ -938,7 +1119,7 @@
 					],
 					"calc": {
 						"level": 10,
-						"damage": "2d-1 cr"
+						"damage": "2d+1 cr"
 					}
 				},
 				{
@@ -980,7 +1161,7 @@
 					],
 					"calc": {
 						"level": 10,
-						"damage": "2d cr",
+						"damage": "2d+2 cr",
 						"parry": "9"
 					}
 				},
@@ -1024,7 +1205,7 @@
 					],
 					"calc": {
 						"level": 8,
-						"damage": "2d+1 cr"
+						"damage": "2d+3 cr"
 					}
 				}
 			],
@@ -1156,10 +1337,10 @@
 				}
 			],
 			"can_level": true,
-			"levels": 2,
+			"levels": 6,
 			"calc": {
-				"points": 10,
-				"current_level": 2
+				"points": 30,
+				"current_level": 6
 			}
 		},
 		{
@@ -1176,7 +1357,7 @@
 				"Mental"
 			],
 			"replacements": {
-				"Specialty": "Broadsword"
+				"Specialty": "all bladed weapons"
 			},
 			"modifiers": [
 				{
@@ -1188,7 +1369,8 @@
 					},
 					"name": "One weapon",
 					"reference": "B99",
-					"cost_adj": "20"
+					"cost_adj": "20",
+					"disabled": true
 				},
 				{
 					"id": "mHeQCEVROC38ndmnY",
@@ -1235,12 +1417,53 @@
 					},
 					"name": "Large class",
 					"reference": "B99",
-					"cost_adj": "40",
-					"disabled": true
+					"cost_adj": "40"
+				}
+			],
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Broadsword"
+					},
+					"amount": 2,
+					"per_die": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Two-Handed Sword"
+					},
+					"amount": 2,
+					"per_die": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Knife"
+					},
+					"amount": 1,
+					"per_die": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shortsword"
+					},
+					"amount": 2,
+					"per_die": true
 				}
 			],
 			"calc": {
-				"points": 20
+				"points": 40
 			}
 		},
 		{
@@ -2637,6 +2860,253 @@
 				"level": 18,
 				"rsl": "DX+8"
 			}
+		},
+		{
+			"id": "sabIbMf08VAcYgWkj",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "slOONrK6jDHvcRoGx"
+			},
+			"name": "Knife",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Force Sword"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Main-Gauche"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Shortsword"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sKySGxiqFUVHFGIQE",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sFGzlIfgyVs82Qec9"
+			},
+			"name": "Two-Handed Sword",
+			"reference": "B209",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Broadsword"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Force Sword"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Broadsword"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"modifier": -4,
+				"level": 14,
+				"adjusted_level": 14,
+				"points": 16
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "DX+5"
+			}
+		},
+		{
+			"id": "sQrKqRmSNFBgHcjq8",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s-DdOtFsU7dX4Ttfz"
+			},
+			"name": "Shortsword",
+			"reference": "B209",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Broadsword"
+					},
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Force Sword"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Jitte/Sai"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Knife"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Saber"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Smallsword"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Tonfa"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Broadsword"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"modifier": -2,
+				"level": 16,
+				"adjusted_level": 16,
+				"points": 24
+			},
+			"calc": {
+				"level": 16,
+				"rsl": "DX+6"
+			}
+		},
+		{
+			"id": "svVPOWONUCXqQteqf",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sHxw81LQLjwvQNyP9"
+			},
+			"name": "Shield",
+			"reference": "B220",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"specialization": "Shield",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
+			"points": 12,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "DX+4"
+			}
 		}
 	],
 	"equipment": [
@@ -2771,7 +3241,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "4d+1 cr",
+										"damage": "5d+11 cr",
 										"parry": "13"
 									}
 								},
@@ -2849,7 +3319,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "2d+1 cr",
+										"damage": "2d+7 cr",
 										"parry": "13"
 									}
 								}
@@ -2953,7 +3423,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "4d+1 cut",
+										"damage": "5d+11 cut",
 										"parry": "13U"
 									}
 								},
@@ -3032,7 +3502,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "2d+1 cr",
+										"damage": "2d+7 cr",
 										"parry": "13U"
 									}
 								},
@@ -3086,8 +3556,8 @@
 										}
 									],
 									"calc": {
-										"level": 14,
-										"damage": "4d+2 cut",
+										"level": 15,
+										"damage": "5d+12 cut",
 										"parry": "11"
 									}
 								},
@@ -3141,8 +3611,8 @@
 										}
 									],
 									"calc": {
-										"level": 14,
-										"damage": "2d+2 cr",
+										"level": 15,
+										"damage": "2d+8 cr",
 										"parry": "11"
 									}
 								}
@@ -3167,7 +3637,8 @@
 							"reference": "B271,B274",
 							"tech_level": "3",
 							"tags": [
-								"Melee Weapon"
+								"Melee Weapon",
+								"bladed"
 							],
 							"base_weight": "5 lb",
 							"weapons": [
@@ -3246,7 +3717,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "4d+1 cut",
+										"damage": "5d+11 cut",
 										"parry": "13U"
 									}
 								},
@@ -3325,7 +3796,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "2d+1 cr",
+										"damage": "2d+7 cr",
 										"parry": "13U"
 									}
 								},
@@ -3379,8 +3850,8 @@
 										}
 									],
 									"calc": {
-										"level": 14,
-										"damage": "4d+2 cut",
+										"level": 15,
+										"damage": "5d+12 cut",
 										"parry": "11"
 									}
 								},
@@ -3434,8 +3905,8 @@
 										}
 									],
 									"calc": {
-										"level": 14,
-										"damage": "2d+2 cr",
+										"level": 15,
+										"damage": "2d+8 cr",
 										"parry": "11"
 									}
 								}
@@ -4076,12 +4547,12 @@
 		}
 	],
 	"created_date": "2026-02-11T14:08:43-03:00",
-	"modified_date": "2026-10-21T23:54:46-03:00",
+	"modified_date": "2026-10-28T20:09:34-03:00",
 	"calc": {
-		"swing": "4d",
-		"thrust": "2d",
+		"swing": "5d",
+		"thrust": "2d+2",
 		"basic_lift": "80 lb",
-		"striking_st_bonus": 2,
+		"striking_st_bonus": 6,
 		"dodge_bonus": 1,
 		"parry_bonus": 1,
 		"block_bonus": 1,
