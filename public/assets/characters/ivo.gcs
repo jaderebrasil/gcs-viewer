@@ -1424,9 +1424,9 @@
 				{
 					"type": "weapon_bonus",
 					"selection_type": "weapons_with_required_skill",
-					"name": {
+					"tags": {
 						"compare": "is",
-						"qualifier": "Broadsword"
+						"qualifier": "bladed2"
 					},
 					"amount": 2,
 					"per_die": true
@@ -1434,31 +1434,11 @@
 				{
 					"type": "weapon_bonus",
 					"selection_type": "weapons_with_required_skill",
-					"name": {
+					"tags": {
 						"compare": "is",
-						"qualifier": "Two-Handed Sword"
-					},
-					"amount": 2,
-					"per_die": true
-				},
-				{
-					"type": "weapon_bonus",
-					"selection_type": "weapons_with_required_skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Knife"
+						"qualifier": "bladed1"
 					},
 					"amount": 1,
-					"per_die": true
-				},
-				{
-					"type": "weapon_bonus",
-					"selection_type": "weapons_with_required_skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Shortsword"
-					},
-					"amount": 2,
 					"per_die": true
 				}
 			],
@@ -3241,7 +3221,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "5d+11 cr",
+										"damage": "5d+1 cr",
 										"parry": "13"
 									}
 								},
@@ -3319,7 +3299,7 @@
 									],
 									"calc": {
 										"level": 18,
-										"damage": "2d+7 cr",
+										"damage": "2d+3 cr",
 										"parry": "13"
 									}
 								}
@@ -3344,7 +3324,8 @@
 							"reference": "B271,B274",
 							"tech_level": "3",
 							"tags": [
-								"Melee Weapon"
+								"Melee Weapon",
+								"bladed2"
 							],
 							"base_weight": "5 lb",
 							"weapons": [
@@ -3638,7 +3619,7 @@
 							"tech_level": "3",
 							"tags": [
 								"Melee Weapon",
-								"bladed"
+								"bladed2"
 							],
 							"base_weight": "5 lb",
 							"weapons": [
@@ -4547,7 +4528,7 @@
 		}
 	],
 	"created_date": "2026-02-11T14:08:43-03:00",
-	"modified_date": "2026-10-28T20:09:34-03:00",
+	"modified_date": "2026-10-28T20:17:15-03:00",
 	"calc": {
 		"swing": "5d",
 		"thrust": "2d+2",
