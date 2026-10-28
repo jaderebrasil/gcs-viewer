@@ -21,14 +21,16 @@ characters in the browser, no installation required with
 - [Leptothele Tofu (291)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
 
 ### Dead Characters
-- [Marcusdriel Totinelves](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-marcusdriel.gcs)
-- [Mythadriel Vael’Anorathiel](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-mythadriel.gcs)
-- [Orkarian](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/dead-orkarian.gcs)
+- [Eldric Valen](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/eldric.gcs)
 - [Elnassir Prallen Habbard](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/elnassir.gcs)
+- [Marcusdriel Totinelves](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/marcusdriel.gcs)
+- [Mythadriel Vael’Anorathiel](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/mythadriel.gcs)
+- [Orkarian](https://gcs-viewer.netlify.app/?url=./assets/dead-characters/orkarian.gcs)
 
 ### Abandoned Characters
-- [Orlonn](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/abandoned-orlonn.gcs)
-- [Séraphin d’Arven](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/abandoned-seraphin.gcs)
+- [Orlonn](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/orlonn.gcs)
+- [Séraphin d’Arven](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/seraphin.gcs)
+- [Yun](https://gcs-viewer.netlify.app/?url=./assets/abandoned-characters/yun.gcs)
 
 ---
 
