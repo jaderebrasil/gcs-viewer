@@ -1,8 +1,18 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 369,
+	"total_points": 395,
 	"points_record": [
+		{
+			"when": "2026-10-28T20:29:51-03:00",
+			"points": 13,
+			"reason": "DT"
+		},
+		{
+			"when": "2026-10-28T20:29:36-03:00",
+			"points": 13,
+			"reason": "Lula points"
+		},
 		{
 			"when": "2026-10-22T00:14:43-03:00",
 			"points": 3,
@@ -3834,6 +3844,315 @@
 				"points": -15,
 				"resolved_notes": "Viver sob a Lei da Ferrugem"
 			}
+		},
+		{
+			"id": "TEtYgj4Cu1cUwEZ2f",
+			"name": "Familiar",
+			"children": [
+				{
+					"id": "tzfOvf1FDDZnauCZn",
+					"name": "Forma: Rato",
+					"base_points": 9,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "tHJ5r1_d0bJxCT64I",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tkwSZday2TJZaBIwO"
+					},
+					"name": "Special Rapport (Familiar)",
+					"reference": "B88,P77",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mBdyKZw82gYiMjbAN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mW53rg5nve5MpYHeC"
+							},
+							"name": "One Way",
+							"reference": "P77",
+							"cost_adj": "20%",
+							"disabled": true
+						},
+						{
+							"id": "moxhRNnxiLRZVRZjv",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "meHlb-5TrhB73OzPS"
+							},
+							"name": "Transferable",
+							"reference": "P78",
+							"local_notes": "Own Race",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mBc50OpK52FpmBtEl",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m8Q6abkpORTuEvs8Y"
+							},
+							"name": "Transferable",
+							"reference": "P78",
+							"local_notes": "Living Being",
+							"cost_adj": "150%",
+							"disabled": true
+						},
+						{
+							"id": "mhq1u3W9M6yHp-2SK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mJFz2WyKZU0ESfhVc"
+							},
+							"name": "Transferable",
+							"reference": "P78",
+							"local_notes": "Digital Minds",
+							"cost_adj": "150%",
+							"disabled": true
+						},
+						{
+							"id": "mMzKQVKwpI39a-lHo",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mlGnD3iAMjTRVr-M9"
+							},
+							"name": "Transferable",
+							"reference": "P78",
+							"local_notes": "Any Sapient mind",
+							"cost_adj": "250%",
+							"disabled": true
+						},
+						{
+							"id": "mAeLYK7gv83ezkm_E",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mqoqB3DP1NXL6pSYB"
+							},
+							"name": "Must be Willing or Helpless",
+							"reference": "P78",
+							"cost_adj": "-50%",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tcbJOS5eDoGYjXFUF",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tynHtgvWZmmNOL97D"
+					},
+					"name": "Reduced Consumption",
+					"reference": "B80",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "maXxIxwjsxKSwfdPV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "miLoFraKBg3GM3C-i"
+							},
+							"name": "Cast-Iron Stomach",
+							"reference": "B80",
+							"cost_adj": "-50%"
+						},
+						{
+							"id": "mpvMWJlEWsNezODXC",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mjpeLnFGH518bhWmQ"
+							},
+							"name": "Food Only",
+							"reference": "B80",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "ms48f-uESwW1l3uOD",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mBcQ9jH9m8Lht09BW"
+							},
+							"name": "Water Only",
+							"reference": "B80",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mSjasV0V5M8WV1atX",
+							"name": "GBF",
+							"cost_adj": "-40%"
+						}
+					],
+					"points_per_level": 2,
+					"can_level": true,
+					"levels": 2,
+					"calc": {
+						"points": 1,
+						"current_level": 2
+					}
+				},
+				{
+					"id": "t9NvBSw7DaEquelop",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tldTdgiYUOpNc0Hmq"
+					},
+					"name": "Obscure (@Sense@)",
+					"reference": "B72,P64,PSI16",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"replacements": {
+						"Sense": "Detect, Demon"
+					},
+					"modifiers": [
+						{
+							"id": "m82XlVQmhV_kDAfff",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mlBgNbfDiFqVLcSmy"
+							},
+							"name": "Defensive",
+							"reference": "B72",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mvWnl50dOpo-i5T0S",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mp6F7SGJ-k4LosZIc"
+							},
+							"name": "Extended",
+							"reference": "B72",
+							"local_notes": "@Sense@",
+							"cost_adj": "20%",
+							"calc": {
+								"resolved_notes": "Detect, Demon"
+							}
+						},
+						{
+							"id": "mfvfzXy3CK6u0oT50",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mbh3sIvQd50YbMNiy"
+							},
+							"name": "Ranged",
+							"reference": "B72",
+							"cost_adj": "50%",
+							"disabled": true
+						},
+						{
+							"id": "mORyWKvro7E9drK-E",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mvblQuLolsxW1-fhc"
+							},
+							"name": "Stealthy",
+							"reference": "B72",
+							"cost_adj": "100%"
+						},
+						{
+							"id": "m_mMp_yRxIuzpFlfs",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mKiGAYCiFzMVHDncE"
+							},
+							"name": "Always On",
+							"reference": "B72",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mD3hZmEwdGKOr2nGe",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mGGrwPI1Ip7ld58Qx"
+							},
+							"name": "Limited",
+							"reference": "P65",
+							"local_notes": "@Source@",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mhCZGUE7IrutEzjI_",
+							"name": "GBF",
+							"cost_adj": "-40%"
+						},
+						{
+							"id": "m8tdShOW2Sm4uzLvj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mD6qxjUZVe1mwQ2Mb"
+							},
+							"name": "Limited",
+							"reference": "P65",
+							"local_notes": "@Power@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mMSlQ7pDYwDLybZyN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mma8Mv3An9apoGh4Z"
+							},
+							"name": "Anti-Targeting",
+							"reference": "PSI16",
+							"cost_adj": "-20%",
+							"disabled": true
+						}
+					],
+					"points_per_level": 2,
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 11,
+						"current_level": 3
+					}
+				}
+			],
+			"calc": {
+				"points": 26
+			}
 		}
 	],
 	"skills": [
@@ -6016,7 +6335,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-10-22T00:15:02-03:00",
+	"modified_date": "2026-10-28T20:36:20-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
