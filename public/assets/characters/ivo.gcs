@@ -2178,7 +2178,8 @@
 						},
 						{
 							"id": "t91sdqAKePGZfoTRe",
-							"name": "Dislikes (Nobres)",
+							"name": "Respeito aos Fortes",
+							"local_notes": "Não gosta de molengas",
 							"base_points": -1,
 							"calc": {
 								"points": -1
@@ -4528,7 +4529,7 @@
 		}
 	],
 	"created_date": "2026-02-11T14:08:43-03:00",
-	"modified_date": "2026-10-28T20:17:15-03:00",
+	"modified_date": "2026-10-28T20:46:21-03:00",
 	"calc": {
 		"swing": "5d",
 		"thrust": "2d+2",
