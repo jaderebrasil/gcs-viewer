@@ -9,7 +9,7 @@ characters in the browser, no installation required with
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
-| **Points:**       |    280 |    313 |    369 |
+| **Points:**       |    291 |    322 |    369 |
 | **HP:**           |     16 |     20 |     26 |
 | **FP:**           |     10 |     12 |     13 |
 | **DR (torso):**   |      2 |      5 |      7 |
@@ -17,7 +17,7 @@ characters in the browser, no installation required with
 
 ### Active Characters
 - [D'Bragança Pedregal (369)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
-- [Acheron Lontaren (280)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
+- [Acheron Lontaren (306)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
 - [Leptothele Tofu (291)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
 
 ### Dead Characters
