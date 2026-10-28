@@ -5,19 +5,18 @@ characters in the browser, no installation required with
 [GCS Viewer](https://gcs-viewer.netlify.app).
 
 ## Current Campaign
-- **Active Characters:** 5
+- **Active Characters:** 4
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
 | **Points:**       |    277 |    304 |    369 |
-| **HP:**           |     13 |     18 |     26 |
-| **FP:**           |     10 |     12 |     16 |
-| **DR (torso):**   |      2 |      5 |      7 |
+| **HP:**           |     15 |     19 |     26 |
+| **FP:**           |     10 |     12 |     13 |
+| **DR (torso):**   |      2 |      6 |      7 |
 
 
 ### Active Characters
 - [D'Bragança Pedregal (369)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
-- [Eldric Valen (304)](https://gcs-viewer.netlify.app/?url=./assets/characters/eldric.gcs) - by Eduardo Montenegro
 - [Acheron Lontaren (280)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
 - [Leptothele Tofu (291)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
 - [Yun (277)](https://gcs-viewer.netlify.app/?url=./assets/characters/yun.gcs) - by Marukusu
