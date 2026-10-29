@@ -9,7 +9,7 @@ characters in the browser, no installation required with
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
-| **Points:**       |    256 |    307 |    395 |
+| **Points:**       |    256 |    307 |    396 |
 | **HP:**           |     10 |     17 |     26 |
 | **FP:**           |     10 |     12 |     16 |
 | **DR (torso):**   |      0 |      4 |      7 |
@@ -17,7 +17,7 @@ characters in the browser, no installation required with
 
 ### Active Characters
 - [Louis Ritant (256)](https://gcs-viewer.netlify.app/?url=./assets/characters/Louis Ritant.gcs) - by Marukusu
-- [D'Bragança Pedregal (395)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
+- [D'Bragança Pedregal (396)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
 - [Acheron Lontaren (307)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
 - [Thandril Estrelaguia (257)](https://gcs-viewer.netlify.app/?url=./assets/characters/thandril.gcs) - by Eduardo Montenegro
 - [Leptothele Tofu (320)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
