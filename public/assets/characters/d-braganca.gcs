@@ -1412,6 +1412,35 @@
 			}
 		},
 		{
+			"id": "te8YjpwUOCB94oXHH",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "twIA9WIueGxtpoERd"
+			},
+			"name": "Enhanced Parry (Bare hands)",
+			"reference": "B51",
+			"tags": [
+				"Advantage",
+				"Mental"
+			],
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to Parry with bare hands",
+					"amount": 1
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 5,
+				"level": 1,
+				"current_level": 1
+			}
+		},
+		{
 			"id": "TOASR_oQri22Y12Mq",
 			"name": "DEFEITOS",
 			"children": [
@@ -2020,6 +2049,7 @@
 					"levels": 2,
 					"calc": {
 						"points": 6,
+						"level": 2,
 						"current_level": 2
 					}
 				},
@@ -2037,6 +2067,7 @@
 					"levels": 2,
 					"calc": {
 						"points": 4,
+						"level": 2,
 						"current_level": 2
 					}
 				},
@@ -2192,6 +2223,7 @@
 					"levels": 3,
 					"calc": {
 						"points": 9,
+						"level": 3,
 						"current_level": 3
 					}
 				},
@@ -2253,6 +2285,7 @@
 					"levels": 1,
 					"calc": {
 						"points": 6,
+						"level": 1,
 						"current_level": 1
 					}
 				},
@@ -2582,6 +2615,7 @@
 					"levels": 5,
 					"calc": {
 						"points": 5,
+						"level": 5,
 						"current_level": 5
 					}
 				},
@@ -2702,6 +2736,7 @@
 					"calc": {
 						"points": 0,
 						"resolved_notes": "May not come within level yards of Demon Wards and Holy Symbols",
+						"level": 2,
 						"current_level": 2
 					}
 				},
@@ -2752,6 +2787,7 @@
 					"levels": 5,
 					"calc": {
 						"points": 9,
+						"level": 5,
 						"current_level": 5
 					}
 				},
@@ -2788,6 +2824,7 @@
 					"levels": 1,
 					"calc": {
 						"points": 2,
+						"level": 1,
 						"current_level": 1
 					}
 				},
@@ -3131,40 +3168,13 @@
 					"levels": 5,
 					"calc": {
 						"points": 5,
+						"level": 5,
 						"current_level": 5
 					}
 				}
 			],
 			"calc": {
 				"points": 109
-			}
-		},
-		{
-			"id": "te8YjpwUOCB94oXHH",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Advantages.adq",
-				"id": "twIA9WIueGxtpoERd"
-			},
-			"name": "Enhanced Parry (Bare hands)",
-			"reference": "B51",
-			"tags": [
-				"Advantage",
-				"Mental"
-			],
-			"points_per_level": 5,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to Parry with bare hands",
-					"amount": 1
-				}
-			],
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": 5,
-				"current_level": 1
 			}
 		},
 		{
@@ -3337,6 +3347,7 @@
 			"levels": 1,
 			"calc": {
 				"points": 2,
+				"level": 1,
 				"current_level": 1
 			}
 		},
@@ -3711,6 +3722,7 @@
 			"levels": 2,
 			"calc": {
 				"points": 9,
+				"level": 2,
 				"current_level": 2
 			}
 		},
@@ -3790,6 +3802,7 @@
 			"levels": 1,
 			"calc": {
 				"points": 1,
+				"level": 1,
 				"current_level": 1
 			}
 		},
@@ -3847,7 +3860,7 @@
 		},
 		{
 			"id": "TEtYgj4Cu1cUwEZ2f",
-			"name": "Familiar",
+			"name": "Familiar: Pastel das Natas Arcano",
 			"children": [
 				{
 					"id": "tzfOvf1FDDZnauCZn",
@@ -4014,6 +4027,7 @@
 					"levels": 2,
 					"calc": {
 						"points": 1,
+						"level": 2,
 						"current_level": 2
 					}
 				},
@@ -4146,6 +4160,7 @@
 					"levels": 3,
 					"calc": {
 						"points": 11,
+						"level": 3,
 						"current_level": 3
 					}
 				}
@@ -4157,24 +4172,833 @@
 	],
 	"skills": [
 		{
-			"id": "sUiOmn8IQqge8ZTGL",
+			"id": "SOSvHCYRBS9dTJIey",
+			"name": "Ferru-jitsu",
+			"children": [
+				{
+					"id": "q4kLFP-Vpk7r0evRl",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Martial Arts/Martial Arts Skills.skl",
+						"id": "qsZuKX4h4sbNmcwhx"
+					},
+					"name": "Judo Throw",
+					"reference": "MA75",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Technique",
+						"Weapon"
+					],
+					"difficulty": "h",
+					"default": {
+						"type": "skill",
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
+					},
+					"limit": 0,
+					"points": 2,
+					"calc": {
+						"level": 20,
+						"rsl": "+0"
+					}
+				},
+				{
+					"id": "qyq8dyJ6Lr9mQQ1vK",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "qWuvTRdu3ld9uckzm"
+					},
+					"name": "Arm Lock",
+					"reference": "B230,MA65",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Technique",
+						"Weapon"
+					],
+					"difficulty": "a",
+					"default": {
+						"type": "skill",
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						}
+					},
+					"limit": 4,
+					"points": 1,
+					"calc": {
+						"level": 21,
+						"rsl": "+1"
+					}
+				},
+				{
+					"id": "qljY3imW_1cAVSvaD",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "q7GljBfWaeL8IdzvQ"
+					},
+					"name": "Choke Hold",
+					"reference": "B230,MA69",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Technique",
+						"Weapon"
+					],
+					"difficulty": "h",
+					"default": {
+						"type": "skill",
+						"name": {
+							"compare": "is",
+							"qualifier": "Judo"
+						},
+						"modifier": -2
+					},
+					"limit": 0,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Judo"
+								}
+							}
+						]
+					},
+					"points": 2,
+					"calc": {
+						"level": 19,
+						"rsl": "-1"
+					}
+				},
+				{
+					"id": "sHW1nvJzYXtucKKNd",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "suYM49OGzmALfq2Dd"
+					},
+					"name": "Judo",
+					"reference": "B203,MA57",
+					"local_notes": "Allows parrying two different attacks per turn, one with each hand.",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"encumbrance_penalty_multiplier": 1,
+					"points": 36,
+					"calc": {
+						"level": 20,
+						"rsl": "DX+8"
+					}
+				},
+				{
+					"id": "s_WOF_PRWHkeOve3m",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "s9bNXHihrn0LcyZDW"
+					},
+					"name": "Parry Missile-Weapons",
+					"reference": "B212",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"points": 2,
+					"calc": {
+						"level": 11,
+						"rsl": "DX-1"
+					}
+				},
+				{
+					"id": "sU6iLm7ZihWwoZvP7",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "ssGPHEGz-IY6jExPL"
+					},
+					"name": "Karate",
+					"reference": "B203,MA57",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"encumbrance_penalty_multiplier": 1,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					],
+					"points": 2,
+					"calc": {
+						"level": 11,
+						"rsl": "DX-1"
+					}
+				}
+			]
+		},
+		{
+			"id": "sUM7zBkuLBlp5rTW8",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sV4rCzTdH7KJj_Upy"
+				"id": "srNcoECeNYYKf7gSz"
 			},
-			"name": "Intimidation",
-			"reference": "B202",
+			"name": "Climbing",
+			"reference": "B183",
+			"tags": [
+				"Athletic",
+				"Criminal",
+				"Exploration",
+				"Outdoor",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sLOkmueBkpnhAvuPW",
+			"name": "Shield",
+			"reference": "B220",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"specialization": "Shield",
+			"difficulty": "dx/e",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX+0"
+			}
+		},
+		{
+			"id": "sBWstVSOHSjbzlx1a",
+			"name": "Axe/Mace",
+			"reference": "B208",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Two-Handed Axe/Mace"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Flail"
+					},
+					"modifier": -4
+				}
+			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+1"
+			}
+		},
+		{
+			"id": "sekqxymrXEel5JyJg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sbKWzaiYtsQup4vjy"
+			},
+			"name": "Fast-Draw",
+			"reference": "B194,MA56",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Weapon"
+			],
+			"specialization": "Shield",
+			"difficulty": "dx/e",
+			"points": 2,
+			"calc": {
+				"level": 14,
+				"rsl": "DX+2"
+			}
+		},
+		{
+			"id": "sZvvhxs9JlLmD0Fcy",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sbbiyh7j8YEKVmNHb"
+			},
+			"name": "Throwing",
+			"reference": "B226",
+			"tags": [
+				"Athletic",
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
+			],
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dropping"
+					},
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -3,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sqkIiI4MoSvAhkC31",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sNJ5kbhv91F2Oc6Hr"
+			},
+			"name": "Stealth",
+			"reference": "B222",
 			"tags": [
 				"Criminal",
 				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sfwBxTa0U-Y70jZeg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sNY8GUzpuC2tDYV5S"
+			},
+			"name": "Riding",
+			"reference": "B217",
+			"tags": [
+				"Animal"
+			],
+			"specialization": "Equines",
+			"difficulty": "dx/a",
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Animal Handling"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
+					"modifier": -3
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX-1"
+			}
+		},
+		{
+			"id": "sz_CtxiRIMZvERuab",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sGf6hR4emD2yDvIOx"
+			},
+			"name": "Singing",
+			"reference": "B220",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"difficulty": "ht/e",
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "HT+0"
+			}
+		},
+		{
+			"id": "sE1e0ZQ5RJTBBJIOp",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sMCHNMqlaxg-WbLy5"
+			},
+			"name": "Carousing",
+			"reference": "B183",
+			"tags": [
+				"Criminal",
 				"Social",
 				"Street"
 			],
-			"difficulty": "will/a",
+			"difficulty": "ht/e",
 			"defaults": [
 				{
-					"type": "will",
+					"type": "ht",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "HT+0"
+			}
+		},
+		{
+			"id": "swclXuTngaD4WYDPB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sGlUIf_WNqGUAlpbH"
+			},
+			"name": "Swimming",
+			"reference": "B224",
+			"tags": [
+				"Athletic",
+				"Exploration",
+				"Outdoor"
+			],
+			"difficulty": "ht/e",
+			"encumbrance_penalty_multiplier": 2,
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "HT+0"
+			}
+		},
+		{
+			"id": "sWlmm5y0ZubjvoSye",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s21LagSf5mrYaV8h3"
+			},
+			"name": "Lifting",
+			"reference": "B205",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/a",
+			"points": 1,
+			"calc": {
+				"level": 12,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "s34yzvwshdI9-xZzn",
+			"name": "Hiking",
+			"reference": "B200",
+			"tags": [
+				"Athletic",
+				"Exploration",
+				"Outdoor"
+			],
+			"difficulty": "ht/a",
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "sCzJs0P7tObN9KEyP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sOUf7U4NYQG9TAxXr"
+			},
+			"name": "Running",
+			"reference": "B218",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/a",
+			"defaults": [
+				{
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "ht",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "HT-1"
+			}
+		},
+		{
+			"id": "sGBn6r5l5XhwUSBLD",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sIBk5O23GChb7jvj5"
+			},
+			"name": "Breath Control",
+			"reference": "B182",
+			"tags": [
+				"Athletic"
+			],
+			"difficulty": "ht/h",
+			"points": 1,
+			"calc": {
+				"level": 11,
+				"rsl": "HT-2"
+			}
+		},
+		{
+			"id": "sRvy_7xzA91IqBtov",
+			"name": "Tanatopraxist",
+			"difficulty": "iq/a",
+			"points": 2,
+			"calc": {
+				"level": 11,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sHQaZSskfLPxQfmi4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "spqmJbuGaJTg1QHKJ"
+			},
+			"name": "Teamster",
+			"reference": "B225",
+			"tags": [
+				"Animal",
+				"Vehicle"
+			],
+			"specialization": "Equines",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Animal Handling"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Riding"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Equines"
+					},
+					"modifier": -2
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Riding"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Equines"
+				},
+				"modifier": -2,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "shsp0zjQOlGagZeRF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sFsiOWWguub8vXzwh"
+			},
+			"name": "Diagnosis",
+			"reference": "B187",
+			"tags": [
+				"Medical"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
+					"modifier": -8
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					},
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
+					"modifier": -5
+				}
+			],
+			"tech_level": "3",
+			"points": 4,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Physician"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"modifier": -4,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": 2
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ+0"
+			}
+		},
+		{
+			"id": "sXkJU9_b_mKR1pfQ5",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sgtaqHs22hBBWPhJO"
+			},
+			"name": "Fast-Talk",
+			"reference": "B195",
+			"tags": [
+				"Criminal",
+				"Social",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
 					"modifier": -5
 				},
 				{
@@ -4183,12 +5007,271 @@
 						"compare": "is",
 						"qualifier": "Acting"
 					},
-					"modifier": -3
+					"modifier": -5
 				}
 			],
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "sxc6UxkFIKy7SaB2e",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "spOCemdoqBWxoPu5X"
+			},
+			"name": "Physician",
+			"reference": "B213",
+			"tags": [
+				"Medical"
+			],
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -7
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
+					"modifier": -11
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
+					"modifier": -5
+				}
+			],
+			"tech_level": "3",
+			"points": 16,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -7,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+3"
+			}
+		},
+		{
+			"id": "sHTHEUJ2Ia8EJEoCl",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sfUIWLzG_0qznxku3"
+			},
+			"name": "First Aid",
+			"reference": "B195",
+			"tags": [
+				"Everyman",
+				"Medical"
+			],
+			"vtt_notes": "30min = [1d-3! Healing]",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Esoteric Medicine"
+					}
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Physician"
+					}
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Veterinary"
+					},
+					"modifier": -4
+				}
+			],
+			"tech_level": "3",
 			"points": 1,
 			"defaulted_from": {
-				"type": "will",
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Physician"
+				},
+				"specialization": {
+					"compare": "is"
+				},
+				"level": 14,
+				"adjusted_level": 14,
+				"points": 8
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+3"
+			}
+		},
+		{
+			"id": "s058WPBernaUyvwKz",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s0OrRdzDLyXnfmwj9"
+			},
+			"name": "Religious Ritual",
+			"reference": "B217",
+			"tags": [
+				"Magical",
+				"Occult"
+			],
+			"vtt_notes": "# Expulsar mortos vivos\n[Religious Ritual] modificado por distância como magia, e modificado por \"resistência a fé\" dos undeads. _Por exemplo, Ghouls em geral tem resistência 1. Zumbis comuns não tem resistência nenhuma. Um lich seria imune ao efeito (resistência muito alta)._\n\nQuick contest do Ritual Religioso vs Will da vítima. Se tu vencer, ela rola 3d para determinar o efeito como se estivesse em Pânico na **Tabela de Expulsão** abaixo. Se a vítima passa no teste, fica imune a expulsão por 1h.\n\n**Tabela de Expulsão**\n4, 5 - Atordoa por 1 segundo\n6, 7 - Atordoado por 1 segundo, a cada segundo posterior faz um Will para sair do atordoamento no fim do turno\n8, 9, 10 - Atordoado por 1d segundos, depois testa pra sair\n11 a 16 - Fuga por 2d segundos\n17, 18 - Fuga por 2d minutos\n\n",
+			"replacements": {
+				"Specialty": "Irmandade da Ferrugem"
+			},
+			"specialization": "@Specialty@",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Ritual Magic"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Specialty@"
+					},
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Theology"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Specialty@"
+					},
+					"modifier": -4
+				}
+			],
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Theology"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Irmandade da Ferrugem"
+				},
+				"modifier": -4,
+				"level": 16,
+				"adjusted_level": 16,
+				"points": 24
+			},
+			"calc": {
+				"level": 16,
+				"rsl": "IQ+5"
+			}
+		},
+		{
+			"id": "sEuMuaCuw0Tfl8eLZ",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s7YmeCX8gEUi-lk2g"
+			},
+			"name": "Theology",
+			"reference": "B226",
+			"tags": [
+				"Humanities",
+				"Social Sciences"
+			],
+			"replacements": {
+				"Specialty": "Irmandade da Ferrugem"
+			},
+			"specialization": "@Specialty@",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Religious Ritual"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "@Specialty@"
+					},
+					"modifier": -4
+				}
+			],
+			"points": 40,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"calc": {
+				"level": 20,
+				"rsl": "IQ+9"
+			}
+		},
+		{
+			"id": "sRupdqHCPzdqDTaK5",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "slJ848gm1u40VnDcF"
+			},
+			"name": "Soldier",
+			"reference": "B221",
+			"tags": [
+				"Military"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"tech_level": "3",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
 				"modifier": -5,
 				"level": 6,
 				"adjusted_level": 6,
@@ -4196,23 +5279,125 @@
 			},
 			"calc": {
 				"level": 10,
-				"rsl": "Will-1"
+				"rsl": "IQ-1"
 			}
 		},
 		{
-			"id": "sZmOAkLhSQgKA39LA",
+			"id": "sHKVqRRlMjqzOV6f6",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "siIDxA8TVsLAks6Fd"
+				"id": "sF7g-iI4PbTmPfYlP"
 			},
-			"name": "Survival",
-			"reference": "B223",
+			"name": "Animal Handling",
+			"reference": "B175",
 			"tags": [
-				"Exploration",
-				"Outdoor"
+				"Animal"
 			],
-			"specialization": "Plains",
+			"specialization": "Pastel",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sCX6oxby-cRuYtWJx",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sqHRwLcDhuvhQBkhK"
+			},
+			"name": "Leadership",
+			"reference": "B204",
+			"tags": [
+				"Military",
+				"Social"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sqPbaYQndhUBPMY2o",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "smME6mB38csasDzzX"
+			},
+			"name": "Urban Survival",
+			"reference": "B228",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Street"
+			],
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				}
+			],
+			"points": 2,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "Per+0"
+			}
+		},
+		{
+			"id": "s9QX1yhW0OuSKQfJB",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sc366zEnMjuSPgybT"
+			},
+			"name": "Observation",
+			"reference": "B211",
+			"tags": [
+				"Criminal",
+				"Military",
+				"Police",
+				"Spy",
+				"Street"
+			],
 			"difficulty": "per/a",
 			"defaults": [
 				{
@@ -4223,93 +5408,9 @@
 					"type": "skill",
 					"name": {
 						"compare": "is",
-						"qualifier": "Naturalist"
+						"qualifier": "Shadowing"
 					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Arctic"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Desert"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Island/Beach"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Jungle"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Mountain"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Swampland"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Woodlands"
-					},
-					"modifier": -3
+					"modifier": -5
 				}
 			],
 			"points": 1,
@@ -4326,19 +5427,18 @@
 			}
 		},
 		{
-			"id": "sxHJZiMKMQeQeTpqv",
+			"id": "siBIOkH73X707CDTf",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "s9-fP2VS1JbT87n2Y"
+				"id": "sh9m8Befn5big-gmf"
 			},
-			"name": "Survival",
-			"reference": "B223",
+			"name": "Search",
+			"reference": "B219",
 			"tags": [
-				"Exploration",
-				"Outdoor"
+				"Police",
+				"Spy"
 			],
-			"specialization": "Woodlands",
 			"difficulty": "per/a",
 			"defaults": [
 				{
@@ -4349,110 +5449,18 @@
 					"type": "skill",
 					"name": {
 						"compare": "is",
-						"qualifier": "Naturalist"
+						"qualifier": "Criminology"
 					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Arctic"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Desert"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Island/Beach"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Jungle"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Mountain"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Plains"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Survival"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Swampland"
-					},
-					"modifier": -3
+					"modifier": -5
 				}
 			],
 			"points": 1,
 			"defaulted_from": {
-				"type": "skill",
-				"name": {
-					"compare": "is",
-					"qualifier": "Survival"
-				},
-				"specialization": {
-					"compare": "is",
-					"qualifier": "Mountain"
-				},
-				"modifier": -3,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"type": "per",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
 			},
 			"calc": {
 				"level": 11,
@@ -4594,18 +5602,19 @@
 			}
 		},
 		{
-			"id": "siBIOkH73X707CDTf",
+			"id": "sxHJZiMKMQeQeTpqv",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sh9m8Befn5big-gmf"
+				"id": "s9-fP2VS1JbT87n2Y"
 			},
-			"name": "Search",
-			"reference": "B219",
+			"name": "Survival",
+			"reference": "B223",
 			"tags": [
-				"Police",
-				"Spy"
+				"Exploration",
+				"Outdoor"
 			],
+			"specialization": "Woodlands",
 			"difficulty": "per/a",
 			"defaults": [
 				{
@@ -4616,9 +5625,227 @@
 					"type": "skill",
 					"name": {
 						"compare": "is",
-						"qualifier": "Criminology"
+						"qualifier": "Naturalist"
 					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Mountain"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Plains"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
+					"modifier": -3
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Survival"
+				},
+				"specialization": {
+					"compare": "is",
+					"qualifier": "Mountain"
+				},
+				"modifier": -3,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "Per-1"
+			}
+		},
+		{
+			"id": "sZmOAkLhSQgKA39LA",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "siIDxA8TVsLAks6Fd"
+			},
+			"name": "Survival",
+			"reference": "B223",
+			"tags": [
+				"Exploration",
+				"Outdoor"
+			],
+			"specialization": "Plains",
+			"difficulty": "per/a",
+			"defaults": [
+				{
+					"type": "per",
 					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Arctic"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Desert"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Island/Beach"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Jungle"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Mountain"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Swampland"
+					},
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Woodlands"
+					},
+					"modifier": -3
 				}
 			],
 			"points": 1,
@@ -4635,427 +5862,24 @@
 			}
 		},
 		{
-			"id": "s9QX1yhW0OuSKQfJB",
+			"id": "sUiOmn8IQqge8ZTGL",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sc366zEnMjuSPgybT"
+				"id": "sV4rCzTdH7KJj_Upy"
 			},
-			"name": "Observation",
-			"reference": "B211",
-			"tags": [
-				"Criminal",
-				"Military",
-				"Police",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "per/a",
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Shadowing"
-					},
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "Per-1"
-			}
-		},
-		{
-			"id": "sqPbaYQndhUBPMY2o",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "smME6mB38csasDzzX"
-			},
-			"name": "Urban Survival",
-			"reference": "B228",
+			"name": "Intimidation",
+			"reference": "B202",
 			"tags": [
 				"Criminal",
 				"Police",
-				"Street"
-			],
-			"difficulty": "per/a",
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				}
-			],
-			"points": 2,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "Per+0"
-			}
-		},
-		{
-			"id": "sCX6oxby-cRuYtWJx",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sqHRwLcDhuvhQBkhK"
-			},
-			"name": "Leadership",
-			"reference": "B204",
-			"tags": [
-				"Military",
-				"Social"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"calc": {
-				"level": 10,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sHKVqRRlMjqzOV6f6",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sF7g-iI4PbTmPfYlP"
-			},
-			"name": "Animal Handling",
-			"reference": "B175",
-			"tags": [
-				"Animal"
-			],
-			"specialization": "Pastel",
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"calc": {
-				"level": 10,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sRupdqHCPzdqDTaK5",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "slJ848gm1u40VnDcF"
-			},
-			"name": "Soldier",
-			"reference": "B221",
-			"tags": [
-				"Military"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"tech_level": "3",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"calc": {
-				"level": 10,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sEuMuaCuw0Tfl8eLZ",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "s7YmeCX8gEUi-lk2g"
-			},
-			"name": "Theology",
-			"reference": "B226",
-			"tags": [
-				"Humanities",
-				"Social Sciences"
-			],
-			"replacements": {
-				"Specialty": "Irmandade da Ferrugem"
-			},
-			"specialization": "@Specialty@",
-			"difficulty": "iq/h",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Religious Ritual"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "@Specialty@"
-					},
-					"modifier": -4
-				}
-			],
-			"points": 40,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -6,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
-			},
-			"calc": {
-				"level": 20,
-				"rsl": "IQ+9"
-			}
-		},
-		{
-			"id": "s058WPBernaUyvwKz",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "s0OrRdzDLyXnfmwj9"
-			},
-			"name": "Religious Ritual",
-			"reference": "B217",
-			"tags": [
-				"Magical",
-				"Occult"
-			],
-			"vtt_notes": "# Expulsar mortos vivos\n[Religious Ritual] modificado por distância como magia, e modificado por \"resistência a fé\" dos undeads. _Por exemplo, Ghouls em geral tem resistência 1. Zumbis comuns não tem resistência nenhuma. Um lich seria imune ao efeito (resistência muito alta)._\n\nQuick contest do Ritual Religioso vs Will da vítima. Se tu vencer, ela rola 3d para determinar o efeito como se estivesse em Pânico na **Tabela de Expulsão** abaixo. Se a vítima passa no teste, fica imune a expulsão por 1h.\n\n**Tabela de Expulsão**\n4, 5 - Atordoa por 1 segundo\n6, 7 - Atordoado por 1 segundo, a cada segundo posterior faz um Will para sair do atordoamento no fim do turno\n8, 9, 10 - Atordoado por 1d segundos, depois testa pra sair\n11 a 16 - Fuga por 2d segundos\n17, 18 - Fuga por 2d minutos\n\n",
-			"replacements": {
-				"Specialty": "Irmandade da Ferrugem"
-			},
-			"specialization": "@Specialty@",
-			"difficulty": "iq/h",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Ritual Magic"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "@Specialty@"
-					},
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Theology"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "@Specialty@"
-					},
-					"modifier": -4
-				}
-			],
-			"defaulted_from": {
-				"type": "skill",
-				"name": {
-					"compare": "is",
-					"qualifier": "Theology"
-				},
-				"specialization": {
-					"compare": "is",
-					"qualifier": "Irmandade da Ferrugem"
-				},
-				"modifier": -4,
-				"level": 16,
-				"adjusted_level": 16,
-				"points": 24
-			},
-			"calc": {
-				"level": 16,
-				"rsl": "IQ+5"
-			}
-		},
-		{
-			"id": "sHTHEUJ2Ia8EJEoCl",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sfUIWLzG_0qznxku3"
-			},
-			"name": "First Aid",
-			"reference": "B195",
-			"tags": [
-				"Everyman",
-				"Medical"
-			],
-			"vtt_notes": "30min = [1d-3! Healing]",
-			"difficulty": "iq/e",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Esoteric Medicine"
-					}
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Physician"
-					}
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Veterinary"
-					},
-					"modifier": -4
-				}
-			],
-			"tech_level": "3",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": {
-					"compare": "is",
-					"qualifier": "Physician"
-				},
-				"specialization": {
-					"compare": "is"
-				},
-				"level": 14,
-				"adjusted_level": 14,
-				"points": 8
-			},
-			"calc": {
-				"level": 14,
-				"rsl": "IQ+3"
-			}
-		},
-		{
-			"id": "sxc6UxkFIKy7SaB2e",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "spOCemdoqBWxoPu5X"
-			},
-			"name": "Physician",
-			"reference": "B213",
-			"tags": [
-				"Medical"
-			],
-			"difficulty": "iq/h",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -7
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "First Aid"
-					},
-					"modifier": -11
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Veterinary"
-					},
-					"modifier": -5
-				}
-			],
-			"tech_level": "3",
-			"points": 16,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -7,
-				"level": 4,
-				"adjusted_level": 4,
-				"points": -4
-			},
-			"calc": {
-				"level": 14,
-				"rsl": "IQ+3"
-			}
-		},
-		{
-			"id": "sXkJU9_b_mKR1pfQ5",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sgtaqHs22hBBWPhJO"
-			},
-			"name": "Fast-Talk",
-			"reference": "B195",
-			"tags": [
-				"Criminal",
 				"Social",
-				"Spy",
 				"Street"
 			],
-			"difficulty": "iq/a",
+			"difficulty": "will/a",
 			"defaults": [
 				{
-					"type": "iq",
+					"type": "will",
 					"modifier": -5
 				},
 				{
@@ -5064,830 +5888,21 @@
 						"compare": "is",
 						"qualifier": "Acting"
 					},
-					"modifier": -5
+					"modifier": -3
 				}
 			],
-			"points": 4,
+			"points": 1,
 			"defaulted_from": {
-				"type": "iq",
+				"type": "will",
 				"modifier": -5,
 				"level": 6,
 				"adjusted_level": 6,
 				"points": -6
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "IQ+1"
-			}
-		},
-		{
-			"id": "shsp0zjQOlGagZeRF",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sFsiOWWguub8vXzwh"
-			},
-			"name": "Diagnosis",
-			"reference": "B187",
-			"tags": [
-				"Medical"
-			],
-			"difficulty": "iq/h",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "First Aid"
-					},
-					"modifier": -8
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Physician"
-					},
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Veterinary"
-					},
-					"modifier": -5
-				}
-			],
-			"tech_level": "3",
-			"points": 4,
-			"defaulted_from": {
-				"type": "skill",
-				"name": {
-					"compare": "is",
-					"qualifier": "Physician"
-				},
-				"specialization": {
-					"compare": "is"
-				},
-				"modifier": -4,
 				"level": 10,
-				"adjusted_level": 10,
-				"points": 2
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ+0"
+				"rsl": "Will-1"
 			}
-		},
-		{
-			"id": "sRvy_7xzA91IqBtov",
-			"name": "Tanatopraxist",
-			"difficulty": "iq/a",
-			"points": 2,
-			"calc": {
-				"level": 11,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "sHQaZSskfLPxQfmi4",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "spqmJbuGaJTg1QHKJ"
-			},
-			"name": "Teamster",
-			"reference": "B225",
-			"tags": [
-				"Animal",
-				"Vehicle"
-			],
-			"specialization": "Equines",
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Animal Handling"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Equines"
-					},
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Riding"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Equines"
-					},
-					"modifier": -2
-				}
-			],
-			"points": 2,
-			"defaulted_from": {
-				"type": "skill",
-				"name": {
-					"compare": "is",
-					"qualifier": "Riding"
-				},
-				"specialization": {
-					"compare": "is",
-					"qualifier": "Equines"
-				},
-				"modifier": -2,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ+0"
-			}
-		},
-		{
-			"id": "sGBn6r5l5XhwUSBLD",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sIBk5O23GChb7jvj5"
-			},
-			"name": "Breath Control",
-			"reference": "B182",
-			"tags": [
-				"Athletic"
-			],
-			"difficulty": "ht/h",
-			"points": 1,
-			"calc": {
-				"level": 11,
-				"rsl": "HT-2"
-			}
-		},
-		{
-			"id": "sCzJs0P7tObN9KEyP",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sOUf7U4NYQG9TAxXr"
-			},
-			"name": "Running",
-			"reference": "B218",
-			"tags": [
-				"Athletic"
-			],
-			"difficulty": "ht/a",
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "HT-1"
-			}
-		},
-		{
-			"id": "s34yzvwshdI9-xZzn",
-			"name": "Hiking",
-			"reference": "B200",
-			"tags": [
-				"Athletic",
-				"Exploration",
-				"Outdoor"
-			],
-			"difficulty": "ht/a",
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "HT-1"
-			}
-		},
-		{
-			"id": "sWlmm5y0ZubjvoSye",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "s21LagSf5mrYaV8h3"
-			},
-			"name": "Lifting",
-			"reference": "B205",
-			"tags": [
-				"Athletic"
-			],
-			"difficulty": "ht/a",
-			"points": 1,
-			"calc": {
-				"level": 12,
-				"rsl": "HT-1"
-			}
-		},
-		{
-			"id": "swclXuTngaD4WYDPB",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sGlUIf_WNqGUAlpbH"
-			},
-			"name": "Swimming",
-			"reference": "B224",
-			"tags": [
-				"Athletic",
-				"Exploration",
-				"Outdoor"
-			],
-			"difficulty": "ht/e",
-			"encumbrance_penalty_multiplier": 2,
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -4
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 13,
-				"rsl": "HT+0"
-			}
-		},
-		{
-			"id": "sE1e0ZQ5RJTBBJIOp",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sMCHNMqlaxg-WbLy5"
-			},
-			"name": "Carousing",
-			"reference": "B183",
-			"tags": [
-				"Criminal",
-				"Social",
-				"Street"
-			],
-			"difficulty": "ht/e",
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -4
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 13,
-				"rsl": "HT+0"
-			}
-		},
-		{
-			"id": "sz_CtxiRIMZvERuab",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sGf6hR4emD2yDvIOx"
-			},
-			"name": "Singing",
-			"reference": "B220",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"difficulty": "ht/e",
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -4
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 13,
-				"rsl": "HT+0"
-			}
-		},
-		{
-			"id": "sfwBxTa0U-Y70jZeg",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sNY8GUzpuC2tDYV5S"
-			},
-			"name": "Riding",
-			"reference": "B217",
-			"tags": [
-				"Animal"
-			],
-			"specialization": "Equines",
-			"difficulty": "dx/a",
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Animal Handling"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Equines"
-					},
-					"modifier": -3
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "DX-1"
-			}
-		},
-		{
-			"id": "sqkIiI4MoSvAhkC31",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sNJ5kbhv91F2Oc6Hr"
-			},
-			"name": "Stealth",
-			"reference": "B222",
-			"tags": [
-				"Criminal",
-				"Police",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "dx/a",
-			"encumbrance_penalty_multiplier": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "dx",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "DX-1"
-			}
-		},
-		{
-			"id": "sZvvhxs9JlLmD0Fcy",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sbbiyh7j8YEKVmNHb"
-			},
-			"name": "Throwing",
-			"reference": "B226",
-			"tags": [
-				"Athletic",
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
-			],
-			"difficulty": "dx/a",
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Dropping"
-					},
-					"modifier": -4
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -3,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "DX-1"
-			}
-		},
-		{
-			"id": "sekqxymrXEel5JyJg",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sbKWzaiYtsQup4vjy"
-			},
-			"name": "Fast-Draw",
-			"reference": "B194,MA56",
-			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
-			],
-			"specialization": "Shield",
-			"difficulty": "dx/e",
-			"points": 2,
-			"calc": {
-				"level": 14,
-				"rsl": "DX+2"
-			}
-		},
-		{
-			"id": "sBWstVSOHSjbzlx1a",
-			"name": "Axe/Mace",
-			"reference": "B208",
-			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
-			],
-			"difficulty": "dx/a",
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Two-Handed Axe/Mace"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Flail"
-					},
-					"modifier": -4
-				}
-			],
-			"points": 4,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 13,
-				"rsl": "DX+1"
-			}
-		},
-		{
-			"id": "sLOkmueBkpnhAvuPW",
-			"name": "Shield",
-			"reference": "B220",
-			"tags": [
-				"Combat",
-				"Melee Combat",
-				"Weapon"
-			],
-			"specialization": "Shield",
-			"difficulty": "dx/e",
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -4,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "DX+0"
-			}
-		},
-		{
-			"id": "sUM7zBkuLBlp5rTW8",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "srNcoECeNYYKf7gSz"
-			},
-			"name": "Climbing",
-			"reference": "B183",
-			"tags": [
-				"Athletic",
-				"Criminal",
-				"Exploration",
-				"Outdoor",
-				"Street"
-			],
-			"difficulty": "dx/a",
-			"encumbrance_penalty_multiplier": 1,
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				}
-			],
-			"points": 2,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "DX+0"
-			}
-		},
-		{
-			"id": "SOSvHCYRBS9dTJIey",
-			"name": "Ferru-jitsu",
-			"children": [
-				{
-					"id": "s_WOF_PRWHkeOve3m",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "s9bNXHihrn0LcyZDW"
-					},
-					"name": "Parry Missile-Weapons",
-					"reference": "B212",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/h",
-					"points": 2,
-					"calc": {
-						"level": 11,
-						"rsl": "DX-1"
-					}
-				},
-				{
-					"id": "sU6iLm7ZihWwoZvP7",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "ssGPHEGz-IY6jExPL"
-					},
-					"name": "Karate",
-					"reference": "B203,MA57",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/h",
-					"encumbrance_penalty_multiplier": 1,
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "weapons_with_required_skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Karate"
-							},
-							"level": {
-								"compare": "at_least"
-							},
-							"amount": 1,
-							"per_die": true
-						},
-						{
-							"type": "weapon_bonus",
-							"selection_type": "weapons_with_required_skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Karate"
-							},
-							"level": {
-								"compare": "at_least",
-								"qualifier": 1
-							},
-							"amount": 1,
-							"per_die": true
-						}
-					],
-					"points": 2,
-					"calc": {
-						"level": 11,
-						"rsl": "DX-1"
-					}
-				},
-				{
-					"id": "sHW1nvJzYXtucKKNd",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "suYM49OGzmALfq2Dd"
-					},
-					"name": "Judo",
-					"reference": "B203,MA57",
-					"local_notes": "Allows parrying two different attacks per turn, one with each hand.",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/h",
-					"encumbrance_penalty_multiplier": 1,
-					"points": 36,
-					"calc": {
-						"level": 20,
-						"rsl": "DX+8"
-					}
-				},
-				{
-					"id": "qljY3imW_1cAVSvaD",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "q7GljBfWaeL8IdzvQ"
-					},
-					"name": "Choke Hold",
-					"reference": "B230,MA69",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Technique",
-						"Weapon"
-					],
-					"difficulty": "h",
-					"default": {
-						"type": "skill",
-						"name": {
-							"compare": "is",
-							"qualifier": "Judo"
-						},
-						"modifier": -2
-					},
-					"limit": 0,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "skill_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "Judo"
-								}
-							}
-						]
-					},
-					"points": 2,
-					"calc": {
-						"level": 19,
-						"rsl": "-1"
-					}
-				},
-				{
-					"id": "qyq8dyJ6Lr9mQQ1vK",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Skills.skl",
-						"id": "qWuvTRdu3ld9uckzm"
-					},
-					"name": "Arm Lock",
-					"reference": "B230,MA65",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Technique",
-						"Weapon"
-					],
-					"difficulty": "a",
-					"default": {
-						"type": "skill",
-						"name": {
-							"compare": "is",
-							"qualifier": "Judo"
-						}
-					},
-					"limit": 4,
-					"points": 1,
-					"calc": {
-						"level": 21,
-						"rsl": "+1"
-					}
-				},
-				{
-					"id": "q4kLFP-Vpk7r0evRl",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Martial Arts/Martial Arts Skills.skl",
-						"id": "qsZuKX4h4sbNmcwhx"
-					},
-					"name": "Judo Throw",
-					"reference": "MA75",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Technique",
-						"Weapon"
-					],
-					"difficulty": "h",
-					"default": {
-						"type": "skill",
-						"name": {
-							"compare": "is",
-							"qualifier": "Judo"
-						}
-					},
-					"limit": 0,
-					"points": 2,
-					"calc": {
-						"level": 20,
-						"rsl": "+0"
-					}
-				}
-			]
 		}
 	],
 	"spells": [
@@ -6324,6 +6339,62 @@
 						"weight": "0.25 lb",
 						"extended_weight": "2.25 lb"
 					}
+				},
+				{
+					"id": "eT-Xv5NwGSHiCVUNl",
+					"description": "Fragmento do Machado do Orkarian",
+					"local_notes": "Pequeno fragmento da arma que seu irmão de seita empunhou até a morte.",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eGOOJaUIquYyFalY0",
+					"description": "Colar Pyrocalix do Marcusdriel",
+					"local_notes": "Colar feito da madeira sagrada da floresta élfica que pertenceu ao seu amig-... ao seu companhe-... ao Marcusdriel.",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eAqo6xOrice9Dtksk",
+					"description": "Símbolo da Guilda do Eric",
+					"local_notes": "Pequeno brasão de madeira da guilda à qual Eric pertencia.",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "enslJr_bWX9sfTzfF",
+					"description": "Estojo de Maquiagem Amassado",
+					"local_notes": "Pequeno estojo de maquiagem amassado que pertenceu à Elnassir.",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
 				}
 			],
 			"calc": {
@@ -6335,7 +6406,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-10-28T20:36:20-03:00",
+	"modified_date": "2026-10-28T21:48:55-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
