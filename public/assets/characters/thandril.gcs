@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "A2Cv5fUObU3nzVhvz",
-	"total_points": 256,
+	"total_points": 257,
 	"points_record": [
+		{
+			"when": "2026-10-29T00:22:49-03:00",
+			"points": 1,
+			"reason": "XP da sessão"
+		},
 		{
 			"when": "2026-10-28T20:00:00-03:00",
 			"points": 256,
@@ -7477,13 +7482,13 @@
 					],
 					"base_value": "20",
 					"base_weight": "0.02 lb",
-					"quantity": 29,
+					"quantity": 27,
 					"equipped": true,
 					"calc": {
 						"value": 20,
-						"extended_value": 580,
+						"extended_value": 540,
 						"weight": "0.02 lb",
-						"extended_weight": "0.58 lb"
+						"extended_weight": "0.54 lb"
 					}
 				},
 				{
@@ -7507,9 +7512,9 @@
 			],
 			"calc": {
 				"value": 10,
-				"extended_value": 591,
+				"extended_value": 551,
 				"weight": "0.5 lb",
-				"extended_weight": "1.1 lb"
+				"extended_weight": "1.06 lb"
 			}
 		},
 		{
@@ -7853,7 +7858,7 @@
 		}
 	],
 	"created_date": "2026-10-28T20:00:00-03:00",
-	"modified_date": "2026-10-28T21:53:47-03:00",
+	"modified_date": "2026-10-28T22:47:11-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
