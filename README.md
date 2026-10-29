@@ -18,7 +18,7 @@ characters in the browser, no installation required with
 ### Active Characters
 - [Louis Ritant (256)](https://gcs-viewer.netlify.app/?url=./assets/characters/Louis Ritant.gcs) - by Marukusu
 - [D'Bragança Pedregal (395)](https://gcs-viewer.netlify.app/?url=./assets/characters/d-braganca.gcs) - by Gustavo
-- [Acheron Lontaren (306)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
+- [Acheron Lontaren (307)](https://gcs-viewer.netlify.app/?url=./assets/characters/ivo.gcs) - by Lucas
 - [Thandril Estrelaguia (256)](https://gcs-viewer.netlify.app/?url=./assets/characters/thandril.gcs) - by Eduardo Montenegro
 - [Leptothele Tofu (320)](https://gcs-viewer.netlify.app/?url=./assets/characters/tofu.gcs) - by Maurício
 
