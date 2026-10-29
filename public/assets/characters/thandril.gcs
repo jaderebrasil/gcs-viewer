@@ -975,10 +975,36 @@
 						}
 					],
 					"can_level": true,
-					"levels": 3,
+					"levels": 2,
 					"calc": {
-						"points": 6,
-						"current_level": 3
+						"points": 4,
+						"current_level": 2
+					}
+				},
+				{
+					"id": "tAPKJcnJyIr1lsjhl",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "toTe273Ky82B6YdW5"
+					},
+					"name": "Fit",
+					"reference": "B55",
+					"local_notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 5
 					}
 				},
 				{
@@ -1020,7 +1046,7 @@
 				}
 			],
 			"calc": {
-				"points": 21
+				"points": 24
 			}
 		},
 		{
@@ -1325,15 +1351,22 @@
 			"name": "Defeitos (-60)",
 			"children": [
 				{
-					"id": "tT5srlSllrG3HyJWU",
-					"name": "Alignament (Half-good)",
+					"id": "tNGG8drWFhnznWcYD",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tW3e4OJTtFNNveAgo"
+					},
+					"name": "Code of Honor (Professional)",
+					"reference": "B127",
+					"local_notes": "Cartógrafo: nunca falsifica um mapa e sempre registra a fonte e o autor",
 					"tags": [
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -10,
+					"base_points": -5,
 					"calc": {
-						"points": -10
+						"points": -5
 					}
 				},
 				{
@@ -1372,6 +1405,26 @@
 					"calc": {
 						"points": -15,
 						"resolved_notes": "Completar o Grande Mapa: mapear cada trilha e ruína além do conhecido; Make a self-control roll whenever it would be wise to deviate from your goal. If you fail, you continue to pursue your Obsession, regardless of the consequences."
+					}
+				},
+				{
+					"id": "t45ZJHdgu0wbuceEH",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tw81RysAzky-yjNYN"
+					},
+					"name": "Selfless",
+					"reference": "B153",
+					"local_notes": "You must make a self-control roll to put your needs – even survival – before those of someone else.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -5,
+					"calc": {
+						"points": -5
 					}
 				},
 				{
@@ -1657,6 +1710,25 @@
 			"id": "Sdq9e8sUveCLffPFu",
 			"name": "Combate",
 			"children": [
+				{
+					"id": "s_qH97mW13S8nGisO",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Skills.skl",
+						"id": "spMUh1AbXRoFm1hqU"
+					},
+					"name": "Breath Control",
+					"reference": "B182",
+					"tags": [
+						"Athletic"
+					],
+					"difficulty": "ht/h",
+					"points": 1,
+					"calc": {
+						"level": 10,
+						"rsl": "HT-2"
+					}
+				},
 				{
 					"id": "shMY8Oafk-jdWBrtx",
 					"source": {
@@ -5401,10 +5473,10 @@
 							}
 						]
 					},
-					"points": 4,
+					"points": 2,
 					"calc": {
-						"level": 17,
-						"rsl": "IQ+3"
+						"level": 16,
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -5463,10 +5535,10 @@
 							}
 						]
 					},
-					"points": 4,
+					"points": 2,
 					"calc": {
-						"level": 17,
-						"rsl": "IQ+3"
+						"level": 16,
+						"rsl": "IQ+2"
 					}
 				}
 			]
@@ -7781,7 +7853,7 @@
 		}
 	],
 	"created_date": "2026-10-28T20:00:00-03:00",
-	"modified_date": "2026-10-28T21:39:07-03:00",
+	"modified_date": "2026-10-28T21:53:47-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
