@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "Au6owvm6SwHh9qF4T",
-	"total_points": 395,
+	"total_points": 396,
 	"points_record": [
+		{
+			"when": "2026-10-29T00:22:35-03:00",
+			"points": 1,
+			"reason": "Novo grupo se reúne!"
+		},
 		{
 			"when": "2026-10-28T20:29:51-03:00",
 			"points": 13,
@@ -6406,7 +6411,7 @@
 		}
 	],
 	"created_date": "2025-06-10T20:17:05-03:00",
-	"modified_date": "2026-10-28T21:48:55-03:00",
+	"modified_date": "2026-10-29T00:23:42-03:00",
 	"calc": {
 		"swing": "2d-1",
 		"thrust": "1d",
