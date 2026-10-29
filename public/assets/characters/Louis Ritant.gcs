@@ -1455,24 +1455,6 @@
 					}
 				},
 				{
-					"id": "t6X5lfd6piToXbEdt",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Traits.adq",
-						"id": "ta2gcuebm2uhQ5XyB"
-					},
-					"name": "Never Admits Being Wrong",
-					"local_notes": "nunca admite que errou. Sempre inventa uma desculpa ou tenta convencer os outros de que tudo fazia parte do plano.",
-					"tags": [
-						"Mental",
-						"Quirk"
-					],
-					"base_points": -1,
-					"calc": {
-						"points": -1
-					}
-				},
-				{
 					"id": "tLTkr6stM4XoOEFIB",
 					"name": "Always Boasts",
 					"local_notes": "vive contando vantagem sobre suas habilidades e conquistas, mesmo quando está claramente em desvantagem.",
@@ -1503,6 +1485,15 @@
 					"id": "t-15ko9sAC919wLy5",
 					"name": "Dramatico em combate",
 					"local_notes": "reclama teatralmente quando é ferido, suja a roupa ou enfrenta um inconveniente.",
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tqmWrNRUtOrw5kwzh",
+					"name": "Sempre tem uma desculpa",
+					"local_notes": "sempre tem uma desculpa pronta para justificar seus fracassos.",
 					"base_points": -1,
 					"calc": {
 						"points": -1
@@ -2590,13 +2581,13 @@
 					],
 					"base_value": "2",
 					"base_weight": "0.5 lb",
-					"quantity": 21,
+					"quantity": 0,
 					"equipped": true,
 					"calc": {
 						"value": 2,
-						"extended_value": 42,
+						"extended_value": 0,
 						"weight": "0.5 lb",
-						"extended_weight": "10.5 lb"
+						"extended_weight": "0 lb"
 					}
 				},
 				{
@@ -2694,13 +2685,13 @@
 							],
 							"base_value": "20",
 							"base_weight": "0.004 lb",
-							"quantity": 12,
+							"quantity": 7,
 							"equipped": true,
 							"calc": {
 								"value": 20,
-								"extended_value": 240,
+								"extended_value": 140,
 								"weight": "0.004 lb",
-								"extended_weight": "0.048 lb"
+								"extended_weight": "0.028 lb"
 							}
 						},
 						{
@@ -2718,21 +2709,21 @@
 							],
 							"base_value": "1",
 							"base_weight": "0.008 lb",
-							"quantity": 3,
+							"quantity": 13,
 							"equipped": true,
 							"calc": {
 								"value": 1,
-								"extended_value": 3,
+								"extended_value": 13,
 								"weight": "0.008 lb",
-								"extended_weight": "0.024 lb"
+								"extended_weight": "0.104 lb"
 							}
 						}
 					],
 					"calc": {
 						"value": 10,
-						"extended_value": 253,
+						"extended_value": 163,
 						"weight": "0.5 lb",
-						"extended_weight": "0.572 lb"
+						"extended_weight": "0.632 lb"
 					}
 				},
 				{
@@ -2813,14 +2804,14 @@
 			],
 			"calc": {
 				"value": 100,
-				"extended_value": 445,
+				"extended_value": 313,
 				"weight": "10 lb",
-				"extended_weight": "35.572 lb"
+				"extended_weight": "25.132 lb"
 			}
 		}
 	],
 	"created_date": "2026-10-28T20:27:51-03:00",
-	"modified_date": "2026-10-28T22:21:46-03:00",
+	"modified_date": "2026-10-28T23:59:51-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
