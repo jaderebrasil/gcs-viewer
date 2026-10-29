@@ -2241,7 +2241,7 @@
 						"points": -9
 					},
 					"calc": {
-						"level": 13,
+						"level": 12,
 						"rsl": "DX-1"
 					}
 				}
@@ -2312,9 +2312,9 @@
 						}
 					],
 					"calc": {
-						"level": 25,
+						"level": 24,
 						"damage": "1d-1 imp",
-						"parry": "16F"
+						"parry": "15F"
 					}
 				}
 			],
@@ -2475,9 +2475,9 @@
 						}
 					],
 					"calc": {
-						"level": 22,
+						"level": 21,
 						"damage": "1d cr",
-						"parry": "15F"
+						"parry": "14F"
 					}
 				},
 				{
@@ -2527,9 +2527,9 @@
 						}
 					],
 					"calc": {
-						"level": 22,
+						"level": 21,
 						"damage": "1d-2 cr",
-						"parry": "15F"
+						"parry": "14F"
 					}
 				}
 			],
@@ -2541,10 +2541,286 @@
 				"weight": "1 lb",
 				"extended_weight": "1 lb"
 			}
+		},
+		{
+			"id": "EHL6WbY1OUa8LoarU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "EwSOT_Sl-CS9v-TgB"
+			},
+			"description": "Backpack, Frame",
+			"reference": "B288",
+			"tech_level": "1",
+			"tags": [
+				"Camping and Survival Gear"
+			],
+			"base_value": "100",
+			"base_weight": "10 lb",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "100 lb"
+						}
+					}
+				]
+			},
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eIimADxhDTOBGUobo",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eLEGjF9a2hWzDLYsr"
+					},
+					"description": "Traveler's Rations",
+					"reference": "B288",
+					"local_notes": "One meal",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "2",
+					"base_weight": "0.5 lb",
+					"quantity": 21,
+					"equipped": true,
+					"calc": {
+						"value": 2,
+						"extended_value": 42,
+						"weight": "0.5 lb",
+						"extended_weight": "10.5 lb"
+					}
+				},
+				{
+					"id": "eUP9UG4gG3bAIuNFS",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eaRGjCvKg2weKYejv"
+					},
+					"description": "Sleeping Bag",
+					"reference": "B288",
+					"tech_level": "6",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "25",
+					"base_weight": "7 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 25,
+						"extended_value": 25,
+						"weight": "7 lb",
+						"extended_weight": "7 lb"
+					}
+				},
+				{
+					"id": "EwsDzsks7cqSRHkLk",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "EYcpX5Ib_0vAti4WE"
+					},
+					"description": "Pouch, Small",
+					"reference": "B288",
+					"tech_level": "1",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "10",
+					"base_weight": "0.5 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "3 lb"
+								}
+							}
+						]
+					},
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "e9R1mLnn-pF_4uXyC",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Equipment.eqp",
+								"id": "e1oy_sNR1BiZ8wO1l"
+							},
+							"description": "Gold Coin",
+							"reference": "B264",
+							"tech_level": "1",
+							"tags": [
+								"Money: GURPS Standard Medieval Coins"
+							],
+							"base_value": "400",
+							"base_weight": "0.004 lb",
+							"quantity": 0,
+							"equipped": true,
+							"calc": {
+								"value": 400,
+								"extended_value": 0,
+								"weight": "0.004 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "elP2UPePxB_-HLTLP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Equipment.eqp",
+								"id": "e_Vhn8v2MFF-0O2p3"
+							},
+							"description": "Silver Coin",
+							"reference": "B264",
+							"tech_level": "1",
+							"tags": [
+								"Money: GURPS Standard Medieval Coins"
+							],
+							"base_value": "20",
+							"base_weight": "0.004 lb",
+							"quantity": 12,
+							"equipped": true,
+							"calc": {
+								"value": 20,
+								"extended_value": 240,
+								"weight": "0.004 lb",
+								"extended_weight": "0.048 lb"
+							}
+						},
+						{
+							"id": "eY8F3iE-8Ex69Ur51",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Equipment.eqp",
+								"id": "ef953OT928DECjSGt"
+							},
+							"description": "Copper Farthing",
+							"reference": "B264",
+							"tech_level": "1",
+							"tags": [
+								"Money: GURPS Standard Medieval Coins"
+							],
+							"base_value": "1",
+							"base_weight": "0.008 lb",
+							"quantity": 3,
+							"equipped": true,
+							"calc": {
+								"value": 1,
+								"extended_value": 3,
+								"weight": "0.008 lb",
+								"extended_weight": "0.024 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 10,
+						"extended_value": 253,
+						"weight": "0.5 lb",
+						"extended_weight": "0.572 lb"
+					}
+				},
+				{
+					"id": "eGsUG6rqmTFOtc_GL",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "ezs_tGacOl7kuHwQk"
+					},
+					"description": "Torch",
+					"reference": "B288",
+					"local_notes": "Burns for 1 hour",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "3",
+					"base_weight": "1 lb",
+					"quantity": 5,
+					"equipped": true,
+					"calc": {
+						"value": 3,
+						"extended_value": 15,
+						"weight": "1 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "ehgLpRnVCR2HFpdvs",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "e0z9DCZj3jzgLmFSf"
+					},
+					"description": "Personal Basics",
+					"reference": "B288",
+					"local_notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "5",
+					"base_weight": "1 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 5,
+						"extended_value": 5,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eYrrxw5jMZgpMH1IT",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eZ_XacMxyQscAnrjm"
+					},
+					"description": "Rope, 3/8\", 10 yards",
+					"reference": "B288",
+					"local_notes": "Supports 300 lbs.",
+					"tech_level": "0",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "5",
+					"base_weight": "1.5 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 5,
+						"extended_value": 5,
+						"weight": "1.5 lb",
+						"extended_weight": "1.5 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 100,
+				"extended_value": 445,
+				"weight": "10 lb",
+				"extended_weight": "35.572 lb"
+			}
 		}
 	],
 	"created_date": "2026-10-28T20:27:51-03:00",
-	"modified_date": "2026-10-28T22:06:29-03:00",
+	"modified_date": "2026-10-28T22:21:46-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
