@@ -16,7 +16,7 @@ characters in the browser, no installation required with
 
 
 ### Active Characters
-- [Darci "Chorume" Fagundes (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/darci-chorume-fagundes.gcs) - by 
+- [Darci "Chorume" Fagundes (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/darci-chorume-fagundes.gcs) - by Dudu
 - [TchêPT (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/tche-pt.gcs) - by Gustavo
 
 ### Dead Characters
