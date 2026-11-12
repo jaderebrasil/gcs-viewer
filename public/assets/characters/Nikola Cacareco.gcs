@@ -2084,13 +2084,44 @@
 						"weight": "2 lb",
 						"extended_weight": "2 lb"
 					}
+				},
+				{
+					"id": "eWFxNGx_TBIlWqmgH",
+					"description": "Scout Robot UT80",
+					"local_notes": "Malfunction 11",
+					"legality_class": "4",
+					"base_value": "3000",
+					"base_weight": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 3000,
+						"extended_value": 3000,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "em8gaG0V5i4Si2XW3",
+					"description": "Caixa de sucata",
+					"legality_class": "4",
+					"base_value": "1000",
+					"base_weight": "5",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 1000,
+						"extended_value": 1000,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 60,
-				"extended_value": 990,
+				"extended_value": 4990,
 				"weight": "3 lb",
-				"extended_weight": "29.05 lb"
+				"extended_weight": "38.05 lb"
 			}
 		}
 	],
@@ -2105,7 +2136,7 @@
 		}
 	],
 	"created_date": "2026-11-08T21:24:33-03:00",
-	"modified_date": "2026-11-11T22:02:09-03:00",
+	"modified_date": "2026-11-11T22:44:37-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
