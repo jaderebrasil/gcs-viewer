@@ -11,8 +11,8 @@ characters in the browser, no installation required with
 |:------------------|-------:|-------:|-------:|
 | **Points:**       |    150 |    150 |    150 |
 | **HP:**           |     10 |     11 |     13 |
-| **FP:**           |     10 |     12 |     13 |
-| **DR (torso):**   |      0 |      5 |     12 |
+| **FP:**           |     10 |     11 |     12 |
+| **DR (torso):**   |      0 |      6 |     12 |
 
 
 ### Active Characters
