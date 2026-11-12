@@ -474,7 +474,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 4
 						}
 					}
 				},
@@ -489,7 +489,7 @@
 					"calc": {
 						"roll_range": "3-4",
 						"dr": {
-							"all": 4
+							"all": 8
 						}
 					}
 				},
@@ -503,7 +503,7 @@
 					"calc": {
 						"roll_range": "5",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -517,7 +517,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -531,7 +531,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -543,7 +543,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -557,7 +557,7 @@
 					"calc": {
 						"roll_range": "11",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -571,7 +571,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -585,7 +585,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -599,7 +599,7 @@
 					"calc": {
 						"roll_range": "15",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -613,7 +613,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -627,7 +627,7 @@
 					"calc": {
 						"roll_range": "17-18",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				},
@@ -640,7 +640,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 2
+							"all": 6
 						}
 					}
 				}
@@ -684,10 +684,10 @@
 		},
 		{
 			"attr_id": "ht",
-			"adj": 3,
+			"adj": 2,
 			"calc": {
-				"value": 13,
-				"points": 30
+				"value": 12,
+				"points": 20
 			}
 		},
 		{
@@ -758,7 +758,7 @@
 			"attr_id": "basic_speed",
 			"adj": 0,
 			"calc": {
-				"value": 5.75,
+				"value": 5.5,
 				"points": 0
 			}
 		},
@@ -790,8 +790,8 @@
 			"attr_id": "fp",
 			"adj": 0,
 			"calc": {
-				"value": 13,
-				"current": 13,
+				"value": 12,
+				"current": 12,
 				"points": 0
 			}
 		},
@@ -806,6 +806,453 @@
 		}
 	],
 	"traits": [
+		{
+			"id": "tqOg--3q46y96jLfg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "tAXbbvEvWnTCuo6at"
+			},
+			"name": "Regeneration",
+			"reference": "B80,P70,MA47",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "mILCN6Xx-OBCuG9F2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mxrOMQ6r9_VLKIUkL"
+					},
+					"name": "Slow",
+					"reference": "B80",
+					"local_notes": "You recover 1 HP per 12 hours",
+					"cost_adj": "10",
+					"disabled": true
+				},
+				{
+					"id": "mvK4lfQFeJ8mkSsoL",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mw2BDL4Cj1QijeaUX"
+					},
+					"name": "Regular",
+					"reference": "B80",
+					"local_notes": "You recover 1 HP per hour",
+					"cost_adj": "25",
+					"disabled": true
+				},
+				{
+					"id": "miOKZrqG3YnKnw_WW",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "m62p3yX-ok7--J1f_"
+					},
+					"name": "Fast",
+					"reference": "B80",
+					"local_notes": "You recover 1 HP per minute",
+					"cost_adj": "50"
+				},
+				{
+					"id": "mXwzd1JUQ9AAqvPAm",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mxVYDRKuLewns2svk"
+					},
+					"name": "Very Fast",
+					"reference": "B80",
+					"local_notes": "You recover 1 HP per second",
+					"cost_adj": "100",
+					"disabled": true
+				},
+				{
+					"id": "mpjg44CGxeffWnXdh",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mHTnt8RLNJIoaq4AL"
+					},
+					"name": "Extreme",
+					"reference": "B80",
+					"local_notes": "You recover 10 HP per second",
+					"cost_adj": "150",
+					"disabled": true
+				},
+				{
+					"id": "m2EgmEbGuVrMpnAVA",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mNBhRnPnn1hlpU03h"
+					},
+					"name": "Heals Radiation",
+					"reference": "B80",
+					"cost_adj": "40%",
+					"disabled": true
+				},
+				{
+					"id": "mP-fMsetqHdo7RgVr",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mTqZGfY1o25AAtP1j"
+					},
+					"name": "Radiation Only",
+					"reference": "B80",
+					"cost_adj": "-60%",
+					"disabled": true
+				},
+				{
+					"id": "md8owrKe8PCtJFTCa",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mMjgFOXNwoCDriYU_"
+					},
+					"name": "Fatigue Recovery",
+					"reference": "P70",
+					"cost_adj": "100%",
+					"disabled": true
+				},
+				{
+					"id": "moi76WQFsijGYsTd8",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mPplrZ3_pGZln40HO"
+					},
+					"name": "Fatigue Only",
+					"reference": "P70",
+					"disabled": true
+				},
+				{
+					"id": "m9VBvR_M44Bd1oYF9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mZtWyT8UxVsS1e1Ch"
+					},
+					"name": "Limited: @Advantage@ Only",
+					"reference": "P70",
+					"cost_adj": "-40%",
+					"disabled": true
+				},
+				{
+					"id": "mmcGknR8fWQtQz_vF",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mHqngoyfABgEjEXkX"
+					},
+					"name": "Bane",
+					"reference": "H18",
+					"local_notes": "@Common or Very Common@",
+					"cost_adj": "-50%",
+					"disabled": true
+				},
+				{
+					"id": "m0qVVrSfpO050sPa6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mB6GZ_a-SyvQIeS3v"
+					},
+					"name": "Bane",
+					"reference": "H18",
+					"local_notes": "Burn Damage",
+					"vtt_notes": "Dano de queimadura frita os nanitas, sendo preciso curar no tempo normal.",
+					"cost_adj": "-30%"
+				},
+				{
+					"id": "miXIRW7XB81r0s8Ny",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mpIYIYEgkiXMHN0an"
+					},
+					"name": "Bane",
+					"reference": "H18",
+					"local_notes": "Nuisance: Propaganda enquanto regenera",
+					"cost_adj": "-10%"
+				}
+			],
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "t4h-aPi4lzdjDr0Mh",
+			"name": "Acessory Personal Computer",
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "t1jrFvsLLrciUPSwa",
+			"name": "Natural Attacks",
+			"reference": "B271",
+			"weapons": [
+				{
+					"id": "wkHWGtNz42qv_1Oj9",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						}
+					],
+					"calc": {
+						"level": 10,
+						"damage": "1d-3 cr"
+					}
+				},
+				{
+					"id": "wp2hy9HFHs_C0LnyB",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
+						}
+					],
+					"calc": {
+						"level": 10,
+						"damage": "1d-3 cr",
+						"parry": "8"
+					}
+				},
+				{
+					"id": "wCiZrh_uYZ__oadxD",
+					"sv": 1,
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Kicking"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"modifier": -2
+						}
+					],
+					"calc": {
+						"level": 8,
+						"damage": "1d-2 cr"
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tQ7ZVDPd0JlvXTRlj",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "twKiC3G-0LEkyZhg5"
+			},
+			"name": "Language: 中文",
+			"reference": "B24",
+			"tags": [
+				"Advantage",
+				"Language",
+				"Mental"
+			],
+			"replacements": {
+				"Language": "Chinês"
+			},
+			"modifiers": [
+				{
+					"id": "msy97xWe4QirpOSqJ",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mbcQzpwX11Huwr-U6"
+					},
+					"name": "Native",
+					"reference": "B23",
+					"cost_adj": "-6",
+					"disabled": true
+				},
+				{
+					"id": "mgWl4dgSmmsdP84ll",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mHzYDmnJqANGrL60x"
+					},
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "mpMZon5wzPRJqbfMg",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mniVlL2Ebwc5l11P2"
+					},
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "mv2XPq2Oqp5Txlpcn",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mqP3HQxmG6EVMEwge"
+					},
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2"
+				},
+				{
+					"id": "mUh2e5MJzvC2C0anj",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mYFY0xIYiSXYlZzZM"
+					},
+					"name": "Spoken",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3",
+					"disabled": true
+				},
+				{
+					"id": "mFNLPzf5pB2Rbkzj1",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "m0oBR95sjtGILO5fs"
+					},
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "None",
+					"disabled": true
+				},
+				{
+					"id": "mRPqroVsvZhRjKymm",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mPjeGO0ZNPi_Qduj1"
+					},
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Broken",
+					"cost_adj": "1",
+					"disabled": true
+				},
+				{
+					"id": "m6Onfpd1wLubOE0xn",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mM52AaQ3knPSJEeMZ"
+					},
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Accented",
+					"cost_adj": "2",
+					"disabled": true
+				},
+				{
+					"id": "mRipl9ODXDVPIsel6",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "mFWnmkTfGOz_QVmJ9"
+					},
+					"name": "Written",
+					"reference": "B24",
+					"local_notes": "Native",
+					"cost_adj": "3"
+				}
+			],
+			"calc": {
+				"points": 5
+			}
+		},
 		{
 			"id": "tBWvU95co-SFuTixD",
 			"source": {
@@ -1076,138 +1523,300 @@
 			}
 		},
 		{
-			"id": "tQ7ZVDPd0JlvXTRlj",
+			"id": "td12xxf-gnxykk_u5",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Advantages.adq",
-				"id": "twKiC3G-0LEkyZhg5"
+				"id": "tdNAXpWbxaEW07Oxr"
 			},
-			"name": "Language: 中文",
-			"reference": "B24",
+			"name": "High Pain Threshold",
+			"reference": "B59",
+			"local_notes": "Never suffer shock penalties when injured",
 			"tags": [
 				"Advantage",
-				"Language",
-				"Mental"
+				"Physical"
 			],
-			"replacements": {
-				"Language": "Chinês"
-			},
-			"modifiers": [
+			"base_points": 10,
+			"features": [
 				{
-					"id": "msy97xWe4QirpOSqJ",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mbcQzpwX11Huwr-U6"
-					},
-					"name": "Native",
-					"reference": "B23",
-					"cost_adj": "-6",
-					"disabled": true
+					"type": "conditional_modifier",
+					"situation": "on all HT rolls to avoid knockdown and stunning",
+					"amount": 3
 				},
 				{
-					"id": "mgWl4dgSmmsdP84ll",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mHzYDmnJqANGrL60x"
-					},
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "None",
-					"disabled": true
-				},
-				{
-					"id": "mpMZon5wzPRJqbfMg",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mniVlL2Ebwc5l11P2"
-					},
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1",
-					"disabled": true
-				},
-				{
-					"id": "mv2XPq2Oqp5Txlpcn",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mqP3HQxmG6EVMEwge"
-					},
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2"
-				},
-				{
-					"id": "mUh2e5MJzvC2C0anj",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mYFY0xIYiSXYlZzZM"
-					},
-					"name": "Spoken",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3",
-					"disabled": true
-				},
-				{
-					"id": "mFNLPzf5pB2Rbkzj1",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "m0oBR95sjtGILO5fs"
-					},
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "None",
-					"disabled": true
-				},
-				{
-					"id": "mRPqroVsvZhRjKymm",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mPjeGO0ZNPi_Qduj1"
-					},
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Broken",
-					"cost_adj": "1",
-					"disabled": true
-				},
-				{
-					"id": "m6Onfpd1wLubOE0xn",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mM52AaQ3knPSJEeMZ"
-					},
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Accented",
-					"cost_adj": "2",
-					"disabled": true
-				},
-				{
-					"id": "mRipl9ODXDVPIsel6",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mFWnmkTfGOz_QVmJ9"
-					},
-					"name": "Written",
-					"reference": "B24",
-					"local_notes": "Native",
-					"cost_adj": "3"
+					"type": "conditional_modifier",
+					"situation": "to resist torture",
+					"amount": 3
 				}
 			],
 			"calc": {
-				"points": 5
+				"points": 10
+			}
+		},
+		{
+			"id": "tvTuMR7k-8f6ZFsyE",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "tXyQiDpzsBqo2WPC-"
+			},
+			"name": "Hard to Kill",
+			"reference": "B58",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"points_per_level": 2,
+			"features": [
+				{
+					"type": "conditional_modifier",
+					"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 2,
+				"level": 1,
+				"current_level": 1
+			}
+		},
+		{
+			"id": "t4ete-BZXfY8RkXbe",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Advantages.adq",
+				"id": "tpfm0f92cmaWpLuer"
+			},
+			"name": "Doesn't Eat or Drink",
+			"reference": "B50",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "TYcTtZZEnT1L3UN-t",
+			"name": "DEFEITOS",
+			"children": [
+				{
+					"id": "tvZdfraEAXbccz81O",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tD9Yk81_0TWzV7Bs1"
+					},
+					"name": "Weirdness Magnet",
+					"reference": "B161",
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mjakijMj3ZEYlbgaw",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m4kH2bn-HKVhth-O3"
+							},
+							"name": "Origins Magnet",
+							"reference": "SU32",
+							"disabled": true
+						}
+					],
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "t7W_MSV3QPpn_yUs5",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tpiqnMb_0gMVodVcU"
+					},
+					"name": "Pacifism: Cannot Harm Innocents",
+					"reference": "B148",
+					"local_notes": "You may fight – you may even start fights – but you may only use deadly force on a foe that is attempting to do you serious harm. Capture is not “serious harm” unless you are already under penalty of death or have a Code of Honor that would require suicide if captured. You never intentionally do anything that causes, or even threatens to cause, injury to the uninvolved – particularly if they are “ordinary folks.”",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mCyAP-zpLPvdfn2Zh",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m1MBh2D6pBBrWjpzd"
+							},
+							"name": "Species-Specific",
+							"reference": "UT32",
+							"cost_adj": "-80%",
+							"disabled": true
+						}
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tsN3-a-gO4KHmNP7U",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "twd9swNIt-FxMNta3"
+					},
+					"name": "Nosy (Fofoqueiro)",
+					"reference": "B164",
+					"local_notes": "Lesser version of 'Curious'. Me meto nos assuntos dos amigos e quero saber o que eles estão aprontando.",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tDcF0lj67O29SOD51",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tzX0cWeCXPf3rAmFt"
+					},
+					"name": "No Sense of Humor",
+					"reference": "B146",
+					"local_notes": "Leva tudo ao pé da letra...",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others in any situation where No Sense of Humor becomes evident",
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tJKrO6rAMwWiAzYXf",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tXsF_tAqzxDEB-L_o"
+					},
+					"name": "Ha - ha ...... ha",
+					"reference": "B140",
+					"local_notes": "Não sente prazeres ou vê graça nas coisas.",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -15,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "carousing"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "connoisseur"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "erotic art"
+							},
+							"amount": -3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "gambling"
+							},
+							"amount": -3
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "(up to -3, at GM's discretion) from others in any situation where your lack of appreciation becomes obvious (GM’s decision)",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "tSewQbDA2vrGyIPXw",
+					"name": "Goooood Morning, China!",
+					"local_notes": "Toca musiquinhas chinesas todos os dias de manhã para acordar a galera!",
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tPoKI1trUutuOI-qc",
+					"name": "Falando nisso...",
+					"local_notes": "Uma vez que TchÊPT não souber responder algo, ou falhar em uma pesquisa, ele fica linkando a dúvida com novos assuntos até receber um feedback positivo.",
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tU-A3sVj3jTbMlFvA",
+					"name": "Esporões NEON",
+					"local_notes": "Faz barulhinho quando caminha",
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tRzpY3gWjMy9DslhY",
+					"name": "Bug linguístico cód.404",
+					"local_notes": "Ocasionalmente muda o sotaque ou o idioma ao longo do dia ou dependendo do momento.",
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				}
+			],
+			"calc": {
+				"points": -55
 			}
 		},
 		{
@@ -1233,143 +1842,770 @@
 					}
 				},
 				{
-					"id": "Tk_9J5Et6AW1aMK6Z",
+					"id": "T-LkPiJaxPSR99A1x",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-						"id": "TYxbbc1uRTHiKNCn8"
+						"path": "Basic Set/Meta-Traits/Machine.gct",
+						"id": "ToqmZeicMjtZiKmrz"
 					},
-					"name": "AI",
-					"reference": "TT2:9",
+					"name": "Meta-Trait: Machine",
+					"reference": "B263",
 					"container_type": "meta_trait",
 					"children": [
 						{
-							"id": "tkcKdcvJkiF0ikl8I",
+							"id": "tO4u_YzA8mK4qDHTV",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
-								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-								"id": "t1CQrZxkZrzdvS9tx"
+								"path": "Basic Set/Meta-Traits/Machine.gct",
+								"id": "tmHSi3bdY6NEDZG_K"
 							},
-							"name": "Absolute Timing",
-							"reference": "B35",
+							"name": "Wears out instead of aging",
+							"reference": "B263",
 							"tags": [
-								"Advantage",
-								"Mental"
-							],
-							"modifiers": [
-								{
-									"id": "m2B_0QKtPKvO9tNbt",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-										"id": "m4TYbfz7Z_PhJwVWH"
-									},
-									"name": "Chronolocation",
-									"cost_adj": "3",
-									"disabled": true
-								}
-							],
-							"base_points": 2,
-							"calc": {
-								"points": 2
-							}
-						},
-						{
-							"id": "tVtG2QL2Bq2n5XQkW",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-								"id": "thEUw5OtlA7BVHwBR"
-							},
-							"name": "Digital Mind",
-							"reference": "B49",
-							"tags": [
-								"Advantage",
-								"Exotic",
 								"Physical"
 							],
-							"base_points": 5,
 							"calc": {
-								"points": 5
+								"points": 0
 							}
 						},
 						{
-							"id": "tR2if96mCUTnO8qOz",
+							"id": "tNgA08QcouUtwtxwy",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
-								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-								"id": "tYPaDar2jLV-snb8B"
+								"path": "Basic Set/Meta-Traits/Machine.gct",
+								"id": "t8Ee2HIEzEK7vt1BO"
 							},
-							"name": "Doesn't Sleep",
-							"reference": "B50",
-							"tags": [
-								"Advantage",
-								"Exotic",
-								"Physical"
-							],
-							"base_points": 20,
-							"calc": {
-								"points": 20
-							}
-						},
-						{
-							"id": "t0ngmm_ZK-Ac1jfPy",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-								"id": "thAzaF9zbhIwT3dl9"
-							},
-							"name": "Intuitive Mathematician",
-							"reference": "B66",
-							"tags": [
-								"Advantage",
-								"Mental"
-							],
-							"base_points": 5,
-							"calc": {
-								"points": 5
-							}
-						},
-						{
-							"id": "tyqI9NmPJoQcTd9Up",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-								"id": "tPnoIhf4QZOGqz2K9"
-							},
-							"name": "Photographic Memory",
-							"reference": "B51",
-							"tags": [
-								"Advantage",
-								"Mental"
-							],
-							"base_points": 10,
-							"calc": {
-								"points": 10
-							}
-						},
-						{
-							"id": "tS0VmDuvlKOGKVWEA",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
-								"id": "t_azDveNINS5493nk"
-							},
-							"name": "Reprogrammable",
-							"reference": "B150",
+							"name": "Unhealing (Total)",
+							"reference": "B160",
 							"tags": [
 								"Disadvantage",
 								"Exotic",
-								"Mental"
+								"Physical"
 							],
-							"base_points": -10,
+							"base_points": -30,
 							"calc": {
-								"points": -10
+								"points": -30
+							}
+						},
+						{
+							"id": "t1QoiIUjpe56UW-wo",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Meta-Traits/Machine.gct",
+								"id": "tK9jqulnrT5y4Wfzx"
+							},
+							"name": "Resistant",
+							"reference": "B81",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mDnqjY6jUFdsz7m_G",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mBXv9CT4PI9tGuV1C"
+									},
+									"name": "Metabolic Hazards",
+									"reference": "B80",
+									"cost_adj": "30"
+								},
+								{
+									"id": "mKTyQM_8Xa__C2bL0",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mjYUBNuSKvc51ZbeM"
+									},
+									"name": "@Common: Poison, Sickness, etc.@",
+									"reference": "B81",
+									"cost_adj": "15",
+									"disabled": true
+								},
+								{
+									"id": "mIVgwzd3qfDhZz0js",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "ml6qv18GhRyGlJMHp"
+									},
+									"name": "@Occasional: Disease, Ingested Poison, etc.@",
+									"reference": "B81",
+									"cost_adj": "10",
+									"disabled": true
+								},
+								{
+									"id": "mXuThZavrkoksf2C3",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mjqpYwm22hwZ4yQm4"
+									},
+									"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+									"reference": "B81",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mzjYZ7Fmjge8PncDD",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mgala2x0MMucSvNce"
+									},
+									"name": "Immunity",
+									"reference": "B81",
+									"cost_adj": "x1"
+								},
+								{
+									"id": "mfm6YElJHtxL1O4JZ",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mpb6Nep6pYs_0cSFs"
+									},
+									"name": "+8 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_adj": "x0.5",
+									"disabled": true
+								},
+								{
+									"id": "mK3upNb3FzsfxE2u-",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mgfJj2bxmmv_pNHZO"
+									},
+									"name": "+3 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_adj": "x0.33",
+									"disabled": true
+								}
+							],
+							"round_down": true,
+							"calc": {
+								"points": 30
+							}
+						},
+						{
+							"id": "tWOB-DRDEGJiEOkSV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Meta-Traits/Machine.gct",
+								"id": "trhi9lTnSZl5rsknG"
+							},
+							"name": "No fatigue points, Don't spend fatigue points",
+							"reference": "B263",
+							"tags": [
+								"Physical"
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "tfrMXCqh73fuz3vU0",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Meta-Traits/Machine.gct",
+								"id": "tJ2vefMcoAW0-N8cP"
+							},
+							"name": "Injury Tolerance",
+							"reference": "B60",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m7fAPTM3wk0jCR1bA",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mxsvSVBMs1d9nSZV-"
+									},
+									"name": "Diffuse",
+									"reference": "B60",
+									"local_notes": "Immune to crippling injuries. Brain, Vitals and Groin cannot be targeted. Most foes cannot slam or grapple you (GM's decision). Do not bleed. Unaffected by blood-borne toxins. Immune to attacks that rely on cutting off blood to part of your body. Impaling and piercing attacks of any size never do more than 1 HP of injury, regardless of penetrating damage. Other attacks never do more than 2 HP of injury. Exception: Area-effect, cone, and explosion attacks cause normal injury",
+									"cost_adj": "100",
+									"disabled": true
+								},
+								{
+									"id": "mJPgJ8eO0cMVUFBj8",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "m_c4NVovuS3rgzcBO"
+									},
+									"name": "Homogenous",
+									"reference": "B60",
+									"local_notes": "Altered wound modifiers: imp & pi++ are x1/2, pi+ is x1/3, pi is x1/5, pi- is x1/10",
+									"cost_adj": "40",
+									"disabled": true
+								},
+								{
+									"id": "m23aVsm-Iz_F5Yuq-",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mMSw6ncXp1SqGc-z1"
+									},
+									"name": "No Blood",
+									"reference": "B61",
+									"local_notes": "Do not bleed, unaffected by blood-borne toxins, immune to attacks that rely on cutting off blood to part of your body",
+									"cost_adj": "5"
+								},
+								{
+									"id": "m1pB-mUrWYj5xSKzx",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "ml4eGhgmlwuV6KcZT"
+									},
+									"name": "No Brain",
+									"reference": "B61",
+									"local_notes": "Brain cannot be targeted. Blows to the skull or eye are treated like blows to the face, except that eye injury can still cripple the eye",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mqTn3ZBQ1vm2dEQoV",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mP-86il03Ev4qm1oe"
+									},
+									"name": "No Eyes",
+									"reference": "B61",
+									"local_notes": "Eyes may not be targeted. Immune to blinding attacks",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "m4R7lpyptHU4LTUO2",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mXh58hTy7hKXVY5ZO"
+									},
+									"name": "No Head",
+									"reference": "B61",
+									"local_notes": "Skull, Brain and Face cannot be targeted",
+									"cost_adj": "7",
+									"disabled": true
+								},
+								{
+									"id": "mGo1z0zFwe_Q2pTFe",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "m8LTZyBz0JcGFJjTA"
+									},
+									"name": "No Neck",
+									"reference": "B61",
+									"local_notes": "Neck may not be targeted and cannot be decapitated, choked or strangled",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mwL8KZpwJ_p25f7cw",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mW_52ZB3Eyk37-41_"
+									},
+									"name": "No Vitals",
+									"reference": "B61",
+									"local_notes": "Attacks to the Vitals or Groin are treated as attacks to the Torso",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mcEgNU7CDPXAEW2LT",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Meta-Traits/Machine.gct",
+										"id": "mhZ-qr_MxQLFOo-me"
+									},
+									"name": "Unliving",
+									"reference": "B61",
+									"local_notes": "Altered wound modifiers: imp & pi++ are x1, pi+ is x1/2, pi is x1/3, pi- is x1/5",
+									"cost_adj": "20"
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "t40VZTTHcFkRtYAzk",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Meta-Traits/Machine.gct",
+								"id": "twswnfgfcQs5yIzem"
+							},
+							"name": "Eight-hour energy reserve, Refuel 3 times per day",
+							"reference": "B263",
+							"tags": [
+								"Physical"
+							],
+							"calc": {
+								"points": 0
 							}
 						}
 					],
 					"calc": {
-						"points": 32
+						"points": 25
+					}
+				},
+				{
+					"id": "tMnjRYqbAyoA-cu-2",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "tsR1jTiwn3wP9X-jy"
+					},
+					"name": "Maintenance",
+					"reference": "B143",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m5NB7qUxANuFp-Wrr",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m81zMlgTDkc6g-om6"
+							},
+							"name": "People Required: 1",
+							"reference": "B143",
+							"cost_adj": "-10"
+						},
+						{
+							"id": "mmGMnUONV_ok72bXS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mrqdu09a6INqVA365"
+							},
+							"name": "People Required: 2",
+							"reference": "B143",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "m-TEcbRU-6at37x3h",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mVkWeQf00-UpcHYiN"
+							},
+							"name": "People Required: 3-5",
+							"reference": "B143",
+							"cost_adj": "-30",
+							"disabled": true
+						},
+						{
+							"id": "m7ixmj7quwOQ6Q8LJ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mWxCB3o50yMXa7W_K"
+							},
+							"name": "People Required: 6-10",
+							"reference": "B143",
+							"cost_adj": "-40",
+							"disabled": true
+						},
+						{
+							"id": "mgK7gbnRDZ8hgBhUa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m437LOA1YcNZ3Oayr"
+							},
+							"name": "People Required: 11-20",
+							"reference": "B143",
+							"cost_adj": "-50",
+							"disabled": true
+						},
+						{
+							"id": "mhKMWHE22iWSndoxc",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m-sxO2Md1051BIWod"
+							},
+							"name": "People Required: 21-50",
+							"reference": "B143",
+							"cost_adj": "-60",
+							"disabled": true
+						},
+						{
+							"id": "mCz2Mysgxm1W2nlzM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mg9Mso_c8KCj51Wrt"
+							},
+							"name": "People Required: 51-100",
+							"reference": "B143",
+							"cost_adj": "-70",
+							"disabled": true
+						},
+						{
+							"id": "mbgrOqURXIWoCMUTP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mCWeYvOChYOt9KiVw"
+							},
+							"name": "People Required: 101-200",
+							"reference": "B143",
+							"cost_adj": "-80",
+							"disabled": true
+						},
+						{
+							"id": "mQ0LCX8tvBLhIn3Bt",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mE7L4aPYDB_EQ1y52"
+							},
+							"name": "People Required: 201-400",
+							"reference": "B143",
+							"cost_adj": "-90",
+							"disabled": true
+						},
+						{
+							"id": "m05vRfiGuBs2TYOZy",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mBaFQEPW1rFxpKqv7"
+							},
+							"name": "People Required: 401-800",
+							"reference": "B143",
+							"cost_adj": "-100",
+							"disabled": true
+						},
+						{
+							"id": "mqEOMUa07mj_fG4zc",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m8BJOFGALVKFGdmSO"
+							},
+							"name": "People Required: 801-1600",
+							"reference": "B143",
+							"cost_adj": "-110",
+							"disabled": true
+						},
+						{
+							"id": "mBU0AQ_hTcxiOkVhV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m_LCVS7OmV-XEoZGr"
+							},
+							"name": "People Required: 1601-3200",
+							"reference": "B143",
+							"cost_adj": "-120",
+							"disabled": true
+						},
+						{
+							"id": "m0rXBn2904AsLhP_n",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mFh4v8A_QBcREeVbp"
+							},
+							"name": "People Required: 3201-6400",
+							"reference": "B143",
+							"cost_adj": "-130",
+							"disabled": true
+						},
+						{
+							"id": "mOA-M0MK17SA_sg8b",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mdLVKItpKIbDuXJ3G"
+							},
+							"name": "People Required: 6401-12800",
+							"reference": "B143",
+							"cost_adj": "-140",
+							"disabled": true
+						},
+						{
+							"id": "mHhrzDdC9FcAOECB-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mgYIKqZdxPDSJ5-p-"
+							},
+							"name": "People Required: 12801-25600",
+							"reference": "B143",
+							"cost_adj": "-150",
+							"disabled": true
+						},
+						{
+							"id": "moW7JnXxllCLwvo9e",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "moUqb2U4mOE7A3gAU"
+							},
+							"name": "Frequency: Monthly",
+							"reference": "B143",
+							"cost_adj": "x0.2",
+							"disabled": true
+						},
+						{
+							"id": "mT0lHgjUxDosPp7vd",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "muV1UWqLbskQH0ejS"
+							},
+							"name": "Frequency: Bi-weekly",
+							"reference": "B143",
+							"cost_adj": "x0.3333",
+							"disabled": true
+						},
+						{
+							"id": "mCBtUBF8Gc7Px2fw1",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mBHbMppublsO_LRu3"
+							},
+							"name": "Frequency: Weekly",
+							"reference": "B143",
+							"cost_adj": "x0.5"
+						},
+						{
+							"id": "mmXoubC_04tyEQrt5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mNJsP64mTIj8TzXTp"
+							},
+							"name": "Frequency: Every other day",
+							"reference": "B143",
+							"cost_adj": "x0.75",
+							"disabled": true
+						},
+						{
+							"id": "me927IGsQv49hGr2S",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mmhbJlgy-WiULGUm6"
+							},
+							"name": "Frequency: Daily",
+							"reference": "B143",
+							"cost_adj": "x1",
+							"disabled": true
+						},
+						{
+							"id": "m8Ek3drcDwoVTyijF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mcAZ2qIiIVF5kEKmz"
+							},
+							"name": "Frequency: Twice daily",
+							"reference": "B143",
+							"cost_adj": "x2",
+							"disabled": true
+						},
+						{
+							"id": "mUiBbXjvkKGbgl9Xg",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m5VJlF7C01zCqwd0m"
+							},
+							"name": "Frequency: Three to five times daily",
+							"reference": "B143",
+							"cost_adj": "x3",
+							"disabled": true
+						},
+						{
+							"id": "mz7nK2g7Vyr9ttDWx",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mQEhYgtFuLZMAj-3N"
+							},
+							"name": "Frequency: Constant",
+							"reference": "B143",
+							"cost_adj": "x5",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tT3J1ObrWsIKCQ_bS",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "t2zZkp9SY4u2UCBWa"
+					},
+					"name": "Electrical",
+					"reference": "B134",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": -20,
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "tQIqwSOILHYbdv8TE",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Advantages.adq",
+						"id": "t5iMtrAG03rIsyh0O"
+					},
+					"name": "Doesn't Breathe",
+					"reference": "B49",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mpUZj_pW0HGcDf67b",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m0Bwm_H_QnHbhs4Am"
+							},
+							"name": "Gills",
+							"reference": "B49",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mHVh5rrHwEavUO0Aa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "ml5uzItA84pI-ETzV"
+							},
+							"name": "Gills",
+							"reference": "B49",
+							"local_notes": "Suffocates in air",
+							"cost_adj": "-20",
+							"disabled": true
+						},
+						{
+							"id": "mjpdu3ukDcKqnk7pS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mcUw4jC4E3AT2Y1mO"
+							},
+							"name": "Oxygen Absorption",
+							"reference": "B49",
+							"cost_adj": "-25%",
+							"disabled": true
+						},
+						{
+							"id": "mNl6yLFCBbiGI5p2T",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mo-_HS9OgzNBOjq-n"
+							},
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"local_notes": "Can hold breath 25 times as long as normal",
+							"cost_adj": "-50%",
+							"disabled": true
+						},
+						{
+							"id": "mvE3IQBL0cat2x0nj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mdMDXb7jKmSNgWo4B"
+							},
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"local_notes": "Can hold breath 50 times as long as normal",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mGdYc_-QFkeo8CGtW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mNil0MP6tUFOKJRT6"
+							},
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"local_notes": "Can hold breath 100 times as long as normal",
+							"cost_adj": "-30%",
+							"disabled": true
+						},
+						{
+							"id": "myfs9N45Wh4PwZJLB",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "m8TgTg34ZZDwIOp4u"
+							},
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"local_notes": "Can hold breath 200 times as long as normal",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mlcOjeyNtT-z9WH8K",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mTDmVKzLcCYjexctW"
+							},
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"local_notes": "Can hold breath 300 times as long as normal",
+							"cost_adj": "-10%",
+							"disabled": true
+						},
+						{
+							"id": "mAv5YRygKeBCxzQxr",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Advantages.adq",
+								"id": "mVocUlD4aI-rNLKQZ"
+							},
+							"name": "Oxygen Combustion",
+							"reference": "B49",
+							"cost_adj": "-50%",
+							"disabled": true
+						}
+					],
+					"base_points": 20,
+					"calc": {
+						"points": 20
 					}
 				},
 				{
@@ -1825,1468 +3061,271 @@
 					}
 				},
 				{
-					"id": "tQIqwSOILHYbdv8TE",
+					"id": "Tk_9J5Et6AW1aMK6Z",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "t5iMtrAG03rIsyh0O"
+						"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+						"id": "TYxbbc1uRTHiKNCn8"
 					},
-					"name": "Doesn't Breathe",
-					"reference": "B49",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "mpUZj_pW0HGcDf67b",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m0Bwm_H_QnHbhs4Am"
-							},
-							"name": "Gills",
-							"reference": "B49",
-							"cost_adj": "-50%",
-							"disabled": true
-						},
-						{
-							"id": "mHVh5rrHwEavUO0Aa",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "ml5uzItA84pI-ETzV"
-							},
-							"name": "Gills",
-							"reference": "B49",
-							"local_notes": "Suffocates in air",
-							"cost_adj": "-20",
-							"disabled": true
-						},
-						{
-							"id": "mjpdu3ukDcKqnk7pS",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mcUw4jC4E3AT2Y1mO"
-							},
-							"name": "Oxygen Absorption",
-							"reference": "B49",
-							"cost_adj": "-25%",
-							"disabled": true
-						},
-						{
-							"id": "mNl6yLFCBbiGI5p2T",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mo-_HS9OgzNBOjq-n"
-							},
-							"name": "Oxygen Storage",
-							"reference": "B49",
-							"local_notes": "Can hold breath 25 times as long as normal",
-							"cost_adj": "-50%",
-							"disabled": true
-						},
-						{
-							"id": "mvE3IQBL0cat2x0nj",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mdMDXb7jKmSNgWo4B"
-							},
-							"name": "Oxygen Storage",
-							"reference": "B49",
-							"local_notes": "Can hold breath 50 times as long as normal",
-							"cost_adj": "-40%",
-							"disabled": true
-						},
-						{
-							"id": "mGdYc_-QFkeo8CGtW",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mNil0MP6tUFOKJRT6"
-							},
-							"name": "Oxygen Storage",
-							"reference": "B49",
-							"local_notes": "Can hold breath 100 times as long as normal",
-							"cost_adj": "-30%",
-							"disabled": true
-						},
-						{
-							"id": "myfs9N45Wh4PwZJLB",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m8TgTg34ZZDwIOp4u"
-							},
-							"name": "Oxygen Storage",
-							"reference": "B49",
-							"local_notes": "Can hold breath 200 times as long as normal",
-							"cost_adj": "-20%",
-							"disabled": true
-						},
-						{
-							"id": "mlcOjeyNtT-z9WH8K",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mTDmVKzLcCYjexctW"
-							},
-							"name": "Oxygen Storage",
-							"reference": "B49",
-							"local_notes": "Can hold breath 300 times as long as normal",
-							"cost_adj": "-10%",
-							"disabled": true
-						},
-						{
-							"id": "mAv5YRygKeBCxzQxr",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mVocUlD4aI-rNLKQZ"
-							},
-							"name": "Oxygen Combustion",
-							"reference": "B49",
-							"cost_adj": "-50%",
-							"disabled": true
-						}
-					],
-					"base_points": 20,
-					"calc": {
-						"points": 20
-					}
-				},
-				{
-					"id": "tT3J1ObrWsIKCQ_bS",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "t2zZkp9SY4u2UCBWa"
-					},
-					"name": "Electrical",
-					"reference": "B134",
-					"tags": [
-						"Disadvantage",
-						"Exotic",
-						"Physical"
-					],
-					"base_points": -20,
-					"calc": {
-						"points": -20
-					}
-				},
-				{
-					"id": "tMnjRYqbAyoA-cu-2",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "tsR1jTiwn3wP9X-jy"
-					},
-					"name": "Maintenance",
-					"reference": "B143",
-					"tags": [
-						"Disadvantage",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "m5NB7qUxANuFp-Wrr",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m81zMlgTDkc6g-om6"
-							},
-							"name": "People Required: 1",
-							"reference": "B143",
-							"cost_adj": "-10"
-						},
-						{
-							"id": "mmGMnUONV_ok72bXS",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mrqdu09a6INqVA365"
-							},
-							"name": "People Required: 2",
-							"reference": "B143",
-							"cost_adj": "-20",
-							"disabled": true
-						},
-						{
-							"id": "m-TEcbRU-6at37x3h",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mVkWeQf00-UpcHYiN"
-							},
-							"name": "People Required: 3-5",
-							"reference": "B143",
-							"cost_adj": "-30",
-							"disabled": true
-						},
-						{
-							"id": "m7ixmj7quwOQ6Q8LJ",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mWxCB3o50yMXa7W_K"
-							},
-							"name": "People Required: 6-10",
-							"reference": "B143",
-							"cost_adj": "-40",
-							"disabled": true
-						},
-						{
-							"id": "mgK7gbnRDZ8hgBhUa",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m437LOA1YcNZ3Oayr"
-							},
-							"name": "People Required: 11-20",
-							"reference": "B143",
-							"cost_adj": "-50",
-							"disabled": true
-						},
-						{
-							"id": "mhKMWHE22iWSndoxc",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m-sxO2Md1051BIWod"
-							},
-							"name": "People Required: 21-50",
-							"reference": "B143",
-							"cost_adj": "-60",
-							"disabled": true
-						},
-						{
-							"id": "mCz2Mysgxm1W2nlzM",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mg9Mso_c8KCj51Wrt"
-							},
-							"name": "People Required: 51-100",
-							"reference": "B143",
-							"cost_adj": "-70",
-							"disabled": true
-						},
-						{
-							"id": "mbgrOqURXIWoCMUTP",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mCWeYvOChYOt9KiVw"
-							},
-							"name": "People Required: 101-200",
-							"reference": "B143",
-							"cost_adj": "-80",
-							"disabled": true
-						},
-						{
-							"id": "mQ0LCX8tvBLhIn3Bt",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mE7L4aPYDB_EQ1y52"
-							},
-							"name": "People Required: 201-400",
-							"reference": "B143",
-							"cost_adj": "-90",
-							"disabled": true
-						},
-						{
-							"id": "m05vRfiGuBs2TYOZy",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mBaFQEPW1rFxpKqv7"
-							},
-							"name": "People Required: 401-800",
-							"reference": "B143",
-							"cost_adj": "-100",
-							"disabled": true
-						},
-						{
-							"id": "mqEOMUa07mj_fG4zc",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m8BJOFGALVKFGdmSO"
-							},
-							"name": "People Required: 801-1600",
-							"reference": "B143",
-							"cost_adj": "-110",
-							"disabled": true
-						},
-						{
-							"id": "mBU0AQ_hTcxiOkVhV",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m_LCVS7OmV-XEoZGr"
-							},
-							"name": "People Required: 1601-3200",
-							"reference": "B143",
-							"cost_adj": "-120",
-							"disabled": true
-						},
-						{
-							"id": "m0rXBn2904AsLhP_n",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mFh4v8A_QBcREeVbp"
-							},
-							"name": "People Required: 3201-6400",
-							"reference": "B143",
-							"cost_adj": "-130",
-							"disabled": true
-						},
-						{
-							"id": "mOA-M0MK17SA_sg8b",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mdLVKItpKIbDuXJ3G"
-							},
-							"name": "People Required: 6401-12800",
-							"reference": "B143",
-							"cost_adj": "-140",
-							"disabled": true
-						},
-						{
-							"id": "mHhrzDdC9FcAOECB-",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mgYIKqZdxPDSJ5-p-"
-							},
-							"name": "People Required: 12801-25600",
-							"reference": "B143",
-							"cost_adj": "-150",
-							"disabled": true
-						},
-						{
-							"id": "moW7JnXxllCLwvo9e",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "moUqb2U4mOE7A3gAU"
-							},
-							"name": "Frequency: Monthly",
-							"reference": "B143",
-							"cost_adj": "x0.2",
-							"disabled": true
-						},
-						{
-							"id": "mT0lHgjUxDosPp7vd",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "muV1UWqLbskQH0ejS"
-							},
-							"name": "Frequency: Bi-weekly",
-							"reference": "B143",
-							"cost_adj": "x0.3333",
-							"disabled": true
-						},
-						{
-							"id": "mCBtUBF8Gc7Px2fw1",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mBHbMppublsO_LRu3"
-							},
-							"name": "Frequency: Weekly",
-							"reference": "B143",
-							"cost_adj": "x0.5"
-						},
-						{
-							"id": "mmXoubC_04tyEQrt5",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mNJsP64mTIj8TzXTp"
-							},
-							"name": "Frequency: Every other day",
-							"reference": "B143",
-							"cost_adj": "x0.75",
-							"disabled": true
-						},
-						{
-							"id": "me927IGsQv49hGr2S",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mmhbJlgy-WiULGUm6"
-							},
-							"name": "Frequency: Daily",
-							"reference": "B143",
-							"cost_adj": "x1",
-							"disabled": true
-						},
-						{
-							"id": "m8Ek3drcDwoVTyijF",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mcAZ2qIiIVF5kEKmz"
-							},
-							"name": "Frequency: Twice daily",
-							"reference": "B143",
-							"cost_adj": "x2",
-							"disabled": true
-						},
-						{
-							"id": "mUiBbXjvkKGbgl9Xg",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m5VJlF7C01zCqwd0m"
-							},
-							"name": "Frequency: Three to five times daily",
-							"reference": "B143",
-							"cost_adj": "x3",
-							"disabled": true
-						},
-						{
-							"id": "mz7nK2g7Vyr9ttDWx",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "mQEhYgtFuLZMAj-3N"
-							},
-							"name": "Frequency: Constant",
-							"reference": "B143",
-							"cost_adj": "x5",
-							"disabled": true
-						}
-					],
-					"calc": {
-						"points": -5
-					}
-				},
-				{
-					"id": "T-LkPiJaxPSR99A1x",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Meta-Traits/Machine.gct",
-						"id": "ToqmZeicMjtZiKmrz"
-					},
-					"name": "Meta-Trait: Machine",
-					"reference": "B263",
+					"name": "AI",
+					"reference": "TT2:9",
 					"container_type": "meta_trait",
 					"children": [
 						{
-							"id": "t40VZTTHcFkRtYAzk",
+							"id": "tS0VmDuvlKOGKVWEA",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Meta-Traits/Machine.gct",
-								"id": "twswnfgfcQs5yIzem"
+								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+								"id": "t_azDveNINS5493nk"
 							},
-							"name": "Eight-hour energy reserve, Refuel 3 times per day",
-							"reference": "B263",
-							"tags": [
-								"Physical"
-							],
-							"calc": {
-								"points": 0
-							}
-						},
-						{
-							"id": "tfrMXCqh73fuz3vU0",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Meta-Traits/Machine.gct",
-								"id": "tJ2vefMcoAW0-N8cP"
-							},
-							"name": "Injury Tolerance",
-							"reference": "B60",
-							"tags": [
-								"Advantage",
-								"Exotic",
-								"Physical"
-							],
-							"modifiers": [
-								{
-									"id": "m7fAPTM3wk0jCR1bA",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mxsvSVBMs1d9nSZV-"
-									},
-									"name": "Diffuse",
-									"reference": "B60",
-									"local_notes": "Immune to crippling injuries. Brain, Vitals and Groin cannot be targeted. Most foes cannot slam or grapple you (GM's decision). Do not bleed. Unaffected by blood-borne toxins. Immune to attacks that rely on cutting off blood to part of your body. Impaling and piercing attacks of any size never do more than 1 HP of injury, regardless of penetrating damage. Other attacks never do more than 2 HP of injury. Exception: Area-effect, cone, and explosion attacks cause normal injury",
-									"cost_adj": "100",
-									"disabled": true
-								},
-								{
-									"id": "mJPgJ8eO0cMVUFBj8",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "m_c4NVovuS3rgzcBO"
-									},
-									"name": "Homogenous",
-									"reference": "B60",
-									"local_notes": "Altered wound modifiers: imp & pi++ are x1/2, pi+ is x1/3, pi is x1/5, pi- is x1/10",
-									"cost_adj": "40",
-									"disabled": true
-								},
-								{
-									"id": "m23aVsm-Iz_F5Yuq-",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mMSw6ncXp1SqGc-z1"
-									},
-									"name": "No Blood",
-									"reference": "B61",
-									"local_notes": "Do not bleed, unaffected by blood-borne toxins, immune to attacks that rely on cutting off blood to part of your body",
-									"cost_adj": "5"
-								},
-								{
-									"id": "m1pB-mUrWYj5xSKzx",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "ml4eGhgmlwuV6KcZT"
-									},
-									"name": "No Brain",
-									"reference": "B61",
-									"local_notes": "Brain cannot be targeted. Blows to the skull or eye are treated like blows to the face, except that eye injury can still cripple the eye",
-									"cost_adj": "5",
-									"disabled": true
-								},
-								{
-									"id": "mqTn3ZBQ1vm2dEQoV",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mP-86il03Ev4qm1oe"
-									},
-									"name": "No Eyes",
-									"reference": "B61",
-									"local_notes": "Eyes may not be targeted. Immune to blinding attacks",
-									"cost_adj": "5",
-									"disabled": true
-								},
-								{
-									"id": "m4R7lpyptHU4LTUO2",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mXh58hTy7hKXVY5ZO"
-									},
-									"name": "No Head",
-									"reference": "B61",
-									"local_notes": "Skull, Brain and Face cannot be targeted",
-									"cost_adj": "7",
-									"disabled": true
-								},
-								{
-									"id": "mGo1z0zFwe_Q2pTFe",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "m8LTZyBz0JcGFJjTA"
-									},
-									"name": "No Neck",
-									"reference": "B61",
-									"local_notes": "Neck may not be targeted and cannot be decapitated, choked or strangled",
-									"cost_adj": "5",
-									"disabled": true
-								},
-								{
-									"id": "mwL8KZpwJ_p25f7cw",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mW_52ZB3Eyk37-41_"
-									},
-									"name": "No Vitals",
-									"reference": "B61",
-									"local_notes": "Attacks to the Vitals or Groin are treated as attacks to the Torso",
-									"cost_adj": "5",
-									"disabled": true
-								},
-								{
-									"id": "mcEgNU7CDPXAEW2LT",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mhZ-qr_MxQLFOo-me"
-									},
-									"name": "Unliving",
-									"reference": "B61",
-									"local_notes": "Altered wound modifiers: imp & pi++ are x1, pi+ is x1/2, pi is x1/3, pi- is x1/5",
-									"cost_adj": "20"
-								}
-							],
-							"calc": {
-								"points": 25
-							}
-						},
-						{
-							"id": "tWOB-DRDEGJiEOkSV",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Meta-Traits/Machine.gct",
-								"id": "trhi9lTnSZl5rsknG"
-							},
-							"name": "No fatigue points, Don't spend fatigue points",
-							"reference": "B263",
-							"tags": [
-								"Physical"
-							],
-							"calc": {
-								"points": 0
-							}
-						},
-						{
-							"id": "t1QoiIUjpe56UW-wo",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Meta-Traits/Machine.gct",
-								"id": "tK9jqulnrT5y4Wfzx"
-							},
-							"name": "Resistant",
-							"reference": "B81",
-							"tags": [
-								"Advantage",
-								"Physical"
-							],
-							"modifiers": [
-								{
-									"id": "mDnqjY6jUFdsz7m_G",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mBXv9CT4PI9tGuV1C"
-									},
-									"name": "Metabolic Hazards",
-									"reference": "B80",
-									"cost_adj": "30"
-								},
-								{
-									"id": "mKTyQM_8Xa__C2bL0",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mjYUBNuSKvc51ZbeM"
-									},
-									"name": "@Common: Poison, Sickness, etc.@",
-									"reference": "B81",
-									"cost_adj": "15",
-									"disabled": true
-								},
-								{
-									"id": "mIVgwzd3qfDhZz0js",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "ml6qv18GhRyGlJMHp"
-									},
-									"name": "@Occasional: Disease, Ingested Poison, etc.@",
-									"reference": "B81",
-									"cost_adj": "10",
-									"disabled": true
-								},
-								{
-									"id": "mXuThZavrkoksf2C3",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mjqpYwm22hwZ4yQm4"
-									},
-									"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
-									"reference": "B81",
-									"cost_adj": "5",
-									"disabled": true
-								},
-								{
-									"id": "mzjYZ7Fmjge8PncDD",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mgala2x0MMucSvNce"
-									},
-									"name": "Immunity",
-									"reference": "B81",
-									"cost_adj": "x1"
-								},
-								{
-									"id": "mfm6YElJHtxL1O4JZ",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mpb6Nep6pYs_0cSFs"
-									},
-									"name": "+8 to all HT rolls to resist",
-									"reference": "B81",
-									"cost_adj": "x0.5",
-									"disabled": true
-								},
-								{
-									"id": "mK3upNb3FzsfxE2u-",
-									"source": {
-										"library": "richardwilkes/gcs_master_library",
-										"path": "Basic Set/Meta-Traits/Machine.gct",
-										"id": "mgfJj2bxmmv_pNHZO"
-									},
-									"name": "+3 to all HT rolls to resist",
-									"reference": "B81",
-									"cost_adj": "x0.33",
-									"disabled": true
-								}
-							],
-							"round_down": true,
-							"calc": {
-								"points": 30
-							}
-						},
-						{
-							"id": "tNgA08QcouUtwtxwy",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Meta-Traits/Machine.gct",
-								"id": "t8Ee2HIEzEK7vt1BO"
-							},
-							"name": "Unhealing (Total)",
-							"reference": "B160",
+							"name": "Reprogrammable",
+							"reference": "B150",
 							"tags": [
 								"Disadvantage",
 								"Exotic",
-								"Physical"
+								"Mental"
 							],
-							"base_points": -30,
+							"base_points": -10,
 							"calc": {
-								"points": -30
+								"points": -10
 							}
 						},
 						{
-							"id": "tO4u_YzA8mK4qDHTV",
+							"id": "tyqI9NmPJoQcTd9Up",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Meta-Traits/Machine.gct",
-								"id": "tmHSi3bdY6NEDZG_K"
+								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+								"id": "tPnoIhf4QZOGqz2K9"
 							},
-							"name": "Wears out instead of aging",
-							"reference": "B263",
+							"name": "Photographic Memory",
+							"reference": "B51",
 							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "t0ngmm_ZK-Ac1jfPy",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+								"id": "thAzaF9zbhIwT3dl9"
+							},
+							"name": "Intuitive Mathematician",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tR2if96mCUTnO8qOz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+								"id": "tYPaDar2jLV-snb8B"
+							},
+							"name": "Doesn't Sleep",
+							"reference": "B50",
+							"tags": [
+								"Advantage",
+								"Exotic",
 								"Physical"
 							],
+							"base_points": 20,
 							"calc": {
-								"points": 0
+								"points": 20
+							}
+						},
+						{
+							"id": "tVtG2QL2Bq2n5XQkW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+								"id": "thEUw5OtlA7BVHwBR"
+							},
+							"name": "Digital Mind",
+							"reference": "B49",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tkcKdcvJkiF0ikl8I",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+								"id": "t1CQrZxkZrzdvS9tx"
+							},
+							"name": "Absolute Timing",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "m2B_0QKtPKvO9tNbt",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Template Toolkit/Template Toolkit 2 - Races/Meta-Traits/Mentality Meta-Traits/AI.gct",
+										"id": "m4TYbfz7Z_PhJwVWH"
+									},
+									"name": "Chronolocation",
+									"cost_adj": "3",
+									"disabled": true
+								}
+							],
+							"base_points": 2,
+							"calc": {
+								"points": 2
 							}
 						}
 					],
 					"calc": {
-						"points": 25
+						"points": 32
 					}
 				}
 			],
 			"calc": {
 				"points": 52
 			}
-		},
-		{
-			"id": "tqOg--3q46y96jLfg",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Advantages.adq",
-				"id": "tAXbbvEvWnTCuo6at"
-			},
-			"name": "Regeneration",
-			"reference": "B80,P70,MA47",
-			"tags": [
-				"Advantage",
-				"Exotic",
-				"Physical"
-			],
-			"modifiers": [
-				{
-					"id": "mILCN6Xx-OBCuG9F2",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mxrOMQ6r9_VLKIUkL"
-					},
-					"name": "Slow",
-					"reference": "B80",
-					"local_notes": "You recover 1 HP per 12 hours",
-					"cost_adj": "10",
-					"disabled": true
-				},
-				{
-					"id": "mvK4lfQFeJ8mkSsoL",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mw2BDL4Cj1QijeaUX"
-					},
-					"name": "Regular",
-					"reference": "B80",
-					"local_notes": "You recover 1 HP per hour",
-					"cost_adj": "25",
-					"disabled": true
-				},
-				{
-					"id": "miOKZrqG3YnKnw_WW",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "m62p3yX-ok7--J1f_"
-					},
-					"name": "Fast",
-					"reference": "B80",
-					"local_notes": "You recover 1 HP per minute",
-					"cost_adj": "50"
-				},
-				{
-					"id": "mXwzd1JUQ9AAqvPAm",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mxVYDRKuLewns2svk"
-					},
-					"name": "Very Fast",
-					"reference": "B80",
-					"local_notes": "You recover 1 HP per second",
-					"cost_adj": "100",
-					"disabled": true
-				},
-				{
-					"id": "mpjg44CGxeffWnXdh",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mHTnt8RLNJIoaq4AL"
-					},
-					"name": "Extreme",
-					"reference": "B80",
-					"local_notes": "You recover 10 HP per second",
-					"cost_adj": "150",
-					"disabled": true
-				},
-				{
-					"id": "m2EgmEbGuVrMpnAVA",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mNBhRnPnn1hlpU03h"
-					},
-					"name": "Heals Radiation",
-					"reference": "B80",
-					"cost_adj": "40%",
-					"disabled": true
-				},
-				{
-					"id": "mP-fMsetqHdo7RgVr",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mTqZGfY1o25AAtP1j"
-					},
-					"name": "Radiation Only",
-					"reference": "B80",
-					"cost_adj": "-60%",
-					"disabled": true
-				},
-				{
-					"id": "md8owrKe8PCtJFTCa",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mMjgFOXNwoCDriYU_"
-					},
-					"name": "Fatigue Recovery",
-					"reference": "P70",
-					"cost_adj": "100%",
-					"disabled": true
-				},
-				{
-					"id": "moi76WQFsijGYsTd8",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mPplrZ3_pGZln40HO"
-					},
-					"name": "Fatigue Only",
-					"reference": "P70",
-					"disabled": true
-				},
-				{
-					"id": "m9VBvR_M44Bd1oYF9",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mZtWyT8UxVsS1e1Ch"
-					},
-					"name": "Limited: @Advantage@ Only",
-					"reference": "P70",
-					"cost_adj": "-40%",
-					"disabled": true
-				},
-				{
-					"id": "mmcGknR8fWQtQz_vF",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mHqngoyfABgEjEXkX"
-					},
-					"name": "Bane",
-					"reference": "H18",
-					"local_notes": "@Common or Very Common@",
-					"cost_adj": "-50%",
-					"disabled": true
-				},
-				{
-					"id": "m0qVVrSfpO050sPa6",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mB6GZ_a-SyvQIeS3v"
-					},
-					"name": "Bane",
-					"reference": "H18",
-					"local_notes": "Burn Damage",
-					"vtt_notes": "Dano de queimadura frita os nanitas, sendo preciso curar no tempo normal.",
-					"cost_adj": "-30%"
-				},
-				{
-					"id": "miXIRW7XB81r0s8Ny",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "mpIYIYEgkiXMHN0an"
-					},
-					"name": "Bane",
-					"reference": "H18",
-					"local_notes": "Nuisance: Propaganda enquanto regenera",
-					"cost_adj": "-10%"
-				}
-			],
-			"calc": {
-				"points": 30
-			}
-		},
-		{
-			"id": "t1jrFvsLLrciUPSwa",
-			"name": "Natural Attacks",
-			"reference": "B271",
-			"weapons": [
-				{
-					"id": "wkHWGtNz42qv_1Oj9",
-					"sv": 1,
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Bite",
-					"reach": "C",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Brawling"
-							}
-						}
-					],
-					"calc": {
-						"level": 10,
-						"damage": "1d-3 cr"
-					}
-				},
-				{
-					"id": "wp2hy9HFHs_C0LnyB",
-					"sv": 1,
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Punch",
-					"reach": "C",
-					"parry": "0",
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Boxing"
-							}
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Brawling"
-							}
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Karate"
-							}
-						}
-					],
-					"calc": {
-						"level": 10,
-						"damage": "1d-3 cr",
-						"parry": "8"
-					}
-				},
-				{
-					"id": "wCiZrh_uYZ__oadxD",
-					"sv": 1,
-					"damage": {
-						"type": "cr",
-						"st": "thr"
-					},
-					"usage": "Kick",
-					"reach": "C,1",
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Brawling"
-							},
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Kicking"
-							}
-						},
-						{
-							"type": "skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Karate"
-							},
-							"modifier": -2
-						}
-					],
-					"calc": {
-						"level": 8,
-						"damage": "1d-2 cr"
-					}
-				}
-			],
-			"calc": {
-				"points": 0
-			}
-		},
-		{
-			"id": "t6q8J9goJNe77HWPd",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Advantages.adq",
-				"id": "tPDC9qEYtMwdfRAx4"
-			},
-			"name": "Enhanced Parry (Bare hands)",
-			"reference": "B51",
-			"tags": [
-				"Advantage",
-				"Mental"
-			],
-			"points_per_level": 5,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to Parry with bare hands",
-					"amount": 1
-				}
-			],
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": 5,
-				"level": 1,
-				"current_level": 1
-			}
-		},
-		{
-			"id": "td12xxf-gnxykk_u5",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Advantages.adq",
-				"id": "tdNAXpWbxaEW07Oxr"
-			},
-			"name": "High Pain Threshold",
-			"reference": "B59",
-			"local_notes": "Never suffer shock penalties when injured",
-			"tags": [
-				"Advantage",
-				"Physical"
-			],
-			"base_points": 10,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "on all HT rolls to avoid knockdown and stunning",
-					"amount": 3
-				},
-				{
-					"type": "conditional_modifier",
-					"situation": "to resist torture",
-					"amount": 3
-				}
-			],
-			"calc": {
-				"points": 10
-			}
-		},
-		{
-			"id": "tvTuMR7k-8f6ZFsyE",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Advantages.adq",
-				"id": "tXyQiDpzsBqo2WPC-"
-			},
-			"name": "Hard to Kill",
-			"reference": "B58",
-			"tags": [
-				"Advantage",
-				"Physical"
-			],
-			"points_per_level": 2,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
-					"amount": 1,
-					"per_level": true
-				}
-			],
-			"can_level": true,
-			"levels": 1,
-			"calc": {
-				"points": 2,
-				"level": 1,
-				"current_level": 1
-			}
-		},
-		{
-			"id": "TYcTtZZEnT1L3UN-t",
-			"name": "DEFEITOS",
-			"children": [
-				{
-					"id": "tvZdfraEAXbccz81O",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "tD9Yk81_0TWzV7Bs1"
-					},
-					"name": "Weirdness Magnet",
-					"reference": "B161",
-					"tags": [
-						"Disadvantage",
-						"Mental",
-						"Supernatural"
-					],
-					"modifiers": [
-						{
-							"id": "mjakijMj3ZEYlbgaw",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m4kH2bn-HKVhth-O3"
-							},
-							"name": "Origins Magnet",
-							"reference": "SU32",
-							"disabled": true
-						}
-					],
-					"base_points": -15,
-					"calc": {
-						"points": -15
-					}
-				},
-				{
-					"id": "tDcF0lj67O29SOD51",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "tzX0cWeCXPf3rAmFt"
-					},
-					"name": "No Sense of Humor",
-					"reference": "B146",
-					"local_notes": "Leva tudo ao pé da letra...",
-					"tags": [
-						"Disadvantage",
-						"Physical"
-					],
-					"base_points": -10,
-					"features": [
-						{
-							"type": "reaction_bonus",
-							"situation": "from others in any situation where No Sense of Humor becomes evident",
-							"amount": -2
-						}
-					],
-					"calc": {
-						"points": -10
-					}
-				},
-				{
-					"id": "tJKrO6rAMwWiAzYXf",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "tXsF_tAqzxDEB-L_o"
-					},
-					"name": "Ha - ha ...... ha",
-					"reference": "B140",
-					"local_notes": "Não sente prazeres ou vê graça nas coisas.",
-					"tags": [
-						"Disadvantage",
-						"Physical"
-					],
-					"base_points": -15,
-					"features": [
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "carousing"
-							},
-							"amount": -3
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "contains",
-								"qualifier": "connoisseur"
-							},
-							"amount": -3
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "erotic art"
-							},
-							"amount": -3
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "gambling"
-							},
-							"amount": -3
-						},
-						{
-							"type": "reaction_bonus",
-							"situation": "(up to -3, at GM's discretion) from others in any situation where your lack of appreciation becomes obvious (GM’s decision)",
-							"amount": -1
-						}
-					],
-					"calc": {
-						"points": -15
-					}
-				},
-				{
-					"id": "t7W_MSV3QPpn_yUs5",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "tpiqnMb_0gMVodVcU"
-					},
-					"name": "Pacifism: Cannot Harm Innocents",
-					"reference": "B148",
-					"local_notes": "You may fight – you may even start fights – but you may only use deadly force on a foe that is attempting to do you serious harm. Capture is not “serious harm” unless you are already under penalty of death or have a Code of Honor that would require suicide if captured. You never intentionally do anything that causes, or even threatens to cause, injury to the uninvolved – particularly if they are “ordinary folks.”",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"modifiers": [
-						{
-							"id": "mCyAP-zpLPvdfn2Zh",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Basic Set/Basic Set Advantages.adq",
-								"id": "m1MBh2D6pBBrWjpzd"
-							},
-							"name": "Species-Specific",
-							"reference": "UT32",
-							"cost_adj": "-80%",
-							"disabled": true
-						}
-					],
-					"base_points": -10,
-					"calc": {
-						"points": -10
-					}
-				},
-				{
-					"id": "tSewQbDA2vrGyIPXw",
-					"name": "Goooood Morning, China!",
-					"local_notes": "Toca musiquinhas chinesas todos os dias de manhã para acordar a galera!",
-					"base_points": -1,
-					"calc": {
-						"points": -1
-					}
-				},
-				{
-					"id": "tU-A3sVj3jTbMlFvA",
-					"name": "Esporões NEON",
-					"local_notes": "Faz barulhinho quando caminha",
-					"base_points": -1,
-					"calc": {
-						"points": -1
-					}
-				},
-				{
-					"id": "tRzpY3gWjMy9DslhY",
-					"name": "Bug linguístico cód.404",
-					"local_notes": "Ocasionalmente muda o sotaque ou o idioma ao longo do dia ou dependendo do momento.",
-					"base_points": -1,
-					"calc": {
-						"points": -1
-					}
-				},
-				{
-					"id": "tsN3-a-gO4KHmNP7U",
-					"source": {
-						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set/Basic Set Advantages.adq",
-						"id": "twd9swNIt-FxMNta3"
-					},
-					"name": "Nosy (Fofoqueiro)",
-					"reference": "B164",
-					"local_notes": "Lesser version of 'Curious'. Me meto nos assuntos dos amigos e quero saber o que eles estão aprontando.",
-					"tags": [
-						"Mental",
-						"Quirk"
-					],
-					"base_points": -1,
-					"calc": {
-						"points": -1
-					}
-				},
-				{
-					"id": "tPoKI1trUutuOI-qc",
-					"name": "Falando nisso...",
-					"local_notes": "Uma vez que TchÊPT não souber responder algo, ou falhar em uma pesquisa, ele fica linkando a dúvida com novos assuntos até receber um feedback positivo.",
-					"base_points": -1,
-					"calc": {
-						"points": -1
-					}
-				}
-			],
-			"calc": {
-				"points": -55
-			}
 		}
 	],
 	"skills": [
 		{
-			"id": "s1B8rcuCe0dMnfZ2i",
+			"id": "sURJSlT8oVxjU4ewM",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "seao-H6m40y2tJoz-"
+				"id": "skYGfGR_gH9Sx0dIA"
 			},
-			"name": "Observation",
-			"reference": "B211",
+			"name": "Law",
+			"reference": "B204",
+			"tags": [
+				"Business",
+				"Humanities",
+				"Police",
+				"Social Sciences"
+			],
+			"replacements": {
+				"Specialty": "BR-Criminal"
+			},
+			"specialization": "@Specialty@",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "svEpGaWlx-SXWNHD9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "skYGfGR_gH9Sx0dIA"
+			},
+			"name": "Law",
+			"reference": "B204",
+			"tags": [
+				"Business",
+				"Humanities",
+				"Police",
+				"Social Sciences"
+			],
+			"replacements": {
+				"Specialty": "BR-Cyber"
+			},
+			"specialization": "@Specialty@",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "s7QAblSyIqjw9XRnm",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sZY8nvZf7L0GmUrWx"
+			},
+			"name": "Forgery",
+			"reference": "B196",
 			"tags": [
 				"Criminal",
-				"Military",
-				"Police",
 				"Spy",
 				"Street"
 			],
-			"difficulty": "per/a",
+			"difficulty": "iq/h",
 			"defaults": [
 				{
-					"type": "per",
-					"modifier": -5
+					"type": "iq",
+					"modifier": -6
 				},
 				{
 					"type": "skill",
 					"name": {
 						"compare": "is",
-						"qualifier": "Shadowing"
+						"qualifier": "Counterfeiting"
 					},
-					"modifier": -5
+					"modifier": -2
 				}
 			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "Per-1"
-			}
-		},
-		{
-			"id": "sf3iXB1iaoWtmlVVO",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "siDrYfIzgSls3P0d4"
-			},
-			"name": "Computer Hacking",
-			"reference": "B184",
-			"tags": [
-				"Criminal",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "iq/vh",
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "computer programming"
-						}
-					}
-				]
-			},
 			"tech_level": "9",
 			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
 			"calc": {
-				"level": 9,
-				"rsl": "IQ-3"
+				"level": 10,
+				"rsl": "IQ-2"
 			}
 		},
 		{
@@ -3352,21 +3391,72 @@
 			}
 		},
 		{
-			"id": "s_C2NyQcOxWB3oTq6",
+			"id": "slkiwnsuoF7yEOVXh",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "syo-4JSbYWsZBFymR"
+				"id": "swkptR0xX3bGPLqtt"
 			},
-			"name": "Cryptography",
-			"reference": "B186",
+			"name": "Lockpicking",
+			"reference": "B206",
 			"tags": [
-				"Military",
-				"Spy"
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street",
+				"Technical"
 			],
-			"specialization": "Cryptanalysis",
 			"difficulty": "iq/a",
 			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"tech_level": "9",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sHKMlJKmIJ5wwSWLT",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sBGuyKilzv23CREqc"
+			},
+			"name": "Navigation",
+			"reference": "B211",
+			"tags": [
+				"Exploration",
+				"Outdoor",
+				"Technical",
+				"Vehicle"
+			],
+			"specialization": "Land",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Cartography"
+					},
+					"modifier": -4
+				},
 				{
 					"type": "skill",
 					"name": {
@@ -3375,13 +3465,87 @@
 					},
 					"specialization": {
 						"compare": "is",
-						"qualifier": "Cryptology"
+						"qualifier": "Surveying"
 					},
-					"modifier": -5
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Air"
+					},
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					},
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Sea"
+					},
+					"modifier": -2
 				}
 			],
 			"tech_level": "9",
 			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-1"
+			}
+		},
+		{
+			"id": "sj2R04nkhY0T3U8iI",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sqQBu8F6ErlRrCiKr"
+			},
+			"name": "Criminology",
+			"reference": "B186",
+			"tags": [
+				"Humanities",
+				"Police",
+				"Social Sciences"
+			],
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Psychology"
+					},
+					"modifier": -4
+				}
+			],
+			"tech_level": "9",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
 			"calc": {
 				"level": 11,
 				"rsl": "IQ-1"
@@ -3500,162 +3664,21 @@
 			}
 		},
 		{
-			"id": "slkiwnsuoF7yEOVXh",
+			"id": "s_C2NyQcOxWB3oTq6",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "swkptR0xX3bGPLqtt"
+				"id": "syo-4JSbYWsZBFymR"
 			},
-			"name": "Lockpicking",
-			"reference": "B206",
+			"name": "Cryptography",
+			"reference": "B186",
 			"tags": [
-				"Criminal",
-				"Police",
-				"Spy",
-				"Street",
-				"Technical"
+				"Military",
+				"Spy"
 			],
+			"specialization": "Cryptanalysis",
 			"difficulty": "iq/a",
 			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"tech_level": "9",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sGtXsf6D60B4ounyq",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "seDSHhhKTfjLrzxiK"
-			},
-			"name": "Administration",
-			"reference": "B174",
-			"tags": [
-				"Business",
-				"Social"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Merchant"
-					},
-					"modifier": -3
-				},
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sU6mBGEpA-7t7PBLr",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sSTmgKqBFQ_Lg5XVJ"
-			},
-			"name": "Merchant",
-			"reference": "B209",
-			"tags": [
-				"Business",
-				"Social"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Finance"
-					},
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Market Analysis"
-					},
-					"modifier": -4
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sHKMlJKmIJ5wwSWLT",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sBGuyKilzv23CREqc"
-			},
-			"name": "Navigation",
-			"reference": "B211",
-			"tags": [
-				"Exploration",
-				"Outdoor",
-				"Technical",
-				"Vehicle"
-			],
-			"specialization": "Land",
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Cartography"
-					},
-					"modifier": -4
-				},
 				{
 					"type": "skill",
 					"name": {
@@ -3664,128 +3687,13 @@
 					},
 					"specialization": {
 						"compare": "is",
-						"qualifier": "Surveying"
+						"qualifier": "Cryptology"
 					},
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Navigation"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Air"
-					},
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Navigation"
-					},
-					"specialization": {
-						"compare": "is",
-						"qualifier": "Sea"
-					},
-					"modifier": -2
+					"modifier": -5
 				}
 			],
 			"tech_level": "9",
 			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sOo1jQwq_7bxIIycY",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "syq8x05dpfDuGXtwa"
-			},
-			"name": "Politics",
-			"reference": "B215",
-			"tags": [
-				"Business",
-				"Social"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Diplomacy"
-					},
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-1"
-			}
-		},
-		{
-			"id": "sj2R04nkhY0T3U8iI",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sqQBu8F6ErlRrCiKr"
-			},
-			"name": "Criminology",
-			"reference": "B186",
-			"tags": [
-				"Humanities",
-				"Police",
-				"Social Sciences"
-			],
-			"difficulty": "iq/a",
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Psychology"
-					},
-					"modifier": -4
-				}
-			],
-			"tech_level": "9",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
 			"calc": {
 				"level": 11,
 				"rsl": "IQ-1"
@@ -3827,6 +3735,42 @@
 			}
 		},
 		{
+			"id": "sf3iXB1iaoWtmlVVO",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "siDrYfIzgSls3P0d4"
+			},
+			"name": "Computer Hacking",
+			"reference": "B184",
+			"tags": [
+				"Criminal",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "iq/vh",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "computer programming"
+						}
+					}
+				]
+			},
+			"tech_level": "9",
+			"points": 8,
+			"calc": {
+				"level": 12,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "smN28EXV5__ghicnh",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -3849,46 +3793,12 @@
 			"defaulted_from": {
 				"type": "ht",
 				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "HT-1"
-			}
-		},
-		{
-			"id": "sW8XU3S6xQlldcEBP",
-			"source": {
-				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sUJP5cSApI0Rsy_sC"
-			},
-			"name": "Hiking",
-			"reference": "B200",
-			"tags": [
-				"Athletic",
-				"Exploration",
-				"Outdoor"
-			],
-			"difficulty": "ht/a",
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -5
-				}
-			],
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
+				"level": 11,
 				"rsl": "HT-1"
 			}
 		},
@@ -3918,41 +3828,345 @@
 			"defaulted_from": {
 				"type": "ht",
 				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 13,
+				"level": 12,
 				"rsl": "HT+0"
 			}
 		},
 		{
-			"id": "sg7slsBWEv4CUOUrH",
+			"id": "sb4Er7Zz7W4GOp8BA",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sSgca-XzVKRSvjcDO"
+				"id": "sMQvSYdkD9kNXxbqi"
 			},
-			"name": "Judo",
-			"reference": "B203,MA57",
-			"local_notes": "Allows parrying two different attacks per turn, one with each hand.",
+			"name": "Brawling",
+			"reference": "B182,MA55",
 			"tags": [
 				"Combat",
 				"Melee Combat",
 				"Weapon"
 			],
-			"difficulty": "dx/h",
-			"encumbrance_penalty_multiplier": 1,
-			"points": 4,
+			"difficulty": "dx/e",
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					},
+					"amount": 1,
+					"per_die": true
+				}
+			],
+			"points": 1,
 			"calc": {
 				"level": 10,
 				"rsl": "DX+0"
 			}
+		},
+		{
+			"id": "qVYCPINYlLS4AyuD9",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "qlYWe1nj3GhiPMrz3"
+			},
+			"name": "Disarming",
+			"reference": "B230,MA70",
+			"tags": [
+				"Combat",
+				"Melee Combat",
+				"Technique",
+				"Weapon"
+			],
+			"difficulty": "h",
+			"default": {
+				"type": "skill",
+				"name": {
+					"compare": "is",
+					"qualifier": "Brawling"
+				}
+			},
+			"limit": 5,
+			"points": 2,
+			"calc": {
+				"level": 11,
+				"rsl": "+1"
+			}
+		}
+	],
+	"equipment": [
+		{
+			"id": "eFa7jN8WzKzK_aqlp",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "etU_TXzYOnPsp-Vmw"
+			},
+			"description": "Reflex Suit",
+			"reference": "UT172",
+			"local_notes": "DR+12/4* vs. piercing and cutting. Flexible.",
+			"tech_level": "9",
+			"legality_class": "3",
+			"tags": [
+				"Defenses"
+			],
+			"base_value": "1200",
+			"base_weight": "8 lb",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"eye"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"skull"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"face"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"neck"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"torso"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"vitals"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"groin"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"arm"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"hand"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"leg"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"foot"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"tail"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"wing"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"fin"
+					],
+					"amount": 4
+				},
+				{
+					"type": "dr_bonus",
+					"locations": [
+						"brain"
+					],
+					"amount": 4
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 1200,
+				"extended_value": 1200,
+				"weight": "8 lb",
+				"extended_weight": "8 lb"
+			}
+		},
+		{
+			"id": "e2On-H4YEQHk1owjV",
+			"description": "Plano Comunicação",
+			"local_notes": "20 doletas mensais",
+			"legality_class": "4",
+			"base_value": "100",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 100,
+				"extended_value": 100,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "eZGo3LDYzNQBpxGn5",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+				"id": "eBq5J35QXYV4t9QPT"
+			},
+			"description": "Zap Glove",
+			"reference": "UT165",
+			"local_notes": "B/10 zaps. \"Kill\" mode delivers two zaps at once.",
+			"tech_level": "9",
+			"legality_class": "3",
+			"tags": [
+				"Melee Weapon",
+				"Weaponry"
+			],
+			"base_value": "400",
+			"base_weight": "1 lb",
+			"weapons": [
+				{
+					"id": "wzfmmP59Ii7kffZ3Y",
+					"sv": 1,
+					"damage": {
+						"type": "HT-6(2) aff"
+					},
+					"strength": "2",
+					"usage": "Zap",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							}
+						},
+						{
+							"type": "dx"
+						}
+					],
+					"calc": {
+						"level": 10,
+						"damage": "HT-6(2) aff"
+					}
+				},
+				{
+					"id": "wTGAi2L4UtSH-XAfd",
+					"sv": 1,
+					"damage": {
+						"type": "burn",
+						"base": "2d"
+					},
+					"strength": "2",
+					"usage": "Kill",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Boxing"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Crawling"
+							}
+						},
+						{
+							"type": "dx"
+						}
+					],
+					"calc": {
+						"level": 10,
+						"damage": "2d burn"
+					}
+				}
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 400,
+				"extended_value": 400,
+				"weight": "1 lb",
+				"extended_weight": "1 lb"
+			}
 		}
 	],
 	"created_date": "2026-11-04T21:39:35-03:00",
-	"modified_date": "2026-11-05T15:12:56-03:00",
+	"modified_date": "2026-11-11T22:34:29-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
