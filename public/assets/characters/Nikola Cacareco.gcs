@@ -1183,6 +1183,67 @@
 			}
 		},
 		{
+			"id": "sqmd2IzHoDq6jq6DH",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sMIEoVTEXT8J2IGwj"
+			},
+			"name": "Engineer",
+			"reference": "B190",
+			"tags": [
+				"Design",
+				"Engineer",
+				"Invention"
+			],
+			"specialization": "Electronics",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Electronics Repair",
+					"modifier": -6
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"when_tl": {
+					"compare": "at_least",
+					"qualifier": 5
+				},
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "mathematics"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "applied"
+						}
+					}
+				]
+			},
+			"tech_level": "9",
+			"points": 4,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Electronics Repair",
+				"specialization": "Security",
+				"modifier": -6,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+2"
+			}
+		},
+		{
 			"id": "sKtUZPe3seXNWy4RF",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -1235,11 +1296,32 @@
 			}
 		},
 		{
-			"id": "szEjwjIdKqkCMieie",
+			"id": "s3bp_nl4V5sLWb23F",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sYwZvSMZ9tfHES4z7"
+				"id": "sBY-R7Xmf64T7WzZ4"
+			},
+			"name": "Computer Programming",
+			"reference": "B184",
+			"tags": [
+				"Design",
+				"Invention"
+			],
+			"difficulty": "iq/h",
+			"tech_level": "9",
+			"points": 1,
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-2"
+			}
+		},
+		{
+			"id": "sr-ir_AAME5vRzCqe",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sqH7X8s6knQ9FmK-F"
 			},
 			"name": "Electronics Repair",
 			"reference": "B190",
@@ -1247,10 +1329,60 @@
 				"Maintenance",
 				"Repair"
 			],
-			"replacements": {
-				"Electronics type": "Robotics"
+			"specialization": "Computers",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Computer Operation",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Electronics",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Repair",
+					"modifier": -4
+				}
+			],
+			"tech_level": "9",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Electronics Repair",
+				"specialization": "Security",
+				"modifier": -4,
+				"level": 11,
+				"adjusted_level": 11,
+				"points": -11
 			},
-			"specialization": "@Electronics type@",
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+1"
+			}
+		},
+		{
+			"id": "snFjQp5Uu1wwCwgjP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s88dcbZG-whQhwn7j"
+			},
+			"name": "Electronics Repair",
+			"reference": "B190",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Security",
 			"difficulty": "iq/a",
 			"defaults": [
 				{
@@ -1260,7 +1392,7 @@
 				{
 					"type": "skill",
 					"name": "Electronics Operation",
-					"specialization": "@Electronics type@",
+					"specialization": "Security",
 					"modifier": -3
 				},
 				{
@@ -1280,7 +1412,7 @@
 			"defaulted_from": {
 				"type": "skill",
 				"name": "Electronics Operation",
-				"specialization": "Robotics",
+				"specialization": "Security",
 				"modifier": -3,
 				"level": 11,
 				"adjusted_level": 11,
@@ -1371,21 +1503,21 @@
 			}
 		},
 		{
-			"id": "saQl68zwqAvh165b_",
+			"id": "sFbYzMyR5HbauV6Pf",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
 				"path": "Basic Set/Basic Set Skills.skl",
-				"id": "sUOQKAH8IaMhpxk1o"
+				"id": "slXlqD4FNReNHmsov"
 			},
 			"name": "Electronics Operation",
 			"reference": "B189",
 			"tags": [
+				"Criminal",
+				"Spy",
+				"Street",
 				"Technical"
 			],
-			"replacements": {
-				"Electronics type": "Robotics"
-			},
-			"specialization": "@Electronics type@",
+			"specialization": "Security",
 			"difficulty": "iq/a",
 			"defaults": [
 				{
@@ -1395,12 +1527,7 @@
 				{
 					"type": "skill",
 					"name": "Electronics Operation",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Electronics Repair",
-					"specialization": "@Electronics type@",
+					"specialization": "Security",
 					"modifier": -5
 				},
 				{
@@ -1408,6 +1535,11 @@
 					"name": "Engineer",
 					"specialization": "Electronics",
 					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Electronics Operation",
+					"modifier": -4
 				}
 			],
 			"tech_level": "9",
@@ -1548,6 +1680,48 @@
 			}
 		},
 		{
+			"id": "smhQr8OoUT5Seg-Px",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sku11uyd1oUdTaIPX"
+			},
+			"name": "Armoury",
+			"reference": "B178",
+			"tags": [
+				"Maintenance",
+				"Military",
+				"Repair"
+			],
+			"specialization": "Battlesuits",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Battlesuits",
+					"modifier": -4
+				}
+			],
+			"tech_level": "9",
+			"points": 2,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 15,
+				"rsl": "IQ+2"
+			}
+		},
+		{
 			"id": "sgzY89Ub1SbOYWP21",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -1671,6 +1845,41 @@
 			}
 		},
 		{
+			"id": "s1jx-ngJ_yYThogbF",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "ssHhRG7LH-Ma3YDnH"
+			},
+			"name": "Computer Operation",
+			"reference": "B184",
+			"tags": [
+				"Everyman",
+				"Scholarly",
+				"Technical"
+			],
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"tech_level": "9",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "IQ+0"
+			}
+		},
+		{
 			"id": "s-32AoA0cHW_D-BSP",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
@@ -1719,59 +1928,169 @@
 	],
 	"equipment": [
 		{
-			"id": "eq1aEjAnhrS0CNJT8",
+			"id": "eUousIR3DFE6BkolR",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "es7M7etnnIm5wPDiU"
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "eLpY_lV7JPT_Srj5A"
 			},
-			"description": "Electronics Repair (@Specialization@) Toolkit",
-			"reference": "UT82",
-			"local_notes": "10A/10hr.",
-			"tech_level": "9",
+			"description": "Ordinary Clothes",
+			"reference": "B266",
+			"local_notes": "Status 0",
 			"tags": [
-				"Expedition Gear"
+				"Clothing"
 			],
-			"base_value": "1200",
-			"base_weight": "10 lb",
-			"replacements": {
-				"Specialization": "Robotics"
-			},
+			"base_value": "120",
+			"base_weight": "2 lb",
 			"quantity": 1,
 			"equipped": true,
 			"calc": {
-				"value": 1200,
-				"extended_value": 1200,
-				"weight": "10 lb",
-				"extended_weight": "10 lb"
+				"value": 120,
+				"extended_value": 120,
+				"weight": "2 lb",
+				"extended_weight": "2 lb"
 			}
 		},
 		{
-			"id": "egsWM-rLr7SaVmw8X",
+			"id": "EE8TnEQ1EgN8J5OwB",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Ultra Tech/Ultra Tech Equipment.eqp",
-				"id": "ejEj9StF2xl0SK5xt"
+				"path": "Basic Set/Basic Set Equipment.eqp",
+				"id": "ESjtIfyzScVP49ity"
 			},
-			"description": "Machinist (@Specialization@) Toolkit",
-			"reference": "UT82",
-			"local_notes": "10B/10hr.",
-			"tech_level": "9",
+			"description": "Backpack, Small",
+			"reference": "B288",
+			"tech_level": "1",
 			"tags": [
-				"Expedition Gear"
+				"Camping and Survival Gear"
 			],
-			"base_value": "600",
-			"base_weight": "20 lb",
-			"replacements": {
-				"Specialization": "Robotics"
+			"base_value": "60",
+			"base_weight": "3 lb",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
 			},
 			"quantity": 1,
 			"equipped": true,
+			"children": [
+				{
+					"id": "e_QNNbHjbYsUGz0i9",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eC1DrHF8oqmYt-rRT"
+					},
+					"description": "Datapad",
+					"reference": "UT23",
+					"local_notes": "2A/20hr.",
+					"tech_level": "9",
+					"tags": [
+						"Computers"
+					],
+					"base_value": "10",
+					"base_weight": "0.05 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 10,
+						"extended_value": 10,
+						"weight": "0.05 lb",
+						"extended_weight": "0.05 lb"
+					}
+				},
+				{
+					"id": "eSKus5pfQ4CaO3tom",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "eT5uvj7QE4-YaURLs"
+					},
+					"description": "Electrician Mini-Toolkit",
+					"reference": "UT82",
+					"local_notes": "-2 (quality). 5B/10hr.",
+					"tech_level": "9",
+					"tags": [
+						"Expedition Gear"
+					],
+					"base_value": "200",
+					"base_weight": "4 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 200,
+						"extended_value": 200,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "es8WQhNoiQoaLmQ_b",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Ultra Tech/Ultra Tech Equipment.eqp",
+						"id": "emOuk952nQYYl-mdN"
+					},
+					"description": "Mechanic (@Specialization@) Toolkit",
+					"reference": "UT82",
+					"local_notes": "10B/10hr.",
+					"tech_level": "9",
+					"tags": [
+						"Expedition Gear"
+					],
+					"base_value": "600",
+					"base_weight": "20 lb",
+					"replacements": {
+						"Specialization": "Robotics"
+					},
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 600,
+						"extended_value": 600,
+						"weight": "20 lb",
+						"extended_weight": "20 lb"
+					}
+				},
+				{
+					"id": "evjuBWGbarggui8jC",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Equipment.eqp",
+						"id": "eLpY_lV7JPT_Srj5A"
+					},
+					"description": "Ordinary Clothes",
+					"reference": "B266",
+					"local_notes": "Status 0",
+					"tags": [
+						"Clothing"
+					],
+					"base_value": "120",
+					"base_weight": "2 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 120,
+						"extended_value": 120,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				}
+			],
 			"calc": {
-				"value": 600,
-				"extended_value": 600,
-				"weight": "20 lb",
-				"extended_weight": "20 lb"
+				"value": 60,
+				"extended_value": 990,
+				"weight": "3 lb",
+				"extended_weight": "29.05 lb"
 			}
 		}
 	],
@@ -1786,7 +2105,7 @@
 		}
 	],
 	"created_date": "2026-11-08T21:24:33-03:00",
-	"modified_date": "2026-11-11T20:49:39-03:00",
+	"modified_date": "2026-11-11T22:02:09-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
