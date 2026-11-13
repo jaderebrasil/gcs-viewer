@@ -506,10 +506,10 @@
 		},
 		{
 			"attr_id": "iq",
-			"adj": 2,
+			"adj": 1,
 			"calc": {
-				"value": 12,
-				"points": 40
+				"value": 11,
+				"points": 20
 			}
 		},
 		{
@@ -524,7 +524,7 @@
 			"attr_id": "will",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -532,7 +532,7 @@
 			"attr_id": "fright_check",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -544,7 +544,7 @@
 			"attr_id": "per",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -552,7 +552,7 @@
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -560,7 +560,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -568,7 +568,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -576,7 +576,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 12,
+				"value": 11,
 				"points": 0
 			}
 		},
@@ -746,6 +746,809 @@
 			}
 		},
 		{
+			"id": "4fafed86-1fa3-4f0f-aaca-9332c8a52c7f",
+			"type": "trait",
+			"name": "Appearance",
+			"reference": "B21",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "db88e777-c246-49aa-87cc-8c1dbfef8cd0",
+					"type": "modifier",
+					"name": "Attractive",
+					"reference": "B21",
+					"cost": 4,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 1
+						}
+					]
+				},
+				{
+					"id": "2fda71e1-13b5-4bed-8188-83946dbbb13b",
+					"type": "modifier",
+					"name": "Average",
+					"reference": "B21",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "59011a6b-7cd8-4a59-8a7b-af75aa057843",
+					"type": "modifier",
+					"name": "Beautiful",
+					"reference": "B21",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else",
+							"amount": 4
+						}
+					]
+				},
+				{
+					"id": "f2ef3d46-2535-466f-b85d-82d3a9a59937",
+					"type": "modifier",
+					"name": "Beautiful (Androgynous)",
+					"reference": "B21",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					]
+				},
+				{
+					"id": "260c9611-0aad-407d-a8f2-cdeab7f8e022",
+					"type": "modifier",
+					"name": "Beautiful (Impressive)",
+					"reference": "B21",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					]
+				},
+				{
+					"id": "1d6d3fc1-a874-42ee-a40a-ab72d7d653ff",
+					"type": "modifier",
+					"name": "Handsome",
+					"reference": "B21",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else",
+							"amount": 4
+						}
+					]
+				},
+				{
+					"id": "66b67232-40a9-49ce-a30c-a41aa79a86e8",
+					"type": "modifier",
+					"name": "Handsome (Androgynous)",
+					"reference": "B21",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					]
+				},
+				{
+					"id": "5c3f10f5-fb42-44a7-9953-ce727ebc4c89",
+					"type": "modifier",
+					"name": "Handsome (Impressive)",
+					"reference": "B21",
+					"cost": 12,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 3
+						}
+					]
+				},
+				{
+					"id": "cfef51b4-8526-47be-bb28-49c4e7db46b5",
+					"type": "modifier",
+					"name": "Hideous",
+					"reference": "B21",
+					"cost": -16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -4
+						}
+					]
+				},
+				{
+					"id": "67eda3d3-3b02-4324-b86a-cad4432e2092",
+					"type": "modifier",
+					"name": "Horrific",
+					"reference": "B21",
+					"cost": -24,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -6
+						}
+					]
+				},
+				{
+					"id": "1d0d263d-39e6-4b05-96c9-bcab7c73917a",
+					"type": "modifier",
+					"name": "Impressive",
+					"reference": "B21",
+					"cost_type": "points",
+					"disabled": true
+				},
+				{
+					"id": "ea5ee8d3-92de-44f7-b869-97bbcb0a0446",
+					"type": "modifier",
+					"name": "Monstrous",
+					"reference": "B21",
+					"cost": -20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -5
+						}
+					]
+				},
+				{
+					"id": "bcec029e-a194-48dd-a4f3-d79852417ff1",
+					"type": "modifier",
+					"name": "Off-the-Shelf Looks",
+					"reference": "B21",
+					"notes": "Halves the usual reaction bonus - adjust manually",
+					"cost": -50,
+					"disabled": true
+				},
+				{
+					"id": "4e3e372b-d8bb-41c3-a675-1c37f39c0a06",
+					"type": "modifier",
+					"name": "Transcendent",
+					"reference": "B21",
+					"cost": 20,
+					"cost_type": "points",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"id": "2bb71c80-552e-499d-a4e6-e57f26881a8c",
+					"type": "modifier",
+					"name": "Transcendent (Androgynous)",
+					"reference": "B21",
+					"cost": 20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "ddf25679-e521-4ac2-b914-5b31d097cc09",
+					"type": "modifier",
+					"name": "Transcendent (Impressive)",
+					"reference": "B21",
+					"cost": 20,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 5
+						}
+					]
+				},
+				{
+					"id": "52c66ff0-cb7b-4bd8-8d77-4e6f78fa6ce4",
+					"type": "modifier",
+					"name": "Ugly",
+					"reference": "B21",
+					"cost": -8,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -2
+						}
+					]
+				},
+				{
+					"id": "f2ade180-af68-4cdb-91c2-2b6062b625b5",
+					"type": "modifier",
+					"name": "Unattractive",
+					"reference": "B21",
+					"cost": -4,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -1
+						}
+					]
+				},
+				{
+					"id": "585340a8-301a-451e-918c-89fac91595d4",
+					"type": "modifier",
+					"name": "Universal",
+					"reference": "B21",
+					"cost": 25,
+					"disabled": true
+				},
+				{
+					"id": "e1bcea51-b24b-4e72-a625-be62b9161aaf",
+					"type": "modifier",
+					"name": "Very Beautiful",
+					"reference": "B21",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+							"amount": 6
+						}
+					]
+				},
+				{
+					"id": "45fe1d7c-54ed-4171-ac37-0c14d3825e89",
+					"type": "modifier",
+					"name": "Very Beautiful (Androgynous)",
+					"reference": "B21",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					]
+				},
+				{
+					"id": "211f4936-94c1-4043-862b-d73a066832ac",
+					"type": "modifier",
+					"name": "Very Beautiful (Impressive)",
+					"reference": "B21",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					]
+				},
+				{
+					"id": "8c0bc9b1-f818-427e-838e-9cb3f1125587",
+					"type": "modifier",
+					"name": "Very Handsome",
+					"reference": "B21",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+							"amount": 6
+						}
+					]
+				},
+				{
+					"id": "1cf4494d-453a-403d-890b-7233286080e7",
+					"type": "modifier",
+					"name": "Very Handsome (Androgynous)",
+					"reference": "B21",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					]
+				},
+				{
+					"id": "19314e0f-05c4-4488-adf0-ba1785d46b23",
+					"type": "modifier",
+					"name": "Very Handsome (Impressive)",
+					"reference": "B21",
+					"cost": 16,
+					"cost_type": "points",
+					"disabled": true,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": 4
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "c363b752-4ef2-4445-91aa-24a3afc95e66",
+			"type": "trait",
+			"name": "Talent (Smooth Operator)",
+			"reference": "B90,PU3:15",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Talent"
+			],
+			"modifiers": [
+				{
+					"id": "673ac6d5-88a0-46ff-9c61-a92a5908fd6d",
+					"type": "modifier",
+					"name": "Alternate Benefit",
+					"notes": "Bonus to resist covered skills",
+					"disabled": true
+				},
+				{
+					"id": "d7bc77f2-e124-4076-a8c1-e9845d9583c0",
+					"type": "modifier",
+					"name": "Alternative Cost",
+					"cost": -2,
+					"affects": "levels_only",
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"levels": 2,
+			"points_per_level": 15,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Acting"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Carousing"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Detect Lies"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Diplomacy"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Fast-Talk"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Intimidation"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Leadership"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Panhandling"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Politics"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Public Speaking"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Savoir-Faire"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sex Appeal"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Streetwise"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "reaction_bonus",
+					"situation": "from con artists, politicians, salesmen, etc. – but only if you aren’t trying to manipulate them.",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "a1525209-b585-41d7-ac80-ea6d2821d3ee",
+			"type": "trait",
+			"name": "Charisma",
+			"reference": "B41",
+			"tags": [
+				"Advantage",
+				"Mental"
+			],
+			"levels": 2,
+			"points_per_level": 5,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "fortune-telling"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "leadership"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "panhandling"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "public speaking"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "reaction_bonus",
+					"situation": "from sapient being with whom you actively interact (converse, lecture, etc.)",
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "reaction_bonus",
+					"situation": "to Influence rolls",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "00e17304-6ee2-41be-a270-93051dba4982",
+			"type": "trait",
+			"name": "Empathy (Sensitive)",
+			"reference": "B51",
+			"tags": [
+				"Advantage",
+				"Mental"
+			],
+			"modifiers": [
+				{
+					"id": "8c04f995-be36-4786-9763-d0ce15d1ee75",
+					"type": "modifier",
+					"name": "Remote",
+					"reference": "P48",
+					"cost": 50,
+					"disabled": true
+				}
+			],
+			"base_points": 5,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "detect lies"
+					},
+					"amount": 1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "fortune-telling"
+					},
+					"amount": 1
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "psychology"
+					},
+					"amount": 1
+				}
+			],
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "04b495a0-c735-42e1-b5b6-d10e69e82238",
+			"type": "trait",
+			"name": "Voice",
+			"reference": "B97",
+			"tags": [
+				"Advantage",
+				"Physical"
+			],
+			"base_points": 10,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "diplomacy"
+					},
+					"amount": 2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "fast-talk"
+					},
+					"amount": 2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "mimicry"
+					},
+					"amount": 2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "performance"
+					},
+					"amount": 2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "politics"
+					},
+					"amount": 2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "public speaking"
+					},
+					"amount": 2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "sex appeal"
+					},
+					"amount": 2
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "singing"
+					},
+					"amount": 2
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
 			"id": "a6e10913-429c-4428-9002-28468015d6dc",
 			"type": "trait",
 			"name": "Contact (Police department)",
@@ -884,248 +1687,6 @@
 			],
 			"calc": {
 				"points": 5
-			}
-		},
-		{
-			"id": "dbde7d31-d67f-4d09-9eda-808fc87d98f8",
-			"type": "trait",
-			"name": "Cheaper (Guns; 10%)",
-			"reference": "PU2:8",
-			"notes": "Contatos mafia",
-			"tags": [
-				"Perk",
-				"Social"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "2b9f4cfe-88b7-4cdc-a699-8983f519a860",
-			"type": "trait",
-			"name": "Cheaper (Medical; 10%)",
-			"reference": "PU2:8",
-			"notes": "Contato com um médico",
-			"tags": [
-				"Perk",
-				"Social"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "cc104416-c11a-47cc-a0ea-c222b9f980bb",
-			"type": "trait",
-			"name": "Cheaper (Drugs; 10%)",
-			"reference": "PU2:8",
-			"notes": "Contato criminal",
-			"tags": [
-				"Perk",
-				"Social"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "41335af3-337d-41be-9911-abf5b762a982",
-			"type": "trait",
-			"name": "Cheaper (Cyberwearables; 10%)",
-			"reference": "PU2:8",
-			"notes": "Criminal",
-			"tags": [
-				"Perk",
-				"Social"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "12ced9ba-cbd3-45d1-a1b9-e3c78e7cf9b4",
-			"type": "trait",
-			"name": "Cheaper (Vehicles; 10%)",
-			"reference": "PU2:8",
-			"notes": "High society",
-			"tags": [
-				"Perk",
-				"Social"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "00e17304-6ee2-41be-a270-93051dba4982",
-			"type": "trait",
-			"name": "Empathy (Sensitive)",
-			"reference": "B51",
-			"tags": [
-				"Advantage",
-				"Mental"
-			],
-			"modifiers": [
-				{
-					"id": "8c04f995-be36-4786-9763-d0ce15d1ee75",
-					"type": "modifier",
-					"name": "Remote",
-					"reference": "P48",
-					"cost": 50,
-					"disabled": true
-				}
-			],
-			"base_points": 5,
-			"features": [
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "detect lies"
-					},
-					"amount": 1
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "fortune-telling"
-					},
-					"amount": 1
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "psychology"
-					},
-					"amount": 1
-				}
-			],
-			"calc": {
-				"points": 5
-			}
-		},
-		{
-			"id": "c5325efc-d7a9-4165-b9ad-95ea2db68e19",
-			"type": "trait",
-			"name": "Eidetic Memory",
-			"reference": "B51",
-			"notes": "When doubling up, this becomes Photographic Memory [10]",
-			"tags": [
-				"Advantage",
-				"Mental"
-			],
-			"modifiers": [
-				{
-					"id": "a48265c7-9a87-4031-81ee-070109b4a9d9",
-					"type": "modifier",
-					"name": "Photographic",
-					"reference": "B51",
-					"cost": 5,
-					"cost_type": "points",
-					"disabled": true
-				}
-			],
-			"base_points": 5,
-			"calc": {
-				"points": 5
-			}
-		},
-		{
-			"id": "04b495a0-c735-42e1-b5b6-d10e69e82238",
-			"type": "trait",
-			"name": "Voice",
-			"reference": "B97",
-			"tags": [
-				"Advantage",
-				"Physical"
-			],
-			"base_points": 10,
-			"features": [
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "diplomacy"
-					},
-					"amount": 2
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "fast-talk"
-					},
-					"amount": 2
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "starts_with",
-						"qualifier": "mimicry"
-					},
-					"amount": 2
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "performance"
-					},
-					"amount": 2
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "politics"
-					},
-					"amount": 2
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "public speaking"
-					},
-					"amount": 2
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "sex appeal"
-					},
-					"amount": 2
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "singing"
-					},
-					"amount": 2
-				}
-			],
-			"calc": {
-				"points": 10
 			}
 		},
 		{
@@ -1344,7 +1905,8 @@
 					"name": "Appears quite often",
 					"notes": "12-",
 					"cost": 2,
-					"cost_type": "multiplier"
+					"cost_type": "multiplier",
+					"disabled": true
 				},
 				{
 					"id": "2687a0a0-cf05-4650-a350-7790c38999e3",
@@ -1352,8 +1914,7 @@
 					"name": "Appears fairly often",
 					"notes": "9-",
 					"cost": 1,
-					"cost_type": "multiplier",
-					"disabled": true
+					"cost_type": "multiplier"
 				},
 				{
 					"id": "44ffa02d-134b-4d0a-a47e-8d9edef75dc8",
@@ -1406,7 +1967,7 @@
 				}
 			],
 			"calc": {
-				"points": 10
+				"points": 5
 			}
 		},
 		{
@@ -2216,27 +2777,6 @@
 			}
 		},
 		{
-			"id": "4966f1ef-f633-4f58-94e2-0699c023288b",
-			"type": "trait",
-			"name": "Daredevil",
-			"reference": "B47",
-			"tags": [
-				"Advantage",
-				"Mental"
-			],
-			"base_points": 15,
-			"features": [
-				{
-					"type": "conditional_modifier",
-					"situation": "to skill rolls any time you take an unnecessary risk (in the GM’s opinion)",
-					"amount": 1
-				}
-			],
-			"calc": {
-				"points": 15
-			}
-		},
-		{
 			"id": "05f9bce0-7bad-4a12-ac93-9c486da6e63d",
 			"type": "trait",
 			"name": "Luck",
@@ -2503,9 +3043,9 @@
 						"type": "skill",
 						"name": "Merchant",
 						"modifier": -3,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -2519,7 +3059,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -2535,11 +3075,11 @@
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Merchant",
-						"modifier": -6,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"name": "Accounting",
+						"modifier": -4,
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -2559,7 +3099,7 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 9,
 						"rsl": "IQ-2"
 					}
 				},
@@ -2578,9 +3118,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -2589,7 +3129,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -2603,13 +3143,13 @@
 						"Social"
 					],
 					"difficulty": "iq/a",
-					"points": 4,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -2628,8 +3168,8 @@
 						}
 					],
 					"calc": {
-						"level": 13,
-						"rsl": "IQ+1"
+						"level": 10,
+						"rsl": "IQ-1"
 					}
 				},
 				{
@@ -2643,12 +3183,11 @@
 					"difficulty": "iq/h",
 					"points": 1,
 					"defaulted_from": {
-						"type": "skill",
-						"name": "Merchant",
-						"modifier": -5,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"type": "iq",
+						"modifier": -6,
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -2673,7 +3212,7 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 9,
 						"rsl": "IQ-2"
 					}
 				},
@@ -2686,14 +3225,14 @@
 						"Business"
 					],
 					"difficulty": "iq/h",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
 						"name": "Merchant",
 						"modifier": -4,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -2712,8 +3251,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
-						"rsl": "IQ-1"
+						"level": 9,
+						"rsl": "IQ-2"
 					}
 				}
 			],
@@ -2738,9 +3277,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -2759,8 +3298,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
-						"rsl": "IQ-1"
+						"level": 12,
+						"rsl": "IQ+1"
 					}
 				},
 				{
@@ -2777,11 +3316,11 @@
 					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
-						"name": "Detect Lies",
+						"name": "Psychology",
 						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -2796,7 +3335,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "Per-1"
 					}
 				},
@@ -2811,7 +3350,7 @@
 						"Street"
 					],
 					"difficulty": "ht/e",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "ht",
 						"modifier": -4,
@@ -2826,8 +3365,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
-						"rsl": "HT+1"
+						"level": 12,
+						"rsl": "HT+2"
 					}
 				},
 				{
@@ -2847,9 +3386,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -2858,7 +3397,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -2879,9 +3418,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -2905,7 +3444,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -2926,9 +3465,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -2937,7 +3476,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -2955,13 +3494,13 @@
 					"specialization": "Business",
 					"tech_level": "9",
 					"difficulty": "iq/e",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -2980,8 +3519,8 @@
 						}
 					],
 					"calc": {
-						"level": 13,
-						"rsl": "IQ+1"
+						"level": 11,
+						"rsl": "IQ+0"
 					}
 				},
 				{
@@ -3000,13 +3539,11 @@
 					"difficulty": "iq/e",
 					"points": 1,
 					"defaulted_from": {
-						"type": "skill",
-						"name": "Current Affairs",
-						"specialization": "Business",
+						"type": "iq",
 						"modifier": -4,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3025,7 +3562,7 @@
 						}
 					],
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3044,13 +3581,11 @@
 					"difficulty": "iq/e",
 					"points": 1,
 					"defaulted_from": {
-						"type": "skill",
-						"name": "Current Affairs",
-						"specialization": "Business",
+						"type": "iq",
 						"modifier": -4,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3069,7 +3604,7 @@
 						}
 					],
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3088,13 +3623,11 @@
 					"difficulty": "iq/e",
 					"points": 1,
 					"defaulted_from": {
-						"type": "skill",
-						"name": "Current Affairs",
-						"specialization": "Business",
+						"type": "iq",
 						"modifier": -4,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3113,7 +3646,7 @@
 						}
 					],
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3128,10 +3661,11 @@
 						"Spy"
 					],
 					"difficulty": "per/h",
-					"points": 4,
+					"points": 1,
 					"defaulted_from": {
-						"type": "per",
-						"modifier": -6,
+						"type": "skill",
+						"name": "Body Language",
+						"modifier": -4,
 						"level": 6,
 						"adjusted_level": 6,
 						"points": -6
@@ -3153,7 +3687,7 @@
 						}
 					],
 					"calc": {
-						"level": 13,
+						"level": 12,
 						"rsl": "Per+1"
 					}
 				},
@@ -3168,13 +3702,13 @@
 						"Social"
 					],
 					"difficulty": "iq/h",
-					"points": 4,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -3188,7 +3722,7 @@
 						}
 					],
 					"calc": {
-						"level": 14,
+						"level": 13,
 						"rsl": "IQ+2"
 					}
 				},
@@ -3204,13 +3738,13 @@
 						"Street"
 					],
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -3225,7 +3759,7 @@
 					],
 					"calc": {
 						"level": 14,
-						"rsl": "IQ+2"
+						"rsl": "IQ+3"
 					}
 				},
 				{
@@ -3244,9 +3778,9 @@
 						"type": "skill",
 						"name": "Intimidation",
 						"modifier": -3,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3265,7 +3799,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -3286,9 +3820,9 @@
 						"type": "skill",
 						"name": "Acting",
 						"modifier": -3,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3302,8 +3836,128 @@
 						}
 					],
 					"calc": {
-						"level": 11,
-						"rsl": "Will-1"
+						"level": 12,
+						"rsl": "Will+1"
+					}
+				},
+				{
+					"id": "3b163e35-4df4-4567-85de-fc1d82425fe2",
+					"type": "skill",
+					"name": "Panhandling",
+					"reference": "B212",
+					"tags": [
+						"Criminal",
+						"Social",
+						"Street"
+					],
+					"difficulty": "iq/e",
+					"points": 1,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Fast-Talk",
+						"modifier": -2,
+						"level": 8,
+						"adjusted_level": 8,
+						"points": -8
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Fast-Talk",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Public Speaking",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"level": 15,
+						"rsl": "IQ+4"
+					}
+				},
+				{
+					"id": "77bbffb3-0ebf-4a40-97b1-f4aea42559b2",
+					"type": "skill",
+					"name": "Persuade",
+					"reference": "B191",
+					"tags": [
+						"Esoteric"
+					],
+					"difficulty": "will/h",
+					"points": 8,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "charisma"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "public speaking"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 12
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "Will+1"
+					}
+				},
+				{
+					"id": "bebf81ae-9314-4753-8ac2-daa11d57fe69",
+					"type": "skill",
+					"name": "Politics",
+					"reference": "B215",
+					"tags": [
+						"Business",
+						"Social"
+					],
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Diplomacy",
+							"modifier": -5
+						}
+					],
+					"calc": {
+						"level": 14,
+						"rsl": "IQ+3"
 					}
 				},
 				{
@@ -3317,13 +3971,13 @@
 						"Social"
 					],
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -3347,83 +4001,8 @@
 						}
 					],
 					"calc": {
-						"level": 14,
-						"rsl": "IQ+2"
-					}
-				},
-				{
-					"id": "3b163e35-4df4-4567-85de-fc1d82425fe2",
-					"type": "skill",
-					"name": "Panhandling",
-					"reference": "B212",
-					"tags": [
-						"Criminal",
-						"Social",
-						"Street"
-					],
-					"difficulty": "iq/e",
-					"points": 2,
-					"defaulted_from": {
-						"type": "skill",
-						"name": "Fast-Talk",
-						"modifier": -2,
-						"level": 10,
-						"adjusted_level": 10,
-						"points": -10
-					},
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Fast-Talk",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Public Speaking",
-							"modifier": -3
-						}
-					],
-					"calc": {
-						"level": 13,
-						"rsl": "IQ+1"
-					}
-				},
-				{
-					"id": "bebf81ae-9314-4753-8ac2-daa11d57fe69",
-					"type": "skill",
-					"name": "Politics",
-					"reference": "B215",
-					"tags": [
-						"Business",
-						"Social"
-					],
-					"difficulty": "iq/a",
-					"points": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
-					},
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Diplomacy",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 13,
-						"rsl": "IQ+1"
+						"level": 16,
+						"rsl": "IQ+5"
 					}
 				},
 				{
@@ -3440,9 +4019,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -3456,7 +4035,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -3472,13 +4051,13 @@
 					],
 					"specialization": "High Society",
 					"difficulty": "iq/e",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3494,7 +4073,7 @@
 					],
 					"calc": {
 						"level": 13,
-						"rsl": "IQ+1"
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -3514,9 +4093,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3530,8 +4109,8 @@
 						}
 					],
 					"calc": {
-						"level": 12,
-						"rsl": "IQ+0"
+						"level": 13,
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -3550,9 +4129,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3561,8 +4140,93 @@
 						}
 					],
 					"calc": {
-						"level": 12,
-						"rsl": "IQ+0"
+						"level": 13,
+						"rsl": "IQ+2"
+					}
+				},
+				{
+					"id": "2557a2df-4511-44e6-b5fd-f9746f2a6e06",
+					"type": "skill",
+					"name": "Sex Appeal",
+					"reference": "B219",
+					"tags": [
+						"Social"
+					],
+					"difficulty": "ht/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "ht",
+						"modifier": -3,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -3
+						}
+					],
+					"calc": {
+						"level": 13,
+						"rsl": "HT+3"
+					}
+				},
+				{
+					"id": "03a5cca2-1712-46e5-b2fc-5717ebbf5245",
+					"type": "skill",
+					"name": "Suggest",
+					"reference": "B191",
+					"tags": [
+						"Esoteric"
+					],
+					"difficulty": "will/h",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "persuade"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 12
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "public speaking"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 12
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "charisma"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"calc": {
+						"level": 9,
+						"rsl": "Will-2"
 					}
 				}
 			],
@@ -3589,9 +4253,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3605,7 +4269,7 @@
 						}
 					],
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3619,14 +4283,14 @@
 						"Social"
 					],
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
 						"name": "Carousing",
 						"modifier": -3,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3640,7 +4304,38 @@
 						}
 					],
 					"calc": {
-						"level": 12,
+						"level": 10,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "00ab6114-3499-47c5-96e8-1e7688f43702",
+					"type": "skill",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"tech_level": "3",
+					"difficulty": "iq/e",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"calc": {
+						"level": 11,
 						"rsl": "IQ+0"
 					}
 				},
@@ -3660,9 +4355,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -3676,7 +4371,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -3698,9 +4393,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -3726,7 +4421,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -3743,7 +4438,7 @@
 					"difficulty": "iq/h",
 					"points": 1,
 					"calc": {
-						"level": 10,
+						"level": 9,
 						"rsl": "IQ-2"
 					}
 				},
@@ -3757,14 +4452,14 @@
 					],
 					"specialization": "Tarot",
 					"difficulty": "iq/a",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "skill",
 						"name": "Fast-Talk",
 						"modifier": -3,
-						"level": 9,
-						"adjusted_level": 9,
-						"points": -9
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -3784,7 +4479,7 @@
 					],
 					"calc": {
 						"level": 13,
-						"rsl": "IQ+1"
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -3802,9 +4497,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -3819,7 +4514,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -3838,9 +4533,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -3849,7 +4544,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -3868,9 +4563,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -3879,8 +4574,36 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 9,
 						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "ffef301d-b82a-4661-96ce-111635daa598",
+					"type": "skill",
+					"name": "Lip Reading",
+					"reference": "B205",
+					"tags": [
+						"Spy"
+					],
+					"difficulty": "per/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "per",
+						"modifier": -10,
+						"level": 1,
+						"adjusted_level": 1,
+						"points": -1
+					},
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -10
+						}
+					],
+					"calc": {
+						"level": 10,
+						"rsl": "Per-1"
 					}
 				},
 				{
@@ -3900,9 +4623,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -3921,8 +4644,42 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 9,
 						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "01c04e8b-1e7d-452e-af32-f905a96acdcb",
+					"type": "skill",
+					"name": "Politics",
+					"reference": "B215",
+					"tags": [
+						"Business",
+						"Social"
+					],
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Diplomacy",
+							"modifier": -5
+						}
+					],
+					"calc": {
+						"level": 14,
+						"rsl": "IQ+3"
 					}
 				},
 				{
@@ -3939,9 +4696,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -3955,7 +4712,7 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 9,
 						"rsl": "IQ-2"
 					}
 				},
@@ -3974,9 +4731,9 @@
 					"defaulted_from": {
 						"type": "per",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -3985,7 +4742,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "Per-1"
 					}
 				},
@@ -4005,9 +4762,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4016,8 +4773,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
-						"rsl": "IQ-1"
+						"level": 12,
+						"rsl": "IQ+1"
 					}
 				}
 			],
@@ -4100,39 +4857,6 @@
 					}
 				},
 				{
-					"id": "56306378-c9d3-4788-b036-be4d3062ceee",
-					"type": "skill",
-					"name": "Climbing",
-					"reference": "B183",
-					"tags": [
-						"Athletic",
-						"Criminal",
-						"Exploration",
-						"Outdoor",
-						"Street"
-					],
-					"difficulty": "dx/a",
-					"points": 1,
-					"encumbrance_penalty_multiplier": 1,
-					"defaulted_from": {
-						"type": "dx",
-						"modifier": -5,
-						"level": 5,
-						"adjusted_level": 5,
-						"points": -5
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 9,
-						"rsl": "DX-1"
-					}
-				},
-				{
 					"id": "bdf0c07d-907a-41a9-b527-436aea0b6046",
 					"type": "skill",
 					"name": "Counterfeiting",
@@ -4147,9 +4871,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
-						"level": 6,
-						"adjusted_level": 6,
-						"points": -6
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
 					},
 					"defaults": [
 						{
@@ -4163,7 +4887,7 @@
 						}
 					],
 					"calc": {
-						"level": 10,
+						"level": 9,
 						"rsl": "IQ-2"
 					}
 				},
@@ -4211,9 +4935,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4279,24 +5003,6 @@
 					"calc": {
 						"level": 9,
 						"rsl": "DX-1"
-					}
-				},
-				{
-					"id": "037d309b-0186-4d7c-8374-6467a341e37a",
-					"type": "skill",
-					"name": "Forced Entry",
-					"reference": "B196",
-					"tags": [
-						"Criminal",
-						"Police",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "dx/e",
-					"points": 1,
-					"calc": {
-						"level": 10,
-						"rsl": "DX+0"
 					}
 				},
 				{
@@ -4400,9 +5106,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4416,7 +5122,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -4438,9 +5144,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4449,7 +5155,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
 					}
 				},
@@ -4470,9 +5176,9 @@
 					"defaulted_from": {
 						"type": "per",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4486,7 +5192,7 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "Per-1"
 					}
 				},
@@ -4571,9 +5277,9 @@
 					"defaulted_from": {
 						"type": "per",
 						"modifier": -4,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
 					},
 					"defaults": [
 						{
@@ -4582,7 +5288,7 @@
 						}
 					],
 					"calc": {
-						"level": 12,
+						"level": 11,
 						"rsl": "Per+0"
 					}
 				},
@@ -4596,13 +5302,13 @@
 						"Spy"
 					],
 					"difficulty": "per/a",
-					"points": 2,
+					"points": 1,
 					"defaulted_from": {
 						"type": "per",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4616,8 +5322,8 @@
 						}
 					],
 					"calc": {
-						"level": 12,
-						"rsl": "Per+0"
+						"level": 10,
+						"rsl": "Per-1"
 					}
 				},
 				{
@@ -4636,9 +5342,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4657,41 +5363,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
-					}
-				},
-				{
-					"id": "50609b60-8b0f-46d9-9a3e-677be1efddb5",
-					"type": "skill",
-					"name": "Sleight of Hand",
-					"reference": "B221",
-					"tags": [
-						"Arts",
-						"Criminal",
-						"Entertainment",
-						"Street"
-					],
-					"difficulty": "dx/h",
-					"points": 1,
-					"defaulted_from": {
-						"type": "skill",
-						"name": "Filch",
-						"modifier": -5,
-						"level": 4,
-						"adjusted_level": 4,
-						"points": -4
-					},
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Filch",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 8,
-						"rsl": "DX-2"
 					}
 				},
 				{
@@ -4709,9 +5382,9 @@
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
 					},
 					"defaults": [
 						{
@@ -4720,44 +5393,8 @@
 						}
 					],
 					"calc": {
-						"level": 11,
+						"level": 10,
 						"rsl": "IQ-1"
-					}
-				},
-				{
-					"id": "04627e31-9e11-4318-b64a-28c7d8052c6d",
-					"type": "skill",
-					"name": "Stealth",
-					"reference": "B222",
-					"tags": [
-						"Criminal",
-						"Police",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "dx/a",
-					"points": 1,
-					"encumbrance_penalty_multiplier": 1,
-					"defaulted_from": {
-						"type": "iq",
-						"modifier": -5,
-						"level": 7,
-						"adjusted_level": 7,
-						"points": -7
-					},
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "dx",
-							"modifier": -5
-						}
-					],
-					"calc": {
-						"level": 9,
-						"rsl": "DX-1"
 					}
 				}
 			],
@@ -4971,7 +5608,7 @@
 		}
 	],
 	"created_date": "2026-11-11T03:46:27-03:00",
-	"modified_date": "2026-11-11T23:23:38-03:00",
+	"modified_date": "2026-11-13T01:05:21-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
