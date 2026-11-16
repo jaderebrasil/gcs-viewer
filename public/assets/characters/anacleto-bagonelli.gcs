@@ -1,0 +1,3399 @@
+{
+	"file_type": "character",
+	"version": 5,
+	"id": "A9vu2K_jUAORZjHG0",
+	"total_points": 150,
+	"points_record": [
+		{
+			"when": "2026-11-15T21:47:41-03:00",
+			"points": 150,
+			"reason": "Criação"
+		}
+	],
+	"profile": {
+		"name": "Anacleto Bagonelli",
+		"age": "89",
+		"birthday": "08/11",
+		"eyes": "Brown",
+		"hair": "White",
+		"skin": "White",
+		"handedness": "Left",
+		"gender": "Male",
+		"height": "6'1\"",
+		"weight": "150 lb",
+		"player_name": "LAPTOP-LN9ENPI7\\lucas",
+		"title": "Nonno",
+		"religion": "Católico",
+		"tech_level": "9"
+	},
+	"settings": {
+		"page": {
+			"paper_size": "letter",
+			"orientation": "portrait",
+			"top_margin": "0.25 in",
+			"left_margin": "0.25 in",
+			"bottom_margin": "0.25 in",
+			"right_margin": "0.25 in"
+		},
+		"layout": {
+			"root": {
+				"type": "column",
+				"weight": 1,
+				"children": [
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "portrait",
+								"weight": 1,
+								"square": true
+							},
+							{
+								"type": "column",
+								"weight": 4.3,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "block",
+												"key": "identity",
+												"weight": 1.6
+											},
+											{
+												"type": "block",
+												"key": "miscellaneous",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "description",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "points",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "column",
+								"weight": 1.6,
+								"children": [
+									{
+										"type": "row",
+										"weight": 1,
+										"children": [
+											{
+												"type": "column",
+												"weight": 1,
+												"children": [
+													{
+														"type": "block",
+														"key": "primary_attributes",
+														"weight": 1
+													},
+													{
+														"type": "block",
+														"key": "damage",
+														"weight": 1
+													}
+												]
+											},
+											{
+												"type": "block",
+												"key": "secondary_attributes",
+												"weight": 1
+											}
+										]
+									},
+									{
+										"type": "block",
+										"key": "point_pools",
+										"weight": 1
+									}
+								]
+							},
+							{
+								"type": "block",
+								"key": "body",
+								"weight": 1.25
+							},
+							{
+								"type": "column",
+								"weight": 1.3,
+								"children": [
+									{
+										"type": "block",
+										"key": "encumbrance",
+										"weight": 1
+									},
+									{
+										"type": "block",
+										"key": "lifting",
+										"weight": 1
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "reactions",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "conditional_modifiers",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "melee",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "ranged",
+						"weight": 1
+					},
+					{
+						"type": "row",
+						"weight": 1,
+						"children": [
+							{
+								"type": "block",
+								"key": "traits",
+								"weight": 1
+							},
+							{
+								"type": "block",
+								"key": "skills",
+								"weight": 1
+							}
+						]
+					},
+					{
+						"type": "block",
+						"key": "spells",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "other_equipment",
+						"weight": 1
+					},
+					{
+						"type": "block",
+						"key": "notes",
+						"weight": 1
+					}
+				]
+			}
+		},
+		"attributes": [
+			{
+				"id": "st",
+				"type": "integer",
+				"name": "ST",
+				"full_name": "Strength",
+				"base": "10",
+				"cost_per_point": 10,
+				"cost_adj_percent_per_sm": 10
+			},
+			{
+				"id": "dx",
+				"type": "integer",
+				"name": "DX",
+				"full_name": "Dexterity",
+				"base": "10",
+				"cost_per_point": 20
+			},
+			{
+				"id": "iq",
+				"type": "integer",
+				"name": "IQ",
+				"full_name": "Intelligence",
+				"base": "10",
+				"cost_per_point": 20
+			},
+			{
+				"id": "ht",
+				"type": "integer",
+				"name": "HT",
+				"full_name": "Health",
+				"base": "10",
+				"cost_per_point": 10
+			},
+			{
+				"id": "will",
+				"type": "integer",
+				"name": "Will",
+				"base": "$iq",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fright_check",
+				"type": "integer",
+				"name": "Fright Check",
+				"base": "$will",
+				"cost_per_point": 2
+			},
+			{
+				"id": "per",
+				"type": "integer",
+				"name": "Per",
+				"full_name": "Perception",
+				"base": "$iq",
+				"cost_per_point": 5
+			},
+			{
+				"id": "vision",
+				"type": "integer",
+				"name": "Vision",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "hearing",
+				"type": "integer",
+				"name": "Hearing",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "taste_smell",
+				"type": "integer",
+				"name": "Taste & Smell",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "touch",
+				"type": "integer",
+				"name": "Touch",
+				"base": "$per",
+				"cost_per_point": 2
+			},
+			{
+				"id": "basic_speed",
+				"type": "decimal",
+				"name": "Basic Speed",
+				"base": "($dx + $ht) / 4",
+				"cost_per_point": 20
+			},
+			{
+				"id": "basic_move",
+				"type": "integer",
+				"name": "Basic Move",
+				"base": "Math.floor($basic_speed)",
+				"cost_per_point": 5
+			},
+			{
+				"id": "fp",
+				"type": "pool",
+				"name": "FP",
+				"full_name": "Fatigue Points",
+				"base": "$ht",
+				"cost_per_point": 3,
+				"thresholds": [
+					{
+						"id": "lMl1df9l4VYjFkSYS",
+						"state": "Unconscious",
+						"value": "-$fp",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"limitation": "lifting_only",
+								"attribute": "st",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"id": "l2T6y_2N6G2qmE89f",
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "Roll vs. Will to do anything besides talk or rest; failure causes unconsciousness\nEach FP you lose below 0 also causes 1 HP of injury\nMove, Dodge and ST are halved (B426)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"limitation": "lifting_only",
+								"attribute": "st",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"id": "l1EKa5BkF9Viiuyoz",
+						"state": "Tired",
+						"value": "Math.ceil($fp / 3) - 1",
+						"explanation": "Move, Dodge and ST are halved (B426)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"limitation": "lifting_only",
+								"attribute": "st",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"id": "le2EhZHrun_aTck4n",
+						"state": "Tiring",
+						"value": "$fp - 1"
+					},
+					{
+						"id": "lD2OX657ZIIJ2alPl",
+						"state": "Rested",
+						"value": "$fp"
+					}
+				]
+			},
+			{
+				"id": "hp",
+				"type": "pool",
+				"name": "HP",
+				"full_name": "Hit Points",
+				"base": "$st",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 10,
+				"thresholds": [
+					{
+						"id": "lzoXmtTxPDlILet-Z",
+						"state": "Dead",
+						"value": "Math.round(-$hp * 5)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"id": "lITOb5P7gsnpw7PJZ",
+						"state": "Dying #4",
+						"value": "Math.round(-$hp * 4)",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-4 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"id": "lGewodFErIca2R2vI",
+						"state": "Dying #3",
+						"value": "Math.round(-$hp * 3)",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-3 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"id": "lJUW8EY-ERwJngH0q",
+						"state": "Dying #2",
+						"value": "Math.round(-$hp * 2)",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-2 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"id": "lrHH1dWeFdpIr3gzW",
+						"state": "Dying #1",
+						"value": "-$hp",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-1 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"id": "l05Zq2iwP32C1LtKh",
+						"state": "Collapse",
+						"value": "0",
+						"explanation": "Roll vs. HT every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"id": "l0PUiAHX6E8cUiyfG",
+						"state": "Reeling",
+						"value": "Math.ceil($hp / 3) - 1",
+						"explanation": "Move and Dodge are halved (B419)",
+						"features": [
+							{
+								"type": "attribute_bonus",
+								"attribute": "move",
+								"multiply": true,
+								"amount": 0.5
+							},
+							{
+								"type": "attribute_bonus",
+								"attribute": "dodge",
+								"multiply": true,
+								"amount": 0.5
+							}
+						],
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"id": "lZdKYcnPDH5Fu2iKt",
+						"state": "Wounded",
+						"value": "$hp - 1"
+					},
+					{
+						"id": "lEd7VtB1KAaTvF9Kl",
+						"state": "Healthy",
+						"value": "$hp"
+					}
+				]
+			}
+		],
+		"body_type": {
+			"name": "Humanoid",
+			"roll": "3d",
+			"locations": [
+				{
+					"id": "eye",
+					"choice_name": "Eyes",
+					"table_name": "Eyes",
+					"hit_penalty": -9,
+					"description": "An attack that misses by 1 hits the torso instead. Only\nimpaling (imp), piercing (pi-, pi, pi+, pi++), and\ntight-beam burning (burn) attacks can target the eye – and\nonly from the front or sides. Injury over HP÷10 blinds the\neye. Otherwise, treat as skull, but without the extra DR!",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 10
+						}
+					}
+				},
+				{
+					"id": "skull",
+					"choice_name": "Skull",
+					"table_name": "Skull",
+					"slots": 2,
+					"hit_penalty": -7,
+					"dr_bonus": 2,
+					"description": "An attack that misses by 1 hits the torso instead. Wounding\nmodifier is x4. Knockdown rolls are at -10. Critical hits\nuse the Critical Head Blow Table (B556). Exception: These\nspecial effects do not apply to toxic (tox) damage.",
+					"calc": {
+						"roll_range": "3-4",
+						"dr": {
+							"all": 6
+						}
+					}
+				},
+				{
+					"id": "face",
+					"choice_name": "Face",
+					"table_name": "Face",
+					"slots": 1,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Jaw,\ncheeks, nose, ears, etc. If the target has an open-faced\nhelmet, ignore its DR. Knockdown rolls are at -5. Critical\nhits use the Critical Head Blow Table (B556). Corrosion\n(cor) damage gets a x1½ wounding modifier, and if it\ninflicts a major wound, it also blinds one eye (both eyes on\ndamage over full HP). Random attacks from behind hit the\nskull instead.",
+					"calc": {
+						"roll_range": "5",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Right Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "6-7",
+						"dr": {
+							"all": 4
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Right Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "8",
+						"dr": {
+							"all": 10
+						}
+					}
+				},
+				{
+					"id": "torso",
+					"choice_name": "Torso",
+					"table_name": "Torso",
+					"slots": 2,
+					"calc": {
+						"roll_range": "9-10",
+						"dr": {
+							"all": 8
+						}
+					}
+				},
+				{
+					"id": "groin",
+					"choice_name": "Groin",
+					"table_name": "Groin",
+					"slots": 1,
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Human\nmales and the males of similar species suffer double shock\nfrom crushing (cr) damage, and get -5 to knockdown rolls.\nOtherwise, treat as a torso hit.",
+					"calc": {
+						"roll_range": "11",
+						"dr": {
+							"all": 8
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Left Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost. If holding a shield,\ndouble the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "12",
+						"dr": {
+							"all": 10
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Left Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ½ HP from one blow) cripples the limb.\nDamage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "13-14",
+						"dr": {
+							"all": 4
+						}
+					}
+				},
+				{
+					"id": "hand",
+					"choice_name": "Hand",
+					"table_name": "Hand",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "If holding a shield, double the penalty to hit: -8 for\nshield hand instead of -4. Reduce the wounding multiplier of\nlarge piercing (pi+), huge piercing (pi++), and impaling\n(imp) damage to x1. Any major wound (loss of over ⅓ HP\nfrom one blow) cripples the extremity. Damage beyond that\nthreshold is lost.",
+					"calc": {
+						"roll_range": "15",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "foot",
+					"choice_name": "Foot",
+					"table_name": "Foot",
+					"slots": 1,
+					"hit_penalty": -4,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge\npiercing (pi++), and impaling (imp) damage to x1. Any major\nwound (loss of over ⅓ HP from one blow) cripples the\nextremity. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "16",
+						"dr": {
+							"all": 6,
+							"underside of the foot": 6
+						}
+					}
+				},
+				{
+					"id": "neck",
+					"choice_name": "Neck",
+					"table_name": "Neck",
+					"slots": 2,
+					"hit_penalty": -5,
+					"description": "An attack that misses by 1 hits the torso instead. Neck and\nthroat. Increase the wounding multiplier of crushing (cr)\nand corrosion (cor) attacks to x1½, and that of cutting\n(cut) damage to x2. At the GM’s option, anyone killed by a\ncutting (cut) blow to the neck is decapitated!",
+					"calc": {
+						"roll_range": "17-18",
+						"dr": {
+							"all": 0
+						}
+					}
+				},
+				{
+					"id": "vitals",
+					"choice_name": "Vitals",
+					"table_name": "Vitals",
+					"hit_penalty": -3,
+					"description": "An attack that misses by 1 hits the torso instead. Heart,\nlungs, kidneys, etc. Increase the wounding modifier for an\nimpaling (imp) or any piercing (pi-, pi, pi+, pi++) attack\nto x3. Increase the wounding modifier for a tight-beam\nburning (burn) attack to x2. Other attacks cannot target the\nvitals.",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 8
+						}
+					}
+				}
+			]
+		},
+		"damage_progression": "basic_set",
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"skill_level_adj_display": "tooltip",
+		"show_spell_adj": true,
+		"buy_percent": 100,
+		"sell_percent": 50
+	},
+	"attributes": [
+		{
+			"attr_id": "st",
+			"adj": 1,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 10
+			}
+		},
+		{
+			"attr_id": "dx",
+			"adj": 4,
+			"calc": {
+				"value": 14,
+				"current": 14,
+				"points": 80
+			}
+		},
+		{
+			"attr_id": "iq",
+			"adj": 1,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 20
+			}
+		},
+		{
+			"attr_id": "ht",
+			"adj": 2,
+			"calc": {
+				"value": 12,
+				"current": 12,
+				"points": 20
+			}
+		},
+		{
+			"attr_id": "will",
+			"adj": 0,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fright_check",
+			"adj": 0,
+			"calc": {
+				"value": 13,
+				"current": 13,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "per",
+			"adj": 0,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "vision",
+			"adj": 0,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hearing",
+			"adj": 0,
+			"calc": {
+				"value": 7,
+				"current": 7,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "taste_smell",
+			"adj": 0,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "touch",
+			"adj": 0,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_speed",
+			"adj": 0,
+			"calc": {
+				"value": 6.5,
+				"current": 6.5,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_move",
+			"adj": 0,
+			"calc": {
+				"value": 6,
+				"current": 6,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fp",
+			"adj": 0,
+			"calc": {
+				"value": 12,
+				"current": 12,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hp",
+			"adj": 0,
+			"calc": {
+				"value": 11,
+				"current": 11,
+				"points": 0
+			}
+		}
+	],
+	"traits": [
+		{
+			"id": "T5_MkTdc3GMcYwyAy",
+			"name": "Implantes: CIC 5 + 5 + 1 + 1 + 7 = 19 (máx. 19) · SDC nível 0 · TI 0",
+			"children": [
+				{
+					"id": "TH5NJiVJl3ECJqyTv",
+					"name": "[CIC 5] One Bionic Arm (TL9)",
+					"reference": "UT209",
+					"local_notes": "CIC 5 (o mestre conta os 5 pontos do pacote, pela Arm ST +2). Telesolda P12, braço direito. Perdeu o braço original dentro de uma colheitadeira da cooperativa em Marau. Pago com a herança da família. Manutenção semanal (ele mesmo faz, Mechanic/Robotics).",
+					"children": [
+						{
+							"id": "ttj-PQDp5h9VkQg38",
+							"name": "Arm ST",
+							"reference": "B40",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"replacements": {
+								"Arm": "Right"
+							},
+							"modifiers": [
+								{
+									"id": "m8ZWPn6YKgCj4Nvgs",
+									"name": "Only one arm",
+									"reference": "B40",
+									"local_notes": "@Arm@",
+									"cost_adj": "-2",
+									"affects": "levels_only",
+									"calc": {
+										"resolved_notes": "Right"
+									}
+								},
+								{
+									"id": "mnu2tlmC3PVfNP7dH",
+									"name": "Temporary Disadvantages, Electrical",
+									"cost_adj": "-20%"
+								},
+								{
+									"id": "meLs3b7gEfcFIEJrA",
+									"name": "Maintenance, 1 person, weekly",
+									"cost_adj": "-5%"
+								}
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 5,
+								"level": 2,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "t0DVGy-9DyLUJ2tfZ",
+							"name": "Damage Resistance",
+							"reference": "B47",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m_nh_4uysvoSTGAKM",
+									"name": "One arm",
+									"reference": "B47",
+									"cost_adj": "-40%"
+								}
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm"
+									],
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 6,
+								"level": 2,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tx9WWzYMZDqJ1VuBU",
+							"name": "One Arm",
+							"reference": "B147",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "miJlX91wnEx66fGuI",
+									"name": "Mitigator",
+									"reference": "B112",
+									"cost_adj": "-70%"
+								}
+							],
+							"base_points": -20,
+							"calc": {
+								"points": -6
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TlWnPKFsGF3v8KKlg",
+					"name": "[CIC 5] Filter Implant (TL9)",
+					"reference": "UT211",
+					"local_notes": "CIC 5 (= 5 pontos de aprimoramento). Pulmão de Turno. Imune a fumaça e partículas: as do próprio lança-chamas e as da oficina. Não respira debaixo d'água.",
+					"children": [
+						{
+							"id": "t8NRQdgzcSMWUWhb3",
+							"name": "Filter Lungs",
+							"reference": "B55",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TzSGyxK8GaBJnh_R1",
+					"name": "[CIC 1] Biomonitor Implant (TL9)",
+					"reference": "UT208",
+					"local_notes": "CIC 1 (= 1 ponto de aprimoramento). Vida+ de Bolso. +2 para quem tratar o nonno olhando o mostrador. Apita quando ele come salame.",
+					"children": [
+						{
+							"id": "tg6aO4x6O-Gu8PR09",
+							"name": "Accessory (Biomonitor)",
+							"reference": "B100",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "tFTA4JiGPhtpqdUIX",
+					"name": "[CIC 1] Longevidade Aumentada (Perk)",
+					"reference": "B100",
+					"local_notes": "CIC 1 (= 1 ponto de aprimoramento, implante robótico). Perk definido pelo mestre no lugar de Extended Lifespan: marca-passo, filtros sanguíneos e reforço articular, pagos com a herança. Anula os ônus da idade (sem testes de envelhecimento por enquanto), mas NÃO amplia a expectativa de vida como Extended Lifespan. \"Não posso morrer antes de achar os piá.\"",
+					"tags": [
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "T3KwGrVEM_g5mTv-e",
+					"name": "[CIC 7] Implant Radio (TL9)",
+					"reference": "UT211",
+					"local_notes": "CIC 7 (= 7 pontos de aprimoramento). Sussurro 1. Rádio de ~1,6 km ligado direto ao nervo auditivo: pelo rádio ele se comunica normalmente com o grupo. Não anula Hard of Hearing: fora do rádio continua com dificuldade para ouvir (confirmado). Fala normal ou subvocalizada.",
+					"children": [
+						{
+							"id": "tpicl6umxFlV49qvc",
+							"name": "Telecommunication",
+							"reference": "B91",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Mental",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mREgddQ7H4DIXfBBy",
+									"name": "Radio",
+									"reference": "B91",
+									"cost_adj": "10"
+								},
+								{
+									"id": "mYcAP3DRM3HFWH8Fi",
+									"name": "Secure",
+									"reference": "P82",
+									"cost_adj": "20%"
+								},
+								{
+									"id": "m0mR4QccNS5GgIR_a",
+									"name": "Reduced Range, 1/10",
+									"cost_adj": "-30%"
+								},
+								{
+									"id": "miQIleBW4DPowy_05",
+									"name": "Temporary Disadvantage, Electrical",
+									"cost_adj": "-20%"
+								}
+							],
+							"calc": {
+								"points": 7
+							}
+						}
+					],
+					"calc": {
+						"points": 7
+					}
+				}
+			],
+			"calc": {
+				"points": 19
+			}
+		},
+		{
+			"id": "THVTOfWFwO-k7HArU",
+			"name": "Vantagens",
+			"children": [
+				{
+					"id": "tolXQI8Ge-dj9EDOM",
+					"name": "Combat Reflexes",
+					"reference": "B43",
+					"local_notes": "Velho que já viu de tudo: nunca é pego desprevenido.",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Enhanced Time Sense"
+								}
+							}
+						]
+					},
+					"base_points": 15,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "fast-draw"
+							},
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "dodge",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "parry",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "block",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "fright_check",
+							"amount": 2
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun",
+							"amount": 6
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to initiative rolls for your side (+2 if you are the leader)",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "th_2zgW-7gSn63_GE",
+					"name": "Lifting ST",
+					"reference": "B65,P58",
+					"local_notes": "Força de carregar peça de trator. Mantém o lança-chamas em carga leve.",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mAu1kowzcl2d7_OoM",
+							"name": "No Fine Manipulators",
+							"reference": "B15",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "mhmVD5q_DA2DFPYAS",
+							"name": "Size",
+							"reference": "B15",
+							"cost_adj": "-10%",
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "mKGxY6yQ0yxksQATR",
+							"name": "Super-Effort",
+							"reference": "P58",
+							"cost_adj": "400%",
+							"disabled": true
+						},
+						{
+							"id": "myBUKk4HdMokThfk2",
+							"name": "Know Your Own Strength Variant Price",
+							"reference": "PY83:18",
+							"cost_adj": "4",
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "mKDXchHbgBBCzRl2L",
+							"name": "@Limb@ Grip ST",
+							"reference": "MATG28",
+							"cost_adj": "-70%",
+							"disabled": true
+						},
+						{
+							"id": "mVk5wETJnjqtIiG3h",
+							"name": "Bite ST",
+							"reference": "MATG28",
+							"cost_adj": "-70%",
+							"disabled": true
+						}
+					],
+					"points_per_level": 3,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "lifting_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 3,
+					"calc": {
+						"points": 9,
+						"level": 3,
+						"current_level": 3
+					}
+				},
+				{
+					"id": "tpQ9uCW00vbrznjfz",
+					"name": "Language: @Language@",
+					"reference": "B24",
+					"local_notes": "Italiano de colono, aprendido de ouvido. Entende o básico, reza e xinga em italiano. Não escreve.",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Language Talent"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"replacements": {
+						"Language": "Italiano"
+					},
+					"modifiers": [
+						{
+							"id": "mgcfpr58BVfvIlEP7",
+							"name": "Native",
+							"reference": "B23",
+							"cost_adj": "-6",
+							"disabled": true
+						},
+						{
+							"id": "mAbM-1J3eMBfHoWtB",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "None",
+							"disabled": true
+						},
+						{
+							"id": "mE1NGwELmdUb97cYW",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "Broken",
+							"cost_adj": "1"
+						},
+						{
+							"id": "mArEes99K-mQTBubK",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "Accented",
+							"cost_adj": "2",
+							"disabled": true
+						},
+						{
+							"id": "m1H9w4G0r6JGvoL-I",
+							"name": "Spoken",
+							"reference": "B24",
+							"local_notes": "Native",
+							"cost_adj": "3",
+							"disabled": true
+						},
+						{
+							"id": "mmUIABNzBY-c1RCk_",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "None",
+							"disabled": true
+						},
+						{
+							"id": "m8QRP2ZGB5KZy8zgL",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "Broken",
+							"cost_adj": "1",
+							"disabled": true
+						},
+						{
+							"id": "m3N3aY9AJ8FwsMrfh",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "Accented",
+							"cost_adj": "2",
+							"disabled": true
+						},
+						{
+							"id": "m4Hh8DFD-CsIV8biN",
+							"name": "Written",
+							"reference": "B24",
+							"local_notes": "Native",
+							"cost_adj": "3",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"calc": {
+				"points": 25
+			}
+		},
+		{
+			"id": "TKB45eEbzq8dMeMsY",
+			"name": "Desvantagens (−50)",
+			"children": [
+				{
+					"id": "teDJsmkJ4UaLyM-95",
+					"name": "Delusion (@Belief@)",
+					"reference": "B130",
+					"local_notes": "Delusion Maior (crença falsa): acredita que Luciano Huck está por trás do sumiço dos filhos, desaparecidos no conflito entre colonos e máquinas. Afeta o comportamento; -2 de reação de quem conhece a crença. Também quer vingar o bisavô.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"replacements": {
+						"Belief": "Luciano Huck está por trás do sumiço dos filhos"
+					},
+					"modifiers": [
+						{
+							"id": "mO9XcagGfPNDTLcop",
+							"name": "Minor",
+							"reference": "B130",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "mRitS6I0rgOVdoZhD",
+							"name": "Major",
+							"reference": "B130",
+							"cost_adj": "-10"
+						},
+						{
+							"id": "mSvi6RUNpD7MBDlt_",
+							"name": "Severe",
+							"reference": "B130",
+							"cost_adj": "-15",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tQ_ywPBRQfABlf2Gz",
+					"name": "Miserliness",
+					"reference": "B144",
+					"local_notes": "Pão-duro: pechincha tudo, odeia gastar e guarda até barbante. \"No meu tempo isso custava a metade.\"",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "ttnF3LwyF45px_eIM",
+					"name": "Hard of Hearing",
+					"reference": "B138",
+					"local_notes": "Meio surdo por décadas de máquina de roça e oficina. \"Hein? Fala mais alto, fiol!\" O rádio implantado NÃO anula a surdez: só permite falar com o grupo pelo rádio; fora dele continua com dificuldade para ouvir (confirmado).",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "hearing",
+							"amount": -4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to any skill roll where it is important that you understand someone speaking",
+							"amount": -4
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tgnDsznwQMiAUge7Q",
+					"name": "Bad Temper",
+					"reference": "B124",
+					"local_notes": "Pavio curto: quando contrariado, grita, xinga em italiano e bate a bengala. Autocontrole 12.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"cr": 12,
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tXo84i-xCDmd8X-Ol",
+					"name": "Code of Honor (Colono Católico)",
+					"reference": "B127",
+					"local_notes": "Cumpre a palavra dada. Não mente sob juramento. Não tolera desrespeito à Igreja.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "t9LC4ZBUucn2mJddG",
+					"name": "Sense of Duty",
+					"reference": "B153",
+					"local_notes": "Companheiros do grupo: não deixa ninguém do grupo para trás. Vale só para os personagens do grupo.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mZU9aZvQautGOLlIM",
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost_adj": "-5"
+						},
+						{
+							"id": "mqVt1cazFUEEX7hJD",
+							"name": "@Small Group@",
+							"reference": "B153",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "m-_XbU93PRX6luHb_",
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost_adj": "-2",
+							"disabled": true
+						},
+						{
+							"id": "mdkC56MEIaxgZwUS7",
+							"name": "@Large Group@",
+							"reference": "B153",
+							"cost_adj": "-10",
+							"disabled": true
+						},
+						{
+							"id": "mFaMhPW-aDFuhytsA",
+							"name": "@Entire Race@",
+							"reference": "B153",
+							"cost_adj": "-15",
+							"disabled": true
+						},
+						{
+							"id": "mVn4MjQc_u6Fy9gaC",
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost_adj": "-20",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": -50
+			}
+		},
+		{
+			"id": "TwXGPgHf7rRXilnDs",
+			"name": "Peculiaridades (−5)",
+			"children": [
+				{
+					"id": "tRhPsLCn3Rvhjswo1",
+					"name": "Católico não praticante: vai à missa sempre que dá, mas não obrigatoriamente aos domingos",
+					"reference": "B162, PU6:17",
+					"reference_highlight": "Mental Quirks",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "t_2bAKb9BNnm1uIRs",
+					"name": "Habit",
+					"reference": "B164",
+					"local_notes": "@Habit@",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"replacements": {
+						"Habit": "Reza o terço todo dia, sem falta"
+					},
+					"base_points": -1,
+					"calc": {
+						"points": -1,
+						"resolved_notes": "Reza o terço todo dia, sem falta"
+					}
+				},
+				{
+					"id": "tLshIdJVgfQe1FFNe",
+					"name": "Reclama de dor nas costas sem ter dor nas costas",
+					"reference": "B162, PU6:17",
+					"reference_highlight": "Mental Quirks",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tRHhBJKRBW3dPth16",
+					"name": "Desconfia de máquinas e IAs",
+					"reference": "B162, PU6:17",
+					"reference_highlight": "Mental Quirks",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "tJX2i_B-E1E5StmTL",
+					"name": "Guarda todo parafuso que acha no chão: \"um dia serve\"",
+					"reference": "B162, PU6:17",
+					"reference_highlight": "Mental Quirks",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "SaVI5tq7zKqdahEa3",
+			"name": "Combate",
+			"children": [
+				{
+					"id": "sQukHtXrGKYZ6Dg8Y",
+					"name": "Guns",
+					"reference": "B198",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Shotgun",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Grenade Launcher"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Gyroc"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Light Anti-Armor Weapon"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Light Machine Gun"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Musket"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Pistol"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Rifle"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Guns"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Submachine Gun"
+							},
+							"modifier": -2
+						}
+					],
+					"tech_level": "9",
+					"points": 4,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -4,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
+					},
+					"calc": {
+						"level": 16,
+						"rsl": "DX+2"
+					}
+				},
+				{
+					"id": "s4qi4h-SVnc9KNpgb",
+					"name": "Liquid Projector",
+					"reference": "B205",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Flamethrower",
+					"difficulty": "dx/e",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Liquid Projector"
+							},
+							"modifier": -4
+						}
+					],
+					"tech_level": "9",
+					"points": 4,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -4,
+						"level": 10,
+						"adjusted_level": 10,
+						"points": -10
+					},
+					"calc": {
+						"level": 16,
+						"rsl": "DX+2"
+					}
+				},
+				{
+					"id": "sqBGLNgSnsaXpIWof",
+					"name": "Axe/Mace",
+					"reference": "B208",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Two-Handed Axe/Mace"
+							},
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Flail"
+							},
+							"modifier": -4
+						}
+					],
+					"points": 2,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"calc": {
+						"level": 14,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "seQ5rrQANfl9pgSqv",
+					"name": "Brawling",
+					"reference": "B182,MA55",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/e",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 14,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "sAtrvzlA_YSioOtHp",
+					"name": "Fast-Draw",
+					"reference": "B194,MA56",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"specialization": "Long Arm",
+					"difficulty": "dx/e",
+					"points": 1,
+					"calc": {
+						"level": 15,
+						"rsl": "DX+1"
+					}
+				}
+			]
+		},
+		{
+			"id": "SEFnqqlbDU3c7-LN2",
+			"name": "Técnicas",
+			"children": [
+				{
+					"id": "slNKTnQQjvBYYYOUq",
+					"name": "Mechanic",
+					"reference": "B207",
+					"tags": [
+						"Maintenance",
+						"Repair"
+					],
+					"specialization": "Heavy Wheeled",
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Engineer"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Heavy Wheeled"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Machinist"
+							},
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Mechanic"
+							},
+							"modifier": -4
+						}
+					],
+					"tech_level": "9",
+					"points": 4,
+					"defaulted_from": {
+						"type": "skill",
+						"name": {
+							"compare": "is",
+							"qualifier": "Mechanic"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Robotics"
+						},
+						"modifier": -4,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "IQ+1"
+					}
+				},
+				{
+					"id": "scSDh9DxlDt893z2T",
+					"name": "Mechanic",
+					"reference": "B207",
+					"tags": [
+						"Maintenance",
+						"Repair"
+					],
+					"specialization": "Robotics",
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Engineer"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Robotics"
+							},
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Machinist"
+							},
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Mechanic"
+							},
+							"modifier": -4
+						}
+					],
+					"tech_level": "9",
+					"points": 2,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "s2XGqmSqbX2hbIdFA",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tags": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					],
+					"tech_level": "9",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "sBZFB3FTo1HD0561a",
+					"name": "Driving",
+					"reference": "B188",
+					"tags": [
+						"Vehicle"
+					],
+					"specialization": "Automobile",
+					"difficulty": "dx/a",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Driving"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Heavy Wheeled"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Driving"
+							},
+							"modifier": -4
+						}
+					],
+					"tech_level": "9",
+					"points": 2,
+					"defaulted_from": {
+						"type": "skill",
+						"name": {
+							"compare": "is",
+							"qualifier": "Driving"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "Heavy Wheeled"
+						},
+						"modifier": -2,
+						"level": 11,
+						"adjusted_level": 11,
+						"points": -11
+					},
+					"calc": {
+						"level": 14,
+						"rsl": "DX+0"
+					}
+				},
+				{
+					"id": "seVFgOdRGF4L70hVU",
+					"name": "Driving",
+					"reference": "B188",
+					"tags": [
+						"Vehicle"
+					],
+					"specialization": "Heavy Wheeled",
+					"difficulty": "dx/a",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Driving"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "Automobile"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Driving"
+							},
+							"modifier": -4
+						}
+					],
+					"tech_level": "9",
+					"points": 1,
+					"defaulted_from": {
+						"type": "dx",
+						"modifier": -5,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"calc": {
+						"level": 13,
+						"rsl": "DX-1"
+					}
+				}
+			]
+		},
+		{
+			"id": "SCfrIvmKbJ-vXQYMN",
+			"name": "Rua",
+			"children": [
+				{
+					"id": "s_dGq_wxzyoz8L8Yf",
+					"name": "Streetwise",
+					"reference": "B223",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Social",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					],
+					"points": 2,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "sTrTxOxNoOV3fxgxC",
+					"name": "Observation",
+					"reference": "B211",
+					"tags": [
+						"Criminal",
+						"Military",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "per/a",
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Shadowing"
+							},
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "per",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 10,
+						"rsl": "Per-1"
+					}
+				},
+				{
+					"id": "sbk8ehrXouHrE5bNc",
+					"name": "First Aid",
+					"reference": "B195",
+					"tags": [
+						"Everyman",
+						"Medical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Esoteric Medicine"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Physician"
+							}
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Veterinary"
+							},
+							"modifier": -4
+						}
+					],
+					"tech_level": "9",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -4,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 11,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "sSiaJ3D8qZVwIX4sE",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"local_notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Porto Alegre",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Geography"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "@Specialty@"
+							},
+							"modifier": -3
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ+0"
+					}
+				}
+			]
+		},
+		{
+			"id": "S1V10LgY_n0KFyFxC",
+			"name": "Colono",
+			"children": [
+				{
+					"id": "sc-WtKN4I62D6Hj3L",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"local_notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+					"tags": [
+						"Everyman",
+						"Knowledge"
+					],
+					"specialization": "Serra e planalto gaúchos",
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Geography"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "@Specialty@"
+							},
+							"modifier": -3
+						}
+					],
+					"points": 1,
+					"calc": {
+						"level": 11,
+						"rsl": "IQ+0"
+					}
+				},
+				{
+					"id": "s2PYJMXoIuJXkLqXf",
+					"name": "Farming",
+					"reference": "B194",
+					"tags": [
+						"Plant"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Biology"
+							},
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Gardening"
+							},
+							"modifier": -3
+						}
+					],
+					"tech_level": "9",
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 10,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "sLNyMRV1lRHGRmpHr",
+					"name": "Cooking",
+					"reference": "B185",
+					"tags": [
+						"Everyman"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Cooking"
+							},
+							"modifier": -2
+						},
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Housekeeping"
+							},
+							"modifier": -5
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 10,
+						"rsl": "IQ-1"
+					}
+				},
+				{
+					"id": "s-k7gylB72TLTnjiK",
+					"name": "Intimidation",
+					"reference": "B202",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Social",
+						"Street"
+					],
+					"difficulty": "will/a",
+					"defaults": [
+						{
+							"type": "will",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							},
+							"modifier": -3
+						}
+					],
+					"points": 1,
+					"defaulted_from": {
+						"type": "will",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"calc": {
+						"level": 10,
+						"rsl": "Will-1"
+					}
+				}
+			]
+		}
+	],
+	"equipment": [
+		{
+			"id": "Eq5iQb0DX8uScw7pS",
+			"description": "Armas",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eFLxR5anM5RDIzlQz",
+					"description": "Civilian Shotgun, 18.5mmPC",
+					"reference": "UT138",
+					"local_notes": "Espingarda semiautomática de caça e polícia (UT138), a \"lupara moderna\" do nonno. Legalizada pela licença de produtor rural (aprovado pelo mestre). Munições especiais (ex.: choque) a confirmar com o mestre.",
+					"tech_level": "9",
+					"legality_class": "3",
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"base_value": "450",
+					"base_weight": "6 lb",
+					"weapons": [
+						{
+							"id": "WJIaxz2PaPr5m0Vs3",
+							"sv": 1,
+							"damage": {
+								"type": "pi++",
+								"base": "4d+4"
+							},
+							"strength": "10†",
+							"accuracy": "3",
+							"range": "100/500",
+							"rate_of_fire": "3",
+							"shots": "5+1(3)",
+							"bulk": "-5",
+							"recoil": "4",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Shotgun"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"level": 16,
+								"damage": "4d+4 pi++"
+							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fRZC35jXReI_z3It6",
+							"name": "Using unloaded stats",
+							"cost": "-17.3",
+							"weight": "-0.75 lb",
+							"disabled": true
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 450,
+						"extended_value": 450,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "EcAjg0h00ulGjkzpa",
+					"description": "Civilian Shotgun, 18.5mmPC, 5-round magazine",
+					"reference": "UT138,LOSC8",
+					"local_notes": "Carregadores extras no bolso do sobretudo.",
+					"tech_level": "9",
+					"legality_class": "3",
+					"tags": [
+						"Ammunition",
+						"Magazine",
+						"Missile Weapon"
+					],
+					"base_value": "17.3",
+					"base_weight": "0.29",
+					"quantity": 7,
+					"equipped": true,
+					"calc": {
+						"value": 17.3,
+						"extended_value": 121.1,
+						"weight": "0.29 lb",
+						"extended_weight": "2.03 lb"
+					}
+				},
+				{
+					"id": "emlqm6IiI6cJIGGaA",
+					"description": "TOZ ROKS-2",
+					"reference": "HT179",
+					"local_notes": "Lança-chamas disfarçado: tanque em forma de garrafão de vinho nas costas, bico na bengala. Leva 2 manobras Preparar para conectar. Teste de Visão para identificar como arma (HT179). Se dano penetrar a RD 2 do tanque, 1d: com 1, explode. LC1: legalizado pela licença de produtor rural (aprovado pelo mestre); usado no trabalho de queima controlada de mato.",
+					"tech_level": "7",
+					"legality_class": "1",
+					"tags": [
+						"Liquid Projectors"
+					],
+					"base_value": "2000",
+					"base_weight": "50 lb",
+					"weapons": [
+						{
+							"id": "Wvmw_ELGYgpMUEPa_",
+							"sv": 1,
+							"damage": {
+								"type": "burn",
+								"base": "3d"
+							},
+							"strength": "10†",
+							"accuracy": "Jet",
+							"range": "25/40",
+							"rate_of_fire": "Jet",
+							"shots": "10x1s",
+							"bulk": "-7",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Liquid Projector"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Flamethrower"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Liquid Projector"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"level": 16,
+								"damage": "3d burn"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 2000,
+						"extended_value": 2000,
+						"weight": "50 lb",
+						"extended_weight": "50 lb"
+					}
+				},
+				{
+					"id": "eTL2R2WHqHhCkR-Bw",
+					"description": "Cane",
+					"reference": "HT31",
+					"local_notes": "Bengala de parreira. Bico disfarçado do lança-chamas; lanterninha presa na ponta.",
+					"tech_level": "5",
+					"tags": [
+						"General Equipment"
+					],
+					"base_value": "5",
+					"base_weight": "2.5 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 5,
+						"extended_value": 5,
+						"weight": "2.5 lb",
+						"extended_weight": "2.5 lb"
+					}
+				},
+				{
+					"id": "eYL5AQAV7EF4rCSIV",
+					"description": "Hatchet",
+					"reference": "B271",
+					"local_notes": "Machadinha de colono, na cintura.",
+					"tech_level": "0",
+					"tags": [
+						"Melee Weapon",
+						"Missile Weapon"
+					],
+					"base_value": "40",
+					"base_weight": "2 lb",
+					"weapons": [
+						{
+							"id": "wlE6TDqrb8Q9WQnmK",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw"
+							},
+							"strength": "8",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Axe/Mace"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Flail"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Two-Handed Axe/Mace"
+									},
+									"modifier": -3
+								}
+							],
+							"calc": {
+								"level": 14,
+								"damage": "1d+1 cut",
+								"parry": "11"
+							}
+						},
+						{
+							"id": "WeN1Ilk5zOIx4X722",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw"
+							},
+							"strength": "8",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1.5/x2.5",
+							"rate_of_fire": "1",
+							"shots": "T",
+							"bulk": "-2",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Thrown Weapon"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Axe/Mace"
+									}
+								}
+							],
+							"calc": {
+								"level": 10,
+								"damage": "1d+1 cut",
+								"range": "16/27"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 40,
+						"extended_value": 40,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 2616.1,
+				"weight": "0 lb",
+				"extended_weight": "62.53 lb"
+			}
+		},
+		{
+			"id": "EVTGOf-VsLv1er1Ok",
+			"description": "Proteção e roupa",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "e6PypJh3bhJF5yC7q",
+					"description": "Sobretudo blindado (Reflex sob medida)",
+					"reference": "UT174",
+					"local_notes": "Sobretudo velho e remendado que esconde o braço de metal, refeito em reflex sob medida (UT174-175: Reflex Suit x0,6 = tronco, braços, virilha e metade das pernas; estilo normal). DR 12 contra perfuração e corte, 4 contra o resto (a ficha mostra 4). Pernas: cobertura parcial, protege com 11 ou menos em 3d. Por cima da Reflex Bodysuit: camadas somam se o mestre aprovar.",
+					"tech_level": "9",
+					"legality_class": "3",
+					"tags": [
+						"Defenses"
+					],
+					"base_value": "720",
+					"base_weight": "4.8 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"torso"
+							],
+							"amount": 4
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"vitals"
+							],
+							"amount": 4
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin"
+							],
+							"amount": 4
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"arm"
+							],
+							"amount": 4
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 720,
+						"extended_value": 720,
+						"weight": "4.8 lb",
+						"extended_weight": "4.8 lb"
+					}
+				},
+				{
+					"id": "emhW-g7QbPOWFkadB",
+					"description": "Reflex Bodysuit",
+					"reference": "UT172",
+					"local_notes": "Macacão reflex por baixo da camisa de flanela: tronco, virilha, braços e pernas. DR 12 contra perfuração e corte, DR 4 contra o resto. Regra da casa: pode sacrificar para absorver 2x DR.",
+					"tech_level": "9",
+					"legality_class": "3",
+					"tags": [
+						"Defenses"
+					],
+					"base_value": "900",
+					"base_weight": "6 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"torso"
+							],
+							"amount": 4
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"vitals"
+							],
+							"amount": 4
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin"
+							],
+							"amount": 4
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"arm"
+							],
+							"amount": 4
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"leg"
+							],
+							"amount": 4
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 900,
+						"extended_value": 900,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "exgMFDQnjNfb9FW4u",
+					"description": "Boina blindada (Reflex sob medida)",
+					"reference": "UT174",
+					"local_notes": "Boina de colono forrada de reflex, feita sob medida (Tailoring Armor, UT174-175: Reflex Suit x0,05, estilo normal). Crânio DR 12 contra perfuração e corte, 4 contra o resto (a ficha mostra 4).",
+					"tech_level": "9",
+					"legality_class": "3",
+					"tags": [
+						"Defenses"
+					],
+					"base_value": "60",
+					"base_weight": "0.4 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"skull"
+							],
+							"amount": 4
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 60,
+						"extended_value": 60,
+						"weight": "0.4 lb",
+						"extended_weight": "0.4 lb"
+					}
+				},
+				{
+					"id": "e5TS-CN9ZbsOkRmdY",
+					"description": "Armored Shades",
+					"reference": "UT176",
+					"local_notes": "Óculos escuros de velho com lentes blindadas. DR 10 nos olhos.",
+					"tech_level": "9",
+					"tags": [
+						"Armor",
+						"Defenses"
+					],
+					"base_value": "100",
+					"base_weight": "0.1 lb",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"eye"
+							],
+							"amount": 10
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0.1 lb",
+						"extended_weight": "0.1 lb"
+					}
+				},
+				{
+					"id": "eUR1eRDm98G949uJg",
+					"description": "Reflex Gloves",
+					"reference": "UT172",
+					"local_notes": "Luvas de trabalho em reflex. DR 6 contra perfuração e corte, 2 contra o resto, nas mãos.",
+					"tech_level": "9",
+					"tags": [
+						"Defenses"
+					],
+					"base_value": "30",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"amount": 2
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 30,
+						"extended_value": 30,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eovCbdPvDEC-Uo1VU",
+					"description": "Gripboots",
+					"reference": "UT75,UT173",
+					"local_notes": "Botas de roça com solado inteligente (garras e travas sob comando). DR 6 nos pés; +1 por dado no dano de chute; +1 em Climbing (+2 no gelo).",
+					"tech_level": "9",
+					"legality_class": "4",
+					"tags": [
+						"Expedition Gear"
+					],
+					"base_value": "500",
+					"base_weight": "2 lb",
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "Climbing Ice",
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Climbing"
+							},
+							"amount": 1
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"level": {
+								"compare": "at_least"
+							},
+							"usage": {
+								"compare": "is",
+								"qualifier": "Kick"
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"specialization": "underside of the foot",
+							"amount": 6
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 6
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "ezFKLjATuPiexy_D0",
+					"description": "Ordinary Clothes",
+					"reference": "B266",
+					"local_notes": "Camisa xadrez de flanela, suspensório, calça de trabalho remendada (Status -1).",
+					"tags": [
+						"Clothing"
+					],
+					"base_value": "60",
+					"base_weight": "2 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 60,
+						"extended_value": 60,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 2370,
+				"weight": "0 lb",
+				"extended_weight": "15.3 lb"
+			}
+		},
+		{
+			"id": "EIYE-E44sWLVYfKBj",
+			"description": "Utilidades",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ecWvS9fXYgkamY_Fq",
+					"description": "Swiss army knife",
+					"reference": "UT38",
+					"local_notes": "Canivete suíço de colono: faca pequena, chave de fenda, tesoura, lixa, pinça e abridor de garrafa (UT38).",
+					"tech_level": "9",
+					"base_value": "10",
+					"base_weight": "0.125 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 10,
+						"extended_value": 10,
+						"weight": "0.125 lb",
+						"extended_weight": "0.125 lb"
+					}
+				},
+				{
+					"id": "eOeB6EoNKV43tS0dn",
+					"description": "Mini Flashlight",
+					"reference": "UT74",
+					"local_notes": "Presa na ponta da bengala. 1 bateria B dura 24 h.",
+					"tech_level": "9",
+					"tags": [
+						"Housing and Food"
+					],
+					"base_value": "10",
+					"base_weight": "0.25 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 10,
+						"extended_value": 10,
+						"weight": "0.25 lb",
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "ei_OP0vMO3vF1fk5P",
+					"description": "Cigarette Lighter",
+					"reference": "B288",
+					"local_notes": "Isqueiro à prova de vento e de água. Acende o lança-chamas.",
+					"tech_level": "6",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"base_value": "10",
+					"base_weight": "0.01 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 10,
+						"extended_value": 10,
+						"weight": "0.01 lb",
+						"extended_weight": "0.01 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 30,
+				"weight": "0 lb",
+				"extended_weight": "0.385 lb"
+			}
+		}
+	],
+	"other_equipment": [
+		{
+			"id": "e8xIrCCBuvnuMr19X",
+			"description": "Dinheiro disponível: $10.468,90",
+			"local_notes": "Só referência, não é item físico (valor e peso zerados para não entrar nas somas). Saldo = $30.000 iniciais - $19.531,10 gastos. Atualize o nome quando gastar ou ganhar dinheiro.",
+			"base_value": "0",
+			"base_weight": "0 lb",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "EABt1qOH9ZsRlvqHf",
+			"description": "No carro",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "e0DvHPptiYUwYMkEB",
+					"description": "Smart Car (usado)",
+					"reference": "UT225",
+					"local_notes": "Carro elétrico de segunda mão, 30% abaixo do preço ($20.000), combinado com o mestre. Motor em cada roda, 1+4 ocupantes, carga 600 kg, ~6 h / 640 km por carga. Computador de bordo, câmera infravermelha, rádio celular, fechadura biométrica. Driving (Automobile).",
+					"tech_level": "9",
+					"base_value": "14000",
+					"base_weight": "0 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 14000,
+						"extended_value": 14000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eA5M_74wnKCDzhS7z",
+					"description": "Mechanic (@Specialization@) Mini-Toolkit",
+					"reference": "UT82",
+					"local_notes": "Fica na caçamba/porta-malas. -2 (qualidade) para outras especialidades de Mechanic.",
+					"tech_level": "9",
+					"tags": [
+						"Expedition Gear"
+					],
+					"base_value": "200",
+					"base_weight": "4 lb",
+					"replacements": {
+						"Specialization": "Robotics"
+					},
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 200,
+						"extended_value": 200,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "eLJxCU1rdGDHGtYAG",
+					"description": "18.5mmPC",
+					"reference": "UT139",
+					"local_notes": "Caixas de munição sobressalente, no carro (175 cartuchos = 5 recargas completas dos 7 carregadores).",
+					"tech_level": "9",
+					"legality_class": "3",
+					"tags": [
+						"Ammunition",
+						"Weaponry"
+					],
+					"base_value": "1.8",
+					"base_weight": "0.092 lb",
+					"quantity": 175,
+					"equipped": true,
+					"calc": {
+						"value": 1.8,
+						"extended_value": 315,
+						"weight": "0.092 lb",
+						"extended_weight": "16.1 lb"
+					}
+				},
+				{
+					"id": "eCUxzPXetfJTOyrev",
+					"description": "Recarga do garrafão (combustível do ROKS-2)",
+					"reference": "HT179",
+					"local_notes": "Uma recarga completa (10 jatos), guardada no carro. Preço a combinar com o mestre.",
+					"base_value": "0",
+					"base_weight": "0 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 14515,
+				"weight": "0 lb",
+				"extended_weight": "20.1 lb"
+			}
+		}
+	],
+	"notes": [
+		{
+			"id": "nCchcPv0K5ToQ-U9s",
+			"markdown": "Anacleto Bagonelli, 89 anos, de Marau (RS). Foi mecânico da cooperativa agrícola por 50 anos: trator, colheitadeira, caminhão e drone agrícola. Perdeu o braço numa colheitadeira. Último da linhagem Bagonelli, gastou a herança em implantes para viver até reencontrar os filhos, desaparecidos no conflito entre colonos e máquinas, e vingar o bisavô, que morreu de desgosto depois que Luciano Huck reformou seu carro na TV. Acredita que tudo está conectado."
+		},
+		{
+			"id": "nh80AwLrqv-bHKhar",
+			"markdown": "CÁLCULO DA CIC: Braço biônico 5 (Arm ST +2, decisão do mestre) + Pulmão de Turno 5 + Vida+ de Bolso 1 + Longevidade Aumentada 1 + Rádio implantado 7 = CIC 19 (limite combinado: 19). Nível SDC 0 (Estável, faixa 0–19). TI 0. Sem folga: novo implante exige retirar outro (ex.: Vida+ libera 1)."
+		},
+		{
+			"id": "nN0O9n8rPvn95MLLz",
+			"markdown": "Credencial no Feijão (0 pts, APROVADA pelo mestre): licença de produtor rural (propriedade da família em Marau), que legaliza a Civilian Shotgun e o lança-chamas ROKS-2."
+		},
+		{
+			"id": "ntvcHI46zgwLAwZDE",
+			"markdown": "Dinheiro: conserta máquina, carro e implante e faz queima controlada de mato para quem paga em dinheiro vivo, sem nota. Contrato perigoso: a Delusion (acha que o Huck sumiu com os filhos) e a vingança pelo bisavô. Por que fica no grupo: Sense of Duty com os companheiros."
+		},
+		{
+			"id": "nnPJusywUZd7V3O7t",
+			"markdown": "Pontos: 150 + 50 (desvantagens) + 5 (peculiaridades) = 205. Dinheiro inicial: $30.000 (padrão TL9, B27; confirmar com o mestre e a conversão para cUSB). Gasto: $19.531,10 (carro usado $14.000 + equipamento). Sobram $10.468,90."
+		},
+		{
+			"id": "n_1UQSoP2j-F68UR3",
+			"markdown": "Carga: equipamento no corpo ~78,2 lb, no limite da carga leve (até 78,4 lb com Lifting ST 3). Sem o ROKS-2 (deixado no carro) sobram ~50 lb de folga. Ferramentas, munição extra e recarga do garrafão ficam no carro."
+		},
+		{
+			"id": "nowR-8kQsYD5ApAD-",
+			"markdown": "Pendências com o mestre: bico do lança-chamas disfarçado na bengala; se há munição de choque para a Civilian Shotgun; Code of Honor católico (o mestre pediu para rever a religião)."
+		}
+	],
+	"created_date": "2026-11-15T21:47:41-03:00",
+	"modified_date": "2026-11-15T21:47:41-03:00",
+	"calc": {
+		"swing": "1d+1",
+		"thrust": "1d-1",
+		"basic_lift": "39 lb",
+		"lifting_st_bonus": 3,
+		"dodge_bonus": 1,
+		"parry_bonus": 1,
+		"block_bonus": 1,
+		"move": [
+			6,
+			4,
+			3,
+			2,
+			1
+		],
+		"dodge": [
+			10,
+			9,
+			8,
+			7,
+			6
+		]
+	}
+}
