@@ -5,7 +5,7 @@ characters in the browser, no installation required with
 [GCS Viewer](https://gcs-viewer.netlify.app).
 
 ## Current Campaign
-- **Active Characters:** 4
+- **Active Characters:** 5
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
@@ -17,6 +17,7 @@ characters in the browser, no installation required with
 
 ### Active Characters
 - [Nikola Cacareco (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/Nikola Cacareco.gcs) - by Marukusu
+- [Anacleto Bagonelli (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/anacleto-bagonelli.gcs) - by lucas
 - [Darci "Chorume" Fagundes (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/darci-chorume-fagundes.gcs) - by Dudu
 - [Leon Ror$hach (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/leon-cyber.gcs) - by Maurício
 - [TchêPT (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/tche-pt.gcs) - by Gustavo
