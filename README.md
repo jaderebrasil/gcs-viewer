@@ -9,7 +9,7 @@ characters in the browser, no installation required with
 
 | Stat              |    Min |    Avg |    Max |
 |:------------------|-------:|-------:|-------:|
-| **Points:**       |    150 |    150 |    150 |
+| **Points:**       |    150 |    151 |    154 |
 | **HP:**           |     10 |     11 |     13 |
 | **FP:**           |     10 |     11 |     12 |
 | **DR (torso):**   |      0 |     10 |     24 |
@@ -20,7 +20,7 @@ characters in the browser, no installation required with
 - [Anacleto Bagonelli (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/anacleto-bagonelli.gcs) - by lucas
 - [Darci "Chorume" Fagundes (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/darci-chorume-fagundes.gcs) - by Dudu
 - [Leon Ror$hach (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/leon-cyber.gcs) - by Maurício
-- [TchêPT (150)](https://gcs-viewer.netlify.app/?url=./assets/characters/tche-pt.gcs) - by Gustavo
+- [TchêPT (154)](https://gcs-viewer.netlify.app/?url=./assets/characters/tche-pt.gcs) - by Gustavo
 
 ### Dead Characters
 
