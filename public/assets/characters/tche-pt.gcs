@@ -2,8 +2,13 @@
 	"file_type": "character",
 	"version": 5,
 	"id": "ANTqPTNzuxkdSGZMQ",
-	"total_points": 150,
+	"total_points": 154,
 	"points_record": [
+		{
+			"when": "2026-11-18T23:31:38-03:00",
+			"points": 4,
+			"reason": "Dra. Helena, Berço V"
+		},
 		{
 			"when": "2026-11-04T21:39:35-03:00",
 			"points": 150,
@@ -3955,10 +3960,10 @@
 				]
 			},
 			"tech_level": "9",
-			"points": 8,
+			"points": 12,
 			"calc": {
-				"level": 12,
-				"rsl": "IQ+0"
+				"level": 13,
+				"rsl": "IQ+1"
 			}
 		},
 		{
@@ -4391,7 +4396,7 @@
 		}
 	],
 	"created_date": "2026-11-04T21:39:35-03:00",
-	"modified_date": "2026-11-15T16:55:59-03:00",
+	"modified_date": "2026-11-18T23:32:07-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
