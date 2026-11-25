@@ -21,6 +21,7 @@
 		"handedness": "Right",
 		"gender": "Male",
 		"tech_level": "3",
+		"portrait": "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",
 		"height": "5'10\"",
 		"weight": "173 lb"
 	},
@@ -5403,6 +5404,145 @@
 	],
 	"equipment": [
 		{
+			"id": "10fc239e-be3b-4fe1-a896-1905e705c59f",
+			"type": "equipment",
+			"description": "First Aid Kit",
+			"reference": "UT198",
+			"tech_level": "9",
+			"tags": [
+				"Medical"
+			],
+			"quantity": 2,
+			"value": 50,
+			"weight": "2 lb",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "First Aid"
+					},
+					"amount": 1
+				}
+			],
+			"equipped": true,
+			"calc": {
+				"extended_value": 100,
+				"extended_weight": "4 lb"
+			}
+		},
+		{
+			"id": "c5bc332e-a0e4-4a18-9496-d926f423104d",
+			"type": "equipment",
+			"description": "USB Digital",
+			"legality_class": "4",
+			"quantity": 9000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "c5acf499-e7cf-4647-8580-01a168c34e56",
+			"type": "equipment",
+			"description": "Notas de Reserva",
+			"legality_class": "4",
+			"quantity": 9000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "cf435af8-4ff1-4f23-bc19-5cae3944d41b",
+			"type": "equipment",
+			"description": "Moedas Paralelas",
+			"legality_class": "4",
+			"quantity": 6430,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "a11c2e43-0414-493c-b940-a35718e75d6a",
+			"type": "equipment",
+			"description": "Purge",
+			"reference": "UT205",
+			"tech_level": "10",
+			"tags": [
+				"Biotech",
+				"Drug"
+			],
+			"quantity": 5,
+			"value": 20,
+			"equipped": true,
+			"calc": {
+				"extended_value": 100,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "896fa99d-d97e-4378-a503-1fcd28c1d9c9",
+			"type": "equipment",
+			"description": "Credilene",
+			"reference": "UT205",
+			"tech_level": "9",
+			"legality_class": "2",
+			"tags": [
+				"Biotech",
+				"Drug"
+			],
+			"quantity": 2,
+			"value": 240,
+			"equipped": true,
+			"calc": {
+				"extended_value": 480,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "7ad1875a-2676-4bad-b32e-2338c3a4bdb8",
+			"type": "equipment",
+			"description": "Morphazine",
+			"reference": "UT205",
+			"tech_level": "9",
+			"legality_class": "3",
+			"tags": [
+				"Biotech",
+				"Drug"
+			],
+			"quantity": 4,
+			"value": 10,
+			"equipped": true,
+			"calc": {
+				"extended_value": 40,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "87988b25-9b2a-44a7-ab67-1f888077a7d3",
+			"type": "equipment",
+			"description": "Soothe",
+			"reference": "UT205",
+			"tech_level": "9",
+			"tags": [
+				"Biotech",
+				"Drug"
+			],
+			"quantity": 4,
+			"value": 15,
+			"equipped": true,
+			"calc": {
+				"extended_value": 60,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
 			"id": "768dcccb-edf0-44aa-95b0-9355153d1b32",
 			"type": "equipment",
 			"description": "Antibiotic",
@@ -5608,7 +5748,7 @@
 		}
 	],
 	"created_date": "2026-11-11T03:46:27-03:00",
-	"modified_date": "2026-11-13T01:05:21-03:00",
+	"modified_date": "2026-11-25T20:19:24-03:00",
 	"calc": {
 		"swing": "1d",
 		"thrust": "1d-2",
